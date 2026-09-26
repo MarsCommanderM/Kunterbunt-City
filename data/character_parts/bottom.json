@@ -1,0 +1,58 @@
+{
+  "slot": "bottom",
+  "label": "Hose/Rock",
+  "icon": "👖",
+  "max_zones": 2,
+  "variants": [
+    {
+      "id": "trousers",
+      "label": "trousers",
+      "part": "bottom_trousers",
+      "part_back": "bottom_sit_trousers",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "shorts",
+      "label": "shorts",
+      "part": "bottom_shorts",
+      "part_back": "bottom_sit_shorts",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "skirt",
+      "label": "skirt",
+      "part": "bottom_skirt",
+      "part_back": "bottom_sit_skirt",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "leggings",
+      "label": "leggings",
+      "part": "bottom_leggings",
+      "part_back": "bottom_sit_leggings",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "dungarees",
+      "label": "dungarees",
+      "part": "bottom_dungarees",
+      "part_back": "bottom_sit_dungarees",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ]
+    }
+  ]
+}

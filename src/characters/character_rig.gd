@@ -59,23 +59,26 @@ func _build_visual() -> void:
 	parts = Node2D.new()
 	parts.name = "Parts"
 	swing.add_child(parts)
-	var hs: String = String(look.get("hair_style", "short"))
 	var top: float = float(t["hair_top"])
 	arm_back = _arm("ArmBack", -1.0)
 	parts.add_child(arm_back)
-	_layer(parts, "Legs", "legs_stand", Vector2.ZERO, "pants")
-	_layer(parts, "Shoes", "shoes_stand", Vector2.ZERO, "shoes")
-	_layer(parts, "Torso", "torso", Vector2(0, -float(t["torso"]["bot"])), "shirt")
+	_layer(parts, "Legs", CharacterLook.part_for(template_id, look, "Legs"), Vector2.ZERO)
+	_layer(parts, "Shoes", CharacterLook.part_for(template_id, look, "Shoes"), Vector2.ZERO)
+	_layer(parts, "Top", CharacterLook.part_for(template_id, look, "Top"),
+		Vector2(0, -float(t["torso"]["bot"])))
 	head_pivot = Node2D.new()
 	head_pivot.name = "HeadPivot"
 	parts.add_child(head_pivot)
 	var cy: float = -float(t["head"]["cy"])
 	head_pivot.position = Vector2(0, cy)
 	var hy: float = -top - cy                  ## Haar sitzt oben, Kopf in der Mitte
-	_layer(head_pivot, "HairBack", "hair_back_" + hs, Vector2(0, hy), "hair")
-	_layer(head_pivot, "Head", "head", Vector2.ZERO, "skin")
-	_layer(head_pivot, "Face", "face_happy", Vector2.ZERO, "")
-	_layer(head_pivot, "HairFront", "hair_front_" + hs, Vector2(0, hy), "hair")
+	_layer(head_pivot, "HairBack", CharacterLook.part_for(template_id, look, "HairBack"), Vector2(0, hy))
+	_layer(head_pivot, "Head", "head", Vector2.ZERO)
+	_layer(head_pivot, "Eyes", CharacterLook.part_for(template_id, look, "Eyes"), Vector2.ZERO)
+	_layer(head_pivot, "Mouth", CharacterLook.part_for(template_id, look, "Mouth"), Vector2.ZERO)
+	_layer(head_pivot, "HairFront", CharacterLook.part_for(template_id, look, "HairFront"), Vector2(0, hy))
+	_layer(head_pivot, "Accessory", CharacterLook.part_for(template_id, look, "Accessory"), Vector2.ZERO)
+	_layer(head_pivot, "Aid", CharacterLook.part_for(template_id, look, "Aid"), Vector2.ZERO)
 	arm_front = _arm("ArmFront", 1.0)
 	parts.add_child(arm_front)
 	slot_two = Node2D.new()
@@ -86,20 +89,20 @@ func _build_visual() -> void:
 	hands_top.visible = false
 	parts.add_child(hands_top)
 	for i: int in 2:
-		_layer(hands_top, "Fingers%d" % i, "hand_front", Vector2.ZERO, "skin")
-	sprite = _layers["Torso"]        # Basis-Klasse erwartet ein Sprite
+		_layer(hands_top, "Fingers%d" % i, "hand_front", Vector2.ZERO)
+	sprite = _layers["Top"]          # Basis-Klasse erwartet ein Sprite
 	_apply_arms(ARM_IDLE, ARM_IDLE)
 
 
 ## Ebene mit Anker aus parts.json (cm, y von unten) an Position pos.
-func _layer(parent: Node, lname: String, part: String, pos: Vector2, tint: String) -> Sprite2D:
+func _layer(parent: Node, lname: String, part: String, pos: Vector2, tint: bool = true) -> Sprite2D:
 	var sp := Sprite2D.new()
 	sp.name = lname
 	sp.centered = false
 	_set_part(sp, part)
 	sp.position = pos
-	if not tint.is_empty():
-		sp.modulate = Color(String(look.get(tint, "#ffffff")))
+	if tint:
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, lname))
 	parent.add_child(sp)
 	_layers[lname] = sp
 	return sp
@@ -121,14 +124,14 @@ func _arm(aname: String, side: float) -> Node2D:
 	arm.name = aname
 	arm.position = Vector2(side * float(t["shoulder"]["x"]), -float(t["shoulder"]["y"]))
 	var hand_pos := Vector2(0, float(t["arm"]["len"]))
-	_layer(arm, aname + "Skin", "arm_skin", Vector2.ZERO, "skin")
-	_layer(arm, aname + "Sleeve", "arm_sleeve", Vector2.ZERO, "shirt")
-	_layer(arm, aname + "Palm", "hand", hand_pos, "skin")
+	_layer(arm, aname + "Skin", "arm_skin", Vector2.ZERO)
+	_layer(arm, aname + "Sleeve", CharacterLook.part_for(template_id, look, aname + "Sleeve"), Vector2.ZERO)
+	_layer(arm, aname + "Palm", "hand", hand_pos)
 	var slot := Node2D.new()
 	slot.name = "HandSlot" + ("Front" if side > 0 else "Back")
 	slot.position = hand_pos
 	arm.add_child(slot)
-	var fingers: Sprite2D = _layer(arm, aname + "Fingers", "hand_front", hand_pos, "skin")
+	var fingers: Sprite2D = _layer(arm, aname + "Fingers", "hand_front", hand_pos)
 	if side < 0:
 		fingers.scale.x *= -1.0     # Finger zeigen zur Körpermitte
 	if side > 0:
@@ -275,7 +278,7 @@ func _set_body_pose(bp: String) -> void:
 	body_pose = bp
 	var hip: float = float(t["hip"]["y"])
 	var sit: bool = bp == "sit"
-	_set_part(_layers["Legs"], "legs_sit" if sit else "legs_stand")
+	_set_part(_layers["Legs"], CharacterLook.part_for(template_id, look, "Legs", "sit" if sit else ""))
 	_layers["Legs"].scale.y = absf(_layers["Legs"].scale.y)
 	_layers["Shoes"].position = Vector2.ZERO
 	_layers["Legs"].position = Vector2.ZERO
@@ -353,7 +356,13 @@ func set_emotion(e: String) -> void:
 	if not CharacterTemplates.emotions().has(e):
 		return
 	emotion = e
-	_set_part(_layers["Face"], "face_" + e)
+	_set_part(_layers["Mouth"], "mouth_" + e)
+	# Augen: für jedes Gefühl ein eigenes Teil, sonst die im Editor gewählte Form
+	var eyes: String = "eyes_" + e
+	if not CharacterTemplates.has_part(template_id, eyes):
+		eyes = CharacterLook.part_for(template_id, look, "Eyes")
+	_set_part(_layers["Eyes"], eyes)
+	_rect_cache = Rect2()
 	emotion_changed.emit(e)
 
 

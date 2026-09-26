@@ -1,0 +1,58 @@
+{
+  "slot": "hair",
+  "label": "Frisur",
+  "icon": "💇",
+  "max_zones": 1,
+  "variants": [
+    {
+      "id": "short",
+      "label": "short",
+      "part": "hair_front_short",
+      "part_back": "hair_back_short",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "pigtails",
+      "label": "pigtails",
+      "part": "hair_front_pigtails",
+      "part_back": "hair_back_pigtails",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "curly",
+      "label": "curly",
+      "part": "hair_front_curly",
+      "part_back": "hair_back_curly",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "bob",
+      "label": "bob",
+      "part": "hair_front_bob",
+      "part_back": "hair_back_bob",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "bald",
+      "label": "bald",
+      "part": "hair_front_bald",
+      "part_back": "hair_back_bald",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ]
+    }
+  ]
+}

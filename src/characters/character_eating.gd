@@ -14,11 +14,11 @@ static func eat(rig: CharacterRig, food: ItemNode, animate: bool = true) -> void
 	var tw: Tween = rig.create_tween()
 	for bite: int in 3:
 		tw.tween_callback(func() -> void:
-			rig._set_part(rig._layers["Face"], "face_eat_open")
+			rig._set_part(rig._layers["Mouth"], "mouth_eat_open")
 			AudioBus.play_sfx("eat_chomp"))
 		tw.tween_interval(0.18)
 		tw.tween_callback(func() -> void:
-			rig._set_part(rig._layers["Face"], "face_eat_closed")
+			rig._set_part(rig._layers["Mouth"], "mouth_eat_closed")
 			if is_instance_valid(food):
 				food.scale *= 0.72)
 		tw.tween_interval(0.22)

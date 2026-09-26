@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **04 · Charakter-Editor** |
-| Nächste Task | P04-T01 |
-| Letzter grüner check.sh | 2026-09-26 (Phase 03) |
+| Nächste Task | P04-T03 (Editor-Oberfläche) – T01/T02/T04/T10 fertig |
+| Letzter grüner check.sh | 2026-09-26 (Phase 04, Teil 1) |
 | Version | 0.0.4 |
 
 ## Phasen
@@ -16,6 +16,7 @@
 | 01 Welt-Maßstab | ✅ fertig (👤 Blick-Check offen) | Log 2026-09-26 |
 | 02 Items & Drag | ✅ fertig (👤 Anfass-Gefühl + GPU-FPS offen) | Log 2026-09-26 |
 | 03 Figuren & Tiere | ✅ fertig (👤 Kindertest offen) | Log 2026-09-26 |
+| 04 Editor | 🔨 Teil 1: Daten/Teile/Farben (UI folgt) | Log 2026-09-26 |
 | 04 Editor | ⏳ | – |
 | 05 Menü & Speichern | ⏳ | – |
 | 06 Asset-Pipeline | ⏳ | – |
@@ -45,11 +46,42 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 01 | Web-Export mit Test-Küche | ✅ index.pck 3,2 MB |
 | 2026-09-26 | 02 | check.sh | Maßstab ✅ (155 Einträge, 61 Items) · pytest 15/15 ✅ · GUT 129/129 ✅ (850 Asserts) |
 | 2026-09-26 | 03 | check.sh | Maßstab ✅ (155 Einträge, 65 Items) · pytest 31/31 ✅ · GUT 169/169 ✅ (1019 Asserts) |
+| 2026-09-26 | 04 | check.sh | Maßstab ✅ · pytest 37/37 ✅ · GUT 184/184 ✅ (1547 Asserts) |
+| 2026-09-26 | 04 | 100 Figuren speichern + laden | **5,0 ms**, 0,05 MB (Ziel: kein Ruckeln) |
+| 2026-09-26 | 04 | Teile-Katalog (`p04_lookbook.gd`) | 198 Teile · 8 Slots × 5 Varianten · 10 Palettenfarben: 9/10 Farb-Richtungen im Bild korrekt zugeordnet |
+| 2026-09-26 | 04 | Schablonen-Größen im Bild | Kleinkind : Kind : Erwachsene = 90 : 125 : 172 (±10 % gemessen) |
 | 2026-09-26 | 03 | P03-Nachweis `p03_check.gd` (37 Prüfungen, Zahlen statt Augenmaß) | 37/37 grün: Karotte 20,0 cm (15 % der Kind-Größe) · Apfel 7,8 cm · Ball 31,7 cm mit zwei Händen · Hüfte Kind 45,0 cm, Kopf 120,0 cm, Füße baumeln 23,0 cm · Erwachsene Sessel 42,0 cm, Füße 0,0 cm · Kleinkind liegt 92 × 49 cm auf 44,2 cm · Teddy 45,0 cm · Hund 49,4 cm < Tisch 77,8 cm · Griff-Abstand 0,00 cm |
 | 2026-09-26 | 03 | Referenz-Küche nachgemessen (`p03_reference_kueche.gd`) | 13 Objekte: größte Abweichung **4,3 %** zur Maßstab-Tabelle (Teddy sitzt 45,0 cm) |
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-26 · Phase 04 (Teil 1) · Daten, Teile & Umfärben
+- Erledigt: P04-T01 (Datenformat), T02 (Datenmodell + Speichern), T04 (Umfärben), T10 (Platzhalter-Teile).
+  - `tools/make_editor_parts.py`: **198 Teile** für 3 Schablonen. Jedes Teil speichert seine Farbzonen
+    als Gewichte in **R/G/B** (mit eingebackenem Verlauf) und die Deckung in A → 3 Zonen pro Teil,
+    eine Textur, kein zweites Bild.
+  - `assets/shaders/zone_tint.gdshader`: `Farbe = R·zone1 + G·zone2 + B·zone3` (Stil C: farbige Konturen,
+    nie schwarz). `CharacterLook` setzt je Ebene Teil + Zonenfarben; der Rig bleibt unter 400 Zeilen.
+  - `data/character_parts/<slot>.json`: 8 Slots (top, bottom, shoes, hair, eyes, mouth, accessory, aid)
+    × **5 Varianten** + `palette.json` (Haut/Haare/Stoff/Schuhe/Fell).
+  - `CharacterData` (Schablone, Hautton, Teile+Farben, Name, Stimme 1–8, **5 Outfit-Plätze**, Ordner)
+    und `PetData` (Art, Fell, Muster, Halsband, Charakterzug) ↔ JSON.
+  - `SaveSystem`: `user://characters.json` / `pets.json`, versioniert, Migrations-Haken, `wipe()`.
+  - Gefühle wechseln jetzt **Mund UND Augenform** (Herzen bei „verliebt"); die im Editor gewählte
+    Augenform bleibt der Normalzustand.
+- Tests (neu): GUT `test_editor_parts` (Katalog, Sprites je Schablone, Zonen, Shader-Farben, Palette,
+  🎲 reproduzierbar), `test_character_data` (Rundlauf, **100 Figuren in 5 ms**, Pflicht-Felder,
+  Outfits, Haustier) · pytest `test_p04_shots` (Bildmaße 90:125:172, Farbzonen im Bild).
+- Beweis: `docs/tests/P04/*.jpg` (Katalog, Schablonen-Größen, Farbzonen).
+- Entscheidungen:
+  - Größe kommt **nur** aus der Schablone → ein Kleid oder Stiefel ändern keine Körpergröße (Test).
+  - Augen/Mund sind eigene Ebenen statt einer fertigen Gesichts-Ebene: der Editor kann sie einzeln
+    tauschen, die Gefühle überschreiben sie nur vorübergehend.
+  - Beschriftungen in Beweisbildern werden in **Bildpunkten** gesetzt (1/zoom skaliert), sonst
+    überdecken Welt-Labels die Figuren.
+- 👤 offen: Editor-Oberfläche (T03), 🎲 + Outfits-UI (T05), Namen (T06), Pflicht-Ablauf (T07),
+  Galerie (T08), Haustier-Editor (T09).
+- Nächste Task: P04-T03
 ### 2026-09-26 · Phase 03 · Figuren & Tiere ✅
 - Erledigt: P03-T01…T10.
   - `tools/make_rig_parts.py`: 63 Figuren-Teile (3 Schablonen) als Stil-C-Platzhalter, 8 px/cm, bit-genau.

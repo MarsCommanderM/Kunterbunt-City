@@ -1,0 +1,58 @@
+{
+  "slot": "accessory",
+  "label": "Accessoire",
+  "icon": "🎀",
+  "max_zones": 2,
+  "variants": [
+    {
+      "id": "none",
+      "label": "none",
+      "part": "acc_none",
+      "part_back": null,
+      "zones": 1,
+      "tags": [
+        "none"
+      ]
+    },
+    {
+      "id": "glasses",
+      "label": "glasses",
+      "part": "acc_glasses",
+      "part_back": null,
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ]
+    },
+    {
+      "id": "bow",
+      "label": "bow",
+      "part": "acc_bow",
+      "part_back": null,
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ]
+    },
+    {
+      "id": "headphones",
+      "label": "headphones",
+      "part": "acc_headphones",
+      "part_back": null,
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ]
+    },
+    {
+      "id": "cap",
+      "label": "cap",
+      "part": "acc_cap",
+      "part_back": null,
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ]
+    }
+  ]
+}

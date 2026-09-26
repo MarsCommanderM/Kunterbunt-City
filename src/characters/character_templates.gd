@@ -8,12 +8,15 @@ const PARTS_DIR: String = "res://assets/characters/parts/"
 
 static var _data: Dictionary = {}
 static var _parts: Dictionary = {}
+static var _editor: Dictionary = {}      ## P04: Editor-Teile (editor_parts.json)
 
 
 static func data() -> Dictionary:
 	if _data.is_empty():
 		_data = JSON.parse_string(FileAccess.get_file_as_string(TEMPLATES_PATH))
 		_parts = JSON.parse_string(FileAccess.get_file_as_string(PARTS_DIR + "parts.json"))
+		var ep: String = PARTS_DIR + "editor_parts.json"
+		_editor = JSON.parse_string(FileAccess.get_file_as_string(ep)) if FileAccess.file_exists(ep) else {}
 	return _data
 
 
@@ -27,7 +30,15 @@ static func get_template(tid: String) -> Dictionary:
 
 static func part_info(tid: String, part: String) -> Dictionary:
 	data()
-	return _parts.get(tid, {}).get(part, {})
+	var p: Dictionary = _parts.get(tid, {})
+	if p.has(part):
+		return p[part]
+	return _editor.get(tid, {}).get(part, {})
+
+
+## Gibt es dieses Teil für die Schablone? (Rig-Teile + Editor-Teile)
+static func has_part(tid: String, part: String) -> bool:
+	return not part_info(tid, part).is_empty()
 
 
 ## Sitz-Geometrie der Schablone (sit_drop_cm, shoe_h_cm, sit_thigh_cm).

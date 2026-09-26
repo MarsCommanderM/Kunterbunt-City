@@ -60,7 +60,7 @@
 		"ok": true
 	},
 	{
-		"detail": "23.0 cm",
+		"detail": "23.6 cm",
 		"name": "Füße des Kindes baumeln über dem Boden (> 5 cm)",
 		"ok": true
 	},
@@ -80,7 +80,7 @@
 		"ok": true
 	},
 	{
-		"detail": "-0.0 cm",
+		"detail": "0.6 cm",
 		"name": "Füße der Erwachsenen stehen auf dem Boden (±3 cm)",
 		"ok": true
 	},
@@ -90,12 +90,12 @@
 		"ok": true
 	},
 	{
-		"detail": "92 × 44 cm",
+		"detail": "91 × 45 cm",
 		"name": "Kleinkind LIEGT (breiter als hoch)",
 		"ok": true
 	},
 	{
-		"detail": "44.2 cm",
+		"detail": "42.7 cm",
 		"name": "Liegefläche = 45 cm (Betthöhe ±4)",
 		"ok": true
 	},
