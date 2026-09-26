@@ -1,0 +1,228 @@
+{
+ "version": 2,
+ "rules": [
+  {
+   "type": "lt",
+   "a": "food_egg",
+   "b": "food_apple"
+  },
+  {
+   "type": "lt",
+   "a": "food_apple",
+   "b": "kitchen_mug"
+  },
+  {
+   "type": "lt",
+   "a": "kitchen_mug",
+   "b": "food_carrot"
+  },
+  {
+   "type": "lt",
+   "a": "food_carrot",
+   "b": "toy_football"
+  },
+  {
+   "type": "lt",
+   "a": "toy_football",
+   "b": "toy_beachball"
+  },
+  {
+   "type": "lt",
+   "a": "food_apple",
+   "b": "toy_football"
+  },
+  {
+   "type": "lt",
+   "a": "toy_teddy",
+   "b": "pet_dog_medium"
+  },
+  {
+   "type": "lt",
+   "a": "pet_hamster",
+   "b": "pet_rabbit"
+  },
+  {
+   "type": "lt",
+   "a": "pet_rabbit",
+   "b": "pet_cat"
+  },
+  {
+   "type": "lt",
+   "a": "pet_cat",
+   "b": "pet_dog_medium"
+  },
+  {
+   "type": "lt",
+   "a": "pet_dog_small",
+   "b": "home_table_dining"
+  },
+  {
+   "type": "lt",
+   "a": "pet_dog_medium",
+   "b": "home_table_dining"
+  },
+  {
+   "type": "lt",
+   "a": "pet_dog_large",
+   "b": "home_table_dining"
+  },
+  {
+   "type": "lt",
+   "a": "pet_cat",
+   "b": "home_table_coffee"
+  },
+  {
+   "type": "lt",
+   "a": "home_table_coffee",
+   "b": "home_table_dining"
+  },
+  {
+   "type": "lt",
+   "a": "home_table_dining",
+   "b": "fix_counter"
+  },
+  {
+   "type": "lt",
+   "a": "fix_counter",
+   "b": "char_child"
+  },
+  {
+   "type": "lt",
+   "a": "home_chair",
+   "b": "char_child"
+  },
+  {
+   "type": "lt",
+   "a": "char_toddler",
+   "b": "char_child"
+  },
+  {
+   "type": "lt",
+   "a": "char_child",
+   "b": "char_teen"
+  },
+  {
+   "type": "lt",
+   "a": "char_teen",
+   "b": "char_adult"
+  },
+  {
+   "type": "lt",
+   "a": "char_adult",
+   "b": "fix_door"
+  },
+  {
+   "type": "lt",
+   "a": "home_wardrobe",
+   "b": "fix_room_height"
+  },
+  {
+   "type": "lt",
+   "a": "fix_fridge",
+   "b": "fix_door"
+  },
+  {
+   "type": "lt",
+   "a": "sport_bat",
+   "b": "char_toddler"
+  },
+  {
+   "type": "lt",
+   "a": "item_book",
+   "b": "kitchen_blender"
+  },
+  {
+   "type": "lt",
+   "a": "school_desk_kid",
+   "b": "home_table_dining"
+  },
+  {
+   "type": "lt",
+   "a": "school_chair_kid",
+   "b": "home_chair"
+  },
+  {
+   "type": "lt",
+   "a": "toy_bicycle_kid",
+   "b": "garage_bike_adult"
+  },
+  {
+   "type": "lt",
+   "a": "pet_pony",
+   "b": "char_adult"
+  },
+  {
+   "type": "lt",
+   "a": "zoo_penguin",
+   "b": "char_toddler"
+  },
+  {
+   "type": "lt",
+   "a": "zoo_lion",
+   "b": "char_child"
+  },
+  {
+   "type": "lt",
+   "a": "char_adult",
+   "b": "zoo_elephant"
+  },
+  {
+   "type": "lt",
+   "a": "zoo_elephant",
+   "b": "zoo_giraffe"
+  },
+  {
+   "type": "lt",
+   "a": "garage_car",
+   "b": "fix_door"
+  },
+  {
+   "type": "hold_max",
+   "hold": "one_hand",
+   "max_h_cm": 150,
+   "note": "Einhand-Items: max. 150 cm (Hockeyschläger/Krücke), sonst two_hands/none"
+  },
+  {
+   "type": "hold_max",
+   "hold": "two_hands",
+   "max_h_cm": 60
+  },
+  {
+   "type": "surface_fit",
+   "surface": "home_table_dining",
+   "placement": "table",
+   "max_h_cm": 60,
+   "note": "alles was auf Tische gehört, max. 60 cm"
+  },
+  {
+   "type": "category_range",
+   "category": "food",
+   "min_h_cm": 2,
+   "max_h_cm": 35
+  },
+  {
+   "type": "category_range",
+   "category": "kitchen",
+   "min_h_cm": 1.5,
+   "max_h_cm": 45
+  },
+  {
+   "type": "category_range",
+   "category": "pet",
+   "min_h_cm": 5,
+   "max_h_cm": 130
+  },
+  {
+   "type": "category_range",
+   "category": "character",
+   "min_h_cm": 50,
+   "max_h_cm": 190
+  },
+  {
+   "type": "seat_below_table",
+   "seat": "home_chair",
+   "table": "home_table_dining",
+   "min_gap_cm": 20
+  }
+ ]
+}
