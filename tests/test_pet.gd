@@ -43,17 +43,27 @@ func test_dog_in_front_of_table_stays_smaller() -> void:
 	assert_lt(dog.global_rect().size.y, table.global_rect().size.y, "auch mit Tiefen-Vorteil kleiner")
 
 
-func test_follows_the_nearest_character_and_stops_at_50cm() -> void:
+func test_follows_the_nearest_character_and_keeps_distance() -> void:
 	var girl: ItemNode = ItemSpawner.character_on_floor(k.room, "char_girl_01", 200.0, 50.0)
 	var dog: PetNode = ItemSpawner.on_floor(k.room, &"pet_dog_brown", 500.0, 60.0)
+	dog._rng.seed = 4242                     # reproduzierbar: gleicher Seed → gleicher Weg
 	assert_eq(dog.mode, PetNode.Mode.IDLE)
 	var d0: float = dog.position.distance_to(girl.position)
 	assert_true(d0 > PetNode.FOLLOW_START_CM, "Startabstand %.0f cm > 110 cm" % d0)
-	for _i: int in 600:
+	var min_d: float = INF
+	var late: float = 0.0                    # Abstand am Ende (300 Frames) → Ø
+	for i: int in 900:
 		dog.tick(1.0 / 60.0)
-	var d1: float = dog.position.distance_to(girl.position)
-	assert_true(d1 < d0 - 50.0, "Hund läuft hinterher: %.0f → %.0f cm" % [d0, d1])
-	assert_true(d1 >= PetNode.FOLLOW_STOP_CM - 2.0, "bleibt bei ~50 cm stehen, läuft nicht in die Figur")
+		var d: float = dog.position.distance_to(girl.position)
+		min_d = minf(min_d, d)
+		if i >= 600:
+			late += d
+	assert_lt(min_d, d0 - 50.0, "Hund läuft hinterher: %.0f → %.0f cm" % [d0, min_d])
+	assert_true(min_d >= PetNode.MIN_FRIEND_CM - 2.0,
+		"Hund läuft nie in die Figur hinein (kleinster Abstand %.1f cm)" % min_d)
+	var mean: float = late / 300.0
+	assert_true(mean < PetNode.FOLLOW_START_CM,
+		"bleibt in Freundesnähe (Ø %.0f cm)" % mean)
 
 
 func test_dog_does_not_leave_the_floor_band() -> void:

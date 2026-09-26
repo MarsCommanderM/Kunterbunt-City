@@ -69,6 +69,136 @@ def norm(x, peak=0.7):
     return peak * x / (np.max(np.abs(x)) + 1e-9)
 
 
+def chirp():
+    """Vogel: kurze, helle Triller-Folge (3 Staccato-Töne, leicht nach oben)."""
+    parts = []
+    for f0, d in ((2600, 0.07), (3200, 0.06), (2900, 0.09)):
+        n = int(SR * d)
+        f = np.linspace(f0, f0 * 1.15, n)
+        tone = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.25 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+        parts.append(tone * env(n, 0.004, 26))
+        parts.append(np.zeros(int(SR * 0.03)))
+    return np.concatenate(parts)
+
+
+def squeak():
+    """Kleines Nagetier: sehr kurzes, hohes Quieken."""
+    n = int(SR * 0.16)
+    f = np.linspace(1500, 2400, n)
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.4 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+    return tone * env(n, 0.004, 24)
+
+
+def wheek():
+    """Meerschweinchen: längeres, aufgeregtes Quieken (Tonhöhe wackelt)."""
+    n = int(SR * 0.5)
+    x = np.linspace(0, 1, n)
+    f = 900 + 700 * np.sin(np.pi * x) + 60 * np.sin(2 * np.pi * 18 * x)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(ph) + 0.5 * np.sin(2 * ph)
+    return tone * np.minimum(1, x * 20) * np.minimum(1, (1 - x) * 8)
+
+
+def bubble():
+    """Fisch: 3 Blubber-Blops (Ton steigt je Blop kurz an)."""
+    parts = []
+    for f0 in (420, 560, 480):
+        n = int(SR * 0.12)
+        f = np.linspace(f0, f0 * 2.2, n)
+        parts.append(np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.005, 20))
+        parts.append(np.zeros(int(SR * 0.06)))
+    return np.concatenate(parts)
+
+
+def whinny():
+    """Pony: Wiehern – schnelles Vibrato, abfallende Tonhöhe."""
+    n = int(SR * 0.7)
+    x = np.linspace(0, 1, n)
+    vib = 1.0 + 0.12 * np.sin(2 * np.pi * 22 * x)
+    f = (760 - 260 * x) * vib
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(ph) + 0.6 * np.sin(2 * ph) + 0.3 * np.sin(3 * ph)
+    return tone * np.minimum(1, x * 14) * np.minimum(1, (1 - x) * 4)
+
+
+def dragon_cute():
+    """Mini-Drache: freundliches, kurzes Brummen mit Knister-Funken."""
+    n = int(SR * 0.55)
+    x = np.linspace(0, 1, n)
+    f = (180 + 60 * np.sin(np.pi * x)) * (1.0 + 0.08 * np.sin(2 * np.pi * 15 * x))
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(ph) + 0.7 * np.sin(2 * ph) + 0.35 * np.sin(3 * ph)
+    crackle = noise(0.55, 0.7)[:n] * (np.sin(2 * np.pi * 7 * x) ** 2) * 0.25
+    return (tone + crackle) * np.minimum(1, x * 10) * np.minimum(1, (1 - x) * 5)
+
+
+def sparkle():
+    """Einhorn: 5 glitzernde Glockentöne (aufsteigend)."""
+    parts = []
+    for i, f0 in enumerate((1180, 1480, 1760, 2220, 2640)):
+        n = int(SR * 0.22)
+        parts.append(modes([f0, f0 * 2.01], 0.22, [12, 16], [1, 0.4]))
+        if i < 4:
+            parts.append(np.zeros(int(SR * 0.05)))
+    return np.concatenate(parts)
+
+
+def purr():
+    """Katze schnurrt: 25-Hz-Amplitudenmodulation über einem tiefen Brummen."""
+    n = int(SR * 0.9)
+    x = np.arange(n) / SR
+    am = 0.5 + 0.5 * np.sin(2 * np.pi * 25 * x)
+    return (np.sin(2 * np.pi * 62 * x) + 0.4 * np.sin(2 * np.pi * 124 * x)) * am * np.minimum(1, x * 6) * np.minimum(1, (1 - x) * 6)
+
+
+def hiss_soft():
+    """Schildkröte: sanftes Zischen (kurz, leise)."""
+    n = int(SR * 0.3)
+    return noise(0.3, 0.55)[:n] * env(n, 0.03, 9)
+
+
+def ui_tap():
+    """Weicher UI-Klick (kleiner Pop)."""
+    n = int(SR * 0.07)
+    f = np.linspace(700, 1250, n)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.002, 40)
+
+
+def ui_confirm():
+    """Bestätigung: zwei Töne aufwärts (C–G), warm."""
+    parts = []
+    for f0, d in ((523.25, 0.12), (783.99, 0.22)):
+        n = int(SR * d)
+        parts.append((np.sin(2 * np.pi * f0 * np.arange(n) / SR) + 0.35 * np.sin(4 * np.pi * f0 * np.arange(n) / SR)) * env(n, 0.004, 9))
+    return np.concatenate(parts)
+
+
+def ui_back():
+    """Zurück: zwei Töne abwärts."""
+    parts = []
+    for f0, d in ((659.25, 0.1), (440.0, 0.18)):
+        n = int(SR * d)
+        parts.append(np.sin(2 * np.pi * f0 * np.arange(n) / SR) * env(n, 0.004, 11))
+    return np.concatenate(parts)
+
+
+def dice_roll():
+    """Würfel: 7 kurze Rassel-Schläge."""
+    parts = []
+    for i in range(7):
+        n = int(SR * 0.05)
+        parts.append(noise(0.05, 0.5)[:n] * env(n, 0.001, 90) * (0.6 + 0.4 * np.sin(i)))
+        parts.append(np.zeros(int(SR * (0.045 + 0.02 * i))))
+    return np.concatenate(parts)
+
+
+def shutter():
+    """Foto-Auslöser (Album)."""
+    n = int(SR * 0.16)
+    return np.concatenate([noise(0.05, 0.8)[:int(SR * 0.05)] * env(int(SR * 0.05), 0.001, 120),
+                           np.zeros(int(SR * 0.02)),
+                           noise(0.09, 0.6)[:int(SR * 0.09)] * env(int(SR * 0.09), 0.001, 70)])
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -85,6 +215,22 @@ SOUNDS = {
                                               noise(0.07, 0.3) * env(int(SR * 0.07), 0.002, 40)]), 0.5),
     "open": lambda: norm(noise(0.22, 0.08) * env(int(SR * 0.22), 0.05, 10) + 0.5 * modes([180], 0.22, [20]), 0.5),
     "close": lambda: norm(modes([120, 260], 0.18, [35, 50]) + 0.4 * noise(0.18, 0.2) * env(int(SR * 0.18), 0.001, 50), 0.6),
+    # Phase 04: Tierstimmen für den Haustier-Editor + UI-Sounds
+    "pet_bird_chirp": lambda: norm(chirp(), 0.5),
+    "pet_rabbit_squeak": lambda: norm(squeak(), 0.45),
+    "pet_hamster_squeak": lambda: norm(squeak(), 0.4),
+    "pet_guinea_pig_wheek": lambda: norm(wheek(), 0.5),
+    "pet_fish_bubble": lambda: norm(bubble(), 0.45),
+    "pet_turtle_hiss": lambda: norm(hiss_soft(), 0.35),
+    "pet_pony_whinny": lambda: norm(whinny(), 0.55),
+    "pet_dragon_roar": lambda: norm(dragon_cute(), 0.55),
+    "pet_unicorn_sparkle": lambda: norm(sparkle(), 0.4),
+    "pet_cat_purr": lambda: norm(purr(), 0.45),
+    "ui_tap": lambda: norm(ui_tap(), 0.35),
+    "ui_confirm": lambda: norm(ui_confirm(), 0.4),
+    "ui_back": lambda: norm(ui_back(), 0.35),
+    "dice_roll": lambda: norm(dice_roll(), 0.5),
+    "shutter": lambda: norm(shutter(), 0.5),
     "deny": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(520, 300, int(SR * 0.16))) / SR) * env(int(SR * 0.16), 0.005, 14), 0.4),
 }
 

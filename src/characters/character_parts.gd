@@ -96,6 +96,11 @@ static func palette_groups() -> Array:
 	return out
 
 
+## Welche Palette passt zu welchem Slot? (öffentlich: der Editor zeigt sie an)
+static func group_for(slot: String) -> String:
+	return _group_for(slot)
+
+
 static func random_colors(group: String, rng: RandomNumberGenerator) -> Array:
 	var c: Array = palette_colors(group)
 	return [c[rng.randi() % c.size()]] if not c.is_empty() else ["#ffffff"]

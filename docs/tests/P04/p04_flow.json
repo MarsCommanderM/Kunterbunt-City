@@ -1,0 +1,18 @@
+{
+	"bereich_betreten": true,
+	"eigene_figur_cm": 125.2,
+	"eigene_figur_da": true,
+	"fertig_erst_nach_hautton": true,
+	"galerie_nach_fertig": true,
+	"gespeicherte_figuren": 1,
+	"gespeicherte_tiere": 1,
+	"haustier": "pet_cat",
+	"haustier_art": "pet_cat",
+	"haustier_cm": 28.0,
+	"haustier_da": true,
+	"haustier_kleiner_als_tisch": true,
+	"pflicht_editor_ohne_figur": true,
+	"schablone": "kid",
+	"sichtbar": true,
+	"spielen_frei": true
+}

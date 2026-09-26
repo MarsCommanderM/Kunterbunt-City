@@ -19,6 +19,7 @@ Settings="*res://src/core/settings.gd"
 ItemDB="*res://src/core/item_db.gd"
 SaveSystem="*res://src/core/save_system.gd"
 Game="*res://src/core/game.gd"
+Ui="*res://src/ui/ui.gd"
 SceneRouter="*res://src/core/scene_router.gd"
 AudioBus="*res://src/core/audio_bus.gd"
 

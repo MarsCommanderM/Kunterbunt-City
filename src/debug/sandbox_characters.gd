@@ -53,11 +53,37 @@ func _populate() -> void:
 	_keep(ItemSpawner.on_item(table, &"food_icecream_3", 0.1))
 	_keep(ItemSpawner.on_item(table, &"home_mug_pink_dots", 0.3))
 	for c: Array in FIGURES:
-		spawned[StringName(c[0])] = ItemSpawner.character_on_floor(room, c[0], c[1], c[2])
+		var tid: String = String(c[0])
+		var me: CharacterData = Game.active_character()
+		if tid == "kid" and me != null and me.is_complete():
+			# Eigene Figur aus dem Editor (P04): Aussehen von ihr, GRÖSSE aus der Schablone.
+			spawned[&"me"] = ItemSpawner.character_on_floor(room, me.template_id, c[1], c[2], me.look())
+			continue
+		spawned[StringName(tid)] = ItemSpawner.character_on_floor(room, tid, c[1], c[2])
 	for f: Array in FURNITURE_2:
 		spawned[StringName(f[0] + "_2")] = ItemSpawner.on_floor(room, f[0], f[1], f[2])
+	_spawn_loose()
+
+
+## Haustiere: die eigenen (aus dem Haustier-Editor) ersetzen die Platzhalter-Tiere.
+func _spawn_loose() -> void:
+	var mine: Array = []
+	for pid: Variant in Game.active_pets:
+		var pd: PetData = Game.pet_by_id(pid)
+		if pd != null:
+			mine.append(pd)
 	for l: Array in LOOSE:
-		_keep(ItemSpawner.on_floor(room, l[0], l[1], l[2]))
+		var id: String = String(l[0])
+		var pick: PetData = null
+		if mine.size() > 0 and (id == "pet_dog_brown" or id == "pet_cat"):
+			pick = mine.pop_front()
+		if pick == null:
+			_keep(ItemSpawner.on_floor(room, l[0], l[1], l[2]))
+			continue
+		var pet: ItemNode = _keep(ItemSpawner.on_floor(room, StringName(pick.species_id), l[1], l[2]))
+		# Nur die neuen Zonen-Sprites (P04) werden eingefärbt – fertige Stil-C-Bilder nicht.
+		if pet != null and PetSpecies.ids().has(pick.species_id):
+			CharacterLook.apply(pet.sprite, [Color(pick.fur), Color(pick.fur2), Color(pick.collar)])
 
 
 func _keep(it: ItemNode) -> ItemNode:

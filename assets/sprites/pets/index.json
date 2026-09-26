@@ -1,0 +1,223 @@
+{
+ "pet_dog_small": {
+  "label": "Hund · klein",
+  "icon": "dog",
+  "w_cm": 30.0,
+  "h_cm": 28.0,
+  "size_px": [
+   480,
+   448
+  ],
+  "colors": [
+   "#c98a4b",
+   "#f2e0c8",
+   "#e2574c"
+  ],
+  "voice": "pet_dog_bark",
+  "sprite": "assets/sprites/pets/pet_dog_small.png"
+ },
+ "pet_dog_medium": {
+  "label": "Hund · mittel",
+  "icon": "dog",
+  "w_cm": 45.0,
+  "h_cm": 45.0,
+  "size_px": [
+   512,
+   512
+  ],
+  "colors": [
+   "#b8763f",
+   "#f0dcbe",
+   "#4f9bd8"
+  ],
+  "voice": "pet_dog_bark",
+  "sprite": "assets/sprites/pets/pet_dog_medium.png"
+ },
+ "pet_dog_large": {
+  "label": "Hund · groß",
+  "icon": "dog",
+  "w_cm": 60.0,
+  "h_cm": 65.0,
+  "size_px": [
+   473,
+   512
+  ],
+  "colors": [
+   "#8f6a4a",
+   "#e9d7bd",
+   "#6cbf6b"
+  ],
+  "voice": "pet_dog_bark",
+  "sprite": "assets/sprites/pets/pet_dog_large.png"
+ },
+ "pet_cat": {
+  "label": "Katze",
+  "icon": "cat",
+  "w_cm": 30.0,
+  "h_cm": 28.0,
+  "size_px": [
+   480,
+   448
+  ],
+  "colors": [
+   "#b9b3c4",
+   "#f6f0f6",
+   "#e2574c"
+  ],
+  "voice": "pet_cat_meow",
+  "sprite": "assets/sprites/pets/pet_cat.png"
+ },
+ "pet_rabbit": {
+  "label": "Kaninchen",
+  "icon": "bunny",
+  "w_cm": 28.0,
+  "h_cm": 22.0,
+  "size_px": [
+   448,
+   352
+  ],
+  "colors": [
+   "#e8e2e6",
+   "#fdf7fb",
+   "#8fd3c1"
+  ],
+  "voice": "pet_rabbit_squeak",
+  "sprite": "assets/sprites/pets/pet_rabbit.png"
+ },
+ "pet_bird": {
+  "label": "Vogel",
+  "icon": "bird",
+  "w_cm": 10.0,
+  "h_cm": 15.0,
+  "size_px": [
+   160,
+   240
+  ],
+  "colors": [
+   "#6fc3e8",
+   "#ffe6a8",
+   "#e2574c"
+  ],
+  "voice": "pet_bird_chirp",
+  "sprite": "assets/sprites/pets/pet_bird.png"
+ },
+ "pet_hamster": {
+  "label": "Hamster",
+  "icon": "hamster",
+  "w_cm": 10.0,
+  "h_cm": 7.0,
+  "size_px": [
+   160,
+   112
+  ],
+  "colors": [
+   "#e0b071",
+   "#fbeed7",
+   "#e2574c"
+  ],
+  "voice": "pet_hamster_squeak",
+  "sprite": "assets/sprites/pets/pet_hamster.png"
+ },
+ "pet_guinea_pig": {
+  "label": "Meerschweinchen",
+  "icon": "hamster",
+  "w_cm": 22.0,
+  "h_cm": 12.0,
+  "size_px": [
+   352,
+   192
+  ],
+  "colors": [
+   "#d8a15f",
+   "#f7e6c8",
+   "#8fd3c1"
+  ],
+  "voice": "pet_guinea_pig_wheek",
+  "sprite": "assets/sprites/pets/pet_guinea_pig.png"
+ },
+ "pet_fish": {
+  "label": "Fisch",
+  "icon": "fish",
+  "w_cm": 10.0,
+  "h_cm": 6.0,
+  "size_px": [
+   160,
+   96
+  ],
+  "colors": [
+   "#f0a24b",
+   "#ffd98a",
+   "#6fc3e8"
+  ],
+  "voice": "pet_fish_bubble",
+  "sprite": "assets/sprites/pets/pet_fish.png"
+ },
+ "pet_turtle": {
+  "label": "Schildkröte",
+  "icon": "hamster",
+  "w_cm": 22.0,
+  "h_cm": 10.0,
+  "size_px": [
+   352,
+   160
+  ],
+  "colors": [
+   "#7fbf6a",
+   "#e8dcae",
+   "#e2574c"
+  ],
+  "voice": "pet_turtle_hiss",
+  "sprite": "assets/sprites/pets/pet_turtle.png"
+ },
+ "pet_pony": {
+  "label": "Pony",
+  "icon": "bunny",
+  "w_cm": 150.0,
+  "h_cm": 125.0,
+  "size_px": [
+   512,
+   427
+  ],
+  "colors": [
+   "#f0dcc0",
+   "#f7efe0",
+   "#c98ad8"
+  ],
+  "voice": "pet_pony_whinny",
+  "sprite": "assets/sprites/pets/pet_pony.png"
+ },
+ "pet_mini_dragon": {
+  "label": "Mini-Drache",
+  "icon": "dog",
+  "w_cm": 40.0,
+  "h_cm": 35.0,
+  "size_px": [
+   512,
+   448
+  ],
+  "colors": [
+   "#8fd3c1",
+   "#e8f6ef",
+   "#f0a24b"
+  ],
+  "voice": "pet_dragon_roar",
+  "sprite": "assets/sprites/pets/pet_mini_dragon.png"
+ },
+ "pet_mini_unicorn": {
+  "label": "Mini-Einhorn",
+  "icon": "bunny",
+  "w_cm": 70.0,
+  "h_cm": 60.0,
+  "size_px": [
+   512,
+   439
+  ],
+  "colors": [
+   "#fdf3f7",
+   "#ffffff",
+   "#f5c8e8"
+  ],
+  "voice": "pet_unicorn_sparkle",
+  "sprite": "assets/sprites/pets/pet_mini_unicorn.png"
+ }
+}

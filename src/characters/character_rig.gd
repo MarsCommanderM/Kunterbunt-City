@@ -350,6 +350,48 @@ func on_drag_end() -> void:
 	refresh_pose(false)
 
 
+# ---------------------------------------------------------------- Aussehen tauschen (P04-T03)
+
+## Neues Aussehen (Teile + Farben + Hautton) auf die bestehende Figur anwenden – ohne sie neu zu
+## bauen. Die GRÖSSE bleibt immer die der Schablone (Regel: nie aus Teilen oder Farben).
+func apply_look(new_look: Dictionary) -> void:
+	look = new_look
+	var e: String = emotion
+	for name: String in ["Legs", "Shoes", "Top", "HairBack", "Head", "Eyes", "Mouth",
+			"HairFront", "Accessory", "Aid"]:
+		var sp: Sprite2D = _layers.get(name)
+		if sp == null:
+			continue
+		_set_part(sp, _part_name(name))
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, name))
+	for arm: Node2D in [arm_back, arm_front]:
+		for c: Node in arm.get_children():
+			if not (c is Sprite2D):
+				continue
+			var sp2: Sprite2D = c
+			if not String(sp2.name).ends_with("Skin") and not String(sp2.name).ends_with("Palm") \
+					and not String(sp2.name).ends_with("Fingers"):
+				_set_part(sp2, _part_name(String(sp2.name)))
+			CharacterLook.apply(sp2, CharacterLook.colors_for(look, String(sp2.name)))
+	for i: int in 2:
+		var f: Sprite2D = _layers.get("Fingers%d" % i)
+		if f != null:
+			CharacterLook.apply(f, CharacterLook.colors_for(look, "Fingers%d" % i))
+	set_emotion(e)
+	_rect_cache = Rect2()
+	refresh_pose(false)
+	queue_redraw()
+
+
+func _part_name(layer: String) -> String:
+	if layer == "Head":
+		return "head"
+	if layer == "Legs":
+		return CharacterLook.part_for(template_id, look, "Legs",
+			"sit" if body_pose == "sit" else "")
+	return CharacterLook.part_for(template_id, look, layer)
+
+
 # ---------------------------------------------------------------- Gesicht (P03-T07)
 
 func set_emotion(e: String) -> void:

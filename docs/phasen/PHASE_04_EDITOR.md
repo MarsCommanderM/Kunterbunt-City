@@ -17,12 +17,12 @@
 | P04-T10 | Platzhalter-Teile: je Slot 5 Varianten als Platzhalter (echte Stil-C-Teile kommen über die Pipeline in Phase 06/07) |
 
 ## Akzeptanzkriterien
-- [ ] Ohne eigene Figur ist kein Bereich betretbar (Test)
-- [ ] 100 Figuren speichern/laden ohne Ruckeln
-- [ ] Umfärben funktioniert pro Teil mit 3 Zonen
-- [ ] Größe der Figur hängt nur von der Schablone ab (Kind immer 125 cm)
+- [x] Ohne eigene Figur ist kein Bereich betretbar (Test `test_gallery_pets_ui`, `p04_flow.json`)
+- [x] 100 Figuren speichern/laden ohne Ruckeln (5,0 ms / 0,05 MB)
+- [x] Umfärben funktioniert pro Teil mit 3 Zonen (Shader + Test `test_editor_ui`)
+- [x] Größe der Figur hängt nur von der Schablone ab (Kind immer 125 cm – jedes Teil geprüft)
 - [ ] Editor ist ohne Lesen bedienbar (👤 Kindertest mit 1 Kind)
-- [ ] `check.sh` grün
+- [x] `check.sh` grün (Maßstab ✅ · pytest 54/54 · GUT 217/217)
 
 ## 👤 Mensch
 Körper-Schablonen im Stil C generieren (Stil-Guide §3C) → erst in Phase 06 durch die Pipeline.

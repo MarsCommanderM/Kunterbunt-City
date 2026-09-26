@@ -97,13 +97,27 @@ func test_random_look_is_reproducible_and_valid() -> void:
 
 
 func test_pet_round_trip() -> void:
-	var p: PetData = PetData.create("pet_dog_brown")
+	var p: PetData = PetData.create("pet_dog_medium")
 	p.pet_name = "Bello"
-	p.pet_trait = "hungry"
+	p.pet_trait = "greedy"
 	p.pattern = "spots"
 	SaveSystem.save_pets([p])
 	var back: Array = SaveSystem.load_pets()
 	assert_eq(back.size(), 1)
 	var p0 := back[0] as PetData
-	assert_eq(p0.pet_trait, "hungry")
+	assert_eq(p0.pet_trait, "greedy")
+	assert_eq(p0.species_id, "pet_dog_medium")
+	assert_eq(p0.pet_name, "Bello")
 	assert_true(p0.is_complete())
+
+
+func test_pet_arten_und_filter() -> void:
+	## Unbekannte Art/Zug/Muster dürfen den Speicherstand nicht kaputt machen (P04-T09).
+	var p: PetData = PetData.create("gibt_es_nicht")
+	assert_eq(p.species_id, "pet_dog_medium")
+	var wild: PetData = PetData.from_dict({"id": "p_1", "species": "pet_cat", "trait": "hungry",
+		"name": "Mauz", "fur": "#ffffff"})
+	assert_eq(wild.pet_trait, "playful", "unbekannter Zug → sicherer Standard")
+	assert_eq(wild.species_id, "pet_cat")
+	assert_eq(wild.display_name(), "Mauz")
+	assert_eq(PetData.create("pet_cat").display_name(), "Katze")

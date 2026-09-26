@@ -10,6 +10,7 @@ const SPEED_CM_S: float = 60.0
 const FOLLOW_START_CM: float = 110.0
 const FOLLOW_STOP_CM: float = 50.0
 const WANDER_CM: float = 120.0
+const MIN_FRIEND_CM: float = 40.0      # beim Schlendern nie näher als 40 cm an die Figur
 
 ## Global aus in Tests/Beweis-Runnern (sonst laufen Tiere zwischen zwei Screenshots weiter).
 static var autonomous: bool = true
@@ -83,7 +84,16 @@ func tick(dt: float) -> void:
 			_timer -= dt
 			if _timer <= 0.0:
 				var base: Vector2 = friend.position if friend else position
-				target = r.floor_band.clamp_point(base + Vector2(_rng.randf_range(-WANDER_CM, WANDER_CM), _rng.randf_range(-25.0, 25.0)))
+				var wander: Vector2 = base + Vector2(_rng.randf_range(-WANDER_CM, WANDER_CM),
+					_rng.randf_range(-25.0, 25.0))
+				# Nie IN die Figur hinein laufen: beim Schlendern mindestens MIN_FRIEND_CM Abstand.
+				if friend != null:
+					var off: Vector2 = wander - friend.position
+					if off.length() < MIN_FRIEND_CM:
+						var dir: Vector2 = off.normalized() if off.length_squared() > 0.01 \
+							else Vector2(signf(position.x - friend.position.x), 1.0).normalized()
+						wander = friend.position + dir * MIN_FRIEND_CM
+				target = r.floor_band.clamp_point(wander)
 				mode = Mode.WALK
 		_:
 			var to: Vector2 = target - position
@@ -93,7 +103,26 @@ func tick(dt: float) -> void:
 				mode = Mode.IDLE
 				_timer = _rng.randf_range(2.0, 5.0)
 			else:
-				position += to.normalized() * step
+				var dir: Vector2 = to.normalized()
+				# Persönlicher Abstand: kommt die Figur auf dem Weg zu nah, weicht der Hund im
+				# Bogen aus – er läuft NIE durch sie hindurch.
+				if friend != null:
+					var away: Vector2 = position - friend.position
+					var ad: float = away.length()
+					if ad < MIN_FRIEND_CM:
+						var push: Vector2 = (away / maxf(ad, 0.001)) if ad > 0.001 \
+							else Vector2(1.0, 0.0)
+						dir = (dir + push * 2.0 * clampf(
+							(MIN_FRIEND_CM - ad) / MIN_FRIEND_CM, 0.0, 1.0)).normalized()
+				position += dir * step
+				# Harte Grenze (zusätzlich zum Ausweichen): nie näher als MIN_FRIEND_CM.
+				if friend != null:
+					var gap: Vector2 = position - friend.position
+					var gd: float = gap.length()
+					if gd < MIN_FRIEND_CM:
+						var out: Vector2 = (gap / maxf(gd, 0.001)) if gd > 0.001 \
+							else Vector2(1.0, 0.0)
+						position = friend.position + out * MIN_FRIEND_CM
 				if absf(to.x) > 1.0:
 					sprite.flip_h = to.x > 0.0
 				_walk_t += dt

@@ -4,9 +4,9 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **04 · Charakter-Editor** |
-| Nächste Task | P04-T03 (Editor-Oberfläche) – T01/T02/T04/T10 fertig |
-| Letzter grüner check.sh | 2026-09-26 (Phase 04, Teil 1) |
+| Aktuelle Phase | **05 · Startmenü (Stadtkarte), Speichern, Bereichswechsel** |
+| Nächste Task | P05-T01 (Splash + Pflicht-Prüfung) · P05-T02 (Stadtkarte mit 11 Bereichen) |
+| Letzter grüner check.sh | 2026-09-26 (Phase 04 komplett) |
 | Version | 0.0.4 |
 
 ## Phasen
@@ -16,9 +16,8 @@
 | 01 Welt-Maßstab | ✅ fertig (👤 Blick-Check offen) | Log 2026-09-26 |
 | 02 Items & Drag | ✅ fertig (👤 Anfass-Gefühl + GPU-FPS offen) | Log 2026-09-26 |
 | 03 Figuren & Tiere | ✅ fertig (👤 Kindertest offen) | Log 2026-09-26 |
-| 04 Editor | 🔨 Teil 1: Daten/Teile/Farben (UI folgt) | Log 2026-09-26 |
-| 04 Editor | ⏳ | – |
-| 05 Menü & Speichern | ⏳ | – |
+| 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
+| 05 Menü & Speichern | 🔨 in Arbeit | – |
 | 06 Asset-Pipeline | ⏳ | – |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
@@ -46,7 +45,12 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 01 | Web-Export mit Test-Küche | ✅ index.pck 3,2 MB |
 | 2026-09-26 | 02 | check.sh | Maßstab ✅ (155 Einträge, 61 Items) · pytest 15/15 ✅ · GUT 129/129 ✅ (850 Asserts) |
 | 2026-09-26 | 03 | check.sh | Maßstab ✅ (155 Einträge, 65 Items) · pytest 31/31 ✅ · GUT 169/169 ✅ (1019 Asserts) |
-| 2026-09-26 | 04 | check.sh | Maßstab ✅ · pytest 37/37 ✅ · GUT 184/184 ✅ (1547 Asserts) |
+| 2026-09-26 | 04 | check.sh | Maßstab ✅ (77 Items) · pytest 54/54 ✅ · GUT 217/217 ✅ (2642 Asserts) |
+| 2026-09-26 | 04 | End-to-End `p04_flow_runner.gd` | App-Start → Pflicht-Editor → Galerie → Bereich: eigene Figur **125,2 cm** (Kind), eigene Katze **28,0 cm** < Tisch, Figur im Bild |
+| 2026-09-26 | 04 | Editor-Bedienung im Bild | ✓-Knopf erst grau (Hautton fehlt) → orange · Hautton 1,6 %, Oberteil 4,6 %, 🎲 15,5 % Bildänderung in der Vorschau |
+| 2026-09-26 | 04 | Haustier-Editor | 13 Arten (Maßstab-Tabelle 6–125 cm), 3 Fell-Zonen, 5 Muster, 6 Halsbänder, 5 Charakterzüge, je Art eigene Stimme |
+| 2026-09-26 | 04 | Namenswahl + Eltern-Tor | 238 Namen als Kacheln · 🎲 · freie Eingabe erst nach Tor (Rechenaufgabe **oder** 3 Punkte 3 s halten) |
+| 2026-09-26 | 04 | check.sh (Teil 1) | Maßstab ✅ · pytest 37/37 ✅ · GUT 184/184 ✅ (1547 Asserts) |
 | 2026-09-26 | 04 | 100 Figuren speichern + laden | **5,0 ms**, 0,05 MB (Ziel: kein Ruckeln) |
 | 2026-09-26 | 04 | Teile-Katalog (`p04_lookbook.gd`) | 198 Teile · 8 Slots × 5 Varianten · 10 Palettenfarben: 9/10 Farb-Richtungen im Bild korrekt zugeordnet |
 | 2026-09-26 | 04 | Schablonen-Größen im Bild | Kleinkind : Kind : Erwachsene = 90 : 125 : 172 (±10 % gemessen) |
@@ -55,6 +59,46 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-26 · Phase 04 (Teil 2) · Editor-Oberfläche, Namen, Galerie, Haustiere ✅
+- Erledigt: P04-T03 (Editor-UI), T05 (🎲 + 5 Outfit-Plätze), T06 (Namen + Eltern-Tor),
+  T07 (Pflicht-Ablauf), T08 (Galerie), T09 (Haustier-Editor).
+  - `src/ui/ui.gd` (**Kit**): ein Look für alles – warme Karten, dicke runde Knöpfe (≥ 96 px),
+    Symbole statt Text. Schrift **Baloo 2** (rund, OFL) + Nunito; Theme hängt an der Fensterwurzel.
+  - **63 Icons** aus `tools/make_ui_icons.py` (PIL, 4× übersampelt, ein dunkles Violett → per
+    `modulate` einfärbbar). Kein Emoji-Font nötig – der war im Sandkasten ohnehin nicht da.
+  - `src/ui/character_editor.gd`: links große Vorschau (`FigureStage` mit eigener Mini-Welt +
+    Kamera, Tippen = Gefühl wechseln), rechts 10 Kategorien als **Symbole**, unten die Palette
+    mit Zonen-Wahl (1–3). ✓ bleibt **aus**, bis Schablone + Hautton stehen.
+  - `src/ui/gallery.gd`: unbegrenzt Figuren, Ordner (Alle/Familie/Freunde/Kita/Fantasie),
+    duplizieren, löschen (✓/✕-Symbole), aktive Figur wählen; zweiter Reiter für Tiere.
+  - `src/ui/pet_editor.gd` + `PetSpecies` (`data/pets/species.json`): 13 Arten, Fell/Bauch/
+    Halsband als 3 Shader-Zonen, 5 Muster, 5 Charakterzüge (nur passende je Art), Stimme hörbar.
+  - **13 Haustier-Sprites** (`tools/make_pet_sprites.py`, Stil C, 3 Zonen) + 15 neue Sounds
+    (`tools/make_sfx.py`: Vogel, Kaninchen, Hamster, Meerschweinchen, Fisch, Schildkröte, Pony,
+    Drache, Einhorn, Schnurren + UI-Töne). Tier-Größen kommen aus der Maßstab-Tabelle.
+  - `src/ui/name_picker.gd`: 238 Namen als Kacheln + 🎲; freie Eingabe **nur hinter dem
+    Eltern-Tor** (`parent_gate.gd`: Rechenaufgabe mit Ziffern-Kacheln **oder** 3 Punkte 3 s
+    halten) + lokaler Wortfilter (`name_filter.gd`).
+  - `src/ui/flow.gd`: Splash → „eigene Figur da?“ → Pflicht-Editor → Galerie → Bereich.
+    Ohne vollständige Figur ist kein Bereich betretbar (`Flow.can_play()`, Test).
+  - `src/ui/portrait.gd`: Galerie-Bilder aus einer versteckten Mini-Kamera (Cache; ohne
+    Bildschirm → `can_render() == false`).
+  - Die Sandkasten-Welt spawnt jetzt die **eigene** Figur und die **eigenen** Tiere.
+- Tests (neu): GUT `test_editor_ui` (11), `test_gallery_pets_ui` (10), `test_names_gate` (10)
+  · pytest `test_p04_ui_shots` (21) · Beweis `p04_ui_runner.gd` (10 Bilder) und
+  `p04_flow_runner.gd` (End-to-End + `p04_flow.json`).
+- Messwerte: eigene Figur im Spiel **125,2 cm**, Katze **28,0 cm** (< Tisch 77,8 cm),
+  🎲/Teile/Farben ändern die Vorschau messbar (1,6 % / 4,6 % / 15,5 % der Pixel).
+- Fehler gefunden (nur durch Messen):
+  - `ItemDB.get()` ist `Object.get()` → lieferte stillschweigend `null`. Heißt `get_item()`.
+  - Container-Ketten haben die Vorschau auf 1898 px aufgeblasen (Mindestbreite der Kacheln) →
+    linke Spalte hat jetzt **feste Anker** (720 px) und die Bühne eine feste Größe (660 px).
+  - Der Hund lief beim Schlendern **durch die Figur hindurch** (kleinster Abstand 9,4 cm) →
+    Ausweich-Bogen + harte Grenze von 40 cm (`MIN_FRIEND_CM`), jetzt 40,0 cm.
+  - `String(int)` gibt es in GDScript nicht (Tests) · `find_child` findet nur *owned* Nodes →
+    `find_child(name, true, false)`.
+- 👤 offen: Kindertest „ohne Lesen bedienbar“, echte Stil-C-Körper/Teile (P06).
+- Nächste Task: P05-T01/T02 (Stadtkarte, Startmenü, Speichern).
 ### 2026-09-26 · Phase 04 (Teil 1) · Daten, Teile & Umfärben
 - Erledigt: P04-T01 (Datenformat), T02 (Datenmodell + Speichern), T04 (Umfärben), T10 (Platzhalter-Teile).
   - `tools/make_editor_parts.py`: **198 Teile** für 3 Schablonen. Jedes Teil speichert seine Farbzonen

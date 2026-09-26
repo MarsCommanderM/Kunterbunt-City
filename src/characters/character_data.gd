@@ -73,7 +73,11 @@ func display_name() -> String:
 
 ## Alles, was der CharacterRig zum Bauen braucht.
 func look(out: Dictionary = {}) -> Dictionary:
-	var l: Dictionary = {"skin": skin, "parts": parts.duplicate(true),
+	# Ohne gewählten Hautton (Pflicht-Ablauf) wird ein heller Standard gezeigt – die Figur ist
+	# trotzdem noch NICHT fertig (is_complete() bleibt false).
+	var skin_col: String = skin if not skin.is_empty() else String(
+		CharacterParts.palette_colors("skin")[0])
+	var l: Dictionary = {"skin": skin_col, "parts": parts.duplicate(true),
 		"colors": colors.duplicate(true)}
 	if outfit >= 0 and outfit < outfits.size():
 		var o: Dictionary = outfits[outfit]

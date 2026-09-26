@@ -191,3 +191,33 @@ sichtbar ist: verdeckte Teile (Finger vor dem Apfel) werden korrekt nicht mitgem
 
 Deterministisch: `PetNode.autonomous = false` (Tiere nur per `tick()`), `CharacterRig.animate_poses = false`
 (Posen springen), `AudioBus.clock` als Fake-Uhr, `drag.animate = false`.
+
+## §4.5 Editor, Galerie & Spielfluss (Phase 04)
+| Datei | Aufgabe |
+|---|---|
+| `src/ui/ui.gd` (Klasse `Kit`, Autoload `Ui`) | Farben, Größen, Knöpfe, Kacheln, Symbole – ein Look für das ganze Spiel |
+| `src/ui/figure_stage.gd` | Vorschau: eigene Mini-Welt + Kamera, die Figur passt immer ins Bild |
+| `src/ui/portrait.gd` | Galerie-Bilder aus einer versteckten Kamera (Cache, `can_render()` prüft den Bildschirm) |
+| `src/ui/character_editor.gd` | Editor: Kategorien als Symbole, Teile-Kacheln, Zonen-Palette, 🎲, 5 Outfit-Plätze |
+| `src/ui/name_picker.gd` | 238 Namen als Kacheln + 🎲; freie Eingabe nur hinter dem Eltern-Tor |
+| `src/ui/parent_gate.gd` | Rechenaufgabe **oder** 3 Punkte 3 s halten – beides ohne Lesen |
+| `src/ui/name_filter.gd` | lokaler Wortfilter (kein Netz, kurze Sperrliste) |
+| `src/ui/gallery.gd` | Figuren + Tiere, Ordner, duplizieren, löschen (Symbol-Abfrage), aktive Figur |
+| `src/ui/pet_editor.gd` | Haustier: Art, 3 Fell-Zonen, Muster, Halsband, Charakterzug, Stimme |
+| `src/ui/flow.gd` | Splash → Pflicht-Editor → Galerie → Bereich (`Flow.can_play()`) |
+
+**Regeln (geprüft):**
+1. **Größe nur aus der Schablone.** Jedes Teil und jede Farbe wird einzeln durchgetestet: die
+   Figur bleibt 125 cm (Kind). `tests/test_editor_ui.gd::test_kein_teil_aendert_die_koerpergroesse`.
+2. **Ohne Figur kein Bereich.** `Flow.can_play()` = „mindestens eine vollständige Figur"
+   (Schablone + Hautton). Der ✓-Knopf bleibt sonst grau.
+3. **Ohne Lesen bedienbar.** Jede Aktion hat ein Symbol (63 Icons aus `tools/make_ui_icons.py`);
+   Text ist nur Zusatz. Freie Eingabe → hinter dem Eltern-Tor.
+4. **Umfärben ohne zweite Textur:** `Farbe = R·zone1 + G·zone2 + B·zone3` (`zone_tint.gdshader`).
+   Materialien werden wiederverwendet (kein Müll pro Klick).
+5. **Symbole statt Emoji:** Emoji-Fonts sind auf vielen Geräten nicht da. Alle UI-Symbole und
+   alle Haustier-Sprites entstehen hier (PIL) und sind damit kostenlos und überall gleich.
+
+**Symbole/Icons:** `assets/ui/icons/*.png` (128 px, Alpha, Farbe per `modulate`) aus
+`tools/make_ui_icons.py` · **Schrift:** Baloo 2 (Anzeige) + Nunito (Text), beide OFL.
+

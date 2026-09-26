@@ -83,7 +83,8 @@ static func _fallback(layer: String, look: Dictionary, suffix: String) -> String
 static func colors_for(look: Dictionary, layer: String) -> Array:
 	if FIXED.has(layer):
 		return _to_colors(FIXED[layer])
-	if layer == "Head" or layer.ends_with("Skin") or layer.ends_with("Palm") or layer.ends_with("Fingers"):
+	if layer == "Head" or layer.ends_with("Skin") or layer.ends_with("Palm") \
+			or layer.ends_with("Fingers") or layer.begins_with("Fingers"):
 		return [Color(String(look.get("skin", "#ffd6bf")))]
 	var slot: String = String(SLOT.get(layer, ""))
 	var cols: Array = Array(look.get("colors", {}).get(slot, []))
@@ -103,15 +104,19 @@ static func _to_colors(hexes: Array) -> Array:
 
 
 ## Material mit den Zonenfarben setzen (Shader: Farbe = R·c1 + G·c2 + B·c3).
-static func apply(sprite: Sprite2D, cols: Array) -> void:
-	var mat := ShaderMaterial.new()
-	mat.shader = SHADER
+static func apply(item: CanvasItem, cols: Array) -> void:
+	# Material wiederverwenden: der Editor färbt oft hintereinander um, da wäre ein neues
+	# Material pro Klick Müll.
+	var mat: ShaderMaterial = item.material as ShaderMaterial
+	if mat == null or mat.shader != SHADER:
+		mat = ShaderMaterial.new()
+		mat.shader = SHADER
 	for i: int in mini(3, cols.size()):
 		mat.set_shader_parameter("zone%d" % (i + 1), cols[i])
 	for i: int in range(cols.size(), 3):
 		mat.set_shader_parameter("zone%d" % (i + 1), cols[0] if cols.size() > 0 else Color.WHITE)
-	sprite.material = mat
-	sprite.modulate = Color.WHITE
+	item.material = mat
+	item.modulate = Color.WHITE
 
 
 ## Farbe einer Zone ändern (Editor: Palette klicken) – ohne das Material neu zu bauen.

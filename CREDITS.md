@@ -27,7 +27,15 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 ## Audio
 | Datei/Paket | Quelle | Lizenz |
 |---|---|---|
-| `assets/audio/sfx/*.wav` (14 Effekte, inkl. `pet_dog_bark`, `pet_cat_meow`, `eat_chomp`) | selbst synthetisiert mit `tools/make_sfx.py` (NumPy, fester Seed) | CC0 / eigenes Werk |
+| `assets/audio/sfx/*.wav` (29 Effekte: Material-Sounds, 10 Tierstimmen, UI-Töne, Würfel, Auslöser) | selbst synthetisiert mit `tools/make_sfx.py` (NumPy, fester Seed) | CC0 / eigenes Werk |
+
+## Schriften & Symbole (Phase 04)
+| Name | Zweck | Lizenz |
+|---|---|---|
+| Baloo 2 (`assets/fonts/Baloo2.ttf`) | Anzeige-Schrift der UI (rund, freundlich) | SIL Open Font License 1.1 (Google Fonts) |
+| Nunito (`assets/fonts/Nunito.ttf`) | Fließtext | SIL Open Font License 1.1 (Google Fonts) |
+| `assets/ui/icons/*.png` (63 Symbole) | UI-Symbole – selbst gezeichnet mit `tools/make_ui_icons.py` (Pillow, keine Emoji-Fonts nötig) | CC0 / eigenes Werk |
+| `assets/sprites/pets/*.png` (13 Tiere) | Haustier-Sprites mit 3 Farbzonen, selbst gezeichnet (`tools/make_pet_sprites.py`) | CC0 / eigenes Werk |
 
 ## Figuren-Teile (Phase 03, Platzhalter)
 | Datei | Quelle | Lizenz |
