@@ -1,0 +1,18 @@
+{
+ "_doc": "Alle Bereiche der Stadt (P05-T02). `ready` = Bereich hat Inhalt. Nicht fertige Bereiche sind SICHTBAR und zeigen eine Baustelle – niemals ein Schloss (Regel aus dem Masterprompt).",
+ "_map": "Hintergrund aus tools/make_city_map.py, Koordinaten map_x/map_y in px (Design 1920x1080).",
+ "areas": [
+  {"id": "home", "label": "Zuhause & Garten", "icon": "area_home", "color": "#f2a65a", "sound": "ui_confirm", "ready": true, "path": "res://data/areas/test_kitchen.json", "room": "kitchen", "spawn_x_cm": 430, "spawn_y_cm": 30, "map_x": 250, "map_y": 300},
+  {"id": "hospital", "label": "Krankenhaus", "icon": "area_hospital", "color": "#ef6f6c", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 650, "map_y": 300},
+  {"id": "school", "label": "Schule & Pausenhof", "icon": "area_school", "color": "#4f9bd8", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1050, "map_y": 300},
+  {"id": "pool", "label": "Schwimmbad", "icon": "area_pool", "color": "#6fc3e8", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1550, "map_y": 300},
+  {"id": "playground", "label": "Spielplatz", "icon": "area_playground", "color": "#7cb342", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 400, "map_y": 560},
+  {"id": "fair", "label": "Rummelplatz", "icon": "area_fair", "color": "#c1547a", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 850, "map_y": 560},
+  {"id": "zoo", "label": "Zoo", "icon": "area_zoo", "color": "#d9a066", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1250, "map_y": 560},
+  {"id": "shopping", "label": "Einkaufsstraße", "icon": "area_shop", "color": "#ffd166", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1650, "map_y": 560},
+  {"id": "ice", "label": "Eishalle", "icon": "area_ice", "color": "#9fd8ea", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 300, "map_y": 810},
+  {"id": "sports", "label": "Sportzentrum", "icon": "area_sports", "color": "#48b0a0", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 700, "map_y": 810},
+  {"id": "flower", "label": "Blumenladen", "icon": "area_flower", "color": "#f28fb1", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1100, "map_y": 810},
+  {"id": "workshop", "label": "Werkstatt", "icon": "area_workshop", "color": "#8f7ac0", "sound": "ui_confirm", "ready": false, "path": "", "map_x": 1550, "map_y": 810}
+ ]
+}

@@ -161,7 +161,9 @@ func test_haustier_speichern_und_laden() -> void:
 	p.collar = "#e2574c"
 	p.pet_trait = "curious"
 	Game.add_pet(p)
-	Game.pets = SaveSystem.load_pets()
+	Game.save_now()               # ab P05 lebt alles in der Welt-Datei (user://world_0.json)
+	Game.pets.clear()
+	Game.load_all()
 	var back: PetData = Game.pet_by_id(p.id)
 	assert_not_null(back, "Haustier muss nach dem Neustart da sein")
 	assert_eq(back.species_id, "pet_rabbit")

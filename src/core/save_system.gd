@@ -1,13 +1,36 @@
 extends Node
-## SaveSystem – Speichern/Laden von Figuren, Haustieren und Raumzuständen (Tech-Spec §3.5).
-## Dateien unter user://, versioniert, mit Migrationen. Alles JSON, kein Netz (Regel T12).
+## SaveSystem – Speichern/Laden von Figuren, Haustieren, Rucksack, Album und Raumzuständen
+## (Tech-Spec §3.5, P05-T07/T08). Dateien unter user://, versioniert, MIT Migrationen.
+## Alles JSON, kein Netz (Regel T12). Drei Welt-Slots.
 
-const SAVE_VERSION: int = 1
-const CHARACTERS_PATH: String = "user://characters.json"
-const PETS_PATH: String = "user://pets.json"
+const SAVE_VERSION: int = 2
+const SLOTS: int = 3
+const WORLD_PATH: String = "user://world_%d.json"
+const LEGACY_CHARACTERS: String = "user://characters.json"
+const LEGACY_PETS: String = "user://pets.json"
+const EXPORT_DIR: String = "user://export/"
 
 ## Migrationen: Schlüssel = alte Version, Wert = Callable(Dictionary) → Dictionary (neue Version).
 static var _migrations: Dictionary = {}
+
+
+static func _static_init() -> void:
+	_migrations[1] = _migrate_v1_to_v2
+
+
+## Version 1 (Phase 04) kannte nur Figuren und Tiere. Version 2 ergänzt Bereiche, Rucksack,
+## Album und die begleitenden Tiere. Alte Stände bleiben dabei erhalten.
+static func _migrate_v1_to_v2(old: Dictionary) -> Dictionary:
+	var d: Dictionary = old.duplicate(true)
+	d["areas"] = d.get("areas", {})
+	d["backpack"] = Array(d.get("backpack", [])).duplicate(true)
+	d["album"] = Array(d.get("album", [])).duplicate(true)
+	d["active_pets"] = Array(d.get("active_pets", [])).duplicate(true)
+	d["slot"] = int(d.get("slot", 0))
+	d["save_version"] = 2
+	Log.info("SaveSystem: Speicherstand v1 → v2 gewandert (%d Figuren)" % [
+		Array(d.get("characters", [])).size()])
+	return d
 
 
 static func _write(path: String, payload: Dictionary) -> bool:
@@ -31,21 +54,138 @@ static func _read(path: String) -> Dictionary:
 	var v: int = int(data.get("save_version", 1))
 	while v < SAVE_VERSION and _migrations.has(v):
 		data = (_migrations[v] as Callable).call(data)
-		v += 1
+		v = int(data.get("save_version", v + 1))
 	return data
 
 
-# ---------------------------------------------------------------- Figuren
+# ------------------------------------------------------------------ Welt (Slots)
+static func world_path(slot: int) -> String:
+	return WORLD_PATH % clampi(slot, 0, SLOTS - 1)
+
+
+static func empty_world(slot: int = 0) -> Dictionary:
+	return {
+		"save_version": SAVE_VERSION, "slot": slot,
+		"characters": [], "pets": [], "active_id": "", "active_pets": [],
+		"backpack": [], "album": [], "areas": {}, "updated_ms": 0,
+	}
+
+
+static func save_world(slot: int, payload: Dictionary) -> bool:
+	var w: Dictionary = payload.duplicate(true)
+	w["slot"] = clampi(slot, 0, SLOTS - 1)
+	w["updated_ms"] = Time.get_unix_time_from_system()
+	return _write(world_path(slot), w)
+
+
+static func load_world(slot: int) -> Dictionary:
+	var p: String = world_path(slot)
+	var w: Dictionary = _read(p) if FileAccess.file_exists(p) else {}
+	if w.is_empty():
+		# Erststart mit alten Einzeldateien (Phase 04) → automatisch übernehmen.
+		var legacy: Dictionary = import_legacy()
+		if not legacy.is_empty():
+			save_world(slot, legacy)
+			return legacy
+		return empty_world(slot)
+	return _complete(w)
+
+
+static func _complete(w: Dictionary) -> Dictionary:
+	var out: Dictionary = empty_world(int(w.get("slot", 0)))
+	for k: String in out:
+		if w.has(k):
+			out[k] = w[k]
+	return out
+
+
+static func world_exists(slot: int) -> bool:
+	return FileAccess.file_exists(world_path(slot))
+
+
+static func world_info(slot: int) -> Dictionary:
+	var w: Dictionary = load_world(slot)
+	return {
+		"slot": slot, "exists": world_exists(slot),
+		"characters": Array(w.get("characters", [])).size(),
+		"pets": Array(w.get("pets", [])).size(),
+		"updated_ms": int(w.get("updated_ms", 0)),
+		"version": int(w.get("save_version", 1)),
+	}
+
+
+static func wipe_world(slot: int) -> void:
+	if FileAccess.file_exists(world_path(slot)):
+		DirAccess.remove_absolute(world_path(slot))
+
+
+static func wipe() -> void:
+	for i: int in SLOTS:
+		wipe_world(i)
+	for p: String in [LEGACY_CHARACTERS, LEGACY_PETS]:
+		if FileAccess.file_exists(p):
+			DirAccess.remove_absolute(p)
+
+
+## Alte Phase-04-Dateien (characters.json / pets.json) in eine Welt übernehmen.
+static func import_legacy() -> Dictionary:
+	var chars: Array = []
+	var pets: Array = []
+	if FileAccess.file_exists(LEGACY_CHARACTERS):
+		var d: Variant = JSON.parse_string(FileAccess.get_file_as_string(LEGACY_CHARACTERS))
+		if d is Dictionary:
+			chars = Array((d as Dictionary).get("characters", []))
+	if FileAccess.file_exists(LEGACY_PETS):
+		var p: Variant = JSON.parse_string(FileAccess.get_file_as_string(LEGACY_PETS))
+		if p is Dictionary:
+			pets = Array((p as Dictionary).get("pets", []))
+	if chars.is_empty() and pets.is_empty():
+		return {}
+	var w: Dictionary = empty_world(0)
+	w["characters"] = chars
+	w["pets"] = pets
+	if not chars.is_empty():
+		w["active_id"] = String((chars[0] as Dictionary).get("id", ""))
+	Log.info("SaveSystem: alte Figuren-/Tier-Dateien übernommen (%d/%d)" % [chars.size(), pets.size()])
+	return w
+
+
+# ------------------------------------------------------------------ Export / Import (ohne Netz)
+static func export_world(slot: int, path: String = "") -> String:
+	DirAccess.make_dir_recursive_absolute(EXPORT_DIR)
+	var out: String = path if not path.is_empty() else \
+		EXPORT_DIR + "kunterbunt-city-welt-%d.json" % clampi(slot, 0, SLOTS - 1)
+	var w: Dictionary = load_world(slot)
+	var f := FileAccess.open(out, FileAccess.WRITE)
+	if f == null:
+		return ""
+	f.store_string(JSON.stringify(w, "\t"))
+	f.close()
+	return ProjectSettings.globalize_path(out)
+
+
+static func import_world(path: String, slot: int = 0) -> bool:
+	if not FileAccess.file_exists(path):
+		return false
+	var d: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if not d is Dictionary:
+		return false
+	var w: Dictionary = _complete(d)
+	w["save_version"] = SAVE_VERSION      # migrieren passiert beim nächsten Laden
+	return save_world(slot, w)
+
+
+# ------------------------------------------------------------------ Figuren / Tiere (Komfort)
 static func save_characters(list: Array) -> bool:
 	var arr: Array = []
 	for c: CharacterData in list:
 		arr.append(c.to_dict())
-	return _write(CHARACTERS_PATH, {"characters": arr})
+	return _write(LEGACY_CHARACTERS, {"characters": arr})
 
 
 static func load_characters() -> Array:
 	var out: Array = []
-	for d: Variant in _read(CHARACTERS_PATH).get("characters", []):
+	for d: Variant in _read(LEGACY_CHARACTERS).get("characters", []):
 		var c: CharacterData = CharacterData.from_dict(d)
 		if c:
 			out.append(c)
@@ -59,24 +199,46 @@ static func has_any_character() -> bool:
 	return false
 
 
-# ---------------------------------------------------------------- Haustiere
 static func save_pets(list: Array) -> bool:
 	var arr: Array = []
 	for p: PetData in list:
 		arr.append(p.to_dict())
-	return _write(PETS_PATH, {"pets": arr})
+	return _write(LEGACY_PETS, {"pets": arr})
 
 
 static func load_pets() -> Array:
 	var out: Array = []
-	for d: Variant in _read(PETS_PATH).get("pets", []):
+	for d: Variant in _read(LEGACY_PETS).get("pets", []):
 		var p: PetData = PetData.from_dict(d)
 		if p:
 			out.append(p)
 	return out
 
 
-static func wipe() -> void:
-	for p: String in [CHARACTERS_PATH, PETS_PATH]:
-		if FileAccess.file_exists(p):
-			DirAccess.remove_absolute(p)
+# ------------------------------------------------------------------ Album (Fotos)
+static func album_dir() -> String:
+	return "user://album/"
+
+
+static func album_photos() -> Array:
+	DirAccess.make_dir_recursive_absolute(album_dir())
+	var out: Array = []
+	for f: String in DirAccess.get_files_at(album_dir()):
+		if f.ends_with(".jpg"):
+			out.append(album_dir() + f)
+	out.sort()
+	out.reverse()
+	return out
+
+
+static func album_add(img: Image) -> String:
+	DirAccess.make_dir_recursive_absolute(album_dir())
+	var name: String = "foto_%d.jpg" % Time.get_unix_time_from_system()
+	if img.save_jpg(album_dir() + name, 0.85) != OK:
+		return ""
+	return album_dir() + name
+
+
+static func album_remove(path: String) -> void:
+	if FileAccess.file_exists(path):
+		DirAccess.remove_absolute(path)

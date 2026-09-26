@@ -15,6 +15,31 @@ const DEFAULTS: Dictionary = {
 
 var _values: Dictionary = DEFAULTS.duplicate(true)
 
+# ------------------------------------------------------------------ bequeme Zugriffe (P05-T10)
+var volume_music: float:
+	get: return float(get_value("volume_music"))
+	set(v): set_value("volume_music", v)
+
+var volume_sfx: float:
+	get: return float(get_value("volume_sfx"))
+	set(v): set_value("volume_sfx", v)
+
+var volume_animals: float:
+	get: return float(get_value("volume_animals"))
+	set(v): set_value("volume_animals", v)
+
+var language: String:
+	get: return String(get_value("language"))
+	set(v): set_value("language", v)
+
+var reduced_motion: bool:
+	get: return bool(get_value("reduced_motion"))
+	set(v): set_value("reduced_motion", v)
+
+var large_ui: bool:
+	get: return bool(get_value("large_ui"))
+	set(v): set_value("large_ui", v)
+
 
 func _ready() -> void:
 	load_settings()

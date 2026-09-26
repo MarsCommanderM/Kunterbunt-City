@@ -221,3 +221,25 @@ Deterministisch: `PetNode.autonomous = false` (Tiere nur per `tick()`), `Charact
 **Symbole/Icons:** `assets/ui/icons/*.png` (128 px, Alpha, Farbe per `modulate`) aus
 `tools/make_ui_icons.py` · **Schrift:** Baloo 2 (Anzeige) + Nunito (Text), beide OFL.
 
+## §5 Menü, Bereiche & Speichern (Phase 05)
+| Datei | Aufgabe |
+|---|---|
+| `data/areas/index.json` · `src/core/areas.gd` | 12 Bereiche: Symbol, Farbe, Karten-Position, Sound, `ready` |
+| `src/ui/city_map.gd` | Startmenü: Karte (illustriert) ↔ Raster, Baustelle statt Schloss |
+| `src/core/scene_router.gd` | Bereichswechsel, Ladezeit-Messung (`last_load_ms`, Ziel < 2 s) |
+| `src/world/area_scene.gd` | Bereich: Raum, eigene Figur + Haustiere, HUD, Autosave |
+| `src/ui/area_hud.gd` | Karte · 📷 · Rucksack · Rückgängig |
+| `src/world/room_snapshot.gd` | Raumzustand einfrieren/wieder aufbauen (auch Dinge auf Tischen) |
+| `src/ui/backpack.gd` | 20 Plätze; einpacken = Ding auf den Knopf ziehen |
+| `src/ui/album.gd` | Fotos aus `user://album/` |
+| `src/ui/settings_panel.gd` | Lautstärken, große UI, wenig Animation, Sprache, 🪄, Export/Import, Slots |
+
+**Regeln (geprüft):**
+1. **Kein Bereich ist gesperrt.** Unfertige Bereiche sind sichtbar, haben einen Knopf und zeigen
+   eine Baustelle (Werkzeug + „kommt bald"). Ein Schloss gibt es nicht.
+2. **Bereichswechsel < 2 s,** gemessen in der Szene selbst (`AreaScene.load_ms`), typisch 160–190 ms.
+3. **Speicherstände sind heilig:** `save_version` + Migrationen (`_static_init`), Fixture-Tests.
+   Export/Import läuft über eine Datei – **nie** übers Netz.
+4. **Positionen auf 0,1 cm genau** (`RoomSnapshot`, Test ±0,05 cm).
+5. UI-Panels hängen immer an einem `Control`/`CanvasLayer`, **nie** direkt am `Node2D`-Raum.
+

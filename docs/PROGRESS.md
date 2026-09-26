@@ -4,10 +4,10 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **05 · Startmenü (Stadtkarte), Speichern, Bereichswechsel** |
-| Nächste Task | P05-T01 (Splash + Pflicht-Prüfung) · P05-T02 (Stadtkarte mit 11 Bereichen) |
-| Letzter grüner check.sh | 2026-09-26 (Phase 04 komplett) |
-| Version | 0.0.4 |
+| Aktuelle Phase | **06/07 · Asset-Pipeline + Bereich „Zuhause & Garten"** |
+| Nächste Task | P06 (Stil-C-Pipeline) · P07-T01 (Zuhause-Slice: Räume + Hintergründe) |
+| Letzter grüner check.sh | 2026-09-26 (Phase 05 komplett) |
+| Version | 0.0.5 |
 
 ## Phasen
 | Phase | Status | Bericht |
@@ -17,7 +17,7 @@
 | 02 Items & Drag | ✅ fertig (👤 Anfass-Gefühl + GPU-FPS offen) | Log 2026-09-26 |
 | 03 Figuren & Tiere | ✅ fertig (👤 Kindertest offen) | Log 2026-09-26 |
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
-| 05 Menü & Speichern | 🔨 in Arbeit | – |
+| 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ⏳ | – |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
@@ -46,6 +46,11 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | check.sh | Maßstab ✅ (155 Einträge, 61 Items) · pytest 15/15 ✅ · GUT 129/129 ✅ (850 Asserts) |
 | 2026-09-26 | 03 | check.sh | Maßstab ✅ (155 Einträge, 65 Items) · pytest 31/31 ✅ · GUT 169/169 ✅ (1019 Asserts) |
 | 2026-09-26 | 04 | check.sh | Maßstab ✅ (77 Items) · pytest 54/54 ✅ · GUT 217/217 ✅ (2642 Asserts) |
+| 2026-09-26 | 05 | check.sh | Maßstab ✅ (77 Items) · pytest 75/75 ✅ · GUT 240/240 ✅ (2835 Asserts) |
+| 2026-09-26 | 05 | Bereichswechsel (`p05_flow.json`) | **160–190 ms** gemessen (Ziel < 2000 ms) · 15 Items im Raum, 14 davon gespeichert · Figur 125,2 cm |
+| 2026-09-26 | 05 | Stadtkarte | 12 Bereiche · 1 spielbar (Zuhause), 11 Baustellen (sichtbar, nie gesperrt) · Karte/Raster umschaltbar · Tippflächen ≥ 120×120 px |
+| 2026-09-26 | 05 | Speicherstand | Welt-Slots 0–2 · v1-Fixture wandert nach v2 · Export/Import als Datei (kein Netz) · Raumzustand auf 0,1 cm genau |
+| 2026-09-26 | 05 | Rucksack & Album | 20 Plätze, Ding rein (ziehen) und raus (tippen) · Foto mit 📷 landet in `user://album/` |
 | 2026-09-26 | 04 | End-to-End `p04_flow_runner.gd` | App-Start → Pflicht-Editor → Galerie → Bereich: eigene Figur **125,2 cm** (Kind), eigene Katze **28,0 cm** < Tisch, Figur im Bild |
 | 2026-09-26 | 04 | Editor-Bedienung im Bild | ✓-Knopf erst grau (Hautton fehlt) → orange · Hautton 1,6 %, Oberteil 4,6 %, 🎲 15,5 % Bildänderung in der Vorschau |
 | 2026-09-26 | 04 | Haustier-Editor | 13 Arten (Maßstab-Tabelle 6–125 cm), 3 Fell-Zonen, 5 Muster, 6 Halsbänder, 5 Charakterzüge, je Art eigene Stimme |
@@ -59,6 +64,39 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-26 · Phase 05 · Startmenü (Stadtkarte), Speichern, Bereichswechsel ✅
+- Erledigt: P05-T01…T11 (T09 Eltern-Tor kam schon in Phase 04).
+  - `data/areas/index.json` + `src/core/areas.gd`: **12 Bereiche** (Zuhause & Garten, Krankenhaus,
+    Schule, Schwimmbad, Spielplatz, Rummelplatz, Zoo, Einkaufsstraße, Eishalle, Sportzentrum,
+    Blumenladen, Werkstatt) mit Symbol, Farbe, Karten-Position, Sound und `ready`-Flag.
+  - `tools/make_city_map.py`: Karten-Hintergrund (Wiesen, Fluss, Straßen, Bäume, 12 Podeste),
+    Bereichs-Knöpfe liegen exakt auf den Podesten. **Umschaltbar** auf ein ruhiges Raster.
+  - `src/ui/city_map.gd`: Karte/Raster, Kopfzeile mit Figur · Rucksack · Album · Eltern.
+    Unfertige Bereiche zeigen ein wippendes Werkzeug (Baustelle) – **kein Schloss**.
+  - `src/core/scene_router.gd` + `src/world/area_scene.gd`: Bereichswechsel mit Ladebild,
+    Spawn der **eigenen** Figur am `spawn`-Punkt (Ankunfts-Hüpfer), eigene Haustiere dabei,
+    Items aus dem gespeicherten Zustand (sonst aus `default_items` der Bereichs-Datei).
+  - `src/ui/area_hud.gd`: Karte (zurück) · 📷 Foto · Rucksack · Rückgängig.
+  - `SaveSystem` neu: **3 Welt-Slots**, `save_version 2`, Migration v1→v2 (`_static_init`),
+    Export/Import als Datei (ohne Netz), Album unter `user://album/`.
+  - `src/world/room_snapshot.gd`: Raumzustand einfrieren/wieder aufbauen – auch Dinge **auf**
+    Tischen (Wirt + relativer x-Wert). Figur gehört nicht dazu (wird frisch gespawnt).
+  - `src/ui/backpack.gd` (20 Plätze, Ding raus/ziehen-auf-den-Knopf), `src/ui/album.gd`,
+    `src/ui/settings_panel.gd` (Lautstärken, große UI, wenig Animation, Sprache, 🪄 Bereich
+    zurücksetzen, Alles löschen, Export/Import, Welt-Slots) – alles hinter dem Eltern-Tor.
+  - Autosave entprellt (2 s) über `Game.mark_dirty()`; sofort gespeichert beim Verlassen.
+- Tests (neu): GUT `test_save_migration` (9, Fixture `tests/fixtures/world_v1.json`),
+  `test_city_map` (7), `test_area_flow` (7) · pytest `test_p05_shots` (17) ·
+  Beweis `p05_flow_runner.gd` (8 Bilder + `p05_flow.json`).
+- Fehler gefunden (nur durch Messen):
+  - `Control`-Panels unter einem `Node2D` bleiben unsichtbar (Größe 0) → der Bereich hat jetzt
+    eine eigene `CanvasLayer` (`AreaScene.ui`) für Rucksack/Album/Eltern.
+  - `LayoutPreset` ist in einem `CanvasLayer`-Skript nicht sichtbar (nur in `Control`) →
+    Parameter als `int`. `Script.new()` gibt es nicht → `GDScript`.
+  - Loop-Tweens in `_ready` lösen „Infinite loop detected" aus → Wippen läuft über `_process`.
+  - `SaveSystem.wipe()` wirkt erst nach `Game.load_all()` (Autoload lädt vorher).
+- 👤 offen: Blick-Check der Stadtkarte, echte Stil-C-Hintergründe für weitere Bereiche (P06/P07).
+- Nächste Task: P06 (Asset-Pipeline) + P07 (Zuhause & Garten mit mehreren Räumen).
 ### 2026-09-26 · Phase 04 (Teil 2) · Editor-Oberfläche, Namen, Galerie, Haustiere ✅
 - Erledigt: P04-T03 (Editor-UI), T05 (🎲 + 5 Outfit-Plätze), T06 (Namen + Eltern-Tor),
   T07 (Pflicht-Ablauf), T08 (Galerie), T09 (Haustier-Editor).

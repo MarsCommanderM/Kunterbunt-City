@@ -136,5 +136,82 @@
         }
       ]
     }
-  ]
+  ],
+  "name": "Zuhause & Garten",
+  "default_items": [
+    {
+      "id": "home_bed_kid",
+      "x_cm": 95,
+      "y_cm": 22
+    },
+    {
+      "id": "home_sofa",
+      "x_cm": 290,
+      "y_cm": 20
+    },
+    {
+      "id": "home_chair_mint",
+      "x_cm": 415,
+      "y_cm": 48
+    },
+    {
+      "id": "home_armchair",
+      "x_cm": 480,
+      "y_cm": 26
+    },
+    {
+      "id": "home_table_wood",
+      "x_cm": 645,
+      "y_cm": 30
+    },
+    {
+      "id": "home_chair_mint",
+      "x_cm": 555,
+      "y_cm": 44
+    },
+    {
+      "id": "toy_teddy_brown",
+      "x_cm": 250,
+      "y_cm": 73
+    },
+    {
+      "id": "toy_beachball",
+      "x_cm": 690,
+      "y_cm": 72
+    },
+    {
+      "id": "pet_cat",
+      "x_cm": 160,
+      "y_cm": 70
+    },
+    {
+      "id": "food_carrot",
+      "x_cm": 630,
+      "y_cm": 30,
+      "on": "home_table_wood",
+      "x_rel": -0.3
+    },
+    {
+      "id": "food_apple_red",
+      "x_cm": 0,
+      "y_cm": 0,
+      "on": "home_table_wood",
+      "x_rel": -0.1
+    },
+    {
+      "id": "food_icecream_3",
+      "x_cm": 0,
+      "y_cm": 0,
+      "on": "home_table_wood",
+      "x_rel": 0.1
+    },
+    {
+      "id": "home_mug_pink_dots",
+      "x_cm": 0,
+      "y_cm": 0,
+      "on": "home_table_wood",
+      "x_rel": 0.3
+    }
+  ],
+  "note": "default_items = Start-Ausstattung des Bereichs (P05)."
 }

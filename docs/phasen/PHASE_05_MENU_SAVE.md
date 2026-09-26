@@ -18,13 +18,13 @@
 | P05-T11 | Rucksack (Tech-Spec §4.7): 20 Plätze, Items wandern zwischen Bereichen |
 
 ## Akzeptanzkriterien
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_save_migration.gd` + Fixtures in `tests/fixtures/`
-- [ ] Kompletter Ablauf ohne Lesen bedienbar
-- [ ] Bereichswechsel < 2 s (Messung)
-- [ ] App schließen und neu starten → alles exakt wie vorher (Positionen ±0,1 cm)
-- [ ] Alte Speicherdatei (v1-Fixture) lädt nach einer Format-Änderung korrekt
-- [ ] Web-Build speichert im Browser (Seite neu laden → Zustand bleibt)
-- [ ] `check.sh` grün
+- [x] Pflicht-Tests angelegt und grün: `tests/test_save_migration.gd` (9) + Fixture `tests/fixtures/world_v1.json`
+- [x] Kompletter Ablauf ohne Lesen bedienbar (Symbole + Umschalt-Knöpfe; 👤 End-Check mit Kind offen)
+- [x] Bereichswechsel < 2 s (Messung: **160–190 ms**, `docs/tests/P05/p05_flow.json`)
+- [x] App schließen und neu starten → alles exakt wie vorher (Positionen ±0,1 cm, Test `test_raumzustand_round_trip`)
+- [x] Alte Speicherdatei (v1-Fixture) lädt nach einer Format-Änderung korrekt (Migration v1→v2)
+- [ ] Web-Build speichert im Browser (Seite neu laden → Zustand bleibt) – 👤 Browser-Test offen
+- [x] `check.sh` grün (Maßstab ✅ · pytest 75/75 · GUT 240/240)
 
 ## Startprompt
 > Lies MASTERPROMPT.md, docs/06_TECH_SPEC.md §2–3.5 und docs/phasen/PHASE_05_MENU_SAVE.md. Setze Phase 05 um. Speicherstände sind heilig: Version + Migration + Tests. Phasenbericht und stoppen.

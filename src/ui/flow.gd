@@ -6,16 +6,15 @@ extends RefCounted
 ## Ohne vollständige Figur (Schablone + Hautton) ist kein Bereich betretbar.
 
 const SPLASH_S: float = 1.8
-const SANDBOX: String = "res://src/debug/sandbox_characters.tscn"
 
 
 static func start(host: Node) -> void:
 	host.add_child(_splash())
 	await host.get_tree().create_timer(SPLASH_S).timeout
-	if not Game.has_complete_character():
+	if not can_play():
 		first_character(host)
 	else:
-		open_gallery(host)
+		open_map(host)
 
 
 static func _splash() -> Control:
@@ -46,28 +45,47 @@ static func first_character(host: Node) -> void:
 	CharacterEditor.open(host, d, true, func(c: CharacterData) -> void:
 		Game.add_character(c)
 		Game.set_active(c.id)
-		open_gallery(host))
+		open_map(host))
 
 
-static func open_gallery(host: Node) -> void:
+## Die Stadtkarte (Startmenü): ein Knopf pro Bereich + Figur, Rucksack, Album, Eltern.
+static func open_map(host: Node) -> Control:
+	var m := CityMap.new()
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	host.add_child(m)
+	m.entered.connect(func(id: StringName) -> void:
+		SceneRouter.goto_area(id))
+	m.open_characters.connect(func() -> void:
+		var g := Gallery.new()
+		g.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		m.add_child(g)
+		g.show_play = false
+		g.back.connect(func() -> void:
+			g.queue_free()
+			m._refresh()))
+	m.open_backpack.connect(func() -> void:
+		Backpack.open(m))
+	m.open_album.connect(func() -> void:
+		Album.open(m))
+	m.open_parents.connect(func() -> void:
+		ParentGate.ask(m, func() -> void: SettingsPanel.open(m)))
+	return m
+
+
+## Figuren-Galerie (von überall erreichbar).
+static func open_gallery(host: Node, with_play: bool = true) -> Gallery:
 	var g := Gallery.new()
 	g.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	g.show_play = with_play
 	host.add_child(g)
 	g.back.connect(func() -> void: g.queue_free())
 	g.play.connect(func() -> void:
 		g.queue_free()
-		enter_area(host))
+		open_map(host))
 	g.characters_changed.connect(func() -> void: Game.save_characters())
+	return g
 
 
 ## Darf gespielt werden? Ohne vollständige Figur (Schablone + Hautton) ist KEIN Bereich betretbar.
 static func can_play() -> bool:
 	return Game.has_complete_character()
-
-
-## Bereich betreten (P05: SceneRouter + Stadtkarte). Vorher: Test-Welt.
-static func enter_area(host: Node) -> void:
-	if not can_play():
-		first_character(host)          # Sicherheit: ohne Figur geht nichts
-		return
-	host.get_tree().change_scene_to_file(SANDBOX)
