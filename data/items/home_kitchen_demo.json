@@ -337,7 +337,10 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://assets/sprites/home/pet_dog_brown.png"
+   "sprite": "res://assets/sprites/home/pet_dog_brown.png",
+   "sfx": {
+    "voice": "pet_dog_bark"
+   }
   },
   {
    "id": "home_table_wood",
@@ -380,7 +383,11 @@
    "placement": "floor",
    "movable": true,
    "sprite": "res://assets/sprites/home/home_chair_mint.png",
-   "seat_frac_y": 0.54
+   "seat_frac_y": 0.54,
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
   }
  ]
 }

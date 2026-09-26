@@ -109,16 +109,41 @@ Migration: `SaveSystem.MIGRATIONS = { 1: func(d): …, 2: … }`. Jede Migration
   - **Tisch-Oberkante** aus dem Sprite gemessen: `surface_frac_y` (Anteil von oben, z. B. Stil-C-Tisch 0,12 → 66 cm). Ohne Angabe: `surface_h_cm`.
   - Ruhende Items ticken nicht (`_process` aus); Animationen nur über Tweens. Tests schalten `animate = false`.
 
-### 4.2 Hand & Griff
-- `CharacterRig` hat `HandSlot` rechts und links (Marker2D). Beim Übergeben: Item wird Kind des HandSlots, `offset = −grip × Texturgröße`, Rotation = `hold_angle`.
-- **Zeichenreihenfolge:** Arm-Ebene < Item < **Hand-Ebene** (Finger liegen über dem Item).
-- `two_hands`: Figur wechselt in die Pose „trägt vor Bauch“, das Item sitzt mittig zwischen beiden HandSlots.
+### 4.2 Hand & Griff (P03, umgesetzt)
+- `CharacterRig` baut `HandSlot` vorne (Index 0), hinten (1) und „beide Hände“ (2). Beim Übergeben wird das
+  Item Kind des Slots, Position = `CharacterRig.grip_local(item)` (Griffpunkt exakt auf dem Slot-Ursprung),
+  Rotation = `hold_angle` (Slot dreht sich gegen den Arm, damit das Item aufrecht bleibt).
+- **Zeichenreihenfolge:** Arm (Haut, Ärmel, Handfläche) < Item < **Finger-Ebene** (`hand_front`, liegt vor dem
+  Item). Beim Zwei-Hand-Griff schaltet die Finger-Ebene in die Ebene `HandsTop` über dem Item um
+  (Test: `test_draw_order_arm_item_hand`).
+- `two_hands` (Wasserball, Katze, Wassermelone): Item sitzt mittig zwischen beiden Händen, die **Arme werden
+  aus der Item-Breite gerechnet** – die Hände greifen links und rechts, nicht über Kreuz. Belegt beide Hände:
+  `hand_slots()` ist danach leer.
+- `SpriteCharacter` (fertig gemaltes Mädchen, `char_girl_01`): ein Hand-Slot an der gemessenen Faust-Position
+  (`grip_px` aus `char_girl_01.json`) + Faust-Ebene, die nur beim Halten sichtbar ist.
+- Gemessene Genauigkeit: Griff-Abstand **0,00 cm**, gehaltene Größe unverändert (Apfel 7,8 cm, Karotte 20,6 cm).
 
-### 4.3 Sitzen & Liegen
-`SeatSlot` (Position, Sitzhöhe cm, Pose `sit`/`lie`/`ride`, Blickrichtung). Die Figur rastet ein, wenn ihr Becken-Punkt in einem Radius von 30 cm losgelassen wird. Items können auch auf SeatSlots sitzen (Teddy auf dem Stuhl).
+### 4.3 Sitzen & Liegen (P03, umgesetzt)
+- `Seats` liefert Plätze aus der **Maßstab-Tabelle**: `seat_h_cm` Stuhl/Hocker 45, Sofa/Sessel 42, Bett 45;
+  `seat_slots` (Sofa 3, Stuhl/Bett 1); Platzbreite 70 % der Möbelbreite.
+- Die Figur rastet ein, wenn ihr **Becken-Punkt** innerhalb 30 cm losgelassen wird
+  (`Seats.CHARACTER_SNAP_CM`); Figuren werden über `hip_offset()` einsortiert, der Knoten-Ursprung (Füße)
+  steht danach `Hüfthöhe` unter dem Sitzpunkt. Items (Teddy, Tier) rasten mit dem Pivot ein.
+- Pose kommt aus dem Möbel (`seat_pose`): `sit` (Stuhl/Sofa/Sessel) oder `lie` (Bett).
+  - `sit`: Beine hängen ab der Hüfte, Knie auf Sitzhöhe; reicht das Schienbein nicht bis zum Boden
+    (Erwachsene auf 42 cm), verkürzt es sich perspektivisch (min. Faktor 0,55) → **Füße stehen auf, nie
+    darunter** (gemessen: Erwachsene 0,0 cm, Kind baumelt 23,0 cm).
+  - `lie`: Körper um die Hüfte waagerecht gedreht, um die halbe Rumpfdicke über die Matratze gehoben,
+    **Kopf bleibt aufrecht** (eigener `HeadPivot`, um die halbe Kopfdicke angehoben), beide Arme liegen oben.
+- Beim Aufstehen/Abheben wechselt die Pose zurück auf `stand`; der `Swing`-Knoten pendelt am Griffpunkt
+  (Feder, gedämpft, ±0,55 rad).
+- Nur `character`, `pet`, `toy` dürfen sich setzen – Geschirr & Co. nutzen die Abstellfläche.
 
 ### 4.4 Tiefe & Sortierung
-`YSortRoot` mit `y_sort_enabled`. Item-y (cm) = Tiefe im Bodenband bzw. die Tiefe der Oberfläche. Skalierung = `depth_factor(y)` (max. 1,12) gilt für **alle** Objekte gleich.
+`YSortRoot` mit `y_sort_enabled`. Item-y (cm) = Tiefe im Bodenband bzw. die Tiefe der Oberfläche. Skalierung =
+`depth_factor(y)` (max. 1,12) gilt für **alle** Objekte gleich – Figuren und Tiere eingeschlossen
+(Test: `test_depth_factor_applies_to_characters`). Dadurch bleibt der Hund in **jeder** Tiefe kleiner als der
+Tisch (49,4 cm gegen 77,8 cm, auch vorne gegen hinten).
 
 ### 4.5 NPC-Zustandsmaschine
 Basis-Zustände für jede Rolle: `idle`, `work` (rollenspezifisch), `react`, `carried`, `return_to_post`. Übergänge per Timer, Ereignis (Item an Kasse, Glocke, Tor) oder Spieler-Aktion. **Garantien (getestet):** NPC blockiert nie einen Drop, verlässt nie seinen Raum, kehrt spätestens nach `return_after_s` zurück.
@@ -147,3 +172,22 @@ Bedürfnisse (0–1): Hunger, Spieltrieb, Müdigkeit, Zuneigung. Sie steigen lan
 - `tests/test_save_migration.gd`: alte Speicherdateien laden
 - `tests/test_no_network.gd`: kein `HTTPRequest`, `HTTPClient`, `WebSocketPeer`, `StreamPeerTCP`, `PacketPeerUDP` in `src/`
 - `tools/tests/test_pipeline.py`: Freistellen (Augenweiß bleibt, Henkel-Loch wird transparent), Reihenfolge, Maßstab
+
+### 6.1 Beweis-Werkzeuge (statt Augenmaß)
+Jede Phase liefert Zahlen, nicht nur Bilder. Alle Läufer starten mit
+`xvfb-run -a godot --rendering-driver opengl3 --resolution <W>x<H> -s tools/godot/run.gd -- res://tools/godot/<datei>.gd [arg]`.
+
+| Läufer | Was er misst |
+|---|---|
+| `p02_perf_runner.gd` | 250 Items: Spawn-, Greif-, Zielsuche-Zeit |
+| `p03_pose_dump.gd` | jede Figur-Ebene in cm über dem Standpunkt, je Pose |
+| `p03_check.gd` | 37 Akzeptanz-Prüfungen (Griff, Sitz-, Liegehöhe, Größen, Tier) → `p03_messwerte.json` |
+| `p03_scenario_runner.gd` | Beweisbilder; prüft je Bild „im Bild / angeschnitten“ |
+| `p03_reference_kueche.gd` | Referenz-Küche nachmessen (Soll cm gegen gemessene Bildgröße) |
+
+**Silhouetten-Differenz** (in `p03_check.gd`, `p03_reference_kueche.gd`): Item-Ebenen ausblenden, zweites
+Bild rendern, Differenz → Bounding-Box in Pixel → cm über den Kamera-Maßstab. Damit zählt nur, was wirklich
+sichtbar ist: verdeckte Teile (Finger vor dem Apfel) werden korrekt nicht mitgemessen.
+
+Deterministisch: `PetNode.autonomous = false` (Tiere nur per `tick()`), `CharacterRig.animate_poses = false`
+(Posen springen), `AudioBus.clock` als Fake-Uhr, `drag.animate = false`.

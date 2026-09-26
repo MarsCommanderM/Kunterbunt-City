@@ -4,7 +4,7 @@ extends GutTest
 
 func test_all_items_loaded_without_errors() -> void:
 	assert_eq(ItemDB.validation_errors.size(), 0, "\n".join(ItemDB.validation_errors))
-	assert_eq(ItemDB.item_count(), 61, "18 Stil-C + 43 Platzhalter")
+	assert_eq(ItemDB.item_count(), 65, "18 Stil-C + 47 Platzhalter (P03: Sofa, Sessel, Bett, Katze)")
 
 
 func test_every_item_has_loadable_texture() -> void:

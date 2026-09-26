@@ -1,0 +1,25 @@
+{
+ "_doc": "Figuren-Schablonen (P03-T02). Alle Maße in cm, y = Höhe über dem Boden (Füße = 0). Gesamthöhe (hair_top) MUSS der Maßstab-Tabelle (scale_ref) entsprechen – geprüft von tests/test_character.gd. Teile werden von tools/make_rig_parts.py erzeugt.",
+ "px_per_cm": 8,
+ "templates": {
+  "toddler": {"scale_ref": "char_toddler", "hair_top": 90,
+   "head": {"w": 40, "h": 40, "cy": 67}, "torso": {"w_top": 25, "w_bot": 28, "top": 50, "bot": 28},
+   "shoulder": {"x": 11.5, "y": 47}, "arm": {"len": 20, "w": 7.5, "sleeve": 9}, "hand_r": 4.0,
+   "hip": {"y": 30, "x": 6.5}, "leg": {"w": 11, "thigh": 14, "shin": 12, "sit_thigh": 6}, "shoe": {"w": 12.5, "h": 5}},
+  "kid": {"scale_ref": "char_child", "hair_top": 125,
+   "head": {"w": 42, "h": 42, "cy": 101}, "torso": {"w_top": 28, "w_bot": 31, "top": 80, "bot": 48},
+   "shoulder": {"x": 13, "y": 76}, "arm": {"len": 30, "w": 8.5, "sleeve": 13}, "hand_r": 4.6,
+   "hip": {"y": 50, "x": 7}, "leg": {"w": 12, "thigh": 24, "shin": 20, "sit_thigh": 8}, "shoe": {"w": 14, "h": 7}},
+  "adult": {"scale_ref": "char_adult", "hair_top": 172,
+   "head": {"w": 36, "h": 40, "cy": 148}, "torso": {"w_top": 40, "w_bot": 36, "top": 130, "bot": 86},
+   "shoulder": {"x": 19, "y": 126}, "arm": {"len": 58, "w": 10, "sleeve": 26}, "hand_r": 5.2,
+   "hip": {"y": 90, "x": 9}, "leg": {"w": 15, "thigh": 42, "shin": 40, "sit_thigh": 12}, "shoe": {"w": 16, "h": 8}}
+ },
+ "hair_styles": ["pigtails", "short"],
+ "emotions": ["happy", "laugh", "surprised", "sad", "tired", "love"],
+ "default_look": {
+  "toddler": {"skin": "#ffd9c2", "hair": "#e0a24a", "shirt": "#7fd0c8", "pants": "#f29bb4", "shoes": "#ffffff", "hair_style": "short"},
+  "kid": {"skin": "#ffd6bf", "hair": "#7a4a2a", "shirt": "#ffcc3d", "pants": "#4f7fc0", "shoes": "#ff9a2e", "hair_style": "pigtails"},
+  "adult": {"skin": "#d9a07a", "hair": "#2e2320", "shirt": "#6fbf73", "pants": "#3d4a66", "shoes": "#5a3a2a", "hair_style": "short"}
+ }
+}

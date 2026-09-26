@@ -36,6 +36,8 @@ class Drag:
 	var press_time: float
 	var pointer_world: Vector2
 	var grab_offset: Vector2
+	var last_pos: Vector2
+	var velocity: Vector2 = Vector2.ZERO
 	var moved_px: float = 0.0
 	var from_parent: Node
 	var from_pos: Vector2
@@ -110,10 +112,10 @@ func release(id: int, world: Vector2) -> void:
 	var is_tap: bool = d.moved_px < LIFT_MOVE_PX and _now() - d.press_time <= TAP_MAX_S
 	if d.state == State.PRESS:
 		if d.moved_px < LIFT_MOVE_PX and (is_tap or not d.item.def.movable):
-			_tap(d.item)
+			_tap(d.item, world)
 	elif is_tap:
 		_restore(d)
-		_tap(d.item)
+		_tap(d.item, world)
 	else:
 		_drop(d)
 	set_process(not _drags.is_empty())
@@ -180,7 +182,10 @@ func _lift(d: Drag) -> void:
 	d.grab_offset = it.global_position - d.press_world   # Stelle, an der angefasst wurde, bleibt unter dem Finger
 	it.reparent(drag_layer, true)
 	it.slot_index = -1
+	it.rotation = 0.0                       # aus der Hand genommen: wieder aufrecht
 	_relayout_owner(d.from_parent)
+	it.on_drag_start(d.press_world)
+	d.last_pos = it.global_position
 	it.set_lifted(true, animate)
 	d.state = State.DRAG
 	AudioBus.play_item_sfx(it.def, "pickup")
@@ -198,12 +203,17 @@ func _process(delta: float) -> void:
 		d.item.global_position = d.item.global_position.lerp(target, k)
 		var s: float = room.floor_band.depth_factor(d.item.global_position.y)
 		d.item.global_scale = d.item.global_scale.lerp(Vector2(s, s), k)
+		if delta > 0.0:
+			d.velocity = d.velocity.lerp((d.item.global_position - d.last_pos) / delta, 0.35)
+		d.last_pos = d.item.global_position
+		d.item.on_drag_update(delta, d.velocity)
 
 
 func _drop(d: Drag) -> void:
 	var it: ItemNode = d.item
 	var pivot: Vector2 = d.pointer_world + d.grab_offset
 	var t: Placement.Target = Placement.find_target(room, it, pivot, d.pointer_world)
+	it.on_drag_end()
 	it.reparent(t.parent, true)
 	var parent_scale: float = (t.parent as Node2D).global_scale.y if t.parent is Node2D else 1.0
 	var final_local: Vector2 = (t.parent as Node2D).to_local(t.global_pos)
@@ -216,6 +226,8 @@ func _drop(d: Drag) -> void:
 		(c.contents_root as ItemNode.ContentsPanel).rect = lay["rect"]
 		c.contents_root.queue_redraw()
 		final_local = lay[it]
+	elif t.kind == &"hand":
+		final_local = CharacterRig.grip_local(it)   # Griffpunkt = Slot-Ursprung, egal wie der Arm steht
 	it.set_lifted(false, animate)
 	if animate:
 		var dist: float = absf(t.global_pos.y - it.global_position.y)
@@ -226,6 +238,12 @@ func _drop(d: Drag) -> void:
 	else:
 		it.position = final_local
 		it.scale = final_scale
+	it.on_placed()
+	_relayout_owner(t.parent)
+	if t.kind == &"hand":
+		it.rotation = 0.0                   # Slot dreht (aufrecht + Haltewinkel), Item selbst nicht
+	elif t.kind == &"mouth" and t.node.has_method("eat"):
+		t.node.eat(it, animate)
 	if not t.rejected_reason.is_empty():
 		AudioBus.play_sfx("deny")
 		Log.debug("Drop abgelehnt: " + t.rejected_reason)
@@ -239,17 +257,27 @@ func _restore(d: Drag) -> void:
 	d.item.scale = d.from_scale
 	d.item.slot_index = d.from_slot
 	d.item.set_lifted(false, animate)
+	d.item.on_drag_end()
+	d.item.on_placed()
 	_relayout_owner(d.from_parent)
 
 
-## Ist node der Inhalts-Knoten eines Behälters → Behälter neu ordnen.
+## Behälter-Inhalt neu ordnen bzw. Figur neu posieren (Hand/Sitz hat sich geändert).
 static func _relayout_owner(node: Node) -> void:
 	if node and node.name == "Contents" and node.get_parent() is ItemNode:
 		(node.get_parent() as ItemNode).relayout_contents()
+	var n: Node = node
+	while n and not (n is ItemNode):
+		n = n.get_parent()
+	if n and n.has_method("refresh_pose"):
+		n.refresh_pose(true)
 
 
-func _tap(item: ItemNode) -> void:
-	item.on_tap()
+func _tap(item: ItemNode, world: Vector2 = Vector2.INF) -> void:
+	if world.is_finite():
+		item.on_tap_at(world)
+	else:
+		item.on_tap()
 	item_tapped.emit(item)
 
 

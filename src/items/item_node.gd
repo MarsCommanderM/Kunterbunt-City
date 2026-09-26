@@ -20,8 +20,9 @@ var is_open: bool = false
 var lifted: float = 0.0:              ## 0 = liegt, 1 = angehoben
 	set(v):
 		lifted = v
-		if sprite:
-			sprite.position.y = -LIFT_CM * v
+		var n: Node2D = lift_node()
+		if n:
+			n.position.y = -LIFT_CM * v
 		queue_redraw()
 
 var sprite: Sprite2D
@@ -42,11 +43,7 @@ func setup(definition: ItemDefinition) -> void:
 	uid = _next_uid
 	_next_uid += 1
 	name = "%s_%d" % [def.id, uid]
-	sprite = Sprite2D.new()
-	sprite.name = "Sprite"
-	sprite.centered = false
-	sprite.texture = load(def.sprite_path)
-	add_child(sprite)
+	_build_visual()
 	on_top_root = Node2D.new()
 	on_top_root.name = "OnTop"
 	add_child(on_top_root)
@@ -55,6 +52,49 @@ func setup(definition: ItemDefinition) -> void:
 	contents_root.visible = false
 	add_child(contents_root)
 	apply_world_size()
+
+
+## Optik aufbauen (überschreibbar: Figuren bauen hier ihre Ebenen).
+func _build_visual() -> void:
+	sprite = Sprite2D.new()
+	sprite.name = "Sprite"
+	sprite.centered = false
+	sprite.texture = load(def.sprite_path)
+	add_child(sprite)
+
+
+# ---------------------------------------------------------------- Hooks (Figuren/Tiere überschreiben)
+
+## Knoten, der beim Anheben 6 cm hochgeht (Figuren: der ganze Körper samt Händen und gehaltenem Item).
+func lift_node() -> Node2D:
+	return sprite
+
+
+## Knoten, unter denen weitere Items hängen können (für Treffer- und Zielsuche).
+func child_roots() -> Array[Node]:
+	return [on_top_root, contents_root]
+
+
+func on_drag_start(_grab_global: Vector2) -> void:
+	pass
+
+
+func on_drag_update(_delta: float, _velocity: Vector2) -> void:
+	pass
+
+
+func on_drag_end() -> void:
+	pass
+
+
+## Nach Abstellen/Rückgängig: neuer Eltern-Knoten steht fest (Figuren wählen hier Stehen/Sitzen/Liegen).
+func on_placed() -> void:
+	pass
+
+
+## Tippen mit Ort (Figuren: Kopf → Gesicht wechseln).
+func on_tap_at(_world: Vector2) -> void:
+	on_tap()
 
 
 ## Maßstab-Bibel §1: Skalierung = Welt-Höhe / Textur-Inhaltshöhe (gleich für x und y).
@@ -270,6 +310,12 @@ func relayout_contents() -> void:
 			(it as ItemNode).scale = Vector2.ONE
 
 
+## Liegt in einer Hand (HandSlot einer Figur)?
+func is_held() -> bool:
+	var p: Node = get_parent()
+	return p != null and String(p.name).begins_with("HandSlot")
+
+
 func set_open(open: bool) -> void:
 	if not def.is_container() or open == is_open:
 		return
@@ -311,7 +357,7 @@ func _bounce() -> void:
 
 
 func _draw() -> void:
-	if def == null or def.placement == "wall":
+	if def == null or def.placement == "wall" or is_held():
 		return
 	# weicher Kontaktschatten, wächst und verblasst beim Anheben
 	var w: float = _draw_size.x * (0.82 + 0.25 * lifted)

@@ -27,7 +27,22 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 ## Audio
 | Datei/Paket | Quelle | Lizenz |
 |---|---|---|
-| `assets/audio/sfx/*.wav` (11 Platzhalter-Effekte) | selbst synthetisiert mit `tools/make_sfx.py` (NumPy, fester Seed) | CC0 / eigenes Werk |
+| `assets/audio/sfx/*.wav` (14 Effekte, inkl. `pet_dog_bark`, `pet_cat_meow`, `eat_chomp`) | selbst synthetisiert mit `tools/make_sfx.py` (NumPy, fester Seed) | CC0 / eigenes Werk |
+
+## Figuren-Teile (Phase 03, Platzhalter)
+| Datei | Quelle | Lizenz |
+|---|---|---|
+| `assets/characters/parts/*/*.png` (63 Teile, 3 Schablonen) | selbst erzeugt mit `tools/make_rig_parts.py` (Pillow, Maße aus `data/characters/templates.json`) | CC0 / eigenes Werk |
+| `assets/characters/sprite/char_girl_01*.png`, `char_girl_01.json` | Referenz-Sprite aus `reference/sprites/` (Stil-C-Pipeline), Faust-Position gemessen mit `tools/dev/make_girl_hand.py` | CC0 / eigenes Werk |
+
+> Die Figuren-Teile sind bewusst **Platzhalter** (vektorige Grundformen in Stil C). Die echten,
+> mehrschichtigen Assets entstehen in Phase 06 mit derselben Pipeline – die Ebenen-Struktur
+> (`CharacterRig`, `parts.json`) bleibt dabei unverändert.
+
+## Haustiere (Phase 03)
+| Datei | Quelle | Lizenz |
+|---|---|---|
+| `assets/sprites/home/pet_dog_brown.png`, `pet_cat` (Platzhalter) | Stil-C-Referenz-Sprites bzw. `tools/make_placeholders.py` | CC0 / eigenes Werk |
 
 ## Schriften
 | Font | Quelle | Lizenz |

@@ -10,6 +10,7 @@ var out_dir: String
 func run(args: PackedStringArray) -> void:
 	out_dir = args[0] if args.size() > 0 else "docs/tests/P02"
 	DirAccess.make_dir_recursive_absolute(out_dir)
+	PetNode.autonomous = false
 	sb = load("res://src/debug/sandbox_kitchen.tscn").instantiate()
 	get_tree().root.add_child(sb)
 	await _frames(6)

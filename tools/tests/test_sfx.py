@@ -1,4 +1,4 @@
-"""Sounds (P02-T11): 11 synthetische WAVs (CC0, 0 €), kurz, leise genug, bit-genau reproduzierbar."""
+"""Sounds (P02-T11, P03): 14 synthetische WAVs (CC0, 0 €), kurz, leise genug, bit-genau reproduzierbar."""
 import hashlib
 import subprocess
 import sys
@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SFX = ROOT / "assets" / "audio" / "sfx"
 NAMES = ["pickup", "tap", "drop_soft", "drop_wood", "drop_clink", "drop_plastic", "drop_metal",
-         "drop_paper", "open", "close", "deny"]
+         "drop_paper", "open", "close", "deny", "pet_dog_bark", "pet_cat_meow", "eat_chomp"]
 
 
 def test_all_sounds_present_and_short():

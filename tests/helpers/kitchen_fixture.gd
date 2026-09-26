@@ -9,6 +9,8 @@ var drag: DragController
 
 
 func _init(test: GutTest) -> void:
+	PetNode.autonomous = false          # Tiere laufen nur per tick() – deterministisch
+	CharacterRig.animate_poses = false  # Posen springen sofort – deterministisch
 	room = ROOM_SCENE.instantiate()
 	test.add_child_autofree(room)
 	room.setup(Room.find_room(Room.load_area("res://data/areas/test_kitchen.json"), "kitchen"))

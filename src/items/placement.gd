@@ -1,8 +1,8 @@
 class_name Placement
 extends RefCounted
 ## Wohin fällt ein losgelassenes Item? (Tech-Spec §4.1, P02-T05/T06/T07)
-## Priorität: Behälter (offen, unter dem Finger) → Oberfläche/Stapel unter dem Item → Bodenband.
-## Hand (Phase 03) und Sitzplatz (Phase 03) kommen davor.
+## Priorität: Mund → Hand → Sitzplatz (PlacementCharacter, Phase 03) → Behälter (offen, unter dem Finger)
+## → Oberfläche/Stapel unter dem Item → Bodenband.
 
 const SNAP_CM: float = 10.0           ## Pivot darf so weit UNTER einer Fläche sein und rastet trotzdem ein
 const TABLE_MAX_H_CM: float = 60.0    ## Regel S-11: auf Tische/Regale nur Dinge ≤ 60 cm
@@ -13,7 +13,7 @@ const NOT_ON_SURFACES: Array[String] = ["furniture", "fixture", "character", "zo
 
 
 class Target:
-	var kind: StringName = &"floor"   ## floor | surface | item_surface | stack | container
+	var kind: StringName = &"floor"   ## floor | surface | item_surface | stack | container | hand | seat | mouth
 	var parent: Node                  ## neuer Eltern-Node
 	var global_pos: Vector2           ## Ziel-Pivot (global, cm)
 	var global_scale: float = 1.0     ## Ziel-Skalierung (global)
@@ -24,6 +24,9 @@ class Target:
 
 ## pivot = gewünschte Pivot-Position (global), pointer = Finger/Maus (global).
 static func find_target(room: Room, item: ItemNode, pivot: Vector2, pointer: Vector2) -> Target:
+	var ch: Target = PlacementCharacter.find(room, item, pivot, pointer)
+	if ch:
+		return ch
 	var c: Target = _container_target(room, item, pointer)
 	if c:
 		return c
@@ -192,5 +195,5 @@ static func _collect(n: Node, out: Array[ItemNode]) -> void:
 	for c: Node in n.get_children():
 		if c is ItemNode:
 			out.append(c)
-			_collect((c as ItemNode).on_top_root, out)
-			_collect((c as ItemNode).contents_root, out)
+			for r: Node in (c as ItemNode).child_roots():
+				_collect(r, out)

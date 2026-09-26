@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://src/debug/sandbox_characters.gd" id="1"]
+[ext_resource type="Script" path="res://src/world/world_camera.gd" id="2"]
+[ext_resource type="Script" path="res://src/items/drag_controller.gd" id="3"]
+[ext_resource type="Script" path="res://src/debug/debug_overlay.gd" id="4"]
+[ext_resource type="Script" path="res://src/ui/undo_button.gd" id="5"]
+
+[sub_resource type="StyleBoxFlat" id="hint_bg"]
+content_margin_left = 18.0
+content_margin_top = 10.0
+content_margin_right = 18.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 0.85)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[node name="SandboxCharacters" type="Node2D"]
+script = ExtResource("1")
+
+[node name="WorldCamera" type="Camera2D" parent="."]
+script = ExtResource("2")
+
+[node name="DragController" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="DebugOverlay" type="CanvasLayer" parent="."]
+script = ExtResource("4")
+
+[node name="Hud" type="CanvasLayer" parent="."]
+layer = 40
+
+[node name="Hint" type="Label" parent="Hud"]
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 24.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0.24, 0.18, 0.36, 1)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("hint_bg")
+text = "Figuren-Sandbox  ·  Figuren tragen, hinsetzen, Dinge in die Hand geben, Essen an den Mund  ·  Kopf antippen = Gesicht"
+
+[node name="UndoButton" type="Button" parent="Hud"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = -148.0
+offset_right = 148.0
+offset_bottom = -28.0
+script = ExtResource("5")

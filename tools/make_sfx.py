@@ -42,6 +42,26 @@ def noise(d, lp=0.2):
     return out
 
 
+def bark():
+    """Kurzes „Wuff“: Formant-artiger Ton mit schnellem Tonhöhen-Abfall + etwas Rauschen."""
+    n = int(SR * 0.22)
+    f = np.linspace(620, 330, n)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.25 * np.sin(3 * ph)
+    return (tone + 0.35 * noise(0.22, 0.4)[:n]) * env(n, 0.006, 11)
+
+
+def meow():
+    """„Miau“: Tonhöhe steigt und fällt, Obertöne öffnen sich (i → a → u)."""
+    n = int(SR * 0.45)
+    x = np.linspace(0, 1, n)
+    f = 520 + 380 * np.sin(np.pi * x) ** 1.5
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    bright = 0.2 + 0.8 * np.sin(np.pi * x)
+    tone = np.sin(ph) + bright * 0.6 * np.sin(2 * ph) + bright * 0.3 * np.sin(3 * ph)
+    return tone * np.minimum(1, x * 12) * np.minimum(1, (1 - x) * 5)
+
+
 def norm(x, peak=0.7):
     x = x - np.mean(x)
     fade = min(len(x), int(0.004 * SR))
@@ -58,6 +78,11 @@ SOUNDS = {
     "drop_plastic": lambda: norm(modes([880, 1390, 2250], 0.12, [45, 55, 70], [1, 0.6, 0.3]) + 0.4 * noise(0.12, 0.5) * env(int(SR * 0.12), 0.001, 60), 0.55),
     "drop_metal": lambda: norm(modes([1210, 2760, 4130, 5570], 0.5, [7, 9, 12, 15], [1, 0.8, 0.5, 0.3]), 0.45),
     "drop_paper": lambda: norm(noise(0.1, 0.35) * env(int(SR * 0.1), 0.003, 35), 0.5),
+    # Phase 03: Tierlaute (über den AudioBus-Limiter) und Essen
+    "pet_dog_bark": lambda: norm(bark(), 0.7),
+    "pet_cat_meow": lambda: norm(meow(), 0.55),
+    "eat_chomp": lambda: norm(np.concatenate([noise(0.07, 0.25) * env(int(SR * 0.07), 0.002, 40), np.zeros(int(SR * 0.05)),
+                                              noise(0.07, 0.3) * env(int(SR * 0.07), 0.002, 40)]), 0.5),
     "open": lambda: norm(noise(0.22, 0.08) * env(int(SR * 0.22), 0.05, 10) + 0.5 * modes([180], 0.22, [20]), 0.5),
     "close": lambda: norm(modes([120, 260], 0.18, [35, 50]) + 0.4 * noise(0.18, 0.2) * env(int(SR * 0.18), 0.001, 50), 0.6),
     "deny": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(520, 300, int(SR * 0.16))) / SR) * env(int(SR * 0.16), 0.005, 14), 0.4),

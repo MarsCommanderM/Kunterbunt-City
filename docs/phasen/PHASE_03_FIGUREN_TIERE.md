@@ -18,13 +18,13 @@
 | P03-T10 | Szene „Küche Maßstab“ nachbauen wie `reference/kueche_stil_c_massstab.png`, mit den **echten Sprites aus `reference/sprites/`** (Figur-Sprite dort nur als Einzelbild) |
 
 ## Akzeptanzkriterien
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_hand.gd`
-- [ ] Karotte in die Hand → Finger liegen über der Karotte, Karotte ≈ 20 cm (neben Kind 125 cm) – Screenshot
-- [ ] Teddy auf dem Stuhl sitzt auf 45 cm Sitzhöhe
-- [ ] Hund ist in jeder Tiefe kleiner als der Tisch (Test)
-- [ ] Figur setzt sich auf Stuhl/Sofa, legt sich ins Bett
+- [x] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_hand.gd`
+- [x] Karotte in die Hand → Finger liegen über der Karotte, Karotte ≈ 20 cm (neben Kind 125 cm) – Screenshot
+- [x] Teddy auf dem Stuhl sitzt auf 45 cm Sitzhöhe
+- [x] Hund ist in jeder Tiefe kleiner als der Tisch (Test)
+- [x] Figur setzt sich auf Stuhl/Sofa, legt sich ins Bett
 - [ ] Nachbau der Referenz-Küche wirkt proportional identisch (👤 Blick-Check)
-- [ ] `check.sh` grün
+- [x] `check.sh` grün (Maßstab ✅ · pytest 31/31 · GUT 169/169)
 
 ## 👤 Mensch
 **Erster Kindertest** (10 Minuten, 1–2 Kinder): Verstehen sie Anfassen, Hinsetzen, In-die-Hand-geben ohne Erklärung? Protokoll nach `docs/tests/P03_kindertest.md`.

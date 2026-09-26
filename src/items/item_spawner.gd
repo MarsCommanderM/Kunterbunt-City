@@ -5,7 +5,24 @@ extends RefCounted
 
 static func make(id: StringName) -> ItemNode:
 	var def: ItemDefinition = ItemDB.get_item(id)
-	return ItemNode.create(def) if def else null
+	if def == null:
+		return null
+	return PetNode.create_pet(def) if def.category == "pet" else ItemNode.create(def)
+
+
+## Figur aus Schablone (toddler/kid/adult) oder fertiges Sprite (char_girl_01) auf den Boden.
+static func character_on_floor(room: Room, tid: String, x_cm: float, depth_cm: float, look: Dictionary = {}) -> ItemNode:
+	var c: ItemNode
+	if tid.begins_with("char_"):
+		c = SpriteCharacter.create_sprite_character(tid)
+	else:
+		c = CharacterRig.create_character(tid, look)
+	room.ysort_root.add_child(c)
+	var p: Vector2 = room.floor_band.clamp_point(Vector2(x_cm, depth_cm))
+	c.position = p
+	c.scale = Vector2.ONE * room.floor_band.depth_factor(p.y)
+	c.on_placed()
+	return c
 
 
 ## Auf den Boden an x, Tiefe y (cm).

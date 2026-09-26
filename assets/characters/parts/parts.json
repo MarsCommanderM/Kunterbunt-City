@@ -1,0 +1,590 @@
+{
+ "adult": {
+  "_geometry": {
+   "shoe_h_cm": 8,
+   "sit_drop_cm": 42.0,
+   "sit_thigh_cm": 12
+  },
+  "arm_skin": {
+   "anchor_cm": [
+    5.8,
+    58.8
+   ],
+   "h_cm": 59.6,
+   "note": "Haut \u00b7 Anker = Schulter",
+   "w_cm": 11.6
+  },
+  "arm_sleeve": {
+   "anchor_cm": [
+    5.8,
+    26.8
+   ],
+   "h_cm": 27.6,
+   "note": "Shirt \u00b7 Anker = Schulter",
+   "w_cm": 11.6
+  },
+  "face_eat_closed": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_eat_open": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_happy": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_laugh": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_love": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_sad": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_surprised": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "face_tired": {
+   "anchor_cm": [
+    18.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 36
+  },
+  "hair_back_pigtails": {
+   "anchor_cm": [
+    35.0,
+    41.6
+   ],
+   "h_cm": 41.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 69.99999999999999
+  },
+  "hair_back_short": {
+   "anchor_cm": [
+    20.96,
+    37.6
+   ],
+   "h_cm": 37.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 41.92000000000001
+  },
+  "hair_front_pigtails": {
+   "anchor_cm": [
+    20.8,
+    29.6
+   ],
+   "h_cm": 29.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 41.6
+  },
+  "hair_front_short": {
+   "anchor_cm": [
+    20.8,
+    29.6
+   ],
+   "h_cm": 29.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 41.6
+  },
+  "hand": {
+   "anchor_cm": [
+    6.0,
+    6.0
+   ],
+   "h_cm": 12.0,
+   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
+   "w_cm": 12.0
+  },
+  "hand_front": {
+   "anchor_cm": [
+    6.0,
+    6.0
+   ],
+   "h_cm": 12.0,
+   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
+   "w_cm": 13.200000000000001
+  },
+  "head": {
+   "anchor_cm": [
+    21.68,
+    20.8
+   ],
+   "h_cm": 41.6,
+   "note": "Haut \u00b7 Anker = Kopfmitte",
+   "w_cm": 43.36
+  },
+  "legs_sit": {
+   "anchor_cm": [
+    17.3,
+    42.8
+   ],
+   "h_cm": 43.6,
+   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
+   "w_cm": 34.6
+  },
+  "legs_stand": {
+   "anchor_cm": [
+    17.3,
+    0
+   ],
+   "h_cm": 92.8,
+   "note": "Hose \u00b7 Anker = Boden Mitte",
+   "w_cm": 34.6
+  },
+  "shoes_stand": {
+   "anchor_cm": [
+    18.8,
+    0.8
+   ],
+   "h_cm": 9.6,
+   "note": "Schuhe \u00b7 Anker = Boden Mitte",
+   "w_cm": 37.6
+  },
+  "torso": {
+   "anchor_cm": [
+    20.8,
+    0.8
+   ],
+   "h_cm": 45.6,
+   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
+   "w_cm": 41.6
+  }
+ },
+ "kid": {
+  "_geometry": {
+   "shoe_h_cm": 7,
+   "sit_drop_cm": 22.0,
+   "sit_thigh_cm": 8
+  },
+  "arm_skin": {
+   "anchor_cm": [
+    5.05,
+    30.8
+   ],
+   "h_cm": 31.6,
+   "note": "Haut \u00b7 Anker = Schulter",
+   "w_cm": 10.1
+  },
+  "arm_sleeve": {
+   "anchor_cm": [
+    5.05,
+    13.8
+   ],
+   "h_cm": 14.6,
+   "note": "Shirt \u00b7 Anker = Schulter",
+   "w_cm": 10.1
+  },
+  "face_eat_closed": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_eat_open": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_happy": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_laugh": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_love": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_sad": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_surprised": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "face_tired": {
+   "anchor_cm": [
+    21.0,
+    21.0
+   ],
+   "h_cm": 42,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 42
+  },
+  "hair_back_pigtails": {
+   "anchor_cm": [
+    40.7,
+    43.6
+   ],
+   "h_cm": 43.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 81.39999999999999
+  },
+  "hair_back_short": {
+   "anchor_cm": [
+    24.32,
+    39.4
+   ],
+   "h_cm": 39.400000000000006,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 48.64000000000001
+  },
+  "hair_front_pigtails": {
+   "anchor_cm": [
+    23.8,
+    29.84
+   ],
+   "h_cm": 29.84,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 47.6
+  },
+  "hair_front_short": {
+   "anchor_cm": [
+    23.8,
+    29.84
+   ],
+   "h_cm": 29.84,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 47.6
+  },
+  "hand": {
+   "anchor_cm": [
+    5.4,
+    5.4
+   ],
+   "h_cm": 10.799999999999999,
+   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
+   "w_cm": 10.799999999999999
+  },
+  "hand_front": {
+   "anchor_cm": [
+    5.4,
+    5.4
+   ],
+   "h_cm": 10.799999999999999,
+   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
+   "w_cm": 11.879999999999999
+  },
+  "head": {
+   "anchor_cm": [
+    25.16,
+    21.8
+   ],
+   "h_cm": 43.6,
+   "note": "Haut \u00b7 Anker = Kopfmitte",
+   "w_cm": 50.32
+  },
+  "legs_sit": {
+   "anchor_cm": [
+    13.8,
+    22.8
+   ],
+   "h_cm": 23.6,
+   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
+   "w_cm": 27.6
+  },
+  "legs_stand": {
+   "anchor_cm": [
+    13.8,
+    0
+   ],
+   "h_cm": 52.8,
+   "note": "Hose \u00b7 Anker = Boden Mitte",
+   "w_cm": 27.6
+  },
+  "shoes_stand": {
+   "anchor_cm": [
+    15.8,
+    0.8
+   ],
+   "h_cm": 8.6,
+   "note": "Schuhe \u00b7 Anker = Boden Mitte",
+   "w_cm": 31.6
+  },
+  "torso": {
+   "anchor_cm": [
+    16.3,
+    0.8
+   ],
+   "h_cm": 33.6,
+   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
+   "w_cm": 32.6
+  }
+ },
+ "toddler": {
+  "_geometry": {
+   "shoe_h_cm": 5,
+   "sit_drop_cm": 14.0,
+   "sit_thigh_cm": 6
+  },
+  "arm_skin": {
+   "anchor_cm": [
+    4.55,
+    20.8
+   ],
+   "h_cm": 21.6,
+   "note": "Haut \u00b7 Anker = Schulter",
+   "w_cm": 9.1
+  },
+  "arm_sleeve": {
+   "anchor_cm": [
+    4.55,
+    9.8
+   ],
+   "h_cm": 10.6,
+   "note": "Shirt \u00b7 Anker = Schulter",
+   "w_cm": 9.1
+  },
+  "face_eat_closed": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_eat_open": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_happy": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_laugh": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_love": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_sad": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_surprised": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "face_tired": {
+   "anchor_cm": [
+    20.0,
+    20.0
+   ],
+   "h_cm": 40,
+   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
+   "w_cm": 40
+  },
+  "hair_back_pigtails": {
+   "anchor_cm": [
+    38.8,
+    41.6
+   ],
+   "h_cm": 41.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 77.6
+  },
+  "hair_back_short": {
+   "anchor_cm": [
+    23.2,
+    37.6
+   ],
+   "h_cm": 37.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 46.400000000000006
+  },
+  "hair_front_pigtails": {
+   "anchor_cm": [
+    22.8,
+    28.6
+   ],
+   "h_cm": 28.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 45.6
+  },
+  "hair_front_short": {
+   "anchor_cm": [
+    22.8,
+    28.6
+   ],
+   "h_cm": 28.6,
+   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
+   "w_cm": 45.6
+  },
+  "hand": {
+   "anchor_cm": [
+    4.8,
+    4.8
+   ],
+   "h_cm": 9.6,
+   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
+   "w_cm": 9.6
+  },
+  "hand_front": {
+   "anchor_cm": [
+    4.8,
+    4.8
+   ],
+   "h_cm": 9.6,
+   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
+   "w_cm": 10.56
+  },
+  "head": {
+   "anchor_cm": [
+    24.0,
+    20.8
+   ],
+   "h_cm": 41.6,
+   "note": "Haut \u00b7 Anker = Kopfmitte",
+   "w_cm": 48.0
+  },
+  "legs_sit": {
+   "anchor_cm": [
+    12.8,
+    14.8
+   ],
+   "h_cm": 15.6,
+   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
+   "w_cm": 25.6
+  },
+  "legs_stand": {
+   "anchor_cm": [
+    12.8,
+    0
+   ],
+   "h_cm": 32.8,
+   "note": "Hose \u00b7 Anker = Boden Mitte",
+   "w_cm": 25.6
+  },
+  "shoes_stand": {
+   "anchor_cm": [
+    14.55,
+    0.8
+   ],
+   "h_cm": 6.6,
+   "note": "Schuhe \u00b7 Anker = Boden Mitte",
+   "w_cm": 29.1
+  },
+  "torso": {
+   "anchor_cm": [
+    14.8,
+    0.8
+   ],
+   "h_cm": 23.6,
+   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
+   "w_cm": 29.6
+  }
+ }
+}

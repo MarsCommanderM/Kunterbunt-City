@@ -46,6 +46,8 @@ func undo() -> bool:
 		item.scale = s["scale"]
 		item.slot_index = s["slot"]
 		item.set_lifted(false, false)
+		item.rotation = 0.0
+		item.on_placed()
 		DragController._relayout_owner(parent)
 		changed.emit(_steps.size())
 		return true

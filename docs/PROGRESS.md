@@ -4,10 +4,10 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **03 · Figuren & Tiere** |
-| Nächste Task | P03-T01 |
-| Letzter grüner check.sh | 2026-09-26 (Phase 02) |
-| Version | 0.0.3 |
+| Aktuelle Phase | **04 · Charakter-Editor** |
+| Nächste Task | P04-T01 |
+| Letzter grüner check.sh | 2026-09-26 (Phase 03) |
+| Version | 0.0.4 |
 
 ## Phasen
 | Phase | Status | Bericht |
@@ -15,7 +15,7 @@
 | 00 Setup | ✅ fertig | Log 2026-09-26 |
 | 01 Welt-Maßstab | ✅ fertig (👤 Blick-Check offen) | Log 2026-09-26 |
 | 02 Items & Drag | ✅ fertig (👤 Anfass-Gefühl + GPU-FPS offen) | Log 2026-09-26 |
-| 03 Figuren & Tiere | ⏳ | – |
+| 03 Figuren & Tiere | ✅ fertig (👤 Kindertest offen) | Log 2026-09-26 |
 | 04 Editor | ⏳ | – |
 | 05 Menü & Speichern | ⏳ | – |
 | 06 Asset-Pipeline | ⏳ | – |
@@ -44,10 +44,63 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 01 | Einmessen Test-Küche | Arbeitsplatte 90,0 cm · Regale 153/194 cm · Bodenband 0…73,2 cm · Raum 716×313 cm |
 | 2026-09-26 | 01 | Web-Export mit Test-Küche | ✅ index.pck 3,2 MB |
 | 2026-09-26 | 02 | check.sh | Maßstab ✅ (155 Einträge, 61 Items) · pytest 15/15 ✅ · GUT 129/129 ✅ (850 Asserts) |
+| 2026-09-26 | 03 | check.sh | Maßstab ✅ (155 Einträge, 65 Items) · pytest 31/31 ✅ · GUT 169/169 ✅ (1019 Asserts) |
+| 2026-09-26 | 03 | P03-Nachweis `p03_check.gd` (37 Prüfungen, Zahlen statt Augenmaß) | 37/37 grün: Karotte 20,0 cm (15 % der Kind-Größe) · Apfel 7,8 cm · Ball 31,7 cm mit zwei Händen · Hüfte Kind 45,0 cm, Kopf 120,0 cm, Füße baumeln 23,0 cm · Erwachsene Sessel 42,0 cm, Füße 0,0 cm · Kleinkind liegt 92 × 49 cm auf 44,2 cm · Teddy 45,0 cm · Hund 49,4 cm < Tisch 77,8 cm · Griff-Abstand 0,00 cm |
+| 2026-09-26 | 03 | Referenz-Küche nachgemessen (`p03_reference_kueche.gd`) | 13 Objekte: größte Abweichung **4,3 %** zur Maßstab-Tabelle (Teddy sitzt 45,0 cm) |
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
-### 2026-09-26 · Phase 02 · Item-System & Drag-and-Drop ✅
+### 2026-09-26 · Phase 03 · Figuren & Tiere ✅
+- Erledigt: P03-T01…T10.
+  - `tools/make_rig_parts.py`: 63 Figuren-Teile (3 Schablonen) als Stil-C-Platzhalter, 8 px/cm, bit-genau.
+    Anker in `parts.json` (cm, y von unten), Sitz-Geometrie in `_geometry` (`sit_drop_cm`).
+  - `CharacterRig` (Ebenen: Haar hinten · Arm hinten · Beine · Schuhe · Oberteil · Kopf · Gesicht ·
+    Haar vorne · Arm vorne · Finger). Knoten-Kette `Rig → Lift → Swing → Parts → Arm/HeadPivot`.
+  - 3 Schablonen: `toddler` 90, `kid` 125, `adult` 172 cm – **Größe nur aus der Tabelle** (Test).
+  - Posen `stand/sit/lie`: sitzende Beine hängen ab der **Hüfte** (Knie auf Sitzhöhe) und verkürzen sich
+    perspektivisch, wenn der Sitz niedriger ist als das Schienbein (Erwachsene auf dem 42-cm-Sofa).
+    Beim Liegen: Körper waagerecht um die Hüfte gedreht, **Kopf bleibt aufrecht** (liegt auf dem Kissen),
+    beide Arme liegen oben.
+  - `PlacementCharacter` (vor Behälter/Fläche/Boden): **Mund** (Essen ≤ 15 cm) → **Hand** (Griffpunkt
+    ≤ 25 cm, `two_hands` nur in Slot 2) → **Sitz-/Liegeplatz** (Figur/Tier/Spielzeug, Becken-Radius 30 cm).
+  - `Seats`: Sitzhöhe Plätze aus der Tabelle (Stuhl 45, Sofa/Sessel 42, Bett 45), Belegung, Platzsuche.
+  - `CharacterEating`: Eis am Mund → Mampf → weg, Gesicht `love`.
+  - 6 Gefühle (fröhlich, lachend, überrascht, traurig, müde, verliebt); Tipp auf den Kopf schaltet weiter,
+    Tipp auf den Körper → lachen + Hüpfen.
+  - `SpriteCharacter`: fertiges Mädchen (`reference/sprites/`) mit Hand-Slot + Faust-Ebene über dem Item.
+  - `PetNode`: Hund/Katze, 60 cm/s, Modi sitzen/laufen/folgen (Start > 110 cm, Stopp 50 cm), Tipp → Laut
+    über den `AudioBus`-Tier-Limiter (1 Laut / 8 s), `tick()` für Tests, RNG-Seed pro Tier.
+  - Figuren-Sandbox `sandbox_characters.tscn` (4 Figuren, Hund, Katze, Teddy, Ball, Stuhl, 2. Stuhl,
+    Sofa, Sessel, Bett, Esstisch mit Essen) + Referenz-Küche `sandbox_reference_kitchen.tscn` (T10).
+- Tests (neu): GUT `test_hand` (**Pflicht**), `test_character`, `test_seat`, `test_pet`,
+  `test_character_drag` · pytest `test_p03_shots` (Bilder + Messwerte).
+- Beweis: `docs/tests/P03/*.jpg` (13 Bilder) + `p03_messwerte.json` + `p03_13_referenz_kueche.json`.
+  Erzeugt durch `tools/godot/p03_scenario_runner.gd` (Screenshots, bedient die Drag-API wie ein Kind),
+  `tools/godot/p03_check.gd` (37 Zahlen-Prüfungen) und `tools/godot/p03_reference_kueche.gd` (T10).
+- **Neues Messwerkzeug (weil Augenmaß nicht reproduzierbar ist):**
+  - Silhouetten-Differenz: Item ausblenden, Bild 2 machen, Differenz → exakte Pixel → cm. Misst nur das,
+    was wirklich sichtbar ist (Finger verdecken den Apfel korrekt).
+  - `tools/godot/p03_pose_dump.gd`: jede Figur-Ebene in cm über dem Standpunkt (Tabelle je Pose).
+  - Screenshot-Läufer rechnet den Bildausschnitt aus den Objekten selbst und meldet „im Bild/angeschnitten“.
+- Von den Prüfungen gefundene und behobene Fehler:
+  - **Figur versank beim Sitzen:** `PlacementCharacter` setzte den Fußpunkt statt der Hüfte auf den
+    Sitzpunkt, und die Pose verschob den Körper zusätzlich → Oberteil-Block bei den Füßen.
+  - **Beine ragten beim Sitzen 11 cm unter den Boden** (Erwachsene auf dem 42-cm-Sofa): Sitz-Teil war zu
+    lang (Knie saß `sit_thigh` unter der Hüfte). Neues Teil: Knie auf Sitzhöhe, Schienbein hängt ab dort.
+  - **Kopf versank beim Liegen** im Bett und der hintere Arm hing *unter* dem Körper: Körper wird jetzt
+    um die halbe Rumpfdicke angehoben, Kopf um die halbe Kopfdicke, beide Arme liegen oben.
+  - Tiere liefen in Tests und Screenshots selbstständig umher → `PetNode.autonomous` (statisch) aus,
+    Bewegung nur per `tick()`. `_process` wird dann ganz abgeschaltet (CPU + test_perf grün).
+  - Pose-Tweens machten Messungen ungenau → `CharacterRig.animate_poses` (statisch) für Tests/Bilder aus.
+- Entscheidungen:
+  - `layer_geometry.gd`: Hülle und Pixel-Treffer über viele Sprite-Ebenen – hält `character_rig.gd`
+    unter 400 Zeilen und wird später von den NPCs mitgenutzt.
+  - Sitzhöhe wirkt **nur** über die Tabelle (`seat_h_cm`), nie über die Figur.
+  - `Lift`-Knoten: beim Anheben gehen Körper, Hände und gehaltene Items gemeinsam 6 cm hoch.
+  - Sitzende Figur wird über die **Hüfte** einsortiert (Knoten-Ursprung = Füße bleibt die Regel).
+- 👤 offen: **Erster Kindertest** (10 Minuten, 1–2 Kinder) → Protokoll in `docs/tests/P03_kindertest.md`.
+- Nächste Task: P04-T01
+### 2026-09-26 · Phase 02
 - Erledigt: P02-T01…T12.
   - `tools/make_placeholders.py`: 155 Platzhalter, 8 px/cm, randlos, bit-genau reproduzierbar
   - `ItemDefinition` + `ItemDB`-Item-Laden mit Validierung (61 Items: 18 echte Stil-C-Sprites + 43 Platzhalter aus `tools/dev/make_test_items.py`)

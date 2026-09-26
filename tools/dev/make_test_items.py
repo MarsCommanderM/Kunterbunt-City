@@ -26,6 +26,11 @@ SPEC = [  # (item_id, scale_ref, extra)
                                   "sfx": {"open": "open", "close": "close"}}),
     ("home_stool", "home_stool", {"surface_h_cm": 45}),
     ("home_table_coffee", "home_table_coffee", {}),
+    # Phase 03: Sitz-/Liegeplätze und ein zweites Tier
+    ("home_sofa", "home_sofa", {"seat": {"pose": "sit", "slots": 3}}),
+    ("home_armchair", "home_armchair", {"seat": {"pose": "sit", "slots": 1}}),
+    ("home_bed_kid", "home_bed_kid", {"seat": {"pose": "lie", "slots": 1}}),
+    ("pet_cat", "pet_cat", {"grip": [0.5, 0.45], "sfx": {"voice": "pet_cat_meow"}}),
 ]
 
 items = []

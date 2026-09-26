@@ -27,6 +27,9 @@ const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
 @export var surface_inset: float = 0.08  ## seitlicher Rand der Fläche (Anteil der Breite)
 @export var surface_frac_y: float = -1.0 ## ≥ 0: Abstellhöhe als Anteil von oben im Sprite (perspektivische Tischplatte)
 @export var seat_frac_y: float = -1.0    ## ≥ 0: Sitzhöhe als Anteil von oben (Phase 03)
+@export var seat_h_cm: float = 0.0    ## > 0: Sitz-/Liegeplatz (Stuhl 45, Sofa 42, Bett 45) – aus der Tabelle
+@export var seat_pose: String = "sit" ## sit | lie
+@export var seat_slots: int = 1
 @export var container_slots: int = 0
 @export var container_max_item_h_cm: float = 0.0
 @export var sfx: Dictionary = {}
@@ -40,6 +43,10 @@ func is_stackable() -> bool:
 
 func is_container() -> bool:
 	return container_slots > 0
+
+
+func has_seat() -> bool:
+	return seat_h_cm > 0.0
 
 
 func has_surface() -> bool:
@@ -95,6 +102,10 @@ static func from_dict(d: Dictionary, scale_entry: Dictionary, file: String, erro
 	def.surface_inset = float(d.get("surface_inset", 0.08))
 	def.surface_frac_y = float(d.get("surface_frac_y", -1.0))
 	def.seat_frac_y = float(d.get("seat_frac_y", -1.0))
+	var seat: Dictionary = d.get("seat", {}) if d.get("seat") is Dictionary else {}
+	def.seat_h_cm = float(seat.get("h_cm", scale_entry.get("seat_h_cm", 0.0))) * def.scale_mul
+	def.seat_pose = String(seat.get("pose", "lie" if def.scale_ref.contains("bed") else "sit"))
+	def.seat_slots = int(seat.get("slots", 1))
 	var cont: Dictionary = d.get("container", {})
 	def.container_slots = int(cont.get("slots", 0))
 	def.container_max_item_h_cm = float(cont.get("max_item_h_cm", def.height_cm * 0.3))

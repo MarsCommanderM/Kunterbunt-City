@@ -818,6 +818,81 @@
    ],
    "hold": "none",
    "placement": "floor"
+  },
+  {
+   "id": "home_sofa",
+   "scale_ref": "home_sofa",
+   "size_cm": [
+    200,
+    85
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "home_armchair",
+   "scale_ref": "home_armchair",
+   "size_cm": [
+    85,
+    90
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "home_bed_kid",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    180,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pet_cat",
+   "scale_ref": "pet_cat",
+   "size_cm": [
+    30,
+    28
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "grip": [
+    0.5,
+    0.45
+   ],
+   "sfx": {
+    "voice": "pet_cat_meow"
+   }
   }
  ]
 }
