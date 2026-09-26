@@ -1,0 +1,48 @@
+; Kunterbunt City – Godot-Projektdatei
+; Einstellungen laut docs/06_TECH_SPEC.md §1
+
+config_version=5
+
+[application]
+
+config/name="Kunterbunt City"
+config/description="Kostenloses Kinder-Sandbox-Spiel – 11 Bereiche, echte Größen (1 Einheit = 1 cm)."
+config/version="0.0.1"
+run/main_scene="res://src/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(1, 0.97, 0.92, 1)
+
+[autoload]
+
+Log="*res://src/core/log.gd"
+Settings="*res://src/core/settings.gd"
+ItemDB="*res://src/core/item_db.gd"
+SaveSystem="*res://src/core/save_system.gd"
+Game="*res://src/core/game.gd"
+SceneRouter="*res://src/core/scene_router.gd"
+AudioBus="*res://src/core/audio_bus.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(1, 0.97, 0.92, 1)

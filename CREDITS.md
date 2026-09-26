@@ -6,8 +6,8 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 ## Engine & Werkzeuge
 | Name | Zweck | Lizenz |
 |---|---|---|
-| Godot Engine 4 | Spiel-Engine | MIT |
-| GUT (Godot Unit Test) | Tests | MIT |
+| Godot Engine 4.7.2 | Spiel-Engine | MIT |
+| GUT (Godot Unit Test) 9.6.1 | Tests, liegt in `addons/gut/` | MIT (© Butch Wesley) |
 | Python, Pillow, NumPy, SciPy, PyYAML, pytest | Asset-Pipeline & Tests | PSF / HPND / BSD / MIT |
 
 ## Grafik-Erzeugung
