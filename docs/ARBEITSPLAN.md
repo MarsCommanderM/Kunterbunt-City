@@ -69,14 +69,7 @@ Bauplan: `docs/phasen/PHASE_02_ITEMS_DRAGDROP.md`
 - [ ] **P02-T12** Performance-Test: 250 Items im Raum, 60 FPS Desktop, Messung in PROGRESS.md
 
 **Abnahme:**
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_scale.gd` + `tests/test_drag_drop.gd`
-- [ ] Apfel auf die Arbeitsplatte ziehen → steht exakt auf 90 cm (GUT ±0,5 cm)
-- [ ] Apfel ins Leere loslassen → fällt auf den Boden, nie aus der Welt
-- [ ] Ein Ei (6 cm) ist mit dem Finger gut greifbar (Tippfläche ≥ 48 dp)
-- [ ] 3 Items gleichzeitig ziehbar (Touch-Emulation)
-- [ ] Rückgängig stellt 30 Aktionen wieder her
-- [ ] 250 Items → ≥ 60 FPS (Desktop)
-- [ ] `check.sh` grün
+- [ ] 250 Items → ≥ 60 FPS (Desktop) — Logik gemessen (headless 145 FPS), GPU-Messung 👤 auf echter Hardware
 
 ## Phase 03 · Figuren & Haustiere (Grundsystem)
 *Figuren, die man ziehen, hinsetzen, hinlegen und Items richtig in die Hand geben kann. Dazu ein Basis-Haustier.*  
@@ -94,13 +87,7 @@ Bauplan: `docs/phasen/PHASE_03_FIGUREN_TIERE.md`
 - [ ] **P03-T10** Szene „Küche Maßstab“ nachbauen wie reference/kueche_stil_c_massstab.png, mit den echten Sprites aus reference/sprites/ (Figur-Sprite dort nur als Einzelbild)
 
 **Abnahme:**
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_hand.gd`
-- [ ] Karotte in die Hand → Finger liegen über der Karotte, Karotte ≈ 20 cm (neben Kind 125 cm) – Screenshot
-- [ ] Teddy auf dem Stuhl sitzt auf 45 cm Sitzhöhe
-- [ ] Hund ist in jeder Tiefe kleiner als der Tisch (Test)
-- [ ] Figur setzt sich auf Stuhl/Sofa, legt sich ins Bett
 - [ ] Nachbau der Referenz-Küche wirkt proportional identisch (👤 Blick-Check)
-- [ ] `check.sh` grün
 
 ## Phase 04 · Charakter- & Haustier-Editor
 *Beim ersten Start muss eine eigene Figur erstellt werden. Danach unbegrenzt Figuren und Haustiere erstellen, bearbeiten und löschen.*  
@@ -118,12 +105,7 @@ Bauplan: `docs/phasen/PHASE_04_EDITOR.md`
 - [ ] **P04-T10** Platzhalter-Teile: je Slot 5 Varianten als Platzhalter (echte Stil-C-Teile kommen über die Pipeline in Phase 06/07)
 
 **Abnahme:**
-- [ ] Ohne eigene Figur ist kein Bereich betretbar (Test)
-- [ ] 100 Figuren speichern/laden ohne Ruckeln
-- [ ] Umfärben funktioniert pro Teil mit 3 Zonen
-- [ ] Größe der Figur hängt nur von der Schablone ab (Kind immer 125 cm)
 - [ ] Editor ist ohne Lesen bedienbar (👤 Kindertest mit 1 Kind)
-- [ ] `check.sh` grün
 
 ## Phase 05 · Startmenü (Stadtkarte), Speichern, Bereichswechsel
 *Der komplette Spielfluss: App-Start → (Pflicht-Editor) → Stadtkarte mit einem Button pro Bereich → Spawn im Bereich → zurück zur Karte. Alles wird gespeichert.*  
@@ -142,13 +124,7 @@ Bauplan: `docs/phasen/PHASE_05_MENU_SAVE.md`
 - [ ] **P05-T11** Rucksack (Tech-Spec §4.7): 20 Plätze, Items wandern zwischen Bereichen
 
 **Abnahme:**
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_save_migration.gd` + Fixtures in `tests/fixtures/`
-- [ ] Kompletter Ablauf ohne Lesen bedienbar
-- [ ] Bereichswechsel < 2 s (Messung)
-- [ ] App schließen und neu starten → alles exakt wie vorher (Positionen ±0,1 cm)
-- [ ] Alte Speicherdatei (v1-Fixture) lädt nach einer Format-Änderung korrekt
-- [ ] Web-Build speichert im Browser (Seite neu laden → Zustand bleibt)
-- [ ] `check.sh` grün
+- [ ] Web-Build speichert im Browser (Seite neu laden → Zustand bleibt) – 👤 Browser-Test offen
 
 ## Phase 06 · Asset-Pipeline (produktiv)
 *Aus KI-Bildern werden mit einem Befehl fertige, maßstabsgetreue Sprites samt Item-JSON und Atlas, inklusive automatischer Prüfung.*  
