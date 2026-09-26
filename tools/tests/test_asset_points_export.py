@@ -102,8 +102,12 @@ def test_build_record_matches_reference_format():
     ref = json.loads((ROOT / "data" / "items" / "home_kitchen_demo.json")
                      .read_text(encoding="utf-8"))
     ref_rec = next(r for r in ref["items"] if r["id"] == "home_cup_orange_dots")
-    assert set(rec) == set(ref_rec), "Schlüssel entsprechen der Referenz"
-    assert rec == ref_rec, "Record identisch zur Referenz (inkl. size_cm & scale_mul)"
+    assert set(rec) - {"pad_px"} == set(ref_rec) - {"pad_px"}, \
+        "Schlüssel entsprechen der Referenz"
+    assert rec["pad_px"] == 4, "4 px Padding werden im JSON gemeldet"
+    assert {k: v for k, v in rec.items() if k != "pad_px"} == \
+           {k: v for k, v in ref_rec.items() if k != "pad_px"}, \
+        "Record identisch zur Referenz (inkl. size_cm & scale_mul)"
 
 
 def test_upsert_replaces_in_place_and_appends(tmp_path):

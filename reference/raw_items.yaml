@@ -1,0 +1,22 @@
+sheet: raw_items.png
+area: home
+room: kitchen
+items_json: home_kitchen_demo.json
+# Demo-Blatt (referenz): Werte 1:1 aus reference/pipeline_demo_kueche.py
+items:
+  - {id: food_carrot, scale_ref: food_carrot, grip: [0.5, 0.36], hold: one_hand, hold_angle: -20, placement: table}
+  - {id: food_apple_red, scale_ref: food_apple, grip: [0.5, 0.62], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: home_mug_pink_dots, scale_ref: kitchen_mug, grip: [0.9, 0.45], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: home_cup_orange_dots, scale_ref: kitchen_mug, scale_mul: 0.9, grip: [0.5, 0.55], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: food_apple_green, scale_ref: food_apple, grip: [0.5, 0.62], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: food_egg, scale_ref: food_egg, grip: [0.5, 0.55], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: food_icecream_3, scale_ref: food_icecream_cone, grip: [0.5, 0.8], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: food_icecream_3b, scale_ref: food_icecream_cone, grip: [0.5, 0.8], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: school_book_blue_star, scale_ref: item_book, grip: [0.1, 0.5], hold: one_hand, hold_angle: 0, placement: shelf}
+  - {id: food_egg_chocolate, scale_ref: food_choco_egg, grip: [0.5, 0.55], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: toy_beachball, scale_ref: toy_beachball, grip: [0.5, 0.5], hold: two_hands, hold_angle: 0, placement: floor}
+  - {id: toy_teddy_brown, scale_ref: toy_teddy, grip: [0.22, 0.62], hold: one_hand, hold_angle: 0, placement: floor}
+  - {id: toy_teddy_brown_b, scale_ref: toy_teddy, grip: [0.22, 0.62], hold: one_hand, hold_angle: 0, placement: floor}
+  - {id: flower_tulip_red_pot, scale_ref: item_flower_pot, grip: [0.5, 0.82], hold: one_hand, hold_angle: 0, placement: table}
+  - {id: flower_tulip_yellow_pot, scale_ref: item_flower_pot, grip: [0.5, 0.82], hold: one_hand, hold_angle: 0, placement: table}
+scene: reference_kitchen

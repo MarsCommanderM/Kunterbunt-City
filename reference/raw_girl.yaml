@@ -1,0 +1,7 @@
+sheet: raw_girl.png
+area: home
+room: kitchen
+mode: character
+# Kein items_json: Figuren landen in assets/characters/sprite/ (+ .sprite.json)
+items:
+  - {id: char_girl_01, scale_ref: char_child}

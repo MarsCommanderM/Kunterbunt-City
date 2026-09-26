@@ -25,6 +25,13 @@ PX_PER_CM = 8      # Ausgabe-Dichte (2× Referenz 4 px/cm)
 MIN_EDGE_PX = 64   # kleinste Kantenlänge, sonst werden Details matschig
 PAD_PX = 4         # transparentes Padding
 
+# Felder, die die Pipeline selbst schreibt – beim Upsert ersetzt sie diese.
+# Alles andere (tags, sfx, seat, surface_*, …) bleibt vom Menschen/anderen Werkzeugen.
+PIPELINE_KEYS = frozenset({
+    "id", "scale_ref", "size_cm", "pivot", "grip", "hold", "hold_angle",
+    "placement", "movable", "sprite", "pad_px", "scale_mul",
+})
+
 
 def target_px(size_cm: list[float], px_per_cm: int = PX_PER_CM,
               min_edge: int = MIN_EDGE_PX) -> tuple[int, int, float]:
@@ -40,14 +47,17 @@ def target_px(size_cm: list[float], px_per_cm: int = PX_PER_CM,
 
 
 def export_sprite(img: Image.Image, size_cm: list[float], item_id: str, area: str,
-                  *, sprites_root: Path | None = None) -> Path:
+                  *, sprites_root: Path | None = None, out_path: Path | None = None) -> Path:
     """Sprite auf size_cm × 8 px/cm skalieren, padden und als PNG ablegen."""
-    root = Path(sprites_root) if sprites_root else SPRITES_ROOT
     w, h, _ = target_px(size_cm)
     im = img.convert("RGBA").resize((w, h), Image.LANCZOS)
     canvas = Image.new("RGBA", (w + 2 * PAD_PX, h + 2 * PAD_PX), (0, 0, 0, 0))
     canvas.alpha_composite(im, (PAD_PX, PAD_PX))
-    out = root / area / f"{item_id}.png"
+    if out_path is not None:
+        out = Path(out_path)
+    else:
+        root = Path(sprites_root) if sprites_root else SPRITES_ROOT
+        out = root / area / f"{item_id}.png"
     out.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out)
     return out
@@ -57,12 +67,18 @@ def sprite_res_path(area: str, item_id: str) -> str:
     return f"res://assets/sprites/{area}/{item_id}.png"
 
 
+def _num(x: float) -> float:
+    """20.0 → 20, aber 8.1 bleibt 8.1 (saubere JSON, minimale Diffs)."""
+    r = round(x, 1)
+    return int(r) if r == int(r) else r
+
+
 def build_record(spec: dict, size_cm: list[float], pts: dict, area: str) -> dict:
     """Item-Record im Format von data/items/*.json (Schlüssel wie die Referenz)."""
     rec = {
         "id": spec["id"],
         "scale_ref": spec.get("scale_ref") or spec["id"],
-        "size_cm": [round(size_cm[0], 1), round(size_cm[1], 1)],
+        "size_cm": [_num(size_cm[0]), _num(size_cm[1])],
         "pivot": pts["pivot"],
         "grip": pts["grip"],
         "hold": pts["hold"],
@@ -70,6 +86,7 @@ def build_record(spec: dict, size_cm: list[float], pts: dict, area: str) -> dict
         "placement": spec.get("placement") or "floor",
         "movable": bool(spec.get("movable", True)),
         "sprite": sprite_res_path(area, spec["id"]),
+        "pad_px": PAD_PX,
     }
     if float(spec.get("scale_mul", 1.0)) != 1.0:
         rec["scale_mul"] = float(spec["scale_mul"])
@@ -96,11 +113,26 @@ def upsert_items(records: list[dict], *, area: str, room: str,
     changed = []
     for rec in records:
         if rec["id"] in by_id:
-            data["items"][by_id[rec["id"]]] = rec
+            i = by_id[rec["id"]]
+            alt = data["items"][i]
+            # Merge: Pipeline-Felder (rec) ersetzen, Schlüsselreihenfolge bleibt,
+            # alle übrigen Felder des bestehenden Eintrags bleiben erhalten
+            # (tags, sfx, seat, surface_*, …).
+            merged: dict = {}
+            for k, v in alt.items():
+                if k in PIPELINE_KEYS:
+                    if k in rec:
+                        merged[k] = rec[k]
+                else:
+                    merged[k] = v
+            for k, v in rec.items():
+                if k not in merged:
+                    merged[k] = v
+            data["items"][i] = merged
         else:
             by_id[rec["id"]] = len(data["items"])
             data["items"].append(rec)
         changed.append(rec["id"])
-    items_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+    items_path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n",
                           encoding="utf-8")
     return changed

@@ -1,0 +1,12 @@
+{
+ "id": "char_girl_01",
+ "size_cm": [
+  70.1,
+  125.0
+ ],
+ "hand_grip": [
+  0.943,
+  0.511
+ ],
+ "sprite": "res://assets/characters/sprite/char_girl_01.png"
+}

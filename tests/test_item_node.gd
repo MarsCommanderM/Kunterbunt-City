@@ -19,7 +19,10 @@ func test_drawn_heights_are_exact() -> void:
 func test_aspect_ratio_is_kept() -> void:
 	var n: ItemNode = _node(&"home_table_wood")
 	var tex: Vector2 = n.sprite.texture.get_size()
-	assert_almost_eq(n.draw_size().x / n.draw_size().y, tex.x / tex.y, 0.001)
+	# draw_size ist die INHALTS-Box (tex minus Padding) – Seitenverhältnis muss exakt bleiben.
+	var content: Vector2 = tex - Vector2.ONE * 2.0 * n.def.pad_px
+	assert_almost_eq(n.draw_size().x / n.draw_size().y, content.x / content.y, 0.001)
+	assert_eq(n.def.pad_px, 4, "Pipeline-Sprites melden 4 px Padding")
 
 
 func test_placeholder_sizes_match_table_too() -> void:

@@ -89,16 +89,24 @@ def _preview(sheet: Image.Image, objs: list[dict], out: Path) -> Path:
 
 
 def split_sheet(path, expected_ids: list[str], out_dir,
-                *, min_area: int = MIN_AREA, remove_holes: bool = True) -> list[Image.Image]:
+                *, min_area: int = MIN_AREA, remove_holes: bool = True,
+                mode: str = "items") -> list[Image.Image]:
     """Blatt freistellen, zerlegen, trimmen und gegen die YAML-Liste prüfen.
 
     ``expected_ids``: die IDs aus blatt.yaml in Lesereihenfolge.
+    ``mode="character"``: nicht die Lesereihenfolge, sondern die N größten
+    zusammenhängenden Flächen (Figur; lose Haar-/Schatten-Fragmente fallen raus).
     Passt die Anzahl nicht, wird ``SplitError`` geworfen (mit Vorschaubild).
     """
     path = Path(path)
     out_dir = Path(out_dir)
     rgba, fg = cutout(str(path), remove_holes=remove_holes)
     objs = _find_objects(rgba, fg, min_area)
+    if mode == "character" and objs and len(objs) != len(expected_ids):
+        objs = sorted(objs,
+                      key=lambda o: -(o["arr"][..., 3] > 10).sum())[:len(expected_ids)]
+        if len(expected_ids) > 1:
+            objs.sort(key=lambda o: (o["cy"], o["x"]))
     if len(objs) != len(expected_ids):
         prev = _preview(Image.open(path), objs,
                         out_dir / f"{path.stem}_split_preview.png")
