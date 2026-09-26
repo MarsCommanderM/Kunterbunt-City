@@ -3,6 +3,7 @@ extends Control
 ## Bis dahin: Titel + Knopf zur Maßstab-Testszene (Phase 01).
 
 const SCALE_TEST: String = "res://src/debug/scale_test.tscn"
+const SANDBOX: String = "res://src/debug/sandbox_kitchen.tscn"
 
 
 func _ready() -> void:
@@ -15,8 +16,16 @@ func _ready() -> void:
 	btn.position += Vector2(-260, -260)
 	btn.pressed.connect(func() -> void: get_tree().change_scene_to_file(SCALE_TEST))
 	add_child(btn)
+	var play := Button.new()
+	play.text = "  🍎  Test-Küche spielen  "
+	play.add_theme_font_size_override("font_size", UiConstants.FONT_HUD + 10)
+	play.custom_minimum_size = Vector2(520, 110)
+	play.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	play.position += Vector2(-260, -130)
+	play.pressed.connect(func() -> void: get_tree().change_scene_to_file(SANDBOX))
+	add_child(play)
 	var sub := Label.new()
-	sub.text = "Phase 01 · Welt in Zentimetern · Godot %s" % Engine.get_version_info()["string"]
+	sub.text = "Phase 02 · Anfassen, Ziehen, Abstellen · Godot %s" % Engine.get_version_info()["string"]
 	sub.add_theme_font_size_override("font_size", UiConstants.FONT_HUD)
 	sub.add_theme_color_override("font_color", UiConstants.COLOR_HUD_TEXT)
 	sub.set_anchors_and_offsets_preset(Control.PRESET_CENTER)

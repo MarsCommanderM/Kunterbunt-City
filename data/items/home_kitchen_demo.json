@@ -21,7 +21,7 @@
    "hold_angle": -20,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_carrot.png"
+   "sprite": "res://assets/sprites/home/food_carrot.png"
   },
   {
    "id": "food_apple_red",
@@ -42,7 +42,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_apple_red.png"
+   "sprite": "res://assets/sprites/home/food_apple_red.png"
   },
   {
    "id": "home_mug_pink_dots",
@@ -63,7 +63,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/home_mug_pink_dots.png"
+   "sprite": "res://assets/sprites/home/home_mug_pink_dots.png"
   },
   {
    "id": "home_cup_orange_dots",
@@ -84,7 +84,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/home_cup_orange_dots.png",
+   "sprite": "res://assets/sprites/home/home_cup_orange_dots.png",
    "scale_mul": 0.9
   },
   {
@@ -106,7 +106,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_apple_green.png"
+   "sprite": "res://assets/sprites/home/food_apple_green.png"
   },
   {
    "id": "food_egg",
@@ -127,7 +127,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_egg.png"
+   "sprite": "res://assets/sprites/home/food_egg.png"
   },
   {
    "id": "food_icecream_3",
@@ -148,7 +148,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_icecream_3.png"
+   "sprite": "res://assets/sprites/home/food_icecream_3.png"
   },
   {
    "id": "food_icecream_3b",
@@ -169,7 +169,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_icecream_3b.png"
+   "sprite": "res://assets/sprites/home/food_icecream_3b.png"
   },
   {
    "id": "school_book_blue_star",
@@ -190,7 +190,10 @@
    "hold_angle": 0,
    "placement": "shelf",
    "movable": true,
-   "sprite": "res://reference/sprites/school_book_blue_star.png"
+   "sprite": "res://assets/sprites/home/school_book_blue_star.png",
+   "tags": [
+    "stackable"
+   ]
   },
   {
    "id": "food_egg_chocolate",
@@ -211,7 +214,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/food_egg_chocolate.png"
+   "sprite": "res://assets/sprites/home/food_egg_chocolate.png"
   },
   {
    "id": "toy_beachball",
@@ -232,7 +235,7 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/toy_beachball.png"
+   "sprite": "res://assets/sprites/home/toy_beachball.png"
   },
   {
    "id": "toy_teddy_brown",
@@ -253,7 +256,7 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/toy_teddy_brown.png"
+   "sprite": "res://assets/sprites/home/toy_teddy_brown.png"
   },
   {
    "id": "toy_teddy_brown_b",
@@ -274,7 +277,7 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/toy_teddy_brown_b.png"
+   "sprite": "res://assets/sprites/home/toy_teddy_brown_b.png"
   },
   {
    "id": "flower_tulip_red_pot",
@@ -295,7 +298,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/flower_tulip_red_pot.png"
+   "sprite": "res://assets/sprites/home/flower_tulip_red_pot.png"
   },
   {
    "id": "flower_tulip_yellow_pot",
@@ -316,7 +319,7 @@
    "hold_angle": 0,
    "placement": "table",
    "movable": true,
-   "sprite": "res://reference/sprites/flower_tulip_yellow_pot.png"
+   "sprite": "res://assets/sprites/home/flower_tulip_yellow_pot.png"
   },
   {
    "id": "pet_dog_brown",
@@ -334,7 +337,7 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/pet_dog_brown.png"
+   "sprite": "res://assets/sprites/home/pet_dog_brown.png"
   },
   {
    "id": "home_table_wood",
@@ -352,7 +355,13 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/home_table_wood.png"
+   "sprite": "res://assets/sprites/home/home_table_wood.png",
+   "surface_frac_y": 0.12,
+   "surface_inset": 0.05,
+   "sfx": {
+    "pickup": "pickup",
+    "drop": "drop_wood"
+   }
   },
   {
    "id": "home_chair_mint",
@@ -370,7 +379,8 @@
    "hold_angle": 0,
    "placement": "floor",
    "movable": true,
-   "sprite": "res://reference/sprites/home_chair_mint.png"
+   "sprite": "res://assets/sprites/home/home_chair_mint.png",
+   "seat_frac_y": 0.54
   }
  ]
 }

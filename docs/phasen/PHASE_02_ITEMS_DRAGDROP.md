@@ -20,14 +20,14 @@
 | P02-T12 | Performance-Test: 250 Items im Raum, 60 FPS Desktop, Messung in PROGRESS.md |
 
 ## Akzeptanzkriterien
-- [ ] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_scale.gd` + `tests/test_drag_drop.gd`
-- [ ] Apfel auf die Arbeitsplatte ziehen → steht exakt auf 90 cm (GUT ±0,5 cm)
-- [ ] Apfel ins Leere loslassen → fällt auf den Boden, nie aus der Welt
-- [ ] Ein Ei (6 cm) ist mit dem Finger gut greifbar (Tippfläche ≥ 48 dp)
-- [ ] 3 Items gleichzeitig ziehbar (Touch-Emulation)
-- [ ] Rückgängig stellt 30 Aktionen wieder her
-- [ ] 250 Items → ≥ 60 FPS (Desktop)
-- [ ] `check.sh` grün
+- [x] Pflicht-Tests aus Tech-Spec §6 angelegt und grün: `tests/test_scale.gd` + `tests/test_drag_drop.gd`
+- [x] Apfel auf die Arbeitsplatte ziehen → steht exakt auf 90 cm (GUT ±0,5 cm)
+- [x] Apfel ins Leere loslassen → fällt auf den Boden, nie aus der Welt
+- [x] Ein Ei (6 cm) ist mit dem Finger gut greifbar (Tippfläche ≥ 48 dp)
+- [x] 3 Items gleichzeitig ziehbar (Touch-Emulation)
+- [x] Rückgängig stellt 30 Aktionen wieder her
+- [ ] 250 Items → ≥ 60 FPS (Desktop) — Logik gemessen (headless 145 FPS), GPU-Messung 👤 auf echter Hardware
+- [x] `check.sh` grün
 
 ## 👤 Mensch
 Kurz selbst spielen: Fühlt sich Anheben/Abstellen gut an? Feedback in PROGRESS.md.

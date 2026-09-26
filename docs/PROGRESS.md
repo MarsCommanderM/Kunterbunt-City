@@ -4,17 +4,17 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **02 · Item-System & Drag-and-Drop** (wartet auf 👤 OK für Phase 01) |
-| Nächste Task | P02-T01 |
-| Letzter grüner check.sh | 2026-09-26 (Phase 01) |
-| Version | 0.0.2 |
+| Aktuelle Phase | **03 · Figuren & Tiere** |
+| Nächste Task | P03-T01 |
+| Letzter grüner check.sh | 2026-09-26 (Phase 02) |
+| Version | 0.0.3 |
 
 ## Phasen
 | Phase | Status | Bericht |
 |---|---|---|
 | 00 Setup | ✅ fertig | Log 2026-09-26 |
 | 01 Welt-Maßstab | ✅ fertig (👤 Blick-Check offen) | Log 2026-09-26 |
-| 02 Items & Drag | ⏳ | – |
+| 02 Items & Drag | ✅ fertig (👤 Anfass-Gefühl + GPU-FPS offen) | Log 2026-09-26 |
 | 03 Figuren & Tiere | ⏳ | – |
 | 04 Editor | ⏳ | – |
 | 05 Menü & Speichern | ⏳ | – |
@@ -43,8 +43,49 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 01 | check.sh | Maßstab ✅ · pytest 9/9 ✅ · GUT 47/47 ✅ |
 | 2026-09-26 | 01 | Einmessen Test-Küche | Arbeitsplatte 90,0 cm · Regale 153/194 cm · Bodenband 0…73,2 cm · Raum 716×313 cm |
 | 2026-09-26 | 01 | Web-Export mit Test-Küche | ✅ index.pck 3,2 MB |
+| 2026-09-26 | 02 | check.sh | Maßstab ✅ (155 Einträge, 61 Items) · pytest 15/15 ✅ · GUT 129/129 ✅ (850 Asserts) |
+| 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-26 · Phase 02 · Item-System & Drag-and-Drop ✅
+- Erledigt: P02-T01…T12.
+  - `tools/make_placeholders.py`: 155 Platzhalter, 8 px/cm, randlos, bit-genau reproduzierbar
+  - `ItemDefinition` + `ItemDB`-Item-Laden mit Validierung (61 Items: 18 echte Stil-C-Sprites + 43 Platzhalter aus `tools/dev/make_test_items.py`)
+  - `ItemNode`: Größe exakt aus der Tabelle, Alpha-Treffertest, Mindest-Tippfläche 48 dp, Kontaktschatten, Anheben 6 cm
+  - `DragController` (PRESS/LIFT/DRAG/DROP, 80 ms/8 px, Multitouch 3, Tippen)
+  - `Placement`: Flächen, Tische, Stapel, Behälter, S-11, Regal-Abstand, Breite, Ablehnung → Boden
+  - `UndoStack` (30) + gezeichneter `UndoButton`
+  - `AudioBus.play_sfx/play_item_sfx` (Material je Kategorie) + 11 synthetische CC0-Sounds (`tools/make_sfx.py`)
+  - `ItemSpawner`, Test-Küche `src/debug/sandbox_kitchen.tscn` (alle 61 Items, Button im Hauptmenü)
+- Tests (neu):
+  - GUT: test_drag_drop (Pflicht), test_scale (Pflicht), test_placement, test_container_stack, test_undo, test_item_definition, test_item_db_items, test_item_node, test_audio, test_perf
+  - pytest: test_placeholders, test_sfx
+- Beweis: `docs/tests/P02/*.jpg`, 9 Bilder. Erzeugt durch `tools/godot/p02_scenario_runner.gd`, das die Küche über dieselbe API wie ein Finger bedient:
+  - Anheben, Abstellen auf Tisch und Boden
+  - Kühlschrank und Rucksack offen
+  - Klotz-Turm (4) und Tellerstapel (5) im Zoom
+  - Stuhl auf der Arbeitsplatte → abgelehnt
+  - 4× rückgängig
+  - Debug-Flächen
+- Von den Tests gefundene und behobene Fehler:
+  - Greif-Versatz wurde beim Anheben statt beim Antippen berechnet; das Item sprang.
+  - Wischen über den Kühlschrank öffnete ihn.
+  - Im Tellerstapel war nur der oberste Teller greifbar (48-dp-Flächen überdeckten sich).
+  - Ein Behälter im Kühlschrank verlor gegen den Kühlschrank.
+  - `"grip": null` im JSON ließ das Laden abstürzen.
+  - Behälter-Inhalt stand über die Innenfläche hinaus; jetzt Regal-Layout in echter Größe.
+- Entscheidungen:
+  - `ItemNode` wird per Code gebaut, nicht als `item_node.tscn`. Das ist schneller beim Massen-Spawnen, und es gibt nur eine Quelle.
+  - Sounds werden per NumPy-Synthese erzeugt statt jsfxr: reproduzierbar per Skript, 0 €.
+  - Tisch-Oberkante aus dem Sprite gemessen (`surface_frac_y`).
+  - Beweisbilder als JPG; `docs/.gdignore`, damit Godot die Doku nicht importiert.
+- Werkzeug neu: `tools/godot/run.gd -- <runner.gd> [args]`. Das ist der Starter für Skript-Abläufe, weil `-s`-Skripte vor den Autoloads kompiliert werden.
+  - Beweisbilder: `xvfb-run -a godot --rendering-driver opengl3 --resolution 1920x1080 -s tools/godot/run.gd -- res://tools/godot/p02_scenario_runner.gd docs/tests/P02`
+  - Leistung: `… -- res://tools/godot/p02_perf_runner.gd 250`
+- 👤 offen:
+  - Selbst spielen (Test-Küche im Hauptmenü): Fühlt sich Anheben und Abstellen gut an?
+  - 250-Items-FPS auf echter GPU messen, mit demselben Befehl.
+- Nächste Task: P03-T01
 ### 2026-09-26 · Phase 01 · Welt-Maßstab, Raum & Kamera ✅
 - Erledigt: P01-T01…T10.
   - `Units` (Tiefen-Faktor hart auf 1,12 begrenzt, Zoom-/Sprite-Formeln)

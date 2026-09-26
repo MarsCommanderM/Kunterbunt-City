@@ -97,6 +97,17 @@ Migration: `SaveSystem.MIGRATIONS = { 1: func(d): …, 2: … }`. Jede Migration
 - **Stapeln:** Nur Items mit Tag `stackable` (Teller, Bücher, Klötze), max. 8.
 - **Multitouch:** bis 3 Items gleichzeitig ziehen (Tablet).
 - **Rückgängig:** jede DROP-Aktion → `UndoStack` (30 Schritte, pro Raum).
+- **Umsetzung (Phase 02, verbindlich):**
+  - API in Welt-cm: `DragController.press/move/release(id, world)`; Eingabe-Events werden nur übersetzt (Maus = id 1000, Touch = index). Tests und Skripte (`scripted_move`, später NPCs) nutzen denselben Weg.
+  - **Greif-Versatz** = Pivot − Punkt beim *Antippen* (nicht beim Anheben): Die angefasste Stelle bleibt unter dem Finger.
+  - **Tippen** = < 8 px und ≤ 300 ms → `on_tap()` (Behälter öffnen/schließen, sonst Hüpfer). Feste Dinge ohne Funktion geben das Event an die Kamera weiter (scrollen).
+  - **Greifen:** Treffer auf sichtbaren Pixeln (Alpha-BitMap je Textur) oder in der Mindest-Tippfläche 48 dp / Zoom. Reihenfolge: *direkt getroffen* vor *nur Tippfläche* → Tiefe (y des Boden-Vorfahren) → Schachtelung → kleinere Fläche.
+  - **Zielsuche** (`Placement.find_target`): offener Behälter unter dem Finger (der **innerste** gewinnt) → höchste Fläche mit Oberkante ≥ Pivot − 10 cm (Raum-Flächen, Item-Flächen wie Tische, Stapel-Spitzen) → Boden. Im Bodenband gewinnt ein Ziel bis 10 cm unterhalb des Pivots noch vor dem Boden.
+  - **Ablehnung** (Grund als Text, `deny`-Sound): Möbel/Fixture/Figur auf Flächen · > 60 cm (S-11) · breiter als die Fläche · höher als der Platz bis zur Fläche darüber · Stapel > 8 · Behälter zu klein/voll/> 2 Ebenen → Item landet auf dem Boden **15 cm vor** der Fläche.
+  - **Eltern-Knoten:** Boden & Raum-Flächen → `YSortRoot` (Skalierung = Tiefen-Faktor); Tisch/Stapel → `OnTop` des Ziel-Items (lokal ×1, wandert mit); Behälter → `Contents`.
+  - **Behälter-Inhalt** in **echter Größe** als Regal-Layout (Reihen, unten bündig, nach Platz sortiert); die Innenfläche wächst bei Bedarf nach oben, nichts steht über. Herausnehmen ordnet neu.
+  - **Tisch-Oberkante** aus dem Sprite gemessen: `surface_frac_y` (Anteil von oben, z. B. Stil-C-Tisch 0,12 → 66 cm). Ohne Angabe: `surface_h_cm`.
+  - Ruhende Items ticken nicht (`_process` aus); Animationen nur über Tweens. Tests schalten `animate = false`.
 
 ### 4.2 Hand & Griff
 - `CharacterRig` hat `HandSlot` rechts und links (Marker2D). Beim Übergeben: Item wird Kind des HandSlots, `offset = −grip × Texturgröße`, Rotation = `hold_angle`.

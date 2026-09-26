@@ -5,10 +5,14 @@ extends Node
 signal loaded
 
 const SCALE_TABLE_PATH: String = "res://data/scale_table.json"
+const ITEMS_DIR: String = "res://data/items/"
 const SCALE_MUL_MIN: float = 0.7
 const SCALE_MUL_MAX: float = 1.3
 
 var _scale: Dictionary = {}   # id -> Dictionary (Eintrag aus scale_table.json)
+var _items: Dictionary = {}   # id -> ItemDefinition
+## Fehler der letzten Validierung (leer = alles gut). Tests prüfen, dass dies leer ist.
+var validation_errors: Array[String] = []
 var is_loaded: bool = false
 
 
@@ -25,8 +29,11 @@ func load_all() -> void:
 		return
 	for e: Dictionary in parsed["entries"]:
 		_scale[e["id"]] = e
+	_load_items()
 	is_loaded = true
-	Log.info("ItemDB: %d Maßstab-Einträge geladen" % _scale.size())
+	Log.info("ItemDB: %d Maßstab-Einträge, %d Items geladen" % [_scale.size(), _items.size()])
+	for e: String in validation_errors:
+		Log.error("ItemDB: " + e)
 	loaded.emit()
 
 
@@ -60,3 +67,52 @@ func width_cm(ref: String, scale_mul: float = 1.0) -> float:
 
 func entry_count() -> int:
 	return _scale.size()
+
+
+# ---------------------------------------------------------------- Items (Phase 02)
+
+func _load_items() -> void:
+	_items.clear()
+	validation_errors.clear()
+	var dir: DirAccess = DirAccess.open(ITEMS_DIR)
+	if dir == null:
+		return
+	var files: PackedStringArray = dir.get_files()
+	files.sort()
+	for f: String in files:
+		if not f.ends_with(".json"):
+			continue
+		var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(ITEMS_DIR + f))
+		if not (parsed is Dictionary):
+			validation_errors.append("%s: kein gültiges JSON" % f)
+			continue
+		for d: Dictionary in parsed.get("items", []):
+			var def: ItemDefinition = ItemDefinition.from_dict(d, _scale.get(d.get("scale_ref", ""), {}), f, validation_errors)
+			if def == null:
+				continue
+			if _items.has(def.id):
+				validation_errors.append("%s: doppelte Item-ID '%s'" % [f, def.id])
+				continue
+			_items[def.id] = def
+
+
+func has_item(id: StringName) -> bool:
+	return _items.has(id)
+
+
+## Item-Definition per ID. Unbekannt → Fehler + null.
+func get_item(id: StringName) -> ItemDefinition:
+	if not _items.has(id):
+		Log.error("ItemDB: unbekanntes Item '%s'" % id)
+		return null
+	return _items[id]
+
+
+func item_ids() -> Array:
+	var ids: Array = _items.keys()
+	ids.sort()
+	return ids
+
+
+func item_count() -> int:
+	return _items.size()

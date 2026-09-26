@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lbbikabebdno"
-path="res://.godot/imported/scale_test.png-97ed07a9d300718b71823dcdc64f061f.ctex"
+uid="uid://csp4g3oaj5nqu"
+path="res://.godot/imported/item_backpack.png-79e8bc6443f3620f47ab9baa5fe8478c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/tests/P01/scale_test.png"
-dest_files=["res://.godot/imported/scale_test.png-97ed07a9d300718b71823dcdc64f061f.ctex"]
+source_file="res://assets/placeholders/item_backpack.png"
+dest_files=["res://.godot/imported/item_backpack.png-79e8bc6443f3620f47ab9baa5fe8478c.ctex"]
 
 [params]
 

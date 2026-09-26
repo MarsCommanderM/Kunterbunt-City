@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8rldxvu22sha"
-path="res://.godot/imported/scale_test_debug.png-ee42e64aad2e014eab6c67489fbe2b17.ctex"
+uid="uid://bnj4xy4ytnn4u"
+path="res://.godot/imported/health_stethoscope.png-17644cdc78ddfcf03a3eac29cc6ea39b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/tests/P01/scale_test_debug.png"
-dest_files=["res://.godot/imported/scale_test_debug.png-ee42e64aad2e014eab6c67489fbe2b17.ctex"]
+source_file="res://assets/placeholders/health_stethoscope.png"
+dest_files=["res://.godot/imported/health_stethoscope.png-17644cdc78ddfcf03a3eac29cc6ea39b.ctex"]
 
 [params]
 
