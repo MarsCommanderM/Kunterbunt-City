@@ -49,7 +49,7 @@
   "spawn": { "room": "hallway", "x_cm": 120, "y_cm": 40 },
   "rooms": [
     { "id": "kitchen", "width_cm": 620, "height_cm": 300,
-      "background": "res://assets/backgrounds/home/kitchen.png",
+      "background": "res://assets/backgrounds/home/kitchen.bg.json",   // von calibrate_bg.py erzeugt (Kacheln ≤ 2048 px + Ursprung)
       "calibration": { "ref": "fix_counter", "px_top": 434, "px_bottom": 600, "source_px_per_cm": 1.83 },
       "floor": { "back_y_cm": 0, "front_y_cm": 90, "depth_scale_max": 1.12 },
       "camera": { "default_h_cm": 300, "min_h_cm": 220, "max_h_cm": 450 },

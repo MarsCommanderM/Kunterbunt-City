@@ -1,0 +1,25 @@
+{
+  "px_per_cm": 4.0,
+  "size_px": [
+    2863,
+    1568
+  ],
+  "origin_px": [
+    0.0,
+    1253.49
+  ],
+  "source": "reference/raw_kitchen_bg.png",
+  "source_px_per_cm": 1.8444,
+  "tiles": [
+    {
+      "file": "res://assets/backgrounds/test/kitchen_0_0.png",
+      "x_px": 0,
+      "y_px": 0
+    },
+    {
+      "file": "res://assets/backgrounds/test/kitchen_0_1.png",
+      "x_px": 2048,
+      "y_px": 0
+    }
+  ]
+}
