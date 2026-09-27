@@ -46,9 +46,169 @@
    "h_px": 1800
   }
  ],
- "layers": [
-  {
-   "kind": "floor",
+ "layers": [],
+ "floors": {
+  "planks": {
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_planks_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_planks_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_planks_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_planks_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_planks_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
+  },
+  "tiles": {
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_tiles_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_tiles_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_tiles_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_tiles_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_tiles_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
+  },
+  "carpet": {
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_carpet_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_carpet_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_carpet_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_carpet_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_carpet_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
+  },
+  "concrete": {
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_concrete_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_concrete_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_concrete_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_concrete_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_concrete_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
+  },
+  "grass": {
    "y_px": 1360,
    "tiles": [
     {
@@ -87,8 +247,48 @@
      "h_px": 440
     }
    ]
+  },
+  "sand": {
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_sand_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_sand_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_sand_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_sand_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_sand_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
   }
- ],
+ },
  "decor": {
   "floor": "grass",
   "floor_cols": [
@@ -97,5 +297,5 @@
    "#5fa35a"
   ]
  },
- "note": "Ebenen 'wall'/'floor' sind Zonen-kodiert (Shader färbt nach decor), 'tiles' ist fest eingefärbt."
+ "note": "Ebene 'wall' und 'floors' (je Bodenart) sind Zonen-kodiert (Shader färbt nach decor), 'tiles' ist fest."
 }

@@ -12,6 +12,8 @@ static func capture(room: Room) -> Array:
 	for it: ItemNode in Placement.all_items(room):
 		if it is CharacterRig:
 			continue                                   # Figuren werden frisch gespawnt
+		if it is PetNode and it.has_meta("pet_id"):
+			continue                                   # eigene Tiere laufen mit der Figur mit (P07: Raumwechsel)
 		var e: Dictionary = {
 			"id": String(it.def.id),
 			"x": round(it.position.x * 10.0) / 10.0,
@@ -25,8 +27,6 @@ static func capture(room: Room) -> Array:
 			e["x_rel"] = round(_rel_x(host as ItemNode, it) * 1000.0) / 1000.0
 		if it.def.has_states() and it.state != String(it.def.states[0]):
 			e["state"] = it.state                       # P04b-T10: Schrank offen, Lampe an …
-		if it is PetNode:
-			e["pet_id"] = String(it.get_meta("pet_id", "")) if it.has_meta("pet_id") else ""
 		out.append(e)
 	out.sort_custom(func(a: Dictionary, b: Dictionary) -> bool: return String(a["id"]) < String(b["id"]))
 	return out
@@ -40,6 +40,8 @@ static func apply(room: Room, list: Array) -> int:
 		var id := StringName(String(d.get("id", "")))
 		if id == &"" or not ItemDB.has_item(id):
 			continue
+		if String(d.get("pet_id", "")) != "":
+			continue                                   # alte Stände: eigene Tiere werden frisch gespawnt
 		var it: ItemNode
 		if d.has("on") and String(d["on"]) != "":
 			var host: ItemNode = _find_by_id(room, StringName(String(d["on"])))
@@ -54,8 +56,6 @@ static func apply(room: Room, list: Array) -> int:
 			continue
 		if d.has("state"):
 			ItemStates.set_state(it, String(d["state"]), true)
-		if it is PetNode and String(d.get("pet_id", "")) != "":
-			it.set_meta("pet_id", String(d["pet_id"]))
 		n += 1
 	return n
 

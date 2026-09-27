@@ -61,6 +61,13 @@ func attach_room(r: Room) -> void:
 		room.add_child(drag_layer)
 
 
+## P07: Raumwechsel – laufende Züge und Rückgängig-Schritte gehören zum alten Raum.
+func reset_for_room(r: Room) -> void:
+	_drags.clear()
+	undo.clear()
+	attach_room(r)
+
+
 func active_count() -> int:
 	return _drags.size()
 

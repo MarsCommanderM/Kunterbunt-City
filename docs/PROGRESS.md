@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07-T01/T04 Raumwahl + Tapete/Boden im Spiel, dann P07-T07 großer Garten (Wachsen/Gießen) |
-| Letzter grüner check.sh | 2026-09-27 (P07-T03 Inventar) |
+| Nächste Task | P07-T07 großer Garten: Säen → Gießen → Wachsen → Ernten, Blumen welken ohne Wasser |
+| Letzter grüner check.sh | 2026-09-27 (P07-T01/T04 Räume + Deko) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -20,7 +20,7 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | 🔨 T03 fertig (Inventar), T01/T04 begonnen | Log 2026-09-27 |
+| 07 Slice Zuhause | 🔨 T01, T03, T04 fertig | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
@@ -41,6 +41,8 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 |---|---|---|---|
 | 2026-09-26 | 00 | check.sh | Maßstab ✅ · pytest 5/5 ✅ · GUT 7/7 ✅ |
 | 2026-09-27 | 07 | check.sh (Inventar) | Maßstab ✅ (940 Einträge, 2513 Items) · pytest **128/128** ✅ · GUT **265/265** ✅ (24467 Asserts) |
+| 2026-09-27 | 07 | check.sh (Räume + Deko) | Maßstab ✅ · pytest 128/128 ✅ · GUT **274/274** ✅ (24518 Asserts) |
+| 2026-09-27 | 07 | Räume (`p07_rooms_runner.gd`) | 11 Räume · Start Wohnzimmer (leer) · Kinderzimmer mit 12 Dingen + Sternentapete + Teppichboden · Garten · Bereich betreten 89 ms |
 | 2026-09-27 | 07 | Pflicht-Inventar `data/inventory.json` | **427 Einträge · 0 fehlen** · Katalog 790 Vorlagen / **2436 Items** in 42 Gruppen |
 | 2026-09-26 | 00 | Web-Export (leere Szene) | ✅ 39 MB, index.pck 41 KB |
 | 2026-09-26 | 01 | check.sh | Maßstab ✅ · pytest 9/9 ✅ · GUT 47/47 ✅ |
@@ -72,6 +74,22 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 07 · T01 + T04 Zuhause mit 11 Räumen, Tapete & Boden wählbar 🔨
+- `data/areas/index.json`: Zuhause = `home.json` (Flur, Wohnzimmer, Küche, Schlafzimmer, 2 Kinderzimmer, Bad,
+  Dachboden, Keller, Garage, Garten). Start im Wohnzimmer, danach **weiter im zuletzt besuchten Raum**.
+  Räume starten leer (Wunsch 👤); nur die gemalte Küche hat ihre Start-Ausstattung (`default_items` je Raum).
+- `AreaScene.switch_room()`: alter Raum wird gespeichert, Figur + eigene Tiere kommen mit, jeder Raum behält
+  seine Sachen. Eigene Tiere gehören nicht mehr in den Raumzustand (vorher doppelt nach Wiederbetreten).
+- HUD: 🏠 Raum-Wahl (`RoomPicker`: Vorschaubild + Erkennungs-Ding je Raum) und 🖌 Deko (`DecorPanel`:
+  12 Wandfarben, 10 Muster + Musterfarbe, Paneel-Farbe, 6 Bodenarten × Farbsätze) – nur Symbole (R-07).
+- `RoomDecor`: Wand/Boden als Zonen-Ebenen durch den Item-Shader; Muster nahtlos (51,2 cm = Kachel/10).
+- **Speicherstand v3** (`decor`, `last_room`) + Migration v2→v3 + Fixture `tests/fixtures/world_v2.json` (R-11).
+- Fehler gefunden (Beweisbilder): Fenster/Vorhänge/Teppiche lagen *hinter* der neuen Wand-Ebene
+  (Background z 0 > Item z −2) → Hintergrund z −10. HUD-Knöpfe rechts/unten ragten halb aus dem Bild
+  (`PRESET_MODE_MINSIZE` kannte die Größe noch nicht) → Ecken explizit gesetzt. Raum-Wahl: Erkennungs-Dinge
+  rutschten aus den Kacheln.
+- Tests: GUT `test_rooms` (6), `test_save_v3` (3), `test_area_flow` startet in der Küche. check.sh ✅.
+- Beweis: `docs/tests/P07/p07_01…05` + `p07_rooms.json` (`tools/godot/p07_rooms_runner.gd`).
 ### 2026-09-27 · Phase 07 · T03 Inventar vollständig + Bauteile (Fenster/Türen/Teppiche) 🔨
 - Wunsch 👤: „wirklich alles vom Löffel bis zur Wohnwand, in Variationen“, später ergänzt um Inliner, Kindersitz,
   Schal/Mütze/Handschuhe, Zäune groß/klein, Tischtennis, Schwerlastregal, Weinkeller, Insektenhotel,

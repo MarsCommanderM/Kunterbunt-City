@@ -3,7 +3,7 @@ extends Node
 ## (Tech-Spec §3.5, P05-T07/T08). Dateien unter user://, versioniert, MIT Migrationen.
 ## Alles JSON, kein Netz (Regel T12). Drei Welt-Slots.
 
-const SAVE_VERSION: int = 2
+const SAVE_VERSION: int = 3
 const SLOTS: int = 3
 const WORLD_PATH: String = "user://world_%d.json"
 const LEGACY_CHARACTERS: String = "user://characters.json"
@@ -16,6 +16,7 @@ static var _migrations: Dictionary = {}
 
 static func _static_init() -> void:
 	_migrations[1] = _migrate_v1_to_v2
+	_migrations[2] = _migrate_v2_to_v3
 
 
 ## Version 1 (Phase 04) kannte nur Figuren und Tiere. Version 2 ergänzt Bereiche, Rucksack,
@@ -30,6 +31,18 @@ static func _migrate_v1_to_v2(old: Dictionary) -> Dictionary:
 	d["save_version"] = 2
 	Log.info("SaveSystem: Speicherstand v1 → v2 gewandert (%d Figuren)" % [
 		Array(d.get("characters", [])).size()])
+	return d
+
+
+## Version 3 (P07): Zuhause hat mehrere Räume – je Raum Tapete/Boden (`decor`) und der zuletzt besuchte Raum
+## (`last_room`). Bestehende Raumzustände bleiben unverändert (die Küche heißt weiter `kitchen`).
+static func _migrate_v2_to_v3(old: Dictionary) -> Dictionary:
+	var d: Dictionary = old.duplicate(true)
+	d["decor"] = Dictionary(d.get("decor", {})).duplicate(true)
+	d["last_room"] = Dictionary(d.get("last_room", {})).duplicate(true)
+	d["save_version"] = 3
+	Log.info("SaveSystem: Speicherstand v2 → v3 gewandert (%d Bereiche mit Zustand)" % [
+		Dictionary(d.get("areas", {})).size()])
 	return d
 
 
@@ -67,7 +80,7 @@ static func empty_world(slot: int = 0) -> Dictionary:
 	return {
 		"save_version": SAVE_VERSION, "slot": slot,
 		"characters": [], "pets": [], "active_id": "", "active_pets": [],
-		"backpack": [], "album": [], "areas": {}, "updated_ms": 0,
+		"backpack": [], "album": [], "areas": {}, "decor": {}, "last_room": {}, "updated_ms": 0,
 	}
 
 

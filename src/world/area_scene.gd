@@ -12,6 +12,7 @@ signal left_area
 
 var area_id: StringName = &""
 var area: Dictionary = {}
+var area_file: Dictionary = {}       ## data/areas/<bereich>.json (alle Räume)
 var room: Room
 var camera: WorldCamera
 var drag: DragController
@@ -29,13 +30,13 @@ func _ready() -> void:
 	if area_id == &"":
 		area_id = Areas.first_ready()
 	area = Areas.get_area(area_id)
-	var area_file: Dictionary = Room.load_area(Areas.path_of(area_id))
+	area_file = Room.load_area(Areas.path_of(area_id))
 	area["default_items"] = area_file.get("default_items", [])
 	if area.is_empty():
 		push_error("AreaScene: unbekannter Bereich '%s'" % String(area_id))
 		return
-	_build_room()
-	_spawn()
+	_build_world()
+	_enter_room(_start_room(), true)
 	_build_hud()
 	load_ms = (Time.get_ticks_usec() - _t0) / 1000.0
 	SceneRouter.last_load_ms = load_ms
@@ -44,28 +45,97 @@ func _ready() -> void:
 	_check_load_time()
 
 
-func _build_room() -> void:
-	room = ROOM_SCENE.instantiate()
-	add_child(room)
-	move_child(room, 0)
-	var data: Dictionary = Room.load_area(Areas.path_of(area_id))
-	var rid: String = Areas.room_of(area_id)
-	room.setup(Room.find_room(data, rid) if not rid.is_empty() else data["rooms"][0])
+## P07: Räume dieses Bereichs (Reihenfolge wie in der Datei).
+func room_ids() -> Array:
+	var out: Array = []
+	for r: Variant in Array(area_file.get("rooms", [])):
+		out.append(String((r as Dictionary).get("id", "")))
+	return out
+
+
+func room_data(rid: String) -> Dictionary:
+	for r: Variant in Array(area_file.get("rooms", [])):
+		if String((r as Dictionary).get("id", "")) == rid:
+			return r
+	return {}
+
+
+## Weiter im zuletzt besuchten Raum, sonst im Start-Raum des Bereichs.
+func _start_room() -> String:
+	var ids: Array = room_ids()
+	var last: String = Game.last_room(area_id)
+	if ids.has(last):
+		return last
+	var r: String = Areas.room_of(area_id)
+	if ids.has(r):
+		return r
+	return String(ids[0]) if not ids.is_empty() else ""
+
+
+func _build_world() -> void:
 	camera = WorldCamera.new()
 	add_child(camera)
-	camera.setup_for_room(room, Areas.spawn_of(area_id).x)
 	drag = DragController.new()
 	add_child(drag)
 	drag.camera = camera
-	drag.attach_room(room)
 	drag.item_dropped.connect(_on_item_dropped)
 	drag.item_tapped.connect(func(_it: ItemNode) -> void: _on_world_changed())
 
 
-func _spawn() -> void:
-	var spawn: Vector2 = Areas.spawn_of(area_id)
+func _enter_room(rid: String, first: bool) -> void:
+	room = ROOM_SCENE.instantiate()
+	add_child(room)
+	move_child(room, 0)
+	room.setup(room_data(rid), Game.room_decor(area_id, StringName(rid)))
+	var spawn: Vector2 = _spawn_point()
+	camera.setup_for_room(room, spawn.x)
+	if first:
+		drag.attach_room(room)
+	else:
+		drag.reset_for_room(room)
+	Game.set_last_room(area_id, room.room_id)
+	_spawn(spawn)
+
+
+## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
+func _spawn_point() -> Vector2:
+	if String(room.room_id) == Areas.room_of(area_id):
+		return Areas.spawn_of(area_id)
+	var front: float = room.floor_band.front_y_cm if room.floor_band != null else 70.0
+	return Vector2(minf(room.width_cm * 0.5, 400.0), front * 0.5)
+
+
+## P07-T01: in einen anderen Raum gehen – der alte Raum wird gespeichert, Figur und eigene Tiere kommen mit.
+func switch_room(rid: String) -> bool:
+	if room == null or rid == String(room.room_id) or not room_ids().has(rid):
+		return false
+	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
+	var old: Room = room
+	remove_child(old)
+	old.queue_free()
+	me = null
+	pets.clear()
+	_enter_room(rid, false)
+	if hud != null:
+		hud.show_room_buttons(room_ids().size() > 1, room.can_decorate())
+	AudioBus.play_sfx("ui_confirm")
+	Game.mark_dirty(area_id, room.room_id)
+	return true
+
+
+## P07-T04: Tapete/Boden des aktuellen Raums ändern (wird gespeichert).
+func set_decor(d: Dictionary) -> void:
+	if room == null or not room.can_decorate():
+		return
+	var chosen: Dictionary = Game.room_decor(area_id, room.room_id)
+	chosen.merge(d, true)
+	Game.set_room_decor(area_id, room.room_id, chosen)
+	room.apply_decor(chosen)
+
+
+func _spawn(spawn: Vector2) -> void:
 	var state: Array = Game.room_state(area_id, room.room_id)
-	if state.is_empty():
+	if state.is_empty() and not _defaults_for_room().is_empty():
 		_spawn_defaults()
 	else:
 		var n: int = RoomSnapshot.apply(room, state)
@@ -76,8 +146,18 @@ func _spawn() -> void:
 		_arrive(me)
 
 
+## Start-Ausstattung: je Raum (`default_items` im Raum), sonst die des Bereichs für den Start-Raum.
+func _defaults_for_room() -> Array:
+	var own: Array = Array(room.data.get("default_items", []))
+	if not own.is_empty():
+		return own
+	if String(room.room_id) == Areas.room_of(area_id):
+		return Array(area.get("default_items", []))
+	return []
+
+
 func _spawn_defaults() -> void:
-	var list: Array = area.get("default_items", [])
+	var list: Array = _defaults_for_room()
 	var by_id: Dictionary = {}
 	for e: Variant in list:
 		var d: Dictionary = e
@@ -92,7 +172,7 @@ func _spawn_defaults() -> void:
 		var host: ItemNode = by_id.get(String(d["on"]))
 		if host != null:
 			ItemSpawner.on_item(host, StringName(String(d["id"])), float(d.get("x_rel", 0.0)))
-	_spawn_me(Areas.spawn_of(area_id))
+	_spawn_me(_spawn_point())
 
 
 ## Die eigene Figur (Aussehen aus dem Editor, Größe aus der Schablone).
@@ -146,6 +226,9 @@ func _build_hud() -> void:
 	hud.backpack.connect(func() -> void:
 		Backpack.open(ui, func(_id: String, _i: int) -> bool: return _place_back(_id)))
 	hud.catalog.connect(func() -> void: CatalogPanel.open(ui, place_from_catalog))
+	hud.rooms.connect(func() -> void: RoomPicker.open(ui, self))
+	hud.decor.connect(func() -> void: DecorPanel.open(ui, self))
+	hud.show_room_buttons(room_ids().size() > 1, room != null and room.can_decorate())
 	camera.set_visible_height(room.camera_cfg.get("default_h_cm", 300.0))
 
 

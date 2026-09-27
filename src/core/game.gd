@@ -20,6 +20,8 @@ var active_id: StringName = &""
 var active_pets: Array = []              ## [StringName] – maximal 2 Tiere begleiten
 var backpack: Array = []                 ## [{id, …}] – max. 20 Plätze
 var areas: Dictionary = {}               ## area_id → {room_id → [Item-Zustand]}
+var decor: Dictionary = {}               ## area_id → {room_id → {wall, pattern, pattern_col, floor, floor_cols}} (P07)
+var last_rooms: Dictionary = {}          ## area_id → room_id (dort geht es beim nächsten Besuch weiter)
 var _timer: Timer
 var _dirty: Dictionary = {}              ## "area/room" → true
 
@@ -40,6 +42,8 @@ func load_all() -> void:
 	pets = _pets(w.get("pets", []))
 	backpack = Array(w.get("backpack", [])).duplicate(true)
 	areas = Dictionary(w.get("areas", {})).duplicate(true)
+	decor = Dictionary(w.get("decor", {})).duplicate(true)
+	last_rooms = Dictionary(w.get("last_room", {})).duplicate(true)
 	active_id = StringName(String(w.get("active_id", "")))
 	active_pets = []
 	for p: Variant in Array(w.get("active_pets", [])):
@@ -89,7 +93,7 @@ func _world_dict() -> Dictionary:
 		ap.append(String(i))
 	return {
 		"characters": chars, "pets": ps, "active_id": String(active_id), "active_pets": ap,
-		"backpack": backpack, "album": [], "areas": areas, "slot": slot,
+		"backpack": backpack, "album": [], "areas": areas, "decor": decor, "last_room": last_rooms, "slot": slot,
 	}
 
 
@@ -124,8 +128,31 @@ func set_room_state(area_id: StringName, room_id: StringName, snapshot: Array) -
 	mark_dirty()
 
 
+## P07-T04: gewählte Tapete/Boden eines Raums ({} = Standard aus der Hintergrund-Datei).
+func room_decor(area_id: StringName, room_id: StringName) -> Dictionary:
+	return Dictionary(Dictionary(decor.get(String(area_id), {})).get(String(room_id), {})).duplicate(true)
+
+
+func set_room_decor(area_id: StringName, room_id: StringName, d: Dictionary) -> void:
+	var a: Dictionary = Dictionary(decor.get(String(area_id), {}))
+	a[String(room_id)] = d.duplicate(true)
+	decor[String(area_id)] = a
+	mark_dirty(area_id, room_id)
+
+
+func last_room(area_id: StringName) -> String:
+	return String(last_rooms.get(String(area_id), ""))
+
+
+func set_last_room(area_id: StringName, room_id: StringName) -> void:
+	last_rooms[String(area_id)] = String(room_id)
+	mark_dirty()
+
+
 func reset_areas() -> void:
 	areas.clear()
+	decor.clear()
+	last_rooms.clear()
 	mark_dirty()
 	save_now()
 

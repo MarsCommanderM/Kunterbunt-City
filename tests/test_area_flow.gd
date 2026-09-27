@@ -27,7 +27,10 @@ func after_each() -> void:
 	SaveSystem.wipe()
 
 
-func _enter(id: StringName = &"home") -> AreaScene:
+## Zuhause startet seit P07 im (leeren) Wohnzimmer – diese Tests prüfen die eingerichtete Küche.
+func _enter(id: StringName = &"home", room_id: StringName = &"kitchen") -> AreaScene:
+	if room_id != &"":
+		Game.set_last_room(id, room_id)
 	SceneRouter.pending_area = id
 	area = load("res://src/world/area_scene.tscn").instantiate()
 	add_child_autofree(area)
