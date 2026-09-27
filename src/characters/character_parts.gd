@@ -1,11 +1,13 @@
 class_name CharacterParts
 extends RefCounted
-## P04-T01: Katalog der Editor-Teile (data/character_parts/<slot>.json) + Farbpalette.
-## Rein statisch, kein Autoload. Jeder Slot hat 5 Varianten (T10); jede Variante nennt das
-## Teil (Sprite in assets/characters/parts/<schablone>/) und wie viele Farbzonen es nutzt.
+## P04-T01 / P04b: Katalog der Editor-Teile (data/character_parts/<slot>.json) + Farbpalette.
+## Rein statisch, kein Autoload. Jede Variante nennt das Teil (Sprite in
+## assets/characters/parts/<schablone>/) und wie viele Farbzonen das Kind wählt. Erzeugt von
+## tools/make_chibi_parts.py; „aliases“ übersetzt alte IDs aus Speicherständen.
 
 const DIR: String = "res://data/character_parts/"
 const PALETTE_FILE: String = DIR + "palette.json"
+const OPTIONAL_SLOTS: Array = ["accessory", "aid"]     ## dürfen leer bleiben
 
 static var _slots: Dictionary = {}
 static var _palette: Dictionary = {}
@@ -44,10 +46,16 @@ static func ids(slot: String) -> Array:
 
 
 static func variant(slot: String, id: String) -> Dictionary:
+	var rid: String = resolve(slot, id)
 	for v: Dictionary in variants(slot):
-		if String(v["id"]) == id:
+		if String(v["id"]) == rid:
 			return v
 	return {}
+
+
+## Alte Varianten-ID (Speicherstand aus Phase 04) → aktuelle ID. Unbekannte IDs bleiben, wie sie sind.
+static func resolve(slot: String, id: String) -> String:
+	return String(data().get(slot, {}).get("aliases", {}).get(id, id))
 
 
 static func label(slot: String) -> String:
@@ -58,8 +66,13 @@ static func icon(slot: String) -> String:
 	return String(data().get(slot, {}).get("icon", "•"))
 
 
-## Erste Variante, die kein „none"/„bald" ist – Startwert im Editor.
+## Startwert im Editor: Accessoire/Hilfsmittel starten „ohne“ (P04b – sonst trägt jede neue Figur
+## Brille und Hörgerät); sonst die erste Variante, die kein „none“ ist.
 static func default_id(slot: String) -> String:
+	if slot in OPTIONAL_SLOTS:
+		for v: Dictionary in variants(slot):
+			if Array(v.get("tags", [])).has("none"):
+				return String(v["id"])
 	for v: Dictionary in variants(slot):
 		if not Array(v.get("tags", [])).has("none"):
 			return String(v["id"])
@@ -156,5 +169,7 @@ static func _group_for(slot: String) -> String:
 			return "hair"
 		"accessory", "aid":
 			return "cloth"
+		"eyes":
+			return "eyes"
 		_:
 			return "skin"

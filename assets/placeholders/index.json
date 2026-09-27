@@ -3,55 +3,55 @@
   "h_cm": 172,
   "px_per_cm": 8.0,
   "size_px": [
-   520,
+   544,
    1376
   ],
-  "w_cm": 65
+  "w_cm": 68
  },
  "char_baby": {
   "h_cm": 55,
   "px_per_cm": 8.0,
   "size_px": [
-   240,
+   320,
    440
   ],
-  "w_cm": 30
+  "w_cm": 40
  },
  "char_child": {
   "h_cm": 125,
   "px_per_cm": 8.0,
   "size_px": [
-   480,
+   528,
    1000
   ],
-  "w_cm": 60
+  "w_cm": 66
  },
  "char_senior": {
   "h_cm": 165,
   "px_per_cm": 8.0,
   "size_px": [
-   520,
+   544,
    1320
   ],
-  "w_cm": 65
+  "w_cm": 68
  },
  "char_teen": {
   "h_cm": 155,
   "px_per_cm": 8.0,
   "size_px": [
-   496,
+   528,
    1240
   ],
-  "w_cm": 62
+  "w_cm": 66
  },
  "char_toddler": {
   "h_cm": 90,
   "px_per_cm": 8.0,
   "size_px": [
-   360,
+   464,
    720
   ],
-  "w_cm": 45
+  "w_cm": 58
  },
  "fair_cotton_candy": {
   "h_cm": 35,

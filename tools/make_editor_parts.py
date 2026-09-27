@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """
+ABGELÖST in P04b durch tools/make_chibi_parts.py (Figuren-Teile). Nur noch ZCanvas wird von
+tools/make_pet_sprites.py benutzt – NICHT mehr für Figuren ausführen (würde die neuen Teile überschreiben).
+
 Editor-Teile für den Charakter-Editor (P04-T01/T04/T10) – Platzhalter in Stil-C-Nähe, 0 €, reproduzierbar.
 
 Farbzonen: Jedes Teil speichert seine **Farbgewichte** in R/G/B (Zone 1/2/3, mit eingebackenem

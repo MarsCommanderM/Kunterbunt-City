@@ -327,7 +327,7 @@ def draw_shoes(t: dict, style: str, ppc: float):
             c.fill(shaft, zone=1)
             c.fill([(x - w * 0.8, up + 0.2), (x + w * 0.8, up + 0.2), (x + w * 0.8, up - 1.6), (x - w * 0.8, up - 1.6)],
                    zone=2, clip=c.mask(shaft))
-        body = blob(x + sx * w * 0.08, h * 0.55, w, h * 0.62, n=48, top=1.05)
+        body = blob(x + sx * w * 0.1, h * 0.6, w * 1.05, h * 0.66, n=48, top=1.1)
         if style == "sandal":
             c.ellipse(x + sx * w * 0.05, h * 0.55, w * 0.85, h * 0.5, zone=3)
             c.fill([(x - w, h * 0.22), (x + w, h * 0.22), (x + w, 0), (x - w, 0)], zone=1)
@@ -335,7 +335,7 @@ def draw_shoes(t: dict, style: str, ppc: float):
             continue
         c.fill(body, zone=1)
         cl = c.mask(body)
-        c.fill([(x - w * 2, h * 0.28), (x + w * 2, h * 0.28), (x + w * 2, -1), (x - w * 2, -1)],
+        c.fill([(x - w * 2, h * 0.34), (x + w * 2, h * 0.34), (x + w * 2, -1), (x - w * 2, -1)],
                zone=2 if style in ("sneaker", "sneaker_socks", "hightop", "rainboot") else 1, shade=1.0 if style != "boot" else 0.8, clip=cl)
         if style in ("sneaker", "sneaker_socks", "hightop"):
             c.line([(x - w * 0.35, h * 0.8), (x + w * 0.2, h * 0.9)], 0.45, zone=2, clip=cl)
@@ -343,4 +343,5 @@ def draw_shoes(t: dict, style: str, ppc: float):
         if style == "ballet":
             c.line([(x - w * 0.2, h * 0.95), (x + w * 0.2, h * 0.95)], 0.8, zone=2)
     c.outline_under()
-    return c.render_part((0, 0))
+    # Sohle (samt Kontur) steht genau auf dem Boden: Anker = unterste bemalte Stelle
+    return c.render_part((0, c.content_bottom_cm()))

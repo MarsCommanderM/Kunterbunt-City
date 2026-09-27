@@ -2,57 +2,168 @@
   "slot": "hair",
   "label": "Frisur",
   "icon": "💇",
-  "max_zones": 1,
+  "max_zones": 2,
   "variants": [
     {
-      "id": "short",
-      "label": "short",
-      "part": "hair_front_short",
-      "part_back": "hair_back_short",
+      "id": "long",
+      "label": "lang",
       "zones": 1,
       "tags": [
         "hair"
-      ]
+      ],
+      "part": "hair_front_long",
+      "part_back": "hair_back_long"
+    },
+    {
+      "id": "short",
+      "label": "kurz",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_short",
+      "part_back": "hair_back_short"
     },
     {
       "id": "pigtails",
-      "label": "pigtails",
+      "label": "Zöpfchen",
+      "zones": 2,
+      "tags": [
+        "hair"
+      ],
       "part": "hair_front_pigtails",
-      "part_back": "hair_back_pigtails",
-      "zones": 1,
-      "tags": [
-        "hair"
-      ]
-    },
-    {
-      "id": "curly",
-      "label": "curly",
-      "part": "hair_front_curly",
-      "part_back": "hair_back_curly",
-      "zones": 1,
-      "tags": [
-        "hair"
-      ]
+      "part_back": "hair_back_pigtails"
     },
     {
       "id": "bob",
-      "label": "bob",
-      "part": "hair_front_bob",
-      "part_back": "hair_back_bob",
+      "label": "Bob",
       "zones": 1,
       "tags": [
         "hair"
-      ]
+      ],
+      "part": "hair_front_bob",
+      "part_back": "hair_back_bob"
+    },
+    {
+      "id": "curly",
+      "label": "Locken",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_curly",
+      "part_back": "hair_back_curly"
+    },
+    {
+      "id": "afro",
+      "label": "Afro",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_afro",
+      "part_back": "hair_back_afro"
+    },
+    {
+      "id": "ponytail",
+      "label": "Pferdeschwanz",
+      "zones": 2,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_ponytail",
+      "part_back": "hair_back_ponytail"
+    },
+    {
+      "id": "bun",
+      "label": "Dutt",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_bun",
+      "part_back": "hair_back_bun"
+    },
+    {
+      "id": "space_buns",
+      "label": "zwei Dutts",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_space_buns",
+      "part_back": "hair_back_space_buns"
+    },
+    {
+      "id": "braids",
+      "label": "Zöpfe",
+      "zones": 2,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_braids",
+      "part_back": "hair_back_braids"
+    },
+    {
+      "id": "wavy",
+      "label": "wellig",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_wavy",
+      "part_back": "hair_back_wavy"
+    },
+    {
+      "id": "side_part",
+      "label": "Seitenscheitel",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_side_part",
+      "part_back": "hair_back_side_part"
+    },
+    {
+      "id": "pixie",
+      "label": "Pixie",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_pixie",
+      "part_back": "hair_back_pixie"
+    },
+    {
+      "id": "spiky",
+      "label": "stachelig",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_spiky",
+      "part_back": "hair_back_spiky"
+    },
+    {
+      "id": "buzz",
+      "label": "raspelkurz",
+      "zones": 1,
+      "tags": [
+        "hair"
+      ],
+      "part": "hair_front_buzz",
+      "part_back": "hair_back_buzz"
     },
     {
       "id": "bald",
-      "label": "bald",
-      "part": "hair_front_bald",
-      "part_back": "hair_back_bald",
+      "label": "Glatze",
       "zones": 1,
       "tags": [
-        "hair"
-      ]
+        "hair",
+        "bald"
+      ],
+      "part": "hair_front_bald",
+      "part_back": "hair_back_bald"
     }
   ]
 }

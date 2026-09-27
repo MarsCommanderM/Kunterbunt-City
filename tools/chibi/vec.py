@@ -65,11 +65,82 @@ def mirror(pts: Iterable[Pt], cx: float) -> list[Pt]:
     return [(2 * cx - x, y) for x, y in pts]
 
 
+def _cr_segment(p0: Pt, p1: Pt, p2: Pt, p3: Pt, n: int) -> list[Pt]:
+    """Zentripetaler Catmull-Rom-Abschnitt p1→p2 (ohne Endpunkt) – keine Schleifen, keine Spitzen."""
+    def tj(ti, a, b):
+        return ti + max(1e-6, math.dist(a, b)) ** 0.5
+    t0 = 0.0
+    t1 = tj(t0, p0, p1)
+    t2 = tj(t1, p1, p2)
+    t3 = tj(t2, p2, p3)
+    out = []
+    for i in range(n):
+        t = t1 + (t2 - t1) * i / n
+        def lerp(a, b, ta, tb):
+            k = (t - ta) / (tb - ta)
+            return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
+        a1 = lerp(p0, p1, t0, t1)
+        a2 = lerp(p1, p2, t1, t2)
+        a3 = lerp(p2, p3, t2, t3)
+        b1 = lerp(a1, a2, t0, t2)
+        b2 = lerp(a2, a3, t1, t3)
+        out.append(lerp(b1, b2, t1, t2))
+    return out
+
+
+def smooth(pts: Sequence, closed: bool = True, n: int = 12) -> list[Pt]:
+    """Weiche Kurve DURCH alle Punkte. Ein Punkt (x, y, "s") ist eine Ecke (Haarspitze, Scheitel).
+    So lassen sich organische Formen (Frisuren, Kleidung) als wenige Stützpunkte beschreiben."""
+    P = [(float(p[0]), float(p[1])) for p in pts]
+    sharp = [i for i, p in enumerate(pts) if len(p) > 2 and p[2] == "s"]
+    m = len(P)
+    if not closed:
+        sharp = sorted(set(sharp) | {0, m - 1})
+    if not sharp:
+        out: list[Pt] = []
+        for i in range(m):
+            out += _cr_segment(P[i - 1], P[i], P[(i + 1) % m], P[(i + 2) % m], n)
+        return out
+    out = []
+    runs = list(zip(sharp, sharp[1:] + ([sharp[0] + m] if closed else [])))
+    for a, b in runs:
+        run = [P[k % m] for k in range(a, b + 1)]
+        if len(run) == 2:
+            out.append(run[0])
+            continue
+        ext = [(2 * run[0][0] - run[1][0], 2 * run[0][1] - run[1][1])] + run + \
+              [(2 * run[-1][0] - run[-2][0], 2 * run[-1][1] - run[-2][1])]
+        for i in range(1, len(ext) - 2):
+            out += _cr_segment(ext[i - 1], ext[i], ext[i + 1], ext[i + 2], n)
+    if not closed:
+        out.append(P[-1])
+    return out
+
+
+def sym(right: Sequence) -> list:
+    """Symmetrische Umrisslinie aus der rechten Hälfte (oben Mitte → im Uhrzeigersinn → unten Mitte)."""
+    left = [((-p[0], p[1]) + tuple(p[2:])) for p in reversed(right[1:-1])]
+    return list(right) + left
+
+
+def bumpy(cx: float, cy: float, rx: float, ry: float, a0: float, a1: float, bumps: int, amp: float,
+          n: int = 12) -> list[Pt]:
+    """Wolkiger Bogen (Locken): elliptischer Bogen a0→a1 (Grad) mit runden Beulen."""
+    out = []
+    total = bumps * n
+    for i in range(total + 1):
+        t = i / total
+        a = math.radians(a0 + (a1 - a0) * t)
+        k = abs(math.sin(math.pi * bumps * t)) ** 0.7
+        out.append((cx + math.cos(a) * (rx + amp * k), cy + math.sin(a) * (ry + amp * k)))
+    return out
+
+
 # ------------------------------------------------------------------ Zeichenfläche
 class ZCanvas:
     """Zeichenfläche mit 3 Farbzonen + Tinte. Befehle sammeln, `render()` erzeugt RGBA."""
 
-    def __init__(self, box: tuple[float, float, float, float], ppc: float = 8.0, outline_cm: float = 0.85):
+    def __init__(self, box: tuple[float, float, float, float], ppc: float = 8.0, outline_cm: float = 0.5):
         """box = (x0, y0, x1, y1) in Figuren-cm (Ursprung zwischen den Füßen, y nach oben)."""
         self.x0, self.y0, x1, y1 = box
         w_cm, h_cm = x1 - self.x0, y1 - self.y0
@@ -168,6 +239,15 @@ class ZCanvas:
         if on and len(seg) > 1:
             self.line(seg, w_cm, zone, shade, clip=clip)
 
+    def glass(self, pts: Sequence[Pt], zone: int = 0, opacity: float = 0.3, shade: float = 1.0):
+        """Halbdurchsichtige Fläche (Brillenglas): Farbe der Zone, Deckung = opacity."""
+        m, y0, x0 = self._poly_mask(pts)
+        h, wd = m.shape
+        sl = (slice(y0, y0 + h), slice(x0, x0 + wd))
+        col = np.asarray(self._w(zone, shade), np.float32)
+        self.W[sl] = self.W[sl] * (1 - m[..., None]) + col * m[..., None]
+        self.A[sl] = self.A[sl] * (1 - m) + m * opacity
+
     def erase(self, pts: Sequence[Pt], soft: float = 1.0):
         """Form ausschneiden (Deckung weg) – z. B. das Gesichtsfenster aus einer Haarkappe."""
         m, y0, x0 = self._poly_mask(pts)
@@ -178,6 +258,13 @@ class ZCanvas:
     def mask(self, pts: Sequence[Pt]):
         """Maske einer Form – als `clip` für Muster und Schatten innerhalb einer Fläche."""
         return self._poly_mask(pts)
+
+    def content_bottom_cm(self) -> float:
+        """Unterste bemalte Stelle (Figuren-cm) – damit Sohlen genau auf dem Boden stehen."""
+        rows = np.nonzero((self.A > 0.02).any(axis=1))[0]
+        if rows.size == 0:
+            return 0.0
+        return self.y0 + self.h_cm - (rows.max() + 1) / self.s
 
     def coverage(self) -> np.ndarray:
         return self.A.copy()
@@ -190,22 +277,46 @@ class ZCanvas:
         return w
 
     # --- Ergebnis
+    def _content_box(self, margin_px: int):
+        """Ausschnitt (y0, y1, x0, x1) um alles Gemalte + Rand – dort wird gerechnet."""
+        ys, xs = np.nonzero(self.A > 0.002)
+        if ys.size == 0:
+            return 0, 1, 0, 1
+        return (max(0, ys.min() - margin_px), min(self.A.shape[0], ys.max() + margin_px + 1),
+                max(0, xs.min() - margin_px), min(self.A.shape[1], xs.max() + margin_px + 1))
+
     def outline_under(self, extra_cm: float | None = None):
         """Gleichmäßige Tinten-Kontur um alles bisher Gemalte."""
         r = (self.outline_cm if extra_cm is None else extra_cm) * self.s
         if r <= 0:
             return
-        inside = self.A > 0.5
+        y0, y1, x0, x1 = self._content_box(int(r) + 3)
+        A = self.A[y0:y1, x0:x1]
+        inside = A > 0.5
         dist = ndimage.distance_transform_edt(~inside)
         ring = np.clip(r + 0.5 - dist, 0, 1).astype(np.float32)
-        ring = np.maximum(ring - self.A, 0)
+        ring = np.maximum(ring - A, 0)
         # Ring ist Tinte (Gewichte 0) → nur Deckung erhöhen
-        self.W = self.W * (1 - ring[..., None])
-        self.A = np.maximum(self.A, ring)
+        self.W[y0:y1, x0:x1] *= (1 - ring[..., None])
+        self.A[y0:y1, x0:x1] = np.maximum(A, ring)
 
-    def render_part(self, anchor: Pt, pad_cm: float = 0.5) -> tuple[Image.Image, dict]:
+    def render_part(self, anchor: Pt, pad_cm: float = 0.125) -> tuple[Image.Image, dict]:
         """Rendern, auf die Deckung zuschneiden und Anker (Figuren-cm) in Teil-cm umrechnen.
         Ergebnis-Info: w_cm, h_cm, anchor_cm (x ab links, y ab unten) – Format von parts.json."""
+        # nur den bemalten Bereich verkleinern (auf das SS-Raster ausgerichtet → gleiche Pixel wie vorher)
+        y0, y1, x0, x1 = self._content_box(SS * 4)
+        y0, x0 = (y0 // SS) * SS, (x0 // SS) * SS
+        y1 = min(self.A.shape[0], -(-y1 // SS) * SS)
+        x1 = min(self.A.shape[1], -(-x1 // SS) * SS)
+        sub = ZCanvas.__new__(ZCanvas)
+        sub.W, sub.A, sub.ppc, sub.s = self.W[y0:y1, x0:x1], self.A[y0:y1, x0:x1], self.ppc, self.s
+        sub.w_cm, sub.h_cm = (x1 - x0) / self.s, (y1 - y0) / self.s
+        sub.x0 = self.x0 + x0 / self.s
+        sub.y0 = self.y0 + self.h_cm - y1 / self.s
+        sub.size = (x1 - x0, y1 - y0)
+        return sub._render_crop(anchor, pad_cm)
+
+    def _render_crop(self, anchor: Pt, pad_cm: float) -> tuple[Image.Image, dict]:
         img = self.render()
         bb = img.getchannel("A").point(lambda v: 255 if v > 2 else 0).getbbox()
         if bb is None:

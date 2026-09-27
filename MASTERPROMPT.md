@@ -132,7 +132,7 @@ kunterbunt-city/
 |---|---|
 | **S-01** | Alle Größen in **cm**, Quelle: `data/scale_table.json`. |
 | **S-02** | **Echte Größen.** Keine künstliche Vergrößerung kleiner Items. Varianten dürfen per `scale_mul` **0,7–1,3** abweichen (z. B. kleine/große Tasse). |
-| **S-03** | Figuren: Baby 55 · Kleinkind 90 · **Kind 125** · Teen 155 · Erwachsen 172 · Senior 165 cm. Stilisiert (Kind ≈ 3 Kopfhöhen). |
+| **S-03** | Figuren: Baby 55 · Kleinkind 90 · **Kind 125** · Teen 155 · Erwachsen 172 · Senior 165 cm. Stil „großer Kopf“ (seit P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9. Größe nur aus der Tabelle, Frisur/Hut darf den Kopf überragen. |
 | **S-04** | Welt-Fixmaße: Tisch 75 · Stuhlsitz 45 · Arbeitsplatte 90 · Tür 200 · Raumhöhe 260 cm. |
 | **S-05** | Sprite-Höhe in der Welt = `h_cm × scale_mul`. Breite folgt aus dem Seitenverhältnis des Sprites (Toleranz ±30 % zur Tabelle, sonst Warnung). |
 | **S-06** | Jedes Item hat **Pivot** (Aufstellpunkt, meist unten Mitte) und, wenn tragbar, einen **Grip** (Griffpunkt für die Hand). |

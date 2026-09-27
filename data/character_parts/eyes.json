@@ -2,57 +2,79 @@
   "slot": "eyes",
   "label": "Augen",
   "icon": "👀",
-  "max_zones": 2,
+  "max_zones": 1,
   "variants": [
     {
-      "id": "round",
-      "label": "round",
-      "part": "eyes_round",
-      "part_back": null,
-      "zones": 2,
+      "id": "dot",
+      "label": "Punkte",
+      "zones": 1,
       "tags": [
         "eyes"
-      ]
+      ],
+      "part": "eyes_dot"
+    },
+    {
+      "id": "freckles",
+      "label": "Sommersprossen",
+      "zones": 1,
+      "tags": [
+        "eyes"
+      ],
+      "part": "eyes_freckles"
+    },
+    {
+      "id": "round",
+      "label": "rund",
+      "zones": 1,
+      "tags": [
+        "eyes"
+      ],
+      "part": "eyes_round"
     },
     {
       "id": "big",
-      "label": "big",
-      "part": "eyes_big",
-      "part_back": null,
-      "zones": 2,
+      "label": "groß",
+      "zones": 1,
       "tags": [
         "eyes"
-      ]
+      ],
+      "part": "eyes_big"
+    },
+    {
+      "id": "lash",
+      "label": "Wimpern",
+      "zones": 1,
+      "tags": [
+        "eyes"
+      ],
+      "part": "eyes_lash"
     },
     {
       "id": "sleepy",
-      "label": "sleepy",
-      "part": "eyes_sleepy",
-      "part_back": null,
-      "zones": 2,
+      "label": "müde",
+      "zones": 1,
       "tags": [
         "eyes"
-      ]
+      ],
+      "part": "eyes_sleepy"
     },
     {
       "id": "wink",
-      "label": "wink",
-      "part": "eyes_wink",
-      "part_back": null,
-      "zones": 2,
+      "label": "zwinkern",
+      "zones": 1,
       "tags": [
         "eyes"
-      ]
+      ],
+      "part": "eyes_wink"
     },
     {
       "id": "star",
-      "label": "star",
-      "part": "eyes_star",
-      "part_back": null,
-      "zones": 2,
+      "label": "Sterne",
+      "zones": 1,
       "tags": [
         "eyes"
-      ]
+      ],
+      "part": "eyes_star"
     }
   ]
 }

@@ -8,55 +8,55 @@
    "id": "char_baby",
    "category": "character",
    "h_cm": 55,
-   "w_cm": 30,
+   "w_cm": 40,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "char_toddler",
    "category": "character",
    "h_cm": 90,
-   "w_cm": 45,
+   "w_cm": 58,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "char_child",
    "category": "character",
    "h_cm": 125,
-   "w_cm": 60,
+   "w_cm": 66,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "char_teen",
    "category": "character",
    "h_cm": 155,
-   "w_cm": 62,
+   "w_cm": 66,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "char_adult",
    "category": "character",
    "h_cm": 172,
-   "w_cm": 65,
+   "w_cm": 68,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "char_senior",
    "category": "character",
    "h_cm": 165,
-   "w_cm": 65,
+   "w_cm": 68,
    "hold": "none",
    "placement": "floor",
-   "note": "stilisiert ~3 Kopfhöhen (Kind), Erwachsene ~4"
+   "note": "Stil „großer Kopf“ (P04b): Kind ≈ 2 Kopfhöhen, Erwachsene ≈ 2,9; Breite = Kopf inkl. Ohren"
   },
   {
    "id": "pet_dog_small",

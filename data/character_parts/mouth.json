@@ -2,57 +2,52 @@
   "slot": "mouth",
   "label": "Mund",
   "icon": "👄",
-  "max_zones": 2,
+  "max_zones": 1,
   "variants": [
     {
       "id": "smile",
-      "label": "smile",
-      "part": "mouth_smile",
-      "part_back": null,
-      "zones": 2,
+      "label": "Lächeln",
+      "zones": 1,
       "tags": [
         "mouth"
-      ]
+      ],
+      "part": "mouth_smile"
     },
     {
       "id": "grin",
-      "label": "grin",
-      "part": "mouth_grin",
-      "part_back": null,
-      "zones": 2,
+      "label": "Grinsen",
+      "zones": 1,
       "tags": [
         "mouth"
-      ]
+      ],
+      "part": "mouth_grin"
     },
     {
       "id": "oh",
-      "label": "oh",
-      "part": "mouth_oh",
-      "part_back": null,
-      "zones": 2,
+      "label": "Oh",
+      "zones": 1,
       "tags": [
         "mouth"
-      ]
+      ],
+      "part": "mouth_oh"
     },
     {
       "id": "tongue",
-      "label": "tongue",
-      "part": "mouth_tongue",
-      "part_back": null,
-      "zones": 2,
+      "label": "Zunge",
+      "zones": 1,
       "tags": [
         "mouth"
-      ]
+      ],
+      "part": "mouth_tongue"
     },
     {
       "id": "neutral",
-      "label": "neutral",
-      "part": "mouth_neutral",
-      "part_back": null,
-      "zones": 2,
+      "label": "ruhig",
+      "zones": 1,
       "tags": [
         "mouth"
-      ]
+      ],
+      "part": "mouth_neutral"
     }
   ]
 }

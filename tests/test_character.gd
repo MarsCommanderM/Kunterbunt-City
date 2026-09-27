@@ -62,11 +62,15 @@ func test_sit_pose_shortens_legs_and_keeps_feet_above_floor() -> void:
 	var kid: CharacterRig = _rig("kid", 300.0, 50.0)
 	_kid_sits_on(kid, chair)
 	assert_eq(kid.body_pose, "sit")
-	assert_almost_eq(_h_over(chair, kid.parts.to_global(Vector2(0, -50.0)).y), 45.0, 1.0,
+	var hip: float = float(kid.t["hip"]["y"])
+	assert_almost_eq(_h_over(chair, kid.parts.to_global(Vector2(0, -hip)).y), 45.0, 1.0,
 		"Hüfte sitzt auf 45 cm")
 	var sole: float = _sole_over(chair, kid)
 	assert_true(sole > 5.0, "Füße baumeln über dem Boden (%s cm)" % sole)
-	assert_almost_eq(_h_over(chair, kid.global_rect().position.y), 120.0, 3.0, "Kopf bei ~120 cm")
+	# Oberkörper sitzt unverändert auf der Hüfte: Scheitel = Sitz + (Schablonen-Höhe − Hüfte)
+	var head_top: float = 45.0 + float(kid.t["hair_top"]) - hip
+	assert_almost_eq(_h_over(chair, kid.global_rect().position.y), head_top, 3.0,
+		"Kopf bei ~%d cm" % int(head_top))
 
 
 func test_adult_on_low_sofa_reaches_the_floor() -> void:
@@ -74,19 +78,28 @@ func test_adult_on_low_sofa_reaches_the_floor() -> void:
 	var adult: CharacterRig = _rig("adult", 300.0, 30.0)
 	_kid_sits_on(adult, sofa)
 	assert_eq(adult.body_pose, "sit")
-	assert_almost_eq(_h_over(sofa, adult.parts.to_global(Vector2(0, -90.0)).y), 42.0, 1.0, "Sofa: 42 cm")
+	assert_almost_eq(_h_over(sofa, adult.parts.to_global(Vector2(0, -float(adult.t["hip"]["y"]))).y), 42.0, 1.0,
+		"Sofa: 42 cm")
 	assert_almost_eq(_sole_over(sofa, adult), 0.0, 3.0, "Füße stehen auf dem Boden (nicht darunter)")
 
 
-func test_lie_pose_is_horizontal_with_upright_head() -> void:
+## P04b: Mit dem großen Kopf liegt die GANZE Figur (Kopf auf dem Kissen) – ein aufrechter Kopf ließ
+## lange Haare durch das Bett hängen. Geprüft: Körper und Kopf waagerecht, Beine liegen, nichts sinkt ein.
+func test_lie_pose_is_horizontal_and_rests_on_the_mattress() -> void:
 	var bed: ItemNode = ItemSpawner.on_floor(k.room, &"home_bed_kid", 300.0, 30.0)
 	var toddler: CharacterRig = _rig("toddler", 300.0, 30.0)
 	_kid_sits_on(toddler, bed)
 	assert_eq(toddler.body_pose, "lie")
+	assert_almost_eq(toddler.parts.global_rotation, -PI * 0.5, 0.001, "Körper liegt waagerecht")
+	assert_almost_eq(toddler.head_pivot.global_rotation, -PI * 0.5, 0.001, "Kopf liegt mit auf dem Kissen")
+	# Hüfte → Füße zeigt waagerecht (bei großen Köpfen ist die Hülle fast quadratisch, darum die Achse)
+	var feet: Vector2 = toddler.parts.to_global(Vector2.ZERO)
+	var hip_g: Vector2 = toddler.parts.to_global(Vector2(0, -float(toddler.t["hip"]["y"])))
+	assert_almost_eq(absf(feet.y - hip_g.y), 0.0, 0.5, "Beine liegen waagerecht")
+	assert_almost_eq(absf(feet.x - hip_g.x), float(toddler.t["hip"]["y"]) * toddler.global_scale.x, 0.5,
+		"Beine in voller Länge")
 	var box: Rect2 = toddler.global_rect()
-	assert_true(box.size.x > 1.5 * box.size.y, "liegt waagerecht (%d × %d cm)" % [box.size.x, box.size.y])
-	assert_almost_eq(toddler.head_pivot.global_rotation, 0.0, 0.001, "Kopf bleibt aufrecht")
-	assert_almost_eq(_h_over(bed, box.end.y), 45.0, 4.0, "liegt auf der Matratze (45 cm)")
+	assert_almost_eq(_h_over(bed, box.end.y), 45.0, 4.0, "liegt auf der Matratze (45 cm), nichts hängt durch")
 
 
 func test_six_emotions_cycle_on_head_tap() -> void:

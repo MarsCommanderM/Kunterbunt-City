@@ -4,9 +4,9 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **07 · Slice „Zuhause & Garten“** |
-| Nächste Task | P07-T01 (Zuhause-Slice: Räume + Hintergründe + Garten) |
-| Letzter grüner check.sh | 2026-09-27 (Phase 06 komplett) |
+| Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
+| Nächste Task | P04b-T06 Editor · T08 Icons · T09 Item-Bibliothek + Katalog |
+| Letzter grüner check.sh | 2026-09-27 (P04b T01–T05) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,6 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T05 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -69,6 +70,27 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · Figuren-Neubau im Stil „großer Kopf“ (T01–T05) 🔨
+- Anlass: 👤-Test im Browser – Figuren/Editor/Tiere „sehen Scheiße aus“ (weiße Haut, graue Kästen, Platzhalter
+  mit Text). Zielbild: Stil-Vorlage C. Entscheidungen: großer Kopf, Vektor im Code, 1000+ Teile, leere Räume +
+  Katalog, alle Icons neu. Phasen-Datei `docs/phasen/PHASE_04B_FIGUREN_NEU.md`.
+- Erledigt:
+  - `tools/chibi/` (vec, body, hair, wardrobe, accessories, compose) + `tools/make_chibi_parts.py`:
+    **139 Teile je Schablone × 4 Schablonen** in ~2 Min (4 Prozesse), Katalog 78 Varianten in 8 Slots.
+  - `templates.json`: Kind ≈ 2 Kopfhöhen, **Teen (155 cm) neu**; Kopfmitte so, dass Standard-Frisuren genau bei
+    der Tabellenhöhe enden. `scale_table`: Figuren-Breiten = Kopf inkl. Ohren.
+  - Shader: `ink` (Tinte statt Schwarz, Standard schwarz = alte Formel) + Muster-Uniforms (vorbereitet).
+  - `CharacterLook.colors_for`: Haut+Wangenrot, Augen+Brauen (Haarfarbe), Haar+Glanz+Haargummi,
+    Kleidung/Beine/Schuhe Zone 3 = Haut. Alte IDs → Aliase (`knee_bandage` → `plaster`, R-11).
+  - Rig: Haare hinten liegen hinter dem Körper (`HeadBack`), gewählter Mund bleibt bei „fröhlich“,
+    Liegen dreht die ganze Figur (lange Haare hängen nicht mehr durchs Bett).
+  - Accessoire/Hilfsmittel starten „ohne“ (vorher trug jede neue Figur Brille + Hörgerät).
+- Tests angepasst (Absicht bleibt, nur Werte aus der Schablone statt fest): Hüfte/Scheitel beim Sitzen,
+  Liegen (Achse statt Hüllen-Verhältnis), Varianten „mindestens 5“, Körper-Größe ohne Haare/Hut + Obergrenze
+  45 % Kopfhöhe für Frisuren/Hüte, Farbzonen-Beweis mit festen Prüffarben. check.sh ✅ (pytest 122, GUT 240).
+- Beweis: `docs/tests/P04/p04_01…03` neu aus dem echten Renderer.
+- Entfernt: `tools/make_rig_parts.py` (ersetzt). `make_editor_parts.py` nur noch für `ZCanvas` der Tiere.
+- Nächste Task: Editor-Oberfläche (T06), Icons (T08), Item-Bibliothek + Katalog (T09), Tiere (T07).
 ### 2026-09-27 · Phase 06 · Asset-Pipeline (produktiv) ✅
 - Erledigt: P06-T01…T12.
   - `tools/asset_pipeline/`: `cutout.py` (Loch-Regel >500 px/mean>250, Figuren-Modus, Kanten-Entmischung),

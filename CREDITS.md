@@ -40,7 +40,7 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 ## Figuren-Teile (Phase 03, Platzhalter)
 | Datei | Quelle | Lizenz |
 |---|---|---|
-| `assets/characters/parts/*/*.png` (63 Teile, 3 Schablonen) | selbst erzeugt mit `tools/make_rig_parts.py` (Pillow, Maße aus `data/characters/templates.json`) | CC0 / eigenes Werk |
+| `assets/characters/parts/*/*.png` (139 Teile je Schablone, 4 Schablonen) | selbst erzeugt mit `tools/make_chibi_parts.py` + `tools/chibi/` (Pillow/NumPy/SciPy, Vektor-Zeichnung, Maße aus `data/characters/templates.json`) | CC0 / eigenes Werk |
 | `assets/characters/sprite/char_girl_01*.png`, `char_girl_01.json` | Referenz-Sprite aus `reference/sprites/` (Stil-C-Pipeline), Faust-Position gemessen mit `tools/dev/make_girl_hand.py` | CC0 / eigenes Werk |
 
 > Die Figuren-Teile sind bewusst **Platzhalter** (vektorige Grundformen in Stil C). Die echten,

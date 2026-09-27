@@ -2,57 +2,64 @@
   "slot": "aid",
   "label": "Hilfsmittel",
   "icon": "🦻",
-  "max_zones": 1,
+  "max_zones": 2,
   "variants": [
     {
       "id": "none",
-      "label": "none",
-      "part": "aid_none",
-      "part_back": null,
+      "label": "ohne",
       "zones": 1,
       "tags": [
         "none"
-      ]
+      ],
+      "part": "aid_none"
     },
     {
       "id": "hearing_aid",
-      "label": "hearing aid",
-      "part": "aid_hearing_aid",
-      "part_back": null,
-      "zones": 1,
+      "label": "Hörgerät",
+      "zones": 2,
       "tags": [
         "aid"
-      ]
+      ],
+      "part": "aid_hearing_aid"
+    },
+    {
+      "id": "cochlear",
+      "label": "Cochlea-Implantat",
+      "zones": 2,
+      "tags": [
+        "aid"
+      ],
+      "part": "aid_cochlear"
     },
     {
       "id": "eye_patch",
-      "label": "eye patch",
-      "part": "aid_eye_patch",
-      "part_back": null,
+      "label": "Augenpflaster",
       "zones": 1,
       "tags": [
         "aid"
-      ]
+      ],
+      "part": "aid_eye_patch"
+    },
+    {
+      "id": "plaster",
+      "label": "Pflaster",
+      "zones": 2,
+      "tags": [
+        "aid"
+      ],
+      "part": "aid_plaster"
     },
     {
       "id": "arm_sling",
-      "label": "arm sling",
-      "part": "aid_arm_sling",
-      "part_back": null,
+      "label": "Armschlinge",
       "zones": 1,
       "tags": [
         "aid"
-      ]
-    },
-    {
-      "id": "knee_bandage",
-      "label": "knee bandage",
-      "part": "aid_knee_bandage",
-      "part_back": null,
-      "zones": 1,
-      "tags": [
-        "aid"
-      ]
+      ],
+      "part": "aid_arm_sling"
     }
-  ]
+  ],
+  "aliases": {
+    "knee_bandage": "plaster"
+  }
 }

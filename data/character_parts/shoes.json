@@ -6,53 +6,84 @@
   "variants": [
     {
       "id": "sneaker",
-      "label": "sneaker",
-      "part": "shoes_sneaker",
-      "part_back": null,
+      "label": "Turnschuhe",
       "zones": 2,
       "tags": [
         "shoes"
-      ]
+      ],
+      "part": "shoes_sneaker"
+    },
+    {
+      "id": "sneaker_socks",
+      "label": "Turnschuhe + Socken",
+      "zones": 2,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_sneaker_socks"
+    },
+    {
+      "id": "hightop",
+      "label": "hohe Turnschuhe",
+      "zones": 2,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_hightop"
     },
     {
       "id": "boot",
-      "label": "boot",
-      "part": "shoes_boot",
-      "part_back": null,
+      "label": "Stiefel",
       "zones": 2,
       "tags": [
         "shoes"
-      ]
-    },
-    {
-      "id": "sandal",
-      "label": "sandal",
-      "part": "shoes_sandal",
-      "part_back": null,
-      "zones": 2,
-      "tags": [
-        "shoes"
-      ]
-    },
-    {
-      "id": "slipper",
-      "label": "slipper",
-      "part": "shoes_slipper",
-      "part_back": null,
-      "zones": 2,
-      "tags": [
-        "shoes"
-      ]
+      ],
+      "part": "shoes_boot"
     },
     {
       "id": "rainboot",
-      "label": "rainboot",
-      "part": "shoes_rainboot",
-      "part_back": null,
+      "label": "Gummistiefel",
       "zones": 2,
       "tags": [
         "shoes"
-      ]
+      ],
+      "part": "shoes_rainboot"
+    },
+    {
+      "id": "sandal",
+      "label": "Sandalen",
+      "zones": 2,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_sandal"
+    },
+    {
+      "id": "ballet",
+      "label": "Ballerinas",
+      "zones": 2,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_ballet"
+    },
+    {
+      "id": "slipper",
+      "label": "Hausschuhe",
+      "zones": 2,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_slipper"
+    },
+    {
+      "id": "barefoot",
+      "label": "barfuß",
+      "zones": 1,
+      "tags": [
+        "shoes"
+      ],
+      "part": "shoes_barefoot"
     }
   ]
 }

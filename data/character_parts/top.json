@@ -2,57 +2,147 @@
   "slot": "top",
   "label": "Oberteil",
   "icon": "👕",
-  "max_zones": 3,
+  "max_zones": 2,
   "variants": [
     {
-      "id": "shirt",
-      "label": "shirt",
-      "part": "top_shirt",
-      "part_back": "sleeve_shirt",
-      "zones": 3,
-      "tags": [
-        "top"
-      ]
-    },
-    {
       "id": "tee",
-      "label": "tee",
-      "part": "top_tee",
-      "part_back": "sleeve_tee",
+      "label": "T-Shirt",
       "zones": 2,
       "tags": [
         "top"
-      ]
+      ],
+      "part": "top_tee",
+      "part_back": "sleeve_tee"
+    },
+    {
+      "id": "shirt",
+      "label": "Hemd",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_shirt",
+      "part_back": "sleeve_shirt"
+    },
+    {
+      "id": "raglan",
+      "label": "Raglan",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_raglan",
+      "part_back": "sleeve_raglan"
+    },
+    {
+      "id": "tee_star",
+      "label": "Stern-Shirt",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_tee_star",
+      "part_back": "sleeve_tee_star"
+    },
+    {
+      "id": "longsleeve",
+      "label": "Langarm",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_longsleeve",
+      "part_back": "sleeve_longsleeve"
+    },
+    {
+      "id": "polo",
+      "label": "Polo",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_polo",
+      "part_back": "sleeve_polo"
+    },
+    {
+      "id": "tank",
+      "label": "Top",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_tank",
+      "part_back": "sleeve_tank"
+    },
+    {
+      "id": "hoodie",
+      "label": "Kapuzenpulli",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_hoodie",
+      "part_back": "sleeve_hoodie"
     },
     {
       "id": "sweater",
-      "label": "sweater",
-      "part": "top_sweater",
-      "part_back": "sleeve_sweater",
+      "label": "Pulli",
       "zones": 2,
       "tags": [
         "top"
-      ]
+      ],
+      "part": "top_sweater",
+      "part_back": "sleeve_sweater"
+    },
+    {
+      "id": "jacket",
+      "label": "Jacke",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_jacket",
+      "part_back": "sleeve_jacket"
+    },
+    {
+      "id": "raincoat",
+      "label": "Regenmantel",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_raincoat",
+      "part_back": "sleeve_raincoat"
     },
     {
       "id": "dress",
-      "label": "dress",
-      "part": "top_dress",
-      "part_back": "sleeve_dress",
+      "label": "Kleid",
       "zones": 2,
       "tags": [
         "top"
-      ]
+      ],
+      "part": "top_dress",
+      "part_back": "sleeve_dress"
+    },
+    {
+      "id": "sundress",
+      "label": "Sommerkleid",
+      "zones": 2,
+      "tags": [
+        "top"
+      ],
+      "part": "top_sundress",
+      "part_back": "sleeve_sundress"
     },
     {
       "id": "overalls",
-      "label": "overalls",
-      "part": "top_overalls",
-      "part_back": "sleeve_overalls",
+      "label": "Latzhose",
       "zones": 2,
       "tags": [
         "top"
-      ]
+      ],
+      "part": "top_overalls",
+      "part_back": "sleeve_overalls"
     }
   ]
 }

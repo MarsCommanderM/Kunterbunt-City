@@ -2,57 +2,115 @@
   "slot": "accessory",
   "label": "Accessoire",
   "icon": "🎀",
-  "max_zones": 2,
+  "max_zones": 3,
   "variants": [
     {
       "id": "none",
-      "label": "none",
-      "part": "acc_none",
-      "part_back": null,
+      "label": "ohne",
       "zones": 1,
       "tags": [
         "none"
-      ]
+      ],
+      "part": "acc_none"
     },
     {
       "id": "glasses",
-      "label": "glasses",
-      "part": "acc_glasses",
-      "part_back": null,
-      "zones": 2,
+      "label": "Brille",
+      "zones": 1,
       "tags": [
         "accessory"
-      ]
+      ],
+      "part": "acc_glasses"
+    },
+    {
+      "id": "glasses_square",
+      "label": "eckige Brille",
+      "zones": 1,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_glasses_square"
+    },
+    {
+      "id": "sunglasses",
+      "label": "Sonnenbrille",
+      "zones": 1,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_sunglasses"
+    },
+    {
+      "id": "headband",
+      "label": "Haarreif",
+      "zones": 1,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_headband"
     },
     {
       "id": "bow",
-      "label": "bow",
-      "part": "acc_bow",
-      "part_back": null,
+      "label": "Schleife",
       "zones": 2,
       "tags": [
         "accessory"
-      ]
+      ],
+      "part": "acc_bow"
     },
     {
-      "id": "headphones",
-      "label": "headphones",
-      "part": "acc_headphones",
-      "part_back": null,
+      "id": "hairclip",
+      "label": "Spangen",
       "zones": 2,
       "tags": [
         "accessory"
-      ]
+      ],
+      "part": "acc_hairclip"
     },
     {
       "id": "cap",
-      "label": "cap",
-      "part": "acc_cap",
-      "part_back": null,
+      "label": "Kappe",
       "zones": 2,
       "tags": [
         "accessory"
-      ]
+      ],
+      "part": "acc_cap"
+    },
+    {
+      "id": "beanie",
+      "label": "Mütze",
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_beanie"
+    },
+    {
+      "id": "sunhat",
+      "label": "Sonnenhut",
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_sunhat"
+    },
+    {
+      "id": "flowers",
+      "label": "Blumenkranz",
+      "zones": 3,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_flowers"
+    },
+    {
+      "id": "headphones",
+      "label": "Kopfhörer",
+      "zones": 2,
+      "tags": [
+        "accessory"
+      ],
+      "part": "acc_headphones"
     }
   ]
 }

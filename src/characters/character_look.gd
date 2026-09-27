@@ -7,10 +7,16 @@ extends RefCounted
 
 const SHADER: Shader = preload("res://assets/shaders/zone_tint.gdshader")
 
-## Farben, die der Spieler nicht wählt (Augen/Mund sind fertig koloriert).
+## P04b: Konturfarbe der Figuren (dunkles Braun statt Schwarz – Stil „großer Kopf“).
+const INK: Color = Color("#3b2a2a")
+## Wangenrot = Haut, zu diesem Rosa hin gemischt.
+const BLUSH: Color = Color("#ff8c8c")
+const HAIR_ACCENT: String = "#ef6f9c"   ## Haargummi/Spange, falls nicht gewählt
+
+## Farben, die der Spieler nicht wählt (Mund ist fertig koloriert, Augen: Standard-Augenfarbe).
 const FIXED: Dictionary = {
-	"Eyes": ["#3a2620", "#ffffff"],      # Zone 1 = Iris (später wählbar), Zone 2 = Glanz
-	"Mouth": ["#a85050", "#ff9aa8"],     # Zone 1 = Mund, Zone 2 = Zunge
+	"Eyes": ["#3a2620", "#ffffff"],      # Zone 1 = Augenfarbe (wählbar über colors.eyes), Zone 2 = Glanz
+	"Mouth": ["#b0424f", "#ff8fa3"],     # Zone 1 = Mund, Zone 2 = Zunge
 }
 
 ## Ebene → Slot im Editor-Katalog.
@@ -24,6 +30,8 @@ const SLOT: Dictionary = {
 static func part_for(tid: String, look: Dictionary, layer: String, suffix: String = "") -> String:
 	var slot: String = String(SLOT.get(layer, ""))
 	var variant: String = String(look.get("parts", {}).get(slot, "")) if not slot.is_empty() else ""
+	if not variant.is_empty():
+		variant = CharacterParts.resolve(slot, variant)      # alte IDs aus Speicherständen
 	if variant.is_empty() and not slot.is_empty():
 		variant = "none" if layer in ["Accessory", "Aid"] else CharacterParts.default_id(slot)
 	if not variant.is_empty():
@@ -79,21 +87,43 @@ static func _fallback(layer: String, look: Dictionary, suffix: String) -> String
 			return ""
 
 
-## Zonenfarben einer Ebene (1…3), als Color-Array.
+## Zonenfarben einer Ebene (Shader-Zonen 1…3), als Color-Array.
+## Die Zuordnung Editor-Farbe → Shader-Zone hängt von der Ebene ab (P04b):
+##   Haut-Ebenen: [Haut, Wangenrot] · Augen: [Augenfarbe, Weiß, Haarfarbe (Brauen)]
+##   Haare: [Haar, Glanz, Haargummi] · Kleidung/Beine/Schuhe: [Farbe 1, Farbe 2, Haut]
 static func colors_for(look: Dictionary, layer: String) -> Array:
-	if FIXED.has(layer):
-		return _to_colors(FIXED[layer])
+	var skin: Color = Color(String(look.get("skin", "#ffd6bf")))
+	if layer == "Mouth":
+		return _to_colors(FIXED["Mouth"])
+	if layer == "Eyes":
+		var eye: Array = Array(look.get("colors", {}).get("eyes", []))
+		return [Color(String(eye[0])) if not eye.is_empty() else Color(String(FIXED["Eyes"][0])),
+			Color(String(FIXED["Eyes"][1])), hair_color(look)]
 	if layer == "Head" or layer.ends_with("Skin") or layer.ends_with("Palm") \
 			or layer.ends_with("Fingers") or layer.begins_with("Fingers"):
-		return [Color(String(look.get("skin", "#ffd6bf")))]
+		return [skin, skin.lerp(BLUSH, 0.38)]
 	var slot: String = String(SLOT.get(layer, ""))
-	var cols: Array = Array(look.get("colors", {}).get(slot, []))
+	var cols: Array = _to_colors(Array(look.get("colors", {}).get(slot, [])))
 	if cols.is_empty():
 		# alte look-Schlüssel (Phase 03) weiterhin unterstützen
 		var single: String = String(look.get({"top": "shirt", "bottom": "pants", "shoes": "shoes",
 			"hair": "hair"}.get(slot, ""), ""))
-		return [Color(single)] if single else [Color.WHITE]
-	return _to_colors(cols)
+		cols = [Color(single)] if single else [Color.WHITE]
+	if slot == "hair":
+		var h: Color = cols[0]
+		return [h, h.lerp(Color(0.97, 0.93, 0.86), 0.42),
+			cols[1] if cols.size() > 1 else Color(HAIR_ACCENT)]
+	if slot in ["top", "bottom", "shoes", "aid"]:
+		return [cols[0], cols[1] if cols.size() > 1 else cols[0], skin]
+	return cols
+
+
+## Haarfarbe der Figur (Editor-Farbe oder alter Schlüssel „hair“).
+static func hair_color(look: Dictionary) -> Color:
+	var cols: Array = Array(look.get("colors", {}).get("hair", []))
+	if not cols.is_empty():
+		return Color(String(cols[0]))
+	return Color(String(look.get("hair", "#6b4a36")))
 
 
 static func _to_colors(hexes: Array) -> Array:
@@ -103,8 +133,8 @@ static func _to_colors(hexes: Array) -> Array:
 	return out
 
 
-## Material mit den Zonenfarben setzen (Shader: Farbe = R·c1 + G·c2 + B·c3).
-static func apply(item: CanvasItem, cols: Array) -> void:
+## Material mit den Zonenfarben setzen (Shader: Farbe = R·c1 + G·c2 + B·c3 + Rest·Tinte).
+static func apply(item: CanvasItem, cols: Array, ink: Color = INK) -> void:
 	# Material wiederverwenden: der Editor färbt oft hintereinander um, da wäre ein neues
 	# Material pro Klick Müll.
 	var mat: ShaderMaterial = item.material as ShaderMaterial
@@ -115,6 +145,7 @@ static func apply(item: CanvasItem, cols: Array) -> void:
 		mat.set_shader_parameter("zone%d" % (i + 1), cols[i])
 	for i: int in range(cols.size(), 3):
 		mat.set_shader_parameter("zone%d" % (i + 1), cols[0] if cols.size() > 0 else Color.WHITE)
+	mat.set_shader_parameter("ink", ink)
 	item.material = mat
 	item.modulate = Color.WHITE
 

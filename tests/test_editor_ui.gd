@@ -140,9 +140,10 @@ func test_outfit_platz_speichern_anziehen_leeren() -> void:
 
 
 # ------------------------------------------------------------------ Katalog-Anbindung
-func test_jede_kategorie_hat_fuenf_varianten_und_ein_symbol() -> void:
+## P04b: Der Katalog wächst – mindestens 5 Varianten je Kategorie, jede mit Symbol.
+func test_jede_kategorie_hat_mindestens_fuenf_varianten_und_ein_symbol() -> void:
 	for slot: String in CharacterParts.slot_ids():
-		assert_eq(CharacterParts.ids(slot).size(), 5, "Slot %s" % slot)
+		assert_gte(CharacterParts.ids(slot).size(), 5, "Slot %s" % slot)
 		assert_true(FileAccess.file_exists("res://assets/ui/icons/%s.png" % _icon_for(slot)),
 			"Symbol für %s fehlt" % slot)
 
