@@ -34,8 +34,8 @@ func _enter() -> AreaScene:
 func _loose_items(a: AreaScene) -> int:
 	var n: int = 0
 	for it: ItemNode in Placement.all_items(a.room):
-		if not (it is CharacterRig) and not (it is PetNode):
-			n += 1
+		if not (it is CharacterRig) and not (it is PetNode) and not it.def.is_wall():
+			n += 1                                     # Licht-Schalter an der Wand zählt nicht als Einrichtung
 	return n
 
 

@@ -46,7 +46,14 @@
       "#9a8a78"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "living",
@@ -85,7 +92,14 @@
       "#8a5a3c"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "kitchen",
@@ -206,6 +220,11 @@
    "icon": "kit_pot_coral",
    "default_items": [
     {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    },
+    {
      "id": "home_bed_kid",
      "x_cm": 95,
      "y_cm": 22
@@ -317,7 +336,14 @@
       "#b8a890"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "kids1",
@@ -356,7 +382,14 @@
       "#8a5a3c"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "kids2",
@@ -395,7 +428,14 @@
       "#6f8fb8"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "bath",
@@ -434,7 +474,14 @@
       "#9aa6b4"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "attic",
@@ -475,7 +522,14 @@
       "#7a5a3c"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "basement",
@@ -514,7 +568,14 @@
       "#8a8780"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "garage",
@@ -553,7 +614,14 @@
       "#8a8780"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "home_light_switch_white",
+     "x_cm": 70,
+     "y_cm": -118
+    }
+   ]
   },
   {
    "id": "garden",

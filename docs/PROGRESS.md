@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07-T05 Einbauten mit Wasser/Licht (Badewanne, Dusche, Toilette, Licht-Schalter), T09 Audio, T10 Geheimnisse |
-| Letzter grüner check.sh | 2026-09-27 (P07-T07 Garten) |
+| Nächste Task | P07-T09 Audio (Musik, Ambiente je Raum), T10 Geheimnisse, T11 Lineup, dann Phasenbericht P07 |
+| Letzter grüner check.sh | 2026-09-27 (P07-T05/T06 Licht, Türen, 26 Rezepte) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -20,7 +20,7 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | 🔨 T01, T03, T04, T07 fertig | Log 2026-09-27 |
+| 07 Slice Zuhause | 🔨 T01, T03–T07 fertig | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
@@ -41,6 +41,7 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 |---|---|---|---|
 | 2026-09-26 | 00 | check.sh | Maßstab ✅ · pytest 5/5 ✅ · GUT 7/7 ✅ |
 | 2026-09-27 | 07 | check.sh (Inventar) | Maßstab ✅ (940 Einträge, 2513 Items) · pytest **128/128** ✅ · GUT **265/265** ✅ (24467 Asserts) |
+| 2026-09-27 | 07 | check.sh (Licht/Türen/Rezepte) | Maßstab ✅ (2516 Items) · pytest 128/128 ✅ · GUT **284/284** ✅ (26 Rezepte je einzeln gekocht) |
 | 2026-09-27 | 07 | check.sh (Garten) | Maßstab ✅ · pytest 128/128 ✅ · GUT **279/279** ✅ |
 | 2026-09-27 | 07 | Garten-Kreislauf im Spiel (`p07_rooms_runner.gd`) | gesät ✓ · gegossen ✓ · sprout → grown → ripe · Ernte **3 Möhren** · Garten-Start-Anlage 46 Dinge |
 | 2026-09-27 | 07 | check.sh (Räume + Deko) | Maßstab ✅ · pytest 128/128 ✅ · GUT **274/274** ✅ (24518 Asserts) |
@@ -76,6 +77,17 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 07 · T05 Licht & Türen, T06 26 Rezepte 🔨
+- **Licht-Schalter** (`home_light_switch`, Wand) in jedem Innenraum: aus → Raum dunkel (Nacht-Stimmung,
+  `CanvasModulate`), eingeschaltete Lampen/Wandleuchten/Nachtlicht/Kamin/Feuer/Lichterketten/TV leuchten als echte
+  2D-Lichter (`RoomLight`). Der Schalter zählt nicht als Einrichtung – Räume bleiben leer.
+- **Türen**: eine Tür (oder das Gartentor) antippen → Raum-Wahl („Wechsel über Türen").
+- **Rezepte**: 26 (neu: Nudeln, Kürbissuppe, Beeren-Smoothie, Kakao, Bratkartoffeln, Brötchen → Croissant);
+  `test_recipes_all` kocht **jedes** Rezept einzeln (parametrisiert, Akzeptanz „GUT je Rezept").
+- Fehler gefunden: Hund konnte beim Ausweichen vor der Figur **aus dem Bodenband geschoben** werden – nur je nach
+  Zufalls-Seed (hängt von der Zahl vorher erzeugter Items ab), deshalb war `test_pet` allein rot, im Gesamtlauf
+  grün. Jetzt seitlich ausweichen + immer im Bodenband.
+- Tests: GUT +`test_light_doors` (3), +`test_recipes_all` (2, davon 26 Parameter). check.sh ✅.
 ### 2026-09-27 · Phase 07 · T07 Großer Garten: säen, gießen, wachsen, ernten 🔨
 - `src/items/garden.gd` (`Garden`): Samentüte aufs leere Beet → Keimling (Tüte verbraucht); Gießkanne aufs Beet
   → nass (dunklere Erde, 150 s); nasses Beet wächst alle 45 s eine Stufe (sprout → grown → ripe), trockenes wartet;

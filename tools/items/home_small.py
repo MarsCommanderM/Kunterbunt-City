@@ -263,6 +263,15 @@ def small(it: Item, style: str = "knife", state: str = ""):
         c.fill([(-W * 0.2, H * 0.9), (-W * 0.05, H * 0.9), (-W * 0.2, H * 0.3), (-W * 0.3, H * 0.3)], zone=2, shade=1.35, alpha=0.6,
                clip=c.mask(glass))
         c.line(glass, INNER, zone=0, closed=True)
+    elif style == "light_switch":                                 # Lichtschalter (Wand): Wippe oben = an
+        plate = rrect(x0, 0, x1, H, 1.2)
+        shaded(c, plate, 1, "bottom", SOFT, 0.2)
+        rock = rrect(-W * 0.26, H * 0.2, W * 0.26, H * 0.8, 0.8)
+        c.fill(rock, zone=2)
+        c.fill(rrect(-W * 0.26, H * 0.5, W * 0.26, H * 0.8, 0.8) if state != "off" else rrect(-W * 0.26, H * 0.2, W * 0.26, H * 0.5, 0.8),
+               zone=2, shade=0.82)
+        c.line(rock, INNER, zone=0, closed=True)
+        c.ellipse(0, H * (0.68 if state != "off" else 0.32), W * 0.07, W * 0.07, zone=3, shade=1.2 if state != "off" else 0.6)
     # ---------------------------------------------------------------- Baby
     elif style == "rattle":
         c.fill(rrect(-W * 0.1, 0, W * 0.1, H * 0.55, W * 0.1), zone=2)

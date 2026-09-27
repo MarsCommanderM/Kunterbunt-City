@@ -296,3 +296,8 @@ for st, w, h, names, extra in (("trampoline", 260, 230, ["green", "sky", "coral"
                                                   {"trampoline": "metal", "treehouse": "walnut", "greenhouse": "leaf", "compost": "walnut",
                                                    "bin": "black", "mailbox": "metal", "doghouse": "oak", "shed": "oak",
                                                    "clothesline": "metal", "rain_barrel": "metal"}[st])) for n in names], **extra)
+
+# ------------------------------------------------------------------ P07-T05: Licht-Schalter (Wand) – aus = Raum wird dunkel
+T(id="home_light_switch", fn=HS.small, w=9, h=13, kw={"style": "light_switch"}, group="walldeco", category="deco",
+  placement="wall", states={"off": {"state": "off"}}, state0="on",
+  variants=[(n, cols(n, "cream" if n != "cream" else "white", "butter")) for n in ["white", "cream", "black"]])

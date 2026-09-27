@@ -1031,7 +1031,10 @@
     "wall_sconce_coral",
     "home_radiator_white",
     "home_radiator_cream",
-    "home_radiator_grey"
+    "home_radiator_grey",
+    "home_light_switch_white",
+    "home_light_switch_cream",
+    "home_light_switch_black"
    ]
   },
   {

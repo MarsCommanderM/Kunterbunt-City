@@ -375,6 +375,96 @@
     "#9aa6b4"
    ],
    "catalog": "walldeco"
+  },
+  {
+   "id": "home_light_switch_white",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
+  },
+  {
+   "id": "home_light_switch_cream",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
+  },
+  {
+   "id": "home_light_switch_black",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
   }
  ]
 }

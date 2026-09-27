@@ -19,6 +19,7 @@ var drag: DragController
 var hud: AreaHud
 var ui: CanvasLayer                  ## Ebene für UI-Panels (Rucksack, Album, Eltern …)
 var me: ItemNode                     ## die eigene Figur
+var light_mod: CanvasModulate        ## P07-T05: Raum dunkel, wenn der Licht-Schalter aus ist
 var pets: Array = []                 ## [PetNode]
 var load_ms: float = 0.0
 var _t0: int = 0
@@ -86,7 +87,9 @@ func _build_world() -> void:
 	add_child(drag)
 	drag.camera = camera
 	drag.item_dropped.connect(_on_item_dropped)
-	drag.item_tapped.connect(func(_it: ItemNode) -> void: _on_world_changed())
+	drag.item_tapped.connect(_on_item_tapped)
+	light_mod = CanvasModulate.new()
+	add_child(light_mod)
 
 
 func _enter_room(rid: String, first: bool) -> void:
@@ -103,6 +106,7 @@ func _enter_room(rid: String, first: bool) -> void:
 	Game.set_last_room(area_id, room.room_id)
 	_spawn(spawn)
 	Garden.catch_up(room)                                # während der Abwesenheit gewachsen/verwelkt
+	RoomLight.apply(room, light_mod)
 
 
 ## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
@@ -171,8 +175,12 @@ func _spawn_defaults() -> void:
 		var d: Dictionary = e
 		if d.has("on"):
 			continue                       # Dinge auf Tischen kommen im zweiten Durchgang
-		by_id[String(d["id"])] = ItemSpawner.on_floor(room, StringName(String(d["id"])),
-			float(d.get("x_cm", 0.0)), float(d.get("y_cm", 0.0)))
+		var did := StringName(String(d["id"]))
+		var ddef: ItemDefinition = ItemDB.get_item(did)
+		if ddef != null and ddef.is_wall():             # Licht-Schalter, Bilder … hängen an der Wand (y = Oberkante)
+			by_id[String(d["id"])] = ItemSpawner.on_wall(room, did, float(d.get("x_cm", 0.0)), float(d.get("y_cm", -120.0)))
+			continue
+		by_id[String(d["id"])] = ItemSpawner.on_floor(room, did, float(d.get("x_cm", 0.0)), float(d.get("y_cm", 0.0)))
 	for e: Variant in list:
 		var d: Dictionary = e
 		if not d.has("on"):
@@ -283,7 +291,17 @@ func place_from_catalog(id: String, n: int = 0) -> bool:
 	return true
 
 
+## Tippen: Tür → in einen anderen Raum (P07: „Wechsel über Türen"), sonst Zustand merken + Licht prüfen.
+func _on_item_tapped(it: ItemNode) -> void:
+	var id: String = String(it.def.id)
+	if (id.begins_with("door_") or id.begins_with("garden_gate")) and room_ids().size() > 1 and ui != null:
+		RoomPicker.open(ui, self)
+	_on_world_changed()
+
+
 func _on_world_changed() -> void:
+	if room != null:
+		RoomLight.apply(room, light_mod)
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
 	Game.mark_dirty(area_id, room.room_id)
 

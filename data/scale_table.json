@@ -8504,6 +8504,15 @@
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
+  },
+  {
+   "id": "c_home_light_switch",
+   "category": "deco",
+   "h_cm": 14.9,
+   "w_cm": 10.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
   }
  ]
 }

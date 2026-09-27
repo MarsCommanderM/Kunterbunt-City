@@ -114,15 +114,20 @@ func tick(dt: float) -> void:
 							else Vector2(1.0, 0.0)
 						dir = (dir + push * 2.0 * clampf(
 							(MIN_FRIEND_CM - ad) / MIN_FRIEND_CM, 0.0, 1.0)).normalized()
-				position += dir * step
-				# Harte Grenze (zusätzlich zum Ausweichen): nie näher als MIN_FRIEND_CM.
+				position = r.floor_band.clamp_point(position + dir * step)
+				# Harte Grenze (zusätzlich zum Ausweichen): nie näher als MIN_FRIEND_CM – und dabei nie aus dem
+				# Bodenband geschoben (vorher landete der Hund je nach Zufall vor der vorderen Bodenlinie).
 				if friend != null:
 					var gap: Vector2 = position - friend.position
 					var gd: float = gap.length()
 					if gd < MIN_FRIEND_CM:
 						var out: Vector2 = (gap / maxf(gd, 0.001)) if gd > 0.001 \
 							else Vector2(1.0, 0.0)
-						position = friend.position + out * MIN_FRIEND_CM
+						var p2: Vector2 = friend.position + out * MIN_FRIEND_CM
+						if not r.floor_band.contains(p2):
+							out = Vector2(signf(gap.x) if absf(gap.x) > 0.001 else 1.0, 0.0)
+							p2 = friend.position + out * MIN_FRIEND_CM
+						position = r.floor_band.clamp_point(p2)
 				if absf(to.x) > 1.0:
 					sprite.flip_h = to.x > 0.0
 				_walk_t += dt
