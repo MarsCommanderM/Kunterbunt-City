@@ -8,6 +8,8 @@ extends RefCounted
 static func dot(hex: String, size: float, selected: bool) -> Button:
 	var b := Button.new()
 	b.custom_minimum_size = Vector2(size, size)
+	b.size_flags_vertical = Control.SIZE_SHRINK_CENTER      # in Reihen nicht zum Oval strecken
+	b.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	b.set_meta("color", hex)
 	var empty := StyleBoxEmpty.new()
 	for st: String in ["normal", "hover", "pressed", "focus", "disabled"]:

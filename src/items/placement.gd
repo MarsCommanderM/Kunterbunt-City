@@ -24,10 +24,11 @@ class Target:
 
 ## pivot = gewünschte Pivot-Position (global), pointer = Finger/Maus (global).
 static func find_target(room: Room, item: ItemNode, pivot: Vector2, pointer: Vector2) -> Target:
-	var ch: Target = PlacementCharacter.find(room, item, pivot, pointer)
+	var items: Array[ItemNode] = all_items(room)      # einmal sammeln (vorher 3× je Suche)
+	var ch: Target = PlacementCharacter.find(room, item, pivot, pointer, items)
 	if ch:
 		return ch
-	var c: Target = _container_target(room, item, pointer)
+	var c: Target = _container_target(room, item, pointer, items)
 	if c:
 		return c
 	var best_y: float = INF
@@ -47,13 +48,18 @@ static func find_target(room: Room, item: ItemNode, pivot: Vector2, pointer: Vec
 			best_y = y
 			best = t
 	# Items mit Fläche (Tisch) und Stapel-Spitzen
-	for other: ItemNode in all_items(room):
+	var stackable: bool = item.def.is_stackable()
+	for other: ItemNode in items:
+		var surf: bool = other.def.has_surface()
+		var stack: bool = stackable and other.def.is_stackable()
+		if not (surf or stack):              # billige Prüfung zuerst: die meisten Items sind weder Tisch noch Stapel
+			continue
 		if other == item or item.is_ancestor_of(other) or not other.is_visible_in_tree():
 			continue
 		var kinds: Array[StringName] = []
-		if other.def.has_surface():
+		if surf:
 			kinds.append(&"item_surface")
-		if item.def.is_stackable() and other.def.is_stackable() and not other.has_stacked_child():
+		if stack and not other.has_stacked_child():
 			kinds.append(&"stack")
 		for k: StringName in kinds:
 			var y2: float = other.top_global_y(k == &"stack")
@@ -115,11 +121,11 @@ static func rejection_reason(room: Room, item: ItemNode, t: Target) -> String:
 	return ""
 
 
-static func _container_target(room: Room, item: ItemNode, pointer: Vector2) -> Target:
+static func _container_target(room: Room, item: ItemNode, pointer: Vector2, items: Array[ItemNode] = []) -> Target:
 	# innerster offener Behälter unter dem Finger gewinnt (Box im Kühlschrank vor dem Kühlschrank)
 	var other: ItemNode = null
-	for c: ItemNode in all_items(room):
-		if c == item or item.is_ancestor_of(c) or not c.def.is_container() or not c.is_open:
+	for c: ItemNode in (items if not items.is_empty() else all_items(room)):
+		if not c.def.is_container() or not c.is_open or c == item or item.is_ancestor_of(c):
 			continue
 		if not c.is_visible_in_tree() or not c.global_rect().has_point(pointer):
 			continue

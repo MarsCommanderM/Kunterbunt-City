@@ -114,7 +114,7 @@ func _spawn_pets(spawn: Vector2) -> void:
 			continue
 		pet.set_meta("pet_id", String(pd.id))
 		if PetSpecies.ids().has(pd.species_id):
-			CharacterLook.apply(pet.sprite, [Color(pd.fur), Color(pd.fur2), Color(pd.collar)])
+			PetLook.apply(pet.sprite, [pd.fur, pd.fur2, pd.collar], pd.pattern)
 		pets.append(pet)
 		i += 1
 

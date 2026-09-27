@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Figuren-Teile im Stil „großer Kopf“ (Phase 04b) – ersetzt make_rig_parts.py + make_editor_parts.py.
+Figuren-Teile im Stil „großer Kopf“ (Phase 04b) – ersetzt make_rig_parts.py + make_editor_parts.py (beide entfernt).
 
 Erzeugt für jede Schablone aus data/characters/templates.json ALLE Teile als Vektor-Zeichnung
 (tools/chibi/), 8 px/cm, bit-genau reproduzierbar, 0 €:

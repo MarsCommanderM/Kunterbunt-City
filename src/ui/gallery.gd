@@ -199,7 +199,7 @@ func _pet_card(pd: PetData) -> Control:
 	card.add_child(v)
 	var stage := PetStage.new()
 	stage.custom_minimum_size = Vector2(240, 250)
-	stage.show_pet(pd.species_id, [pd.fur, pd.fur2, pd.collar])
+	stage.show_pet(pd.species_id, [pd.fur, pd.fur2, pd.collar], pd.pattern)
 	v.add_child(stage)
 	v.add_child(Ui.label(pd.display_name(), Ui.FONT_LABEL))
 	var row := Ui.hbox(8)

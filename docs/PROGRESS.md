@@ -4,9 +4,9 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
-| Nächste Task | P04b-T07 Tiere → P07 Zuhause |
-| Letzter grüner check.sh | 2026-09-27 (P04b T06) |
+| Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
+| Nächste Task | P07 Zuhause & Garten (mehrere Räume) |
+| Letzter grüner check.sh | 2026-09-27 (P04b T07) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T06, T08–T12 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,20 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T07 Haustiere + Leistung ✅ (Phase 04b komplett)
+- `tools/pets/draw.py` + `tools/make_pet_sprites.py`: 13 Tiere neu im Stil C – großer Kopf, Kulleraugen, braune
+  Tinte, weiche Schattierung, sichtbares Halsband mit Marke. In Entwurfs-Einheiten (Höhe 100) gezeichnet →
+  gleiche Strichstärke vom Hamster bis zum Pony. `make_editor_parts.py` entfernt (nur noch hierfür genutzt).
+- **Fellmuster wurden gespeichert, aber nie gezeichnet:** `tools/make_pet_patterns.py` (Flecken, Streifen, Punkte,
+  Spitzen, kachelbar) + `PetLook.apply()` → Shader-Muster nur auf Zone 1 (Fell). Stadt, Galerie, Editor nutzen es.
+- Tier-Editor: Arten-Kacheln zeigen das echte Tier (vorher falsche Symbole: Schildkröte = Hamster, Pony = Hase),
+  Muster-Kacheln zeigen das Muster am Tier, Farben als runde Punkte (gleicher Fehler wie im Figuren-Editor).
+- **Leistung (einmal rot in check.sh):** `test_perf` lag bei 2,2–3,1 ms (Limit 4). Ursachen:
+  1. `find_target` sammelte alle Raum-Items 3× je Suche und prüfte Sichtbarkeit vor billigen Eigenschaften →
+     jetzt 1× sammeln, billige Prüfungen zuerst: **2,65 → 1,4 ms**.
+  2. Greifen: mit 250 verschiedenen Katalog-Items maß der Test den einmaligen Masken-Aufbau je Textur mit
+     (0,9 ms/Textur). Jetzt wie bei `find_target` aufgewärmt und extra gemeldet: **pick 0,9 ms**.
+- Tests: GUT +1 (`test_pet_pattern_is_drawn_on_the_fur`); check.sh ✅ – pytest 127/127 · GUT 260/260.
 ### 2026-09-27 · Phase 04b · T06 Figuren-Editor 🔨
 - **Leere Farbfelder waren ein Fehler:** `Ui.mark_selected(b, false)` überschrieb die Farbe jedes Felds mit Weiß.
   Neu `src/ui/color_dots.gd`: runde Farbpunkte, die Farbe steckt in einem eigenen Kreis (Auswahl = Ring + Häkchen).

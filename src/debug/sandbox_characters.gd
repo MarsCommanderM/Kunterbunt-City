@@ -83,7 +83,7 @@ func _spawn_loose() -> void:
 		var pet: ItemNode = _keep(ItemSpawner.on_floor(room, StringName(pick.species_id), l[1], l[2]))
 		# Nur die neuen Zonen-Sprites (P04) werden eingefärbt – fertige Stil-C-Bilder nicht.
 		if pet != null and PetSpecies.ids().has(pick.species_id):
-			CharacterLook.apply(pet.sprite, [Color(pick.fur), Color(pick.fur2), Color(pick.collar)])
+			PetLook.apply(pet.sprite, [pick.fur, pick.fur2, pick.collar], pick.pattern)
 
 
 func _keep(it: ItemNode) -> ItemNode:

@@ -6,6 +6,7 @@ extends Control
 var _spr: Sprite2D
 var species_id: String = ""
 var colors: Array = ["#d9a066", "#f7e6c8", "#e2574c"]
+var pattern: String = "plain"
 
 
 func _ready() -> void:
@@ -21,8 +22,9 @@ func _ensure() -> void:
 	add_child(_spr)
 
 
-func show_pet(sid: String, cols: Array = []) -> void:
+func show_pet(sid: String, cols: Array = [], pat: String = "plain") -> void:
 	species_id = sid
+	pattern = pat
 	_ensure()
 	if not cols.is_empty():
 		colors = cols
@@ -48,10 +50,7 @@ func _layout() -> void:
 
 
 func _recolor() -> void:
-	var cols: Array = []
-	for c: Variant in colors:
-		cols.append(Color(String(c)))
-	CharacterLook.apply(_spr, cols)
+	PetLook.apply(_spr, colors, pattern)
 
 
 func _notification(what: int) -> void:

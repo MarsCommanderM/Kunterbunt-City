@@ -127,7 +127,7 @@ func pick_item(world: Vector2) -> ItemNode:
 	var best: ItemNode = null
 	var best_key: Vector4 = Vector4(-INF, -INF, -INF, -INF)
 	for it: ItemNode in Placement.all_items(room):
-		if not it.is_visible_in_tree() or not it.hit_test(world, min_world):
+		if not it.hit_test(world, min_world) or not it.is_visible_in_tree():   # billiger Rechteck-Test zuerst
 			continue
 		# direkt getroffen schlägt „nur über die 48-dp-Tippfläche“ (sonst wäre im Tellerstapel nur der oberste greifbar)
 		var dk: Vector3 = _draw_key(it)

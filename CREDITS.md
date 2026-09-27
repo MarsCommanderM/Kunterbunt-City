@@ -35,7 +35,7 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 | Baloo 2 (`assets/fonts/Baloo2.ttf`) | Anzeige-Schrift der UI (rund, freundlich) | SIL Open Font License 1.1 (Google Fonts) |
 | Nunito (`assets/fonts/Nunito.ttf`) | Fließtext | SIL Open Font License 1.1 (Google Fonts) |
 | `assets/ui/icons/*.png` (63 Symbole) | UI-Symbole – selbst gezeichnet mit `tools/make_ui_icons.py` (Pillow, keine Emoji-Fonts nötig) | CC0 / eigenes Werk |
-| `assets/sprites/pets/*.png` (13 Tiere) | Haustier-Sprites mit 3 Farbzonen, selbst gezeichnet (`tools/make_pet_sprites.py`) | CC0 / eigenes Werk |
+| `assets/sprites/pets/*.png` (13 Tiere) + `assets/shaders/patterns/*.png` (4 Fellmuster) | Haustiere im Stil C, selbst gezeichnet (`tools/make_pet_sprites.py`, `tools/pets/`, `tools/make_pet_patterns.py`) | CC0 / eigenes Werk |
 
 ## Figuren-Teile (Phase 03, Platzhalter)
 | Datei | Quelle | Lizenz |
