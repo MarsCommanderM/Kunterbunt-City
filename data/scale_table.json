@@ -440,11 +440,11 @@
   {
    "id": "home_bed_kid",
    "category": "furniture",
-   "h_cm": 45,
-   "w_cm": 180,
+   "h_cm": 91.9,
+   "w_cm": 181.9,
    "hold": "none",
    "placement": "floor",
-   "note": "Zuhause: bewegbar",
+   "src": "catalog",
    "seat_h_cm": 45
   },
   {
@@ -1302,6 +1302,2924 @@
    "w_cm": 550,
    "hold": "none",
    "placement": "floor"
+  },
+  {
+   "id": "c_furn_sofa_round",
+   "category": "furniture",
+   "h_cm": 83.5,
+   "w_cm": 195.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_sofa_modern",
+   "category": "furniture",
+   "h_cm": 79.8,
+   "w_cm": 211.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_sofa_chesterfield",
+   "category": "furniture",
+   "h_cm": 83.8,
+   "w_cm": 201.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_loveseat",
+   "category": "furniture",
+   "h_cm": 85.5,
+   "w_cm": 145.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_armchair_round",
+   "category": "furniture",
+   "h_cm": 93.4,
+   "w_cm": 89.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_armchair_modern",
+   "category": "furniture",
+   "h_cm": 91.8,
+   "w_cm": 86.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_chair_dining",
+   "category": "furniture",
+   "h_cm": 91.8,
+   "w_cm": 46.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_furn_chair_mint",
+   "category": "furniture",
+   "h_cm": 91.8,
+   "w_cm": 46.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_furn_chair_kids",
+   "category": "furniture",
+   "h_cm": 63.8,
+   "w_cm": 35.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 32
+  },
+  {
+   "id": "c_furn_chair_office",
+   "category": "furniture",
+   "h_cm": 101.6,
+   "w_cm": 54.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 48
+  },
+  {
+   "id": "c_furn_chair_rocking",
+   "category": "furniture",
+   "h_cm": 96.6,
+   "w_cm": 66.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_chair_bar",
+   "category": "furniture",
+   "h_cm": 73.6,
+   "w_cm": 39.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 72
+  },
+  {
+   "id": "c_furn_chair_beanbag",
+   "category": "furniture",
+   "h_cm": 66.8,
+   "w_cm": 72.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 38
+  },
+  {
+   "id": "c_furn_chair_pouf",
+   "category": "furniture",
+   "h_cm": 43.4,
+   "w_cm": 51.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_furn_table_dining",
+   "category": "furniture",
+   "h_cm": 76.8,
+   "w_cm": 141.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 75.0
+  },
+  {
+   "id": "c_furn_table_round",
+   "category": "furniture",
+   "h_cm": 76.6,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 75.0
+  },
+  {
+   "id": "c_furn_table_side",
+   "category": "furniture",
+   "h_cm": 56.8,
+   "w_cm": 46.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 55.0
+  },
+  {
+   "id": "c_furn_table_desk",
+   "category": "furniture",
+   "h_cm": 76.8,
+   "w_cm": 121.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 75.0
+  },
+  {
+   "id": "c_furn_table_kids",
+   "category": "furniture",
+   "h_cm": 51.8,
+   "w_cm": 71.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 50.0
+  },
+  {
+   "id": "c_furn_table_picnic",
+   "category": "furniture",
+   "h_cm": 77.6,
+   "w_cm": 151.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 75.0
+  },
+  {
+   "id": "c_furn_bed_double",
+   "category": "furniture",
+   "h_cm": 101.9,
+   "w_cm": 201.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 50
+  },
+  {
+   "id": "c_furn_bed_bunk",
+   "category": "furniture",
+   "h_cm": 161.9,
+   "w_cm": 191.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_furn_crib",
+   "category": "furniture",
+   "h_cm": 101.8,
+   "w_cm": 120.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_furn_bookshelf",
+   "category": "furniture",
+   "h_cm": 181.8,
+   "w_cm": 81.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_furn_shelf_low",
+   "category": "furniture",
+   "h_cm": 81.8,
+   "w_cm": 101.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_furn_cube",
+   "category": "furniture",
+   "h_cm": 81.8,
+   "w_cm": 81.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_furn_wardrobe",
+   "category": "furniture",
+   "h_cm": 201.8,
+   "w_cm": 103.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_furn_dresser",
+   "category": "furniture",
+   "h_cm": 86.8,
+   "w_cm": 103.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 85.0
+  },
+  {
+   "id": "c_furn_nightstand",
+   "category": "furniture",
+   "h_cm": 56.8,
+   "w_cm": 48.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 55.0
+  },
+  {
+   "id": "c_furn_tv_bench",
+   "category": "furniture",
+   "h_cm": 51.8,
+   "w_cm": 143.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 50.0
+  },
+  {
+   "id": "c_furn_toybox",
+   "category": "furniture",
+   "h_cm": 50.9,
+   "w_cm": 73.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_lamp_floor",
+   "category": "furniture",
+   "h_cm": 162.0,
+   "w_cm": 46.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_lamp_table",
+   "category": "furniture",
+   "h_cm": 46.4,
+   "w_cm": 29.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_lamp_arc",
+   "category": "furniture",
+   "h_cm": 178.6,
+   "w_cm": 78.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_lamp_desk",
+   "category": "furniture",
+   "h_cm": 46.8,
+   "w_cm": 24.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_elec_tv",
+   "category": "furniture",
+   "h_cm": 63.5,
+   "w_cm": 101.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_monstera_terracotta",
+   "category": "plant",
+   "h_cm": 91.6,
+   "w_cm": 99.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_monstera_basket",
+   "category": "plant",
+   "h_cm": 90.1,
+   "w_cm": 96.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_monstera_cylinder",
+   "category": "plant",
+   "h_cm": 106.5,
+   "w_cm": 101.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_monstera_stand",
+   "category": "plant",
+   "h_cm": 92.6,
+   "w_cm": 86.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_fern_round",
+   "category": "plant",
+   "h_cm": 56.6,
+   "w_cm": 56.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_fern_basket",
+   "category": "plant",
+   "h_cm": 54.5,
+   "w_cm": 61.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_fern_stand",
+   "category": "plant",
+   "h_cm": 52.6,
+   "w_cm": 65.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_fern_bowl",
+   "category": "plant",
+   "h_cm": 52.9,
+   "w_cm": 73.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_snake_plant_cylinder",
+   "category": "plant",
+   "h_cm": 79.0,
+   "w_cm": 22.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_snake_plant_square",
+   "category": "plant",
+   "h_cm": 80.6,
+   "w_cm": 23.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_snake_plant_terracotta",
+   "category": "plant",
+   "h_cm": 78.2,
+   "w_cm": 27.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_column_terracotta",
+   "category": "plant",
+   "h_cm": 47.1,
+   "w_cm": 19.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_column_cylinder",
+   "category": "plant",
+   "h_cm": 47.1,
+   "w_cm": 17.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_column_square",
+   "category": "plant",
+   "h_cm": 47.1,
+   "w_cm": 17.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_ball_terracotta",
+   "category": "plant",
+   "h_cm": 21.8,
+   "w_cm": 15.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_ball_bowl",
+   "category": "plant",
+   "h_cm": 18.9,
+   "w_cm": 15.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_ball_round",
+   "category": "plant",
+   "h_cm": 22.2,
+   "w_cm": 14.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_paddle_terracotta",
+   "category": "plant",
+   "h_cm": 40.0,
+   "w_cm": 26.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_cactus_paddle_bowl",
+   "category": "plant",
+   "h_cm": 39.4,
+   "w_cm": 28.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_succulent_bowl",
+   "category": "plant",
+   "h_cm": 14.1,
+   "w_cm": 15.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_succulent_round",
+   "category": "plant",
+   "h_cm": 15.2,
+   "w_cm": 14.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_succulent_terracotta",
+   "category": "plant",
+   "h_cm": 14.9,
+   "w_cm": 15.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_succulent_square",
+   "category": "plant",
+   "h_cm": 14.9,
+   "w_cm": 13.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_aloe_terracotta",
+   "category": "plant",
+   "h_cm": 34.5,
+   "w_cm": 31.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_aloe_cylinder",
+   "category": "plant",
+   "h_cm": 34.5,
+   "w_cm": 31.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_aloe_round",
+   "category": "plant",
+   "h_cm": 35.5,
+   "w_cm": 31.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ficus_terracotta",
+   "category": "plant",
+   "h_cm": 151.9,
+   "w_cm": 64.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ficus_basket",
+   "category": "plant",
+   "h_cm": 152.4,
+   "w_cm": 69.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ficus_cylinder",
+   "category": "plant",
+   "h_cm": 153.1,
+   "w_cm": 70.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lemon_tree_terracotta",
+   "category": "plant",
+   "h_cm": 134.1,
+   "w_cm": 66.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lemon_tree_square",
+   "category": "plant",
+   "h_cm": 132.0,
+   "w_cm": 65.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lemon_tree_bucket",
+   "category": "plant",
+   "h_cm": 133.9,
+   "w_cm": 65.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_olive_terracotta",
+   "category": "plant",
+   "h_cm": 142.9,
+   "w_cm": 62.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_olive_square",
+   "category": "plant",
+   "h_cm": 141.4,
+   "w_cm": 61.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_olive_cylinder",
+   "category": "plant",
+   "h_cm": 140.4,
+   "w_cm": 61.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tree_small_cylinder",
+   "category": "plant",
+   "h_cm": 123.1,
+   "w_cm": 64.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tree_small_basket",
+   "category": "plant",
+   "h_cm": 124.1,
+   "w_cm": 60.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tree_small_bucket",
+   "category": "plant",
+   "h_cm": 123.1,
+   "w_cm": 60.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bonsai_bowl",
+   "category": "plant",
+   "h_cm": 32.8,
+   "w_cm": 34.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bonsai_square",
+   "category": "plant",
+   "h_cm": 34.1,
+   "w_cm": 33.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_palm_basket",
+   "category": "plant",
+   "h_cm": 129.6,
+   "w_cm": 111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_palm_cylinder",
+   "category": "plant",
+   "h_cm": 137.6,
+   "w_cm": 111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_palm_terracotta",
+   "category": "plant",
+   "h_cm": 127.8,
+   "w_cm": 111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tulips_round",
+   "category": "plant",
+   "h_cm": 41.5,
+   "w_cm": 19.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tulips_cylinder",
+   "category": "plant",
+   "h_cm": 40.5,
+   "w_cm": 16.1,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tulips_bucket",
+   "category": "plant",
+   "h_cm": 40.6,
+   "w_cm": 19.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_roses_terracotta",
+   "category": "plant",
+   "h_cm": 45.4,
+   "w_cm": 23.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_roses_round",
+   "category": "plant",
+   "h_cm": 46.0,
+   "w_cm": 23.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_roses_bucket",
+   "category": "plant",
+   "h_cm": 43.9,
+   "w_cm": 23.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_sunflower_terracotta",
+   "category": "plant",
+   "h_cm": 71.0,
+   "w_cm": 26.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_sunflower_bucket",
+   "category": "plant",
+   "h_cm": 71.2,
+   "w_cm": 25.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_daisies_bowl",
+   "category": "plant",
+   "h_cm": 30.5,
+   "w_cm": 25.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_daisies_round",
+   "category": "plant",
+   "h_cm": 32.1,
+   "w_cm": 28.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_daisies_basket",
+   "category": "plant",
+   "h_cm": 30.6,
+   "w_cm": 25.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lavender_terracotta",
+   "category": "plant",
+   "h_cm": 40.1,
+   "w_cm": 28.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lavender_bucket",
+   "category": "plant",
+   "h_cm": 40.2,
+   "w_cm": 28.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_lavender_square",
+   "category": "plant",
+   "h_cm": 38.5,
+   "w_cm": 24.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_hydrangea_round",
+   "category": "plant",
+   "h_cm": 59.0,
+   "w_cm": 38.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_hydrangea_terracotta",
+   "category": "plant",
+   "h_cm": 56.4,
+   "w_cm": 38.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_hydrangea_bucket",
+   "category": "plant",
+   "h_cm": 58.8,
+   "w_cm": 36.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_poinsettia_round",
+   "category": "plant",
+   "h_cm": 37.4,
+   "w_cm": 27.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_poinsettia_terracotta",
+   "category": "plant",
+   "h_cm": 36.2,
+   "w_cm": 28.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_orchid_cylinder",
+   "category": "plant",
+   "h_cm": 52.8,
+   "w_cm": 18.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_orchid_round",
+   "category": "plant",
+   "h_cm": 53.9,
+   "w_cm": 21.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_peace_lily_round",
+   "category": "plant",
+   "h_cm": 63.5,
+   "w_cm": 37.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_peace_lily_cylinder",
+   "category": "plant",
+   "h_cm": 61.8,
+   "w_cm": 58.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_peace_lily_basket",
+   "category": "plant",
+   "h_cm": 61.8,
+   "w_cm": 45.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bird_paradise_cylinder",
+   "category": "plant",
+   "h_cm": 140.9,
+   "w_cm": 91.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bird_paradise_terracotta",
+   "category": "plant",
+   "h_cm": 133.5,
+   "w_cm": 91.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bird_paradise_basket",
+   "category": "plant",
+   "h_cm": 134.1,
+   "w_cm": 91.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_calathea_round",
+   "category": "plant",
+   "h_cm": 54.2,
+   "w_cm": 50.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_calathea_cylinder",
+   "category": "plant",
+   "h_cm": 51.9,
+   "w_cm": 46.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_calathea_basket",
+   "category": "plant",
+   "h_cm": 53.0,
+   "w_cm": 48.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_rubber_plant_cylinder",
+   "category": "plant",
+   "h_cm": 116.5,
+   "w_cm": 38.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_rubber_plant_terracotta",
+   "category": "plant",
+   "h_cm": 115.6,
+   "w_cm": 37.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_rubber_plant_square",
+   "category": "plant",
+   "h_cm": 115.9,
+   "w_cm": 37.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_zz_plant_square",
+   "category": "plant",
+   "h_cm": 60.2,
+   "w_cm": 26.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_zz_plant_cylinder",
+   "category": "plant",
+   "h_cm": 57.1,
+   "w_cm": 25.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_zz_plant_round",
+   "category": "plant",
+   "h_cm": 56.2,
+   "w_cm": 30.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_spider_plant_round",
+   "category": "plant",
+   "h_cm": 32.2,
+   "w_cm": 44.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_spider_plant_basket",
+   "category": "plant",
+   "h_cm": 31.9,
+   "w_cm": 45.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_spider_plant_stand",
+   "category": "plant",
+   "h_cm": 30.9,
+   "w_cm": 43.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_herbs_terracotta",
+   "category": "plant",
+   "h_cm": 29.4,
+   "w_cm": 19.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_herbs_square",
+   "category": "plant",
+   "h_cm": 30.0,
+   "w_cm": 17.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_herbs_bucket",
+   "category": "plant",
+   "h_cm": 28.6,
+   "w_cm": 19.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bamboo_square",
+   "category": "plant",
+   "h_cm": 49.0,
+   "w_cm": 14.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_bamboo_bowl",
+   "category": "plant",
+   "h_cm": 51.5,
+   "w_cm": 17.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_grass_cylinder",
+   "category": "plant",
+   "h_cm": 62.0,
+   "w_cm": 50.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_grass_basket",
+   "category": "plant",
+   "h_cm": 60.5,
+   "w_cm": 49.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_grass_square",
+   "category": "plant",
+   "h_cm": 60.1,
+   "w_cm": 52.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_strawberry_terracotta",
+   "category": "plant",
+   "h_cm": 21.5,
+   "w_cm": 23.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_strawberry_bucket",
+   "category": "plant",
+   "h_cm": 21.1,
+   "w_cm": 23.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tomato_bucket",
+   "category": "plant",
+   "h_cm": 86.9,
+   "w_cm": 27.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_tomato_terracotta",
+   "category": "plant",
+   "h_cm": 86.8,
+   "w_cm": 31.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ivy_round",
+   "category": "plant",
+   "h_cm": 22.1,
+   "w_cm": 39.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ivy_stand",
+   "category": "plant",
+   "h_cm": 23.4,
+   "w_cm": 37.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_plant_ivy_basket",
+   "category": "plant",
+   "h_cm": 21.2,
+   "w_cm": 38.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_mug",
+   "category": "kitchen",
+   "h_cm": 11.9,
+   "w_cm": 13.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_cup",
+   "category": "kitchen",
+   "h_cm": 10.9,
+   "w_cm": 9.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_glass",
+   "category": "kitchen",
+   "h_cm": 13.9,
+   "w_cm": 8.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_plate",
+   "category": "kitchen",
+   "h_cm": 4.6,
+   "w_cm": 27.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_bowl",
+   "category": "kitchen",
+   "h_cm": 8.6,
+   "w_cm": 16.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_pot",
+   "category": "kitchen",
+   "h_cm": 21.8,
+   "w_cm": 28.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_pan",
+   "category": "kitchen",
+   "h_cm": 10.6,
+   "w_cm": 45.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_kettle",
+   "category": "kitchen",
+   "h_cm": 28.2,
+   "w_cm": 23.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_toaster",
+   "category": "kitchen",
+   "h_cm": 21.9,
+   "w_cm": 31.1,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_blender",
+   "category": "kitchen",
+   "h_cm": 41.5,
+   "w_cm": 17.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_microwave",
+   "category": "kitchen",
+   "h_cm": 31.9,
+   "w_cm": 51.9,
+   "hold": "two_hands",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_coffee",
+   "category": "kitchen",
+   "h_cm": 36.9,
+   "w_cm": 26.9,
+   "hold": "two_hands",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_board",
+   "category": "kitchen",
+   "h_cm": 4.0,
+   "w_cm": 36.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_spoon",
+   "category": "kitchen",
+   "h_cm": 21.4,
+   "w_cm": 6.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_ladle",
+   "category": "kitchen",
+   "h_cm": 28.4,
+   "w_cm": 6.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_spatula",
+   "category": "kitchen",
+   "h_cm": 21.5,
+   "w_cm": 6.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_whisk",
+   "category": "kitchen",
+   "h_cm": 21.8,
+   "w_cm": 7.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_fork",
+   "category": "kitchen",
+   "h_cm": 21.5,
+   "w_cm": 5.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_bottle",
+   "category": "kitchen",
+   "h_cm": 29.5,
+   "w_cm": 10.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_kit_jar",
+   "category": "kitchen",
+   "h_cm": 15.8,
+   "w_cm": 11.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_apple",
+   "category": "food",
+   "h_cm": 10.1,
+   "w_cm": 9.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_orange",
+   "category": "food",
+   "h_cm": 10.1,
+   "w_cm": 9.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_lemon",
+   "category": "food",
+   "h_cm": 8.1,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_peach",
+   "category": "food",
+   "h_cm": 9.1,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_tomato",
+   "category": "food",
+   "h_cm": 8.1,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_banana",
+   "category": "food",
+   "h_cm": 7.6,
+   "w_cm": 20.1,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_pear",
+   "category": "food",
+   "h_cm": 12.0,
+   "w_cm": 9.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_carrot",
+   "category": "food",
+   "h_cm": 23.8,
+   "w_cm": 5.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_bread",
+   "category": "food",
+   "h_cm": 14.6,
+   "w_cm": 32.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_cake",
+   "category": "food",
+   "h_cm": 17.2,
+   "w_cm": 26.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_cupcake",
+   "category": "food",
+   "h_cm": 9.6,
+   "w_cm": 8.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_pizza",
+   "category": "food",
+   "h_cm": 21.5,
+   "w_cm": 19.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_icecream",
+   "category": "food",
+   "h_cm": 17.2,
+   "w_cm": 6.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_drink",
+   "category": "food",
+   "h_cm": 18.1,
+   "w_cm": 9.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_carton",
+   "category": "food",
+   "h_cm": 21.8,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_cheese",
+   "category": "food",
+   "h_cm": 9.9,
+   "w_cm": 11.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_egg",
+   "category": "food",
+   "h_cm": 7.8,
+   "w_cm": 6.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_food_watermelon",
+   "category": "food",
+   "h_cm": 17.5,
+   "w_cm": 23.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_towel",
+   "category": "item",
+   "h_cm": 31.9,
+   "w_cm": 41.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_duck",
+   "category": "toy",
+   "h_cm": 11.4,
+   "w_cm": 11.4,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_toothbrush",
+   "category": "item",
+   "h_cm": 20.5,
+   "w_cm": 4.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_soap",
+   "category": "item",
+   "h_cm": 9.9,
+   "w_cm": 11.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_shampoo",
+   "category": "item",
+   "h_cm": 21.5,
+   "w_cm": 9.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_tp",
+   "category": "item",
+   "h_cm": 12.5,
+   "w_cm": 12.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_hairdryer",
+   "category": "item",
+   "h_cm": 22.5,
+   "w_cm": 24.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_bath_basket",
+   "category": "item",
+   "h_cm": 26.8,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_vase",
+   "category": "item",
+   "h_cm": 31.6,
+   "w_cm": 17.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_candle",
+   "category": "item",
+   "h_cm": 15.8,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_clock",
+   "category": "item",
+   "h_cm": 31.5,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_frame",
+   "category": "item",
+   "h_cm": 31.5,
+   "w_cm": 41.5,
+   "hold": "one_hand",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_cushion",
+   "category": "item",
+   "h_cm": 42.0,
+   "w_cm": 47.2,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_rug",
+   "category": "item",
+   "h_cm": 13.9,
+   "w_cm": 161.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_radio",
+   "category": "item",
+   "h_cm": 24.0,
+   "w_cm": 31.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_laptop",
+   "category": "item",
+   "h_cm": 25.5,
+   "w_cm": 35.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_phone",
+   "category": "item",
+   "h_cm": 16.5,
+   "w_cm": 8.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_books",
+   "category": "item",
+   "h_cm": 23.9,
+   "w_cm": 25.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_globe",
+   "category": "item",
+   "h_cm": 36.8,
+   "w_cm": 26.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_basket_laundry",
+   "category": "item",
+   "h_cm": 47.0,
+   "w_cm": 46.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_broom",
+   "category": "item",
+   "h_cm": 131.5,
+   "w_cm": 31.2,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_deco_bucket_mop",
+   "category": "item",
+   "h_cm": 61.8,
+   "w_cm": 36.2,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_ball",
+   "category": "toy",
+   "h_cm": 23.9,
+   "w_cm": 23.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_beachball",
+   "category": "toy",
+   "h_cm": 31.9,
+   "w_cm": 31.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_football",
+   "category": "toy",
+   "h_cm": 23.9,
+   "w_cm": 23.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_basketball",
+   "category": "toy",
+   "h_cm": 25.9,
+   "w_cm": 25.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_teddy",
+   "category": "toy",
+   "h_cm": 32.4,
+   "w_cm": 28.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_blocks",
+   "category": "toy",
+   "h_cm": 13.6,
+   "w_cm": 13.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_car",
+   "category": "toy",
+   "h_cm": 11.2,
+   "w_cm": 18.2,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_train",
+   "category": "toy",
+   "h_cm": 15.4,
+   "w_cm": 28.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_robot",
+   "category": "toy",
+   "h_cm": 27.8,
+   "w_cm": 14.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_doll",
+   "category": "toy",
+   "h_cm": 36.5,
+   "w_cm": 13.2,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_drum",
+   "category": "toy",
+   "h_cm": 24.1,
+   "w_cm": 27.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_xylophone",
+   "category": "toy",
+   "h_cm": 13.1,
+   "w_cm": 37.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_puzzle",
+   "category": "toy",
+   "h_cm": 25.0,
+   "w_cm": 25.0,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_kite",
+   "category": "toy",
+   "h_cm": 81.8,
+   "w_cm": 61.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_rocking_horse",
+   "category": "toy",
+   "h_cm": 71.5,
+   "w_cm": 83.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 40
+  },
+  {
+   "id": "c_toy_balloon",
+   "category": "toy",
+   "h_cm": 61.9,
+   "w_cm": 26.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_skateboard",
+   "category": "toy",
+   "h_cm": 8.6,
+   "w_cm": 81.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_toy_bucket_spade",
+   "category": "toy",
+   "h_cm": 26.2,
+   "w_cm": 25.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_air_mattress",
+   "category": "pool",
+   "h_cm": 16.9,
+   "w_cm": 181.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 15
+  },
+  {
+   "id": "c_pool_swim_ring",
+   "category": "pool",
+   "h_cm": 57.9,
+   "w_cm": 57.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_noodle",
+   "category": "pool",
+   "h_cm": 9.9,
+   "w_cm": 151.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_flippers",
+   "category": "pool",
+   "h_cm": 9.9,
+   "w_cm": 51.8,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_goggles",
+   "category": "pool",
+   "h_cm": 7.2,
+   "w_cm": 20.4,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_umbrella",
+   "category": "pool",
+   "h_cm": 201.6,
+   "w_cm": 181.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_deck_chair",
+   "category": "pool",
+   "h_cm": 93.2,
+   "w_cm": 73.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 35
+  },
+  {
+   "id": "c_pool_towel_beach",
+   "category": "pool",
+   "h_cm": 7.9,
+   "w_cm": 161.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 6
+  },
+  {
+   "id": "c_pool_cooler",
+   "category": "pool",
+   "h_cm": 37.1,
+   "w_cm": 47.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_sunscreen",
+   "category": "pool",
+   "h_cm": 17.8,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_water_gun",
+   "category": "pool",
+   "h_cm": 19.5,
+   "w_cm": 33.4,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_pool_inflatable_animal",
+   "category": "pool",
+   "h_cm": 75.1,
+   "w_cm": 94.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 25
+  },
+  {
+   "id": "c_garden_grill",
+   "category": "item",
+   "h_cm": 98.2,
+   "w_cm": 61.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_bbq_food",
+   "category": "item",
+   "h_cm": 11.5,
+   "w_cm": 25.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_watering_can",
+   "category": "item",
+   "h_cm": 32.2,
+   "w_cm": 38.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_wheelbarrow",
+   "category": "item",
+   "h_cm": 72.2,
+   "w_cm": 116.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_gnome",
+   "category": "item",
+   "h_cm": 41.5,
+   "w_cm": 19.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_birdhouse",
+   "category": "item",
+   "h_cm": 121.5,
+   "w_cm": 31.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_fence",
+   "category": "item",
+   "h_cm": 91.9,
+   "w_cm": 121.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_bench",
+   "category": "item",
+   "h_cm": 86.6,
+   "w_cm": 151.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_garden_pool_kids",
+   "category": "item",
+   "h_cm": 32.8,
+   "w_cm": 157.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_sandbox_toys",
+   "category": "item",
+   "h_cm": 20.1,
+   "w_cm": 32.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garden_hose",
+   "category": "item",
+   "h_cm": 43.1,
+   "w_cm": 43.1,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_tent",
+   "category": "item",
+   "h_cm": 145.0,
+   "w_cm": 201.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 5
+  },
+  {
+   "id": "c_camp_dome_tent",
+   "category": "item",
+   "h_cm": 131.9,
+   "w_cm": 221.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 5
+  },
+  {
+   "id": "c_camp_campfire",
+   "category": "item",
+   "h_cm": 51.6,
+   "w_cm": 52.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_sleeping_bag",
+   "category": "item",
+   "h_cm": 19.9,
+   "w_cm": 181.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 18
+  },
+  {
+   "id": "c_camp_lantern",
+   "category": "item",
+   "h_cm": 27.8,
+   "w_cm": 14.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_camp_chair",
+   "category": "item",
+   "h_cm": 87.2,
+   "w_cm": 59.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_camp_backpack_hiking",
+   "category": "item",
+   "h_cm": 61.8,
+   "w_cm": 36.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_log",
+   "category": "item",
+   "h_cm": 31.9,
+   "w_cm": 121.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 30
+  },
+  {
+   "id": "c_camp_stump",
+   "category": "item",
+   "h_cm": 41.8,
+   "w_cm": 51.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 40
+  },
+  {
+   "id": "c_camp_mushroom",
+   "category": "item",
+   "h_cm": 23.6,
+   "w_cm": 21.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_tree",
+   "category": "item",
+   "h_cm": 296.8,
+   "w_cm": 191.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_fir",
+   "category": "item",
+   "h_cm": 326.6,
+   "w_cm": 161.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_bush",
+   "category": "item",
+   "h_cm": 75.1,
+   "w_cm": 127.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_rock",
+   "category": "item",
+   "h_cm": 52.5,
+   "w_cm": 81.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 50
+  },
+  {
+   "id": "c_camp_signpost",
+   "category": "item",
+   "h_cm": 161.5,
+   "w_cm": 61.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_camp_binoculars",
+   "category": "item",
+   "h_cm": 12.6,
+   "w_cm": 14.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_slide",
+   "category": "item",
+   "h_cm": 183.2,
+   "w_cm": 191.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_swing",
+   "category": "item",
+   "h_cm": 203.2,
+   "w_cm": 163.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_seesaw",
+   "category": "item",
+   "h_cm": 71.5,
+   "w_cm": 251.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_bicycle",
+   "category": "toy",
+   "h_cm": 80.0,
+   "w_cm": 146.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_tricycle",
+   "category": "toy",
+   "h_cm": 52.4,
+   "w_cm": 74.2,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_scooter",
+   "category": "toy",
+   "h_cm": 82.6,
+   "w_cm": 63.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_helmet",
+   "category": "toy",
+   "h_cm": 19.9,
+   "w_cm": 26.8,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_bike_rack",
+   "category": "item",
+   "h_cm": 72.8,
+   "w_cm": 142.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_sandpit",
+   "category": "item",
+   "h_cm": 34.8,
+   "w_cm": 181.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_goal",
+   "category": "sport",
+   "h_cm": 203.5,
+   "w_cm": 303.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_basket_hoop",
+   "category": "sport",
+   "h_cm": 301.5,
+   "w_cm": 121.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_racket",
+   "category": "sport",
+   "h_cm": 68.8,
+   "w_cm": 29.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_bat",
+   "category": "sport",
+   "h_cm": 81.5,
+   "w_cm": 9.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_dumbbell",
+   "category": "sport",
+   "h_cm": 13.5,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_mat",
+   "category": "sport",
+   "h_cm": 9.9,
+   "w_cm": 181.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 8
+  },
+  {
+   "id": "c_sport_cone",
+   "category": "sport",
+   "h_cm": 31.6,
+   "w_cm": 21.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_trophy",
+   "category": "sport",
+   "h_cm": 33.6,
+   "w_cm": 22.4,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_skates",
+   "category": "sport",
+   "h_cm": 30.9,
+   "w_cm": 36.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_hockey_stick",
+   "category": "sport",
+   "h_cm": 152.4,
+   "w_cm": 35.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_puck",
+   "category": "sport",
+   "h_cm": 4.0,
+   "w_cm": 9.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_sport_sled",
+   "category": "sport",
+   "h_cm": 36.2,
+   "w_cm": 92.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 30
+  },
+  {
+   "id": "c_sport_snowman",
+   "category": "sport",
+   "h_cm": 125.2,
+   "w_cm": 61.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_hammer",
+   "category": "garage",
+   "h_cm": 31.5,
+   "w_cm": 13.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_wrench",
+   "category": "garage",
+   "h_cm": 26.4,
+   "w_cm": 8.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_screwdriver",
+   "category": "garage",
+   "h_cm": 23.5,
+   "w_cm": 4.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_saw",
+   "category": "garage",
+   "h_cm": 16.5,
+   "w_cm": 53.1,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_drill",
+   "category": "garage",
+   "h_cm": 25.6,
+   "w_cm": 22.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_toolbox",
+   "category": "garage",
+   "h_cm": 32.4,
+   "w_cm": 46.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_tire",
+   "category": "garage",
+   "h_cm": 57.5,
+   "w_cm": 57.5,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_jerrycan",
+   "category": "garage",
+   "h_cm": 41.8,
+   "w_cm": 31.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_workbench",
+   "category": "garage",
+   "h_cm": 91.8,
+   "w_cm": 151.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 90.0
+  },
+  {
+   "id": "c_work_ladder",
+   "category": "garage",
+   "h_cm": 203.2,
+   "w_cm": 48.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_paint_can",
+   "category": "garage",
+   "h_cm": 23.0,
+   "w_cm": 20.1,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_work_cone_traffic",
+   "category": "garage",
+   "h_cm": 51.6,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_cart",
+   "category": "shop",
+   "h_cm": 102.0,
+   "w_cm": 60.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_basket_shop",
+   "category": "shop",
+   "h_cm": 30.2,
+   "w_cm": 41.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_bag",
+   "category": "shop",
+   "h_cm": 38.0,
+   "w_cm": 31.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_box",
+   "category": "shop",
+   "h_cm": 31.9,
+   "w_cm": 41.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_cash_register",
+   "category": "shop",
+   "h_cm": 36.5,
+   "w_cm": 46.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_price_sign",
+   "category": "shop",
+   "h_cm": 41.5,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_mannequin",
+   "category": "shop",
+   "h_cm": 178.2,
+   "w_cm": 52.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_hanger_rack",
+   "category": "shop",
+   "h_cm": 162.8,
+   "w_cm": 122.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_barber_chair",
+   "category": "shop",
+   "h_cm": 112.0,
+   "w_cm": 76.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 55
+  },
+  {
+   "id": "c_shop_hair_tools",
+   "category": "shop",
+   "h_cm": 25.9,
+   "w_cm": 26.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_mirror_stand",
+   "category": "shop",
+   "h_cm": 171.5,
+   "w_cm": 61.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_cotton_candy",
+   "category": "fair",
+   "h_cm": 41.5,
+   "w_cm": 22.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_popcorn",
+   "category": "food",
+   "h_cm": 24.2,
+   "w_cm": 17.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_ticket_booth",
+   "category": "fair",
+   "h_cm": 221.8,
+   "w_cm": 161.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_balloon_bunch",
+   "category": "fair",
+   "h_cm": 124.2,
+   "w_cm": 46.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_target",
+   "category": "fair",
+   "h_cm": 129.0,
+   "w_cm": 61.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_carousel_horse",
+   "category": "fair",
+   "h_cm": 181.5,
+   "w_cm": 92.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 90
+  },
+  {
+   "id": "c_school_school_desk",
+   "category": "school",
+   "h_cm": 77.4,
+   "w_cm": 71.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 75.0
+  },
+  {
+   "id": "c_school_blackboard",
+   "category": "school",
+   "h_cm": 182.2,
+   "w_cm": 151.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_school_school_bag",
+   "category": "school",
+   "h_cm": 40.1,
+   "w_cm": 31.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_school_pencil_cup",
+   "category": "school",
+   "h_cm": 23.0,
+   "w_cm": 11.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_school_microscope",
+   "category": "school",
+   "h_cm": 37.5,
+   "w_cm": 21.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_school_easel",
+   "category": "school",
+   "h_cm": 152.8,
+   "w_cm": 58.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_health_first_aid",
+   "category": "health",
+   "h_cm": 28.1,
+   "w_cm": 31.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_health_stethoscope",
+   "category": "health",
+   "h_cm": 41.1,
+   "w_cm": 19.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_health_wheelchair",
+   "category": "health",
+   "h_cm": 92.8,
+   "w_cm": 72.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 48
+  },
+  {
+   "id": "c_health_bandage",
+   "category": "health",
+   "h_cm": 6.5,
+   "w_cm": 11.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_health_thermometer",
+   "category": "health",
+   "h_cm": 15.5,
+   "w_cm": 4.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_feed_bucket",
+   "category": "item",
+   "h_cm": 34.0,
+   "w_cm": 32.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_hay",
+   "category": "item",
+   "h_cm": 46.9,
+   "w_cm": 81.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_bowl_pet",
+   "category": "item",
+   "h_cm": 8.6,
+   "w_cm": 19.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_zoo_sign",
+   "category": "item",
+   "h_cm": 151.5,
+   "w_cm": 61.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_pet_bed",
+   "category": "item",
+   "h_cm": 27.9,
+   "w_cm": 76.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 20
+  },
+  {
+   "id": "c_zoo_cage",
+   "category": "item",
+   "h_cm": 71.5,
+   "w_cm": 61.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_aquarium",
+   "category": "item",
+   "h_cm": 52.0,
+   "w_cm": 82.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
   }
  ]
 }

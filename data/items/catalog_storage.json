@@ -1,0 +1,640 @@
+{
+ "area": "catalog",
+ "room": "storage",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "furn_bookshelf_oak",
+   "scale_ref": "c_furn_bookshelf",
+   "size_cm": [
+    81.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bookshelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_bookshelf_walnut",
+   "scale_ref": "c_furn_bookshelf",
+   "size_cm": [
+    81.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bookshelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_bookshelf_pine",
+   "scale_ref": "c_furn_bookshelf",
+   "size_cm": [
+    81.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bookshelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_bookshelf_cream",
+   "scale_ref": "c_furn_bookshelf",
+   "size_cm": [
+    81.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bookshelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_bookshelf_dark_wood",
+   "scale_ref": "c_furn_bookshelf",
+   "size_cm": [
+    81.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bookshelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#5a463a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_shelf_low_cream",
+   "scale_ref": "c_furn_shelf_low",
+   "size_cm": [
+    101.9,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_shelf_low.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_shelf_low_oak",
+   "scale_ref": "c_furn_shelf_low",
+   "size_cm": [
+    101.9,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_shelf_low.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_shelf_low_mint",
+   "scale_ref": "c_furn_shelf_low",
+   "size_cm": [
+    101.9,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_shelf_low.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_cube_cream",
+   "scale_ref": "c_furn_cube",
+   "size_cm": [
+    81.9,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_cube.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_cube_oak",
+   "scale_ref": "c_furn_cube",
+   "size_cm": [
+    81.9,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_cube.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_wardrobe_cream",
+   "scale_ref": "c_furn_wardrobe",
+   "size_cm": [
+    103.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_wardrobe.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_wardrobe_oak",
+   "scale_ref": "c_furn_wardrobe",
+   "size_cm": [
+    103.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_wardrobe.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_wardrobe_sky",
+   "scale_ref": "c_furn_wardrobe",
+   "size_cm": [
+    103.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_wardrobe.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_wardrobe_mint",
+   "scale_ref": "c_furn_wardrobe",
+   "size_cm": [
+    103.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_wardrobe.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_dresser_mint",
+   "scale_ref": "c_furn_dresser",
+   "size_cm": [
+    103.6,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_dresser.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_dresser_cream",
+   "scale_ref": "c_furn_dresser",
+   "size_cm": [
+    103.6,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_dresser.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_dresser_rose",
+   "scale_ref": "c_furn_dresser",
+   "size_cm": [
+    103.6,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_dresser.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_dresser_oak",
+   "scale_ref": "c_furn_dresser",
+   "size_cm": [
+    103.6,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_dresser.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_nightstand_cream",
+   "scale_ref": "c_furn_nightstand",
+   "size_cm": [
+    48.5,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_nightstand.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_nightstand_oak",
+   "scale_ref": "c_furn_nightstand",
+   "size_cm": [
+    48.5,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_nightstand.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_nightstand_sky",
+   "scale_ref": "c_furn_nightstand",
+   "size_cm": [
+    48.5,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_nightstand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_tv_bench_cream",
+   "scale_ref": "c_furn_tv_bench",
+   "size_cm": [
+    143.6,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_tv_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_tv_bench_walnut",
+   "scale_ref": "c_furn_tv_bench",
+   "size_cm": [
+    143.6,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_tv_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_tv_bench_grey",
+   "scale_ref": "c_furn_tv_bench",
+   "size_cm": [
+    143.6,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_tv_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage"
+  },
+  {
+   "id": "furn_toybox_butter",
+   "scale_ref": "c_furn_toybox",
+   "size_cm": [
+    73.9,
+    50.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_toybox.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage",
+   "container": {
+    "slots": 8,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "furn_toybox_sky",
+   "scale_ref": "c_furn_toybox",
+   "size_cm": [
+    73.9,
+    50.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_toybox.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage",
+   "container": {
+    "slots": 8,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "furn_toybox_coral",
+   "scale_ref": "c_furn_toybox",
+   "size_cm": [
+    73.9,
+    50.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_toybox.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "storage",
+   "container": {
+    "slots": 8,
+    "max_item_h_cm": 40
+   }
+  }
+ ]
+}

@@ -4,7 +4,14 @@ extends GutTest
 
 func test_all_items_loaded_without_errors() -> void:
 	assert_eq(ItemDB.validation_errors.size(), 0, "\n".join(ItemDB.validation_errors))
-	assert_eq(ItemDB.item_count(), 77, "18 Stil-C + 47 Platzhalter (P03: Sofa, Sessel, Bett, Katze) + 12 Haustier-Arten (P04)")
+	# Zahl der Items = Summe aller Einträge in data/items/*.json (P04b: der Katalog wächst ständig)
+	var want: int = 0
+	for f: String in DirAccess.get_files_at("res://data/items/"):
+		if f.ends_with(".json"):
+			var d: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://data/items/" + f))
+			want += Array((d as Dictionary).get("items", [])).size() if d is Dictionary else Array(d).size()
+	assert_eq(ItemDB.item_count(), want, "jedes Item aus data/items/ ist geladen")
+	assert_gte(ItemDB.item_count(), 77, "mindestens die 77 Items aus Phase 02–04")
 
 
 func test_every_item_has_loadable_texture() -> void:

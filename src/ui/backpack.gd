@@ -66,12 +66,7 @@ func _fill() -> void:
 			var e: Dictionary = Game.backpack[i]
 			var def: ItemDefinition = ItemDB.get_item(StringName(String(e.get("id", ""))))
 			if def != null:
-				var pic := TextureRect.new()
-				pic.texture = load(def.sprite_path)
-				pic.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-				pic.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-				pic.custom_minimum_size = Vector2(TILE - 40, TILE - 40)
-				pic.mouse_filter = Control.MOUSE_FILTER_IGNORE
+				var pic: TextureRect = ItemThumb.make(def, TILE - 40)
 				var box := Ui.vbox(2)
 				box.mouse_filter = Control.MOUSE_FILTER_IGNORE
 				box.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT,

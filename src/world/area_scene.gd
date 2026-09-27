@@ -145,6 +145,7 @@ func _build_hud() -> void:
 	hud.leave.connect(func() -> void: leave())
 	hud.backpack.connect(func() -> void:
 		Backpack.open(ui, func(_id: String, _i: int) -> bool: return _place_back(_id)))
+	hud.catalog.connect(func() -> void: CatalogPanel.open(ui, place_from_catalog))
 	camera.set_visible_height(room.camera_cfg.get("default_h_cm", 300.0))
 
 
@@ -168,6 +169,27 @@ func _place_back(id: String) -> bool:
 	if it != null:
 		_on_world_changed()
 	return it != null
+
+
+## P04b-T09: Item aus dem Katalog in den freien Teil des Bildes stellen (links neben der Katalog-Leiste).
+## n = wievieltes Ding in dieser Katalog-Sitzung → leicht versetzt, damit nichts übereinander liegt.
+func place_from_catalog(id: String, n: int = 0) -> bool:
+	var x: float = Areas.spawn_of(area_id).x
+	if camera != null:
+		var vp_w: float = get_viewport().get_visible_rect().size.x
+		var view_w_cm: float = vp_w / maxf(camera.zoom.x, 0.001)
+		var free_frac: float = 1.0 - CatalogPanel.WIDTH_FRAC        # sichtbarer Teil links der Leiste
+		x = camera.get_screen_center_position().x - view_w_cm * 0.5 + view_w_cm * free_frac * 0.5
+		x += float((n % 5) - 2) * view_w_cm * free_frac * 0.16
+	var back: float = room.floor_band.back_y_cm if room.floor_band != null else 0.0
+	var front: float = room.floor_band.front_y_cm if room.floor_band != null else 80.0
+	var depth: float = lerpf(back, front, [0.55, 0.3, 0.8][n % 3])
+	var it: ItemNode = ItemSpawner.on_floor(room, StringName(id), x, depth)
+	if it == null:
+		return false
+	AudioBus.play_item_sfx(it.def, "drop")
+	_on_world_changed()
+	return true
 
 
 func _on_world_changed() -> void:

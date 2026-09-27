@@ -1,0 +1,439 @@
+{
+ "area": "catalog",
+ "room": "beds",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "furn_bed_kid_sky",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_kid_rose",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_kid_mint",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_kid_butter",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_kid_coral",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_kid_lilac",
+   "scale_ref": "home_bed_kid",
+   "size_cm": [
+    181.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_kid.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_double_linen",
+   "scale_ref": "c_furn_bed_double",
+   "size_cm": [
+    201.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#e8e2d8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "furn_bed_double_sage",
+   "scale_ref": "c_furn_bed_double",
+   "size_cm": [
+    201.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "furn_bed_double_grey",
+   "scale_ref": "c_furn_bed_double",
+   "size_cm": [
+    201.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "furn_bed_double_rose",
+   "scale_ref": "c_furn_bed_double",
+   "size_cm": [
+    201.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "furn_bed_bunk_coral",
+   "scale_ref": "c_furn_bed_bunk",
+   "size_cm": [
+    191.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_bunk.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_bunk_blue",
+   "scale_ref": "c_furn_bed_bunk",
+   "size_cm": [
+    191.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_bunk.png",
+   "pad_px": 1,
+   "colors": [
+    "#6f8fb8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bed_bunk_mint",
+   "scale_ref": "c_furn_bed_bunk",
+   "size_cm": [
+    191.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bed_bunk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_crib_rose",
+   "scale_ref": "c_furn_crib",
+   "size_cm": [
+    120.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_crib.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_crib_sky",
+   "scale_ref": "c_furn_crib",
+   "size_cm": [
+    120.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_crib.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_crib_sage",
+   "scale_ref": "c_furn_crib",
+   "size_cm": [
+    120.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_crib.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "beds",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  }
+ ]
+}

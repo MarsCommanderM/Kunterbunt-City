@@ -1,0 +1,423 @@
+{
+ "area": "catalog",
+ "room": "sport",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "sport_goal_cream",
+   "scale_ref": "c_sport_goal",
+   "size_cm": [
+    303.5,
+    203.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_goal.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_basket_hoop_coral",
+   "scale_ref": "c_sport_basket_hoop",
+   "size_cm": [
+    121.5,
+    301.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_basket_hoop.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_racket_coral",
+   "scale_ref": "c_sport_racket",
+   "size_cm": [
+    29.8,
+    68.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_racket.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_racket_sky",
+   "scale_ref": "c_sport_racket",
+   "size_cm": [
+    29.8,
+    68.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_racket.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_racket_mint",
+   "scale_ref": "c_sport_racket",
+   "size_cm": [
+    29.8,
+    68.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_racket.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_bat_oak",
+   "scale_ref": "c_sport_bat",
+   "size_cm": [
+    9.2,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_bat.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_bat_coral",
+   "scale_ref": "c_sport_bat",
+   "size_cm": [
+    9.2,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_bat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_dumbbell_coral",
+   "scale_ref": "c_sport_dumbbell",
+   "size_cm": [
+    31.5,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_dumbbell.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_dumbbell_sky",
+   "scale_ref": "c_sport_dumbbell",
+   "size_cm": [
+    31.5,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_dumbbell.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_dumbbell_black",
+   "scale_ref": "c_sport_dumbbell",
+   "size_cm": [
+    31.5,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_dumbbell.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_mat_sky",
+   "scale_ref": "c_sport_mat",
+   "size_cm": [
+    182.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "sport_mat_coral",
+   "scale_ref": "c_sport_mat",
+   "size_cm": [
+    182.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "sport_mat_teal",
+   "scale_ref": "c_sport_mat",
+   "size_cm": [
+    182.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "sport_cone_orange",
+   "scale_ref": "c_sport_cone",
+   "size_cm": [
+    21.5,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_cone.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_cone_butter",
+   "scale_ref": "c_sport_cone",
+   "size_cm": [
+    21.5,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_cone.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_trophy_butter",
+   "scale_ref": "c_sport_trophy",
+   "size_cm": [
+    22.4,
+    33.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_trophy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,571 @@
+{
+ "area": "catalog",
+ "room": "shop",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "shop_cart_coral",
+   "scale_ref": "c_shop_cart",
+   "size_cm": [
+    60.0,
+    102.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "container": {
+    "slots": 10,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "shop_cart_sky",
+   "scale_ref": "c_shop_cart",
+   "size_cm": [
+    60.0,
+    102.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "container": {
+    "slots": 10,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "shop_cart_metal",
+   "scale_ref": "c_shop_cart",
+   "size_cm": [
+    60.0,
+    102.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "container": {
+    "slots": 10,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "shop_basket_shop_coral",
+   "scale_ref": "c_shop_basket_shop",
+   "size_cm": [
+    41.4,
+    30.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_basket_shop.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_basket_shop_sky",
+   "scale_ref": "c_shop_basket_shop",
+   "size_cm": [
+    41.4,
+    30.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_basket_shop.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_basket_shop_mint",
+   "scale_ref": "c_shop_basket_shop",
+   "size_cm": [
+    41.4,
+    30.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_basket_shop.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_bag_cream",
+   "scale_ref": "c_shop_bag",
+   "size_cm": [
+    31.8,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_bag_coral",
+   "scale_ref": "c_shop_bag",
+   "size_cm": [
+    31.8,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_bag_sky",
+   "scale_ref": "c_shop_bag",
+   "size_cm": [
+    31.8,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_bag_oak",
+   "scale_ref": "c_shop_bag",
+   "size_cm": [
+    31.8,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_box_oak",
+   "scale_ref": "c_shop_box",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_box_sand",
+   "scale_ref": "c_shop_box",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "shop_cash_register_cream",
+   "scale_ref": "c_shop_cash_register",
+   "size_cm": [
+    46.5,
+    36.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cash_register.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_cash_register_black",
+   "scale_ref": "c_shop_cash_register",
+   "size_cm": [
+    46.5,
+    36.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cash_register.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_cash_register_sky",
+   "scale_ref": "c_shop_cash_register",
+   "size_cm": [
+    46.5,
+    36.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_cash_register.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_price_sign_coral",
+   "scale_ref": "c_shop_price_sign",
+   "size_cm": [
+    31.5,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_price_sign.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_price_sign_butter",
+   "scale_ref": "c_shop_price_sign",
+   "size_cm": [
+    31.5,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_price_sign.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_mannequin_cream",
+   "scale_ref": "c_shop_mannequin",
+   "size_cm": [
+    52.5,
+    178.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_mannequin.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop"
+  },
+  {
+   "id": "shop_mannequin_sand",
+   "scale_ref": "c_shop_mannequin",
+   "size_cm": [
+    52.5,
+    178.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_mannequin.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shop"
+  },
+  {
+   "id": "shop_hanger_rack_metal",
+   "scale_ref": "c_shop_hanger_rack",
+   "size_cm": [
+    122.8,
+    162.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hanger_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shop"
+  }
+ ]
+}

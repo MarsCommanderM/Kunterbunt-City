@@ -1,0 +1,462 @@
+{
+ "area": "catalog",
+ "room": "animals",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "zoo_feed_bucket_coral",
+   "scale_ref": "c_zoo_feed_bucket",
+   "size_cm": [
+    32.2,
+    34.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_feed_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_feed_bucket_sky",
+   "scale_ref": "c_zoo_feed_bucket",
+   "size_cm": [
+    32.2,
+    34.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_feed_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_hay_butter",
+   "scale_ref": "c_zoo_hay",
+   "size_cm": [
+    81.9,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_hay.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_bowl_pet_coral",
+   "scale_ref": "c_zoo_bowl_pet",
+   "size_cm": [
+    19.2,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_bowl_pet.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_bowl_pet_sky",
+   "scale_ref": "c_zoo_bowl_pet",
+   "size_cm": [
+    19.2,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_bowl_pet.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_bowl_pet_mint",
+   "scale_ref": "c_zoo_bowl_pet",
+   "size_cm": [
+    19.2,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_bowl_pet.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_zoo_sign_oak",
+   "scale_ref": "c_zoo_zoo_sign",
+   "size_cm": [
+    61.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_zoo_sign.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "zoo_zoo_sign_green",
+   "scale_ref": "c_zoo_zoo_sign",
+   "size_cm": [
+    61.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_zoo_sign.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "zoo_pet_bed_coral",
+   "scale_ref": "c_zoo_pet_bed",
+   "size_cm": [
+    76.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_pet_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "zoo_pet_bed_sky",
+   "scale_ref": "c_zoo_pet_bed",
+   "size_cm": [
+    76.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_pet_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "zoo_pet_bed_rose",
+   "scale_ref": "c_zoo_pet_bed",
+   "size_cm": [
+    76.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_pet_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "zoo_pet_bed_oak",
+   "scale_ref": "c_zoo_pet_bed",
+   "size_cm": [
+    76.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_pet_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "zoo_cage_mint",
+   "scale_ref": "c_zoo_cage",
+   "size_cm": [
+    61.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_cage.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "zoo_cage_sky",
+   "scale_ref": "c_zoo_cage",
+   "size_cm": [
+    61.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_cage.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "zoo_cage_coral",
+   "scale_ref": "c_zoo_cage",
+   "size_cm": [
+    61.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_cage.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "zoo_aquarium_black",
+   "scale_ref": "c_zoo_aquarium",
+   "size_cm": [
+    82.0,
+    52.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_aquarium.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#d8cfc2"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "zoo_aquarium_oak",
+   "scale_ref": "c_zoo_aquarium",
+   "size_cm": [
+    82.0,
+    52.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/zoo_aquarium.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a9c3dd",
+    "#d8cfc2"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

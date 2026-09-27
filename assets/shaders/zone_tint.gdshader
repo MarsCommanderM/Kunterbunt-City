@@ -18,6 +18,12 @@ uniform bool has_pattern = false;
 uniform vec3 pattern_col : source_color = vec3(1.0);
 uniform vec2 pattern_scale = vec2(1.0);
 
+varying vec4 tint_mod;      // Vertex-Farbe × modulate (im Fragment steckt in COLOR schon die Textur!)
+
+void vertex() {
+	tint_mod = COLOR;
+}
+
 void fragment() {
 	vec4 t = texture(TEXTURE, UV);
 	vec3 z1 = zone1;
@@ -27,5 +33,5 @@ void fragment() {
 	}
 	float rest = clamp(1.0 - t.r - t.g - t.b, 0.0, 1.0);
 	vec3 col = t.r * z1 + t.g * zone2 + t.b * zone3 + rest * ink;
-	COLOR = vec4(col, t.a * COLOR.a);
+	COLOR = vec4(col * tint_mod.rgb, t.a * tint_mod.a);   // modulate wirkt weiter (Anheben, offener Schrank)
 }

@@ -1,0 +1,319 @@
+{
+ "area": "catalog",
+ "room": "electronics",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "elec_tv_black",
+   "scale_ref": "c_elec_tv",
+   "size_cm": [
+    101.5,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_tv.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#2a2a30"
+   ],
+   "catalog": "electronics"
+  },
+  {
+   "id": "elec_tv_cream",
+   "scale_ref": "c_elec_tv",
+   "size_cm": [
+    101.5,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_tv.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#2a2a30"
+   ],
+   "catalog": "electronics"
+  },
+  {
+   "id": "elec_tv_sky",
+   "scale_ref": "c_elec_tv",
+   "size_cm": [
+    101.5,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_tv.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a9c3dd",
+    "#2a2a30"
+   ],
+   "catalog": "electronics"
+  },
+  {
+   "id": "deco_radio_coral",
+   "scale_ref": "c_deco_radio",
+   "size_cm": [
+    31.9,
+    24.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_radio.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_radio_sky",
+   "scale_ref": "c_deco_radio",
+   "size_cm": [
+    31.9,
+    24.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_radio.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_radio_cream",
+   "scale_ref": "c_deco_radio",
+   "size_cm": [
+    31.9,
+    24.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_radio.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_laptop_grey",
+   "scale_ref": "c_deco_laptop",
+   "size_cm": [
+    35.5,
+    25.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_laptop.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_laptop_cream",
+   "scale_ref": "c_deco_laptop",
+   "size_cm": [
+    35.5,
+    25.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_laptop.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_laptop_rose",
+   "scale_ref": "c_deco_laptop",
+   "size_cm": [
+    35.5,
+    25.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_laptop.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_phone_black",
+   "scale_ref": "c_deco_phone",
+   "size_cm": [
+    8.5,
+    16.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_phone.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_phone_coral",
+   "scale_ref": "c_deco_phone",
+   "size_cm": [
+    8.5,
+    16.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_phone.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_phone_sky",
+   "scale_ref": "c_deco_phone",
+   "size_cm": [
+    8.5,
+    16.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_phone.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

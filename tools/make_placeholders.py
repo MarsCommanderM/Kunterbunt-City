@@ -135,6 +135,8 @@ def main(argv: list[str] | None = None) -> int:
     for e in table["entries"]:
         if only and e["id"] not in only:
             continue
+        if e.get("src") == "catalog":      # P04b: Katalog-Items haben echte Grafik, kein Platzhalter nötig
+            continue
         if not e.get("w_cm") and not e.get("h_cm"):
             continue
         img, ppc = render(e)

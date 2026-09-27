@@ -1,0 +1,1111 @@
+{
+ "area": "catalog",
+ "room": "pool",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "pool_air_mattress_coral",
+   "scale_ref": "c_pool_air_mattress",
+   "size_cm": [
+    182.1,
+    16.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_air_mattress.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_air_mattress_sky",
+   "scale_ref": "c_pool_air_mattress",
+   "size_cm": [
+    182.1,
+    16.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_air_mattress.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_air_mattress_butter",
+   "scale_ref": "c_pool_air_mattress",
+   "size_cm": [
+    182.1,
+    16.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_air_mattress.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_air_mattress_mint",
+   "scale_ref": "c_pool_air_mattress",
+   "size_cm": [
+    182.1,
+    16.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_air_mattress.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_swim_ring_coral",
+   "scale_ref": "c_pool_swim_ring",
+   "size_cm": [
+    57.9,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_swim_ring.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_swim_ring_sky",
+   "scale_ref": "c_pool_swim_ring",
+   "size_cm": [
+    57.9,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_swim_ring.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_swim_ring_butter",
+   "scale_ref": "c_pool_swim_ring",
+   "size_cm": [
+    57.9,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_swim_ring.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_swim_ring_mint",
+   "scale_ref": "c_pool_swim_ring",
+   "size_cm": [
+    57.9,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_swim_ring.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_noodle_coral",
+   "scale_ref": "c_pool_noodle",
+   "size_cm": [
+    152.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_noodle.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_noodle_butter",
+   "scale_ref": "c_pool_noodle",
+   "size_cm": [
+    152.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_noodle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_noodle_sky",
+   "scale_ref": "c_pool_noodle",
+   "size_cm": [
+    152.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_noodle.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_noodle_mint",
+   "scale_ref": "c_pool_noodle",
+   "size_cm": [
+    152.3,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_noodle.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_flippers_sky",
+   "scale_ref": "c_pool_flippers",
+   "size_cm": [
+    51.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_flippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_flippers_coral",
+   "scale_ref": "c_pool_flippers",
+   "size_cm": [
+    51.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_flippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_flippers_black",
+   "scale_ref": "c_pool_flippers",
+   "size_cm": [
+    51.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_flippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_goggles_sky",
+   "scale_ref": "c_pool_goggles",
+   "size_cm": [
+    20.2,
+    7.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_goggles.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_goggles_coral",
+   "scale_ref": "c_pool_goggles",
+   "size_cm": [
+    20.2,
+    7.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_goggles.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_goggles_butter",
+   "scale_ref": "c_pool_goggles",
+   "size_cm": [
+    20.2,
+    7.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_goggles.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_umbrella_coral",
+   "scale_ref": "c_pool_umbrella",
+   "size_cm": [
+    181.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "pool_umbrella_sky",
+   "scale_ref": "c_pool_umbrella",
+   "size_cm": [
+    181.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "pool_umbrella_butter",
+   "scale_ref": "c_pool_umbrella",
+   "size_cm": [
+    181.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "pool_umbrella_teal",
+   "scale_ref": "c_pool_umbrella",
+   "size_cm": [
+    181.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "pool_deck_chair_coral",
+   "scale_ref": "c_pool_deck_chair",
+   "size_cm": [
+    73.2,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_deck_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_deck_chair_sky",
+   "scale_ref": "c_pool_deck_chair",
+   "size_cm": [
+    73.2,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_deck_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_deck_chair_teal",
+   "scale_ref": "c_pool_deck_chair",
+   "size_cm": [
+    73.2,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_deck_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_deck_chair_butter",
+   "scale_ref": "c_pool_deck_chair",
+   "size_cm": [
+    73.2,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_deck_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_towel_beach_sky",
+   "scale_ref": "c_pool_towel_beach",
+   "size_cm": [
+    162.4,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_towel_beach.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_towel_beach_coral",
+   "scale_ref": "c_pool_towel_beach",
+   "size_cm": [
+    162.4,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_towel_beach.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_towel_beach_butter",
+   "scale_ref": "c_pool_towel_beach",
+   "size_cm": [
+    162.4,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_towel_beach.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_cooler_sky",
+   "scale_ref": "c_pool_cooler",
+   "size_cm": [
+    47.5,
+    37.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_cooler.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "pool_cooler_coral",
+   "scale_ref": "c_pool_cooler",
+   "size_cm": [
+    47.5,
+    37.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_cooler.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "pool_cooler_cream",
+   "scale_ref": "c_pool_cooler",
+   "size_cm": [
+    47.5,
+    37.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_cooler.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "pool_sunscreen_butter",
+   "scale_ref": "c_pool_sunscreen",
+   "size_cm": [
+    8.9,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_sunscreen.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_sunscreen_orange",
+   "scale_ref": "c_pool_sunscreen",
+   "size_cm": [
+    8.9,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_sunscreen.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_water_gun_butter",
+   "scale_ref": "c_pool_water_gun",
+   "size_cm": [
+    33.4,
+    19.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_water_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_water_gun_coral",
+   "scale_ref": "c_pool_water_gun",
+   "size_cm": [
+    33.4,
+    19.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_water_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_water_gun_teal",
+   "scale_ref": "c_pool_water_gun",
+   "size_cm": [
+    33.4,
+    19.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_water_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "pool_inflatable_animal_butter",
+   "scale_ref": "c_pool_inflatable_animal",
+   "size_cm": [
+    94.6,
+    75.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_inflatable_animal.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_inflatable_animal_rose",
+   "scale_ref": "c_pool_inflatable_animal",
+   "size_cm": [
+    94.6,
+    75.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_inflatable_animal.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "pool_inflatable_animal_mint",
+   "scale_ref": "c_pool_inflatable_animal",
+   "size_cm": [
+    94.6,
+    75.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pool_inflatable_animal.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  }
+ ]
+}

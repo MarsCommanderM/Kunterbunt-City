@@ -1,0 +1,261 @@
+{
+ "area": "catalog",
+ "room": "fair",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "fair_cotton_candy_rose",
+   "scale_ref": "c_fair_cotton_candy",
+   "size_cm": [
+    22.2,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_cotton_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_cotton_candy_sky",
+   "scale_ref": "c_fair_cotton_candy",
+   "size_cm": [
+    22.2,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_cotton_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_popcorn_coral",
+   "scale_ref": "c_fair_popcorn",
+   "size_cm": [
+    17.7,
+    24.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_popcorn.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_ticket_booth_coral",
+   "scale_ref": "c_fair_ticket_booth",
+   "size_cm": [
+    161.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ticket_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_ticket_booth_sky",
+   "scale_ref": "c_fair_ticket_booth",
+   "size_cm": [
+    161.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ticket_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_balloon_bunch_coral",
+   "scale_ref": "c_fair_balloon_bunch",
+   "size_cm": [
+    46.4,
+    124.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon_bunch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_target_coral",
+   "scale_ref": "c_fair_target",
+   "size_cm": [
+    61.5,
+    129.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_target.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_carousel_horse_cream",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    92.4,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_carousel_horse_rose",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    92.4,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_carousel_horse_sky",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    92.4,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  }
+ ]
+}

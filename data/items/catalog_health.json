@@ -1,0 +1,250 @@
+{
+ "area": "catalog",
+ "room": "health",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "health_first_aid_coral",
+   "scale_ref": "c_health_first_aid",
+   "size_cm": [
+    31.8,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_first_aid.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "health_first_aid_cream",
+   "scale_ref": "c_health_first_aid",
+   "size_cm": [
+    31.8,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_first_aid.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "health_stethoscope_black",
+   "scale_ref": "c_health_stethoscope",
+   "size_cm": [
+    19.2,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_stethoscope.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "health_stethoscope_sky",
+   "scale_ref": "c_health_stethoscope",
+   "size_cm": [
+    19.2,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_stethoscope.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "health_wheelchair_sky",
+   "scale_ref": "c_health_wheelchair",
+   "size_cm": [
+    72.5,
+    92.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_wheelchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "health_wheelchair_coral",
+   "scale_ref": "c_health_wheelchair",
+   "size_cm": [
+    72.5,
+    92.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_wheelchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "health_wheelchair_black",
+   "scale_ref": "c_health_wheelchair",
+   "size_cm": [
+    72.5,
+    92.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_wheelchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "health_bandage_cream",
+   "scale_ref": "c_health_bandage",
+   "size_cm": [
+    11.5,
+    6.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_bandage.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "health_thermometer_sky",
+   "scale_ref": "c_health_thermometer",
+   "size_cm": [
+    4.5,
+    15.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/health_thermometer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

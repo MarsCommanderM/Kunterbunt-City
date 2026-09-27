@@ -60,6 +60,8 @@ func _build_visual() -> void:
 	sprite.name = "Sprite"
 	sprite.centered = false
 	sprite.texture = load(def.sprite_path)
+	if not def.colors.is_empty():
+		CharacterLook.apply(sprite, Array(def.colors))      # P04b: Farbzonen + Tinte (wie die Figuren)
 	add_child(sprite)
 
 

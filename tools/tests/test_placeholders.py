@@ -9,7 +9,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 PH = ROOT / "assets" / "placeholders"
-TABLE = json.loads((ROOT / "data" / "scale_table.json").read_text(encoding="utf-8"))["entries"]
+# Katalog-Einträge (P04b, "src": "catalog") haben echte Grafik – Platzhalter nur für handgepflegte Einträge
+TABLE = [e for e in json.loads((ROOT / "data" / "scale_table.json").read_text(encoding="utf-8"))["entries"]
+         if e.get("src") != "catalog"]
 
 
 def test_one_placeholder_per_entry():

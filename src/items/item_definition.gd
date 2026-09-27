@@ -35,6 +35,8 @@ const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
 @export var sfx: Dictionary = {}
 @export var source_file: String
 @export var uses_placeholder: bool = false
+@export var colors: PackedColorArray = []   ## P04b: Farbzonen (Sprite speichert Zonen-Gewichte) – leer = Sprite fertig bunt
+@export var catalog: String = ""            ## P04b: Katalog-Reiter (sofas, plants …) – leer = nicht im Katalog
 
 
 func is_stackable() -> bool:
@@ -109,6 +111,9 @@ static func from_dict(d: Dictionary, scale_entry: Dictionary, file: String, erro
 	var cont: Dictionary = d.get("container", {})
 	def.container_slots = int(cont.get("slots", 0))
 	def.container_max_item_h_cm = float(cont.get("max_item_h_cm", def.height_cm * 0.3))
+	for h: Variant in Array(d.get("colors", [])):
+		def.colors.append(Color(String(h)))
+	def.catalog = String(d.get("catalog", ""))
 	def.sprite_path = String(d.get("sprite", ""))
 	if def.sprite_path.is_empty() or not ResourceLoader.exists(def.sprite_path):
 		def.uses_placeholder = true

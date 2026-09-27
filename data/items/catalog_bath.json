@@ -1,0 +1,655 @@
+{
+ "area": "catalog",
+ "room": "bath",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "bath_towel_sky",
+   "scale_ref": "c_bath_towel",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_towel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_towel_rose",
+   "scale_ref": "c_bath_towel",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_towel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_towel_mint",
+   "scale_ref": "c_bath_towel",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_towel.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_towel_butter",
+   "scale_ref": "c_bath_towel",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_towel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_towel_cream",
+   "scale_ref": "c_bath_towel",
+   "size_cm": [
+    41.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_towel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_duck_yellow",
+   "scale_ref": "c_bath_duck",
+   "size_cm": [
+    11.4,
+    11.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#f09a55",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_duck_sky",
+   "scale_ref": "c_bath_duck",
+   "size_cm": [
+    11.4,
+    11.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f09a55",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_duck_rose",
+   "scale_ref": "c_bath_duck",
+   "size_cm": [
+    11.4,
+    11.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f09a55",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_toothbrush_sky",
+   "scale_ref": "c_bath_toothbrush",
+   "size_cm": [
+    4.5,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_toothbrush_coral",
+   "scale_ref": "c_bath_toothbrush",
+   "size_cm": [
+    4.5,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_toothbrush_mint",
+   "scale_ref": "c_bath_toothbrush",
+   "size_cm": [
+    4.5,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_toothbrush_butter",
+   "scale_ref": "c_bath_toothbrush",
+   "size_cm": [
+    4.5,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_soap_rose",
+   "scale_ref": "c_bath_soap",
+   "size_cm": [
+    11.5,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_soap.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_soap_mint",
+   "scale_ref": "c_bath_soap",
+   "size_cm": [
+    11.5,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_soap.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_soap_cream",
+   "scale_ref": "c_bath_soap",
+   "size_cm": [
+    11.5,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_soap.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_shampoo_plum",
+   "scale_ref": "c_bath_shampoo",
+   "size_cm": [
+    9.0,
+    21.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_shampoo.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_shampoo_teal",
+   "scale_ref": "c_bath_shampoo",
+   "size_cm": [
+    9.0,
+    21.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_shampoo.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_shampoo_coral",
+   "scale_ref": "c_bath_shampoo",
+   "size_cm": [
+    9.0,
+    21.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_shampoo.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_tp_cream",
+   "scale_ref": "c_bath_tp",
+   "size_cm": [
+    12.9,
+    12.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_tp.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_hairdryer_rose",
+   "scale_ref": "c_bath_hairdryer",
+   "size_cm": [
+    24.6,
+    22.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_hairdryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_hairdryer_black",
+   "scale_ref": "c_bath_hairdryer",
+   "size_cm": [
+    24.6,
+    22.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_hairdryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_hairdryer_sky",
+   "scale_ref": "c_bath_hairdryer",
+   "size_cm": [
+    24.6,
+    22.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_hairdryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_basket_oak",
+   "scale_ref": "c_bath_basket",
+   "size_cm": [
+    31.6,
+    26.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "bath_basket_cream",
+   "scale_ref": "c_bath_basket",
+   "size_cm": [
+    31.6,
+    26.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/bath_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "bath",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,361 @@
+{
+ "area": "catalog",
+ "room": "school",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "school_school_desk_sky",
+   "scale_ref": "c_school_school_desk",
+   "size_cm": [
+    71.9,
+    77.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "school_school_desk_oak",
+   "scale_ref": "c_school_school_desk",
+   "size_cm": [
+    71.9,
+    77.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "school_school_desk_mint",
+   "scale_ref": "c_school_school_desk",
+   "size_cm": [
+    71.9,
+    77.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "school_blackboard_green",
+   "scale_ref": "c_school_blackboard",
+   "size_cm": [
+    151.5,
+    182.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_blackboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "school_blackboard_navy",
+   "scale_ref": "c_school_blackboard",
+   "size_cm": [
+    151.5,
+    182.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_blackboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "school_school_bag_coral",
+   "scale_ref": "c_school_school_bag",
+   "size_cm": [
+    31.9,
+    40.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_school_bag_sky",
+   "scale_ref": "c_school_school_bag",
+   "size_cm": [
+    31.9,
+    40.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_school_bag_mint",
+   "scale_ref": "c_school_school_bag",
+   "size_cm": [
+    31.9,
+    40.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_school_bag_plum",
+   "scale_ref": "c_school_school_bag",
+   "size_cm": [
+    31.9,
+    40.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_school_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_pencil_cup_sky",
+   "scale_ref": "c_school_pencil_cup",
+   "size_cm": [
+    11.9,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_pencil_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_pencil_cup_coral",
+   "scale_ref": "c_school_pencil_cup",
+   "size_cm": [
+    11.9,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_pencil_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_microscope_cream",
+   "scale_ref": "c_school_microscope",
+   "size_cm": [
+    21.5,
+    37.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_microscope.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_microscope_black",
+   "scale_ref": "c_school_microscope",
+   "size_cm": [
+    21.5,
+    37.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_microscope.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "school_easel_cream",
+   "scale_ref": "c_school_easel",
+   "size_cm": [
+    58.8,
+    152.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/school_easel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "school"
+  }
+ ]
+}

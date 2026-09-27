@@ -1,0 +1,582 @@
+{
+ "area": "catalog",
+ "room": "tables",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "furn_table_dining_oak",
+   "scale_ref": "c_furn_table_dining",
+   "size_cm": [
+    142.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_dining.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_dining_walnut",
+   "scale_ref": "c_furn_table_dining",
+   "size_cm": [
+    142.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_dining.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_dining_pine",
+   "scale_ref": "c_furn_table_dining",
+   "size_cm": [
+    142.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_dining.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f5f3ee",
+    "#e3c79a"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_dining_cream",
+   "scale_ref": "c_furn_table_dining",
+   "size_cm": [
+    142.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_dining.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_dining_dark_wood",
+   "scale_ref": "c_furn_table_dining",
+   "size_cm": [
+    142.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_dining.png",
+   "pad_px": 1,
+   "colors": [
+    "#5a463a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_round_cream",
+   "scale_ref": "c_furn_table_round",
+   "size_cm": [
+    91.8,
+    76.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_round_oak",
+   "scale_ref": "c_furn_table_round",
+   "size_cm": [
+    91.8,
+    76.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_round_mint",
+   "scale_ref": "c_furn_table_round",
+   "size_cm": [
+    91.8,
+    76.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_coffee_oak",
+   "scale_ref": "home_table_coffee",
+   "size_cm": [
+    98.1,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_coffee.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_coffee_walnut",
+   "scale_ref": "home_table_coffee",
+   "size_cm": [
+    98.1,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_coffee.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_coffee_pine",
+   "scale_ref": "home_table_coffee",
+   "size_cm": [
+    98.1,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_coffee.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f5f3ee",
+    "#e3c79a"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_coffee_cream",
+   "scale_ref": "home_table_coffee",
+   "size_cm": [
+    98.1,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_coffee.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_coffee_dark_wood",
+   "scale_ref": "home_table_coffee",
+   "size_cm": [
+    98.1,
+    45
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_coffee.png",
+   "pad_px": 1,
+   "colors": [
+    "#5a463a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_side_oak",
+   "scale_ref": "c_furn_table_side",
+   "size_cm": [
+    46.9,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_side.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_side_cream",
+   "scale_ref": "c_furn_table_side",
+   "size_cm": [
+    46.9,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_side.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_side_walnut",
+   "scale_ref": "c_furn_table_side",
+   "size_cm": [
+    46.9,
+    56.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_side.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_desk_sky",
+   "scale_ref": "c_furn_table_desk",
+   "size_cm": [
+    122.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_desk_cream",
+   "scale_ref": "c_furn_table_desk",
+   "size_cm": [
+    122.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_desk_mint",
+   "scale_ref": "c_furn_table_desk",
+   "size_cm": [
+    122.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_desk_rose",
+   "scale_ref": "c_furn_table_desk",
+   "size_cm": [
+    122.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_kids_butter",
+   "scale_ref": "c_furn_table_kids",
+   "size_cm": [
+    71.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_kids_sky",
+   "scale_ref": "c_furn_table_kids",
+   "size_cm": [
+    71.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_kids_coral",
+   "scale_ref": "c_furn_table_kids",
+   "size_cm": [
+    71.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_picnic_oak",
+   "scale_ref": "c_furn_table_picnic",
+   "size_cm": [
+    151.8,
+    77.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_picnic.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "tables"
+  },
+  {
+   "id": "furn_table_picnic_walnut",
+   "scale_ref": "c_furn_table_picnic",
+   "size_cm": [
+    151.8,
+    77.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_table_picnic.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "tables"
+  }
+ ]
+}
