@@ -104,9 +104,23 @@ static func palette_colors(group: String) -> Array:
 static func palette_groups() -> Array:
 	var out: Array = []
 	for k: String in palette():
-		if k != "note":
+		if palette()[k] is Dictionary and (palette()[k] as Dictionary).has("colors"):
 			out.append(k)
 	return out
+
+
+## Startfarben eines Teils (P04b-T06): freundlich bunt aus `palette.json › defaults`, sonst aus der Palette.
+static func default_colors(slot: String, id: String) -> Array:
+	var n: int = clampi(zones(slot, id), 1, 3)
+	var want: Array = Dictionary(palette().get("defaults", {})).get(slot, [])
+	var pal: Array = palette_colors(_group_for(slot))
+	var cols: Array = []
+	for i: int in n:
+		if i < want.size():
+			cols.append(String(want[i]))
+		else:
+			cols.append(String(pal[(i * 5 + 3) % maxi(1, pal.size())]) if not pal.is_empty() else "#ffffff")
+	return cols
 
 
 ## Welche Palette passt zu welchem Slot? (öffentlich: der Editor zeigt sie an)
@@ -147,12 +161,7 @@ static func default_set(tid: String) -> Dictionary:
 		if id.is_empty():
 			continue
 		parts[slot] = id
-		var pal: Array = palette_colors(_group_for(slot))
-		var n: int = clampi(zones(slot, id), 1, 3)
-		var cols: Array = []
-		for i: int in n:
-			cols.append(pal[i * 3 % maxi(1, pal.size())] if not pal.is_empty() else "#ffffff")
-		colors[slot] = cols
+		colors[slot] = default_colors(slot, id)
 	return {"parts": parts, "colors": colors}
 
 

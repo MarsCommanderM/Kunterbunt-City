@@ -99,5 +99,44 @@
       "#5a5a5a",
       "#7a5230"
     ]
+  },
+  "defaults": {
+    "_doc": "P04b-T06: Startfarben einer neuen Figur je Slot (Zone 1…3) – freundlich bunt statt weiß.",
+    "top": [
+      "#e07a7a",
+      "#f5f3ee",
+      "#f4c95d"
+    ],
+    "bottom": [
+      "#3c4f7a",
+      "#a9c3dd",
+      "#f5f3ee"
+    ],
+    "shoes": [
+      "#f0b6c2",
+      "#f5f3ee",
+      "#2e3140"
+    ],
+    "hair": [
+      "#6b4a36",
+      "#8a5e3f",
+      "#e07a7a"
+    ],
+    "eyes": [
+      "#5b3a26"
+    ],
+    "mouth": [
+      "#e07a7a"
+    ],
+    "accessory": [
+      "#f4c95d",
+      "#e07a7a",
+      "#f5f3ee"
+    ],
+    "aid": [
+      "#6f8fb8",
+      "#f5f3ee",
+      "#e07a7a"
+    ]
   }
 }

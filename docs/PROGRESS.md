@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
-| Nächste Task | P04b-T06 Editor · T07 Tiere → P07 Zuhause |
-| Letzter grüner check.sh | 2026-09-27 (P04b T08) |
+| Nächste Task | P04b-T07 Tiere → P07 Zuhause |
+| Letzter grüner check.sh | 2026-09-27 (P04b T06) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T05, T08–T12 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T06, T08–T12 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,18 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T06 Figuren-Editor 🔨
+- **Leere Farbfelder waren ein Fehler:** `Ui.mark_selected(b, false)` überschrieb die Farbe jedes Felds mit Weiß.
+  Neu `src/ui/color_dots.gd`: runde Farbpunkte, die Farbe steckt in einem eigenen Kreis (Auswahl = Ring + Häkchen).
+- Farbzonen als Punkte in ihrer aktuellen Farbe (statt „1/2/3“), Stoff-Palette bricht in 2 Reihen um.
+- Teile-Kacheln immer in Farbe (`CharacterParts.default_colors`, Startfarben in `palette.json › defaults`);
+  neue Figuren tragen rot/jeans/rosa statt weiß.
+- Outfit-Plätze: „+“ (leer) / Shirt (belegt) statt Zahlen. Größen: 4 Schablonen inkl. **Teen**, das Figur-Symbol
+  wächst mit der echten Größe. Kategorie-Leiste passt (10 × 104 px, vorher rechts abgeschnitten).
+- Vorschau: warmer Kreis statt grauem (halbdurchsichtiges Weiß wurde in der Mini-Welt grau).
+- Beweis-Skript `p04_ui_runner.gd` an den P05-Ablauf angepasst (✓ → Stadtkarte; Galerie jetzt über den Figur-Knopf).
+- Tests: GUT +3 (`test_color_dots_show_their_colour_even_when_selected`, Palette/Zonen, bunte Startfigur + Teen).
+  check.sh ✅ – pytest 127/127 · GUT 259/259. Bilder `docs/tests/P04/p04_04…08` neu.
 ### 2026-09-27 · Phase 04b · T08 Symbole im Stil C 🔨
 - `tools/make_icons.py` + `tools/icons/` (base, ui_set, editor_set, area_set): **68 Symbole** als Vektor mit
   Farbzonen und brauner Tinten-Kontur – derselbe Stil wie Figuren und Items. Jede Ebene wird wie im Shader

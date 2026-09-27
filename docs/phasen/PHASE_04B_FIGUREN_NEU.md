@@ -13,7 +13,7 @@ Räume starten leer, eingerichtet wird über einen Katalog · alle Icons neu im 
 | P04b-T03 | `tools/make_chibi_parts.py`: alle Teile × 4 Schablonen (Kleinkind, Kind, **Teen neu**, Erwachsene), Katalog + Aliase für alte IDs | ✅ |
 | P04b-T04 | Neue Proportionen in `templates.json`, S-03 + Stil-Guide angepasst | ✅ |
 | P04b-T05 | Shader mit Tinte (+ Muster-Vorbereitung), Farben je Ebene (Haut+Wangen, Haar+Glanz, nackte Beine = Haut), Haare hinten hinter dem Körper, Liegen mit ganzem Körper | ✅ |
-| P04b-T06 | Editor: echte Vorschaubilder, Farbkreise, Symbole statt Zahlen, Teen wählbar | ⏳ |
+| P04b-T06 | Editor: echte Vorschaubilder (Teile in Farbe), runde Farbpunkte, Farbzonen als Punkte statt Zahlen, Outfits mit Symbolen, Teen wählbar, bunte Startkleidung, alle 10 Kategorien sichtbar | ✅ |
 | P04b-T07 | Tiere im selben Stil neu | ⏳ |
 | P04b-T08 | Alle Icons/Symbole im Stil neu – 68 Symbole (`tools/make_icons.py`), Vektor + Farbzonen + braune Tinte, fertig eingefärbt; Stadtkarte, Kopfzeile, Editor, Tiere, 4 neue Bereiche (Wald, Camping, Friseur, Fahrrad) | ✅ |
 | P04b-T09 | Item-Bibliothek (hunderte Items, Farbvarianten) + Katalog in jedem Raum | ✅ |

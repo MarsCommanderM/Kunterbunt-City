@@ -162,3 +162,38 @@ func test_alle_teile_aller_schablonen_existieren() -> void:
 				var v: Dictionary = CharacterParts.variant(slot, String(id))
 				assert_true(CharacterTemplates.has_part(tid, String(v["part"])),
 					"%s/%s: Teil %s fehlt" % [tid, slot, v["part"]])
+
+
+# ------------------------------------------------------------------ P04b-T06: Farbpunkte statt grauer Kästen
+func test_color_dots_show_their_colour_even_when_selected() -> void:
+	# Alter Fehler: mark_selected() überschrieb die Farbe mit Weiß → leere Felder
+	for sel: bool in [false, true]:
+		var b: Button = ColorDots.dot("#e07a7a", 80.0, sel)
+		add_child_autofree(b)
+		var disc: Panel = b.get_child(0) as Panel
+		var sb: StyleBoxFlat = disc.get_theme_stylebox("panel") as StyleBoxFlat
+		assert_true(sb.bg_color.is_equal_approx(Color("#e07a7a")), "Punkt zeigt seine Farbe (ausgewählt=%s)" % sel)
+
+
+func test_palette_shows_real_colours_and_zone_dots() -> void:
+	ed.select_category("top")
+	await wait_process_frames(2)
+	var seen: Array = []
+	for b: Node in ed._palette_row.get_children():
+		if b.has_meta("color"):
+			seen.append(String(b.get_meta("color")))
+	assert_eq(seen.size(), CharacterParts.palette_colors("cloth").size(), "jede Stofffarbe als Punkt")
+	assert_gt(ed._zone_row.get_child_count(), 1, "mehrere Farbzonen als Punkte (keine Zahlen)")
+	for b: Node in ed._zone_row.get_children():
+		assert_true((b as Button).text.is_empty(), "Zonen ohne Zahlen/Text")
+
+
+func test_new_figure_is_colourful_and_teen_is_selectable() -> void:
+	var d: CharacterData = CharacterData.create("kid")
+	var top: Array = Array(d.colors.get("top", []))
+	assert_false(top.is_empty())
+	assert_ne(Color(String(top[0])), Color("#f5f3ee"), "Startkleidung ist bunt, nicht weiß")
+	assert_has(CharacterEditor.TEMPLATES, "teen", "Teen ist wählbar")
+	ed.select_category("template")
+	ed.select_template("teen")
+	assert_eq(ed.data.template_id, "teen")
