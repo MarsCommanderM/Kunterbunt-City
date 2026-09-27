@@ -1,9 +1,0 @@
-sheet: raw_furniture_dog.png
-area: home
-room: kitchen
-items_json: home_kitchen_demo.json
-# Reihenfolge wie FURN_SHEET der Demo: Hund, Tisch, Stuhl
-items:
-  - {id: pet_dog_brown, scale_ref: pet_dog_medium, hold: none, placement: floor}
-  - {id: home_table_wood, scale_ref: home_table_dining, hold: none, placement: floor}
-  - {id: home_chair_mint, scale_ref: home_chair, hold: none, placement: floor}

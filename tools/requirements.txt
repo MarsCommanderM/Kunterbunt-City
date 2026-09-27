@@ -1,6 +1,0 @@
-# Kunterbunt City – Python-Werkzeuge (alle frei lizenziert)
-pillow>=10
-numpy>=1.26
-scipy>=1.11
-pyyaml>=6
-pytest>=8
