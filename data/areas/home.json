@@ -53,7 +53,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "living",
@@ -99,7 +100,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "kitchen",
@@ -297,7 +299,8 @@
      "on": "home_table_wood",
      "x_rel": 0.3
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "bedroom",
@@ -343,7 +346,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "kids1",
@@ -389,7 +393,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "kids2",
@@ -435,7 +440,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "bath",
@@ -481,7 +487,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_bath"
   },
   {
    "id": "attic",
@@ -529,7 +536,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "basement",
@@ -575,7 +583,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "garage",
@@ -621,7 +630,8 @@
      "x_cm": 70,
      "y_cm": -118
     }
-   ]
+   ],
+   "ambience": "amb_indoor"
   },
   {
    "id": "garden",
@@ -874,8 +884,10 @@
      "x_cm": 2150,
      "y_cm": 18
     }
-   ]
+   ],
+   "ambience": "amb_garden"
   }
  ],
- "default_items": []
+ "default_items": [],
+ "music": "music_home"
 }

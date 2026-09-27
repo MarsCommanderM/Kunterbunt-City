@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07-T09 Audio (Musik, Ambiente je Raum), T10 Geheimnisse, T11 Lineup, dann Phasenbericht P07 |
-| Letzter grüner check.sh | 2026-09-27 (P07-T05/T06 Licht, Türen, 26 Rezepte) |
+| Nächste Task | P07-T11 Lineup + Test-Szene je Raum, dann Phasenbericht P07 |
+| Letzter grüner check.sh | 2026-09-27 (P07-T09/T10 Audio + Geheimnisse) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -20,7 +20,7 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | 🔨 T01, T03–T07 fertig | Log 2026-09-27 |
+| 07 Slice Zuhause | 🔨 T01, T03–T07, T09, T10 fertig | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
@@ -41,6 +41,7 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 |---|---|---|---|
 | 2026-09-26 | 00 | check.sh | Maßstab ✅ · pytest 5/5 ✅ · GUT 7/7 ✅ |
 | 2026-09-27 | 07 | check.sh (Inventar) | Maßstab ✅ (940 Einträge, 2513 Items) · pytest **128/128** ✅ · GUT **265/265** ✅ (24467 Asserts) |
+| 2026-09-27 | 07 | check.sh (Audio + Geheimnisse) | Maßstab ✅ · pytest **131/131** ✅ · GUT **292/292** ✅ |
 | 2026-09-27 | 07 | check.sh (Licht/Türen/Rezepte) | Maßstab ✅ (2516 Items) · pytest 128/128 ✅ · GUT **284/284** ✅ (26 Rezepte je einzeln gekocht) |
 | 2026-09-27 | 07 | check.sh (Garten) | Maßstab ✅ · pytest 128/128 ✅ · GUT **279/279** ✅ |
 | 2026-09-27 | 07 | Garten-Kreislauf im Spiel (`p07_rooms_runner.gd`) | gesät ✓ · gegossen ✓ · sprout → grown → ripe · Ernte **3 Möhren** · Garten-Start-Anlage 46 Dinge |
@@ -77,6 +78,17 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 07 · T09 Musik & Ambiente, T10 Geheimnisse 🔨
+- `tools/make_music.py`: Zuhause-Musik (41,7 s Schleife, Kalimba + Bass + Fläche + Shaker), Ambiente Garten
+  (Vögel + Wind), Innen (Raumklang + Uhr), Bad (Tropfen) – NumPy-Synthese, CC0, bit-genau, Schleifen überblendet
+  (Sprung < 0,06). `AudioBus.play_music/play_ambience` (Endlos), Raum-Wechsel wechselt das Ambiente.
+- **Fehler gefunden:** Lautstärke „Musik" war ohne Wirkung (es gab keine Musik), „Tiere" wirkte nicht (Tierlaute
+  liefen über den Effekt-Regler) → beide wirken jetzt, Regler-Änderung sofort (`Settings.changed`).
+- **Geheimnisse** (`data/secrets/home.json`, `Secrets`): Truhe auf dem Dachboden, Maus im dunklen Keller, erste
+  Ernte, erstes Mal kochen, Schaumbad, Kamin im Dunkeln, Nachtlicht im Dunkeln → großer Sticker springt auf, Sticker-
+  Reihe im Album (noch nicht gefundene als graue Umrisse, kein Text).
+- **Speicherstand v4** (`secrets`) + Migration v3→v4 + Fixture `world_v3.json` (R-11).
+- Tests: pytest `test_music` (3), GUT `test_music_ambience` (2), `test_secrets` (6). check.sh ✅.
 ### 2026-09-27 · Phase 07 · T05 Licht & Türen, T06 26 Rezepte 🔨
 - **Licht-Schalter** (`home_light_switch`, Wand) in jedem Innenraum: aus → Raum dunkel (Nacht-Stimmung,
   `CanvasModulate`), eingeschaltete Lampen/Wandleuchten/Nachtlicht/Kamin/Feuer/Lichterketten/TV leuchten als echte

@@ -70,3 +70,4 @@ static func _cook(host: ItemNode, inner: ItemNode, r: Dictionary) -> void:
 	out.slot_index = slot
 	host.relayout_contents()
 	AudioBus.play_sfx(String(r.get("sfx", "ui_confirm")))
+	Secrets.event("cook")                                # P07-T10: zum ersten Mal gekocht = Sticker

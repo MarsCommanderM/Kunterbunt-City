@@ -125,6 +125,7 @@ static func harvest(bed: ItemNode) -> Array:
 		bed.remove_meta("grow_t")
 	ItemStates.set_state(bed, "empty", true)
 	AudioBus.play_sfx("harvest")
+	Secrets.event("harvest")                             # P07-T10: erste Ernte = Sticker
 	return out
 
 

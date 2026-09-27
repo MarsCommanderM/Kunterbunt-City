@@ -31,7 +31,7 @@ func test_v2_wandert_nach_v3_ohne_verlust() -> void:
 	var old: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FIXTURE))
 	_write_raw(1, old)                                  # roh schreiben – so liegt ein alter Stand auf dem Gerät
 	var w: Dictionary = SaveSystem.load_world(1)
-	assert_eq(int(w["save_version"]), 3)
+	assert_eq(int(w["save_version"]), SaveSystem.SAVE_VERSION, "v2 wandert bis zur aktuellen Version")
 	assert_eq(w["decor"], {}, "Einrichtung startet leer (= Standard je Raum)")
 	assert_eq(w["last_room"], {})
 	var kitchen: Array = Dictionary(Dictionary(w["areas"])["home"])["kitchen"]

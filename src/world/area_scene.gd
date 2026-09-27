@@ -37,6 +37,7 @@ func _ready() -> void:
 		push_error("AreaScene: unbekannter Bereich '%s'" % String(area_id))
 		return
 	_build_world()
+	AudioBus.play_music(String(area_file.get("music", "")))
 	_enter_room(_start_room(), true)
 	_build_hud()
 	load_ms = (Time.get_ticks_usec() - _t0) / 1000.0
@@ -106,6 +107,7 @@ func _enter_room(rid: String, first: bool) -> void:
 	Game.set_last_room(area_id, room.room_id)
 	_spawn(spawn)
 	Garden.catch_up(room)                                # während der Abwesenheit gewachsen/verwelkt
+	AudioBus.play_ambience(String(room.data.get("ambience", "")))
 	RoomLight.apply(room, light_mod)
 
 
@@ -245,7 +247,40 @@ func _build_hud() -> void:
 	hud.rooms.connect(func() -> void: RoomPicker.open(ui, self))
 	hud.decor.connect(func() -> void: DecorPanel.open(ui, self))
 	hud.show_room_buttons(room_ids().size() > 1, room != null and room.can_decorate())
+	Game.secret_found.connect(_on_secret_found)
 	camera.set_visible_height(room.camera_cfg.get("default_h_cm", 300.0))
+
+
+## P07-T10: Geheimnis gefunden → großer Sticker mit Stern springt kurz auf (kein Text), Ton, dann ins Album.
+func _on_secret_found(id: String) -> void:
+	if ui == null or not is_inside_tree():
+		return
+	var def: ItemDefinition = Secrets.sticker_def(Secrets.by_id(id))
+	var card := Ui.card(Ui.RADIUS, Ui.CARD)
+	card.name = "SecretToast"
+	card.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	card.set_anchors_preset(Control.PRESET_CENTER_TOP)
+	card.offset_left = -150
+	card.offset_right = 150
+	card.offset_top = 150
+	card.offset_bottom = 450
+	ui.add_child(card)
+	var star := Ui.icon("star", 90)
+	star.position = Vector2(-20, -30)
+	card.add_child(star)
+	if def != null:
+		var pic: TextureRect = ItemThumb.make(def, 240)
+		pic.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 30)
+		pic.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		card.add_child(pic)
+	AudioBus.play_sfx("harvest")
+	card.pivot_offset = Vector2(150, 150)
+	card.scale = Vector2(0.4, 0.4)
+	var tw: Tween = card.create_tween()
+	tw.tween_property(card, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_interval(2.2)
+	tw.tween_property(card, "modulate:a", 0.0, 0.4)
+	tw.tween_callback(card.queue_free)
 
 
 func _on_photo() -> void:
@@ -302,6 +337,7 @@ func _on_item_tapped(it: ItemNode) -> void:
 func _on_world_changed() -> void:
 	if room != null:
 		RoomLight.apply(room, light_mod)
+		Secrets.check(String(area_id), room)
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
 	Game.mark_dirty(area_id, room.room_id)
 
@@ -326,6 +362,7 @@ func _on_item_dropped(item: ItemNode, _target) -> void:
 func leave() -> void:
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
 	Game.save_now()
+	AudioBus.play_ambience("")
 	left_area.emit()
 	SceneRouter.goto_map()
 

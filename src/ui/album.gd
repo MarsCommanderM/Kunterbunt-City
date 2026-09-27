@@ -34,6 +34,7 @@ func _ready() -> void:
 	Ui.wire(x, func() -> void: queue_free(), "ui_back")
 	head.add_child(x)
 	v.add_child(head)
+	v.add_child(_stickers())
 	var files: Array = SaveSystem.album_photos()
 	if files.is_empty():
 		v.add_child(Ui.label("Noch kein Foto – drück im Bereich auf 📷", Ui.FONT_LABEL,
@@ -47,6 +48,34 @@ func _ready() -> void:
 	s.add_child(g)
 	for f: Variant in files:
 		g.add_child(_tile(String(f)))
+
+
+## P07-T10: Sticker-Reihe – gefundene Geheimnisse bunt, noch nicht gefundene als graue Umrisse (kein Text).
+func _stickers() -> Control:
+	var row := Ui.hbox(12)
+	row.name = "Stickers"
+	row.add_child(Ui.icon("star", 72))
+	for sv: Variant in Secrets.all():
+		var s: Dictionary = sv
+		var def: ItemDefinition = Secrets.sticker_def(s)
+		var box := Panel.new()
+		box.custom_minimum_size = Vector2(118, 118)
+		box.name = "Sticker_" + String(s["id"])
+		var sb := StyleBoxFlat.new()
+		var found: bool = Game.has_secret(String(s["id"]))
+		sb.bg_color = Color(1, 0.97, 0.88) if found else Color(0.93, 0.92, 0.95)
+		sb.set_corner_radius_all(59)
+		box.add_theme_stylebox_override("panel", sb)
+		box.set_meta("found", found)
+		if def != null:
+			var pic: TextureRect = ItemThumb.make(def, 90)
+			pic.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 14)
+			pic.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			if not found:
+				pic.modulate = Color(0.2, 0.18, 0.28, 0.35)     # Umriss: da ist noch etwas zu finden
+			box.add_child(pic)
+		row.add_child(box)
+	return row
 
 
 func _tile(path: String) -> Control:

@@ -1,0 +1,118 @@
+{
+ "save_version": 3,
+ "_doc": "Speicherstand Version 3 (P07-T04): mit decor + last_room, aber ohne gefundene Geheimnisse.",
+ "slot": 0,
+ "characters": [
+  {
+   "id": "c_1",
+   "template": "kid",
+   "name": "Mia",
+   "voice": 3,
+   "skin": "#f7c9a2",
+   "parts": {
+    "top": "shirt",
+    "bottom": "trousers",
+    "shoes": "sneaker",
+    "hair": "pigtails",
+    "eyes": "round",
+    "mouth": "smile",
+    "accessory": "none",
+    "aid": "none"
+   },
+   "colors": {
+    "top": [
+     "#ffd166",
+     "#ffffff"
+    ],
+    "bottom": [
+     "#4f7fc0"
+    ],
+    "shoes": [
+     "#c94f3d"
+    ],
+    "hair": [
+     "#6b3f22"
+    ]
+   },
+   "outfits": [
+    {},
+    {},
+    {},
+    {},
+    {}
+   ],
+   "outfit": -1,
+   "folder": "Familie",
+   "created_ms": 1
+  },
+  {
+   "id": "c_2",
+   "template": "adult",
+   "name": "",
+   "voice": 1,
+   "skin": "",
+   "parts": {
+    "top": "shirt"
+   },
+   "colors": {},
+   "outfits": [
+    {},
+    {},
+    {},
+    {},
+    {}
+   ],
+   "outfit": -1,
+   "folder": "Freunde",
+   "created_ms": 2
+  }
+ ],
+ "pets": [
+  {
+   "id": "p_1",
+   "species": "pet_cat",
+   "name": "Mauz",
+   "fur": "#b9b3c4",
+   "fur2": "#f6f0f6",
+   "pattern": "stripes",
+   "collar": "#e2574c",
+   "trait": "sleepy",
+   "created_ms": 3
+  }
+ ],
+ "active_id": "",
+ "updated_ms": 1000,
+ "backpack": [
+  {
+   "id": "food_apple"
+  }
+ ],
+ "album": [],
+ "active_pets": [],
+ "areas": {
+  "home": {
+   "kitchen": [
+    {
+     "id": "home_chair",
+     "x": 300.0,
+     "y": 30.0
+    },
+    {
+     "id": "food_apple",
+     "x": 350.0,
+     "y": 20.0
+    }
+   ]
+  }
+ },
+ "decor": {
+  "home": {
+   "living": {
+    "floor": "carpet"
+   }
+  }
+ },
+ "last_room": {
+  "home": "living"
+ }
+}

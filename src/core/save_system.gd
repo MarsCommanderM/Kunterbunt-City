@@ -3,7 +3,7 @@ extends Node
 ## (Tech-Spec §3.5, P05-T07/T08). Dateien unter user://, versioniert, MIT Migrationen.
 ## Alles JSON, kein Netz (Regel T12). Drei Welt-Slots.
 
-const SAVE_VERSION: int = 3
+const SAVE_VERSION: int = 4
 const SLOTS: int = 3
 const WORLD_PATH: String = "user://world_%d.json"
 const LEGACY_CHARACTERS: String = "user://characters.json"
@@ -17,6 +17,7 @@ static var _migrations: Dictionary = {}
 static func _static_init() -> void:
 	_migrations[1] = _migrate_v1_to_v2
 	_migrations[2] = _migrate_v2_to_v3
+	_migrations[3] = _migrate_v3_to_v4
 
 
 ## Version 1 (Phase 04) kannte nur Figuren und Tiere. Version 2 ergänzt Bereiche, Rucksack,
@@ -43,6 +44,15 @@ static func _migrate_v2_to_v3(old: Dictionary) -> Dictionary:
 	d["save_version"] = 3
 	Log.info("SaveSystem: Speicherstand v2 → v3 gewandert (%d Bereiche mit Zustand)" % [
 		Dictionary(d.get("areas", {})).size()])
+	return d
+
+
+## Version 4 (P07-T10): gefundene Geheimnisse (Sticker im Album). Alles andere bleibt.
+static func _migrate_v3_to_v4(old: Dictionary) -> Dictionary:
+	var d: Dictionary = old.duplicate(true)
+	d["secrets"] = Array(d.get("secrets", [])).duplicate(true)
+	d["save_version"] = 4
+	Log.info("SaveSystem: Speicherstand v3 → v4 gewandert")
 	return d
 
 
@@ -80,7 +90,7 @@ static func empty_world(slot: int = 0) -> Dictionary:
 	return {
 		"save_version": SAVE_VERSION, "slot": slot,
 		"characters": [], "pets": [], "active_id": "", "active_pets": [],
-		"backpack": [], "album": [], "areas": {}, "decor": {}, "last_room": {}, "updated_ms": 0,
+		"backpack": [], "album": [], "areas": {}, "decor": {}, "last_room": {}, "secrets": [], "updated_ms": 0,
 	}
 
 
