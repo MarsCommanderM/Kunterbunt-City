@@ -170,7 +170,7 @@ func _area_button(id: StringName, on_map: bool = true) -> Button:
 		Ui.style_button(b, col.lightened(0.35))
 	Ui.wire(b, func() -> void: _tap_area(id), Areas.sound(id) if ready else "deny")
 	if not ready:
-		var badge := Ui.icon("wrench", 64.0, Ui.ACCENT_DARK)
+		var badge := Ui.icon("wrench", 64.0)
 		badge.name = "Baustelle"
 		badge.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		badge.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
@@ -230,7 +230,7 @@ func with_loading(work: Callable) -> void:
 	v.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	v.alignment = BoxContainer.ALIGNMENT_CENTER
 	_busy.add_child(v)
-	var sun := Ui.icon("sun", 180.0, Ui.ACCENT)
+	var sun := Ui.icon("sun", 180.0)
 	v.add_child(sun)
 	v.add_child(Ui.label("Laden …", Ui.FONT_TITLE, Ui.INK_SOFT))
 	if not Settings.reduced_motion:

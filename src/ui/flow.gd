@@ -26,7 +26,7 @@ static func _splash() -> Control:
 	v.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	v.alignment = BoxContainer.ALIGNMENT_CENTER
 	c.add_child(v)
-	var s := Ui.icon("sun", 220.0, Ui.ACCENT)
+	var s := Ui.icon("sun", 220.0)
 	v.add_child(s)
 	v.add_child(Ui.label("Kunterbunt City", 82))
 	v.add_child(Ui.label("Tippen zum Überspringen", Ui.FONT_SMALL, Ui.INK_SOFT))

@@ -211,15 +211,15 @@ Deterministisch: `PetNode.autonomous = false` (Tiere nur per `tick()`), `Charact
    Figur bleibt 125 cm (Kind). `tests/test_editor_ui.gd::test_kein_teil_aendert_die_koerpergroesse`.
 2. **Ohne Figur kein Bereich.** `Flow.can_play()` = „mindestens eine vollständige Figur"
    (Schablone + Hautton). Der ✓-Knopf bleibt sonst grau.
-3. **Ohne Lesen bedienbar.** Jede Aktion hat ein Symbol (63 Icons aus `tools/make_ui_icons.py`);
+3. **Ohne Lesen bedienbar.** Jede Aktion hat ein Symbol (68 Icons aus `tools/make_icons.py`, Stil C);
    Text ist nur Zusatz. Freie Eingabe → hinter dem Eltern-Tor.
 4. **Umfärben ohne zweite Textur:** `Farbe = R·zone1 + G·zone2 + B·zone3` (`zone_tint.gdshader`).
    Materialien werden wiederverwendet (kein Müll pro Klick).
 5. **Symbole statt Emoji:** Emoji-Fonts sind auf vielen Geräten nicht da. Alle UI-Symbole und
    alle Haustier-Sprites entstehen hier (PIL) und sind damit kostenlos und überall gleich.
 
-**Symbole/Icons:** `assets/ui/icons/*.png` (128 px, Alpha, Farbe per `modulate`) aus
-`tools/make_ui_icons.py` · **Schrift:** Baloo 2 (Anzeige) + Nunito (Text), beide OFL.
+**Symbole/Icons:** `assets/ui/icons/*.png` (256 px, Alpha, fertig eingefärbt – Vektor + Farbzonen + braune
+Tinte wie Items/Figuren) aus `tools/make_icons.py` (`tools/icons/`) · **Schrift:** Baloo 2 (Anzeige) + Nunito (Text), beide OFL.
 
 ## §5 Menü, Bereiche & Speichern (Phase 05)
 | Datei | Aufgabe |

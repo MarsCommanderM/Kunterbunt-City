@@ -66,7 +66,8 @@ static func tex(name: String) -> Texture2D:
 	return _icons[name]
 
 
-static func icon(name: String, size: float = 64.0, tint: Color = INK) -> TextureRect:
+## Symbole sind fertig eingefärbt (P04b-T08, Stil C) – `tint` nur zum Abdunkeln/Ausgrauen, Standard weiß.
+static func icon(name: String, size: float = 64.0, tint: Color = Color.WHITE) -> TextureRect:
 	var r := TextureRect.new()
 	r.texture = tex(name)
 	r.custom_minimum_size = Vector2(size, size)

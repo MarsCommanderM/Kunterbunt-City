@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
-| Nächste Task | P04b-T08 Icons · T06 Editor · T07 Tiere |
-| Letzter grüner check.sh | 2026-09-27 (P04b T12) |
+| Nächste Task | P04b-T06 Editor · T07 Tiere → P07 Zuhause |
+| Letzter grüner check.sh | 2026-09-27 (P04b T08) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T05, T09–T12 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T05, T08–T12 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,17 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T08 Symbole im Stil C 🔨
+- `tools/make_icons.py` + `tools/icons/` (base, ui_set, editor_set, area_set): **68 Symbole** als Vektor mit
+  Farbzonen und brauner Tinten-Kontur – derselbe Stil wie Figuren und Items. Jede Ebene wird wie im Shader
+  eingefärbt („gebacken“), 256×256 px, zentriert. Ersetzt `make_ui_icons.py` (einfarbig violett + `modulate`).
+- `Ui.icon()` färbt nicht mehr ein (Standard weiß); alle Aufrufer ohne Farbe.
+- Neu: `wrench` (Baustellen-Zeichen auf der Stadtkarte – fehlte bisher ganz!), Bereiche Wald, Camping,
+  Friseur, Fahrradverleih.
+- Tests: pytest `test_icons` (alle benutzten Symbole vorhanden, farbig + braune Kontur, bit-gleich reproduzierbar).
+  check.sh ✅ – pytest 127/127 · GUT 256/256.
+- Gefunden: Tier-Gesichter lachten verkehrt herum (Mund-Bogen), Wald-Symbol zu einfarbig → Fliegenpilz.
+- Offen (Politur): Einstellungen – Welt-Auswahl rutscht unten aus der Karte.
 ### 2026-09-27 · Phase 04b · T12 Qualitäts-Durchgang Items + Liegen 🔨
 - Blick-Check aller Vorlagen, so eingefärbt wie im Spiel: `tools/items/review_sheet.py <out> [--scale] [--states]`
   (Shader-Formel in Python, ein Kontaktbogen je Gruppe).
