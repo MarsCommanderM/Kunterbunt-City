@@ -46,8 +46,8 @@ def compose(t: dict, parts: dict, look: dict, ppc: float = 8.0, pad_cm: float = 
         "skin": [skin, blush(skin)],
         "eyes": [hexcol(look.get("eye", "#4a3020")), (1, 1, 1), hair],
         "mouth": [hexcol("#b0424f"), hexcol("#ff8fa3")],
-        "hair": [hair, hexcol(look.get("hair2", "#ff6f91"))],
-        "top": [hexcol(x) for x in look["top"]],
+        "hair": [hair, tuple(min(1.0, h * 0.55 + 0.45 * 0.75) for h in hair), hexcol(look.get("hair2", "#ff6f91"))],
+        "top": [hexcol(x) for x in look["top"][:2]] + [skin],
         "bottom": [hexcol(x) for x in look["bottom"]] + [skin],
         "shoes": [hexcol(x) for x in look["shoes"]] + [skin],
     }
@@ -70,12 +70,18 @@ def compose(t: dict, parts: dict, look: dict, ppc: float = 8.0, pad_cm: float = 
         hy = sh["y"] - math.cos(rot) * t["arm"]["len"]
         put("hand", "skin", (hx, hy))
 
+    # weicher Bodenschatten
+    from PIL import ImageDraw
+    sh_img = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    rw = t["torso"]["w_bot"] * 0.95 * ppc
+    ImageDraw.Draw(sh_img).ellipse([org[0] - rw, org[1] - rw * 0.16, org[0] + rw, org[1] + rw * 0.16], fill=(60, 40, 60, 60))
+    img.alpha_composite(sh_img)
+    put("hair_back_" + look.get("hair_style", "short"), "hair", (0, t["hair_top"]))
     arm(-1)
     put(look.get("bottom_part", "bottom_trousers"), "bottom", (0, 0))
     put(look.get("shoes_part", "shoes_sneaker"), "shoes", (0, 0))
     put(look.get("top_part", "top_tee"), "top", (0, t["torso"]["bot"]))
     cy = t["head"]["cy"]
-    put("hair_back_" + look.get("hair_style", "short"), "hair", (0, t["hair_top"]))
     put("head", "skin", (0, cy))
     put("eyes_" + look.get("eyes", "dot"), "eyes", (0, cy))
     put("mouth_" + look.get("mouth", "smile"), "mouth", (0, cy))

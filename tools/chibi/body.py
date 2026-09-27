@@ -35,7 +35,7 @@ def head_outline(t: dict, grow: float = 0.0) -> list:
 def eye_pos(t: dict) -> tuple[float, float, float]:
     """Augen-Mittelpunkte (±x, y) und Augenradius (cm)."""
     hd = t["head"]
-    return hd["w"] * 0.2, hd["cy"] - hd["h"] * 0.06, hd["w"] * 0.055
+    return hd["w"] * 0.215, hd["cy"] - hd["h"] * 0.1, hd["w"] * 0.06
 
 
 # ------------------------------------------------------------------ Kopf
@@ -50,11 +50,14 @@ def draw_head(t: dict, ppc: float):
     head = head_outline(t)
     c.fill(head, zone=1)
     clip = c.mask(head)
-    # weicher Schatten unten (Kinn) – liegt nur im Kopf
-    c.fill(blob(0, hd["cy"] - hd["h"] * 0.55, hd["w"] * 0.62, hd["h"] * 0.22), zone=1, shade=0.93, clip=clip)
-    # Wangen
+    # Wangen (runde Tupfen) + Nase (kleines Dreieck, dunklere Haut)
     for sx in (-1, 1):
-        c.ellipse(sx * hd["w"] * 0.3, hd["cy"] - hd["h"] * 0.2, hd["w"] * 0.085, hd["h"] * 0.05, zone=2, clip=clip)
+        c.ellipse(sx * hd["w"] * 0.31, hd["cy"] - hd["h"] * 0.23, hd["w"] * 0.055, hd["h"] * 0.042, zone=2, clip=clip)
+    ny = hd["cy"] - hd["h"] * 0.19
+    nw = hd["w"] * 0.035
+    nose = path((0, ny + nw * 0.9), ((nw * 0.35, ny + nw * 0.9), (nw * 1.1, ny - nw * 0.2), (nw * 0.6, ny - nw * 0.55)),
+                ((-nw * 0.6, ny - nw * 0.55),), ((-nw * 1.1, ny - nw * 0.2), (-nw * 0.35, ny + nw * 0.9), (0, ny + nw * 0.9)))
+    c.fill(nose, zone=1, shade=0.72)
     # Ohr-Innenlinie
     for sx in (-1, 1):
         x = sx * (ex + hd["w"] * 0.02)
@@ -81,10 +84,10 @@ def _brows(c: ZCanvas, t: dict, mood: str = "calm"):
     x0, y0, r = eye_pos(t)
     for sx in (-1, 1):
         cx = sx * x0
-        by = y0 + r * 3.1
+        by = y0 + r * 2.6
         tilt = {"calm": 0.0, "sad": 0.9, "up": -0.3}[mood] * sx
-        c.line([(cx - hd["w"] * 0.06, by - r * 0.1 + tilt * r * 0.6), (cx, by + r * 0.35),
-                (cx + hd["w"] * 0.06, by - r * 0.1 - tilt * r * 0.6)], w_cm=hd["w"] * 0.022, zone=3)
+        c.line([(cx - hd["w"] * 0.045, by - r * 0.05 + tilt * r * 0.6), (cx, by + r * 0.3),
+                (cx + hd["w"] * 0.045, by - r * 0.05 - tilt * r * 0.6)], w_cm=hd["w"] * 0.016, zone=3)
 
 
 def draw_eyes(t: dict, style: str, ppc: float):
@@ -96,8 +99,9 @@ def draw_eyes(t: dict, style: str, ppc: float):
     for sx in (-1, 1):
         x = sx * x0
         if style in ("dot", "sad"):
-            c.ellipse(x, y0, r * 0.95, r * 1.2, zone=0)
-            c.ellipse(x + r * 0.3, y0 + r * 0.45, r * 0.3, r * 0.3, zone=2)
+            c.ellipse(x, y0, r * 0.92, r * 1.18, zone=0)
+            c.ellipse(x + r * 0.28, y0 + r * 0.42, r * 0.34, r * 0.34, zone=2)
+            c.ellipse(x - r * 0.3, y0 - r * 0.5, r * 0.14, r * 0.14, zone=2)
         elif style == "round":
             c.ellipse(x, y0, r * 1.2, r * 1.35, zone=0)
             c.ellipse(x, y0 - r * 0.1, r * 0.85, r * 1.0, zone=1)
@@ -125,8 +129,8 @@ def draw_eyes(t: dict, style: str, ppc: float):
                 c.ellipse(x, y0, r * 0.95, r * 1.2, zone=0)
                 c.ellipse(x + r * 0.3, y0 + r * 0.45, r * 0.3, r * 0.3, zone=2)
             else:
-                c.line([(x - r * 1.2, y0 + r * 0.2), (x, y0 - r * 0.2), (x + r * 1.2, y0 + r * 0.2)], w_cm=r * 0.45, zone=0)
-                c.line([(x - r * 1.1, y0 - r * 0.2), (x, y0 + r * 0.25)], w_cm=r * 0.4, zone=0)
+                c.line([(x - r * 1.1, y0 - r * 0.25), (x - r * 0.4, y0 + r * 0.45), (x + r * 0.4, y0 + r * 0.45),
+                        (x + r * 1.1, y0 - r * 0.25)], w_cm=r * 0.45, zone=0)
         elif style == "star":
             pts = []
             for i in range(10):
@@ -157,8 +161,7 @@ MOUTH_STYLES = ["smile", "grin", "oh", "tongue", "neutral", "happy", "laugh", "s
 def draw_mouth(t: dict, style: str, ppc: float):
     hd = t["head"]
     c = ZCanvas(head_box(t, 2), ppc, outline_cm=0)
-    draw_nose_into(c, t)
-    y = hd["cy"] - hd["h"] * 0.235
+    y = hd["cy"] - hd["h"] * 0.285
     w = hd["w"] * 0.07
     lw = hd["w"] * 0.02
     if style in ("smile", "happy", "love"):

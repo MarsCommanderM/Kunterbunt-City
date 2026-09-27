@@ -7,6 +7,8 @@ Zonen: 1 = Hauptstoff · 2 = Zweitfarbe (Kragen, Bündchen, Träger) · 3 = je n
 """
 from __future__ import annotations
 
+import math
+
 from .body import DEEP, SHADE, draw_legs_skin_into, legs_box
 from .vec import ZCanvas, blob, path
 
@@ -43,9 +45,9 @@ def _side_shade(c: ZCanvas, t: dict, clip, zone: int = 1):
            zone=zone, shade=SHADE, clip=clip)
 
 
-TOP_STYLES = ["tee", "longsleeve", "tank", "hoodie", "sweater", "shirt", "jacket", "dress", "sundress", "overalls",
+TOP_STYLES = ["tee", "raglan", "tee_star", "longsleeve", "tank", "hoodie", "sweater", "shirt", "jacket", "dress", "sundress", "overalls",
               "polo", "raincoat"]
-SLEEVE_OF = {"tee": "short", "polo": "short", "tank": "none", "sundress": "none", "overalls": "short",
+SLEEVE_OF = {"raglan": "raglan", "tee_star": "short", "tee": "short", "polo": "short", "tank": "none", "sundress": "none", "overalls": "short",
              "longsleeve": "long", "hoodie": "long", "sweater": "long", "shirt": "long", "jacket": "long",
              "dress": "short", "raincoat": "long"}
 
@@ -78,6 +80,25 @@ def draw_top(t: dict, style: str, ppc: float):
     if style in ("tank", "sundress"):
         # Träger + Haut-Ausschnitt: Ausschnitt ist transparent (Haut vom Kopf/Hals verdeckt)
         c.fill(_neck(t, 0.32, 0.36), zone=3, clip=clip)
+    elif style in ("raglan", "tee_star"):
+        c.fill(_neck(t, 0.14, 0.3), zone=2, clip=clip)
+        c.fill(_neck(t, 0.09, 0.24), zone=3, clip=clip)
+        if style == "raglan":   # schräge Ärmelnaht bis zum Kragen in Zone 2
+            for sx in (-1, 1):
+                c.fill([(sx * to["w_top"] * 0.26, to["top"] + 2), (sx * 40, to["top"] + 2), (sx * 40, to["top"] - to["w_top"] * 0.62),
+                        (sx * to["w_top"] * 0.5, to["top"] - to["w_top"] * 0.62)], zone=2, clip=clip)
+        # Brustbild: Kreis (Zone 2) mit Stern (Zone 1)
+        py = to["top"] - (to["top"] - to["bot"]) * 0.45
+        pr = to["w_top"] * 0.17
+        c.ellipse(0, py, pr, pr, zone=2, clip=clip)
+        c.line(blob(0, py, pr, pr), 0.45, zone=0, closed=True, clip=clip)
+        star = []
+        for i in range(10):
+            a = math.pi / 2 + i * math.pi / 5
+            rr = pr * (0.75 if i % 2 == 0 else 0.32)
+            star.append((math.cos(a) * rr, py + math.sin(a) * rr))
+        c.fill(star, zone=1 if style == "tee_star" else 3)
+        c.line(star, 0.4, zone=0, closed=True)
     elif style == "tee" or style == "dress":
         c.fill(_neck(t, 0.14, 0.3), zone=2, clip=clip)
         c.fill(_neck(t, 0.09, 0.24), zone=3, clip=clip)
@@ -162,15 +183,17 @@ def draw_sleeve(t: dict, kind: str, ppc: float):
     if kind == "none":
         c.ellipse(0, 0, 0.01, 0.01, zone=1)
         return c.render_part((0, 0))
+    z = 2 if kind == "raglan" else 1
+    kind = "long" if kind == "raglan" else kind
     ln = L * (0.42 if kind == "short" else 0.93) - (0 if kind == "short" else t["hand_r"] * 0.6)
     ww = w * (0.68 if kind == "short" else 0.6)
     pts = path((-w * 0.62, w * 0.35), ((-w * 0.62, w * 1.05), (w * 0.62, w * 1.05), (w * 0.62, w * 0.35)),
                ((ww, -ln),), ((ww * 0.3, -ln - 0.8), (-ww * 0.3, -ln - 0.8), (-ww, -ln)))
-    c.fill(pts, zone=1)
+    c.fill(pts, zone=z)
     cl = c.mask(pts)
-    c.fill([(w * 0.1, w * 2), (w * 2, w * 2), (w * 2, -L - 4), (w * 0.1, -L - 4)], zone=1, shade=SHADE, clip=cl)
+    c.fill([(w * 0.1, w * 2), (w * 2, w * 2), (w * 2, -L - 4), (w * 0.1, -L - 4)], zone=z, shade=SHADE, clip=cl)
     if kind == "long":
-        c.fill([(-w, -ln + 3), (w, -ln + 3), (w, -ln - 2), (-w, -ln - 2)], zone=1, shade=0.93, clip=cl)
+        c.fill([(-w, -ln + 3), (w, -ln + 3), (w, -ln - 2), (-w, -ln - 2)], zone=z, shade=0.93, clip=cl)
     c.outline_under()
     return c.render_part((0, 0))
 
@@ -214,7 +237,7 @@ def draw_bottom(t: dict, style: str, ppc: float, sit: bool = False):
         c.fill([(-40, hip["y"] + 3.2), (40, hip["y"] + 3.2), (40, hip["y"] + 0.8), (-40, hip["y"] + 0.8)],
                zone=2 if style in ("jeans", "joggers") else 1, shade=0.92, clip=cl)
     elif style == "shorts":
-        knee = hip["y"] * 0.55
+        knee = hip["y"] * 0.5
         pts = _pants_pts(t, knee, flare=1.2)
         c.fill(pts, zone=1)
         cl = c.mask(pts)
@@ -278,7 +301,7 @@ def draw_bottom_sit(t: dict, style: str, ppc: float):
 
 
 # ------------------------------------------------------------------ Schuhe (Anker = Boden)
-SHOE_STYLES = ["sneaker", "boot", "sandal", "slipper", "rainboot", "ballet", "hightop", "barefoot"]
+SHOE_STYLES = ["sneaker_socks", "sneaker", "boot", "sandal", "slipper", "rainboot", "ballet", "hightop", "barefoot"]
 
 
 def draw_shoes(t: dict, style: str, ppc: float):
@@ -287,6 +310,14 @@ def draw_shoes(t: dict, style: str, ppc: float):
     for sx in (-1, 1):
         x = sx * hip["x"] + sx * 0.6
         w, h = sh["w"] / 2, sh["h"]
+        if style == "sneaker_socks":
+            up = t["leg"]["shin"] * 0.55
+            sock = path((x - w * 0.5, up), ((x - w * 0.52, h * 0.5),), ((x + w * 0.52, h * 0.5),), ((x + w * 0.5, up),))
+            c.fill(sock, zone=2)
+            sc = c.mask(sock)
+            for k in (0.78, 0.6):
+                c.fill([(x - w, up * k + 0.9), (x + w, up * k + 0.9), (x + w, up * k - 0.9), (x - w, up * k - 0.9)], zone=1, clip=sc)
+            c.fill([(x + sx * w * 0.05, up), (x + sx * w, up), (x + sx * w, 0), (x + sx * w * 0.05, 0)], zone=2, shade=SHADE, clip=sc)
         if style == "barefoot":
             c.ellipse(x, h * 0.35, w * 0.8, h * 0.45, zone=3)
             continue
@@ -305,8 +336,8 @@ def draw_shoes(t: dict, style: str, ppc: float):
         c.fill(body, zone=1)
         cl = c.mask(body)
         c.fill([(x - w * 2, h * 0.28), (x + w * 2, h * 0.28), (x + w * 2, -1), (x - w * 2, -1)],
-               zone=2 if style in ("sneaker", "hightop", "rainboot") else 1, shade=1.0 if style != "boot" else 0.8, clip=cl)
-        if style in ("sneaker", "hightop"):
+               zone=2 if style in ("sneaker", "sneaker_socks", "hightop", "rainboot") else 1, shade=1.0 if style != "boot" else 0.8, clip=cl)
+        if style in ("sneaker", "sneaker_socks", "hightop"):
             c.line([(x - w * 0.35, h * 0.8), (x + w * 0.2, h * 0.9)], 0.45, zone=2, clip=cl)
             c.line([(x - w * 0.3, h * 0.62), (x + w * 0.25, h * 0.72)], 0.45, zone=2, clip=cl)
         if style == "ballet":

@@ -84,42 +84,98 @@ class ZCanvas:
     def p(self, x: float, y: float) -> Pt:
         return (x - self.x0) * self.s, (self.h_cm - (y - self.y0)) * self.s
 
-    def _poly_mask(self, pts: Sequence[Pt]) -> np.ndarray:
-        m = Image.new("L", self.size, 0)
-        ImageDraw.Draw(m).polygon([self.p(*q) for q in pts], fill=255)
-        return np.asarray(m, np.float32) / 255.0
+    # Masken sind Ausschnitte (Maske, y0, x0) – gerechnet wird nur im Bereich der Form (schnell).
+    def _bbox(self, q, pad: float):
+        xs = [a[0] for a in q]
+        ys = [a[1] for a in q]
+        x0 = max(0, int(min(xs) - pad) - 1)
+        y0 = max(0, int(min(ys) - pad) - 1)
+        x1 = min(self.size[0], int(max(xs) + pad) + 2)
+        y1 = min(self.size[1], int(max(ys) + pad) + 2)
+        return x0, y0, max(x0 + 1, x1), max(y0 + 1, y1)
 
-    def _stroke_mask(self, pts: Sequence[Pt], w_cm: float, closed: bool = False) -> np.ndarray:
-        m = Image.new("L", self.size, 0)
-        d = ImageDraw.Draw(m)
+    def _poly_mask(self, pts: Sequence[Pt]):
+        q = [self.p(*a) for a in pts]
+        x0, y0, x1, y1 = self._bbox(q, 1)
+        m = Image.new("L", (x1 - x0, y1 - y0), 0)
+        ImageDraw.Draw(m).polygon([(x - x0, y - y0) for x, y in q], fill=255)
+        return np.asarray(m, np.float32) / 255.0, y0, x0
+
+    def _stroke_mask(self, pts: Sequence[Pt], w_cm: float, closed: bool = False):
         q = [self.p(*a) for a in pts] + ([self.p(*pts[0])] if closed else [])
         w = max(1, round(w_cm * self.s))
-        d.line(q, fill=255, width=w, joint="curve")
+        x0, y0, x1, y1 = self._bbox(q, w)
+        m = Image.new("L", (x1 - x0, y1 - y0), 0)
+        d = ImageDraw.Draw(m)
+        ql = [(x - x0, y - y0) for x, y in q]
+        d.line(ql, fill=255, width=w, joint="curve")
         r = w / 2
-        for x, y in (q[0], q[-1]):
+        for x, y in (ql[0], ql[-1]):
             d.ellipse([x - r, y - r, x + r, y + r], fill=255)
-        return np.asarray(m, np.float32) / 255.0
+        return np.asarray(m, np.float32) / 255.0, y0, x0
 
     # --- Malen (Maler-Reihenfolge: später liegt oben)
-    def _put(self, mask: np.ndarray, w: Sequence[float], clip: np.ndarray | None = None, cover: bool = True):
+    def _put(self, mk, w: Sequence[float], clip=None, alpha: float = 1.0):
+        m, y0, x0 = mk
+        h, wd = m.shape
+        sl = (slice(y0, y0 + h), slice(x0, x0 + wd))
         if clip is not None:
-            mask = mask * clip
+            cm, cy0, cx0 = clip
+            full = np.zeros((h, wd), np.float32)
+            # Überlappung von Maske und Clip-Ausschnitt
+            ya, yb = max(y0, cy0), min(y0 + h, cy0 + cm.shape[0])
+            xa, xb = max(x0, cx0), min(x0 + wd, cx0 + cm.shape[1])
+            if ya < yb and xa < xb:
+                full[ya - y0:yb - y0, xa - x0:xb - x0] = cm[ya - cy0:yb - cy0, xa - cx0:xb - cx0]
+            m = m * full
         col = np.asarray(w, np.float32)
-        self.W = self.W * (1 - mask[..., None]) + col * mask[..., None]
-        if cover:
-            self.A = np.maximum(self.A, mask)
+        if alpha < 1.0:
+            # halbdurchsichtige Tinte (Schatten): nur über bereits Gemaltem abdunkeln
+            k = (m * alpha)[..., None]
+            self.W[sl] = self.W[sl] * (1 - k) + col * k
+            return
+        self.W[sl] = self.W[sl] * (1 - m[..., None]) + col * m[..., None]
+        self.A[sl] = np.maximum(self.A[sl], m)
 
-    def fill(self, pts: Sequence[Pt], zone: int = 1, shade: float = 1.0, clip: np.ndarray | None = None):
-        """Fläche in Zone 1…3 (0 = Tinte) mit Helligkeit shade (1 = voll, <1 = Richtung Tinte)."""
-        self._put(self._poly_mask(pts), self._w(zone, shade), clip)
+    def fill(self, pts: Sequence[Pt], zone: int = 1, shade: float = 1.0, clip=None, alpha: float = 1.0):
+        """Fläche in Zone 1…3 (0 = Tinte) mit Helligkeit shade (1 = voll, <1 = Richtung Tinte).
+        alpha < 1: Schatten/Glanz auf vorhandener Farbe (ändert die Deckung nicht)."""
+        self._put(self._poly_mask(pts), self._w(zone, shade), clip, alpha)
 
-    def ellipse(self, cx, cy, rx, ry, zone: int = 1, shade: float = 1.0, clip=None):
-        self.fill(blob(cx, cy, rx, ry), zone, shade, clip)
+    def ellipse(self, cx, cy, rx, ry, zone: int = 1, shade: float = 1.0, clip=None, alpha: float = 1.0):
+        self.fill(blob(cx, cy, rx, ry), zone, shade, clip, alpha)
 
-    def line(self, pts: Sequence[Pt], w_cm: float, zone: int = 0, shade: float = 1.0, closed=False, clip=None):
-        self._put(self._stroke_mask(pts, w_cm, closed), self._w(zone, shade), clip)
+    def line(self, pts: Sequence[Pt], w_cm: float, zone: int = 0, shade: float = 1.0, closed=False, clip=None,
+             alpha: float = 1.0):
+        self._put(self._stroke_mask(pts, w_cm, closed), self._w(zone, shade), clip, alpha)
 
-    def mask(self, pts: Sequence[Pt]) -> np.ndarray:
+    def dashed(self, pts: Sequence[Pt], w_cm: float, dash_cm: float, zone: int = 0, shade: float = 1.0, clip=None):
+        """Gestrichelte Linie (Naht-/Stich-Optik in Haaren und Stoff)."""
+        acc, on, seg = 0.0, True, [pts[0]]
+        for a, b in zip(pts, pts[1:]):
+            d = math.dist(a, b)
+            t = 0.0
+            while t < d:
+                step = min(dash_cm - acc, d - t)
+                t += step
+                acc += step
+                p = (a[0] + (b[0] - a[0]) * t / d, a[1] + (b[1] - a[1]) * t / d)
+                seg.append(p)
+                if acc >= dash_cm - 1e-6:
+                    if on and len(seg) > 1:
+                        self.line(seg, w_cm, zone, shade, clip=clip)
+                    on, acc, seg = not on, 0.0, [p]
+        if on and len(seg) > 1:
+            self.line(seg, w_cm, zone, shade, clip=clip)
+
+    def erase(self, pts: Sequence[Pt], soft: float = 1.0):
+        """Form ausschneiden (Deckung weg) – z. B. das Gesichtsfenster aus einer Haarkappe."""
+        m, y0, x0 = self._poly_mask(pts)
+        h, wd = m.shape
+        sl = (slice(y0, y0 + h), slice(x0, x0 + wd))
+        self.A[sl] = self.A[sl] * (1 - m * soft)
+
+    def mask(self, pts: Sequence[Pt]):
         """Maske einer Form – als `clip` für Muster und Schatten innerhalb einer Fläche."""
         return self._poly_mask(pts)
 
