@@ -39,6 +39,9 @@ static func set_state(it: ItemNode, s: String, silent: bool = false) -> void:
 
 
 static func next_state(it: ItemNode) -> void:
+	if Garden.handles_tap(it):                             # P07-T07: Beete wachsen, statt beim Tippen umzuschalten
+		Garden.on_tap(it)
+		return
 	var i: int = it.def.states.find(it.state)
 	set_state(it, String(it.def.states[(i + 1) % it.def.states.size()]))
 

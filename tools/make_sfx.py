@@ -199,6 +199,36 @@ def shutter():
                            np.zeros(int(SR * 0.02)),
                            noise(0.09, 0.6)[:int(SR * 0.09)] * env(int(SR * 0.09), 0.001, 70)])
 
+def water_pour():
+    """Gießkanne: plätscherndes Rauschen mit kleinen Tropfen."""
+    d = 0.7
+    n = int(SR * d)
+    base = noise(d, 0.12)[:n] * np.minimum(1.0, np.linspace(0, 6, n)) * np.exp(-np.linspace(0, 2.5, n))
+    drops = np.zeros(n)
+    for k in range(9):
+        i = int(rng.uniform(0.05, 0.6) * SR)
+        m = min(n - i, int(SR * 0.05))
+        f = rng.uniform(900, 1600)
+        drops[i:i + m] += np.sin(2 * np.pi * np.cumsum(np.linspace(f, f * 1.6, m)) / SR) * env(m, 0.001, 70) * 0.35
+    return base + drops
+
+
+def grow():
+    """Pflanze wächst eine Stufe: aufsteigendes, weiches Glitzern."""
+    parts = []
+    for k, f in enumerate((660, 880, 1175)):
+        m = int(SR * 0.11)
+        parts.append(np.sin(2 * np.pi * f * t(0.11)) * env(m, 0.004, 18) * (0.8 + 0.1 * k))
+    return np.concatenate(parts)
+
+
+def harvest():
+    """Ernten: „Plopp" + fröhlicher Zweiklang."""
+    pop = np.sin(2 * np.pi * np.cumsum(np.linspace(300, 900, int(SR * 0.06))) / SR) * env(int(SR * 0.06), 0.002, 40)
+    ding = modes([1046, 1568], 0.35, [9, 11], [1, 0.6])
+    return np.concatenate([pop, np.zeros(int(SR * 0.03)), ding])
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -232,6 +262,10 @@ SOUNDS = {
     "dice_roll": lambda: norm(dice_roll(), 0.5),
     "shutter": lambda: norm(shutter(), 0.5),
     "deny": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(520, 300, int(SR * 0.16))) / SR) * env(int(SR * 0.16), 0.005, 14), 0.4),
+    # P07-T07: Garten (hinten angehängt → alle bisherigen Sounds bleiben bit-gleich)
+    "water_pour": lambda: norm(water_pour(), 0.45),
+    "grow": lambda: norm(grow(), 0.4),
+    "harvest": lambda: norm(harvest(), 0.5),
 }
 
 

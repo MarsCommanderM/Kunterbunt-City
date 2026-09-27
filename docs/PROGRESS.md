@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07-T07 großer Garten: Säen → Gießen → Wachsen → Ernten, Blumen welken ohne Wasser |
-| Letzter grüner check.sh | 2026-09-27 (P07-T01/T04 Räume + Deko) |
+| Nächste Task | P07-T05 Einbauten mit Wasser/Licht (Badewanne, Dusche, Toilette, Licht-Schalter), T09 Audio, T10 Geheimnisse |
+| Letzter grüner check.sh | 2026-09-27 (P07-T07 Garten) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -20,7 +20,7 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | 🔨 T01, T03, T04 fertig | Log 2026-09-27 |
+| 07 Slice Zuhause | 🔨 T01, T03, T04, T07 fertig | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
@@ -41,6 +41,8 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 |---|---|---|---|
 | 2026-09-26 | 00 | check.sh | Maßstab ✅ · pytest 5/5 ✅ · GUT 7/7 ✅ |
 | 2026-09-27 | 07 | check.sh (Inventar) | Maßstab ✅ (940 Einträge, 2513 Items) · pytest **128/128** ✅ · GUT **265/265** ✅ (24467 Asserts) |
+| 2026-09-27 | 07 | check.sh (Garten) | Maßstab ✅ · pytest 128/128 ✅ · GUT **279/279** ✅ |
+| 2026-09-27 | 07 | Garten-Kreislauf im Spiel (`p07_rooms_runner.gd`) | gesät ✓ · gegossen ✓ · sprout → grown → ripe · Ernte **3 Möhren** · Garten-Start-Anlage 46 Dinge |
 | 2026-09-27 | 07 | check.sh (Räume + Deko) | Maßstab ✅ · pytest 128/128 ✅ · GUT **274/274** ✅ (24518 Asserts) |
 | 2026-09-27 | 07 | Räume (`p07_rooms_runner.gd`) | 11 Räume · Start Wohnzimmer (leer) · Kinderzimmer mit 12 Dingen + Sternentapete + Teppichboden · Garten · Bereich betreten 89 ms |
 | 2026-09-27 | 07 | Pflicht-Inventar `data/inventory.json` | **427 Einträge · 0 fehlen** · Katalog 790 Vorlagen / **2436 Items** in 42 Gruppen |
@@ -74,6 +76,25 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 07 · T07 Großer Garten: säen, gießen, wachsen, ernten 🔨
+- `src/items/garden.gd` (`Garden`): Samentüte aufs leere Beet → Keimling (Tüte verbraucht); Gießkanne aufs Beet
+  → nass (dunklere Erde, 150 s); nasses Beet wächst alle 45 s eine Stufe (sprout → grown → ripe), trockenes wartet;
+  reif antippen → Ernte fällt davor (Möhren 3, Tomaten 4, Salat 2, Erdbeeren 5, Kürbis 1, Sonnenblume im Topf);
+  Blumenbeete welken nach 4 min ohne Wasser, Gießen macht sie frisch; Rasensprenger (an) gießt 2,6 m im Umkreis.
+  **Echte Uhrzeit** in `water_t`/`grow_t` im Raumzustand → der Garten wächst weiter, während das Kind im Haus ist.
+- Garten (24 m, Himmel jetzt 5,6 m hoch → Zoom bis 6 m ohne Rand) mit **Start-Anlage** (Wunsch 👤): Nutzgarten
+  (Hochbeete, Erdbeerbeet, Gewächshaus, Kompost, Regentonne, Samen auf dem Tisch, Gießkanne), Blumengarten
+  (Beete, Rankgitter, Insektenhotel, Vogeltränke, Bank), Sitzen/Grillen (Pavillon, Tisch, Stühle, Gasgrill,
+  Feuerschale), Pool-Ecke (Pool, Schirm, Liege, Schwimmring), Teich mit Seerosen, Hängematte, Baumhaus.
+  Alles frei beweglich. Innenräume bleiben leer.
+- 3 neue Sounds (Gießen, Wachsen, Ernten) – hinten angehängt, alle bisherigen bleiben bit-gleich.
+- Fehler gefunden:
+  - Offene Kochgeräte (Grill, Topf, Toaster) bekamen die helle Schrank-Innenfläche über den ganzen Körper
+    (Gasgrill war weiß statt schwarz) → keine Innenfläche bei `open_top`.
+  - **Absturz beim Beenden** (`corrupted size vs. prev_size`, Exit 134, obwohl alle Tests grün): eine Lambda in
+    einer statischen Variable (`Garden.clock`) überlebte ihr Skript → jetzt `Garden.fixed_now` (Zahl).
+  - Beweis-Skript: GDScript-Lambdas kopieren lokale Variablen → Uhr stand still (Tests waren korrekt).
+- Tests: GUT `test_garden` (5). check.sh ✅. Beweis `docs/tests/P07/p07_05_garten_1…3`, `p07_06_beet_0…4`.
 ### 2026-09-27 · Phase 07 · T01 + T04 Zuhause mit 11 Räumen, Tapete & Boden wählbar 🔨
 - `data/areas/index.json`: Zuhause = `home.json` (Flur, Wohnzimmer, Küche, Schlafzimmer, 2 Kinderzimmer, Bad,
   Dachboden, Keller, Garage, Garten). Start im Wohnzimmer, danach **weiter im zuletzt besuchten Raum**.

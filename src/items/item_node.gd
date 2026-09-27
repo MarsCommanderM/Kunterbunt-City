@@ -389,6 +389,8 @@ class ContentsPanel extends Node2D:
 	var rect: Rect2 = Rect2()
 
 	func _draw() -> void:
+		if get_parent() is ItemNode and (get_parent() as ItemNode).def.open_top():
+			return                        # Topf/Grill: Inhalt liegt oben drauf – keine helle Innenfläche über dem Gerät
 		var sb := StyleBoxFlat.new()
 		sb.bg_color = Color(0.97, 0.98, 1.0, 0.94)
 		sb.border_color = Color(0.55, 0.6, 0.7)

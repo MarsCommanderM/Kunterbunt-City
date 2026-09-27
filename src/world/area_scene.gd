@@ -73,6 +73,13 @@ func _start_room() -> String:
 
 
 func _build_world() -> void:
+	var garden_timer := Timer.new()                      # P07-T07: Garten-Uhr (1 s)
+	garden_timer.wait_time = 1.0
+	garden_timer.autostart = true
+	garden_timer.timeout.connect(func() -> void:
+		if room != null and Garden.tick(room) > 0:
+			_on_world_changed())
+	add_child(garden_timer)
 	camera = WorldCamera.new()
 	add_child(camera)
 	drag = DragController.new()
@@ -95,6 +102,7 @@ func _enter_room(rid: String, first: bool) -> void:
 		drag.reset_for_room(room)
 	Game.set_last_room(area_id, room.room_id)
 	_spawn(spawn)
+	Garden.catch_up(room)                                # während der Abwesenheit gewachsen/verwelkt
 
 
 ## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
@@ -282,6 +290,9 @@ func _on_world_changed() -> void:
 
 ## Ding auf den Rucksack-Knopf gezogen? → einpacken.
 func _on_item_dropped(item: ItemNode, _target) -> void:
+	if room != null and Garden.on_drop(room, item):      # P07-T07: gesät oder gegossen
+		_on_world_changed()
+		return
 	var host: Node = item.get_parent().get_parent() if item.get_parent() != null else null
 	if host is ItemNode:
 		Recipes.check(host as ItemNode)          # P04b-T10: Zutat ins (eingeschaltete) Gerät → kochen

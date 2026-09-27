@@ -1,4 +1,13 @@
 {
+  "beet_geerntet": "empty",
+  "beet_gegossen": "sprout",
+  "beet_gesaet": "sprout",
+  "beet_gewachsen": "grown",
+  "beet_reif": "ripe",
+  "ernte": 3,
+  "garten_items": 46,
+  "gegossen": true,
+  "gesaet": true,
   "kinderzimmer_items": 12,
   "letzter_raum": "garden",
   "raeume": 11,

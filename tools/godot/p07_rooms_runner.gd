@@ -6,6 +6,7 @@ extends Node
 
 var out_dir: String = "docs/tests/P07"
 var _m: Dictionary = {}
+var _now: float = 5000000.0          ## Garten-Uhr (Feld, nicht lokal: Lambdas kopieren lokale Variablen)
 
 
 func run(args: PackedStringArray) -> void:
@@ -68,23 +69,50 @@ func run(args: PackedStringArray) -> void:
 	await _shot("p07_04_deko_leiste")
 	deco.queue_free()
 
-	# Garten (draußen, Kulisse) mit Beeten, Pool, Pavillon
+	# Garten: Start-Anlage (Nutzgarten, Blumen, Sitzen/Grillen, Pool, Teich) – drei Abschnitte
 	a.switch_room("garden")
 	await _frames(4)
-	var gx: float = a.camera.get_screen_center_position().x
-	for p: Array in [["garden_fence_picket_m_white", gx - 330, 0], ["garden_fence_picket_m_white", gx - 180, 0],
-			["garden_raised_bed_m_carrot_oak", gx - 250, 30], ["garden_flower_bed_m_rose", gx - 60, 45],
-			["garden_pool_frame_s_sky", gx + 200, 40], ["garden_parasol_coral", gx + 60, 15],
-			["garden_table_bistro_white", gx - 20, 10], ["garden_hedge_box_leaf", gx + 380, 0]]:
-		ItemSpawner.on_floor(a.room, StringName(String(p[0])), float(p[1]), float(p[2]))
+	_m["garten_items"] = Placement.all_items(a.room).size()
+	a.camera.set_visible_height(600.0)
+	var k: int = 0
+	for gx: float in [520.0, 1250.0, 1980.0]:
+		a.camera.position.x = gx
+		a.camera._clamp_position()
+		await _frames(3)
+		k += 1
+		await _shot("p07_05_garten_%d" % k)
+	# Kreislauf: säen → gießen → wachsen → ernten (Uhr vorgedreht)
+	Garden.fixed_now = _now
 	var bed: ItemNode = null
+	var seeds: ItemNode = null
+	var can: ItemNode = null
 	for it: ItemNode in Placement.all_items(a.room):
-		if String(it.def.id).begins_with("garden_raised_bed"):
+		if String(it.def.id) == "garden_raised_bed_m_carrot_oak":
 			bed = it
-	if bed != null:
-		ItemStates.set_state(bed, "ripe", true)
-	await _frames(4)
-	await _shot("p07_05_garten")
+		elif String(it.def.id) == "garden_seeds_carrot_pack":
+			seeds = it
+		elif String(it.def.id) == "garden_watering_can_mint":
+			can = it
+	a.camera.setup_for_room(a.room, bed.position.x + 60.0)     # Normal-Zoom, Boden unten im Bild
+	for step: Array in [["gesaet", 0], ["gegossen", 1], ["gewachsen", 2], ["reif", 3], ["geerntet", 4]]:
+		match int(step[1]):
+			0:
+				seeds.get_parent().remove_child(seeds)
+				a.room.ysort_root.add_child(seeds)
+				seeds.position = bed.position + Vector2(4.0, 4.0)
+				_m["gesaet"] = Garden.on_drop(a.room, seeds)
+			1:
+				can.position = bed.position + Vector2(-6.0, 6.0)
+				_m["gegossen"] = Garden.on_drop(a.room, can)
+			2, 3:
+				_now += Garden.GROW_S + 1.0
+				Garden.fixed_now = _now
+				Garden.tick(a.room)
+			4:
+				_m["ernte"] = Garden.harvest(bed).size()
+		_m["beet_" + String(step[0])] = bed.state
+		await _frames(3)
+		await _shot("p07_06_beet_%d_%s" % [int(step[1]), String(step[0])])
 	_m["letzter_raum"] = Game.last_room(&"home")
 	Game.save_now()
 	var f := FileAccess.open(out_dir.path_join("p07_rooms.json"), FileAccess.WRITE)

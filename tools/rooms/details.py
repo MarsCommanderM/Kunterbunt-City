@@ -40,10 +40,10 @@ def roof_slopes(sheet: Sheet, width: float, knee: float = 110.0):
         sheet.paste(bake(c, cols), min(x_edge, x_in) - 2, WALL_H + 2)
 
 
-def outdoor(sheet: Sheet, width: float, seed: int = 5, edge: str = "none"):
-    """Außen: Himmel, Wolken, ferne Hügel mit Bäumen. Zäune/Hecken sind Items (edge = "none")."""
+def outdoor(sheet: Sheet, width: float, seed: int = 5, edge: str = "none", top: float = WALL_H + 80):
+    """Außen: Himmel (bis `top` cm, = Raumhöhe → weit rauszoomen ohne Rand), Wolken, ferne Hügel mit Bäumen.
+    Zäune/Hecken sind Items (edge = "none")."""
     rng = random.Random(seed)
-    top = WALL_H + 80
     sky = canvas(0, 0, width, top, outline=0)
     area = [(0, 0), (width, 0), (width, top), (0, top)]
     sky.fill(area, zone=1)
@@ -51,7 +51,7 @@ def outdoor(sheet: Sheet, width: float, seed: int = 5, edge: str = "none"):
         yy = top * (1 - k / 10)
         sky.fill([(0, 0), (width, 0), (width, yy), (0, yy)], zone=1, shade=1.0 + 0.01 * k, alpha=0.3)
     for _ in range(int(width / 110)):
-        cx, cy = rng.uniform(0, width), rng.uniform(top * 0.62, top * 0.9)
+        cx, cy = rng.uniform(0, width), rng.uniform(max(190.0, top * 0.4), top * 0.9)   # auch im Normal-Zoom sichtbar
         for dx, r in ((-14, 11), (0, 16), (15, 12), (6, 9)):
             sky.fill(ell(cx + dx, cy + (4 if r < 12 else 0), r * 1.4, r, 32), zone=2)
     far = [(-10, 0)] + [(width * k / 16, 70 + 30 * math.sin(k * 0.8 + seed)) for k in range(17)] + [(width + 10, 0)]

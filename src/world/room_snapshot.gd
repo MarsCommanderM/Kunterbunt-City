@@ -27,6 +27,9 @@ static func capture(room: Room) -> Array:
 			e["x_rel"] = round(_rel_x(host as ItemNode, it) * 1000.0) / 1000.0
 		if it.def.has_states() and it.state != String(it.def.states[0]):
 			e["state"] = it.state                       # P04b-T10: Schrank offen, Lampe an …
+		for k: String in ["water_t", "grow_t"]:         # P07-T07: Garten (Unix-Zeit → wächst weiter)
+			if it.has_meta(k):
+				e[k] = float(it.get_meta(k))
 		out.append(e)
 	out.sort_custom(func(a: Dictionary, b: Dictionary) -> bool: return String(a["id"]) < String(b["id"]))
 	return out
@@ -56,6 +59,9 @@ static func apply(room: Room, list: Array) -> int:
 			continue
 		if d.has("state"):
 			ItemStates.set_state(it, String(d["state"]), true)
+		for k: String in ["water_t", "grow_t"]:
+			if d.has(k):
+				it.set_meta(k, float(d[k]))
 		n += 1
 	return n
 

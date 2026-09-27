@@ -560,7 +560,7 @@
    "label": "Garten",
    "icon": "plant_sunflower_terracotta_terracotta",
    "width_cm": 2400,
-   "height_cm": 340.0,
+   "height_cm": 560.0,
    "floor": {
     "depth_scale_max": 1.12,
     "back_y_cm": 0.0,
@@ -569,7 +569,7 @@
    "camera": {
     "default_h_cm": 340,
     "min_h_cm": 220,
-    "max_h_cm": 700
+    "max_h_cm": 600
    },
    "background": "res://assets/backgrounds/home/garden.bg.json",
    "surfaces": [],
@@ -584,7 +584,229 @@
       "#5fa35a"
      ]
     }
-   }
+   },
+   "default_items": [
+    {
+     "id": "garden_gate_white",
+     "x_cm": 60,
+     "y_cm": 2
+    },
+    {
+     "id": "garden_mailbox_coral",
+     "x_cm": 140,
+     "y_cm": 20
+    },
+    {
+     "id": "garden_fence_picket_m_white",
+     "x_cm": 230,
+     "y_cm": 0
+    },
+    {
+     "id": "garden_greenhouse_white",
+     "x_cm": 520,
+     "y_cm": 0
+    },
+    {
+     "id": "garden_raised_bed_m_carrot_oak",
+     "x_cm": 410,
+     "y_cm": 40
+    },
+    {
+     "id": "garden_raised_bed_m_tomato_oak",
+     "x_cm": 550,
+     "y_cm": 42
+    },
+    {
+     "id": "garden_raised_bed_l_lettuce_grey",
+     "x_cm": 730,
+     "y_cm": 38
+    },
+    {
+     "id": "garden_veg_bed_strawberry_oak",
+     "x_cm": 610,
+     "y_cm": 64
+    },
+    {
+     "id": "garden_compost_oak",
+     "x_cm": 950,
+     "y_cm": 2
+    },
+    {
+     "id": "garden_rain_barrel_green",
+     "x_cm": 860,
+     "y_cm": 6
+    },
+    {
+     "id": "garden_table_wood_oak",
+     "x_cm": 245,
+     "y_cm": 58
+    },
+    {
+     "id": "garden_seeds_carrot_pack",
+     "on": "garden_table_wood_oak",
+     "x_rel": -0.35
+    },
+    {
+     "id": "garden_seeds_tomato_pack",
+     "on": "garden_table_wood_oak",
+     "x_rel": -0.1
+    },
+    {
+     "id": "garden_seeds_lettuce_pack",
+     "on": "garden_table_wood_oak",
+     "x_rel": 0.15
+    },
+    {
+     "id": "garden_seeds_strawberry_pack",
+     "on": "garden_table_wood_oak",
+     "x_rel": 0.38
+    },
+    {
+     "id": "garden_watering_can_mint",
+     "x_cm": 470,
+     "y_cm": 68
+    },
+    {
+     "id": "garden_spade_coral",
+     "x_cm": 905,
+     "y_cm": 50
+    },
+    {
+     "id": "garden_wheelbarrow_green",
+     "x_cm": 990,
+     "y_cm": 58
+    },
+    {
+     "id": "garden_fence_lattice_white",
+     "x_cm": 1090,
+     "y_cm": 0
+    },
+    {
+     "id": "garden_insect_hotel_oak",
+     "x_cm": 1200,
+     "y_cm": 4
+    },
+    {
+     "id": "garden_flower_bed_m_lilac",
+     "x_cm": 1100,
+     "y_cm": 44
+    },
+    {
+     "id": "garden_flower_bed_s_butter",
+     "x_cm": 1250,
+     "y_cm": 50
+    },
+    {
+     "id": "garden_flower_bed_l_rose",
+     "x_cm": 1150,
+     "y_cm": 66
+    },
+    {
+     "id": "garden_bird_bath_#b8b2a7",
+     "x_cm": 1320,
+     "y_cm": 30
+    },
+    {
+     "id": "garden_bench_oak",
+     "x_cm": 1260,
+     "y_cm": 12
+    },
+    {
+     "id": "garden_planter_round_terracotta",
+     "x_cm": 1030,
+     "y_cm": 30
+    },
+    {
+     "id": "garden_watering_can_sky",
+     "x_cm": 1340,
+     "y_cm": 62
+    },
+    {
+     "id": "garden_pavilion_white",
+     "x_cm": 1570,
+     "y_cm": 4
+    },
+    {
+     "id": "garden_table_wood_walnut",
+     "x_cm": 1570,
+     "y_cm": 40
+    },
+    {
+     "id": "garden_chair_wood_oak",
+     "x_cm": 1480,
+     "y_cm": 46
+    },
+    {
+     "id": "garden_chair_wood_walnut",
+     "x_cm": 1660,
+     "y_cm": 46
+    },
+    {
+     "id": "garden_chair_plastic_white",
+     "x_cm": 1570,
+     "y_cm": 62
+    },
+    {
+     "id": "garden_grill_gas_black",
+     "x_cm": 1770,
+     "y_cm": 16
+    },
+    {
+     "id": "garden_fire_bowl_black",
+     "x_cm": 1440,
+     "y_cm": 66
+    },
+    {
+     "id": "garden_hedge_box_leaf",
+     "x_cm": 1830,
+     "y_cm": 0
+    },
+    {
+     "id": "garden_pool_frame_s_sky",
+     "x_cm": 1980,
+     "y_cm": 30
+    },
+    {
+     "id": "garden_parasol_coral",
+     "x_cm": 2120,
+     "y_cm": 12
+    },
+    {
+     "id": "garden_lounger_sky",
+     "x_cm": 2110,
+     "y_cm": 60
+    },
+    {
+     "id": "pool_swim_ring_coral",
+     "x_cm": 1890,
+     "y_cm": 66
+    },
+    {
+     "id": "garden_treehouse_leaf",
+     "x_cm": 2270,
+     "y_cm": 0
+    },
+    {
+     "id": "garden_pond_m_stone",
+     "x_cm": 2240,
+     "y_cm": 50
+    },
+    {
+     "id": "garden_lily_rose",
+     "x_cm": 2200,
+     "y_cm": 52
+    },
+    {
+     "id": "garden_lily_white",
+     "x_cm": 2270,
+     "y_cm": 50
+    },
+    {
+     "id": "garden_hammock_coral",
+     "x_cm": 2150,
+     "y_cm": 18
+    }
+   ]
   }
  ],
  "default_items": []
