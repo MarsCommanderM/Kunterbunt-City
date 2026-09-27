@@ -113,6 +113,14 @@ func run(args: PackedStringArray) -> void:
 		_m["beet_" + String(step[0])] = bed.state
 		await _frames(3)
 		await _shot("p07_06_beet_%d_%s" % [int(step[1]), String(step[0])])
+	# T11: Rundgang durch alle Räume (Test-Szene je Raum) – leer bis auf den Licht-Schalter, Küche mit Ausstattung
+	var tour: Array = []
+	for rid: Variant in a.room_ids():
+		a.switch_room(String(rid))
+		await _frames(4)
+		tour.append("%s:%d" % [rid, Placement.all_items(a.room).size()])
+		await _shot("p07_10_raum_%s" % String(rid))
+	_m["rundgang"] = tour
 	_m["letzter_raum"] = Game.last_room(&"home")
 	Game.save_now()
 	var f := FileAccess.open(out_dir.path_join("p07_rooms.json"), FileAccess.WRITE)

@@ -11,5 +11,18 @@
   "kinderzimmer_items": 12,
   "letzter_raum": "garden",
   "raeume": 11,
+  "rundgang": [
+    "hallway:3",
+    "living:3",
+    "kitchen:16",
+    "bedroom:3",
+    "kids1:15",
+    "kids2:3",
+    "bath:3",
+    "attic:3",
+    "basement:3",
+    "garage:3",
+    "garden:45"
+  ],
   "start_raum": "living"
 }

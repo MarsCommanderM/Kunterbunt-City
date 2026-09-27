@@ -18,12 +18,12 @@
 | P07-T11 | Lineup `docs/tests/lineup_home.png` + Test-Szene pro Raum |
 
 ## Akzeptanzkriterien
-- [ ] Alle 11 Szenen begehbar, Wechsel über Türen
+- [x] Alle 11 Szenen begehbar, Wechsel über Türen
 - [ ] 190 Items, 0 Maßstab-Fehler, 0 Seitenverhältnis-Warnungen bei echter Grafik
-- [ ] 25 Rezepte funktionieren (GUT je Rezept)
+- [x] 25 Rezepte funktionieren (GUT je Rezept) – 26
 - [ ] 60 FPS im vollsten Raum mit 250 Items (Desktop), ≥ 30 FPS Web auf Mittelklasse-Laptop
 - [ ] 👤 **Kindertest** (2–3 Kinder, 15 Min.): keine Frust-Stellen, Protokoll in `docs/tests/`
-- [ ] `check.sh` grün
+- [x] `check.sh` grün
 
 ## Startprompt
 > Lies MASTERPROMPT.md, docs/05_WELT_UND_BEREICHE.md §1 und docs/phasen/PHASE_07_SLICE_ZUHAUSE.md. Baue den Bereich Zuhause komplett. Fehlende Grafik = Platzhalter, nie Größen raten. Phasenbericht und stoppen.

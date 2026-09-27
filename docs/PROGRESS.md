@@ -4,8 +4,8 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07-T11 Lineup + Test-Szene je Raum, dann Phasenbericht P07 |
+| Aktuelle Phase | **08 · NPC- & Tier-KI** (07 fertig, 👤 Kindertest offen) |
+| Nächste Task | P08-T01 NpcStateMachine, T02 Rollen/NPC-Loader, T07 PetBrain |
 | Letzter grüner check.sh | 2026-09-27 (P07-T09/T10 Audio + Geheimnisse) |
 | Version | 0.0.6 |
 
@@ -20,8 +20,8 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | 🔨 T01, T03–T07, T09, T10 fertig | Log 2026-09-27 |
-| 08 NPC-/Tier-KI | ⏳ | – |
+| 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
+| 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
 | 11 Politur 1.0 | ⏳ | – |
@@ -78,6 +78,32 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phasenbericht P07 – Zuhause & Garten ✅
+Status: ✅ fertig (👤 Kindertest offen · T08 „Nachbarin am Zaun + Postbote" wandert zur echten NPC-KI in P08)
+Erledigt:
+- T01 11 Szenen (`home.json`), Wechsel über 🏠-Raumwahl **und** Türen/Gartentor, weiter im zuletzt besuchten Raum
+- T02 Räume leer (Wunsch 👤): Wand + Boden (Zonen-Shader), Dachschräge, Außen-Kulisse; Küche = eingemessener Hintergrund
+- T03 **2439 Items** in 42 Gruppen, Pflichtliste 427/427 (`test_inventory`), 0 Maßstab-Fehler
+- T04 Möbel frei beweglich; Tapete (12 Farben × 10 Muster), Paneel, Boden (6 Arten × Farbsätze) je Raum, gespeichert
+- T05 Licht-Schalter je Raum (Nacht-Stimmung + echte Lichter), Badewanne/Dusche/WC/Waschbecken/Herd/Ofen/Spüle/
+  Kühlschrank/Waschmaschine/TV mit Zuständen
+- T06 26 Rezepte, jedes einzeln getestet
+- T07 Garten: säen → gießen → wachsen → ernten, Blumen welken, Rasensprenger, Start-Anlage (Nutzgarten, Blumen,
+  Grillen, Pool, Teich, Baumhaus), wächst mit echter Uhrzeit weiter
+- T09 Musik + Ambiente je Raum, Item-Sounds nach Material, Regler wirken
+- T10 7 Geheimnisse → Sticker im Album
+- T11 Rundgang durch alle 11 Räume `docs/tests/P07/p07_10_raum_*.jpg`, Lineup `docs/tests/lineup_home.png` (P06)
+Akzeptanzkriterien:
+- ✅ Alle 11 Szenen begehbar, Wechsel über Türen – `test_rooms`, `test_light_doors`, Rundgang-Bilder
+- ✅ ≥ 190 Items (2439), 0 Maßstab-Fehler – `validate_scale.py`, `test_inventory`
+- ✅ 25 Rezepte (26) – `test_recipes_all` (parametrisiert, je Rezept)
+- ⚠️ 60 FPS mit 250 Items: Logik headless gemessen (P02: 145 FPS), **GPU-Messung 👤** auf echter Hardware offen
+- ⏳ 👤 Kindertest (2–3 Kinder, 15 Min.) → `docs/tests/P07_kindertest.md`
+- ✅ check.sh grün – pytest 131/131 · GUT 292/292
+Speicherstand: v2 → v3 (Einrichtung, letzter Raum) → v4 (Geheimnisse), Migrationen + Fixtures + Tests (R-11).
+Offene Punkte / Risiken: Web-Export-Größe (Musik 3,8 MB WAV – ggf. OGG in P11); echte Stil-C-Hintergründe für
+weitere Innenräume (Küche ist gemalt, andere Räume vektor-generiert – bewusst leer).
+👤 Aufgaben: Kindertest im Browser/Tablet; FPS auf echter Hardware (`p02_perf_runner.gd 250`).
 ### 2026-09-27 · Phase 07 · T09 Musik & Ambiente, T10 Geheimnisse 🔨
 - `tools/make_music.py`: Zuhause-Musik (41,7 s Schleife, Kalimba + Bass + Fläche + Shaker), Ambiente Garten
   (Vögel + Wind), Innen (Raumklang + Uhr), Bad (Tropfen) – NumPy-Synthese, CC0, bit-genau, Schleifen überblendet
