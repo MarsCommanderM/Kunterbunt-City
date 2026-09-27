@@ -20,12 +20,12 @@
 | P06-T12 | Anleitung `docs/asset_settings.md` für 👤: ComfyUI-Einstellungen, Stil-Block, Negativ-Prompt, LoRA-Training (kostenlos) |
 
 ## Akzeptanzkriterien
-- [ ] `python3 tools/asset_pipeline/run.py reference/` erzeugt aus den Demo-Rohbildern dieselben 18 Sprites + JSON wie die Referenz
-- [ ] Maßstab-Prüfer grün, keine Seitenverhältnis-Warnung für die Demo-Items
-- [ ] Lineup- und Test-Szenen-Bild werden erzeugt
-- [ ] Neues Blatt → im Spiel sichtbar, ohne Code-Änderung
-- [ ] pytest-Abdeckung für cutout/split/scale
-- [ ] `check.sh` grün
+- [x] `python3 tools/asset_pipeline/run.py reference/` erzeugt aus den Demo-Rohbildern dieselben 18 Sprites + JSON wie die Referenz
+- [x] Maßstab-Prüfer grün, keine Seitenverhältnis-Warnung für die Demo-Items
+- [x] Lineup- und Test-Szenen-Bild werden erzeugt
+- [x] Neues Blatt → im Spiel sichtbar, ohne Code-Änderung (ItemDB liest alle `data/items/*.json`, Upsert ohne Neu-Registrierung)
+- [x] pytest-Abdeckung für cutout/split/scale (35 Tests, dazu Referenz-Golden/Atlas/Teile)
+- [x] `check.sh` grün
 
 ## 👤 Mensch
 ComfyUI + Modell lokal einrichten, erste echte Blätter für die Zuhause-Küche generieren (Stil-Guide §3A/3B), in `incoming/home/` legen, Lineup ansehen.

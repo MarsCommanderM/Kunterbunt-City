@@ -243,3 +243,29 @@ Deterministisch: `PetNode.autonomous = false` (Tiere nur per `tick()`), `Charact
 4. **Positionen auf 0,1 cm genau** (`RoomSnapshot`, Test ±0,05 cm).
 5. UI-Panels hängen immer an einem `Control`/`CanvasLayer`, **nie** direkt am `Node2D`-Raum.
 
+
+## §6 Asset-Pipeline (Phase 06)
+
+**Ort:** `tools/asset_pipeline/` · **Aufruf:** `python3 tools/asset_pipeline/run.py <ordner>` · **Anleitung für 👤:** `docs/asset_settings.md`
+
+| Modul | Aufgabe | Regeln |
+|---|---|---|
+| `cutout.py` | Weiß → transparent | Flood-Fill vom Rand; geschlossenes Weiß > 500 px & Mittelwert > 250 → Loch raus (Henkel); `remove_holes=false` bei Figuren (Augenweiß bleibt); Kanten-Entmischung (Alpha-Division) |
+| `split.py` | Blatt → Objekte | Dilation 8 px, min. 1500 px Fläche; **Zeilen über die vertikale Mittel-Linie** (center_y-Abstand > 90 px = neue Zeile), dann links→rechts; Anzahl ≠ YAML → `SplitError` + `*_split_preview.png` mit nummerierten Kästen; `mode: character` = die N größten Flächen |
+| `scale.py` | Maßstab | `h_cm = Tabelle[scale_ref].h_cm × scale_mul`; `w_cm = h_cm × Seitenverhältnis`; Abweichung der Breite > `tolerance_aspect` (0,3) → Warnung; unbekannte Referenz → `ScaleError` |
+| `points.py` | Pivot/Grip | Pivot default `(0.5, 1.0)`; Grip je Kategorie (kitchen → `(0.9, 0.45)` Henkel), YAML gewinnt immer; `find_hand_grip()` = Hautfarben-Bereich oben rechts; `preview()` markiert blau/rot |
+| `export.py` | PNG + JSON | **8 px/cm**, kleinste Kante ≥ 64 px (bei Bedarf höhere Dichte, `size_cm` bleibt exakt), **4 px Padding → `pad_px: 4` im JSON**; Pfad `res://assets/sprites/<bereich>/<id>.png`; Upsert in `data/items/<datei>.json`: Pipeline-Felder ersetzen, fremde (`tags`, `sfx`, `seat`, `surface_*`, …) bleiben, keine Dubletten |
+| `lineup.py` | Beweisbild | Alle Items + Kind + Hund + Tisch am cm-Lineal → `docs/tests/lineup_<bereich>.png` |
+| `scene_test.py` | Beweisbild | Referenz-Küche: Kind hält Karotte, Teddy auf Stuhl, Tisch/Arbeitsplatte, Kamera ≈ 300 cm (S-08), Tiefe +12 % (S-07) → `docs/tests/P06/scene_test*.png` |
+| `atlas.py` | Pro Bereich | Shelf-Packung ≤ 4096², 2 px Gutter, `<bereich>_atlas.png` + `.json` (Regionen); `.import` erzeugt Godot |
+| `figure_parts.py` | Figurenteile | `diff_layer(neu, schablone)` → nur geänderte Pixel; Teil = tight-Box bei 8 px/cm; `anchor_cm` von **unten-links** (wie `parts.json`/`character_rig.gd`); `save_part()` schreibt PNG + `parts.json`-Upsert |
+| `calibrate_bg.py` | Hintergründe | aus P01: Calibration-Block der Raum-JSON → Kacheln ≤ 2048 px + cm-Werte (siehe Datei-Kopf) |
+
+**Blatt-YAML** (`<blatt>.yaml` neben dem PNG): `sheet`, `area`, `room`, optional `items_json` (Zieldatei),
+optional `mode: character`, optional `scene: reference_kitchen`; `items:` in Lesereihenfolge mit
+`id`, `scale_ref`, optional `scale_mul`, `grip`, `hold`, `hold_angle`, `placement`, `pivot`.
+Beispiele: `reference/raw_items.yaml`, `raw_furniture_dog.yaml`, `raw_girl.yaml`.
+
+**Konventionen:** Item-JSON-Felder wie in §3.1; Sprites gepaddet (`pad_px`), `ItemNode.draw_size()`
+rechnet die Inhalts-Box (Texture − 2·pad); Figuren landen in `assets/characters/sprite/`
+(+ `<id>.sprite.json` mit `hand_grip`), nie in `data/items/` (doppelte IDs sind ein Validierungsfehler).

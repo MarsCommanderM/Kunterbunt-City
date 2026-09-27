@@ -4,10 +4,10 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **06/07 · Asset-Pipeline + Bereich „Zuhause & Garten"** |
-| Nächste Task | P06 (Stil-C-Pipeline) · P07-T01 (Zuhause-Slice: Räume + Hintergründe) |
-| Letzter grüner check.sh | 2026-09-26 (Phase 05 komplett) |
-| Version | 0.0.5 |
+| Aktuelle Phase | **07 · Slice „Zuhause & Garten“** |
+| Nächste Task | P07-T01 (Zuhause-Slice: Räume + Hintergründe + Garten) |
+| Letzter grüner check.sh | 2026-09-27 (Phase 06 komplett) |
+| Version | 0.0.6 |
 
 ## Phasen
 | Phase | Status | Bericht |
@@ -18,7 +18,7 @@
 | 03 Figuren & Tiere | ✅ fertig (👤 Kindertest offen) | Log 2026-09-26 |
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
-| 06 Asset-Pipeline | ⏳ | – |
+| 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -51,6 +51,11 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 05 | Stadtkarte | 12 Bereiche · 1 spielbar (Zuhause), 11 Baustellen (sichtbar, nie gesperrt) · Karte/Raster umschaltbar · Tippflächen ≥ 120×120 px |
 | 2026-09-26 | 05 | Speicherstand | Welt-Slots 0–2 · v1-Fixture wandert nach v2 · Export/Import als Datei (kein Netz) · Raumzustand auf 0,1 cm genau |
 | 2026-09-26 | 05 | Rucksack & Album | 20 Plätze, Ding rein (ziehen) und raus (tippen) · Foto mit 📷 landet in `user://album/` |
+| 2026-09-27 | 06 | check.sh | Maßstab ✅ (155 Einträge, 77 Items) · pytest **110/110** ✅ · GUT **240/240** ✅ (2836 Asserts) |
+| 2026-09-27 | 06 | `run.py reference/` (Golden-Lauf) | **0 neu · 18 aktualisiert · 0 Warnungen** · JSON identisch zur Referenz (tags/sfx/seat bleiben erhalten, `pad_px: 4` neu) · 18 Sprites neu bei exakt 8 px/cm · Kind-Sprite + `hand_grip` exportiert |
+| 2026-09-27 | 06 | Lineup & Testszene | `docs/tests/lineup_home.png` (Kind 125 · Hund 45 · Tisch 75 cm am Lineal) · `docs/tests/P06/scene_test{,_kamera}.png` (Kamera 1920×1080, Regel S-07/S-08) |
+| 2026-09-27 | 06 | Atlas | `assets/sprites/home_atlas.png` (18 Regionen, ≤ 4096², Shelf-Packung, 2 px Gutter) |
+| 2026-09-27 | 06 | Abnahme-Tests (neu) | pytest +35: cutout 7 · split/scale 10 · points/export 10 · Referenz-Golden 6 · Atlas/Teile 13 |
 | 2026-09-26 | 04 | End-to-End `p04_flow_runner.gd` | App-Start → Pflicht-Editor → Galerie → Bereich: eigene Figur **125,2 cm** (Kind), eigene Katze **28,0 cm** < Tisch, Figur im Bild |
 | 2026-09-26 | 04 | Editor-Bedienung im Bild | ✓-Knopf erst grau (Hautton fehlt) → orange · Hautton 1,6 %, Oberteil 4,6 %, 🎲 15,5 % Bildänderung in der Vorschau |
 | 2026-09-26 | 04 | Haustier-Editor | 13 Arten (Maßstab-Tabelle 6–125 cm), 3 Fell-Zonen, 5 Muster, 6 Halsbänder, 5 Charakterzüge, je Art eigene Stimme |
@@ -64,6 +69,37 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 06 · Asset-Pipeline (produktiv) ✅
+- Erledigt: P06-T01…T12.
+  - `tools/asset_pipeline/`: `cutout.py` (Loch-Regel >500 px/mean>250, Figuren-Modus, Kanten-Entmischung),
+    `split.py` (Zeilen über die vertikale Mitte, Anzahl == YAML sonst `SplitError` + nummeriertes
+    Vorschaubild, Figuren-Modus = N größte Flächen), `scale.py` (Tabelle × `scale_mul`, Breite aus
+    Seitenverhältnis, >30 % = `tolerance_aspect`-Warnung), `points.py` (Kategorie-Grips inkl.
+    Tasse=Henkel 45 %, YAML-Override gewinnt, `find_hand_grip`, Marker-Vorschau), `export.py`
+    (8 px/cm, ≥64 px Mindestkante, 4 px Padding → `pad_px` im JSON, Upsert mit Metadaten-Merge:
+    tags/sfx/seat/surface bleiben erhalten), `lineup.py`, `scene_test.py` (Referenz-Küche),
+    `run.py` (Alles-in-einem + Zusammenfassung), `atlas.py` (Shelf-Packung ≤4096²),
+    `figure_parts.py` (Differenz Schablone→Teil-Ebene, 8 px/cm tight-box, Anker von unten-links,
+    `parts.json`-Upsert), `calibrate_bg.py` (T07, seit P01 + getestet).
+  - `reference/raw_items.yaml` + `raw_furniture_dog.yaml` + `raw_girl.yaml`: Demo-Blätter als
+    YAML (18 Items + Figur), Werte 1:1 aus `pipeline_demo_kueche.py`.
+  - `docs/asset_settings.md` (T12): ComfyUI-Einstellungen, Stil-Block, Negativ-Prompt,
+    Blatt-/Raum-/Teil-Vorlagen, LoRA-Training kostenlos, Fehler-Tabelle.
+- Tests: check.sh ✅ (pytest 110/110 – neu: cutout/split/scale/points/export/Referenz-Golden/Atlas/Teile;
+  GUT 240/240, `test_aspect_ratio_is_kept` pad-aware). Golden-Lauf: `run.py reference/` erzeugt
+  JSON == Referenz und 18 Sprites mit identischem Seitenverhältnis (±2 %).
+- Entscheidungen:
+  - YAML **pro Blatt** (`<blatt>.yaml` neben dem PNG), `items_json:` optional → Upsert in die
+    bestehende Datei (kein Dublikat, keine doppelten IDs in der ItemDB).
+  - Figuren landen NICHT in `data/items/`, sondern in `assets/characters/sprite/` + `.sprite.json`
+    (hand_grip) – sonst würde die ItemDB-Fixture zählen.
+  - Paddierung ist im JSON als `pad_px: 4` gemeldet; `ItemNode.draw_size` rechnet den Inhalt,
+    Tests vergleichen Inhalt gegen Inhalt.
+  - Upsert-Merge: Pipeline-Felder ersetzt, fremde Felder bleiben (Buch behält `tags`,
+    Hund behält `sfx`, Stuhl behält `seat`).
+- Hinweis 👤: Echte ComfyUI-Blätter für die Küche (Stil-Guide §3A) → `incoming/home/`, dann
+  `run.py` – Anleitung in `docs/asset_settings.md`.
+- Nächste Task: P07-T01 (Slice Zuhause & Garten: mehrere Räume, Hintergründe, Garten-Items)
 ### 2026-09-26 · Phase 05 · Startmenü (Stadtkarte), Speichern, Bereichswechsel ✅
 - Erledigt: P05-T01…T11 (T09 Eltern-Tor kam schon in Phase 04).
   - `data/areas/index.json` + `src/core/areas.gd`: **12 Bereiche** (Zuhause & Garten, Krankenhaus,
