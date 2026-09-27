@@ -7,8 +7,8 @@
    "id": "sport_goal_cream",
    "scale_ref": "c_sport_goal",
    "size_cm": [
-    309.5,
-    217.5
+    309.6,
+    217.6
    ],
    "pivot": [
     0.5,
@@ -30,8 +30,8 @@
    "id": "sport_basket_hoop_coral",
    "scale_ref": "c_sport_basket_hoop",
    "size_cm": [
-    121.5,
-    301.5
+    121.6,
+    301.6
    ],
    "pivot": [
     0.5,
@@ -249,8 +249,8 @@
    "id": "sport_mat_sky",
    "scale_ref": "c_sport_mat",
    "size_cm": [
-    182.3,
-    9.9
+    182.7,
+    9.8
    ],
    "pivot": [
     0.5,
@@ -280,8 +280,8 @@
    "id": "sport_mat_coral",
    "scale_ref": "c_sport_mat",
    "size_cm": [
-    182.3,
-    9.9
+    182.7,
+    9.8
    ],
    "pivot": [
     0.5,
@@ -311,8 +311,8 @@
    "id": "sport_mat_teal",
    "scale_ref": "c_sport_mat",
    "size_cm": [
-    182.3,
-    9.9
+    182.7,
+    9.8
    ],
    "pivot": [
     0.5,
@@ -410,6 +410,892 @@
    "pad_px": 1,
    "colors": [
     "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_inline_skates_coral",
+   "scale_ref": "c_sport_inline_skates",
+   "size_cm": [
+    41.4,
+    35.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_inline_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_inline_skates_sky",
+   "scale_ref": "c_sport_inline_skates",
+   "size_cm": [
+    41.4,
+    35.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_inline_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_inline_skates_mint",
+   "scale_ref": "c_sport_inline_skates",
+   "size_cm": [
+    41.4,
+    35.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_inline_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_inline_skates_black",
+   "scale_ref": "c_sport_inline_skates",
+   "size_cm": [
+    41.4,
+    35.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_inline_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_inline_skates_rose",
+   "scale_ref": "c_sport_inline_skates",
+   "size_cm": [
+    41.4,
+    35.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_inline_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_roller_skates_rose",
+   "scale_ref": "c_sport_roller_skates",
+   "size_cm": [
+    40.4,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_roller_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_roller_skates_white",
+   "scale_ref": "c_sport_roller_skates",
+   "size_cm": [
+    40.4,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_roller_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_roller_skates_sky",
+   "scale_ref": "c_sport_roller_skates",
+   "size_cm": [
+    40.4,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_roller_skates.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_pads_black",
+   "scale_ref": "c_sport_pads",
+   "size_cm": [
+    32.0,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_pads.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_pads_coral",
+   "scale_ref": "c_sport_pads",
+   "size_cm": [
+    32.0,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_pads.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_pads_sky",
+   "scale_ref": "c_sport_pads",
+   "size_cm": [
+    32.0,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_pads.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_table_tennis_green",
+   "scale_ref": "c_sport_table_tennis",
+   "size_cm": [
+    275.9,
+    93.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_table_tennis.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_table_tennis_navy",
+   "scale_ref": "c_sport_table_tennis",
+   "size_cm": [
+    275.9,
+    93.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_table_tennis.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_tt_paddle_coral",
+   "scale_ref": "c_sport_tt_paddle",
+   "size_cm": [
+    17.9,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_tt_paddle.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_tt_paddle_black",
+   "scale_ref": "c_sport_tt_paddle",
+   "size_cm": [
+    17.9,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_tt_paddle.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_tt_paddle_sky",
+   "scale_ref": "c_sport_tt_paddle",
+   "size_cm": [
+    17.9,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_tt_paddle.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_badminton_sky",
+   "scale_ref": "c_sport_badminton",
+   "size_cm": [
+    27.4,
+    67.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_badminton.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "id": "sport_badminton_coral",
+   "scale_ref": "c_sport_badminton",
+   "size_cm": [
+    27.4,
+    67.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_badminton.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "id": "sport_badminton_mint",
+   "scale_ref": "c_sport_badminton",
+   "size_cm": [
+    27.4,
+    67.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_badminton.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.1
+   ]
+  },
+  {
+   "id": "sport_goal_small_white",
+   "scale_ref": "c_sport_goal_small",
+   "size_cm": [
+    127.6,
+    90.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_goal_small.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_goal_small_coral",
+   "scale_ref": "c_sport_goal_small",
+   "size_cm": [
+    127.6,
+    90.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_goal_small.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_fishing_rod_green",
+   "scale_ref": "c_sport_fishing_rod",
+   "size_cm": [
+    33.0,
+    147.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_fishing_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.1,
+    0.08
+   ]
+  },
+  {
+   "id": "sport_fishing_rod_navy",
+   "scale_ref": "c_sport_fishing_rod",
+   "size_cm": [
+    33.0,
+    147.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_fishing_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.1,
+    0.08
+   ]
+  },
+  {
+   "id": "sport_jump_rope_coral",
+   "scale_ref": "c_sport_jump_rope",
+   "size_cm": [
+    36.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_jump_rope.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_jump_rope_sky",
+   "scale_ref": "c_sport_jump_rope",
+   "size_cm": [
+    36.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_jump_rope.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_jump_rope_butter",
+   "scale_ref": "c_sport_jump_rope",
+   "size_cm": [
+    36.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_jump_rope.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_hoop_coral",
+   "scale_ref": "c_sport_hoop",
+   "size_cm": [
+    73.2,
+    73.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_hoop.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_hoop_teal",
+   "scale_ref": "c_sport_hoop",
+   "size_cm": [
+    73.2,
+    73.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_hoop.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_hoop_plum",
+   "scale_ref": "c_sport_hoop",
+   "size_cm": [
+    73.2,
+    73.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_hoop.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_hoop_butter",
+   "scale_ref": "c_sport_hoop",
+   "size_cm": [
+    73.2,
+    73.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_hoop.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "sport_frisbee_coral",
+   "scale_ref": "c_sport_frisbee",
+   "size_cm": [
+    27.0,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_frisbee.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_frisbee_sky",
+   "scale_ref": "c_sport_frisbee",
+   "size_cm": [
+    27.0,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_frisbee.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_frisbee_butter",
+   "scale_ref": "c_sport_frisbee",
+   "size_cm": [
+    27.0,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_frisbee.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_frisbee_mint",
+   "scale_ref": "c_sport_frisbee",
+   "size_cm": [
+    27.0,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_frisbee.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
     "#f5f3ee",
     "#9aa6b4"
    ],

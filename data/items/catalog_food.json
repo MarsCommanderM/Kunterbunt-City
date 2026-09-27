@@ -1325,6 +1325,2247 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "food_grapes_green",
+   "scale_ref": "c_food_grapes",
+   "size_cm": [
+    11.8,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_grapes.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_grapes_blue",
+   "scale_ref": "c_food_grapes",
+   "size_cm": [
+    11.8,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_grapes.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_strawberry_red",
+   "scale_ref": "c_food_strawberry",
+   "size_cm": [
+    5.3,
+    6.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_strawberry.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cherry_red",
+   "scale_ref": "c_food_cherry",
+   "size_cm": [
+    6.5,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cherry.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pineapple_gold",
+   "scale_ref": "c_food_pineapple",
+   "size_cm": [
+    13.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pineapple.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#f09a55",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_kiwi_brown",
+   "scale_ref": "c_food_kiwi",
+   "size_cm": [
+    7.9,
+    6.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_kiwi.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#7fae6a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_plum_purple",
+   "scale_ref": "c_food_plum",
+   "size_cm": [
+    6.3,
+    7.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_plum.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_mango_orange",
+   "scale_ref": "c_food_mango",
+   "size_cm": [
+    11.0,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_mango.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_melon_honey",
+   "scale_ref": "c_food_melon",
+   "size_cm": [
+    17.8,
+    14.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_melon.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#7fae6a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_apricot_orange",
+   "scale_ref": "c_food_apricot",
+   "size_cm": [
+    6.9,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_apricot.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_blueberries_blue",
+   "scale_ref": "c_food_blueberries",
+   "size_cm": [
+    11.5,
+    8.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_blueberries.png",
+   "pad_px": 1,
+   "colors": [
+    "#3c4f7a",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_coconut_brown",
+   "scale_ref": "c_food_coconut",
+   "size_cm": [
+    13.9,
+    13.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_coconut.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cucumber_green",
+   "scale_ref": "c_food_cucumber",
+   "size_cm": [
+    23.7,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cucumber.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7fae6a",
+    "#3f6a4f"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_potato_yellow",
+   "scale_ref": "c_food_potato",
+   "size_cm": [
+    9.8,
+    8.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_potato.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_onion_brown",
+   "scale_ref": "c_food_onion",
+   "size_cm": [
+    8.8,
+    11.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_onion.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pepper_red",
+   "scale_ref": "c_food_pepper",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pepper.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pepper_yellow",
+   "scale_ref": "c_food_pepper",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pepper.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pepper_green",
+   "scale_ref": "c_food_pepper",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pepper.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#3f6a4f"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_broccoli_green",
+   "scale_ref": "c_food_broccoli",
+   "size_cm": [
+    15.3,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_broccoli.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_lettuce_green",
+   "scale_ref": "c_food_lettuce",
+   "size_cm": [
+    21.6,
+    14.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_lettuce.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_corn_yellow",
+   "scale_ref": "c_food_corn",
+   "size_cm": [
+    8.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_corn.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pumpkin_orange",
+   "scale_ref": "c_food_pumpkin",
+   "size_cm": [
+    32.1,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pumpkin.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pumpkin_green",
+   "scale_ref": "c_food_pumpkin",
+   "size_cm": [
+    32.1,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pumpkin.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_eggplant_purple",
+   "scale_ref": "c_food_eggplant",
+   "size_cm": [
+    21.6,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_eggplant.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_peas_green",
+   "scale_ref": "c_food_peas",
+   "size_cm": [
+    11.8,
+    5.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_peas.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_radish_red",
+   "scale_ref": "c_food_radish",
+   "size_cm": [
+    5.8,
+    8.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_radish.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_mushroom_brown",
+   "scale_ref": "c_food_mushroom",
+   "size_cm": [
+    7.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_mushroom.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_mushroom_white",
+   "scale_ref": "c_food_mushroom",
+   "size_cm": [
+    7.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_mushroom.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e8e2d8",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_garlic_white",
+   "scale_ref": "c_food_garlic",
+   "size_cm": [
+    6.8,
+    8.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_garlic.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e8e2d8",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_zucchini_green",
+   "scale_ref": "c_food_zucchini",
+   "size_cm": [
+    23.7,
+    6.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_zucchini.png",
+   "pad_px": 1,
+   "colors": [
+    "#3f6a4f",
+    "#7fae6a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cauliflower_white",
+   "scale_ref": "c_food_cauliflower",
+   "size_cm": [
+    17.2,
+    15.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cauliflower.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_leek_green",
+   "scale_ref": "c_food_leek",
+   "size_cm": [
+    35.2,
+    6.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_leek.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_spaghetti_tomato",
+   "scale_ref": "c_food_spaghetti",
+   "size_cm": [
+    27.8,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_spaghetti.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_spaghetti_pesto",
+   "scale_ref": "c_food_spaghetti",
+   "size_cm": [
+    27.8,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_spaghetti.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#5f8f6a",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pasta_spaghetti_blue",
+   "scale_ref": "c_food_pasta_spaghetti",
+   "size_cm": [
+    9.9,
+    29.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pasta_spaghetti.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pasta_penne_red",
+   "scale_ref": "c_food_pasta_penne",
+   "size_cm": [
+    13.9,
+    21.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pasta_penne.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pasta_farfalle_green",
+   "scale_ref": "c_food_pasta_farfalle",
+   "size_cm": [
+    13.9,
+    21.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pasta_farfalle.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_rice_white",
+   "scale_ref": "c_food_rice",
+   "size_cm": [
+    14.8,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_rice.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_roll_light",
+   "scale_ref": "c_food_roll",
+   "size_cm": [
+    10.9,
+    7.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_roll.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_roll_dark",
+   "scale_ref": "c_food_roll",
+   "size_cm": [
+    10.9,
+    7.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_roll.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_pretzel_brown",
+   "scale_ref": "c_food_pretzel",
+   "size_cm": [
+    17.0,
+    14.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_pretzel.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#fbfaf7",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_baguette_gold",
+   "scale_ref": "c_food_baguette",
+   "size_cm": [
+    36.0,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_baguette.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_croissant_gold",
+   "scale_ref": "c_food_croissant",
+   "size_cm": [
+    14.8,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_croissant.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_milk_white",
+   "scale_ref": "c_food_milk",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_milk.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_milk_choco",
+   "scale_ref": "c_food_milk",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_milk.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_juice_orange",
+   "scale_ref": "c_food_juice",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_juice.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f4c95d",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_juice_apple",
+   "scale_ref": "c_food_juice",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_juice.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_juice_red",
+   "scale_ref": "c_food_juice",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_juice.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_water_blue",
+   "scale_ref": "c_food_water",
+   "size_cm": [
+    8.3,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_water.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6f8fb8",
+    "#6f8fb8"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_water_green",
+   "scale_ref": "c_food_water",
+   "size_cm": [
+    8.3,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_water.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#5f8f6a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_yogurt_strawberry",
+   "scale_ref": "c_food_yogurt",
+   "size_cm": [
+    9.6,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_yogurt.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_yogurt_vanilla",
+   "scale_ref": "c_food_yogurt",
+   "size_cm": [
+    9.6,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_yogurt.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_yogurt_berry",
+   "scale_ref": "c_food_yogurt",
+   "size_cm": [
+    9.6,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_yogurt.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#7a5ea8",
+    "#b9a6d6"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_butter_gold",
+   "scale_ref": "c_food_butter",
+   "size_cm": [
+    11.9,
+    5.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_butter.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#a9c3dd",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cereal_red",
+   "scale_ref": "c_food_cereal",
+   "size_cm": [
+    21.9,
+    29.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cereal.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cereal_blue",
+   "scale_ref": "c_food_cereal",
+   "size_cm": [
+    21.9,
+    29.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cereal.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cereal_green",
+   "scale_ref": "c_food_cereal",
+   "size_cm": [
+    21.9,
+    29.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cereal.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#d4a86e",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_jam_strawberry",
+   "scale_ref": "c_food_jam",
+   "size_cm": [
+    8.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_jam.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_jam_apricot",
+   "scale_ref": "c_food_jam",
+   "size_cm": [
+    8.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_jam.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_jam_cherry",
+   "scale_ref": "c_food_jam",
+   "size_cm": [
+    8.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_jam.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_honey_gold",
+   "scale_ref": "c_food_honey",
+   "size_cm": [
+    8.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_honey.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cookie_choc",
+   "scale_ref": "c_food_cookie",
+   "size_cm": [
+    8.2,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cookie.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cookie_plain",
+   "scale_ref": "c_food_cookie",
+   "size_cm": [
+    8.2,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cookie.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d4a86e",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_cookie_dark",
+   "scale_ref": "c_food_cookie",
+   "size_cm": [
+    8.2,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_cookie.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_chocolate_milk",
+   "scale_ref": "c_food_chocolate",
+   "size_cm": [
+    17.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_chocolate.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#8a5e3f",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_chocolate_dark",
+   "scale_ref": "c_food_chocolate",
+   "size_cm": [
+    17.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_chocolate.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#5a463a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_chocolate_white",
+   "scale_ref": "c_food_chocolate",
+   "size_cm": [
+    17.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_chocolate.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_candy_mix",
+   "scale_ref": "c_food_candy",
+   "size_cm": [
+    12.1,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_candy_sour",
+   "scale_ref": "c_food_candy",
+   "size_cm": [
+    12.1,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f4c95d",
+    "#f09a55"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_candy_berry",
+   "scale_ref": "c_food_candy",
+   "size_cm": [
+    12.1,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f0b6c2",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_donut_pink",
+   "scale_ref": "c_food_donut",
+   "size_cm": [
+    10.8,
+    6.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_donut.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_donut_choc",
+   "scale_ref": "c_food_donut",
+   "size_cm": [
+    10.8,
+    6.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_donut.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#f6d98a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_donut_white",
+   "scale_ref": "c_food_donut",
+   "size_cm": [
+    10.8,
+    6.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_donut.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_lollipop_rainbow",
+   "scale_ref": "c_food_lollipop",
+   "size_cm": [
+    8.9,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_lollipop.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_lollipop_blue",
+   "scale_ref": "c_food_lollipop",
+   "size_cm": [
+    8.9,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_lollipop.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_lollipop_green",
+   "scale_ref": "c_food_lollipop",
+   "size_cm": [
+    8.9,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_lollipop.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f4c95d",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_burger_classic",
+   "scale_ref": "c_food_burger",
+   "size_cm": [
+    15.5,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_burger.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f4c95d",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_fries_red",
+   "scale_ref": "c_food_fries",
+   "size_cm": [
+    11.5,
+    13.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_fries.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_hotdog_classic",
+   "scale_ref": "c_food_hotdog",
+   "size_cm": [
+    17.6,
+    6.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_hotdog.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f4c95d",
+    "#b8452f"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_sandwich_cheese",
+   "scale_ref": "c_food_sandwich",
+   "size_cm": [
+    13.8,
+    12.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_sandwich.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_sandwich_ham",
+   "scale_ref": "c_food_sandwich",
+   "size_cm": [
+    13.8,
+    12.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_sandwich.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_salad_green",
+   "scale_ref": "c_food_salad",
+   "size_cm": [
+    21.7,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_salad.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#7fae6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "food_salad_mixed",
+   "scale_ref": "c_food_salad",
+   "size_cm": [
+    21.7,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/food_salad.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f4c95d",
+    "#5f8f6a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

@@ -421,6 +421,415 @@
     "#9aa6b4"
    ],
    "catalog": "bikes"
+  },
+  {
+   "id": "play_balance_bike_coral",
+   "scale_ref": "c_play_balance_bike",
+   "size_cm": [
+    73.0,
+    50.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_balance_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_balance_bike_sky",
+   "scale_ref": "c_play_balance_bike",
+   "size_cm": [
+    73.0,
+    50.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_balance_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_balance_bike_mint",
+   "scale_ref": "c_play_balance_bike",
+   "size_cm": [
+    73.0,
+    50.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_balance_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_balance_bike_butter",
+   "scale_ref": "c_play_balance_bike",
+   "size_cm": [
+    73.0,
+    50.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_balance_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "veh_bike_trailer_coral",
+   "scale_ref": "c_veh_bike_trailer",
+   "size_cm": [
+    146.7,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_trailer.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_bike_trailer_sky",
+   "scale_ref": "c_veh_bike_trailer",
+   "size_cm": [
+    146.7,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_trailer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_bike_trailer_butter",
+   "scale_ref": "c_veh_bike_trailer",
+   "size_cm": [
+    146.7,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_trailer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "play_kids_bike_coral",
+   "scale_ref": "c_play_kids_bike",
+   "size_cm": [
+    107.8,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_kids_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_kids_bike_sky",
+   "scale_ref": "c_play_kids_bike",
+   "size_cm": [
+    107.8,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_kids_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_kids_bike_mint",
+   "scale_ref": "c_play_kids_bike",
+   "size_cm": [
+    107.8,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_kids_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_kids_bike_rose",
+   "scale_ref": "c_play_kids_bike",
+   "size_cm": [
+    107.8,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_kids_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_kids_bike_butter",
+   "scale_ref": "c_play_kids_bike",
+   "size_cm": [
+    107.8,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_kids_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "play_scooter_mini_rose",
+   "scale_ref": "c_play_scooter_mini",
+   "size_cm": [
+    48.7,
+    67.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_scooter_mini.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes"
+  },
+  {
+   "id": "play_scooter_mini_butter",
+   "scale_ref": "c_play_scooter_mini",
+   "size_cm": [
+    48.7,
+    67.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_scooter_mini.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes"
+  },
+  {
+   "id": "play_scooter_mini_mint",
+   "scale_ref": "c_play_scooter_mini",
+   "size_cm": [
+    48.7,
+    67.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_scooter_mini.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "bikes"
   }
  ]
 }

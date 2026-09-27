@@ -1,0 +1,101 @@
+{
+ "px_per_cm": 4.0,
+ "size_px": [
+  9600,
+  1800
+ ],
+ "origin_px": [
+  0.0,
+  1360.0
+ ],
+ "source": "tools/make_rooms.py",
+ "tiles": [
+  {
+   "file": "res://assets/backgrounds/home/garden_detail_0_0.png",
+   "x_px": 0,
+   "y_px": 0,
+   "w_px": 2048,
+   "h_px": 1800
+  },
+  {
+   "file": "res://assets/backgrounds/home/garden_detail_0_1.png",
+   "x_px": 2048,
+   "y_px": 0,
+   "w_px": 2048,
+   "h_px": 1800
+  },
+  {
+   "file": "res://assets/backgrounds/home/garden_detail_0_2.png",
+   "x_px": 4096,
+   "y_px": 0,
+   "w_px": 2048,
+   "h_px": 1800
+  },
+  {
+   "file": "res://assets/backgrounds/home/garden_detail_0_3.png",
+   "x_px": 6144,
+   "y_px": 0,
+   "w_px": 2048,
+   "h_px": 1800
+  },
+  {
+   "file": "res://assets/backgrounds/home/garden_detail_0_4.png",
+   "x_px": 8192,
+   "y_px": 0,
+   "w_px": 1408,
+   "h_px": 1800
+  }
+ ],
+ "layers": [
+  {
+   "kind": "floor",
+   "y_px": 1360,
+   "tiles": [
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_grass_0_0.png",
+     "x_px": 0,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_grass_0_1.png",
+     "x_px": 2048,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_grass_0_2.png",
+     "x_px": 4096,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_grass_0_3.png",
+     "x_px": 6144,
+     "y_px": 0,
+     "w_px": 2048,
+     "h_px": 440
+    },
+    {
+     "file": "res://assets/backgrounds/shared/floor_2400_grass_0_4.png",
+     "x_px": 8192,
+     "y_px": 0,
+     "w_px": 1408,
+     "h_px": 440
+    }
+   ]
+  }
+ ],
+ "decor": {
+  "floor": "grass",
+  "floor_cols": [
+   "#8fcf6a",
+   "#7cbf5a",
+   "#5fa35a"
+  ]
+ },
+ "note": "Ebenen 'wall'/'floor' sind Zonen-kodiert (Shader färbt nach decor), 'tiles' ist fest eingefärbt."
+}

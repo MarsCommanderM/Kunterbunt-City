@@ -214,7 +214,6 @@ for st, w, h, names, place in (("vase", 16, 30, ["cream", "sky", "coral", "sage"
                                ("clock", 30, 30, ["cream", "walnut", "sky"], "wall"),
                                ("frame", 40, 30, ["oak", "walnut", "cream"], "wall"),
                                ("cushion", 40, 40, ["rose", "sky", "butter", "mint", "coral", "plum"], "floor"),
-                               ("rug", 160, 12, ["rose", "sky", "sage", "butter", "grey"], "floor"),
                                ("radio", 30, 22, ["coral", "sky", "cream"], "table"),
                                ("laptop", 34, 24, ["grey", "cream", "rose"], "table"),
                                ("phone", 7, 15, ["black", "coral", "sky"], "table"),
@@ -228,8 +227,8 @@ for st, w, h, names, place in (("vase", 16, 30, ["cream", "sky", "coral", "sage"
 # --- Spielzeug
 for st, w, h, names in (("ball", 22, 22, BRIGHT[:5]), ("beachball", 30, 30, ["cream"]), ("football", 22, 22, ["white"]),
                         ("basketball", 24, 24, ["orange"]), ("teddy", 25, 30, ["oak", "walnut", "rose", "cream"]),
-                        ("blocks", 12, 12, ["coral"]), ("car", 16, 9, ["coral", "sky", "butter", "mint"]),
-                        ("train", 30, 14, ["coral"]), ("robot", 16, 26, ["sky", "grey", "coral"]),
+                        ("blocks", 12, 12, ["coral", "mint", "plum"]), ("car", 16, 9, ["coral", "sky", "butter", "mint"]),
+                        ("train", 30, 14, ["coral", "navy"]), ("robot", 16, 26, ["sky", "grey", "coral"]),
                         ("doll", 15, 35, ["rose", "sky", "butter"]), ("drum", 26, 22, ["coral", "sky"]),
                         ("xylophone", 36, 14, ["coral"]), ("puzzle", 24, 24, ["coral"]), ("kite", 60, 80, ["coral", "sky", "butter"]),
                         ("rocking_horse", 80, 70, ["cream", "oak", "rose"]), ("balloon", 25, 60, BRIGHT[:6]),
@@ -434,3 +433,59 @@ for st, w, h, names in (("toast", 11, 11, ["oak"]), ("bread_slice", 11, 11, ["pi
     third = {"smoothie": "sky", "soup": "cream", "hot_drink": "coral", "popcorn_bowl": "coral", "pancakes": "cream",
              "cake_baked": "coral"}.get(st, "metal")
     S(f"cook_{st}", AP.cooked, st, w, h, "food", "food", names, second=second, third=third)
+
+
+# ================================================================== P07: Bauteile – Räume sind leer, das Kind baut (Wunsch 👤)
+# Fenster, Türen, Vorhänge hängen an der Wand (placement "wall", Aufhängepunkt oben Mitte); Teppiche liegen
+# flach unter allem (placement "rug"). Türen und bodentiefe Fenster rasten unten am Boden ein (tag "to_floor").
+from . import building as BU  # noqa: E402
+
+SKY, HILL = "#a8dcf2", "#8cc47a"
+FRAMES = ["white", "oak", "walnut", "grey", "sky", "mint", "coral"]
+for style, sizes in (("single", (("s", 60, 72), ("m", 90, 110), ("l", 120, 140))), ("double", (("m", 120, 120), ("l", 160, 140))),
+                     ("triple", (("l", 210, 130),)), ("floor", (("l", 100, 212),)), ("tilt", (("m", 80, 100),)),
+                     ("small", (("s", 50, 50),)), ("basement", (("m", 100, 52),)), ("shop", (("xl", 260, 190),)),
+                     ("round", (("s", 50, 50), ("m", 72, 72))), ("porthole", (("s", 56, 56),)), ("arch", (("m", 90, 150), ("l", 120, 185))),
+                     ("gable", (("m", 90, 115),)), ("stained", (("m", 70, 140),))):
+    for size, w, h in sizes:
+        T(id=f"win_{style}_{size}", fn=BU.window, w=w, h=h, kw={"style": style}, group="windows", category="deco",
+          placement="wall", tags=["to_floor"] if style == "floor" else [],
+          variants=[(n, cols(n, SKY, HILL if style != "stained" else "rose")) for n in FRAMES])
+for style, w, h, names in (("wood", 95, 205, ["oak", "walnut", "white", "sky", "mint", "coral", "navy"]),
+                           ("glass", 95, 205, ["white", "oak", "grey", "sky"]), ("arch", 100, 220, ["oak", "walnut", "coral", "mint"]),
+                           ("barn", 110, 210, ["oak", "walnut", "rust", "grey"]), ("double", 165, 215, ["white", "oak", "grey"]),
+                           ("garage", 260, 215, ["cream", "grey", "sky", "coral"])):
+    T(id=f"door_{style}", fn=BU.door, w=w, h=h, kw={"style": style}, group="doors", category="deco", placement="wall",
+      tags=["to_floor"], variants=[(n, cols(n, "white" if n != "white" else "cream", "#e0b84a" if style != "garage" else "metal"))
+                                   for n in names])
+CURTAIN = ["coral", "sky", "mint", "butter", "rose", "navy", "sage", "plum", "cream"]
+for style, w, h in (("long", 170, 235), ("short", 130, 80), ("sheer", 170, 235), ("blind", 110, 150)):
+    for pattern in (("plain", "dots", "stripes", "stars") if style in ("long", "short") else ("plain",)):
+        T(id=f"curtain_{style}" + ("" if pattern == "plain" else f"_{pattern}"), fn=BU.curtain, w=w, h=h,
+          kw={"style": style, "pattern": pattern}, group="curtains", category="deco", placement="wall",
+          variants=[(n, cols(n if style != "sheer" else "cream", "cream" if n != "cream" else "coral",
+                             "oak" if style != "blind" else "metal")) for n in (CURTAIN if style != "sheer" else ["cream"])])
+for style, w, h, names in (("rect", 220, 60, ["coral", "sky", "sage", "butter", "navy", "rust", "plum"]),
+                           ("rect", 160, 45, ["rose", "teal", "mint", "sand", "grey"]),
+                           ("round", 150, 42, ["rose", "sky", "butter", "mint", "lilac"]),
+                           ("runner", 280, 24, ["rust", "navy", "sage", "coral"]),
+                           ("doormat", 75, 20, ["oak", "pine", "grey"]), ("bathmat", 80, 24, ["sky", "mint", "rose", "cream"]),
+                           ("roads", 200, 56, ["green"]), ("sheepskin", 110, 32, ["cream", "sand", "grey"]),
+                           ("flower", 130, 40, ["rose", "butter", "sky", "mint"])):
+    rid = f"rug_{style}" + ("_s" if (style == "rect" and w < 200) else "")
+    third = {"rect": "cream", "runner": "cream", "doormat": "walnut", "roads": "white", "bathmat": "cream"}.get(style, "cream")
+    second = {"roads": "grey", "doormat": "coral", "flower": "butter", "round": "cream"}.get(style, "butter")
+    T(id=rid, fn=BU.rug, w=w, h=h, kw={"style": style}, group="rugs", category="deco", placement="rug",
+      variants=[(n, cols(n, second if n != second else "coral", third)) for n in names])
+for motif, names in (("rocket", ["navy", "sky"]), ("rainbow", ["sky", "cream"]), ("dino", ["butter", "mint"]), ("sun", ["sky", "rose"])):
+    T(id=f"poster_{motif}", fn=BU.poster, w=50, h=70, kw={"motif": motif}, group="walldeco", category="deco", placement="wall",
+      variants=[(n, cols(n, {"rocket": "coral", "rainbow": "coral", "dino": "green", "sun": "yellow"}[motif],
+                         {"rocket": "cream", "rainbow": "butter", "dino": "oak", "sun": "leaf"}[motif])) for n in names])
+T(id="wall_sconce", fn=BU.sconce, w=30, h=45, group="walldeco", category="deco", placement="wall",
+  states={"on": {"state": "on"}}, state0="off",
+  variants=[(n, cols(n, "butter", "metal")) for n in ["cream", "sky", "mint", "coral"]])
+T(id="home_radiator", fn=BU.radiator, w=100, h=60, group="walldeco", category="furniture",
+  variants=[(n, cols(n, "grey", "metal")) for n in ["white", "cream", "grey"]])
+
+# P07-Inventar (Pflichtliste data/inventory.json) – eigene Datei, damit keine Datei über 400 Zeilen wächst
+from . import catalog_food, catalog_home, catalog_living, catalog_more  # noqa: E402,F401

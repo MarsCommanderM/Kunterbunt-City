@@ -1,0 +1,2166 @@
+{
+ "_doc": "Pflicht-Inventar (Wunsch 👤: ‚wirklich alles, vom Löffel bis zur Wohnwand, in Variationen‘). Jeder Eintrag = ID-Präfix im Katalog + Mindestzahl Varianten. Geprüft von tools/tests/test_inventory.py.",
+ "areas": {
+  "home": {
+   "kueche": [
+    {
+     "label": "Kühlschrank",
+     "prefix": "app_fridge",
+     "min": 3
+    },
+    {
+     "label": "Herd",
+     "prefix": "app_stove",
+     "min": 3
+    },
+    {
+     "label": "Backofen",
+     "prefix": "app_oven",
+     "min": 3
+    },
+    {
+     "label": "Spüle",
+     "prefix": "app_sink",
+     "min": 3
+    },
+    {
+     "label": "Spülmaschine",
+     "prefix": "app_dishwasher",
+     "min": 3
+    },
+    {
+     "label": "Dunstabzug",
+     "prefix": "kit_hood",
+     "min": 3
+    },
+    {
+     "label": "Küchen-Unterschrank",
+     "prefix": "kit_cabinet_base",
+     "min": 4
+    },
+    {
+     "label": "Küchen-Hängeschrank",
+     "prefix": "kit_cabinet_wall",
+     "min": 4
+    },
+    {
+     "label": "Küchenzeile",
+     "prefix": "kit_counter",
+     "min": 4
+    },
+    {
+     "label": "Kühl-Insel/Theke",
+     "prefix": "kit_island",
+     "min": 3
+    },
+    {
+     "label": "Mikrowelle",
+     "prefix": "kit_microwave",
+     "min": 3
+    },
+    {
+     "label": "Toaster",
+     "prefix": "kit_toaster",
+     "min": 3
+    },
+    {
+     "label": "Wasserkocher",
+     "prefix": "kit_kettle",
+     "min": 3
+    },
+    {
+     "label": "Kaffeemaschine",
+     "prefix": "kit_coffee",
+     "min": 3
+    },
+    {
+     "label": "Mixer",
+     "prefix": "kit_blender",
+     "min": 3
+    },
+    {
+     "label": "Topf",
+     "prefix": "kit_pot",
+     "min": 3
+    },
+    {
+     "label": "Pfanne",
+     "prefix": "kit_pan",
+     "min": 3
+    },
+    {
+     "label": "Teller",
+     "prefix": "kit_plate",
+     "min": 12
+    },
+    {
+     "label": "Schüssel",
+     "prefix": "kit_bowl",
+     "min": 6
+    },
+    {
+     "label": "Tasse",
+     "prefix": "kit_cup",
+     "min": 6
+    },
+    {
+     "label": "Becher",
+     "prefix": "kit_mug",
+     "min": 6
+    },
+    {
+     "label": "Glas",
+     "prefix": "kit_glass",
+     "min": 8
+    },
+    {
+     "label": "Löffel",
+     "prefix": "kit_spoon",
+     "min": 2
+    },
+    {
+     "label": "Gabel",
+     "prefix": "kit_fork",
+     "min": 2
+    },
+    {
+     "label": "Messer",
+     "prefix": "kit_knife",
+     "min": 2
+    },
+    {
+     "label": "Kochlöffel",
+     "prefix": "kit_woodspoon",
+     "min": 2
+    },
+    {
+     "label": "Schneebesen",
+     "prefix": "kit_whisk",
+     "min": 1
+    },
+    {
+     "label": "Schöpfkelle",
+     "prefix": "kit_ladle",
+     "min": 1
+    },
+    {
+     "label": "Pfannenwender",
+     "prefix": "kit_spatula",
+     "min": 1
+    },
+    {
+     "label": "Schneidebrett",
+     "prefix": "kit_board",
+     "min": 2
+    },
+    {
+     "label": "Nudelholz",
+     "prefix": "kit_rolling_pin",
+     "min": 1
+    },
+    {
+     "label": "Teekanne",
+     "prefix": "kit_teapot",
+     "min": 3
+    },
+    {
+     "label": "Tablett",
+     "prefix": "kit_tray",
+     "min": 3
+    },
+    {
+     "label": "Brotkasten",
+     "prefix": "kit_breadbox",
+     "min": 3
+    },
+    {
+     "label": "Obstschale",
+     "prefix": "kit_fruit_bowl",
+     "min": 3
+    },
+    {
+     "label": "Gewürzregal",
+     "prefix": "kit_spice_rack",
+     "min": 2
+    },
+    {
+     "label": "Mülleimer",
+     "prefix": "kit_trash",
+     "min": 3
+    },
+    {
+     "label": "Abtropfgestell",
+     "prefix": "kit_dish_rack",
+     "min": 2
+    },
+    {
+     "label": "Backblech",
+     "prefix": "kit_baking_tray",
+     "min": 1
+    },
+    {
+     "label": "Küchenwaage",
+     "prefix": "kit_scale",
+     "min": 2
+    },
+    {
+     "label": "Salz & Pfeffer",
+     "prefix": "kit_salt_pepper",
+     "min": 2
+    },
+    {
+     "label": "Vorratsdose",
+     "prefix": "kit_canister",
+     "min": 3
+    },
+    {
+     "label": "Küchenrolle",
+     "prefix": "kit_paper_roll",
+     "min": 2
+    },
+    {
+     "label": "Sieb",
+     "prefix": "kit_sieve",
+     "min": 2
+    },
+    {
+     "label": "Flasche",
+     "prefix": "kit_bottle",
+     "min": 3
+    },
+    {
+     "label": "Einmachglas",
+     "prefix": "kit_jar",
+     "min": 3
+    },
+    {
+     "label": "Hochstuhl",
+     "prefix": "furn_highchair",
+     "min": 3
+    },
+    {
+     "label": "Obst: grapes",
+     "prefix": "food_grapes",
+     "min": 1
+    },
+    {
+     "label": "Obst: strawberry",
+     "prefix": "food_strawberry",
+     "min": 1
+    },
+    {
+     "label": "Obst: cherry",
+     "prefix": "food_cherry",
+     "min": 1
+    },
+    {
+     "label": "Obst: pineapple",
+     "prefix": "food_pineapple",
+     "min": 1
+    },
+    {
+     "label": "Obst: kiwi",
+     "prefix": "food_kiwi",
+     "min": 1
+    },
+    {
+     "label": "Obst: plum",
+     "prefix": "food_plum",
+     "min": 1
+    },
+    {
+     "label": "Obst: mango",
+     "prefix": "food_mango",
+     "min": 1
+    },
+    {
+     "label": "Obst: melon",
+     "prefix": "food_melon",
+     "min": 1
+    },
+    {
+     "label": "Obst: apricot",
+     "prefix": "food_apricot",
+     "min": 1
+    },
+    {
+     "label": "Obst: blueberries",
+     "prefix": "food_blueberries",
+     "min": 1
+    },
+    {
+     "label": "Obst: coconut",
+     "prefix": "food_coconut",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: cucumber",
+     "prefix": "food_cucumber",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: potato",
+     "prefix": "food_potato",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: onion",
+     "prefix": "food_onion",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: pepper",
+     "prefix": "food_pepper",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: broccoli",
+     "prefix": "food_broccoli",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: lettuce",
+     "prefix": "food_lettuce",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: corn",
+     "prefix": "food_corn",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: pumpkin",
+     "prefix": "food_pumpkin",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: eggplant",
+     "prefix": "food_eggplant",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: peas",
+     "prefix": "food_peas",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: radish",
+     "prefix": "food_radish",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: mushroom",
+     "prefix": "food_mushroom",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: garlic",
+     "prefix": "food_garlic",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: zucchini",
+     "prefix": "food_zucchini",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: cauliflower",
+     "prefix": "food_cauliflower",
+     "min": 1
+    },
+    {
+     "label": "Gemüse: leek",
+     "prefix": "food_leek",
+     "min": 1
+    },
+    {
+     "label": "Paprika bunt",
+     "prefix": "food_pepper",
+     "min": 3
+    },
+    {
+     "label": "Spaghetti (Teller)",
+     "prefix": "food_spaghetti",
+     "min": 2
+    },
+    {
+     "label": "Nudelpackung",
+     "prefix": "food_pasta",
+     "min": 3
+    },
+    {
+     "label": "Reis",
+     "prefix": "food_rice",
+     "min": 1
+    },
+    {
+     "label": "Brötchen",
+     "prefix": "food_roll",
+     "min": 2
+    },
+    {
+     "label": "Brezel",
+     "prefix": "food_pretzel",
+     "min": 1
+    },
+    {
+     "label": "Baguette",
+     "prefix": "food_baguette",
+     "min": 1
+    },
+    {
+     "label": "Croissant",
+     "prefix": "food_croissant",
+     "min": 1
+    },
+    {
+     "label": "Milch",
+     "prefix": "food_milk",
+     "min": 2
+    },
+    {
+     "label": "Joghurt",
+     "prefix": "food_yogurt",
+     "min": 3
+    },
+    {
+     "label": "Butter",
+     "prefix": "food_butter",
+     "min": 1
+    },
+    {
+     "label": "Müsli/Flakes",
+     "prefix": "food_cereal",
+     "min": 3
+    },
+    {
+     "label": "Marmelade",
+     "prefix": "food_jam",
+     "min": 3
+    },
+    {
+     "label": "Honig",
+     "prefix": "food_honey",
+     "min": 1
+    },
+    {
+     "label": "Saft",
+     "prefix": "food_juice",
+     "min": 3
+    },
+    {
+     "label": "Wasserflasche",
+     "prefix": "food_water",
+     "min": 2
+    },
+    {
+     "label": "Kekse",
+     "prefix": "food_cookie",
+     "min": 3
+    },
+    {
+     "label": "Schokolade",
+     "prefix": "food_chocolate",
+     "min": 3
+    },
+    {
+     "label": "Bonbons",
+     "prefix": "food_candy",
+     "min": 3
+    },
+    {
+     "label": "Donut",
+     "prefix": "food_donut",
+     "min": 3
+    },
+    {
+     "label": "Lutscher",
+     "prefix": "food_lollipop",
+     "min": 3
+    },
+    {
+     "label": "Burger",
+     "prefix": "food_burger",
+     "min": 1
+    },
+    {
+     "label": "Pommes",
+     "prefix": "food_fries",
+     "min": 1
+    },
+    {
+     "label": "Hotdog",
+     "prefix": "food_hotdog",
+     "min": 1
+    },
+    {
+     "label": "Sandwich",
+     "prefix": "food_sandwich",
+     "min": 2
+    },
+    {
+     "label": "Salat",
+     "prefix": "food_salad",
+     "min": 2
+    },
+    {
+     "label": "Suppe",
+     "prefix": "cook_soup",
+     "min": 3
+    },
+    {
+     "label": "Lebensmittel gesamt",
+     "prefix": "food_",
+     "min": 110
+    },
+    {
+     "label": "Teetasse mit Untertasse",
+     "prefix": "kit_teacup",
+     "min": 4
+    },
+    {
+     "label": "Teller tief",
+     "prefix": "kit_plate_deep",
+     "min": 4
+    },
+    {
+     "label": "Kinderteller",
+     "prefix": "kit_plate_kids",
+     "min": 3
+    },
+    {
+     "label": "Weinglas",
+     "prefix": "kit_glass_wine",
+     "min": 2
+    },
+    {
+     "label": "Saftglas",
+     "prefix": "kit_glass_tumbler",
+     "min": 3
+    },
+    {
+     "label": "Teelöffel",
+     "prefix": "kit_teaspoon",
+     "min": 2
+    },
+    {
+     "label": "Kanne",
+     "prefix": "kit_jug",
+     "min": 3
+    },
+    {
+     "label": "Karaffe",
+     "prefix": "kit_carafe",
+     "min": 2
+    },
+    {
+     "label": "Eierbecher",
+     "prefix": "kit_egg_cup",
+     "min": 4
+    },
+    {
+     "label": "Zuckerdose",
+     "prefix": "kit_sugar_bowl",
+     "min": 2
+    },
+    {
+     "label": "Butterdose",
+     "prefix": "kit_butter_dish",
+     "min": 2
+    },
+    {
+     "label": "Tortenplatte",
+     "prefix": "kit_cake_stand",
+     "min": 2
+    },
+    {
+     "label": "Salatschüssel",
+     "prefix": "kit_salad_bowl",
+     "min": 3
+    },
+    {
+     "label": "Brotdose",
+     "prefix": "kit_lunchbox",
+     "min": 4
+    },
+    {
+     "label": "Trinkflasche",
+     "prefix": "kit_drink_bottle",
+     "min": 4
+    },
+    {
+     "label": "Thermoskanne",
+     "prefix": "kit_thermos",
+     "min": 3
+    },
+    {
+     "label": "Servietten",
+     "prefix": "kit_napkins",
+     "min": 3
+    },
+    {
+     "label": "Tischset",
+     "prefix": "kit_placemat",
+     "min": 4
+    }
+   ],
+   "wohnzimmer": [
+    {
+     "label": "Sofa",
+     "prefix": "furn_sofa",
+     "min": 10
+    },
+    {
+     "label": "Ecksofa",
+     "prefix": "furn_sofa_corner",
+     "min": 3
+    },
+    {
+     "label": "Sessel",
+     "prefix": "furn_armchair",
+     "min": 6
+    },
+    {
+     "label": "Couchtisch",
+     "prefix": "furn_table_coffee",
+     "min": 8
+    },
+    {
+     "label": "Beistelltisch",
+     "prefix": "furn_table_side",
+     "min": 3
+    },
+    {
+     "label": "Fernseher",
+     "prefix": "elec_tv",
+     "min": 3
+    },
+    {
+     "label": "TV-Bank",
+     "prefix": "furn_tv_bench",
+     "min": 3
+    },
+    {
+     "label": "Wohnwand",
+     "prefix": "furn_wall_unit",
+     "min": 3
+    },
+    {
+     "label": "Sideboard",
+     "prefix": "furn_sideboard",
+     "min": 4
+    },
+    {
+     "label": "Vitrine",
+     "prefix": "furn_vitrine",
+     "min": 3
+    },
+    {
+     "label": "Bücherregal",
+     "prefix": "furn_bookshelf",
+     "min": 3
+    },
+    {
+     "label": "Kamin",
+     "prefix": "furn_fireplace",
+     "min": 3
+    },
+    {
+     "label": "Klavier",
+     "prefix": "furn_piano",
+     "min": 2
+    },
+    {
+     "label": "Spiegel",
+     "prefix": "deco_mirror",
+     "min": 4
+    },
+    {
+     "label": "Kissen",
+     "prefix": "deco_cushion",
+     "min": 5
+    },
+    {
+     "label": "Kuscheldecke",
+     "prefix": "deco_throw",
+     "min": 4
+    },
+    {
+     "label": "Vase",
+     "prefix": "deco_vase",
+     "min": 4
+    },
+    {
+     "label": "Bilderrahmen",
+     "prefix": "deco_frame",
+     "min": 3
+    },
+    {
+     "label": "Uhr",
+     "prefix": "deco_clock",
+     "min": 3
+    },
+    {
+     "label": "Stehlampe",
+     "prefix": "deco_lamp_floor",
+     "min": 3
+    },
+    {
+     "label": "Kratzbaum",
+     "prefix": "pet_cat_tree",
+     "min": 2
+    },
+    {
+     "label": "Hundekorb",
+     "prefix": "zoo_pet_bed",
+     "min": 2
+    },
+    {
+     "label": "Spielkonsole",
+     "prefix": "app_console",
+     "min": 2
+    },
+    {
+     "label": "Fernbedienung",
+     "prefix": "elec_remote",
+     "min": 2
+    },
+    {
+     "label": "Lautsprecher",
+     "prefix": "elec_speaker",
+     "min": 3
+    },
+    {
+     "label": "Zeitschriften-Stapel",
+     "prefix": "deco_magazines",
+     "min": 2
+    },
+    {
+     "label": "Tisch rund",
+     "prefix": "furn_table_round",
+     "min": 4
+    },
+    {
+     "label": "Tisch oval",
+     "prefix": "furn_table_oval",
+     "min": 4
+    },
+    {
+     "label": "Tisch quadratisch",
+     "prefix": "furn_table_square",
+     "min": 4
+    },
+    {
+     "label": "Tafel lang",
+     "prefix": "furn_table_long",
+     "min": 3
+    },
+    {
+     "label": "Ausziehtisch",
+     "prefix": "furn_table_extend",
+     "min": 3
+    },
+    {
+     "label": "Klapptisch",
+     "prefix": "furn_table_folding",
+     "min": 3
+    },
+    {
+     "label": "Bistrotisch",
+     "prefix": "furn_table_bistro",
+     "min": 3
+    },
+    {
+     "label": "Stehtisch/Bartisch",
+     "prefix": "furn_table_bar",
+     "min": 3
+    },
+    {
+     "label": "Konsolentisch",
+     "prefix": "furn_table_console",
+     "min": 3
+    },
+    {
+     "label": "Satztische",
+     "prefix": "furn_table_nesting",
+     "min": 3
+    },
+    {
+     "label": "Tische gesamt",
+     "prefix": "furn_table_",
+     "min": 60
+    },
+    {
+     "label": "Ohrensessel",
+     "prefix": "furn_armchair_wing",
+     "min": 4
+    },
+    {
+     "label": "Fernsehsessel",
+     "prefix": "furn_armchair_recliner",
+     "min": 3
+    },
+    {
+     "label": "Schaukelstuhl",
+     "prefix": "furn_chair_rocking",
+     "min": 3
+    },
+    {
+     "label": "Klappstuhl",
+     "prefix": "furn_chair_folding",
+     "min": 3
+    },
+    {
+     "label": "Eckbank",
+     "prefix": "furn_bench_kitchen",
+     "min": 3
+    },
+    {
+     "label": "Tritthocker",
+     "prefix": "furn_stool_step",
+     "min": 3
+    },
+    {
+     "label": "Klavierhocker",
+     "prefix": "furn_stool_piano",
+     "min": 2
+    },
+    {
+     "label": "Melkschemel",
+     "prefix": "furn_stool_milk",
+     "min": 2
+    },
+    {
+     "label": "Fußhocker",
+     "prefix": "furn_footstool",
+     "min": 3
+    },
+    {
+     "label": "Barhocker",
+     "prefix": "furn_chair_bar",
+     "min": 3
+    },
+    {
+     "label": "Stühle gesamt",
+     "prefix": "furn_chair_",
+     "min": 40
+    }
+   ],
+   "schlafzimmer": [
+    {
+     "label": "Doppelbett",
+     "prefix": "furn_bed_double",
+     "min": 6
+    },
+    {
+     "label": "Matratze",
+     "prefix": "furn_mattress",
+     "min": 3
+    },
+    {
+     "label": "Bettdecke",
+     "prefix": "bed_duvet",
+     "min": 6
+    },
+    {
+     "label": "Kopfkissen",
+     "prefix": "bed_pillow",
+     "min": 6
+    },
+    {
+     "label": "Nachttisch",
+     "prefix": "furn_nightstand",
+     "min": 3
+    },
+    {
+     "label": "Kleiderschrank",
+     "prefix": "furn_wardrobe",
+     "min": 4
+    },
+    {
+     "label": "Kommode",
+     "prefix": "furn_dresser",
+     "min": 6
+    },
+    {
+     "label": "Schminktisch",
+     "prefix": "furn_vanity",
+     "min": 3
+    },
+    {
+     "label": "Standspiegel",
+     "prefix": "deco_mirror_stand",
+     "min": 3
+    },
+    {
+     "label": "Wecker",
+     "prefix": "deco_alarm",
+     "min": 3
+    },
+    {
+     "label": "Nachttischlampe",
+     "prefix": "deco_lamp_table",
+     "min": 3
+    },
+    {
+     "label": "Wäschekorb",
+     "prefix": "deco_basket_laundry",
+     "min": 3
+    },
+    {
+     "label": "Kleiderständer",
+     "prefix": "furn_clothes_rack",
+     "min": 3
+    },
+    {
+     "label": "Oberteil",
+     "prefix": "cloth_shirt",
+     "min": 6
+    },
+    {
+     "label": "Hose",
+     "prefix": "cloth_pants",
+     "min": 4
+    },
+    {
+     "label": "Kleid",
+     "prefix": "cloth_dress",
+     "min": 4
+    },
+    {
+     "label": "Jacke",
+     "prefix": "cloth_jacket",
+     "min": 4
+    },
+    {
+     "label": "Schuhe",
+     "prefix": "cloth_shoes",
+     "min": 6
+    },
+    {
+     "label": "Hausschuhe",
+     "prefix": "cloth_slippers",
+     "min": 3
+    },
+    {
+     "label": "Hut/Mütze",
+     "prefix": "cloth_hat",
+     "min": 4
+    },
+    {
+     "label": "Schal",
+     "prefix": "cloth_scarf",
+     "min": 6
+    },
+    {
+     "label": "Mütze",
+     "prefix": "cloth_beanie",
+     "min": 6
+    },
+    {
+     "label": "Handschuhe",
+     "prefix": "cloth_gloves",
+     "min": 6
+    },
+    {
+     "label": "Basecap",
+     "prefix": "cloth_cap",
+     "min": 4
+    },
+    {
+     "label": "Regenjacke",
+     "prefix": "cloth_raincoat",
+     "min": 4
+    },
+    {
+     "label": "Sonnenbrille",
+     "prefix": "cloth_sunglasses",
+     "min": 4
+    },
+    {
+     "label": "Kinderrucksack",
+     "prefix": "cloth_backpack",
+     "min": 4
+    },
+    {
+     "label": "Handtasche",
+     "prefix": "cloth_handbag",
+     "min": 3
+    },
+    {
+     "label": "Einzelbett",
+     "prefix": "furn_bed_single",
+     "min": 4
+    },
+    {
+     "label": "Himmelbett",
+     "prefix": "furn_bed_canopy",
+     "min": 4
+    },
+    {
+     "label": "Hochbett",
+     "prefix": "furn_bed_loft",
+     "min": 3
+    },
+    {
+     "label": "Etagenbett",
+     "prefix": "furn_bed_bunk",
+     "min": 3
+    },
+    {
+     "label": "Kinderbett",
+     "prefix": "furn_bed_kid",
+     "min": 6
+    },
+    {
+     "label": "Babybett",
+     "prefix": "furn_crib",
+     "min": 3
+    },
+    {
+     "label": "Schlafsofa",
+     "prefix": "furn_sofa_bed",
+     "min": 3
+    },
+    {
+     "label": "Tagesbett",
+     "prefix": "furn_daybed",
+     "min": 3
+    },
+    {
+     "label": "Gardinenstange",
+     "prefix": "curtain_rod",
+     "min": 4
+    },
+    {
+     "label": "Raffrollo",
+     "prefix": "curtain_roman",
+     "min": 3
+    },
+    {
+     "label": "Jalousie",
+     "prefix": "curtain_venetian",
+     "min": 3
+    },
+    {
+     "label": "Vorhänge gesamt",
+     "prefix": "curtain_",
+     "min": 30
+    }
+   ],
+   "kinderzimmer": [
+    {
+     "label": "Kinderbett",
+     "prefix": "furn_bed_kid",
+     "min": 4
+    },
+    {
+     "label": "Etagenbett",
+     "prefix": "furn_bed_bunk",
+     "min": 3
+    },
+    {
+     "label": "Babybett",
+     "prefix": "furn_crib",
+     "min": 3
+    },
+    {
+     "label": "Wickeltisch",
+     "prefix": "furn_changing",
+     "min": 3
+    },
+    {
+     "label": "Spielzeugkiste",
+     "prefix": "furn_toybox",
+     "min": 3
+    },
+    {
+     "label": "Schreibtisch",
+     "prefix": "furn_table_desk",
+     "min": 3
+    },
+    {
+     "label": "Kinderstuhl",
+     "prefix": "furn_chair_kids",
+     "min": 3
+    },
+    {
+     "label": "Kindertisch",
+     "prefix": "furn_table_kids",
+     "min": 3
+    },
+    {
+     "label": "Kuscheltier",
+     "prefix": "toy_plush",
+     "min": 6
+    },
+    {
+     "label": "Teddy",
+     "prefix": "toy_teddy",
+     "min": 3
+    },
+    {
+     "label": "Puppenhaus",
+     "prefix": "toy_dollhouse",
+     "min": 3
+    },
+    {
+     "label": "Kaufladen",
+     "prefix": "toy_shop_stand",
+     "min": 2
+    },
+    {
+     "label": "Spielzelt",
+     "prefix": "toy_tipi",
+     "min": 3
+    },
+    {
+     "label": "Bällebad",
+     "prefix": "toy_ball_pit",
+     "min": 2
+    },
+    {
+     "label": "Schaukelpferd",
+     "prefix": "toy_rocking_horse",
+     "min": 2
+    },
+    {
+     "label": "Bausteine",
+     "prefix": "toy_blocks",
+     "min": 3
+    },
+    {
+     "label": "Eisenbahn",
+     "prefix": "toy_train",
+     "min": 2
+    },
+    {
+     "label": "Spielzeugauto",
+     "prefix": "toy_car",
+     "min": 3
+    },
+    {
+     "label": "Roboter",
+     "prefix": "toy_robot",
+     "min": 2
+    },
+    {
+     "label": "Puppe",
+     "prefix": "toy_doll",
+     "min": 3
+    },
+    {
+     "label": "Puppenwagen",
+     "prefix": "toy_pram",
+     "min": 3
+    },
+    {
+     "label": "Gitarre",
+     "prefix": "toy_guitar",
+     "min": 3
+    },
+    {
+     "label": "Trommel",
+     "prefix": "toy_drum",
+     "min": 2
+    },
+    {
+     "label": "Xylophon",
+     "prefix": "toy_xylophone",
+     "min": 1
+    },
+    {
+     "label": "Nachtlicht",
+     "prefix": "deco_nightlight",
+     "min": 3
+    },
+    {
+     "label": "Kinderwagen",
+     "prefix": "furn_stroller",
+     "min": 3
+    },
+    {
+     "label": "Rassel",
+     "prefix": "baby_rattle",
+     "min": 3
+    },
+    {
+     "label": "Fläschchen",
+     "prefix": "baby_bottle",
+     "min": 3
+    },
+    {
+     "label": "Schnuller",
+     "prefix": "baby_pacifier",
+     "min": 3
+    },
+    {
+     "label": "Bücher",
+     "prefix": "deco_books",
+     "min": 1
+    },
+    {
+     "label": "Malstifte",
+     "prefix": "school_pencil_cup",
+     "min": 2
+    },
+    {
+     "label": "Staffelei",
+     "prefix": "school_easel",
+     "min": 1
+    },
+    {
+     "label": "Globus",
+     "prefix": "deco_globe",
+     "min": 1
+    },
+    {
+     "label": "Spielküche",
+     "prefix": "toy_play_kitchen",
+     "min": 3
+    },
+    {
+     "label": "Kinder-Werkbank",
+     "prefix": "toy_workbench",
+     "min": 2
+    },
+    {
+     "label": "Brettspiel",
+     "prefix": "toy_board_game",
+     "min": 4
+    },
+    {
+     "label": "Stifte",
+     "prefix": "toy_crayons",
+     "min": 3
+    },
+    {
+     "label": "Malkasten",
+     "prefix": "toy_paints",
+     "min": 3
+    },
+    {
+     "label": "Stapelturm",
+     "prefix": "baby_stacker",
+     "min": 3
+    },
+    {
+     "label": "Spielmatte",
+     "prefix": "baby_play_mat",
+     "min": 3
+    },
+    {
+     "label": "Babywippe",
+     "prefix": "baby_bouncer",
+     "min": 3
+    },
+    {
+     "label": "Babyphone",
+     "prefix": "baby_monitor",
+     "min": 2
+    },
+    {
+     "label": "Windeln",
+     "prefix": "baby_diapers",
+     "min": 2
+    },
+    {
+     "label": "Babybadewanne",
+     "prefix": "baby_bath",
+     "min": 3
+    },
+    {
+     "label": "Schlagzeug",
+     "prefix": "music_drums",
+     "min": 2
+    },
+    {
+     "label": "Keyboard",
+     "prefix": "music_keyboard",
+     "min": 2
+    },
+    {
+     "label": "Geige",
+     "prefix": "music_violin",
+     "min": 2
+    },
+    {
+     "label": "Flöte",
+     "prefix": "music_flute",
+     "min": 3
+    }
+   ],
+   "bad": [
+    {
+     "label": "Badewanne",
+     "prefix": "bath_tub",
+     "min": 4
+    },
+    {
+     "label": "Dusche",
+     "prefix": "bath_shower",
+     "min": 3
+    },
+    {
+     "label": "Toilette",
+     "prefix": "bath_toilet",
+     "min": 3
+    },
+    {
+     "label": "Waschbecken",
+     "prefix": "bath_washbasin",
+     "min": 3
+    },
+    {
+     "label": "Spiegelschrank",
+     "prefix": "bath_mirror_cabinet",
+     "min": 3
+    },
+    {
+     "label": "Badschrank",
+     "prefix": "bath_cabinet",
+     "min": 3
+    },
+    {
+     "label": "Handtuch",
+     "prefix": "bath_towel",
+     "min": 4
+    },
+    {
+     "label": "Handtuchhalter",
+     "prefix": "bath_towel_rail",
+     "min": 2
+    },
+    {
+     "label": "Badvorleger",
+     "prefix": "rug_bathmat",
+     "min": 3
+    },
+    {
+     "label": "Quietscheente",
+     "prefix": "bath_duck",
+     "min": 3
+    },
+    {
+     "label": "Zahnbürste",
+     "prefix": "bath_toothbrush",
+     "min": 3
+    },
+    {
+     "label": "Zahnputzbecher",
+     "prefix": "bath_cup",
+     "min": 3
+    },
+    {
+     "label": "Seife",
+     "prefix": "bath_soap",
+     "min": 3
+    },
+    {
+     "label": "Shampoo",
+     "prefix": "bath_shampoo",
+     "min": 3
+    },
+    {
+     "label": "Klopapier",
+     "prefix": "bath_tp",
+     "min": 1
+    },
+    {
+     "label": "Föhn",
+     "prefix": "bath_hairdryer",
+     "min": 3
+    },
+    {
+     "label": "Waage",
+     "prefix": "bath_scale",
+     "min": 2
+    },
+    {
+     "label": "Töpfchen",
+     "prefix": "bath_potty",
+     "min": 3
+    },
+    {
+     "label": "Bademantel",
+     "prefix": "bath_robe",
+     "min": 3
+    },
+    {
+     "label": "Schwamm",
+     "prefix": "bath_sponge",
+     "min": 3
+    }
+   ],
+   "flur": [
+    {
+     "label": "Garderobe",
+     "prefix": "furn_coat_rack",
+     "min": 3
+    },
+    {
+     "label": "Schuhschrank",
+     "prefix": "furn_shoe_cabinet",
+     "min": 3
+    },
+    {
+     "label": "Schirmständer",
+     "prefix": "furn_umbrella_stand",
+     "min": 2
+    },
+    {
+     "label": "Schlüsselbrett",
+     "prefix": "deco_key_board",
+     "min": 2
+    },
+    {
+     "label": "Fußmatte",
+     "prefix": "rug_doormat",
+     "min": 3
+    },
+    {
+     "label": "Treppe",
+     "prefix": "furn_stairs",
+     "min": 2
+    },
+    {
+     "label": "Regenschirm",
+     "prefix": "deco_umbrella",
+     "min": 4
+    },
+    {
+     "label": "Gummistiefel",
+     "prefix": "cloth_boots",
+     "min": 4
+    }
+   ],
+   "keller_waesche": [
+    {
+     "label": "Waschmaschine",
+     "prefix": "app_washer",
+     "min": 3
+    },
+    {
+     "label": "Trockner",
+     "prefix": "app_dryer",
+     "min": 3
+    },
+    {
+     "label": "Wäscheständer",
+     "prefix": "home_drying_rack",
+     "min": 2
+    },
+    {
+     "label": "Bügelbrett",
+     "prefix": "home_ironing_board",
+     "min": 2
+    },
+    {
+     "label": "Bügeleisen",
+     "prefix": "home_iron",
+     "min": 2
+    },
+    {
+     "label": "Staubsauger",
+     "prefix": "home_vacuum",
+     "min": 3
+    },
+    {
+     "label": "Besen",
+     "prefix": "deco_broom",
+     "min": 2
+    },
+    {
+     "label": "Eimer & Mopp",
+     "prefix": "deco_bucket_mop",
+     "min": 2
+    },
+    {
+     "label": "Metallregal",
+     "prefix": "furn_metal_shelf",
+     "min": 2
+    },
+    {
+     "label": "Gefriertruhe",
+     "prefix": "app_freezer",
+     "min": 2
+    },
+    {
+     "label": "Umzugskarton",
+     "prefix": "shop_box",
+     "min": 2
+    },
+    {
+     "label": "Werkbank",
+     "prefix": "work_workbench",
+     "min": 1
+    },
+    {
+     "label": "Schwerlastregal",
+     "prefix": "cellar_heavy_shelf",
+     "min": 3
+    },
+    {
+     "label": "Weinregal",
+     "prefix": "cellar_wine_rack",
+     "min": 3
+    },
+    {
+     "label": "Weinfass",
+     "prefix": "cellar_barrel",
+     "min": 2
+    },
+    {
+     "label": "Getränkekiste",
+     "prefix": "cellar_crate",
+     "min": 4
+    },
+    {
+     "label": "Aufbewahrungsbox",
+     "prefix": "cellar_box",
+     "min": 6
+    },
+    {
+     "label": "Einmachgläser",
+     "prefix": "cellar_jars",
+     "min": 3
+    },
+    {
+     "label": "Kartoffelsack",
+     "prefix": "cellar_sack",
+     "min": 2
+    },
+    {
+     "label": "Heizkessel",
+     "prefix": "cellar_boiler",
+     "min": 2
+    },
+    {
+     "label": "Weinflasche",
+     "prefix": "cellar_wine",
+     "min": 3
+    },
+    {
+     "label": "Taschenlampe",
+     "prefix": "home_flashlight",
+     "min": 3
+    },
+    {
+     "label": "Eimer",
+     "prefix": "home_bucket",
+     "min": 3
+    },
+    {
+     "label": "Kehrblech",
+     "prefix": "home_dustpan",
+     "min": 2
+    }
+   ],
+   "garage": [
+    {
+     "label": "Auto",
+     "prefix": "veh_car",
+     "min": 6
+    },
+    {
+     "label": "Fahrrad",
+     "prefix": "play_bicycle",
+     "min": 6
+    },
+    {
+     "label": "Rasenmäher",
+     "prefix": "garden_mower",
+     "min": 3
+    },
+    {
+     "label": "Werkzeugwand",
+     "prefix": "work_tool_wall",
+     "min": 2
+    },
+    {
+     "label": "Werkzeugkasten",
+     "prefix": "work_toolbox",
+     "min": 3
+    },
+    {
+     "label": "Leiter",
+     "prefix": "work_ladder",
+     "min": 2
+    },
+    {
+     "label": "Reifen",
+     "prefix": "work_tire",
+     "min": 6
+    },
+    {
+     "label": "Kanister",
+     "prefix": "work_jerrycan",
+     "min": 2
+    },
+    {
+     "label": "Farbeimer",
+     "prefix": "work_paint_can",
+     "min": 4
+    },
+    {
+     "label": "Bohrmaschine",
+     "prefix": "work_drill",
+     "min": 3
+    },
+    {
+     "label": "Reifenstapel",
+     "prefix": "work_tire_stack",
+     "min": 2
+    },
+    {
+     "label": "Wagenheber",
+     "prefix": "work_car_jack",
+     "min": 2
+    },
+    {
+     "label": "Ölkanne",
+     "prefix": "work_oil_can",
+     "min": 3
+    },
+    {
+     "label": "Luftpumpe",
+     "prefix": "work_bike_pump",
+     "min": 3
+    },
+    {
+     "label": "Autowasch-Set",
+     "prefix": "work_car_wash",
+     "min": 2
+    },
+    {
+     "label": "Werkzeugwagen",
+     "prefix": "work_tool_cart",
+     "min": 3
+    },
+    {
+     "label": "Schneeschaufel",
+     "prefix": "work_snow_shovel",
+     "min": 2
+    },
+    {
+     "label": "Verlängerungskabel",
+     "prefix": "work_cable_reel",
+     "min": 2
+    },
+    {
+     "label": "Werkbank",
+     "prefix": "work_workbench",
+     "min": 1
+    }
+   ],
+   "dachboden": [
+    {
+     "label": "Truhe",
+     "prefix": "furn_chest",
+     "min": 3
+    },
+    {
+     "label": "Koffer",
+     "prefix": "deco_suitcase",
+     "min": 4
+    },
+    {
+     "label": "Schaukelstuhl",
+     "prefix": "furn_chair_rocking",
+     "min": 3
+    },
+    {
+     "label": "Grammophon",
+     "prefix": "deco_gramophone",
+     "min": 2
+    },
+    {
+     "label": "Schneiderpuppe",
+     "prefix": "shop_mannequin",
+     "min": 2
+    },
+    {
+     "label": "Kisten",
+     "prefix": "shop_box",
+     "min": 2
+    }
+   ],
+   "buero": [
+    {
+     "label": "Drucker",
+     "prefix": "elec_printer",
+     "min": 2
+    },
+    {
+     "label": "Aktenschrank",
+     "prefix": "furn_file_cabinet",
+     "min": 3
+    },
+    {
+     "label": "Bürostuhl",
+     "prefix": "furn_chair_office",
+     "min": 3
+    },
+    {
+     "label": "Computer",
+     "prefix": "app_computer",
+     "min": 3
+    },
+    {
+     "label": "Pinnwand",
+     "prefix": "deco_pinboard",
+     "min": 3
+    },
+    {
+     "label": "Kalender",
+     "prefix": "deco_calendar",
+     "min": 3
+    }
+   ],
+   "garten": [
+    {
+     "label": "Hochbeet",
+     "prefix": "garden_raised_bed",
+     "min": 3
+    },
+    {
+     "label": "Gemüsebeet",
+     "prefix": "garden_veg_bed",
+     "min": 3
+    },
+    {
+     "label": "Saatgut",
+     "prefix": "garden_seeds",
+     "min": 6
+    },
+    {
+     "label": "Gießkanne",
+     "prefix": "garden_watering_can",
+     "min": 4
+    },
+    {
+     "label": "Gartenschlauch",
+     "prefix": "garden_hose",
+     "min": 2
+    },
+    {
+     "label": "Rasensprenger",
+     "prefix": "garden_sprinkler",
+     "min": 2
+    },
+    {
+     "label": "Schubkarre",
+     "prefix": "garden_wheelbarrow",
+     "min": 3
+    },
+    {
+     "label": "Spaten",
+     "prefix": "garden_spade",
+     "min": 2
+    },
+    {
+     "label": "Harke",
+     "prefix": "garden_rake",
+     "min": 2
+    },
+    {
+     "label": "Schaufel",
+     "prefix": "garden_shovel",
+     "min": 2
+    },
+    {
+     "label": "Blumenbeet",
+     "prefix": "garden_flower_bed",
+     "min": 4
+    },
+    {
+     "label": "Gartenzwerg",
+     "prefix": "garden_gnome",
+     "min": 2
+    },
+    {
+     "label": "Vogelhaus",
+     "prefix": "garden_birdhouse",
+     "min": 3
+    },
+    {
+     "label": "Zaun",
+     "prefix": "garden_fence",
+     "min": 16
+    },
+    {
+     "label": "Hecke",
+     "prefix": "garden_hedge",
+     "min": 3
+    },
+    {
+     "label": "Gartentor",
+     "prefix": "garden_gate",
+     "min": 3
+    },
+    {
+     "label": "Trittsteine/Weg",
+     "prefix": "garden_path",
+     "min": 4
+    },
+    {
+     "label": "Gartenbank",
+     "prefix": "garden_bench",
+     "min": 3
+    },
+    {
+     "label": "Gartentisch",
+     "prefix": "garden_table",
+     "min": 4
+    },
+    {
+     "label": "Gartenstuhl",
+     "prefix": "garden_chair",
+     "min": 6
+    },
+    {
+     "label": "Sonnenliege",
+     "prefix": "pool_deck_chair",
+     "min": 4
+    },
+    {
+     "label": "Sonnenschirm",
+     "prefix": "pool_umbrella",
+     "min": 4
+    },
+    {
+     "label": "Hängematte",
+     "prefix": "garden_hammock",
+     "min": 3
+    },
+    {
+     "label": "Hollywoodschaukel",
+     "prefix": "garden_swing_bench",
+     "min": 3
+    },
+    {
+     "label": "Grill",
+     "prefix": "garden_grill",
+     "min": 6
+    },
+    {
+     "label": "Feuerschale",
+     "prefix": "garden_fire_bowl",
+     "min": 2
+    },
+    {
+     "label": "Lichterkette",
+     "prefix": "garden_lights",
+     "min": 4
+    },
+    {
+     "label": "Wimpelkette",
+     "prefix": "garden_bunting",
+     "min": 4
+    },
+    {
+     "label": "Pavillon",
+     "prefix": "garden_pavilion",
+     "min": 4
+    },
+    {
+     "label": "Planschbecken",
+     "prefix": "garden_pool_kids",
+     "min": 3
+    },
+    {
+     "label": "Aufstellpool",
+     "prefix": "garden_pool_frame",
+     "min": 3
+    },
+    {
+     "label": "Pool",
+     "prefix": "garden_pool_big",
+     "min": 2
+    },
+    {
+     "label": "Teich",
+     "prefix": "garden_pond",
+     "min": 3
+    },
+    {
+     "label": "Seerose",
+     "prefix": "garden_lily",
+     "min": 3
+    },
+    {
+     "label": "Brunnen",
+     "prefix": "garden_fountain",
+     "min": 2
+    },
+    {
+     "label": "Trampolin",
+     "prefix": "garden_trampoline",
+     "min": 3
+    },
+    {
+     "label": "Baumhaus",
+     "prefix": "garden_treehouse",
+     "min": 2
+    },
+    {
+     "label": "Gewächshaus",
+     "prefix": "garden_greenhouse",
+     "min": 2
+    },
+    {
+     "label": "Kompost",
+     "prefix": "garden_compost",
+     "min": 2
+    },
+    {
+     "label": "Mülltonne",
+     "prefix": "garden_bin",
+     "min": 4
+    },
+    {
+     "label": "Briefkasten",
+     "prefix": "garden_mailbox",
+     "min": 3
+    },
+    {
+     "label": "Hundehütte",
+     "prefix": "garden_doghouse",
+     "min": 3
+    },
+    {
+     "label": "Gartenhaus",
+     "prefix": "garden_shed",
+     "min": 3
+    },
+    {
+     "label": "Wäschespinne",
+     "prefix": "garden_clothesline",
+     "min": 2
+    },
+    {
+     "label": "Regentonne",
+     "prefix": "garden_rain_barrel",
+     "min": 2
+    },
+    {
+     "label": "Baum",
+     "prefix": "camp_tree",
+     "min": 2
+    },
+    {
+     "label": "Strauch",
+     "prefix": "camp_bush",
+     "min": 2
+    },
+    {
+     "label": "Beetkante",
+     "prefix": "garden_edging",
+     "min": 3
+    },
+    {
+     "label": "Insektenhotel",
+     "prefix": "garden_insect_hotel",
+     "min": 3
+    },
+    {
+     "label": "Schildkröten-Gehege",
+     "prefix": "garden_tortoise_pen",
+     "min": 3
+    },
+    {
+     "label": "Gartenlaube",
+     "prefix": "garden_arbor",
+     "min": 3
+    },
+    {
+     "label": "Hasenstall",
+     "prefix": "garden_hutch",
+     "min": 3
+    },
+    {
+     "label": "Hühnerstall",
+     "prefix": "garden_coop",
+     "min": 2
+    },
+    {
+     "label": "Vogeltränke",
+     "prefix": "garden_bird_bath",
+     "min": 2
+    },
+    {
+     "label": "Vogel-Futterhaus",
+     "prefix": "garden_bird_feeder",
+     "min": 3
+    },
+    {
+     "label": "Pflanzkübel",
+     "prefix": "garden_planter",
+     "min": 6
+    },
+    {
+     "label": "Sonnenschirm",
+     "prefix": "garden_parasol",
+     "min": 4
+    },
+    {
+     "label": "Sonnensegel",
+     "prefix": "garden_sun_sail",
+     "min": 3
+    },
+    {
+     "label": "Gartenfackel",
+     "prefix": "garden_torch",
+     "min": 3
+    },
+    {
+     "label": "Picknickdecke",
+     "prefix": "garden_picnic_blanket",
+     "min": 4
+    },
+    {
+     "label": "Picknickkorb",
+     "prefix": "garden_picnic_basket",
+     "min": 2
+    },
+    {
+     "label": "Schlauchwagen",
+     "prefix": "garden_hose_reel",
+     "min": 2
+    },
+    {
+     "label": "Schaukelgestell",
+     "prefix": "garden_swing_set",
+     "min": 2
+    },
+    {
+     "label": "Rutsche Garten",
+     "prefix": "garden_slide",
+     "min": 2
+    },
+    {
+     "label": "Sandkasten",
+     "prefix": "garden_sandbox",
+     "min": 2
+    },
+    {
+     "label": "Spielhaus",
+     "prefix": "garden_playhouse",
+     "min": 3
+    }
+   ],
+   "sport_freizeit": [
+    {
+     "label": "Inliner",
+     "prefix": "sport_inline_skates",
+     "min": 4
+    },
+    {
+     "label": "Rollschuhe",
+     "prefix": "sport_roller_skates",
+     "min": 3
+    },
+    {
+     "label": "Skateboard",
+     "prefix": "toy_skateboard",
+     "min": 3
+    },
+    {
+     "label": "Schoner-Set",
+     "prefix": "sport_pads",
+     "min": 3
+    },
+    {
+     "label": "Helm",
+     "prefix": "play_helmet",
+     "min": 4
+    },
+    {
+     "label": "Fahrrad-Kindersitz",
+     "prefix": "veh_bike_seat",
+     "min": 3
+    },
+    {
+     "label": "Auto-Kindersitz",
+     "prefix": "baby_car_seat",
+     "min": 3
+    },
+    {
+     "label": "Fahrrad",
+     "prefix": "play_bicycle",
+     "min": 6
+    },
+    {
+     "label": "Kinderfahrrad",
+     "prefix": "play_kids_bike",
+     "min": 4
+    },
+    {
+     "label": "Laufrad",
+     "prefix": "play_balance_bike",
+     "min": 3
+    },
+    {
+     "label": "Roller",
+     "prefix": "play_scooter",
+     "min": 5
+    },
+    {
+     "label": "Fahrradanhänger",
+     "prefix": "veh_bike_trailer",
+     "min": 2
+    },
+    {
+     "label": "Tischtennisplatte",
+     "prefix": "sport_table_tennis",
+     "min": 2
+    },
+    {
+     "label": "Tischtennisschläger",
+     "prefix": "sport_tt_paddle",
+     "min": 3
+    },
+    {
+     "label": "Badminton",
+     "prefix": "sport_badminton",
+     "min": 3
+    },
+    {
+     "label": "Mini-Tor",
+     "prefix": "sport_goal_small",
+     "min": 2
+    },
+    {
+     "label": "Ski",
+     "prefix": "sport_skis",
+     "min": 3
+    },
+    {
+     "label": "Snowboard",
+     "prefix": "sport_snowboard",
+     "min": 3
+    },
+    {
+     "label": "Angel",
+     "prefix": "sport_fishing_rod",
+     "min": 2
+    },
+    {
+     "label": "Springseil",
+     "prefix": "sport_jump_rope",
+     "min": 3
+    },
+    {
+     "label": "Hula-Hoop",
+     "prefix": "sport_hoop",
+     "min": 3
+    },
+    {
+     "label": "Frisbee",
+     "prefix": "sport_frisbee",
+     "min": 3
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,3352 @@
+{
+ "area": "catalog",
+ "room": "yard",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "garden_seeds_carrot_pack",
+   "scale_ref": "c_garden_seeds_carrot",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_carrot.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#f6d98a"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_carrot"
+   ]
+  },
+  {
+   "id": "garden_seeds_tomato_pack",
+   "scale_ref": "c_garden_seeds_tomato",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_tomato.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_tomato"
+   ]
+  },
+  {
+   "id": "garden_seeds_lettuce_pack",
+   "scale_ref": "c_garden_seeds_lettuce",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_lettuce.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7fae6a",
+    "#a9c3dd"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_lettuce"
+   ]
+  },
+  {
+   "id": "garden_seeds_strawberry_pack",
+   "scale_ref": "c_garden_seeds_strawberry",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_strawberry.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_strawberry"
+   ]
+  },
+  {
+   "id": "garden_seeds_pumpkin_pack",
+   "scale_ref": "c_garden_seeds_pumpkin",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_pumpkin.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#f6d98a"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_pumpkin"
+   ]
+  },
+  {
+   "id": "garden_seeds_sunflower_pack",
+   "scale_ref": "c_garden_seeds_sunflower",
+   "size_cm": [
+    10.8,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_seeds_sunflower.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f4c95d",
+    "#f6d98a"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "seeds",
+    "crop_sunflower"
+   ]
+  },
+  {
+   "id": "garden_raised_bed_m_carrot_oak",
+   "scale_ref": "c_garden_raised_bed_m_carrot",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_carrot.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_carrot__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_carrot__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_carrot__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_m_carrot_walnut",
+   "scale_ref": "c_garden_raised_bed_m_carrot",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_carrot.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_carrot__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_carrot__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_carrot__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_m_tomato_oak",
+   "scale_ref": "c_garden_raised_bed_m_tomato",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_tomato.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_tomato__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_tomato__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_tomato__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_m_tomato_walnut",
+   "scale_ref": "c_garden_raised_bed_m_tomato",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_tomato.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_tomato__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_tomato__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_tomato__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_m_lettuce_oak",
+   "scale_ref": "c_garden_raised_bed_m_lettuce",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_lettuce.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7fae6a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_lettuce__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_lettuce__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_lettuce__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_m_lettuce_walnut",
+   "scale_ref": "c_garden_raised_bed_m_lettuce",
+   "size_cm": [
+    121.5,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_m_lettuce.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7fae6a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_m_lettuce__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_m_lettuce__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_m_lettuce__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_l_carrot_grey",
+   "scale_ref": "c_garden_raised_bed_l_carrot",
+   "size_cm": [
+    181.6,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_l_carrot.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#6d6f78"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_l_carrot__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_l_carrot__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_l_carrot__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_l_tomato_grey",
+   "scale_ref": "c_garden_raised_bed_l_tomato",
+   "size_cm": [
+    181.6,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_l_tomato.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#6d6f78"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_l_tomato__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_l_tomato__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_l_tomato__ripe.png"
+   }
+  },
+  {
+   "id": "garden_raised_bed_l_lettuce_grey",
+   "scale_ref": "c_garden_raised_bed_l_lettuce",
+   "size_cm": [
+    181.6,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_raised_bed_l_lettuce.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7fae6a",
+    "#6d6f78"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_raised_bed_l_lettuce__sprout.png",
+    "grown": "res://assets/sprites/items/garden_raised_bed_l_lettuce__grown.png",
+    "ripe": "res://assets/sprites/items/garden_raised_bed_l_lettuce__ripe.png"
+   }
+  },
+  {
+   "id": "garden_veg_bed_carrot_oak",
+   "scale_ref": "c_garden_veg_bed_carrot",
+   "size_cm": [
+    162.0,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_veg_bed_carrot.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_veg_bed_carrot__sprout.png",
+    "grown": "res://assets/sprites/items/garden_veg_bed_carrot__grown.png",
+    "ripe": "res://assets/sprites/items/garden_veg_bed_carrot__ripe.png"
+   }
+  },
+  {
+   "id": "garden_veg_bed_strawberry_oak",
+   "scale_ref": "c_garden_veg_bed_strawberry",
+   "size_cm": [
+    162.0,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_veg_bed_strawberry.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_veg_bed_strawberry__sprout.png",
+    "grown": "res://assets/sprites/items/garden_veg_bed_strawberry__grown.png",
+    "ripe": "res://assets/sprites/items/garden_veg_bed_strawberry__ripe.png"
+   }
+  },
+  {
+   "id": "garden_veg_bed_pumpkin_oak",
+   "scale_ref": "c_garden_veg_bed_pumpkin",
+   "size_cm": [
+    162.0,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_veg_bed_pumpkin.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_veg_bed_pumpkin__sprout.png",
+    "grown": "res://assets/sprites/items/garden_veg_bed_pumpkin__grown.png",
+    "ripe": "res://assets/sprites/items/garden_veg_bed_pumpkin__ripe.png"
+   }
+  },
+  {
+   "id": "garden_veg_bed_sunflower_oak",
+   "scale_ref": "c_garden_veg_bed_sunflower",
+   "size_cm": [
+    161.8,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_veg_bed_sunflower.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f4c95d",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "empty",
+    "sprout",
+    "grown",
+    "ripe"
+   ],
+   "state_sprites": {
+    "sprout": "res://assets/sprites/items/garden_veg_bed_sunflower__sprout.png",
+    "grown": "res://assets/sprites/items/garden_veg_bed_sunflower__grown.png",
+    "ripe": "res://assets/sprites/items/garden_veg_bed_sunflower__ripe.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_s_rose",
+   "scale_ref": "c_garden_flower_bed_s",
+   "size_cm": [
+    102.2,
+    46.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_s__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_s_butter",
+   "scale_ref": "c_garden_flower_bed_s",
+   "size_cm": [
+    102.2,
+    46.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_s__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_m_rose",
+   "scale_ref": "c_garden_flower_bed_m",
+   "size_cm": [
+    162.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_m__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_m_butter",
+   "scale_ref": "c_garden_flower_bed_m",
+   "size_cm": [
+    162.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_m__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_m_lilac",
+   "scale_ref": "c_garden_flower_bed_m",
+   "size_cm": [
+    162.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#b9a6d6",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_m__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_m_coral",
+   "scale_ref": "c_garden_flower_bed_m",
+   "size_cm": [
+    162.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_m__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_l_rose",
+   "scale_ref": "c_garden_flower_bed_l",
+   "size_cm": [
+    242.5,
+    48.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_l__dry.png"
+   }
+  },
+  {
+   "id": "garden_flower_bed_l_butter",
+   "scale_ref": "c_garden_flower_bed_l",
+   "size_cm": [
+    242.5,
+    48.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_flower_bed_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#b8b2a7"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "bed",
+    "needs_water"
+   ],
+   "states": [
+    "fresh",
+    "dry"
+   ],
+   "state_sprites": {
+    "dry": "res://assets/sprites/items/garden_flower_bed_l__dry.png"
+   }
+  },
+  {
+   "id": "garden_sprinkler_green",
+   "scale_ref": "c_garden_sprinkler",
+   "size_cm": [
+    41.7,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sprinkler.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#7cc6e0",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_sprinkler__on.png"
+   }
+  },
+  {
+   "id": "garden_sprinkler_coral",
+   "scale_ref": "c_garden_sprinkler",
+   "size_cm": [
+    41.7,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sprinkler.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#7cc6e0",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_sprinkler__on.png"
+   }
+  },
+  {
+   "id": "garden_sprinkler_sky",
+   "scale_ref": "c_garden_sprinkler",
+   "size_cm": [
+    41.7,
+    28.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sprinkler.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#7cc6e0",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_sprinkler__on.png"
+   }
+  },
+  {
+   "id": "garden_spade_coral",
+   "scale_ref": "c_garden_spade",
+   "size_cm": [
+    16.3,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_spade_green",
+   "scale_ref": "c_garden_spade",
+   "size_cm": [
+    16.3,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_spade_sky",
+   "scale_ref": "c_garden_spade",
+   "size_cm": [
+    16.3,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_rake_coral",
+   "scale_ref": "c_garden_rake",
+   "size_cm": [
+    41.5,
+    147.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_rake.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_rake_green",
+   "scale_ref": "c_garden_rake",
+   "size_cm": [
+    41.5,
+    147.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_rake.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_rake_sky",
+   "scale_ref": "c_garden_rake",
+   "size_cm": [
+    41.5,
+    147.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_rake.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_shovel_coral",
+   "scale_ref": "c_garden_shovel",
+   "size_cm": [
+    23.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_shovel_green",
+   "scale_ref": "c_garden_shovel",
+   "size_cm": [
+    23.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_shovel_sky",
+   "scale_ref": "c_garden_shovel",
+   "size_cm": [
+    23.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9aa6b4",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "grip": [
+    0.5,
+    0.8
+   ]
+  },
+  {
+   "id": "garden_fence_rustic_oak",
+   "scale_ref": "c_garden_fence_rustic",
+   "size_cm": [
+    157.8,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rustic.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_fence_rustic_walnut",
+   "scale_ref": "c_garden_fence_rustic",
+   "size_cm": [
+    157.8,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rustic.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_fence_rustic_white",
+   "scale_ref": "c_garden_fence_rustic",
+   "size_cm": [
+    157.8,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rustic.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_fence_lattice_white",
+   "scale_ref": "c_garden_fence_lattice",
+   "size_cm": [
+    121.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_lattice.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_fence_lattice_oak",
+   "scale_ref": "c_garden_fence_lattice",
+   "size_cm": [
+    121.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_lattice.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_fence_lattice_sage",
+   "scale_ref": "c_garden_fence_lattice",
+   "size_cm": [
+    121.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_lattice.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hedge_box_leaf",
+   "scale_ref": "c_garden_hedge_box",
+   "size_cm": [
+    152.6,
+    114.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hedge_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hedge_box_leaf_dark",
+   "scale_ref": "c_garden_hedge_box",
+   "size_cm": [
+    152.6,
+    114.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hedge_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#3f6a4f",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hedge_low_leaf_light",
+   "scale_ref": "c_garden_hedge_low",
+   "size_cm": [
+    159.8,
+    64.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hedge_low.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hedge_tall_leaf",
+   "scale_ref": "c_garden_hedge_tall",
+   "size_cm": [
+    126.6,
+    180.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hedge_tall.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hedge_tall_leaf_dark",
+   "scale_ref": "c_garden_hedge_tall",
+   "size_cm": [
+    126.6,
+    180.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hedge_tall.png",
+   "pad_px": 1,
+   "colors": [
+    "#3f6a4f",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_gate_white",
+   "scale_ref": "c_garden_gate",
+   "size_cm": [
+    110.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_gate__open.png"
+   }
+  },
+  {
+   "id": "garden_gate_oak",
+   "scale_ref": "c_garden_gate",
+   "size_cm": [
+    110.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_gate__open.png"
+   }
+  },
+  {
+   "id": "garden_gate_walnut",
+   "scale_ref": "c_garden_gate",
+   "size_cm": [
+    110.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_gate__open.png"
+   }
+  },
+  {
+   "id": "garden_gate_sage",
+   "scale_ref": "c_garden_gate",
+   "size_cm": [
+    110.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_gate__open.png"
+   }
+  },
+  {
+   "id": "garden_path_stones_grey",
+   "scale_ref": "c_garden_path_stones",
+   "size_cm": [
+    154.0,
+    30.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_stones.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_path_stones_sand",
+   "scale_ref": "c_garden_path_stones",
+   "size_cm": [
+    154.0,
+    30.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_stones.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_path_gravel_sand",
+   "scale_ref": "c_garden_path_gravel",
+   "size_cm": [
+    202.0,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_gravel.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_path_gravel_grey",
+   "scale_ref": "c_garden_path_gravel",
+   "size_cm": [
+    202.0,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_gravel.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_path_deck_oak",
+   "scale_ref": "c_garden_path_deck",
+   "size_cm": [
+    202.0,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_deck.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_path_deck_walnut",
+   "scale_ref": "c_garden_path_deck",
+   "size_cm": [
+    202.0,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_path_deck.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_treehouse_leaf",
+   "scale_ref": "c_garden_treehouse",
+   "size_cm": [
+    314.7,
+    422.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_treehouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_treehouse_leaf_light",
+   "scale_ref": "c_garden_treehouse",
+   "size_cm": [
+    314.7,
+    422.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_treehouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_greenhouse_white",
+   "scale_ref": "c_garden_greenhouse",
+   "size_cm": [
+    253.1,
+    232.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_greenhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_greenhouse_green",
+   "scale_ref": "c_garden_greenhouse",
+   "size_cm": [
+    253.1,
+    232.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_greenhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#a9c3dd",
+    "#5f8f6a"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_compost_oak",
+   "scale_ref": "c_garden_compost",
+   "size_cm": [
+    101.9,
+    93.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_compost.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_compost_green",
+   "scale_ref": "c_garden_compost",
+   "size_cm": [
+    101.9,
+    93.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_compost.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#b8452f",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bin_grey",
+   "scale_ref": "c_garden_bin",
+   "size_cm": [
+    69.6,
+    147.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bin.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_bin__open.png"
+   }
+  },
+  {
+   "id": "garden_bin_sky",
+   "scale_ref": "c_garden_bin",
+   "size_cm": [
+    69.6,
+    147.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bin.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_bin__open.png"
+   }
+  },
+  {
+   "id": "garden_bin_walnut",
+   "scale_ref": "c_garden_bin",
+   "size_cm": [
+    69.6,
+    147.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bin.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_bin__open.png"
+   }
+  },
+  {
+   "id": "garden_bin_butter",
+   "scale_ref": "c_garden_bin",
+   "size_cm": [
+    69.6,
+    147.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bin.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_bin__open.png"
+   }
+  },
+  {
+   "id": "garden_mailbox_coral",
+   "scale_ref": "c_garden_mailbox",
+   "size_cm": [
+    48.1,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mailbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_mailbox__open.png"
+   }
+  },
+  {
+   "id": "garden_mailbox_navy",
+   "scale_ref": "c_garden_mailbox",
+   "size_cm": [
+    48.1,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mailbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_mailbox__open.png"
+   }
+  },
+  {
+   "id": "garden_mailbox_butter",
+   "scale_ref": "c_garden_mailbox",
+   "size_cm": [
+    48.1,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mailbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_mailbox__open.png"
+   }
+  },
+  {
+   "id": "garden_mailbox_green",
+   "scale_ref": "c_garden_mailbox",
+   "size_cm": [
+    48.1,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mailbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_mailbox__open.png"
+   }
+  },
+  {
+   "id": "garden_doghouse_coral",
+   "scale_ref": "c_garden_doghouse",
+   "size_cm": [
+    109.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_doghouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_doghouse_sky",
+   "scale_ref": "c_garden_doghouse",
+   "size_cm": [
+    109.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_doghouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_doghouse_oak",
+   "scale_ref": "c_garden_doghouse",
+   "size_cm": [
+    109.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_doghouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_shed_sage",
+   "scale_ref": "c_garden_shed",
+   "size_cm": [
+    261.7,
+    243.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shed.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_shed__open.png"
+   }
+  },
+  {
+   "id": "garden_shed_coral",
+   "scale_ref": "c_garden_shed",
+   "size_cm": [
+    261.7,
+    243.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shed.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_shed__open.png"
+   }
+  },
+  {
+   "id": "garden_shed_sky",
+   "scale_ref": "c_garden_shed",
+   "size_cm": [
+    261.7,
+    243.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_shed.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/garden_shed__open.png"
+   }
+  },
+  {
+   "id": "garden_clothesline_metal",
+   "scale_ref": "c_garden_clothesline",
+   "size_cm": [
+    194.8,
+    183.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_clothesline.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_clothesline_white",
+   "scale_ref": "c_garden_clothesline",
+   "size_cm": [
+    194.8,
+    183.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_clothesline.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_rain_barrel_green",
+   "scale_ref": "c_garden_rain_barrel",
+   "size_cm": [
+    61.8,
+    89.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_rain_barrel.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_rain_barrel_walnut",
+   "scale_ref": "c_garden_rain_barrel",
+   "size_cm": [
+    61.8,
+    89.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_rain_barrel.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_insect_hotel_oak",
+   "scale_ref": "c_garden_insect_hotel",
+   "size_cm": [
+    51.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_insect_hotel.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_insect_hotel_sage",
+   "scale_ref": "c_garden_insect_hotel",
+   "size_cm": [
+    51.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_insect_hotel.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_insect_hotel_coral",
+   "scale_ref": "c_garden_insect_hotel",
+   "size_cm": [
+    51.7,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_insect_hotel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_tortoise_pen_leaf_light",
+   "scale_ref": "c_garden_tortoise_pen",
+   "size_cm": [
+    201.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_tortoise_pen.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_tortoise_pen_leaf",
+   "scale_ref": "c_garden_tortoise_pen",
+   "size_cm": [
+    201.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_tortoise_pen.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_tortoise_pen_sage",
+   "scale_ref": "c_garden_tortoise_pen",
+   "size_cm": [
+    201.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_tortoise_pen.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_arbor_sage",
+   "scale_ref": "c_garden_arbor",
+   "size_cm": [
+    311.8,
+    281.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_arbor.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_arbor_sky",
+   "scale_ref": "c_garden_arbor",
+   "size_cm": [
+    311.8,
+    281.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_arbor.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_arbor_rose",
+   "scale_ref": "c_garden_arbor",
+   "size_cm": [
+    311.8,
+    281.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_arbor.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_arbor_oak",
+   "scale_ref": "c_garden_arbor",
+   "size_cm": [
+    311.8,
+    281.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_arbor.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hutch_oak",
+   "scale_ref": "c_garden_hutch",
+   "size_cm": [
+    127.8,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hutch.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "container": {
+    "slots": 2,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "garden_hutch_white",
+   "scale_ref": "c_garden_hutch",
+   "size_cm": [
+    127.8,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hutch.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "container": {
+    "slots": 2,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "garden_hutch_sage",
+   "scale_ref": "c_garden_hutch",
+   "size_cm": [
+    127.8,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hutch.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard",
+   "container": {
+    "slots": 2,
+    "max_item_h_cm": 40
+   }
+  },
+  {
+   "id": "garden_coop_rust",
+   "scale_ref": "c_garden_coop",
+   "size_cm": [
+    149.8,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_coop.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_coop_oak",
+   "scale_ref": "c_garden_coop",
+   "size_cm": [
+    149.8,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_coop.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bird_bath_#b8b2a7",
+   "scale_ref": "c_garden_bird_bath",
+   "size_cm": [
+    51.8,
+    90.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bird_bath.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8b2a7",
+    "#a9c3dd",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bird_bath_sand",
+   "scale_ref": "c_garden_bird_bath",
+   "size_cm": [
+    51.8,
+    90.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bird_bath.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#a9c3dd",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bird_feeder_oak",
+   "scale_ref": "c_garden_bird_feeder",
+   "size_cm": [
+    41.7,
+    141.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bird_feeder.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bird_feeder_white",
+   "scale_ref": "c_garden_bird_feeder",
+   "size_cm": [
+    41.7,
+    141.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bird_feeder.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_bird_feeder_sky",
+   "scale_ref": "c_garden_bird_feeder",
+   "size_cm": [
+    41.7,
+    141.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bird_feeder.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hose_reel_green",
+   "scale_ref": "c_garden_hose_reel",
+   "size_cm": [
+    46.2,
+    82.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hose_reel.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_hose_reel_coral",
+   "scale_ref": "c_garden_hose_reel",
+   "size_cm": [
+    46.2,
+    82.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hose_reel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "yard"
+  },
+  {
+   "id": "garden_planter_box_terracotta",
+   "scale_ref": "c_garden_planter_box",
+   "size_cm": [
+    84.9,
+    56.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#c96a4a",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_box_grey",
+   "scale_ref": "c_garden_planter_box",
+   "size_cm": [
+    84.9,
+    56.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_box_white",
+   "scale_ref": "c_garden_planter_box",
+   "size_cm": [
+    84.9,
+    56.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_round_terracotta",
+   "scale_ref": "c_garden_planter_round",
+   "size_cm": [
+    61.8,
+    65.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#c96a4a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_round_cream",
+   "scale_ref": "c_garden_planter_round",
+   "size_cm": [
+    61.8,
+    65.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_round_sky",
+   "scale_ref": "c_garden_planter_round",
+   "size_cm": [
+    61.8,
+    65.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_trough_grey",
+   "scale_ref": "c_garden_planter_trough",
+   "size_cm": [
+    124.1,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_trough.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#b9a6d6",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_trough_oak",
+   "scale_ref": "c_garden_planter_trough",
+   "size_cm": [
+    124.1,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_trough.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#b9a6d6",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_tall_grey",
+   "scale_ref": "c_garden_planter_tall",
+   "size_cm": [
+    51.8,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_tall.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_tall_white",
+   "scale_ref": "c_garden_planter_tall",
+   "size_cm": [
+    51.8,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_tall.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_tall_navy",
+   "scale_ref": "c_garden_planter_tall",
+   "size_cm": [
+    51.8,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_tall.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_basket_oak",
+   "scale_ref": "c_garden_planter_basket",
+   "size_cm": [
+    61.7,
+    51.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_basket_walnut",
+   "scale_ref": "c_garden_planter_basket",
+   "size_cm": [
+    61.7,
+    51.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f0b6c2",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_tub_oak",
+   "scale_ref": "c_garden_planter_tub",
+   "size_cm": [
+    71.8,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_tub.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  },
+  {
+   "id": "garden_planter_tub_walnut",
+   "scale_ref": "c_garden_planter_tub",
+   "size_cm": [
+    71.8,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_planter_tub.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "yard",
+   "tags": [
+    "needs_water"
+   ]
+  }
+ ]
+}

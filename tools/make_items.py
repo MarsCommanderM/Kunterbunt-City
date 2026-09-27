@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from items.catalog import TEMPLATES  # noqa: E402
+from chibi import vec  # noqa: E402
 from items.kit import Item  # noqa: E402
 
 PPC = 8.0
@@ -33,15 +34,26 @@ SPRITE_DIR = ROOT / "assets" / "sprites" / "items"
 ITEMS_DIR = ROOT / "data" / "items"
 GROUPS = {  # Reihenfolge + Symbol im Katalog
     "sofas": "cat_sofas", "chairs": "cat_chairs", "tables": "cat_tables", "beds": "cat_beds",
-    "storage": "cat_storage", "lamps": "cat_lamps", "electronics": "cat_electronics", "plants": "cat_plants",
+    "storage": "cat_storage", "kitchen_furn": "cat_kitchen_furn", "bathroom": "cat_bathroom", "household": "cat_household",
+    "clothes": "cat_clothes", "baby": "cat_baby", "lamps": "cat_lamps", "windows": "cat_windows", "doors": "cat_doors",
+    "curtains": "cat_curtains", "rugs": "cat_rugs", "walldeco": "cat_walldeco", "electronics": "cat_electronics", "plants": "cat_plants",
     "kitchen": "cat_kitchen", "food": "cat_food", "bath": "cat_bath", "deco": "cat_deco", "toys": "cat_toys",
-    "pool": "cat_pool", "garden": "cat_garden", "camping": "cat_camping", "playground": "cat_playground",
+    "pool": "cat_pool", "garden": "cat_garden", "yard": "cat_yard", "patio": "cat_patio", "water": "cat_water",
+    "vehicles": "cat_vehicles", "fences": "cat_fences", "camping": "cat_camping", "playground": "cat_playground",
     "bikes": "cat_bikes", "school": "cat_school", "sport": "cat_sport", "health": "cat_health",
     "workshop": "cat_workshop", "shop": "cat_shop", "hairdresser": "cat_hairdresser", "fair": "cat_fair", "winter": "cat_winter", "animals": "cat_animals",
 }
 
 
+def _supersample(t: dict) -> int:
+    """Kantenglättung je Größe: kleine Dinge 4×, große 3×/2× – gleiche 8 px/cm im Ergebnis, aber ein 4-m-Baumhaus
+    braucht mit 4× über 6 GB Speicher (OOM im Voll-Lauf)."""
+    big = max(float(t["w"]), float(t["h"]))
+    return 4 if big <= 160 else (3 if big <= 260 else 2)
+
+
 def _draw(t: dict, extra: dict):
+    vec.SS = _supersample(t)
     it = Item(float(t["w"]), float(t["h"]), PPC)
     t["fn"](it, **{**t["kw"], **extra})
     return it.finish()
@@ -67,15 +79,22 @@ def _align(parts: dict) -> tuple[dict, dict]:
 
 
 def _render(i: int):
+    """Zeichnet eine Vorlage (+ Zustände) und speichert die Sprites gleich im Worker – der Haupt-Prozess bekommt nur
+    die Maße zurück (sonst lägen alle Bilder gleichzeitig im Speicher)."""
     t = TEMPLATES[i]
     parts = {"": _draw(t, {})}
     for st, kw in t.get("states", {}).items():
         parts[st] = _draw(t, kw)
     if len(parts) == 1:
         img, info = parts[""]
-        return t["id"], img, info, {}
-    imgs, info = _align(parts)
-    return t["id"], imgs.pop(""), info, imgs
+        imgs = {}
+    else:
+        imgs, info = _align(parts)
+        img = imgs.pop("")
+    img.save(SPRITE_DIR / f"{t['id']}.png", optimize=True)
+    for st, simg in imgs.items():
+        simg.save(SPRITE_DIR / f"{t['id']}__{st}.png", optimize=True)
+    return t["id"], info, list(imgs)
 
 
 def scale_ref(t: dict) -> str:
@@ -94,7 +113,8 @@ def _scale_entry(t: dict, w_cm: float, h_cm: float) -> dict:
 
 
 def _item(t: dict, iid: str, ref: str, colors: list, size: tuple, sprite: str) -> dict:
-    d = {"id": iid, "scale_ref": ref, "size_cm": [round(size[0], 1), round(size[1], 1)], "pivot": [0.5, 1.0],
+    pivot = [0.5, 0.0] if t["placement"] == "wall" else [0.5, 1.0]   # Wand: Aufhängepunkt oben Mitte
+    d = {"id": iid, "scale_ref": ref, "size_cm": [round(size[0], 1), round(size[1], 1)], "pivot": pivot,
          "hold": t["hold"], "placement": t["placement"], "movable": True, "sprite": sprite, "pad_px": PAD_PX,
          "colors": colors, "catalog": t["group"]}
     if t.get("grip"):
@@ -108,6 +128,24 @@ def _item(t: dict, iid: str, ref: str, colors: list, size: tuple, sprite: str) -
     return d
 
 
+def _prune_sprites() -> int:
+    """Sprites, auf die kein data/items/*.json mehr zeigt (Vorlage umbenannt/gelöscht), samt .import entfernen."""
+    used: set[str] = set()
+    for path in ITEMS_DIR.glob("*.json"):
+        for it in json.loads(path.read_text(encoding="utf-8")).get("items", []):
+            used.add(Path(str(it.get("sprite", ""))).name)
+            used.update(Path(str(v)).name for v in dict(it.get("state_sprites", {})).values())
+    n = 0
+    for png in SPRITE_DIR.glob("*.png"):
+        if png.name not in used:
+            png.unlink()
+            Path(str(png) + ".import").unlink(missing_ok=True)
+            n += 1
+    if n:
+        print(f"  {n} verwaiste Sprites entfernt")
+    return n
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--jobs", type=int, default=4)
@@ -118,7 +156,7 @@ def main(argv: list[str] | None = None) -> int:
     SPRITE_DIR.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
     with ProcessPoolExecutor(max_workers=a.jobs) as pool:
-        rendered = {tid: (img, info, extra) for tid, img, info, extra in pool.map(_render, todo, chunksize=4)}
+        rendered = {tid: (info, states) for tid, info, states in pool.map(_render, todo, chunksize=1)}
     print(f"  {len(rendered)} Vorlagen gezeichnet ({time.time() - t0:.0f} s)")
 
     table_path = ROOT / "data" / "scale_table.json"
@@ -128,12 +166,8 @@ def main(argv: list[str] | None = None) -> int:
     legacy_updates: dict[str, dict] = {}
     for i in todo:
         t = TEMPLATES[i]
-        img, info, state_imgs = rendered[t["id"]]
-        img.save(SPRITE_DIR / f"{t['id']}.png", optimize=True)
-        state_sprites = {}
-        for st, simg in state_imgs.items():
-            simg.save(SPRITE_DIR / f"{t['id']}__{st}.png", optimize=True)
-            state_sprites[st] = f"res://assets/sprites/items/{t['id']}__{st}.png"
+        info, states = rendered[t["id"]]
+        state_sprites = {st: f"res://assets/sprites/items/{t['id']}__{st}.png" for st in states}
         pad = PAD_PX / PPC
         w_cm, h_cm = info["w_cm"] - 2 * pad, info["h_cm"] - 2 * pad
         ref = scale_ref(t)
@@ -160,9 +194,10 @@ def main(argv: list[str] | None = None) -> int:
                                            **({"states": [t.get("state0", "off")] + list(state_sprites),
                                                "state_sprites": state_sprites} if state_sprites else {}),
                                            "size_cm": [round(w_cm * h_tab / h_cm, 1), h_tab], "catalog": t["group"]}
-    if not only:   # Voll-Lauf: veraltete Katalog-Einträge entfernen
-        produced = {scale_ref(TEMPLATES[i]) for i in todo}
-        entries = {k: e for k, e in entries.items() if e.get("src") != "catalog" or k in produced}
+    # veraltete Katalog-Einträge entfernen (Vorlage umbenannt/gelöscht) – auch bei Teil-Läufen
+    produced = {scale_ref(t) for t in TEMPLATES}
+    entries = {k: e for k, e in entries.items() if e.get("src") != "catalog" or k in produced}
+
     table["entries"] = list(entries.values())
     table_path.write_text(json.dumps(table, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -185,6 +220,7 @@ def main(argv: list[str] | None = None) -> int:
                 changed = True
         if changed:
             Path(path).write_text(json.dumps(doc, ensure_ascii=False) + "\n", encoding="utf-8")
+    _prune_sprites()
     # Katalog-Reiter (alle Gruppen, auch von früheren Läufen)
     groups = []
     for g, icon in GROUPS.items():

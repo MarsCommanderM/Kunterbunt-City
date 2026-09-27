@@ -1,0 +1,697 @@
+{
+ "area": "catalog",
+ "room": "vehicles",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "garden_mower_coral",
+   "scale_ref": "c_garden_mower",
+   "size_cm": [
+    57.1,
+    97.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mower.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles"
+  },
+  {
+   "id": "garden_mower_green",
+   "scale_ref": "c_garden_mower",
+   "size_cm": [
+    57.1,
+    97.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mower.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles"
+  },
+  {
+   "id": "garden_mower_sky",
+   "scale_ref": "c_garden_mower",
+   "size_cm": [
+    57.1,
+    97.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mower.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles"
+  },
+  {
+   "id": "garden_mower_ride_green",
+   "scale_ref": "c_garden_mower_ride",
+   "size_cm": [
+    187.0,
+    97.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mower_ride.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_mower_ride_coral",
+   "scale_ref": "c_garden_mower_ride",
+   "size_cm": [
+    187.0,
+    97.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_mower_ride.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "veh_car_hatch_coral",
+   "scale_ref": "c_veh_car_hatch",
+   "size_cm": [
+    387.6,
+    134.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_hatch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_hatch_sky",
+   "scale_ref": "c_veh_car_hatch",
+   "size_cm": [
+    387.6,
+    134.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_hatch.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_hatch_butter",
+   "scale_ref": "c_veh_car_hatch",
+   "size_cm": [
+    387.6,
+    134.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_hatch.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_sedan_navy",
+   "scale_ref": "c_veh_car_sedan",
+   "size_cm": [
+    467.4,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_sedan.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_sedan_grey",
+   "scale_ref": "c_veh_car_sedan",
+   "size_cm": [
+    467.4,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_sedan.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_sedan_white",
+   "scale_ref": "c_veh_car_sedan",
+   "size_cm": [
+    467.4,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_sedan.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_van_white",
+   "scale_ref": "c_veh_car_van",
+   "size_cm": [
+    485.7,
+    178.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_van.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_van_mint",
+   "scale_ref": "c_veh_car_van",
+   "size_cm": [
+    485.7,
+    178.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_van.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_van_sky",
+   "scale_ref": "c_veh_car_van",
+   "size_cm": [
+    485.7,
+    178.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_van.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_jeep_green",
+   "scale_ref": "c_veh_car_jeep",
+   "size_cm": [
+    427.8,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_jeep.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_jeep_sand",
+   "scale_ref": "c_veh_car_jeep",
+   "size_cm": [
+    427.8,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_jeep.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_jeep_black",
+   "scale_ref": "c_veh_car_jeep",
+   "size_cm": [
+    427.8,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_jeep.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_beetle_rose",
+   "scale_ref": "c_veh_car_beetle",
+   "size_cm": [
+    404.8,
+    137.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_beetle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_beetle_mint",
+   "scale_ref": "c_veh_car_beetle",
+   "size_cm": [
+    404.8,
+    137.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_beetle.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_beetle_butter",
+   "scale_ref": "c_veh_car_beetle",
+   "size_cm": [
+    404.8,
+    137.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_beetle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_pickup_rust",
+   "scale_ref": "c_veh_car_pickup",
+   "size_cm": [
+    527.8,
+    165.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_pickup.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_pickup_navy",
+   "scale_ref": "c_veh_car_pickup",
+   "size_cm": [
+    527.8,
+    165.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_pickup.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_car_pickup_white",
+   "scale_ref": "c_veh_car_pickup",
+   "size_cm": [
+    527.8,
+    165.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_car_pickup.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4e9f2",
+    "#c9d0d8"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "veh_bike_seat_navy",
+   "scale_ref": "c_veh_bike_seat",
+   "size_cm": [
+    36.4,
+    62.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "veh_bike_seat_coral",
+   "scale_ref": "c_veh_bike_seat",
+   "size_cm": [
+    36.4,
+    62.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "veh_bike_seat_grey",
+   "scale_ref": "c_veh_bike_seat",
+   "size_cm": [
+    36.4,
+    62.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/veh_bike_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "vehicles",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  }
+ ]
+}

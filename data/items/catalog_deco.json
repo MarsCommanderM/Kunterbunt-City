@@ -228,7 +228,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -255,7 +255,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -282,7 +282,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -309,7 +309,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -336,7 +336,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -363,7 +363,7 @@
    ],
    "pivot": [
     0.5,
-    1.0
+    0.0
    ],
    "hold": "one_hand",
    "placement": "wall",
@@ -542,121 +542,6 @@
     0.5,
     0.5
    ]
-  },
-  {
-   "id": "deco_rug_rose",
-   "scale_ref": "c_deco_rug",
-   "size_cm": [
-    162.2,
-    13.9
-   ],
-   "pivot": [
-    0.5,
-    1.0
-   ],
-   "hold": "none",
-   "placement": "floor",
-   "movable": true,
-   "sprite": "res://assets/sprites/items/deco_rug.png",
-   "pad_px": 1,
-   "colors": [
-    "#f0b6c2",
-    "#a9c3dd",
-    "#d4a86e"
-   ],
-   "catalog": "deco"
-  },
-  {
-   "id": "deco_rug_sky",
-   "scale_ref": "c_deco_rug",
-   "size_cm": [
-    162.2,
-    13.9
-   ],
-   "pivot": [
-    0.5,
-    1.0
-   ],
-   "hold": "none",
-   "placement": "floor",
-   "movable": true,
-   "sprite": "res://assets/sprites/items/deco_rug.png",
-   "pad_px": 1,
-   "colors": [
-    "#a9c3dd",
-    "#e07a7a",
-    "#d4a86e"
-   ],
-   "catalog": "deco"
-  },
-  {
-   "id": "deco_rug_sage",
-   "scale_ref": "c_deco_rug",
-   "size_cm": [
-    162.2,
-    13.9
-   ],
-   "pivot": [
-    0.5,
-    1.0
-   ],
-   "hold": "none",
-   "placement": "floor",
-   "movable": true,
-   "sprite": "res://assets/sprites/items/deco_rug.png",
-   "pad_px": 1,
-   "colors": [
-    "#dbe8d9",
-    "#a9c3dd",
-    "#d4a86e"
-   ],
-   "catalog": "deco"
-  },
-  {
-   "id": "deco_rug_butter",
-   "scale_ref": "c_deco_rug",
-   "size_cm": [
-    162.2,
-    13.9
-   ],
-   "pivot": [
-    0.5,
-    1.0
-   ],
-   "hold": "none",
-   "placement": "floor",
-   "movable": true,
-   "sprite": "res://assets/sprites/items/deco_rug.png",
-   "pad_px": 1,
-   "colors": [
-    "#f6d98a",
-    "#a9c3dd",
-    "#d4a86e"
-   ],
-   "catalog": "deco"
-  },
-  {
-   "id": "deco_rug_grey",
-   "scale_ref": "c_deco_rug",
-   "size_cm": [
-    162.2,
-    13.9
-   ],
-   "pivot": [
-    0.5,
-    1.0
-   ],
-   "hold": "none",
-   "placement": "floor",
-   "movable": true,
-   "sprite": "res://assets/sprites/items/deco_rug.png",
-   "pad_px": 1,
-   "colors": [
-    "#6d6f78",
-    "#a9c3dd",
-    "#d4a86e"
-   ],
-   "catalog": "deco"
   },
   {
    "id": "deco_books_coral",
@@ -894,6 +779,920 @@
     "#e07a7a",
     "#a9c3dd",
     "#d4a86e"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_gramophone_walnut",
+   "scale_ref": "c_deco_gramophone",
+   "size_cm": [
+    42.1,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_gramophone.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.2
+   ]
+  },
+  {
+   "id": "deco_gramophone_oak",
+   "scale_ref": "c_deco_gramophone",
+   "size_cm": [
+    42.1,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_gramophone.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.2
+   ]
+  },
+  {
+   "id": "deco_magazines_coral",
+   "scale_ref": "c_deco_magazines",
+   "size_cm": [
+    31.8,
+    9.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_magazines.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_magazines_sky",
+   "scale_ref": "c_deco_magazines",
+   "size_cm": [
+    31.8,
+    9.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_magazines.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_alarm_coral",
+   "scale_ref": "c_deco_alarm",
+   "size_cm": [
+    14.5,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_alarm.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_alarm_sky",
+   "scale_ref": "c_deco_alarm",
+   "size_cm": [
+    14.5,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_alarm.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_alarm_mint",
+   "scale_ref": "c_deco_alarm",
+   "size_cm": [
+    14.5,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_alarm.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_alarm_butter",
+   "scale_ref": "c_deco_alarm",
+   "size_cm": [
+    14.5,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_alarm.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_nightlight_butter",
+   "scale_ref": "c_deco_nightlight",
+   "size_cm": [
+    25.5,
+    26.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_nightlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_nightlight__on.png"
+   }
+  },
+  {
+   "id": "deco_nightlight_sky",
+   "scale_ref": "c_deco_nightlight",
+   "size_cm": [
+    25.5,
+    26.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_nightlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_nightlight__on.png"
+   }
+  },
+  {
+   "id": "deco_nightlight_rose",
+   "scale_ref": "c_deco_nightlight",
+   "size_cm": [
+    25.5,
+    26.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_nightlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_nightlight__on.png"
+   }
+  },
+  {
+   "id": "deco_nightlight_mint",
+   "scale_ref": "c_deco_nightlight",
+   "size_cm": [
+    25.5,
+    26.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_nightlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_nightlight__on.png"
+   }
+  },
+  {
+   "id": "deco_key_board_oak",
+   "scale_ref": "c_deco_key_board",
+   "size_cm": [
+    41.9,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_key_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_key_board_white",
+   "scale_ref": "c_deco_key_board",
+   "size_cm": [
+    41.9,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_key_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_key_board_sky",
+   "scale_ref": "c_deco_key_board",
+   "size_cm": [
+    41.9,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_key_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_suitcase_coral",
+   "scale_ref": "c_deco_suitcase",
+   "size_cm": [
+    49.9,
+    54.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_suitcase.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_suitcase_navy",
+   "scale_ref": "c_deco_suitcase",
+   "size_cm": [
+    49.9,
+    54.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_suitcase.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_suitcase_butter",
+   "scale_ref": "c_deco_suitcase",
+   "size_cm": [
+    49.9,
+    54.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_suitcase.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_suitcase_walnut",
+   "scale_ref": "c_deco_suitcase",
+   "size_cm": [
+    49.9,
+    54.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_suitcase.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_suitcase_mint",
+   "scale_ref": "c_deco_suitcase",
+   "size_cm": [
+    49.9,
+    54.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_suitcase.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_mirror_oak",
+   "scale_ref": "c_deco_mirror",
+   "size_cm": [
+    51.5,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_white",
+   "scale_ref": "c_deco_mirror",
+   "size_cm": [
+    51.5,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_#e0b84a",
+   "scale_ref": "c_deco_mirror",
+   "size_cm": [
+    51.5,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#e0b84a",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_black",
+   "scale_ref": "c_deco_mirror",
+   "size_cm": [
+    51.5,
+    81.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_stand_oak",
+   "scale_ref": "c_deco_mirror_stand",
+   "size_cm": [
+    43.3,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_stand_white",
+   "scale_ref": "c_deco_mirror_stand",
+   "size_cm": [
+    43.3,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_stand_black",
+   "scale_ref": "c_deco_mirror_stand",
+   "size_cm": [
+    43.3,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_mirror_stand_rose",
+   "scale_ref": "c_deco_mirror_stand",
+   "size_cm": [
+    43.3,
+    162.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#d4e9f2",
+    "#9aa6b4"
+   ],
+   "catalog": "deco"
+  },
+  {
+   "id": "deco_pinboard_oak",
+   "scale_ref": "c_deco_pinboard",
+   "size_cm": [
+    61.9,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_pinboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_pinboard_white",
+   "scale_ref": "c_deco_pinboard",
+   "size_cm": [
+    61.9,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_pinboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_pinboard_black",
+   "scale_ref": "c_deco_pinboard",
+   "size_cm": [
+    61.9,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_pinboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_calendar_sky",
+   "scale_ref": "c_deco_calendar",
+   "size_cm": [
+    31.9,
+    45.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_calendar.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_calendar_rose",
+   "scale_ref": "c_deco_calendar",
+   "size_cm": [
+    31.9,
+    45.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_calendar.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "deco",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "deco_calendar_mint",
+   "scale_ref": "c_deco_calendar",
+   "size_cm": [
+    31.9,
+    45.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "one_hand",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_calendar.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#fbfaf7"
    ],
    "catalog": "deco",
    "grip": [

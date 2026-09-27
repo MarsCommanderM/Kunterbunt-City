@@ -272,6 +272,168 @@
     "#e07a7a"
    ],
    "catalog": "winter"
+  },
+  {
+   "id": "sport_skis_coral",
+   "scale_ref": "c_sport_skis",
+   "size_cm": [
+    27.0,
+    146.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_skis.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "sport_skis_sky",
+   "scale_ref": "c_sport_skis",
+   "size_cm": [
+    27.0,
+    146.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_skis.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "sport_skis_black",
+   "scale_ref": "c_sport_skis",
+   "size_cm": [
+    27.0,
+    146.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_skis.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "sport_snowboard_teal",
+   "scale_ref": "c_sport_snowboard",
+   "size_cm": [
+    29.9,
+    141.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_snowboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_snowboard_coral",
+   "scale_ref": "c_sport_snowboard",
+   "size_cm": [
+    29.9,
+    141.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_snowboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "sport_snowboard_plum",
+   "scale_ref": "c_sport_snowboard",
+   "size_cm": [
+    29.9,
+    141.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/sport_snowboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

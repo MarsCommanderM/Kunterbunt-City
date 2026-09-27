@@ -1,0 +1,2024 @@
+{
+ "area": "catalog",
+ "room": "patio",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "garden_table_bistro_white",
+   "scale_ref": "c_garden_table_bistro",
+   "size_cm": [
+    71.9,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_bistro_sage",
+   "scale_ref": "c_garden_table_bistro",
+   "size_cm": [
+    71.9,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_bistro_black",
+   "scale_ref": "c_garden_table_bistro",
+   "size_cm": [
+    71.9,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_wood_oak",
+   "scale_ref": "c_garden_table_wood",
+   "size_cm": [
+    162.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_wood_walnut",
+   "scale_ref": "c_garden_table_wood",
+   "size_cm": [
+    162.0,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_plastic_white",
+   "scale_ref": "c_garden_table_plastic",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_plastic.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_table_plastic_green",
+   "scale_ref": "c_garden_table_plastic",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_table_plastic.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_chair_bistro_white",
+   "scale_ref": "c_garden_chair_bistro",
+   "size_cm": [
+    43.2,
+    91.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_bistro_sage",
+   "scale_ref": "c_garden_chair_bistro",
+   "size_cm": [
+    43.2,
+    91.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_bistro_black",
+   "scale_ref": "c_garden_chair_bistro",
+   "size_cm": [
+    43.2,
+    91.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_bistro.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_wood_oak",
+   "scale_ref": "c_garden_chair_wood",
+   "size_cm": [
+    51.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_wood_walnut",
+   "scale_ref": "c_garden_chair_wood",
+   "size_cm": [
+    51.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_plastic_white",
+   "scale_ref": "c_garden_chair_plastic",
+   "size_cm": [
+    51.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_plastic.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_plastic_green",
+   "scale_ref": "c_garden_chair_plastic",
+   "size_cm": [
+    51.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_plastic.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_chair_plastic_coral",
+   "scale_ref": "c_garden_chair_plastic",
+   "size_cm": [
+    51.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_chair_plastic.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#e07a7a"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_lounger_sky",
+   "scale_ref": "c_garden_lounger",
+   "size_cm": [
+    194.4,
+    65.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lounger.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_lounger_coral",
+   "scale_ref": "c_garden_lounger",
+   "size_cm": [
+    194.4,
+    65.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lounger.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_lounger_butter",
+   "scale_ref": "c_garden_lounger",
+   "size_cm": [
+    194.4,
+    65.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lounger.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_lounger_sage",
+   "scale_ref": "c_garden_lounger",
+   "size_cm": [
+    194.4,
+    65.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lounger.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_hammock_coral",
+   "scale_ref": "c_garden_hammock",
+   "size_cm": [
+    230.5,
+    114.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hammock.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_hammock_sky",
+   "scale_ref": "c_garden_hammock",
+   "size_cm": [
+    230.5,
+    114.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hammock.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_hammock_butter",
+   "scale_ref": "c_garden_hammock",
+   "size_cm": [
+    230.5,
+    114.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hammock.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "garden_swing_bench_sky",
+   "scale_ref": "c_garden_swing_bench",
+   "size_cm": [
+    208.9,
+    194.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_swing_bench_coral",
+   "scale_ref": "c_garden_swing_bench",
+   "size_cm": [
+    208.9,
+    194.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_swing_bench_sage",
+   "scale_ref": "c_garden_swing_bench",
+   "size_cm": [
+    208.9,
+    194.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_grill_gas_black",
+   "scale_ref": "c_garden_grill_gas",
+   "size_cm": [
+    131.5,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill_gas.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill_gas__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_grill_gas_coral",
+   "scale_ref": "c_garden_grill_gas",
+   "size_cm": [
+    131.5,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill_gas.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill_gas__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_grill_gas_metal",
+   "scale_ref": "c_garden_grill_gas",
+   "size_cm": [
+    131.5,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill_gas.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill_gas__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_fire_bowl_black",
+   "scale_ref": "c_garden_fire_bowl",
+   "size_cm": [
+    71.7,
+    51.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fire_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_fire_bowl__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_fire_bowl_rust",
+   "scale_ref": "c_garden_fire_bowl",
+   "size_cm": [
+    71.7,
+    51.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fire_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_fire_bowl__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_lights_butter",
+   "scale_ref": "c_garden_lights",
+   "size_cm": [
+    221.5,
+    23.2
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lights.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_lights__on.png"
+   }
+  },
+  {
+   "id": "garden_lights_coral",
+   "scale_ref": "c_garden_lights",
+   "size_cm": [
+    221.5,
+    23.2
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lights.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_lights__on.png"
+   }
+  },
+  {
+   "id": "garden_lights_sky",
+   "scale_ref": "c_garden_lights",
+   "size_cm": [
+    221.5,
+    23.2
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lights.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_lights__on.png"
+   }
+  },
+  {
+   "id": "garden_lights_mint",
+   "scale_ref": "c_garden_lights",
+   "size_cm": [
+    221.5,
+    23.2
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_lights.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_lights__on.png"
+   }
+  },
+  {
+   "id": "garden_bunting_coral",
+   "scale_ref": "c_garden_bunting",
+   "size_cm": [
+    222.2,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bunting.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_bunting_sky",
+   "scale_ref": "c_garden_bunting",
+   "size_cm": [
+    222.2,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bunting.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_bunting_butter",
+   "scale_ref": "c_garden_bunting",
+   "size_cm": [
+    222.2,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bunting.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_bunting_mint",
+   "scale_ref": "c_garden_bunting",
+   "size_cm": [
+    222.2,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bunting.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_pavilion_white",
+   "scale_ref": "c_garden_pavilion",
+   "size_cm": [
+    301.9,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pavilion.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_pavilion_sky",
+   "scale_ref": "c_garden_pavilion",
+   "size_cm": [
+    301.9,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pavilion.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_pavilion_coral",
+   "scale_ref": "c_garden_pavilion",
+   "size_cm": [
+    301.9,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pavilion.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_pavilion_wood_white",
+   "scale_ref": "c_garden_pavilion_wood",
+   "size_cm": [
+    311.8,
+    306.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pavilion_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_pavilion_wood_oak",
+   "scale_ref": "c_garden_pavilion_wood",
+   "size_cm": [
+    311.8,
+    306.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pavilion_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_trampoline_green",
+   "scale_ref": "c_garden_trampoline",
+   "size_cm": [
+    261.5,
+    233.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_trampoline.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_trampoline_sky",
+   "scale_ref": "c_garden_trampoline",
+   "size_cm": [
+    261.5,
+    233.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_trampoline.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_trampoline_coral",
+   "scale_ref": "c_garden_trampoline",
+   "size_cm": [
+    261.5,
+    233.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_trampoline.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_parasol_coral",
+   "scale_ref": "c_garden_parasol",
+   "size_cm": [
+    251.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_parasol.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "state_sprites": {
+    "closed": "res://assets/sprites/items/garden_parasol__closed.png"
+   }
+  },
+  {
+   "id": "garden_parasol_sky",
+   "scale_ref": "c_garden_parasol",
+   "size_cm": [
+    251.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_parasol.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "state_sprites": {
+    "closed": "res://assets/sprites/items/garden_parasol__closed.png"
+   }
+  },
+  {
+   "id": "garden_parasol_butter",
+   "scale_ref": "c_garden_parasol",
+   "size_cm": [
+    251.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_parasol.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "state_sprites": {
+    "closed": "res://assets/sprites/items/garden_parasol__closed.png"
+   }
+  },
+  {
+   "id": "garden_parasol_sage",
+   "scale_ref": "c_garden_parasol",
+   "size_cm": [
+    251.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_parasol.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "state_sprites": {
+    "closed": "res://assets/sprites/items/garden_parasol__closed.png"
+   }
+  },
+  {
+   "id": "garden_parasol_cream",
+   "scale_ref": "c_garden_parasol",
+   "size_cm": [
+    251.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_parasol.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "state_sprites": {
+    "closed": "res://assets/sprites/items/garden_parasol__closed.png"
+   }
+  },
+  {
+   "id": "garden_sun_sail_cream",
+   "scale_ref": "c_garden_sun_sail",
+   "size_cm": [
+    301.7,
+    251.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sun_sail.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_sun_sail_sky",
+   "scale_ref": "c_garden_sun_sail",
+   "size_cm": [
+    301.7,
+    251.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sun_sail.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_sun_sail_coral",
+   "scale_ref": "c_garden_sun_sail",
+   "size_cm": [
+    301.7,
+    251.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sun_sail.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_torch_walnut",
+   "scale_ref": "c_garden_torch",
+   "size_cm": [
+    17.2,
+    164.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_torch.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f09a55",
+    "#8a5e3f"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_torch__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_torch_black",
+   "scale_ref": "c_garden_torch",
+   "size_cm": [
+    17.2,
+    164.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_torch.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f09a55",
+    "#8a5e3f"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_torch__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_torch_oak",
+   "scale_ref": "c_garden_torch",
+   "size_cm": [
+    17.2,
+    164.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_torch.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f09a55",
+    "#8a5e3f"
+   ],
+   "catalog": "patio",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_torch__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_picnic_blanket_coral",
+   "scale_ref": "c_garden_picnic_blanket",
+   "size_cm": [
+    181.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_blanket.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_picnic_blanket_sky",
+   "scale_ref": "c_garden_picnic_blanket",
+   "size_cm": [
+    181.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_blanket.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_picnic_blanket_mint",
+   "scale_ref": "c_garden_picnic_blanket",
+   "size_cm": [
+    181.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_blanket.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_picnic_blanket_butter",
+   "scale_ref": "c_garden_picnic_blanket",
+   "size_cm": [
+    181.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_blanket.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_picnic_basket_oak",
+   "scale_ref": "c_garden_picnic_basket",
+   "size_cm": [
+    43.5,
+    36.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "grip": [
+    0.5,
+    0.95
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "garden_picnic_basket_walnut",
+   "scale_ref": "c_garden_picnic_basket",
+   "size_cm": [
+    43.5,
+    36.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_picnic_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "patio",
+   "grip": [
+    0.5,
+    0.95
+   ],
+   "container": {
+    "slots": 5,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "garden_swing_set_oak",
+   "scale_ref": "c_garden_swing_set",
+   "size_cm": [
+    297.6,
+    214.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_set.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_swing_set_sky",
+   "scale_ref": "c_garden_swing_set",
+   "size_cm": [
+    297.6,
+    214.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_set.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_swing_set_coral",
+   "scale_ref": "c_garden_swing_set",
+   "size_cm": [
+    297.6,
+    214.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_swing_set.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_playhouse_butter",
+   "scale_ref": "c_garden_playhouse",
+   "size_cm": [
+    159.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_playhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_playhouse_rose",
+   "scale_ref": "c_garden_playhouse",
+   "size_cm": [
+    159.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_playhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_playhouse_sky",
+   "scale_ref": "c_garden_playhouse",
+   "size_cm": [
+    159.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_playhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garden_slide_coral",
+   "scale_ref": "c_garden_slide",
+   "size_cm": [
+    229.5,
+    153.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_slide_sky",
+   "scale_ref": "c_garden_slide",
+   "size_cm": [
+    229.5,
+    153.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_slide_butter",
+   "scale_ref": "c_garden_slide",
+   "size_cm": [
+    229.5,
+    153.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "patio"
+  },
+  {
+   "id": "garden_sandbox_butter",
+   "scale_ref": "c_garden_sandbox",
+   "size_cm": [
+    157.7,
+    33.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sandbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_sandbox_big_butter",
+   "scale_ref": "c_garden_sandbox_big",
+   "size_cm": [
+    227.5,
+    40.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sandbox_big.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#a9c3dd",
+    "#8a5e3f"
+   ],
+   "catalog": "patio",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  }
+ ]
+}

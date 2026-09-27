@@ -855,7 +855,7 @@
    "scale_ref": "c_camp_tree",
    "size_cm": [
     191.8,
-    296.8
+    296.9
    ],
    "pivot": [
     0.5,
@@ -878,7 +878,7 @@
    "scale_ref": "c_camp_tree",
    "size_cm": [
     191.8,
-    296.8
+    296.9
    ],
    "pivot": [
     0.5,
@@ -900,8 +900,8 @@
    "id": "camp_fir_leaf_dark",
    "scale_ref": "c_camp_fir",
    "size_cm": [
-    161.8,
-    340.9
+    162.0,
+    341.0
    ],
    "pivot": [
     0.5,
@@ -923,8 +923,8 @@
    "id": "camp_fir_leaf",
    "scale_ref": "c_camp_fir",
    "size_cm": [
-    161.8,
-    340.9
+    162.0,
+    341.0
    ],
    "pivot": [
     0.5,

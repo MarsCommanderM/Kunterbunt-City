@@ -1,0 +1,683 @@
+{
+ "area": "catalog",
+ "room": "doors",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "door_wood_oak",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_walnut",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_white",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_sky",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_mint",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_coral",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_wood_navy",
+   "scale_ref": "c_door_wood",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_wood.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_glass_white",
+   "scale_ref": "c_door_glass",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_glass_oak",
+   "scale_ref": "c_door_glass",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_glass_grey",
+   "scale_ref": "c_door_glass",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_glass_sky",
+   "scale_ref": "c_door_glass",
+   "size_cm": [
+    96.8,
+    206.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_arch_oak",
+   "scale_ref": "c_door_arch",
+   "size_cm": [
+    101.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_arch.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_arch_walnut",
+   "scale_ref": "c_door_arch",
+   "size_cm": [
+    101.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_arch.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_arch_coral",
+   "scale_ref": "c_door_arch",
+   "size_cm": [
+    101.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_arch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_arch_mint",
+   "scale_ref": "c_door_arch",
+   "size_cm": [
+    101.8,
+    221.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_arch.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_barn_oak",
+   "scale_ref": "c_door_barn",
+   "size_cm": [
+    119.5,
+    214.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_barn.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_barn_walnut",
+   "scale_ref": "c_door_barn",
+   "size_cm": [
+    119.5,
+    214.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_barn.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_barn_rust",
+   "scale_ref": "c_door_barn",
+   "size_cm": [
+    119.5,
+    214.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_barn.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_barn_grey",
+   "scale_ref": "c_door_barn",
+   "size_cm": [
+    119.5,
+    214.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_barn.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_double_white",
+   "scale_ref": "c_door_double",
+   "size_cm": [
+    166.8,
+    217.0
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_double_oak",
+   "scale_ref": "c_door_double",
+   "size_cm": [
+    166.8,
+    217.0
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_double_grey",
+   "scale_ref": "c_door_double",
+   "size_cm": [
+    166.8,
+    217.0
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#e0b84a"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_garage_cream",
+   "scale_ref": "c_door_garage",
+   "size_cm": [
+    261.8,
+    216.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_garage.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_garage_grey",
+   "scale_ref": "c_door_garage",
+   "size_cm": [
+    261.8,
+    216.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_garage.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_garage_sky",
+   "scale_ref": "c_door_garage",
+   "size_cm": [
+    261.8,
+    216.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_garage.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "door_garage_coral",
+   "scale_ref": "c_door_garage",
+   "size_cm": [
+    261.8,
+    216.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/door_garage.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "doors",
+   "tags": [
+    "to_floor"
+   ]
+  }
+ ]
+}

@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **07 · Zuhause & Garten** (04b fertig) |
-| Nächste Task | P07 Zuhause & Garten (mehrere Räume) |
-| Letzter grüner check.sh | 2026-09-27 (P04b T07) |
+| Nächste Task | P07-T01/T04 Raumwahl + Tapete/Boden im Spiel, dann P07-T07 großer Garten (Wachsen/Gießen) |
+| Letzter grüner check.sh | 2026-09-27 (P07-T03 Inventar) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -20,7 +20,7 @@
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
-| 07 Slice Zuhause | ⏳ | – |
+| 07 Slice Zuhause | 🔨 T03 fertig (Inventar), T01/T04 begonnen | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
 | 10a–10h Content | ⏳ | – |
@@ -40,6 +40,8 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | Datum | Phase | Test | Ergebnis |
 |---|---|---|---|
 | 2026-09-26 | 00 | check.sh | Maßstab ✅ · pytest 5/5 ✅ · GUT 7/7 ✅ |
+| 2026-09-27 | 07 | check.sh (Inventar) | Maßstab ✅ (940 Einträge, 2513 Items) · pytest **128/128** ✅ · GUT **265/265** ✅ (24467 Asserts) |
+| 2026-09-27 | 07 | Pflicht-Inventar `data/inventory.json` | **427 Einträge · 0 fehlen** · Katalog 790 Vorlagen / **2436 Items** in 42 Gruppen |
 | 2026-09-26 | 00 | Web-Export (leere Szene) | ✅ 39 MB, index.pck 41 KB |
 | 2026-09-26 | 01 | check.sh | Maßstab ✅ · pytest 9/9 ✅ · GUT 47/47 ✅ |
 | 2026-09-26 | 01 | Einmessen Test-Küche | Arbeitsplatte 90,0 cm · Regale 153/194 cm · Bodenband 0…73,2 cm · Raum 716×313 cm |
@@ -70,6 +72,38 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 07 · T03 Inventar vollständig + Bauteile (Fenster/Türen/Teppiche) 🔨
+- Wunsch 👤: „wirklich alles vom Löffel bis zur Wohnwand, in Variationen“, später ergänzt um Inliner, Kindersitz,
+  Schal/Mütze/Handschuhe, Zäune groß/klein, Tischtennis, Schwerlastregal, Weinkeller, Insektenhotel,
+  Schildkröten-Gehege, Gartenlaube, Betten aller Art, Tische in allen Formen, Ohren-/Schaukel-/Fernsehsessel,
+  Obst/Gemüse/Pasta/Geschirr, Gardinenstange, Autoreifen.
+- **Pflichtliste statt Bauchgefühl:** `data/inventory.json` (427 Einträge je Raum: ID-Präfix + Mindest-Varianten) +
+  `tools/tests/test_inventory.py` (in pytest) → meldet jede Lücke. Stand: **0 fehlen**.
+- Neue Zeichner (Vektor, Farbzonen, Stil C): `cabinets` (Schrank-Baukasten: Sideboard, Vitrine, Wohnwand,
+  Schuhschrank, Küchenzeile, Hängeschrank …), `home_big`, `home_small`, `kids`, `playroom`, `yard` (Beete mit
+  Wachstums-Zuständen empty→sprout→grown→ripe, Blumenbeet frisch/welk), `patio`, `garden_extra` (Zäune in
+  6 Arten × 3 Größen), `leisure` (Sport, Kleidung, Musik), `cellar` (+ Garage), `furniture2`, `produce`,
+  `pantry`, `tableware`, `building` (Fenster 13 Formen, Türen, Vorhänge, Teppiche, Poster). Katalog in
+  `catalog_home/_more/_living/_food.py` (keine Datei > 400 Zeilen wächst weiter).
+- Spiel: Platzierung `wall` (hängt, Aufhängepunkt oben, Türen/bodentiefe Fenster rasten am Boden ein) und `rug`
+  (liegt flach unter allem); `ItemSpawner.place` hängt Fenster auf 90 cm Brüstung, Bilder auf Augenhöhe;
+  Raumzustand speichert Wand-Items. Test `test_building_items`.
+- Räume (Vorbereitung T01/T04): `tools/make_rooms.py` + `tools/rooms/` – Räume leer (nur Boden + Wand,
+  Dachschräge, Außen-Kulisse), Tapeten-Muster (`make_wallpapers.py`), `data/areas/home.json` mit 11 Räumen.
+  **Noch nicht im Spiel verdrahtet** (index.json zeigt weiter auf die Test-Küche).
+- Fehler gefunden (nur durch Messen/Hinschauen):
+  - Voll-Lauf von `make_items.py` starb am Speicher (OOM, ein Worker 6 GB): 80 % Kopf-Luft + 4× Glättung beim
+    4-m-Baumhaus. Jetzt Kopf-Luft ≤ 70 cm, Glättung 4/3/2× nach Größe, Worker speichern selbst → max. 2,6 GB.
+  - Präfix-Fehler `baby_baby_bottle` / `toy_diapers` – nur die Pflichtliste hat es gezeigt.
+  - 6 Maßstab-Verstöße (Rechen/Ski/Angel > 150 cm einhändig, Koffer/Puppenwagen > 60 cm zweihändig,
+    Mülleimer > 45 cm Küche) → Größen korrigiert.
+  - Blick-Check (`review_sheet.py`): Autos ohne sichtbare Räder (neu gezeichnet), Vitrinen-Teller wie Flammen,
+    Hochbett-Vorhang als Klumpen, Fernsehsessel in Seitenansicht, Klappstuhl wie Bügelbrett, Trampolin-Netz
+    undurchsichtig, Rasensprenger, Baumhaus-Krone, Auto-Kindersitz → nachgezeichnet.
+  - Verwaiste Sprites (umbenannte Vorlagen) werden jetzt automatisch entfernt.
+- Tests: check.sh ✅ – Maßstab (2513 Items) · pytest 128/128 · GUT 265/265.
+- Nächste Task: Raumwahl im Spiel (11 Räume, Vorschaubilder), Tapete/Boden wählbar (Save v3 + Migration),
+  dann großer Garten (Gießen/Wachsen/Ernten, welkende Blumen).
 ### 2026-09-27 · Phase 04b · T07 Haustiere + Leistung ✅ (Phase 04b komplett)
 - `tools/pets/draw.py` + `tools/make_pet_sprites.py`: 13 Tiere neu im Stil C – großer Kopf, Kulleraugen, braune
   Tinte, weiche Schattierung, sichtbares Halsband mit Marke. In Entwurfs-Einheiten (Höhe 100) gezeichnet →

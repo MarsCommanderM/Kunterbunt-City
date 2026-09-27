@@ -1,0 +1,516 @@
+{
+ "id": "home",
+ "name": "Zuhause & Garten",
+ "name_key": "AREA_HOME",
+ "_doc": "P07: 11 Räume. Räume sind LEER (Entscheidung 👤) – Boden + Wände aus tools/make_rooms.py, alles andere baut das Kind aus Items. Tapete/Boden wählbar (decor). Kinder-freundlicher Raumwechsel über den Haus-Knopf.",
+ "spawn": {
+  "room": "living",
+  "x_cm": 400,
+  "y_cm": 35
+ },
+ "rooms": [
+  {
+   "id": "hallway",
+   "label": "Flur",
+   "icon": "furn_shelf_low_cream",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/hallway.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f6e7cf",
+      "#ffffff",
+      "#e9b98f"
+     ],
+     "pattern": "pinstripes",
+     "pattern_col": "#ecd3b0",
+     "floor": "tiles",
+     "floor_cols": [
+      "#e9e2d6",
+      "#c9b9a3",
+      "#9a8a78"
+     ]
+    }
+   }
+  },
+  {
+   "id": "living",
+   "label": "Wohnzimmer",
+   "icon": "furn_sofa_classic_mint",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/living.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f3e6d0",
+      "#ffffff",
+      "#b9d7c0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#d9a066",
+      "#c98a4b",
+      "#8a5a3c"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kitchen",
+   "calibration": {
+    "source": "reference/raw_kitchen_bg.png",
+    "ref": "fix_counter",
+    "px_top": 434,
+    "px_bottom": 600,
+    "floor_back_px": 600,
+    "floor_front_px": 735,
+    "origin_x_px": 28,
+    "crop_px": [
+     28,
+     22,
+     1348,
+     745
+    ],
+    "out_px_per_cm": 4,
+    "surfaces_px": [
+     {
+      "id": "counter_top",
+      "type": "table",
+      "x_px": [
+       280,
+       902
+      ],
+      "top_px": 434,
+      "depth_px": 600
+     },
+     {
+      "id": "shelf_left_low",
+      "type": "shelf",
+      "x_px": [
+       332,
+       496
+      ],
+      "top_px": 318,
+      "depth_px": 600
+     },
+     {
+      "id": "shelf_left_high",
+      "type": "shelf",
+      "x_px": [
+       332,
+       616
+      ],
+      "top_px": 243,
+      "depth_px": 600
+     },
+     {
+      "id": "shelf_right",
+      "type": "shelf",
+      "x_px": [
+       618,
+       870
+      ],
+      "top_px": 318,
+      "depth_px": 600
+     }
+    ]
+   },
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 73.2
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/test/kitchen.bg.json",
+   "width_cm": 715.7,
+   "height_cm": 313.4,
+   "surfaces": [
+    {
+     "id": "counter_top",
+     "type": "table",
+     "x_cm": [
+      136.6,
+      473.9
+     ],
+     "h_cm": 90.0,
+     "depth_y_cm": 0.0
+    },
+    {
+     "id": "shelf_left_low",
+     "type": "shelf",
+     "x_cm": [
+      164.8,
+      253.7
+     ],
+     "h_cm": 152.9,
+     "depth_y_cm": 0.0
+    },
+    {
+     "id": "shelf_left_high",
+     "type": "shelf",
+     "x_cm": [
+      164.8,
+      318.8
+     ],
+     "h_cm": 193.6,
+     "depth_y_cm": 0.0
+    },
+    {
+     "id": "shelf_right",
+     "type": "shelf",
+     "x_cm": [
+      319.9,
+      456.5
+     ],
+     "h_cm": 152.9,
+     "depth_y_cm": 0.0
+    }
+   ],
+   "label": "Küche",
+   "icon": "kit_pot_coral"
+  },
+  {
+   "id": "bedroom",
+   "label": "Schlafzimmer",
+   "icon": "furn_bed_double_linen",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/bedroom.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#dfe7f0",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "flowers",
+     "pattern_col": "#c9d6e6",
+     "floor": "carpet",
+     "floor_cols": [
+      "#e8dcc8",
+      "#d8c8b0",
+      "#b8a890"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kids1",
+   "label": "Kinderzimmer",
+   "icon": "toy_teddy_oak",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/kids1.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fde2e8",
+      "#ffffff",
+      "#f0b6c2"
+     ],
+     "pattern": "stars",
+     "pattern_col": "#ffd166",
+     "floor": "planks",
+     "floor_cols": [
+      "#e8c49a",
+      "#d9ae7e",
+      "#8a5a3c"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kids2",
+   "label": "Kinderzimmer 2",
+   "icon": "toy_robot_sky",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/kids2.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#dff2e6",
+      "#ffffff",
+      "#9bd8c0"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#9fc3a0",
+     "floor": "carpet",
+     "floor_cols": [
+      "#a9c3dd",
+      "#8fb0d0",
+      "#6f8fb8"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bath",
+   "label": "Bad",
+   "icon": "bath_duck_yellow",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/bath.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": false,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e6f4f7",
+      "#ffffff",
+      "#bfdde6"
+     ],
+     "pattern": "tiles",
+     "pattern_col": "#bfdde6",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dbe6ea",
+      "#9aa6b4"
+     ]
+    }
+   }
+  },
+  {
+   "id": "attic",
+   "label": "Dachboden",
+   "icon": "furn_toybox_butter",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/attic.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": false,
+    "extras": [
+     "roof"
+    ],
+    "decor": {
+     "wall": [
+      "#e8d3b4",
+      "#fbf3e6",
+      "#d8b48a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#c9a27a",
+      "#b58c62",
+      "#7a5a3c"
+     ]
+    }
+   }
+  },
+  {
+   "id": "basement",
+   "label": "Keller",
+   "icon": "work_toolbox_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/basement.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": false,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#cfc8c0",
+      "#e4e0d8",
+      "#b8aca0"
+     ],
+     "pattern": "bricks",
+     "pattern_col": "#b8aca0",
+     "floor": "concrete",
+     "floor_cols": [
+      "#b9b7b2",
+      "#a3a09a",
+      "#8a8780"
+     ]
+    }
+   }
+  },
+  {
+   "id": "garage",
+   "label": "Garage",
+   "icon": "play_bicycle_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/home/garage.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "indoor",
+    "wainscot": false,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e4e0d8",
+      "#f5f3ee",
+      "#c3cad3"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "concrete",
+     "floor_cols": [
+      "#bdbab4",
+      "#a8a59f",
+      "#8a8780"
+     ]
+    }
+   }
+  },
+  {
+   "id": "garden",
+   "label": "Garten",
+   "icon": "plant_sunflower_terracotta_terracotta",
+   "width_cm": 2400,
+   "height_cm": 340.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 340,
+    "min_h_cm": 220,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/home/garden.bg.json",
+   "surfaces": [],
+   "scene": {
+    "kind": "outdoor",
+    "seed": 5,
+    "decor": {
+     "floor": "grass",
+     "floor_cols": [
+      "#8fcf6a",
+      "#7cbf5a",
+      "#5fa35a"
+     ]
+    }
+   }
+  }
+ ],
+ "default_items": []
+}

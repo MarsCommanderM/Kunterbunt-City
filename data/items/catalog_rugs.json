@@ -1,0 +1,835 @@
+{
+ "area": "catalog",
+ "room": "rugs",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "rug_rect_coral",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_sky",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_sage",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_butter",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_navy",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_rust",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_plum",
+   "scale_ref": "c_rug_rect",
+   "size_cm": [
+    227.6,
+    61.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_s_rose",
+   "scale_ref": "c_rug_rect_s",
+   "size_cm": [
+    167.6,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_s_teal",
+   "scale_ref": "c_rug_rect_s",
+   "size_cm": [
+    167.6,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_s_mint",
+   "scale_ref": "c_rug_rect_s",
+   "size_cm": [
+    167.6,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_s_sand",
+   "scale_ref": "c_rug_rect_s",
+   "size_cm": [
+    167.6,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_rect_s_grey",
+   "scale_ref": "c_rug_rect_s",
+   "size_cm": [
+    167.6,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_rect_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_round_rose",
+   "scale_ref": "c_rug_round",
+   "size_cm": [
+    151.8,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_round_sky",
+   "scale_ref": "c_rug_round",
+   "size_cm": [
+    151.8,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_round_butter",
+   "scale_ref": "c_rug_round",
+   "size_cm": [
+    151.8,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_round_mint",
+   "scale_ref": "c_rug_round",
+   "size_cm": [
+    151.8,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_round_lilac",
+   "scale_ref": "c_rug_round",
+   "size_cm": [
+    151.8,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_runner_rust",
+   "scale_ref": "c_rug_runner",
+   "size_cm": [
+    286.8,
+    25.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_runner.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_runner_navy",
+   "scale_ref": "c_rug_runner",
+   "size_cm": [
+    286.8,
+    25.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_runner.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_runner_sage",
+   "scale_ref": "c_rug_runner",
+   "size_cm": [
+    286.8,
+    25.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_runner.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_runner_coral",
+   "scale_ref": "c_rug_runner",
+   "size_cm": [
+    286.8,
+    25.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_runner.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_doormat_oak",
+   "scale_ref": "c_rug_doormat",
+   "size_cm": [
+    76.8,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_doormat.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_doormat_pine",
+   "scale_ref": "c_rug_doormat",
+   "size_cm": [
+    76.8,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_doormat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_doormat_grey",
+   "scale_ref": "c_rug_doormat",
+   "size_cm": [
+    76.8,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_doormat.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_bathmat_sky",
+   "scale_ref": "c_rug_bathmat",
+   "size_cm": [
+    81.6,
+    25.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_bathmat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_bathmat_mint",
+   "scale_ref": "c_rug_bathmat",
+   "size_cm": [
+    81.6,
+    25.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_bathmat.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_bathmat_rose",
+   "scale_ref": "c_rug_bathmat",
+   "size_cm": [
+    81.6,
+    25.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_bathmat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_bathmat_cream",
+   "scale_ref": "c_rug_bathmat",
+   "size_cm": [
+    81.6,
+    25.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_bathmat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_roads_green",
+   "scale_ref": "c_rug_roads",
+   "size_cm": [
+    201.8,
+    57.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_roads.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#fbfaf7"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_sheepskin_cream",
+   "scale_ref": "c_rug_sheepskin",
+   "size_cm": [
+    106.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_sheepskin.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_sheepskin_sand",
+   "scale_ref": "c_rug_sheepskin",
+   "size_cm": [
+    106.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_sheepskin.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_sheepskin_grey",
+   "scale_ref": "c_rug_sheepskin",
+   "size_cm": [
+    106.3,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_sheepskin.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_flower_rose",
+   "scale_ref": "c_rug_flower",
+   "size_cm": [
+    129.2,
+    41.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_flower_butter",
+   "scale_ref": "c_rug_flower",
+   "size_cm": [
+    129.2,
+    41.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_flower_sky",
+   "scale_ref": "c_rug_flower",
+   "size_cm": [
+    129.2,
+    41.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  },
+  {
+   "id": "rug_flower_mint",
+   "scale_ref": "c_rug_flower",
+   "size_cm": [
+    129.2,
+    41.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/rug_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "rugs"
+  }
+ ]
+}

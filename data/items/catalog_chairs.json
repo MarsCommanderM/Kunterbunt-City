@@ -1055,6 +1055,708 @@
     "pose": "sit",
     "slots": 1
    }
+  },
+  {
+   "id": "furn_chair_rocking_granny_rose",
+   "scale_ref": "c_furn_chair_rocking_granny",
+   "size_cm": [
+    71.7,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_rocking_granny.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_rocking_granny_sage",
+   "scale_ref": "c_furn_chair_rocking_granny",
+   "size_cm": [
+    71.7,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_rocking_granny.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_rocking_granny_navy",
+   "scale_ref": "c_furn_chair_rocking_granny",
+   "size_cm": [
+    71.7,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_rocking_granny.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_padded_grey",
+   "scale_ref": "c_furn_chair_padded",
+   "size_cm": [
+    47.9,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_padded.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_padded_navy",
+   "scale_ref": "c_furn_chair_padded",
+   "size_cm": [
+    47.9,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_padded.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_padded_rust",
+   "scale_ref": "c_furn_chair_padded",
+   "size_cm": [
+    47.9,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_padded.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_padded_sage",
+   "scale_ref": "c_furn_chair_padded",
+   "size_cm": [
+    47.9,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_padded.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_padded_linen",
+   "scale_ref": "c_furn_chair_padded",
+   "size_cm": [
+    47.9,
+    93.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_padded.png",
+   "pad_px": 1,
+   "colors": [
+    "#e8e2d8",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_folding_white",
+   "scale_ref": "c_furn_chair_folding",
+   "size_cm": [
+    43.9,
+    84.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_folding.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_folding_grey",
+   "scale_ref": "c_furn_chair_folding",
+   "size_cm": [
+    43.9,
+    84.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_folding.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_folding_coral",
+   "scale_ref": "c_furn_chair_folding",
+   "size_cm": [
+    43.9,
+    84.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_folding.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_chair_folding_sky",
+   "scale_ref": "c_furn_chair_folding",
+   "size_cm": [
+    43.9,
+    84.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_chair_folding.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_bench_kitchen_oak",
+   "scale_ref": "c_furn_bench_kitchen",
+   "size_cm": [
+    183.6,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bench_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "furn_bench_kitchen_white",
+   "scale_ref": "c_furn_bench_kitchen",
+   "size_cm": [
+    183.6,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bench_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "furn_bench_kitchen_pine",
+   "scale_ref": "c_furn_bench_kitchen",
+   "size_cm": [
+    183.6,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_bench_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "furn_stool_step_white",
+   "scale_ref": "c_furn_stool_step",
+   "size_cm": [
+    46.9,
+    47.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_step.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_step_sky",
+   "scale_ref": "c_furn_stool_step",
+   "size_cm": [
+    46.9,
+    47.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_step.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_step_coral",
+   "scale_ref": "c_furn_stool_step",
+   "size_cm": [
+    46.9,
+    47.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_step.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_piano_black",
+   "scale_ref": "c_furn_stool_piano",
+   "size_cm": [
+    46.9,
+    51.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_piano.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_piano_walnut",
+   "scale_ref": "c_furn_stool_piano",
+   "size_cm": [
+    46.9,
+    51.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_piano.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_milk_oak",
+   "scale_ref": "c_furn_stool_milk",
+   "size_cm": [
+    33.8,
+    33.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_milk.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stool_milk_pine",
+   "scale_ref": "c_furn_stool_milk",
+   "size_cm": [
+    33.8,
+    33.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stool_milk.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_footstool_sage",
+   "scale_ref": "c_furn_footstool",
+   "size_cm": [
+    51.9,
+    39.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_footstool.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_footstool_rose",
+   "scale_ref": "c_furn_footstool",
+   "size_cm": [
+    51.9,
+    39.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_footstool.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_footstool_grey",
+   "scale_ref": "c_furn_footstool",
+   "size_cm": [
+    51.9,
+    39.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_footstool.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_footstool_rust",
+   "scale_ref": "c_furn_footstool",
+   "size_cm": [
+    51.9,
+    39.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_footstool.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "chairs",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
   }
  ]
 }

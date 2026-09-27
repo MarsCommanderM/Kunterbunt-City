@@ -5,7 +5,7 @@ extends Resource
 
 const PLACEHOLDER_DIR: String = "res://assets/placeholders/"
 const HOLD_TYPES: Array[String] = ["one_hand", "two_hands", "none"]
-const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
+const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat", "rug"]   ## rug: flach unter allem (P07)
 
 @export var id: StringName
 @export var scale_ref: String
@@ -43,6 +43,21 @@ const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
 
 func is_stackable() -> bool:
 	return tags.has("stackable")
+
+
+## P07: Hängt an der Wand (Fenster, Tür, Vorhang, Poster) – Aufhängepunkt oben Mitte, fällt nicht herunter.
+func is_wall() -> bool:
+	return placement == "wall"
+
+
+## P07: Liegt flach auf dem Boden (Teppich, Läufer, Fußmatte) – immer unter allem, was darauf steht.
+func is_rug() -> bool:
+	return placement == "rug"
+
+
+## Zeichen-Ebene im Raum: Wand ganz hinten (−2), Teppiche darüber (−1), alles andere (0) nach Tiefe sortiert.
+func draw_layer() -> int:
+	return -2 if is_wall() else (-1 if is_rug() else 0)
 
 
 ## Hat umschaltbare Zustände (Schrank auf/zu, Gerät an/aus)?

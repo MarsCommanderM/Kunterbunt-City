@@ -1,0 +1,1065 @@
+{
+ "area": "catalog",
+ "room": "fences",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "garden_fence_picket_s_white",
+   "scale_ref": "c_garden_fence_picket_s",
+   "size_cm": [
+    101.5,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_s_oak",
+   "scale_ref": "c_garden_fence_picket_s",
+   "size_cm": [
+    101.5,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_s_sage",
+   "scale_ref": "c_garden_fence_picket_s",
+   "size_cm": [
+    101.5,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_s_sky",
+   "scale_ref": "c_garden_fence_picket_s",
+   "size_cm": [
+    101.5,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_m_white",
+   "scale_ref": "c_garden_fence_picket_m",
+   "size_cm": [
+    151.5,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_m_oak",
+   "scale_ref": "c_garden_fence_picket_m",
+   "size_cm": [
+    151.5,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_m_sage",
+   "scale_ref": "c_garden_fence_picket_m",
+   "size_cm": [
+    151.5,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_m_sky",
+   "scale_ref": "c_garden_fence_picket_m",
+   "size_cm": [
+    151.5,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_l_white",
+   "scale_ref": "c_garden_fence_picket_l",
+   "size_cm": [
+    201.6,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_l_oak",
+   "scale_ref": "c_garden_fence_picket_l",
+   "size_cm": [
+    201.6,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_l_sage",
+   "scale_ref": "c_garden_fence_picket_l",
+   "size_cm": [
+    201.6,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_picket_l_sky",
+   "scale_ref": "c_garden_fence_picket_l",
+   "size_cm": [
+    201.6,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_picket_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_s_green",
+   "scale_ref": "c_garden_fence_wire_s",
+   "size_cm": [
+    99.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_s_grey",
+   "scale_ref": "c_garden_fence_wire_s",
+   "size_cm": [
+    99.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_m_green",
+   "scale_ref": "c_garden_fence_wire_m",
+   "size_cm": [
+    149.5,
+    101.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_m_grey",
+   "scale_ref": "c_garden_fence_wire_m",
+   "size_cm": [
+    149.5,
+    101.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_l_green",
+   "scale_ref": "c_garden_fence_wire_l",
+   "size_cm": [
+    199.5,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_wire_l_grey",
+   "scale_ref": "c_garden_fence_wire_l",
+   "size_cm": [
+    199.5,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_wire_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_s_black",
+   "scale_ref": "c_garden_fence_metal_s",
+   "size_cm": [
+    104.9,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_s_white",
+   "scale_ref": "c_garden_fence_metal_s",
+   "size_cm": [
+    104.9,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_s_green",
+   "scale_ref": "c_garden_fence_metal_s",
+   "size_cm": [
+    104.9,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_m_black",
+   "scale_ref": "c_garden_fence_metal_m",
+   "size_cm": [
+    151.5,
+    109.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_m_white",
+   "scale_ref": "c_garden_fence_metal_m",
+   "size_cm": [
+    151.5,
+    109.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_m_green",
+   "scale_ref": "c_garden_fence_metal_m",
+   "size_cm": [
+    151.5,
+    109.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_l_black",
+   "scale_ref": "c_garden_fence_metal_l",
+   "size_cm": [
+    204.9,
+    189.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_l_white",
+   "scale_ref": "c_garden_fence_metal_l",
+   "size_cm": [
+    204.9,
+    189.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_metal_l_green",
+   "scale_ref": "c_garden_fence_metal_l",
+   "size_cm": [
+    204.9,
+    189.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_metal_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_s_oak",
+   "scale_ref": "c_garden_fence_privacy_s",
+   "size_cm": [
+    101.9,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_s_grey",
+   "scale_ref": "c_garden_fence_privacy_s",
+   "size_cm": [
+    101.9,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_s_walnut",
+   "scale_ref": "c_garden_fence_privacy_s",
+   "size_cm": [
+    101.9,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_m_oak",
+   "scale_ref": "c_garden_fence_privacy_m",
+   "size_cm": [
+    151.9,
+    103.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_m_grey",
+   "scale_ref": "c_garden_fence_privacy_m",
+   "size_cm": [
+    151.9,
+    103.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_m_walnut",
+   "scale_ref": "c_garden_fence_privacy_m",
+   "size_cm": [
+    151.9,
+    103.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_l_oak",
+   "scale_ref": "c_garden_fence_privacy_l",
+   "size_cm": [
+    201.8,
+    183.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_l_grey",
+   "scale_ref": "c_garden_fence_privacy_l",
+   "size_cm": [
+    201.8,
+    183.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_privacy_l_walnut",
+   "scale_ref": "c_garden_fence_privacy_l",
+   "size_cm": [
+    201.8,
+    183.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_privacy_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_bamboo_s_sand",
+   "scale_ref": "c_garden_fence_bamboo_s",
+   "size_cm": [
+    102.3,
+    51.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_bamboo_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_bamboo_m_sand",
+   "scale_ref": "c_garden_fence_bamboo_m",
+   "size_cm": [
+    152.3,
+    101.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_bamboo_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_bamboo_l_sand",
+   "scale_ref": "c_garden_fence_bamboo_l",
+   "size_cm": [
+    202.2,
+    181.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_bamboo_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#e07a7a",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_rail_s_oak",
+   "scale_ref": "c_garden_fence_rail_s",
+   "size_cm": [
+    103.9,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rail_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_rail_s_white",
+   "scale_ref": "c_garden_fence_rail_s",
+   "size_cm": [
+    103.9,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rail_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_rail_m_oak",
+   "scale_ref": "c_garden_fence_rail_m",
+   "size_cm": [
+    153.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rail_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_fence_rail_m_white",
+   "scale_ref": "c_garden_fence_rail_m",
+   "size_cm": [
+    153.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence_rail_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_edging_oak",
+   "scale_ref": "c_garden_edging",
+   "size_cm": [
+    100.0,
+    17.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_edging.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_edging_grey",
+   "scale_ref": "c_garden_edging",
+   "size_cm": [
+    100.0,
+    17.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_edging.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#8a5e3f",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  },
+  {
+   "id": "garden_edging_terracotta",
+   "scale_ref": "c_garden_edging",
+   "size_cm": [
+    100.0,
+    17.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_edging.png",
+   "pad_px": 1,
+   "colors": [
+    "#c96a4a",
+    "#8a5e3f",
+    "#5f8f6a"
+   ],
+   "catalog": "fences"
+  }
+ ]
+}

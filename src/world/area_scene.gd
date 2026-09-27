@@ -165,7 +165,7 @@ func _on_photo() -> void:
 func _place_back(id: String) -> bool:
 	var x: float = me.position.x + 70.0 if me != null else Areas.spawn_of(area_id).x
 	var y: float = me.position.y if me != null else Areas.spawn_of(area_id).y
-	var it: ItemNode = ItemSpawner.on_floor(room, StringName(id), x, y)
+	var it: ItemNode = ItemSpawner.place(room, StringName(id), x, y)
 	if it != null:
 		_on_world_changed()
 	return it != null
@@ -184,7 +184,7 @@ func place_from_catalog(id: String, n: int = 0) -> bool:
 	var back: float = room.floor_band.back_y_cm if room.floor_band != null else 0.0
 	var front: float = room.floor_band.front_y_cm if room.floor_band != null else 80.0
 	var depth: float = lerpf(back, front, [0.55, 0.3, 0.8][n % 3])
-	var it: ItemNode = ItemSpawner.on_floor(room, StringName(id), x, depth)
+	var it: ItemNode = ItemSpawner.place(room, StringName(id), x, depth)   # Wand-Items hängen sich auf
 	if it == null:
 		return false
 	AudioBus.play_item_sfx(it.def, "drop")

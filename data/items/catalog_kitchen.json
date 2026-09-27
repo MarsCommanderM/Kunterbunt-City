@@ -3027,6 +3027,2917 @@
    "state_sprites": {
     "on": "res://assets/sprites/items/app_sink__on.png"
    }
+  },
+  {
+   "id": "kit_teacup_cream",
+   "scale_ref": "c_kit_teacup",
+   "size_cm": [
+    15.8,
+    10.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teacup.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teacup_rose",
+   "scale_ref": "c_kit_teacup",
+   "size_cm": [
+    15.8,
+    10.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teacup.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teacup_sky",
+   "scale_ref": "c_kit_teacup",
+   "size_cm": [
+    15.8,
+    10.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teacup.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teacup_mint",
+   "scale_ref": "c_kit_teacup",
+   "size_cm": [
+    15.8,
+    10.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teacup.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teacup_white",
+   "scale_ref": "c_kit_teacup",
+   "size_cm": [
+    15.8,
+    10.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teacup.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_plate_deep_white",
+   "scale_ref": "c_kit_plate_deep",
+   "size_cm": [
+    24.7,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_deep.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_deep_cream",
+   "scale_ref": "c_kit_plate_deep",
+   "size_cm": [
+    24.7,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_deep.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_deep_sky",
+   "scale_ref": "c_kit_plate_deep",
+   "size_cm": [
+    24.7,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_deep.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_deep_sage",
+   "scale_ref": "c_kit_plate_deep",
+   "size_cm": [
+    24.7,
+    6.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_deep.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_kids_butter",
+   "scale_ref": "c_kit_plate_kids",
+   "size_cm": [
+    24.8,
+    4.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_kids_sky",
+   "scale_ref": "c_kit_plate_kids",
+   "size_cm": [
+    24.8,
+    4.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_plate_kids_rose",
+   "scale_ref": "c_kit_plate_kids",
+   "size_cm": [
+    24.8,
+    4.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_plate_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "kit_glass_wine_sky",
+   "scale_ref": "c_kit_glass_wine",
+   "size_cm": [
+    9.8,
+    22.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_glass_wine.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#b8452f",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_glass_wine_rose",
+   "scale_ref": "c_kit_glass_wine",
+   "size_cm": [
+    9.8,
+    22.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_glass_wine.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#b8452f",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_glass_tumbler_sky",
+   "scale_ref": "c_kit_glass_tumbler",
+   "size_cm": [
+    8.8,
+    11.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_glass_tumbler.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_glass_tumbler_mint",
+   "scale_ref": "c_kit_glass_tumbler",
+   "size_cm": [
+    8.8,
+    11.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_glass_tumbler.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_glass_tumbler_rose",
+   "scale_ref": "c_kit_glass_tumbler",
+   "size_cm": [
+    8.8,
+    11.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_glass_tumbler.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teaspoon_metal",
+   "scale_ref": "c_kit_teaspoon",
+   "size_cm": [
+    4.2,
+    14.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teaspoon.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teaspoon_#e0b84a",
+   "scale_ref": "c_kit_teaspoon",
+   "size_cm": [
+    4.2,
+    14.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teaspoon.png",
+   "pad_px": 1,
+   "colors": [
+    "#e0b84a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_jug_cream",
+   "scale_ref": "c_kit_jug",
+   "size_cm": [
+    17.6,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_jug.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_jug_sky",
+   "scale_ref": "c_kit_jug",
+   "size_cm": [
+    17.6,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_jug.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_jug_coral",
+   "scale_ref": "c_kit_jug",
+   "size_cm": [
+    17.6,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_jug.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_carafe_sky",
+   "scale_ref": "c_kit_carafe",
+   "size_cm": [
+    13.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_carafe.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_carafe_mint",
+   "scale_ref": "c_kit_carafe",
+   "size_cm": [
+    13.3,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_carafe.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_thermos_navy",
+   "scale_ref": "c_kit_thermos",
+   "size_cm": [
+    10.9,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_thermos.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_thermos_coral",
+   "scale_ref": "c_kit_thermos",
+   "size_cm": [
+    10.9,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_thermos.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_thermos_metal",
+   "scale_ref": "c_kit_thermos",
+   "size_cm": [
+    10.9,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_thermos.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_egg_cup_coral",
+   "scale_ref": "c_kit_egg_cup",
+   "size_cm": [
+    6.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_egg_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_egg_cup_sky",
+   "scale_ref": "c_kit_egg_cup",
+   "size_cm": [
+    6.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_egg_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_egg_cup_butter",
+   "scale_ref": "c_kit_egg_cup",
+   "size_cm": [
+    6.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_egg_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_egg_cup_mint",
+   "scale_ref": "c_kit_egg_cup",
+   "size_cm": [
+    6.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_egg_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_egg_cup_white",
+   "scale_ref": "c_kit_egg_cup",
+   "size_cm": [
+    6.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_egg_cup.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_sugar_bowl_cream",
+   "scale_ref": "c_kit_sugar_bowl",
+   "size_cm": [
+    11.9,
+    12.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_sugar_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_sugar_bowl_sky",
+   "scale_ref": "c_kit_sugar_bowl",
+   "size_cm": [
+    11.9,
+    12.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_sugar_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_butter_dish_cream",
+   "scale_ref": "c_kit_butter_dish",
+   "size_cm": [
+    19.5,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_butter_dish.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_butter_dish_white",
+   "scale_ref": "c_kit_butter_dish",
+   "size_cm": [
+    19.5,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_butter_dish.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_butter_dish_sky",
+   "scale_ref": "c_kit_butter_dish",
+   "size_cm": [
+    19.5,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_butter_dish.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_cake_stand_white",
+   "scale_ref": "c_kit_cake_stand",
+   "size_cm": [
+    31.9,
+    32.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cake_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_cake_stand_sky",
+   "scale_ref": "c_kit_cake_stand",
+   "size_cm": [
+    31.9,
+    32.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cake_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_salad_bowl_oak",
+   "scale_ref": "c_kit_salad_bowl",
+   "size_cm": [
+    30.5,
+    14.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_salad_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#7fae6a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_salad_bowl_white",
+   "scale_ref": "c_kit_salad_bowl",
+   "size_cm": [
+    30.5,
+    14.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_salad_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#7fae6a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_salad_bowl_sky",
+   "scale_ref": "c_kit_salad_bowl",
+   "size_cm": [
+    30.5,
+    14.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_salad_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#7fae6a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_lunchbox_coral",
+   "scale_ref": "c_kit_lunchbox",
+   "size_cm": [
+    20.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_lunchbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_lunchbox_sky",
+   "scale_ref": "c_kit_lunchbox",
+   "size_cm": [
+    20.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_lunchbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_lunchbox_mint",
+   "scale_ref": "c_kit_lunchbox",
+   "size_cm": [
+    20.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_lunchbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_lunchbox_butter",
+   "scale_ref": "c_kit_lunchbox",
+   "size_cm": [
+    20.9,
+    9.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_lunchbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_drink_bottle_coral",
+   "scale_ref": "c_kit_drink_bottle",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_drink_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_drink_bottle_sky",
+   "scale_ref": "c_kit_drink_bottle",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_drink_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_drink_bottle_mint",
+   "scale_ref": "c_kit_drink_bottle",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_drink_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_drink_bottle_plum",
+   "scale_ref": "c_kit_drink_bottle",
+   "size_cm": [
+    8.9,
+    23.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_drink_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#fbfaf7",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_napkins_coral",
+   "scale_ref": "c_kit_napkins",
+   "size_cm": [
+    17.8,
+    5.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_napkins.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_napkins_sky",
+   "scale_ref": "c_kit_napkins",
+   "size_cm": [
+    17.8,
+    5.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_napkins.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_napkins_butter",
+   "scale_ref": "c_kit_napkins",
+   "size_cm": [
+    17.8,
+    5.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_napkins.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_placemat_oak",
+   "scale_ref": "c_kit_placemat",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_placemat.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_placemat_coral",
+   "scale_ref": "c_kit_placemat",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_placemat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_placemat_sky",
+   "scale_ref": "c_kit_placemat",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_placemat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_placemat_sage",
+   "scale_ref": "c_kit_placemat",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_placemat.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_knife_black",
+   "scale_ref": "c_kit_knife",
+   "size_cm": [
+    2.8,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_knife.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_knife_oak",
+   "scale_ref": "c_kit_knife",
+   "size_cm": [
+    2.8,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_knife.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_knife_coral",
+   "scale_ref": "c_kit_knife",
+   "size_cm": [
+    2.8,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_knife.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_woodspoon_oak",
+   "scale_ref": "c_kit_woodspoon",
+   "size_cm": [
+    7.0,
+    31.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_woodspoon.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_woodspoon_pine",
+   "scale_ref": "c_kit_woodspoon",
+   "size_cm": [
+    7.0,
+    31.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_woodspoon.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_rolling_pin_pine",
+   "scale_ref": "c_kit_rolling_pin",
+   "size_cm": [
+    36.1,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_rolling_pin.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_rolling_pin_oak",
+   "scale_ref": "c_kit_rolling_pin",
+   "size_cm": [
+    36.1,
+    7.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_rolling_pin.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teapot_cream",
+   "scale_ref": "c_kit_teapot",
+   "size_cm": [
+    25.8,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teapot.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teapot_coral",
+   "scale_ref": "c_kit_teapot",
+   "size_cm": [
+    25.8,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teapot.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teapot_sky",
+   "scale_ref": "c_kit_teapot",
+   "size_cm": [
+    25.8,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teapot.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_teapot_mint",
+   "scale_ref": "c_kit_teapot",
+   "size_cm": [
+    25.8,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_teapot.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_tray_oak",
+   "scale_ref": "c_kit_tray",
+   "size_cm": [
+    46.2,
+    6.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_tray_cream",
+   "scale_ref": "c_kit_tray",
+   "size_cm": [
+    46.2,
+    6.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_tray_sky",
+   "scale_ref": "c_kit_tray",
+   "size_cm": [
+    46.2,
+    6.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_breadbox_cream",
+   "scale_ref": "c_kit_breadbox",
+   "size_cm": [
+    38.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_breadbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_breadbox__open.png"
+   }
+  },
+  {
+   "id": "kit_breadbox_oak",
+   "scale_ref": "c_kit_breadbox",
+   "size_cm": [
+    38.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_breadbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_breadbox__open.png"
+   }
+  },
+  {
+   "id": "kit_breadbox_coral",
+   "scale_ref": "c_kit_breadbox",
+   "size_cm": [
+    38.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_breadbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_breadbox__open.png"
+   }
+  },
+  {
+   "id": "kit_breadbox_mint",
+   "scale_ref": "c_kit_breadbox",
+   "size_cm": [
+    38.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_breadbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_breadbox__open.png"
+   }
+  },
+  {
+   "id": "kit_fruit_bowl_cream",
+   "scale_ref": "c_kit_fruit_bowl",
+   "size_cm": [
+    29.8,
+    16.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_fruit_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_fruit_bowl_sky",
+   "scale_ref": "c_kit_fruit_bowl",
+   "size_cm": [
+    29.8,
+    16.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_fruit_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_fruit_bowl_oak",
+   "scale_ref": "c_kit_fruit_bowl",
+   "size_cm": [
+    29.8,
+    16.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_fruit_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_spice_rack_oak",
+   "scale_ref": "c_kit_spice_rack",
+   "size_cm": [
+    35.4,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_spice_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_spice_rack_white",
+   "scale_ref": "c_kit_spice_rack",
+   "size_cm": [
+    35.4,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_spice_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_trash_metal",
+   "scale_ref": "c_kit_trash",
+   "size_cm": [
+    33.5,
+    42.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_trash.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_trash_cream",
+   "scale_ref": "c_kit_trash",
+   "size_cm": [
+    33.5,
+    42.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_trash.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_trash_coral",
+   "scale_ref": "c_kit_trash",
+   "size_cm": [
+    33.5,
+    42.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_trash.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_trash_mint",
+   "scale_ref": "c_kit_trash",
+   "size_cm": [
+    33.5,
+    42.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_trash.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_dish_rack_metal",
+   "scale_ref": "c_kit_dish_rack",
+   "size_cm": [
+    45.5,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_dish_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_dish_rack_white",
+   "scale_ref": "c_kit_dish_rack",
+   "size_cm": [
+    45.5,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_dish_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_baking_tray_metal",
+   "scale_ref": "c_kit_baking_tray",
+   "size_cm": [
+    43.1,
+    5.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_baking_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#d4a86e",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_scale_cream",
+   "scale_ref": "c_kit_scale",
+   "size_cm": [
+    23.5,
+    13.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_scale.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_scale_coral",
+   "scale_ref": "c_kit_scale",
+   "size_cm": [
+    23.5,
+    13.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_scale.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_scale_mint",
+   "scale_ref": "c_kit_scale",
+   "size_cm": [
+    23.5,
+    13.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_scale.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_salt_pepper_cream",
+   "scale_ref": "c_kit_salt_pepper",
+   "size_cm": [
+    10.7,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_salt_pepper.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_salt_pepper_oak",
+   "scale_ref": "c_kit_salt_pepper",
+   "size_cm": [
+    10.7,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_salt_pepper.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_canister_cream",
+   "scale_ref": "c_kit_canister",
+   "size_cm": [
+    15.5,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_canister.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_canister_sky",
+   "scale_ref": "c_kit_canister",
+   "size_cm": [
+    15.5,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_canister.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_canister_coral",
+   "scale_ref": "c_kit_canister",
+   "size_cm": [
+    15.5,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_canister.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_canister_mint",
+   "scale_ref": "c_kit_canister",
+   "size_cm": [
+    15.5,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_canister.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_paper_roll_oak",
+   "scale_ref": "c_kit_paper_roll",
+   "size_cm": [
+    14.2,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_paper_roll.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_paper_roll_metal",
+   "scale_ref": "c_kit_paper_roll",
+   "size_cm": [
+    14.2,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_paper_roll.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_sieve_metal",
+   "scale_ref": "c_kit_sieve",
+   "size_cm": [
+    23.7,
+    9.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_sieve.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "kit_sieve_coral",
+   "scale_ref": "c_kit_sieve",
+   "size_cm": [
+    23.7,
+    9.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_sieve.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#2a2a30"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_jars_coral",
+   "scale_ref": "c_cellar_jars",
+   "size_cm": [
+    28.6,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_jars.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_jars_orange",
+   "scale_ref": "c_cellar_jars",
+   "size_cm": [
+    28.6,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_jars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_jars_plum",
+   "scale_ref": "c_cellar_jars",
+   "size_cm": [
+    28.6,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_jars.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_wine_green",
+   "scale_ref": "c_cellar_wine",
+   "size_cm": [
+    10.3,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_wine.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_wine_walnut",
+   "scale_ref": "c_cellar_wine",
+   "size_cm": [
+    10.3,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_wine.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cellar_wine_rose",
+   "scale_ref": "c_cellar_wine",
+   "size_cm": [
+    10.3,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_wine.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "kitchen",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

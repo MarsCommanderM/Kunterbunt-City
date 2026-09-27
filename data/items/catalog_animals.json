@@ -457,6 +457,75 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "pet_cat_tree_grey",
+   "scale_ref": "c_pet_cat_tree",
+   "size_cm": [
+    61.5,
+    142.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pet_cat_tree.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#6d6f78",
+    "#d8cfc2"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "pet_cat_tree_cream",
+   "scale_ref": "c_pet_cat_tree",
+   "size_cm": [
+    61.5,
+    142.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pet_cat_tree.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#d8cfc2"
+   ],
+   "catalog": "animals"
+  },
+  {
+   "id": "pet_cat_tree_rose",
+   "scale_ref": "c_pet_cat_tree",
+   "size_cm": [
+    61.5,
+    142.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/pet_cat_tree.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#d8cfc2"
+   ],
+   "catalog": "animals"
   }
  ]
 }

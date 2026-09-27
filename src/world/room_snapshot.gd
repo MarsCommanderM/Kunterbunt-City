@@ -45,7 +45,11 @@ static func apply(room: Room, list: Array) -> int:
 			var host: ItemNode = _find_by_id(room, StringName(String(d["on"])))
 			it = ItemSpawner.on_item(host, id, float(d.get("x_rel", 0.0))) if host else null
 		else:
-			it = ItemSpawner.on_floor(room, id, float(d.get("x", 0.0)), float(d.get("y", 0.0)))
+			var def: ItemDefinition = ItemDB.get_item(id)
+			if def != null and def.is_wall():
+				it = ItemSpawner.on_wall(room, id, float(d.get("x", 0.0)), float(d.get("y", 0.0)))
+			else:
+				it = ItemSpawner.on_floor(room, id, float(d.get("x", 0.0)), float(d.get("y", 0.0)))
 		if it == null:
 			continue
 		if d.has("state"):

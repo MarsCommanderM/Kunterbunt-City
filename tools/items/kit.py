@@ -28,8 +28,9 @@ class Item:
 
     def __init__(self, w: float, h: float, ppc: float = 8.0, margin: float = 6.0):
         self.w, self.h = w, h
-        # oben mehr Platz: offene Deckel, Dampf, Flammen ragen über die Grundhöhe (wird danach eng zugeschnitten)
-        top = max(margin, h * 0.8)
+        # oben mehr Platz: offene Deckel, Dampf, Flammen ragen über die Grundhöhe (wird danach eng zugeschnitten);
+        # höchstens 70 cm, sonst werden große Dinge (Baumhaus 4 m) zu Speicherfressern
+        top = max(margin, min(h * 0.8, 70.0))
         self.c = ZCanvas((-w / 2 - margin, -margin, w / 2 + margin, h + top), ppc, outline_cm=OUT)
 
     def finish(self):

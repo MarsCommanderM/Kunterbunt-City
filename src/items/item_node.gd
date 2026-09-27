@@ -46,6 +46,7 @@ func setup(definition: ItemDefinition) -> void:
 	_next_uid += 1
 	name = "%s_%d" % [def.id, uid]
 	_build_visual()
+	z_index = def.draw_layer()          # P07: Wand hinten, Teppich unter allem
 	on_top_root = Node2D.new()
 	on_top_root.name = "OnTop"
 	add_child(on_top_root)
@@ -369,7 +370,7 @@ func _bounce() -> void:
 
 
 func _draw() -> void:
-	if def == null or def.placement == "wall" or is_held():
+	if def == null or def.is_wall() or def.is_rug() or is_held():
 		return
 	# weicher Kontaktschatten, wächst und verblasst beim Anheben
 	var w: float = _draw_size.x * (0.82 + 0.25 * lifted)

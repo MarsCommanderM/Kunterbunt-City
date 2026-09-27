@@ -358,7 +358,7 @@
    "id": "furn_sofa_modern_grey",
    "scale_ref": "c_furn_sofa_modern",
    "size_cm": [
-    212.0,
+    211.9,
     79.8
    ],
    "pivot": [
@@ -385,7 +385,7 @@
    "id": "furn_sofa_modern_navy",
    "scale_ref": "c_furn_sofa_modern",
    "size_cm": [
-    212.0,
+    211.9,
     79.8
    ],
    "pivot": [
@@ -412,7 +412,7 @@
    "id": "furn_sofa_modern_sand",
    "scale_ref": "c_furn_sofa_modern",
    "size_cm": [
-    212.0,
+    211.9,
     79.8
    ],
    "pivot": [
@@ -439,7 +439,7 @@
    "id": "furn_sofa_modern_green",
    "scale_ref": "c_furn_sofa_modern",
    "size_cm": [
-    212.0,
+    211.9,
     79.8
    ],
    "pivot": [
@@ -466,7 +466,7 @@
    "id": "furn_sofa_modern_rust",
    "scale_ref": "c_furn_sofa_modern",
    "size_cm": [
-    212.0,
+    211.9,
     79.8
    ],
    "pivot": [
@@ -494,7 +494,7 @@
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
     201.9,
-    83.9
+    83.8
    ],
    "pivot": [
     0.5,
@@ -521,7 +521,7 @@
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
     201.9,
-    83.9
+    83.8
    ],
    "pivot": [
     0.5,
@@ -548,7 +548,7 @@
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
     201.9,
-    83.9
+    83.8
    ],
    "pivot": [
     0.5,
@@ -575,7 +575,7 @@
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
     201.9,
-    83.9
+    83.8
    ],
    "pivot": [
     0.5,
@@ -1075,6 +1075,357 @@
    "colors": [
     "#5f8f6a",
     "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_sofa_corner_grey",
+   "scale_ref": "c_furn_sofa_corner",
+   "size_cm": [
+    261.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_sofa_corner.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  },
+  {
+   "id": "furn_sofa_corner_sage",
+   "scale_ref": "c_furn_sofa_corner",
+   "size_cm": [
+    261.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_sofa_corner.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  },
+  {
+   "id": "furn_sofa_corner_navy",
+   "scale_ref": "c_furn_sofa_corner",
+   "size_cm": [
+    261.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_sofa_corner.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  },
+  {
+   "id": "furn_sofa_corner_sand",
+   "scale_ref": "c_furn_sofa_corner",
+   "size_cm": [
+    261.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_sofa_corner.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  },
+  {
+   "id": "furn_sofa_corner_rust",
+   "scale_ref": "c_furn_sofa_corner",
+   "size_cm": [
+    261.9,
+    86.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_sofa_corner.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   }
+  },
+  {
+   "id": "furn_armchair_wing_sage",
+   "scale_ref": "c_furn_armchair_wing",
+   "size_cm": [
+    86.9,
+    119.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_wing.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_wing_rust",
+   "scale_ref": "c_furn_armchair_wing",
+   "size_cm": [
+    86.9,
+    119.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_wing.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_wing_navy",
+   "scale_ref": "c_furn_armchair_wing",
+   "size_cm": [
+    86.9,
+    119.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_wing.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_wing_rose",
+   "scale_ref": "c_furn_armchair_wing",
+   "size_cm": [
+    86.9,
+    119.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_wing.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_wing_butter",
+   "scale_ref": "c_furn_armchair_wing",
+   "size_cm": [
+    86.9,
+    119.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_wing.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_recliner_walnut",
+   "scale_ref": "c_furn_armchair_recliner",
+   "size_cm": [
+    111.8,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_recliner.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_recliner_grey",
+   "scale_ref": "c_furn_armchair_recliner",
+   "size_cm": [
+    111.8,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_recliner.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "sofas",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_armchair_recliner_navy",
+   "scale_ref": "c_furn_armchair_recliner",
+   "size_cm": [
+    111.8,
+    106.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_armchair_recliner.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
     "#8a5e3f"
    ],
    "catalog": "sofas",

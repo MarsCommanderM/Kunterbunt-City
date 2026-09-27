@@ -830,6 +830,291 @@
    "state_sprites": {
     "on": "res://assets/sprites/items/app_console__on.png"
    }
+  },
+  {
+   "id": "elec_printer_grey",
+   "scale_ref": "c_elec_printer",
+   "size_cm": [
+    47.0,
+    26.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_printer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#a9c3dd"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_printer__on.png"
+   }
+  },
+  {
+   "id": "elec_printer_white",
+   "scale_ref": "c_elec_printer",
+   "size_cm": [
+    47.0,
+    26.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_printer.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#fbfaf7",
+    "#a9c3dd"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_printer__on.png"
+   }
+  },
+  {
+   "id": "elec_printer_black",
+   "scale_ref": "c_elec_printer",
+   "size_cm": [
+    47.0,
+    26.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_printer.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#fbfaf7",
+    "#a9c3dd"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_printer__on.png"
+   }
+  },
+  {
+   "id": "elec_speaker_black",
+   "scale_ref": "c_elec_speaker",
+   "size_cm": [
+    26.8,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_speaker.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#2a2a30"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_speaker__on.png"
+   }
+  },
+  {
+   "id": "elec_speaker_cream",
+   "scale_ref": "c_elec_speaker",
+   "size_cm": [
+    26.8,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_speaker.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#6d6f78",
+    "#2a2a30"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_speaker__on.png"
+   }
+  },
+  {
+   "id": "elec_speaker_sky",
+   "scale_ref": "c_elec_speaker",
+   "size_cm": [
+    26.8,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_speaker.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#2a2a30"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_speaker__on.png"
+   }
+  },
+  {
+   "id": "elec_remote_black",
+   "scale_ref": "c_elec_remote",
+   "size_cm": [
+    6.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_remote.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "elec_remote_grey",
+   "scale_ref": "c_elec_remote",
+   "size_cm": [
+    6.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_remote.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "elec_remote_cream",
+   "scale_ref": "c_elec_remote",
+   "size_cm": [
+    6.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/elec_remote.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#e07a7a"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

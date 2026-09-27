@@ -7,8 +7,8 @@
    "id": "pool_air_mattress_coral",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    180.5,
-    18.2
+    181.0,
+    18.0
    ],
    "pivot": [
     0.5,
@@ -38,8 +38,8 @@
    "id": "pool_air_mattress_sky",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    180.5,
-    18.2
+    181.0,
+    18.0
    ],
    "pivot": [
     0.5,
@@ -69,8 +69,8 @@
    "id": "pool_air_mattress_butter",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    180.5,
-    18.2
+    181.0,
+    18.0
    ],
    "pivot": [
     0.5,
@@ -100,8 +100,8 @@
    "id": "pool_air_mattress_mint",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    180.5,
-    18.2
+    181.0,
+    18.0
    ],
    "pivot": [
     0.5,

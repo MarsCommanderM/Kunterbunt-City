@@ -169,6 +169,7 @@ func _draw_key(it: ItemNode) -> Vector3:
 		n = n.get_parent()
 		depth += 1
 	var y: float = (n as Node2D).position.y if n is Node2D else 0.0
+	y += float((n as CanvasItem).z_index) * 100000.0 if n is CanvasItem else 0.0   # Wand/Teppich liegen unten
 	var r: Rect2 = it.global_rect()
 	return Vector3(y, depth, -r.size.x * r.size.y)
 
