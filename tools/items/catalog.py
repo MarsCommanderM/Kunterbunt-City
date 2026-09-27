@@ -111,7 +111,7 @@ for style, w, h, place in (("floor", 45, 160, "floor"), ("table", 28, 45, "table
       placement=place, hold="one_hand" if place == "table" else "none", grip=[0.5, 0.5] if place == "table" else None,
       variants=[(n, cols(n, "sage", "walnut" if style != "arc" else "black")) for n in ["butter", "cream", "rose", "sky", "mint"]])
 T(id="elec_tv", fn=F.tv, w=100, h=62, group="electronics", category="furniture", placement="floor",
-  variants=[(n, cols(n, "sky", "black")) for n in ["black", "cream", "sky"]])
+  variants=[(n, cols(n, "sky", "leaf_light")) for n in ["black", "cream", "sky"]])
 
 # --- Pflanzen: Art × Topf × Farbe
 POT_COLORS = {
@@ -131,7 +131,7 @@ for sp, (h, w, pots) in P.SPECIES.items():
     small = h <= 50
     for pot_style in pots:
         vs = []
-        for pc in POT_COLORS[pot_style][:2]:
+        for pc in POT_COLORS[pot_style][:3]:
             for bloom in BLOOM.get(sp, ["walnut"])[:3 if len(pots) <= 2 else 2]:
                 leafc = "leaf_light" if sp in ("herbs", "bamboo", "grass", "succulent", "cactus_ball") else "leaf"
                 suffix = pc if len(BLOOM.get(sp, [])) <= 1 else f"{pc}_{bloom}"
@@ -153,6 +153,7 @@ KITCH = ["cream", "coral", "sky", "mint", "butter", "navy"]
 
 def S(id: str, fn, style: str, w: float, h: float, group: str, category: str, names: list, second: str = "cream",
       third: str = "metal", hold: str | None = None, placement: str | None = None, grip=None, **extra):
+    extra = {k: v for k, v in extra.items() if v is not None}
     """Kurzform: kleine Dinge (≤ 60 cm) sind tragbar und stehen auf Tischen, große stehen auf dem Boden."""
     small = h <= 50
     if hold is None:
@@ -376,3 +377,54 @@ for st, w, h, names in (("feed_bucket", 30, 32, ["coral", "sky"]), ("hay", 80, 4
       second={"feed_bucket": "butter", "hay": "oak", "bowl_pet": "walnut", "zoo_sign": "cream", "pet_bed": "cream",
               "aquarium": "sky"}.get(st, "cream"),
       third={"aquarium": "sand", "cage": "metal"}.get(st, "metal"), **extra)
+
+
+# ================================================================== P04b-T10: Zustände (auf/zu, an/aus) + Geräte + Gekochtes
+from . import appliances as AP  # noqa: E402
+
+OPEN = {"states": {"open": {"state": "open"}}, "state0": "closed"}
+ON = {"states": {"on": {"state": "on"}}, "state0": "off"}
+STATEFUL = {
+    "furn_wardrobe": OPEN, "furn_dresser": OPEN, "furn_nightstand": OPEN, "furn_tv_bench": OPEN, "furn_toybox": OPEN,
+    "deco_lamp_floor": ON, "deco_lamp_table": ON, "deco_lamp_arc": ON, "deco_lamp_desk": ON, "elec_tv": ON,
+    "kit_kettle": {**ON, "anim": {"on": "pulse"}}, "kit_toaster": ON, "kit_blender": {**ON, "anim": {"on": "shake"}},
+    "kit_microwave": {**ON, "anim": {"on": "pulse"}}, "kit_coffee": ON, "kit_pot": {**ON, "anim": {"on": "pulse"}},
+    "deco_radio": {**ON, "anim": {"on": "bounce"}}, "deco_laptop": ON, "deco_phone": ON,
+    "bath_hairdryer": {**ON, "anim": {"on": "shake"}},
+}
+# Kochen: Geräte nehmen Zutaten auf (Inhalt immer sichtbar) – Rezepte in data/recipes/
+COOK_HOSTS = {"kit_toaster": 2, "kit_blender": 4, "kit_microwave": 2, "kit_pot": 4, "kit_pan": 2, "kit_coffee": 1}
+for t in TEMPLATES:
+    for key, cfg in STATEFUL.items():
+        if t["id"] == key:
+            t.update({k: v for k, v in cfg.items()})
+    if t["id"] in COOK_HOSTS:
+        t["container"] = {"slots": COOK_HOSTS[t["id"]], "max_item_h_cm": 30}
+        t["tags"] = list(t.get("tags", [])) + ["open_top", "cook_host"]
+
+for st, w, h, names, extra in (
+        ("fridge", 70, 180, ["cream", "sky", "mint", "coral", "grey"], {**OPEN, "container": {"slots": 12, "max_item_h_cm": 40}}),
+        ("stove", 60, 90, ["cream", "black", "sky"], {**ON, "anim": {"on": "pulse"}, "surface_h": 90,
+                                                      "container": {"slots": 2, "max_item_h_cm": 35},
+                                                      "tags": ["open_top", "cook_host"]}),
+        ("oven", 60, 90, ["cream", "black", "coral"], {**ON, "container": {"slots": 3, "max_item_h_cm": 35},
+                                                       "tags": ["open_top", "cook_host"]}),
+        ("washer", 60, 85, ["cream", "sky", "grey"], {**ON, "anim": {"on": "shake"}, "container": {"slots": 6, "max_item_h_cm": 40},
+                                                      "tags": ["open_top"]}),
+        ("sink", 80, 110, ["cream", "sky", "mint"], {**ON}),
+        ("fan", 40, 100, ["cream", "sky", "mint"], {**ON, "anim": {"on": "pulse"}}),
+        ("computer", 55, 50, ["cream", "black", "grey"], {**ON}),
+        ("console", 36, 20, ["black", "cream", "coral"], {**ON})):
+    S(f"app_{st}", AP.appliance, st, w, h, "kitchen" if st in ("fridge", "stove", "oven", "sink") else "electronics",
+      "furniture" if h > 45 else "item", names,
+      second={"fridge": "butter", "stove": "orange", "oven": "orange", "washer": "sky", "sink": "sky", "fan": "sky",
+              "computer": "sky", "console": "coral"}[st], third="metal", **extra)
+for st, w, h, names in (("toast", 11, 11, ["oak"]), ("bread_slice", 11, 11, ["pine"]), ("fried_egg", 12, 3, ["white"]),
+                        ("smoothie", 8, 16, ["rose", "orange", "mint", "plum"]), ("soup", 16, 9, ["orange", "leaf_light", "coral"]),
+                        ("pancakes", 16, 10, ["oak"]), ("sausage", 14, 5, ["rust"]), ("hot_drink", 10, 11, ["walnut", "cream"]),
+                        ("popcorn_bowl", 18, 12, ["butter"]), ("cake_baked", 24, 16, ["cream", "walnut"])):
+    second = {"toast": "walnut", "bread_slice": "oak", "fried_egg": "yellow", "smoothie": "cream", "pancakes": "coral",
+              "cake_baked": "rose"}.get(st, "cream")
+    third = {"smoothie": "sky", "soup": "cream", "hot_drink": "coral", "popcorn_bowl": "coral", "pancakes": "cream",
+             "cake_baked": "coral"}.get(st, "metal")
+    S(f"cook_{st}", AP.cooked, st, w, h, "food", "food", names, second=second, third=third)

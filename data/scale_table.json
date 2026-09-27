@@ -1564,7 +1564,7 @@
    "id": "c_furn_wardrobe",
    "category": "furniture",
    "h_cm": 201.8,
-   "w_cm": 103.5,
+   "w_cm": 111.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1573,7 +1573,7 @@
    "id": "c_furn_dresser",
    "category": "furniture",
    "h_cm": 86.8,
-   "w_cm": 103.5,
+   "w_cm": 104.6,
    "hold": "none",
    "placement": "floor",
    "src": "catalog",
@@ -1583,7 +1583,7 @@
    "id": "c_furn_nightstand",
    "category": "furniture",
    "h_cm": 56.8,
-   "w_cm": 48.5,
+   "w_cm": 49.6,
    "hold": "none",
    "placement": "floor",
    "src": "catalog",
@@ -1592,8 +1592,8 @@
   {
    "id": "c_furn_tv_bench",
    "category": "furniture",
-   "h_cm": 51.8,
-   "w_cm": 143.5,
+   "h_cm": 51.9,
+   "w_cm": 144.6,
    "hold": "none",
    "placement": "floor",
    "src": "catalog",
@@ -1602,7 +1602,7 @@
   {
    "id": "c_furn_toybox",
    "category": "furniture",
-   "h_cm": 50.9,
+   "h_cm": 55.9,
    "w_cm": 73.9,
    "hold": "none",
    "placement": "floor",
@@ -1612,7 +1612,7 @@
    "id": "c_deco_lamp_floor",
    "category": "furniture",
    "h_cm": 162.0,
-   "w_cm": 46.8,
+   "w_cm": 56.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1621,7 +1621,7 @@
    "id": "c_deco_lamp_table",
    "category": "furniture",
    "h_cm": 46.4,
-   "w_cm": 29.8,
+   "w_cm": 39.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -1657,7 +1657,7 @@
    "id": "c_plant_monstera_terracotta",
    "category": "plant",
    "h_cm": 91.6,
-   "w_cm": 99.5,
+   "w_cm": 101.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1665,8 +1665,8 @@
   {
    "id": "c_plant_monstera_basket",
    "category": "plant",
-   "h_cm": 90.1,
-   "w_cm": 96.0,
+   "h_cm": 95.6,
+   "w_cm": 101.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1674,7 +1674,7 @@
   {
    "id": "c_plant_monstera_cylinder",
    "category": "plant",
-   "h_cm": 106.5,
+   "h_cm": 96.6,
    "w_cm": 101.8,
    "hold": "none",
    "placement": "floor",
@@ -1683,8 +1683,8 @@
   {
    "id": "c_plant_monstera_stand",
    "category": "plant",
-   "h_cm": 92.6,
-   "w_cm": 86.2,
+   "h_cm": 95.9,
+   "w_cm": 100.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1692,8 +1692,8 @@
   {
    "id": "c_plant_fern_round",
    "category": "plant",
-   "h_cm": 56.6,
-   "w_cm": 56.8,
+   "h_cm": 53.5,
+   "w_cm": 63.6,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1701,8 +1701,8 @@
   {
    "id": "c_plant_fern_basket",
    "category": "plant",
-   "h_cm": 54.5,
-   "w_cm": 61.8,
+   "h_cm": 47.8,
+   "w_cm": 65.5,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1710,8 +1710,8 @@
   {
    "id": "c_plant_fern_stand",
    "category": "plant",
-   "h_cm": 52.6,
-   "w_cm": 65.9,
+   "h_cm": 53.4,
+   "w_cm": 63.5,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1719,8 +1719,8 @@
   {
    "id": "c_plant_fern_bowl",
    "category": "plant",
-   "h_cm": 52.9,
-   "w_cm": 73.1,
+   "h_cm": 53.0,
+   "w_cm": 80.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1728,7 +1728,7 @@
   {
    "id": "c_plant_snake_plant_cylinder",
    "category": "plant",
-   "h_cm": 79.0,
+   "h_cm": 80.4,
    "w_cm": 22.8,
    "hold": "none",
    "placement": "floor",
@@ -1737,7 +1737,7 @@
   {
    "id": "c_plant_snake_plant_square",
    "category": "plant",
-   "h_cm": 80.6,
+   "h_cm": 77.2,
    "w_cm": 23.8,
    "hold": "none",
    "placement": "floor",
@@ -1746,7 +1746,7 @@
   {
    "id": "c_plant_snake_plant_terracotta",
    "category": "plant",
-   "h_cm": 78.2,
+   "h_cm": 76.8,
    "w_cm": 27.8,
    "hold": "none",
    "placement": "floor",
@@ -1890,8 +1890,8 @@
   {
    "id": "c_plant_ficus_terracotta",
    "category": "plant",
-   "h_cm": 151.9,
-   "w_cm": 64.9,
+   "h_cm": 149.9,
+   "w_cm": 66.6,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1899,8 +1899,8 @@
   {
    "id": "c_plant_ficus_basket",
    "category": "plant",
-   "h_cm": 152.4,
-   "w_cm": 69.4,
+   "h_cm": 149.9,
+   "w_cm": 67.9,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1908,8 +1908,8 @@
   {
    "id": "c_plant_ficus_cylinder",
    "category": "plant",
-   "h_cm": 153.1,
-   "w_cm": 70.0,
+   "h_cm": 153.0,
+   "w_cm": 68.2,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1917,8 +1917,8 @@
   {
    "id": "c_plant_lemon_tree_terracotta",
    "category": "plant",
-   "h_cm": 134.1,
-   "w_cm": 66.5,
+   "h_cm": 132.4,
+   "w_cm": 66.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1926,8 +1926,8 @@
   {
    "id": "c_plant_lemon_tree_square",
    "category": "plant",
-   "h_cm": 132.0,
-   "w_cm": 65.1,
+   "h_cm": 132.2,
+   "w_cm": 65.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1935,8 +1935,8 @@
   {
    "id": "c_plant_lemon_tree_bucket",
    "category": "plant",
-   "h_cm": 133.9,
-   "w_cm": 65.5,
+   "h_cm": 134.4,
+   "w_cm": 67.4,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1944,8 +1944,8 @@
   {
    "id": "c_plant_olive_terracotta",
    "category": "plant",
-   "h_cm": 142.9,
-   "w_cm": 62.4,
+   "h_cm": 140.5,
+   "w_cm": 60.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1953,8 +1953,8 @@
   {
    "id": "c_plant_olive_square",
    "category": "plant",
-   "h_cm": 141.4,
-   "w_cm": 61.2,
+   "h_cm": 142.5,
+   "w_cm": 63.4,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1962,8 +1962,8 @@
   {
    "id": "c_plant_olive_cylinder",
    "category": "plant",
-   "h_cm": 140.4,
-   "w_cm": 61.6,
+   "h_cm": 143.1,
+   "w_cm": 62.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1971,8 +1971,8 @@
   {
    "id": "c_plant_tree_small_cylinder",
    "category": "plant",
-   "h_cm": 123.1,
-   "w_cm": 64.0,
+   "h_cm": 122.2,
+   "w_cm": 62.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1980,8 +1980,8 @@
   {
    "id": "c_plant_tree_small_basket",
    "category": "plant",
-   "h_cm": 124.1,
-   "w_cm": 60.2,
+   "h_cm": 123.9,
+   "w_cm": 63.4,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1989,8 +1989,8 @@
   {
    "id": "c_plant_tree_small_bucket",
    "category": "plant",
-   "h_cm": 123.1,
-   "w_cm": 60.0,
+   "h_cm": 124.4,
+   "w_cm": 62.2,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -1998,8 +1998,8 @@
   {
    "id": "c_plant_bonsai_bowl",
    "category": "plant",
-   "h_cm": 32.8,
-   "w_cm": 34.9,
+   "h_cm": 33.8,
+   "w_cm": 34.6,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2007,8 +2007,8 @@
   {
    "id": "c_plant_bonsai_square",
    "category": "plant",
-   "h_cm": 34.1,
-   "w_cm": 33.0,
+   "h_cm": 34.6,
+   "w_cm": 35.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2016,7 +2016,7 @@
   {
    "id": "c_plant_palm_basket",
    "category": "plant",
-   "h_cm": 129.6,
+   "h_cm": 128.6,
    "w_cm": 111.8,
    "hold": "none",
    "placement": "floor",
@@ -2025,7 +2025,7 @@
   {
    "id": "c_plant_palm_cylinder",
    "category": "plant",
-   "h_cm": 137.6,
+   "h_cm": 129.6,
    "w_cm": 111.8,
    "hold": "none",
    "placement": "floor",
@@ -2043,8 +2043,8 @@
   {
    "id": "c_plant_tulips_round",
    "category": "plant",
-   "h_cm": 41.5,
-   "w_cm": 19.0,
+   "h_cm": 41.6,
+   "w_cm": 19.4,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2052,8 +2052,8 @@
   {
    "id": "c_plant_tulips_cylinder",
    "category": "plant",
-   "h_cm": 40.5,
-   "w_cm": 16.1,
+   "h_cm": 39.9,
+   "w_cm": 16.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2061,8 +2061,8 @@
   {
    "id": "c_plant_tulips_bucket",
    "category": "plant",
-   "h_cm": 40.6,
-   "w_cm": 19.2,
+   "h_cm": 40.9,
+   "w_cm": 20.6,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2070,7 +2070,7 @@
   {
    "id": "c_plant_roses_terracotta",
    "category": "plant",
-   "h_cm": 45.4,
+   "h_cm": 46.1,
    "w_cm": 23.8,
    "hold": "one_hand",
    "placement": "table",
@@ -2079,7 +2079,7 @@
   {
    "id": "c_plant_roses_round",
    "category": "plant",
-   "h_cm": 46.0,
+   "h_cm": 46.6,
    "w_cm": 23.2,
    "hold": "one_hand",
    "placement": "table",
@@ -2088,8 +2088,8 @@
   {
    "id": "c_plant_roses_bucket",
    "category": "plant",
-   "h_cm": 43.9,
-   "w_cm": 23.5,
+   "h_cm": 44.6,
+   "w_cm": 23.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2097,8 +2097,8 @@
   {
    "id": "c_plant_sunflower_terracotta",
    "category": "plant",
-   "h_cm": 71.0,
-   "w_cm": 26.8,
+   "h_cm": 70.0,
+   "w_cm": 28.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2106,8 +2106,8 @@
   {
    "id": "c_plant_sunflower_bucket",
    "category": "plant",
-   "h_cm": 71.2,
-   "w_cm": 25.8,
+   "h_cm": 63.5,
+   "w_cm": 27.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2115,8 +2115,8 @@
   {
    "id": "c_plant_daisies_bowl",
    "category": "plant",
-   "h_cm": 30.5,
-   "w_cm": 25.4,
+   "h_cm": 30.4,
+   "w_cm": 27.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2125,7 +2125,7 @@
    "id": "c_plant_daisies_round",
    "category": "plant",
    "h_cm": 32.1,
-   "w_cm": 28.2,
+   "w_cm": 27.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2133,8 +2133,8 @@
   {
    "id": "c_plant_daisies_basket",
    "category": "plant",
-   "h_cm": 30.6,
-   "w_cm": 25.8,
+   "h_cm": 31.6,
+   "w_cm": 23.9,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2142,8 +2142,8 @@
   {
    "id": "c_plant_lavender_terracotta",
    "category": "plant",
-   "h_cm": 40.1,
-   "w_cm": 28.6,
+   "h_cm": 40.0,
+   "w_cm": 25.9,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2151,8 +2151,8 @@
   {
    "id": "c_plant_lavender_bucket",
    "category": "plant",
-   "h_cm": 40.2,
-   "w_cm": 28.6,
+   "h_cm": 39.9,
+   "w_cm": 30.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2160,8 +2160,8 @@
   {
    "id": "c_plant_lavender_square",
    "category": "plant",
-   "h_cm": 38.5,
-   "w_cm": 24.9,
+   "h_cm": 39.9,
+   "w_cm": 30.6,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2169,8 +2169,8 @@
   {
    "id": "c_plant_hydrangea_round",
    "category": "plant",
-   "h_cm": 59.0,
-   "w_cm": 38.1,
+   "h_cm": 58.9,
+   "w_cm": 37.9,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2178,8 +2178,8 @@
   {
    "id": "c_plant_hydrangea_terracotta",
    "category": "plant",
-   "h_cm": 56.4,
-   "w_cm": 38.5,
+   "h_cm": 57.0,
+   "w_cm": 38.2,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2187,7 +2187,7 @@
   {
    "id": "c_plant_hydrangea_bucket",
    "category": "plant",
-   "h_cm": 58.8,
+   "h_cm": 54.4,
    "w_cm": 36.2,
    "hold": "none",
    "placement": "floor",
@@ -2233,7 +2233,7 @@
    "id": "c_plant_peace_lily_round",
    "category": "plant",
    "h_cm": 63.5,
-   "w_cm": 37.2,
+   "w_cm": 43.9,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2242,7 +2242,7 @@
    "id": "c_plant_peace_lily_cylinder",
    "category": "plant",
    "h_cm": 61.8,
-   "w_cm": 58.1,
+   "w_cm": 47.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2251,7 +2251,7 @@
    "id": "c_plant_peace_lily_basket",
    "category": "plant",
    "h_cm": 61.8,
-   "w_cm": 45.1,
+   "w_cm": 41.4,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2259,7 +2259,7 @@
   {
    "id": "c_plant_bird_paradise_cylinder",
    "category": "plant",
-   "h_cm": 140.9,
+   "h_cm": 138.4,
    "w_cm": 91.8,
    "hold": "none",
    "placement": "floor",
@@ -2268,7 +2268,7 @@
   {
    "id": "c_plant_bird_paradise_terracotta",
    "category": "plant",
-   "h_cm": 133.5,
+   "h_cm": 143.6,
    "w_cm": 91.8,
    "hold": "none",
    "placement": "floor",
@@ -2277,7 +2277,7 @@
   {
    "id": "c_plant_bird_paradise_basket",
    "category": "plant",
-   "h_cm": 134.1,
+   "h_cm": 132.0,
    "w_cm": 91.8,
    "hold": "none",
    "placement": "floor",
@@ -2286,8 +2286,8 @@
   {
    "id": "c_plant_calathea_round",
    "category": "plant",
-   "h_cm": 54.2,
-   "w_cm": 50.1,
+   "h_cm": 52.4,
+   "w_cm": 45.5,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2295,8 +2295,8 @@
   {
    "id": "c_plant_calathea_cylinder",
    "category": "plant",
-   "h_cm": 51.9,
-   "w_cm": 46.8,
+   "h_cm": 53.1,
+   "w_cm": 52.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2304,8 +2304,8 @@
   {
    "id": "c_plant_calathea_basket",
    "category": "plant",
-   "h_cm": 53.0,
-   "w_cm": 48.1,
+   "h_cm": 50.6,
+   "w_cm": 46.5,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2313,8 +2313,8 @@
   {
    "id": "c_plant_rubber_plant_cylinder",
    "category": "plant",
-   "h_cm": 116.5,
-   "w_cm": 38.1,
+   "h_cm": 116.9,
+   "w_cm": 37.8,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2322,8 +2322,8 @@
   {
    "id": "c_plant_rubber_plant_terracotta",
    "category": "plant",
-   "h_cm": 115.6,
-   "w_cm": 37.5,
+   "h_cm": 116.9,
+   "w_cm": 36.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2331,8 +2331,8 @@
   {
    "id": "c_plant_rubber_plant_square",
    "category": "plant",
-   "h_cm": 115.9,
-   "w_cm": 37.5,
+   "h_cm": 116.9,
+   "w_cm": 38.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2340,7 +2340,7 @@
   {
    "id": "c_plant_zz_plant_square",
    "category": "plant",
-   "h_cm": 60.2,
+   "h_cm": 57.4,
    "w_cm": 26.5,
    "hold": "none",
    "placement": "floor",
@@ -2349,7 +2349,7 @@
   {
    "id": "c_plant_zz_plant_cylinder",
    "category": "plant",
-   "h_cm": 57.1,
+   "h_cm": 59.8,
    "w_cm": 25.5,
    "hold": "none",
    "placement": "floor",
@@ -2358,7 +2358,7 @@
   {
    "id": "c_plant_zz_plant_round",
    "category": "plant",
-   "h_cm": 56.2,
+   "h_cm": 61.9,
    "w_cm": 30.2,
    "hold": "none",
    "placement": "floor",
@@ -2367,8 +2367,8 @@
   {
    "id": "c_plant_spider_plant_round",
    "category": "plant",
-   "h_cm": 32.2,
-   "w_cm": 44.2,
+   "h_cm": 33.1,
+   "w_cm": 44.5,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2376,8 +2376,8 @@
   {
    "id": "c_plant_spider_plant_basket",
    "category": "plant",
-   "h_cm": 31.9,
-   "w_cm": 45.0,
+   "h_cm": 29.9,
+   "w_cm": 44.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2385,8 +2385,8 @@
   {
    "id": "c_plant_spider_plant_stand",
    "category": "plant",
-   "h_cm": 30.9,
-   "w_cm": 43.8,
+   "h_cm": 31.0,
+   "w_cm": 43.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2394,7 +2394,7 @@
   {
    "id": "c_plant_herbs_terracotta",
    "category": "plant",
-   "h_cm": 29.4,
+   "h_cm": 30.1,
    "w_cm": 19.5,
    "hold": "one_hand",
    "placement": "table",
@@ -2403,8 +2403,8 @@
   {
    "id": "c_plant_herbs_square",
    "category": "plant",
-   "h_cm": 30.0,
-   "w_cm": 17.5,
+   "h_cm": 29.6,
+   "w_cm": 18.5,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2412,7 +2412,7 @@
   {
    "id": "c_plant_herbs_bucket",
    "category": "plant",
-   "h_cm": 28.6,
+   "h_cm": 30.2,
    "w_cm": 19.2,
    "hold": "one_hand",
    "placement": "table",
@@ -2421,7 +2421,7 @@
   {
    "id": "c_plant_bamboo_square",
    "category": "plant",
-   "h_cm": 49.0,
+   "h_cm": 51.9,
    "w_cm": 14.2,
    "hold": "one_hand",
    "placement": "table",
@@ -2430,7 +2430,7 @@
   {
    "id": "c_plant_bamboo_bowl",
    "category": "plant",
-   "h_cm": 51.5,
+   "h_cm": 51.0,
    "w_cm": 17.2,
    "hold": "one_hand",
    "placement": "table",
@@ -2439,8 +2439,8 @@
   {
    "id": "c_plant_grass_cylinder",
    "category": "plant",
-   "h_cm": 62.0,
-   "w_cm": 50.4,
+   "h_cm": 62.1,
+   "w_cm": 51.1,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2448,8 +2448,8 @@
   {
    "id": "c_plant_grass_basket",
    "category": "plant",
-   "h_cm": 60.5,
-   "w_cm": 49.2,
+   "h_cm": 60.4,
+   "w_cm": 59.4,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2457,8 +2457,8 @@
   {
    "id": "c_plant_grass_square",
    "category": "plant",
-   "h_cm": 60.1,
-   "w_cm": 52.2,
+   "h_cm": 59.8,
+   "w_cm": 55.2,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2466,7 +2466,7 @@
   {
    "id": "c_plant_strawberry_terracotta",
    "category": "plant",
-   "h_cm": 21.5,
+   "h_cm": 21.6,
    "w_cm": 23.8,
    "hold": "one_hand",
    "placement": "table",
@@ -2475,7 +2475,7 @@
   {
    "id": "c_plant_strawberry_bucket",
    "category": "plant",
-   "h_cm": 21.1,
+   "h_cm": 21.5,
    "w_cm": 23.0,
    "hold": "one_hand",
    "placement": "table",
@@ -2484,8 +2484,8 @@
   {
    "id": "c_plant_tomato_bucket",
    "category": "plant",
-   "h_cm": 86.9,
-   "w_cm": 27.8,
+   "h_cm": 83.5,
+   "w_cm": 29.1,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2493,8 +2493,8 @@
   {
    "id": "c_plant_tomato_terracotta",
    "category": "plant",
-   "h_cm": 86.8,
-   "w_cm": 31.0,
+   "h_cm": 84.2,
+   "w_cm": 34.0,
    "hold": "none",
    "placement": "floor",
    "src": "catalog"
@@ -2502,8 +2502,8 @@
   {
    "id": "c_plant_ivy_round",
    "category": "plant",
-   "h_cm": 22.1,
-   "w_cm": 39.8,
+   "h_cm": 21.0,
+   "w_cm": 38.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2511,8 +2511,8 @@
   {
    "id": "c_plant_ivy_stand",
    "category": "plant",
-   "h_cm": 23.4,
-   "w_cm": 37.5,
+   "h_cm": 22.2,
+   "w_cm": 40.5,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2520,8 +2520,8 @@
   {
    "id": "c_plant_ivy_basket",
    "category": "plant",
-   "h_cm": 21.2,
-   "w_cm": 38.2,
+   "h_cm": 23.0,
+   "w_cm": 37.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2574,7 +2574,7 @@
   {
    "id": "c_kit_pot",
    "category": "kitchen",
-   "h_cm": 21.8,
+   "h_cm": 26.9,
    "w_cm": 28.2,
    "hold": "one_hand",
    "placement": "table",
@@ -2593,7 +2593,7 @@
    "id": "c_kit_kettle",
    "category": "kitchen",
    "h_cm": 28.2,
-   "w_cm": 23.2,
+   "w_cm": 26.0,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -2601,7 +2601,7 @@
   {
    "id": "c_kit_toaster",
    "category": "kitchen",
-   "h_cm": 21.9,
+   "h_cm": 25.1,
    "w_cm": 31.1,
    "hold": "one_hand",
    "placement": "table",
@@ -2997,7 +2997,7 @@
   {
    "id": "c_deco_radio",
    "category": "item",
-   "h_cm": 24.0,
+   "h_cm": 28.9,
    "w_cm": 31.9,
    "hold": "one_hand",
    "placement": "table",
@@ -4217,6 +4217,169 @@
    "category": "item",
    "h_cm": 52.0,
    "w_cm": 82.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_fridge",
+   "category": "furniture",
+   "h_cm": 181.8,
+   "w_cm": 76.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_stove",
+   "category": "furniture",
+   "h_cm": 94.2,
+   "w_cm": 62.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 90.0
+  },
+  {
+   "id": "c_app_oven",
+   "category": "furniture",
+   "h_cm": 89.9,
+   "w_cm": 62.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_washer",
+   "category": "furniture",
+   "h_cm": 85.9,
+   "w_cm": 61.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_sink",
+   "category": "furniture",
+   "h_cm": 116.9,
+   "w_cm": 83.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_fan",
+   "category": "furniture",
+   "h_cm": 93.1,
+   "w_cm": 40.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_computer",
+   "category": "furniture",
+   "h_cm": 51.5,
+   "w_cm": 56.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_app_console",
+   "category": "item",
+   "h_cm": 19.0,
+   "w_cm": 37.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_toast",
+   "category": "food",
+   "h_cm": 13.6,
+   "w_cm": 13.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_bread_slice",
+   "category": "food",
+   "h_cm": 13.6,
+   "w_cm": 13.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_fried_egg",
+   "category": "food",
+   "h_cm": 4.8,
+   "w_cm": 13.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_smoothie",
+   "category": "food",
+   "h_cm": 18.1,
+   "w_cm": 9.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_soup",
+   "category": "food",
+   "h_cm": 13.9,
+   "w_cm": 17.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_pancakes",
+   "category": "food",
+   "h_cm": 10.5,
+   "w_cm": 17.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_sausage",
+   "category": "food",
+   "h_cm": 5.8,
+   "w_cm": 15.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_hot_drink",
+   "category": "food",
+   "h_cm": 13.8,
+   "w_cm": 10.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_popcorn_bowl",
+   "category": "food",
+   "h_cm": 13.0,
+   "w_cm": 19.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_cook_cake_baked",
+   "category": "food",
+   "h_cm": 17.2,
+   "w_cm": 26.4,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"

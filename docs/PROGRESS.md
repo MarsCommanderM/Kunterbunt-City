@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
-| Nächste Task | P04b-T06 Editor · T08 Icons · T09 Item-Bibliothek + Katalog |
-| Letzter grüner check.sh | 2026-09-27 (P04b T01–T05) |
+| Nächste Task | P04b-T11 Mehr Spiel · T06 Editor · T07 Tiere · T08 Icons |
+| Letzter grüner check.sh | 2026-09-27 (P04b T10) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T05 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T05, T09, T10 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,21 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T09 + T10 Item-Bibliothek, Zustände & Kochen 🔨
+- Erledigt:
+  - T09: `tools/items/` (Vektor-Kit, Möbel, Pflanzen, Haushalt, Spiel, draußen, Stadt), `tools/make_items.py`
+    (parallel, Farbzonen, `c_<id>`-Maßstab-Einträge), 27 Katalog-Gruppen in `data/catalog.json`,
+    Katalog-Leiste rechts (max. ⅓), Items erscheinen links im freien Bild und bleiben frei verschiebbar.
+  - T10: `ItemStates` (Zustands-Sprites auf gleicher Leinwand, Tippen schaltet weiter, Wackeln/Pulsieren/Hüpfen),
+    `Recipes` + `data/recipes/cooking.json` (15 Rezepte: Toast, Spiegelei, Würstchen, Pfannkuchen, Suppen,
+    Smoothies, Kakao, Popcorn, Kaffee, Kuchen, Brot) – Hitze erbt vom Wirt (Pfanne auf dem Herd).
+    Großgeräte (Kühlschrank, Herd, Ofen, Waschmaschine, Spüle, Ventilator, Computer, Konsole), gekochte Speisen.
+    Zustand wird im Raum gespeichert. **342 Vorlagen · 1010 Katalog-Items.**
+- Tests: check.sh ✅ – Maßstab (492 Einträge, 1087 Items) · pytest 122/122 · GUT 251/251
+  (neu: `test_catalog`, `test_item_states`). Beweis `docs/tests/P04b/p04b_01…04`.
+- Entscheidung: Maßstab-Referenzen der Katalog-Vorlagen heißen `c_<id>`, damit handgemessene Einträge
+  (z. B. `food_apple`) nie überschrieben werden.
+- Offen: Tiere (T07), Icons (T08), Editor (T06), mehr Spielzustände (T11).
 ### 2026-09-27 · Phase 04b · Figuren-Neubau im Stil „großer Kopf“ (T01–T05) 🔨
 - Anlass: 👤-Test im Browser – Figuren/Editor/Tiere „sehen Scheiße aus“ (weiße Haut, graue Kästen, Platzhalter
   mit Text). Zielbild: Stil-Vorlage C. Entscheidungen: großer Kopf, Vektor im Code, 1000+ Teile, leere Räume +

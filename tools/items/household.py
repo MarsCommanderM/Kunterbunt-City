@@ -44,7 +44,8 @@ def plate(it: Item, style: str = "plate"):
     line(c, [(-W * 0.4, H * 0.7), (W * 0.4, H * 0.7)], zone=2, w=0.6, shade=1.0)
 
 
-def cookware(it: Item, style: str = "pot"):
+def cookware(it: Item, style: str = "pot", state: str = ""):
+    on = state == "on"
     c, W, H = it.c, it.w, it.h
     if style == "pot":
         bw = W * 0.72
@@ -55,6 +56,8 @@ def cookware(it: Item, style: str = "pot"):
         lid = smooth([(-bw / 2 - 0.6, H * 0.8, "s"), (bw / 2 + 0.6, H * 0.8, "s"), (bw * 0.35, H * 0.94), (-bw * 0.35, H * 0.94)])
         shaded(c, lid, 1, "bottom", SOFT, 0.4)
         c.fill(rrect(-2, H * 0.92, 2, H, 1), zone=3)
+        if on:
+            _steam(c, 0, H, W * 0.5)
     elif style == "pan":
         c.fill(rrect(W * 0.1, H * 0.55, W / 2, H * 0.8, 1), zone=3, shade=0.7)
         body = smooth([(-W * 0.45, H * 0.9, "s"), (W * 0.12, H * 0.9, "s"), (W * 0.06, 0.2), (-W * 0.39, 0.2)])
@@ -66,19 +69,30 @@ def cookware(it: Item, style: str = "pot"):
         cl = shaded(c, body, 1, "right", SHADE, 0.3)
         c.ellipse(-W * 0.03, H * 0.8, 1.5, 1.3, zone=3)
         line(c, [(-W * 0.36, H * 0.15), (W * 0.32, H * 0.15)], zone=3, clip=cl, w=1.4, shade=1.0)
+        if on:
+            c.ellipse(-W * 0.25, H * 0.3, 1.0, 1.0, zone=2)
+            _steam(c, W * 0.48, H * 0.66, W * 0.3)
     elif style == "toaster":
         body = rrect(-W / 2, 0, W / 2, H, 3.5)
         cl = shaded(c, body, 1, "right", SHADE, 0.25)
         for x in (-W * 0.18, W * 0.14):
             c.fill(rrect(x - W * 0.12, H - 1.4, x + W * 0.12, H + 0.1, 0.6), zone=0)
-        c.fill(rrect(W / 2 - 1, H * 0.45, W / 2 + 1.5, H * 0.58, 0.5), zone=3)
+        c.fill(rrect(W / 2 - 1, H * (0.25 if on else 0.45), W / 2 + 1.5, H * (0.38 if on else 0.58), 0.5), zone=3)
+        if on:
+            for x in (-W * 0.18, W * 0.14):
+                c.glass(ell(x, H + 1.5, W * 0.14, 2.5), zone=2, opacity=0.5)
         line(c, [(-W / 2 + 2, H * 0.2), (W / 2 - 2, H * 0.2)], zone=3, clip=cl, w=0.8, shade=1.0)
     elif style == "blender":
         c.fill(rrect(-W / 2, 0, W / 2, H * 0.28, 2), zone=1)
         knob(c, 0, H * 0.14, 1.4)
         jar = trap(-W * 0.36, W * 0.36, H * 0.28, -W * 0.45, W * 0.45, H * 0.93, 0.8)
         c.glass(jar, zone=2, opacity=0.4)
-        c.fill(trap(-W * 0.34, W * 0.34, H * 0.29, -W * 0.4, W * 0.4, H * 0.6, 0.6), zone=2, alpha=0.85)
+        if on:   # wirbelnder Inhalt
+            c.fill(smooth([(-W * 0.34, H * 0.29), (W * 0.34, H * 0.29), (W * 0.42, H * 0.8), (W * 0.1, H * 0.66),
+                           (-W * 0.2, H * 0.84), (-W * 0.42, H * 0.7)]), zone=2, alpha=0.9)
+            c.line(smooth([(-W * 0.2, H * 0.4), (W * 0.15, H * 0.55), (-W * 0.1, H * 0.7)], closed=False), 0.5, zone=0, alpha=0.4)
+        else:
+            c.fill(trap(-W * 0.34, W * 0.34, H * 0.29, -W * 0.4, W * 0.4, H * 0.6, 0.6), zone=2, alpha=0.85)
         c.line(jar, 0.3, zone=0, closed=True)
         c.fill(rrect(-W * 0.47, H * 0.92, W * 0.47, H, 1), zone=1)
     elif style == "microwave":
@@ -86,6 +100,9 @@ def cookware(it: Item, style: str = "pot"):
         cl = shaded(c, body, 1, "right", SHADE, 0.15)
         win = rrect(-W / 2 + 3, 3, W * 0.2, H - 3, 1.5)
         c.fill(win, zone=0, alpha=0.9)
+        if on:
+            c.fill(win, zone=2, alpha=0.55)
+            c.fill(ell(-W * 0.12, 5.5, W * 0.18, 2), zone=3, alpha=0.8)
         c.fill(smooth([(-W * 0.4, H - 5), (-W * 0.25, H - 5), (-W * 0.36, 5), (-W * 0.46, 5)]), zone=2, alpha=0.2)
         for k in range(4):
             c.fill(rrect(W * 0.28, H - 7 - k * 4.5, W * 0.44, H - 4 - k * 4.5, 0.6), zone=3)
@@ -95,9 +112,36 @@ def cookware(it: Item, style: str = "pot"):
         c.fill(rrect(-W * 0.3, 2, W * 0.3, H * 0.55, 1), zone=0, alpha=0.85)
         c.fill(rrect(-W * 0.12, 2, W * 0.12, H * 0.2, 0.8), zone=2)
         knob(c, W * 0.3, H * 0.8, 1.3)
+        if on:
+            c.line([(0, H * 0.5), (0, H * 0.22)], 0.6, zone=3)
+            _steam(c, 0, H * 0.24, W * 0.3)
+            c.ellipse(W * 0.3, H * 0.65, 0.8, 0.8, zone=2)
     elif style == "board":
         c.fill(rrect(-W / 2, 0, W / 2, H, H * 0.45), zone=3)
         c.ellipse(W / 2 - 3, H / 2, 0.9, 0.5, zone=0)
+
+
+def _steam(c, x: float, y: float, w: float):
+    """Dampf-Kringel (weiß-transparent) über heißen Dingen."""
+    for k, dx in enumerate((-0.3, 0.05, 0.35)):
+        pts = smooth([(x + dx * w, y + 1), (x + dx * w + w * 0.12, y + w * 0.35), (x + dx * w - w * 0.08, y + w * 0.7),
+                      (x + dx * w + w * 0.06, y + w * 0.95)], closed=False, n=8)
+        c.glass(_band(pts, max(0.5, w * 0.06)), zone=1, opacity=0.45)
+
+
+def _band(pts, r):
+    """Kurve → schmale Fläche (für halbdurchsichtige Striche)."""
+    import math as _m
+    left, right = [], []
+    for i in range(len(pts)):
+        a = pts[max(0, i - 1)]
+        b = pts[min(len(pts) - 1, i + 1)]
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        n = _m.hypot(dx, dy) or 1.0
+        nx, ny = -dy / n * r, dx / n * r
+        left.append((pts[i][0] + nx, pts[i][1] + ny))
+        right.append((pts[i][0] - nx, pts[i][1] - ny))
+    return left + right[::-1]
 
 
 def utensil(it: Item, style: str = "spoon"):
@@ -142,7 +186,7 @@ def bottle(it: Item, style: str = "bottle"):
 
 
 # ------------------------------------------------------------------ Bad
-def bath(it: Item, style: str = "towel"):
+def bath(it: Item, style: str = "towel", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "towel":
         body = rrect(-W / 2, 0, W / 2, H, 2)
@@ -187,6 +231,9 @@ def bath(it: Item, style: str = "towel"):
         shaded(c, body, 1, "bottom", SHADE, 0.3)
         c.fill(rrect(W / 2 - 1.2, H * 0.62, W / 2 + 0.6, H * 0.8, 0.5), zone=3)
         c.ellipse(-W * 0.25, H * 0.8, 1.6, 1.6, zone=2)
+        if state == "on":
+            for k in range(3):
+                c.line([(W / 2 + 2, H * (0.64 + k * 0.07)), (W / 2 + 7, H * (0.6 + k * 0.1))], 0.4, zone=0, alpha=0.5)
     elif style == "basket":
         body = trap(-W * 0.42, W * 0.42, 0, -W / 2, W / 2, H * 0.8, 1)
         cl = shaded(c, body, 1, "right", SHADE, 0.25)
@@ -196,7 +243,8 @@ def bath(it: Item, style: str = "towel"):
 
 
 # ------------------------------------------------------------------ Deko & Elektronik (klein)
-def deco(it: Item, style: str = "vase"):
+def deco(it: Item, style: str = "vase", state: str = ""):
+    on = state == "on"
     c, W, H = it.c, it.w, it.h
     if style == "vase":
         body = smooth([(-W * 0.3, 0.2, "s"), (W * 0.3, 0.2, "s"), (W / 2, H * 0.45), (W * 0.2, H * 0.85), (W * 0.26, H, "s"),
@@ -238,15 +286,25 @@ def deco(it: Item, style: str = "vase"):
         for k in range(3):
             line(c, [(W * 0.05, H * (0.25 + k * 0.13)), (W * 0.4, H * (0.25 + k * 0.13))], clip=cl, shade=0.7)
         c.line([(W * 0.3, H * 0.8), (W * 0.45, H)], 0.5, zone=3)
+        if on:   # Musiknoten
+            for k, (nx, ny) in enumerate(((-W * 0.35, H * 1.05), (W * 0.05, H * 1.2), (W * 0.4, H * 1.1))):
+                c.ellipse(nx, ny, 1.3, 1.0, zone=0)
+                c.line([(nx + 1.1, ny), (nx + 1.1, ny + 4)], 0.4, zone=0)
     elif style == "laptop":
         c.fill(rrect(-W / 2, 0, W / 2, H * 0.14, 0.8), zone=1)
         scr = trap(-W * 0.42, W * 0.42, H * 0.12, -W * 0.46, W * 0.46, H, 0.8)
         c.fill(scr, zone=1)
-        c.fill(trap(-W * 0.38, W * 0.38, H * 0.2, -W * 0.41, W * 0.41, H * 0.92, 0.5), zone=2)
+        c.fill(trap(-W * 0.38, W * 0.38, H * 0.2, -W * 0.41, W * 0.41, H * 0.92, 0.5), zone=2 if on else 0, shade=1.0)
+        if on:
+            for k in range(3):
+                c.fill(rrect(-W * 0.3, H * (0.7 - k * 0.14), W * (0.1 + k * 0.08), H * (0.75 - k * 0.14), 0.4), zone=1, alpha=0.6)
     elif style == "phone":
         body = rrect(-W / 2, 0, W / 2, H, W * 0.18)
         c.fill(body, zone=1)
-        c.fill(rrect(-W * 0.4, H * 0.08, W * 0.4, H * 0.9, W * 0.1), zone=2)
+        c.fill(rrect(-W * 0.4, H * 0.08, W * 0.4, H * 0.9, W * 0.1), zone=2 if on else 0, shade=1.0)
+        if on:
+            for k in range(3):
+                c.fill(rrect(-W * 0.3, H * (0.7 - k * 0.2), W * 0.3, H * (0.82 - k * 0.2), 0.8), zone=1, alpha=0.5)
     elif style == "books":
         from .furniture import _books
         _books(c, -W / 2, W / 2, 0, H, int(W * 7))

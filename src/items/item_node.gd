@@ -17,6 +17,8 @@ var def: ItemDefinition
 var uid: int = 0
 var slot_index: int = -1              ## Platz im Behälter (−1 = nicht in einem Behälter)
 var is_open: bool = false
+var state: String = ""                ## P04b-T10: aktueller Zustand (closed/open, off/on …) – siehe ItemStates
+var state_tween: Tween
 var lifted: float = 0.0:              ## 0 = liegt, 1 = angehoben
 	set(v):
 		lifted = v
@@ -52,6 +54,7 @@ func setup(definition: ItemDefinition) -> void:
 	contents_root.visible = false
 	add_child(contents_root)
 	apply_world_size()
+	ItemStates.init(self)
 
 
 ## Optik aufbauen (überschreibbar: Figuren bauen hier ihre Ebenen).
@@ -319,7 +322,10 @@ func is_held() -> bool:
 
 
 func set_open(open: bool) -> void:
-	if not def.is_container() or open == is_open:
+	if def.has_states() and def.states.has("open"):
+		ItemStates.set_state(self, "open" if open else String(def.states[0]))
+		return
+	if not def.is_container() or open == is_open or def.open_top():
 		return
 	is_open = open
 	contents_root.visible = open
@@ -329,7 +335,9 @@ func set_open(open: bool) -> void:
 
 
 func on_tap() -> void:
-	if def.is_container():
+	if def.has_states():
+		ItemStates.next_state(self)
+	elif def.is_container() and not def.open_top():
 		set_open(not is_open)
 	else:
 		AudioBus.play_sfx("tap")

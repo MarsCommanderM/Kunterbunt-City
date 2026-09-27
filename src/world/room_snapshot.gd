@@ -23,6 +23,8 @@ static func capture(room: Room) -> Array:
 		if host is ItemNode and host != it:             # liegt auf einem Tisch/Stuhl/Behälter
 			e["on"] = String((host as ItemNode).def.id)
 			e["x_rel"] = round(_rel_x(host as ItemNode, it) * 1000.0) / 1000.0
+		if it.def.has_states() and it.state != String(it.def.states[0]):
+			e["state"] = it.state                       # P04b-T10: Schrank offen, Lampe an …
 		if it is PetNode:
 			e["pet_id"] = String(it.get_meta("pet_id", "")) if it.has_meta("pet_id") else ""
 		out.append(e)
@@ -46,6 +48,8 @@ static func apply(room: Room, list: Array) -> int:
 			it = ItemSpawner.on_floor(room, id, float(d.get("x", 0.0)), float(d.get("y", 0.0)))
 		if it == null:
 			continue
+		if d.has("state"):
+			ItemStates.set_state(it, String(d["state"]), true)
 		if it is PetNode and String(d.get("pet_id", "")) != "":
 			it.set_meta("pet_id", String(d["pet_id"]))
 		n += 1

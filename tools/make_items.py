@@ -41,12 +41,41 @@ GROUPS = {  # Reihenfolge + Symbol im Katalog
 }
 
 
+def _draw(t: dict, extra: dict):
+    it = Item(float(t["w"]), float(t["h"]), PPC)
+    t["fn"](it, **{**t["kw"], **extra})
+    return it.finish()
+
+
+def _align(parts: dict) -> tuple[dict, dict]:
+    """Alle Zustände auf dieselbe Fläche legen (gemeinsamer Anker unten Mitte) → Umschalten springt nicht."""
+    from PIL import Image
+    left = max(info["anchor_cm"][0] for _, info in parts.values())
+    right = max(info["w_cm"] - info["anchor_cm"][0] for _, info in parts.values())
+    below = max(info["anchor_cm"][1] for _, info in parts.values())
+    above = max(info["h_cm"] - info["anchor_cm"][1] for _, info in parts.values())
+    W, H = round((left + right) * PPC), round((below + above) * PPC)
+    out = {}
+    for k, (img, info) in parts.items():
+        canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        x = round((left - info["anchor_cm"][0]) * PPC)
+        y = round((above - (info["h_cm"] - info["anchor_cm"][1])) * PPC)
+        canvas.paste(img, (x, y))
+        out[k] = canvas
+    info = {"w_cm": W / PPC, "h_cm": H / PPC, "anchor_cm": [left, below]}
+    return out, info
+
+
 def _render(i: int):
     t = TEMPLATES[i]
-    it = Item(float(t["w"]), float(t["h"]), PPC)
-    t["fn"](it, **t["kw"])
-    img, info = it.finish()
-    return t["id"], img, info
+    parts = {"": _draw(t, {})}
+    for st, kw in t.get("states", {}).items():
+        parts[st] = _draw(t, kw)
+    if len(parts) == 1:
+        img, info = parts[""]
+        return t["id"], img, info, {}
+    imgs, info = _align(parts)
+    return t["id"], imgs.pop(""), info, imgs
 
 
 def scale_ref(t: dict) -> str:
@@ -89,7 +118,7 @@ def main(argv: list[str] | None = None) -> int:
     SPRITE_DIR.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
     with ProcessPoolExecutor(max_workers=a.jobs) as pool:
-        rendered = {tid: (img, info) for tid, img, info in pool.map(_render, todo, chunksize=4)}
+        rendered = {tid: (img, info, extra) for tid, img, info, extra in pool.map(_render, todo, chunksize=4)}
     print(f"  {len(rendered)} Vorlagen gezeichnet ({time.time() - t0:.0f} s)")
 
     table_path = ROOT / "data" / "scale_table.json"
@@ -99,8 +128,12 @@ def main(argv: list[str] | None = None) -> int:
     legacy_updates: dict[str, dict] = {}
     for i in todo:
         t = TEMPLATES[i]
-        img, info = rendered[t["id"]]
+        img, info, state_imgs = rendered[t["id"]]
         img.save(SPRITE_DIR / f"{t['id']}.png", optimize=True)
+        state_sprites = {}
+        for st, simg in state_imgs.items():
+            simg.save(SPRITE_DIR / f"{t['id']}__{st}.png", optimize=True)
+            state_sprites[st] = f"res://assets/sprites/items/{t['id']}__{st}.png"
         pad = PAD_PX / PPC
         w_cm, h_cm = info["w_cm"] - 2 * pad, info["h_cm"] - 2 * pad
         ref = scale_ref(t)
@@ -115,9 +148,17 @@ def main(argv: list[str] | None = None) -> int:
         sprite = f"res://assets/sprites/items/{t['id']}.png"
         for suffix, colors in t["variants"]:
             iid = f"{t['id']}_{suffix}"
-            by_group.setdefault(t["group"], []).append(_item(t, iid, ref, colors, (w_cm * h_tab / h_cm, h_tab), sprite))
+            d = _item(t, iid, ref, colors, (w_cm * h_tab / h_cm, h_tab), sprite)
+            if state_sprites:
+                d["states"] = [t.get("state0", "off")] + list(state_sprites)
+                d["state_sprites"] = state_sprites
+                if t.get("anim"):
+                    d["anim"] = t["anim"]
+            by_group.setdefault(t["group"], []).append(d)
         if t.get("legacy"):
             legacy_updates[t["legacy"]] = {"sprite": sprite, "pad_px": PAD_PX, "colors": t["variants"][0][1],
+                                           **({"states": [t.get("state0", "off")] + list(state_sprites),
+                                               "state_sprites": state_sprites} if state_sprites else {}),
                                            "size_cm": [round(w_cm * h_tab / h_cm, 1), h_tab], "catalog": t["group"]}
     if not only:   # Voll-Lauf: veraltete Katalog-Einträge entfernen
         produced = {scale_ref(TEMPLATES[i]) for i in todo}

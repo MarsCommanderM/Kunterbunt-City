@@ -541,7 +541,17 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/bath_hairdryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "bath_hairdryer_black",
@@ -568,7 +578,17 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/bath_hairdryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "bath_hairdryer_sky",
@@ -595,7 +615,17 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/bath_hairdryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "bath_basket_oak",

@@ -1,0 +1,20 @@
+{
+ "_doc": "Kochen (P04b-T10): Zutat IN einem Gerät, Gerät an (oder in/auf einem Gerät, das an ist) → Ergebnis. IDs = Präfix.",
+ "recipes": [
+  {"id": "toast", "host": "kit_toaster", "in": ["food_bread", "cook_bread_slice"], "out": "cook_toast_oak", "time": 1.5},
+  {"id": "fried_egg", "host": "kit_pan", "in": ["food_egg", "food_egg_"], "out": "cook_fried_egg_white", "time": 1.5},
+  {"id": "sausage", "host": "kit_pan", "in": ["garden_bbq_food"], "out": "cook_sausage_rust", "time": 1.5},
+  {"id": "pancakes", "host": "kit_pan", "in": ["food_carton"], "out": "cook_pancakes_oak", "time": 2.0},
+  {"id": "soup_carrot", "host": "kit_pot", "in": ["food_carrot", "food_pear"], "out": "cook_soup_orange", "time": 2.0},
+  {"id": "soup_tomato", "host": "kit_pot", "in": ["food_tomato"], "out": "cook_soup_coral", "time": 2.0},
+  {"id": "soup_green", "host": "kit_pot", "in": ["food_apple_leaf"], "out": "cook_soup_leaf_light", "time": 2.0},
+  {"id": "smoothie_berry", "host": "kit_blender", "in": ["food_apple", "food_peach", "food_watermelon"], "out": "cook_smoothie_rose", "time": 1.2},
+  {"id": "smoothie_orange", "host": "kit_blender", "in": ["food_orange", "food_banana", "food_lemon"], "out": "cook_smoothie_orange", "time": 1.2},
+  {"id": "smoothie_green", "host": "kit_blender", "in": ["food_pear", "food_carrot"], "out": "cook_smoothie_mint", "time": 1.2},
+  {"id": "hot_milk", "host": "kit_microwave", "in": ["food_carton"], "out": "cook_hot_drink_cream", "time": 1.5},
+  {"id": "popcorn", "host": "kit_microwave", "in": ["fair_popcorn"], "out": "cook_popcorn_bowl_butter", "time": 1.5},
+  {"id": "coffee", "host": "kit_coffee", "in": ["kit_mug", "kit_cup"], "out": "cook_hot_drink_walnut", "time": 1.5},
+  {"id": "baked_cake", "host": "app_oven", "in": ["food_cake"], "out": "cook_cake_baked_cream", "time": 2.5},
+  {"id": "baked_bread", "host": "app_oven", "in": ["food_bread"], "out": "cook_toast_oak", "time": 2.0}
+ ]
+}

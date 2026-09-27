@@ -866,6 +866,465 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "cook_toast_oak",
+   "scale_ref": "c_cook_toast",
+   "size_cm": [
+    13.2,
+    13.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_toast.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_bread_slice_pine",
+   "scale_ref": "c_cook_bread_slice",
+   "size_cm": [
+    13.2,
+    13.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_bread_slice.png",
+   "pad_px": 1,
+   "colors": [
+    "#e3c79a",
+    "#d4a86e",
+    "#9aa6b4"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_fried_egg_white",
+   "scale_ref": "c_cook_fried_egg",
+   "size_cm": [
+    13.6,
+    4.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_fried_egg.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f4c95d",
+    "#9aa6b4"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_smoothie_rose",
+   "scale_ref": "c_cook_smoothie",
+   "size_cm": [
+    9.7,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_smoothie.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_smoothie_orange",
+   "scale_ref": "c_cook_smoothie",
+   "size_cm": [
+    9.7,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_smoothie.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_smoothie_mint",
+   "scale_ref": "c_cook_smoothie",
+   "size_cm": [
+    9.7,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_smoothie.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_smoothie_plum",
+   "scale_ref": "c_cook_smoothie",
+   "size_cm": [
+    9.7,
+    18.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_smoothie.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_soup_orange",
+   "scale_ref": "c_cook_soup",
+   "size_cm": [
+    17.8,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_soup.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_soup_leaf_light",
+   "scale_ref": "c_cook_soup",
+   "size_cm": [
+    17.8,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_soup.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_soup_coral",
+   "scale_ref": "c_cook_soup",
+   "size_cm": [
+    17.8,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_soup.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_pancakes_oak",
+   "scale_ref": "c_cook_pancakes",
+   "size_cm": [
+    17.5,
+    10.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_pancakes.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_sausage_rust",
+   "scale_ref": "c_cook_sausage",
+   "size_cm": [
+    15.6,
+    5.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_sausage.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_hot_drink_walnut",
+   "scale_ref": "c_cook_hot_drink",
+   "size_cm": [
+    10.8,
+    13.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_hot_drink.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_hot_drink_cream",
+   "scale_ref": "c_cook_hot_drink",
+   "size_cm": [
+    10.8,
+    13.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_hot_drink.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_popcorn_bowl_butter",
+   "scale_ref": "c_cook_popcorn_bowl",
+   "size_cm": [
+    19.8,
+    13.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_popcorn_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_cake_baked_cream",
+   "scale_ref": "c_cook_cake_baked",
+   "size_cm": [
+    26.3,
+    17.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_cake_baked.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cook_cake_baked_walnut",
+   "scale_ref": "c_cook_cake_baked",
+   "size_cm": [
+    26.3,
+    17.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cook_cake_baked.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f0b6c2",
+    "#e07a7a"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

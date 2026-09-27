@@ -199,6 +199,9 @@ func _on_world_changed() -> void:
 
 ## Ding auf den Rucksack-Knopf gezogen? → einpacken.
 func _on_item_dropped(item: ItemNode, _target) -> void:
+	var host: Node = item.get_parent().get_parent() if item.get_parent() != null else null
+	if host is ItemNode:
+		Recipes.check(host as ItemNode)          # P04b-T10: Zutat ins (eingeschaltete) Gerät → kochen
 	if item is CharacterRig:
 		_on_world_changed()
 		return

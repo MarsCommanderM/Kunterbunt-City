@@ -67,6 +67,41 @@ func run(args: PackedStringArray) -> void:
 	await _frames(6)
 	await _shot("p04b_03_katalog_sofas")
 	print("Katalog: %d Items in %d Reitern" % [Catalog.count(), Catalog.group_ids().size()])
+	panel.queue_free()
+	# Zustände: Schrank/Schublade auf, Geräte an, Kochen
+	for it: ItemNode in Placement.all_items(area.room):
+		if not (it is CharacterRig) and not (it is PetNode):
+			it.queue_free()
+	await _frames(2)
+	Recipes.instant = true
+	var st: Array = [
+		["app_fridge_cream", 90.0, 10.0, "open"], ["furn_wardrobe_sky", 230.0, 8.0, "open"],
+		["furn_dresser_mint", 360.0, 16.0, "open"], ["app_stove_cream", 480.0, 12.0, "on"],
+		["deco_lamp_floor_butter", 580.0, 14.0, "on"], ["elec_tv_black", 660.0, 40.0, "on"],
+		["furn_toybox_butter", 150.0, 66.0, "open"], ["kit_blender_cream", 330.0, 70.0, "on"],
+	]
+	var made: Dictionary = {}
+	for e: Array in st:
+		var it2: ItemNode = ItemSpawner.on_floor(area.room, StringName(String(e[0])), float(e[1]), float(e[2]))
+		if it2 == null:
+			print("fehlt: ", e[0])
+			continue
+		made[String(e[0])] = it2
+	if made.has("app_fridge_cream"):
+		for f: String in ["food_apple_coral", "food_carton_cream", "food_cheese_butter", "food_cake_cream"]:
+			ItemSpawner.into_container(made["app_fridge_cream"], StringName(f))
+	if made.has("app_stove_cream"):
+		var pan: ItemNode = ItemSpawner.into_container(made["app_stove_cream"], &"kit_pan_black")
+		if pan != null:
+			ItemSpawner.into_container(pan, &"food_egg_cream")
+	if made.has("kit_blender_cream"):
+		ItemSpawner.into_container(made["kit_blender_cream"], &"food_banana_butter")
+	for e: Array in st:
+		if made.has(String(e[0])):
+			ItemStates.set_state(made[String(e[0])], String(e[3]), true)
+	area.camera.set_visible_height(330.0)
+	await _frames(8)
+	await _shot("p04b_04_zustaende_kochen")
 	get_tree().quit()
 
 

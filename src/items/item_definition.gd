@@ -37,10 +37,22 @@ const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
 @export var uses_placeholder: bool = false
 @export var colors: PackedColorArray = []   ## P04b: Farbzonen (Sprite speichert Zonen-Gewichte) – leer = Sprite fertig bunt
 @export var catalog: String = ""            ## P04b: Katalog-Reiter (sofas, plants …) – leer = nicht im Katalog
+@export var state_sprites: Dictionary = {}  ## P04b-T10: Zustand → Sprite (auf, an …); Grundzustand = states[0] = sprite_path
+@export var anim: Dictionary = {}           ## P04b-T10: Zustand → Animation (shake, pulse, bounce)
 
 
 func is_stackable() -> bool:
 	return tags.has("stackable")
+
+
+## Hat umschaltbare Zustände (Schrank auf/zu, Gerät an/aus)?
+func has_states() -> bool:
+	return states.size() >= 2
+
+
+## Inhalt ist immer sichtbar (Topf, Toaster, Waschmaschine) – nicht nur bei geöffnetem Deckel.
+func open_top() -> bool:
+	return tags.has("open_top")
 
 
 func is_container() -> bool:
@@ -114,6 +126,8 @@ static func from_dict(d: Dictionary, scale_entry: Dictionary, file: String, erro
 	for h: Variant in Array(d.get("colors", [])):
 		def.colors.append(Color(String(h)))
 	def.catalog = String(d.get("catalog", ""))
+	def.state_sprites = d.get("state_sprites", {}) if d.get("state_sprites") is Dictionary else {}
+	def.anim = d.get("anim", {}) if d.get("anim") is Dictionary else {}
 	def.sprite_path = String(d.get("sprite", ""))
 	if def.sprite_path.is_empty() or not ResourceLoader.exists(def.sprite_path):
 		def.uses_placeholder = true

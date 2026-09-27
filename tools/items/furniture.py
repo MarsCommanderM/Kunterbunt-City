@@ -263,7 +263,7 @@ def _books(c, x0: float, x1: float, y: float, hmax: float, seed: int):
             x += 5
 
 
-def storage(it: Item, style: str = "bookshelf"):
+def storage(it: Item, style: str = "bookshelf", state: str = ""):
     c, W, H = it.c, it.w, it.h
     x0, x1 = -W / 2, W / 2
     if style in ("bookshelf", "shelf_low", "cube"):
@@ -281,6 +281,21 @@ def storage(it: Item, style: str = "bookshelf"):
         c.fill([(x0 + 2.5, H - 4.5), (x1 - 2.5, H - 4.5), (x1 - 2.5, H - 2.5), (x0 + 2.5, H - 2.5)], zone=1)
         for sx in (-1, 1):
             leg(c, sx * (W / 2 - 3), 0, 3, 3, 2.4)
+    elif style in ("wardrobe", "cabinet") and state == "open":
+        body = rrect(x0, 3, x1, H, 1.5)
+        shaded(c, body, 1, "right", SHADE, 0.12)
+        c.fill(rrect(x0 + 2.5, 5, x1 - 2.5, H - 5, 0.8), zone=1, shade=0.62)          # Innenraum
+        c.line([(x0 + 4, H - 14), (x1 - 4, H - 14)], 1.2, zone=3)                      # Kleiderstange
+        for k in range(5):                                                              # Kleidung
+            x = x0 + 8 + k * (W - 16) / 5
+            c.fill(rrect(x, H * 0.38 + (k % 2) * 8, x + (W - 16) / 5 - 2, H - 16, 3), zone=[2, 3, 2, 3, 2][k], shade=0.95)
+            c.line(rrect(x, H * 0.38 + (k % 2) * 8, x + (W - 16) / 5 - 2, H - 16, 3), 0.3, zone=0, closed=True)
+        c.fill(rrect(x0 + 4, 8, x1 - 4, 12, 0.5), zone=1, shade=0.8)
+        for sx in (-1, 1):                                                              # offene Türen
+            door = [(sx * W / 2, 4), (sx * W * 0.78, 10), (sx * W * 0.78, H - 8), (sx * W / 2, H - 2)]
+            shaded(c, door, 1, "bottom", SHADE, 0.2)
+            knob(c, sx * W * 0.72, H * 0.5, 1.2)
+            leg(c, sx * (W / 2 - 4), 0, 4, 4, 3.2)
     elif style in ("wardrobe", "cabinet"):
         body = rrect(x0, 3, x1, H, 1.5)
         cl = shaded(c, body, 1, "right", SHADE, 0.12)
@@ -304,6 +319,13 @@ def storage(it: Item, style: str = "bookshelf"):
                 a = x0 + 2 + k * (W - 4) / cols
                 b = a + (W - 4) / cols - 1.5
                 y = 5 + r * dh
+                if state == "open" and r == n - 1 and k == 0:        # oberste Schublade gezogen
+                    c.fill(rrect(a - 3, y - 2, b + 3, y + dh + 1, 1.2), zone=1, shade=0.62)
+                    c.fill(rrect(a - 1, y + dh * 0.45, b + 1, y + dh + 3, 0.8), zone=2)   # Inhalt
+                    front = rrect(a - 4, y - 5, b + 4, y + dh - 4, 1.2)
+                    shaded(c, front, 1, "bottom", SHADE, 0.3)
+                    knob(c, (a + b) / 2, y + dh / 2 - 4.5, 1.1)
+                    continue
                 c.line(rrect(a, y, b, y + dh - 1.5, 1.2), 0.3, zone=1, shade=0.72, closed=True)
                 knob(c, (a + b) / 2, y + dh / 2 - 0.5, 1.1)
         for sx in (-1, 1):
@@ -311,8 +333,15 @@ def storage(it: Item, style: str = "bookshelf"):
     elif style == "toybox":
         body = rrect(x0, 1, x1, H - 5, 2.5)
         cl = shaded(c, body, 1, "right", SHADE, 0.12)
-        lid = rrect(x0 - 1, H - 7, x1 + 1, H, 2.5)
-        shaded(c, lid, 2, "bottom", SHADE, 0.4)
+        if state == "open":
+            c.fill(rrect(x0 + 2, H - 9, x1 - 2, H - 5, 1), zone=1, shade=0.55)
+            lid = [(x0 - 1, H - 6), (x1 + 1, H - 6), (x1 - 4, H + 14), (x0 + 4, H + 14)]
+            shaded(c, lid, 2, "bottom", SHADE, 0.3)
+            c.ellipse(x0 + W * 0.3, H - 4, 5, 5, zone=3)
+            c.ellipse(x0 + W * 0.55, H - 3, 4, 6, zone=2)
+        else:
+            lid = rrect(x0 - 1, H - 7, x1 + 1, H, 2.5)
+            shaded(c, lid, 2, "bottom", SHADE, 0.4)
         for k, (cx, cy, r) in enumerate(((-W * 0.25, H * 0.45, H * 0.14), (W * 0.2, H * 0.4, H * 0.12))):
             c.ellipse(cx, cy, r, r, zone=2)
             c.ellipse(cx, cy, r * 0.45, r * 0.45, zone=3)
@@ -320,7 +349,7 @@ def storage(it: Item, style: str = "bookshelf"):
 
 
 # ------------------------------------------------------------------ Lampen & Elektronik
-def lamp(it: Item, style: str = "floor"):
+def lamp(it: Item, style: str = "floor", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style in ("floor", "table"):
         sh = H * (0.28 if style == "floor" else 0.45)
@@ -332,7 +361,10 @@ def lamp(it: Item, style: str = "floor"):
                    zone=2)
         shade_pts = [(-W * 0.28, H - sh), (W * 0.28, H - sh)]
         shade_pts = smooth([(-W * 0.5, H - sh, "s"), (W * 0.5, H - sh, "s"), (W * 0.32, H, "s"), (-W * 0.32, H, "s")], n=2)
-        cl = shaded(c, shade_pts, 1, "right", SHADE, 0.25)
+        if state == "on":   # Lichtkegel unter dem Schirm
+            c.glass(smooth([(-W * 0.46, H - sh, "s"), (W * 0.46, H - sh, "s"), (W * 0.9, H - sh * 2.2, "s"),
+                            (-W * 0.9, H - sh * 2.2, "s")], n=2), zone=1, opacity=0.28)
+        cl = shaded(c, shade_pts, 1, "right", 0.97 if state == "on" else SHADE, 0.25)
         line(c, [(-W * 0.46, H - sh + 2.2), (W * 0.46, H - sh + 2.2)], clip=cl, shade=0.8)
     elif style == "arc":
         c.fill(ell(-W * 0.3, 2, W * 0.16, 2), zone=3)
@@ -346,13 +378,18 @@ def lamp(it: Item, style: str = "floor"):
         c.ellipse(-W * 0.15, H * 0.6, 1.4, 1.4, zone=3)
 
 
-def tv(it: Item, style: str = "flat"):
+def tv(it: Item, style: str = "flat", state: str = ""):
     c, W, H = it.c, it.w, it.h
     stand = 8.0
-    c.fill(rrect(-W * 0.2, 0, W * 0.2, 2.2, 1), zone=3)
-    c.fill(rrect(-2, 2, 2, stand, 0.8), zone=3, shade=0.85)
+    c.fill(rrect(-W * 0.2, 0, W * 0.2, 2.2, 1), zone=1)
+    c.fill(rrect(-2, 2, 2, stand, 0.8), zone=1, shade=0.85)
     body = rrect(-W / 2, stand - 1, W / 2, H, 2)
     c.fill(body, zone=1)
     scr = rrect(-W / 2 + 2.2, stand + 1.2, W / 2 - 2.2, H - 2.2, 1)
     c.fill(scr, zone=0, shade=1.0)
+    if state == "on":        # buntes Bild: Himmel, Hügel, Sonne
+        c.fill(scr, zone=2)
+        c.fill(smooth([(-W / 2 + 2.2, stand + 1.2, "s"), (W / 2 - 2.2, stand + 1.2, "s"), (W / 2 - 2.2, H * 0.45),
+                       (W * 0.1, H * 0.6), (-W * 0.2, H * 0.45), (-W / 2 + 2.2, H * 0.55)]), zone=3, clip=c.mask(scr))
+        c.ellipse(W * 0.25, H * 0.72, H * 0.1, H * 0.1, zone=1, shade=1.0, clip=c.mask(scr))
     c.fill(smooth([(-W * 0.4, H - 4), (-W * 0.2, H - 4), (-W * 0.36, stand + 3), (-W * 0.44, stand + 3)]), zone=2, alpha=0.18)

@@ -22,9 +22,16 @@
    "colors": [
     "#2a2a30",
     "#a9c3dd",
-    "#2a2a30"
+    "#7fae6a"
    ],
-   "catalog": "electronics"
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_tv__on.png"
+   }
   },
   {
    "id": "elec_tv_cream",
@@ -45,9 +52,16 @@
    "colors": [
     "#f5f3ee",
     "#a9c3dd",
-    "#2a2a30"
+    "#7fae6a"
    ],
-   "catalog": "electronics"
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_tv__on.png"
+   }
   },
   {
    "id": "elec_tv_sky",
@@ -68,16 +82,23 @@
    "colors": [
     "#a9c3dd",
     "#a9c3dd",
-    "#2a2a30"
+    "#7fae6a"
    ],
-   "catalog": "electronics"
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/elec_tv__on.png"
+   }
   },
   {
    "id": "deco_radio_coral",
    "scale_ref": "c_deco_radio",
    "size_cm": [
     31.9,
-    24.0
+    28.9
    ],
    "pivot": [
     0.5,
@@ -97,14 +118,24 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_radio__on.png"
+   },
+   "anim": {
+    "on": "bounce"
+   }
   },
   {
    "id": "deco_radio_sky",
    "scale_ref": "c_deco_radio",
    "size_cm": [
     31.9,
-    24.0
+    28.9
    ],
    "pivot": [
     0.5,
@@ -124,14 +155,24 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_radio__on.png"
+   },
+   "anim": {
+    "on": "bounce"
+   }
   },
   {
    "id": "deco_radio_cream",
    "scale_ref": "c_deco_radio",
    "size_cm": [
     31.9,
-    24.0
+    28.9
    ],
    "pivot": [
     0.5,
@@ -151,7 +192,17 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_radio__on.png"
+   },
+   "anim": {
+    "on": "bounce"
+   }
   },
   {
    "id": "deco_laptop_grey",
@@ -178,7 +229,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_laptop__on.png"
+   }
   },
   {
    "id": "deco_laptop_cream",
@@ -205,7 +263,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_laptop__on.png"
+   }
   },
   {
    "id": "deco_laptop_rose",
@@ -232,7 +297,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_laptop__on.png"
+   }
   },
   {
    "id": "deco_phone_black",
@@ -259,7 +331,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_phone__on.png"
+   }
   },
   {
    "id": "deco_phone_coral",
@@ -286,7 +365,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_phone__on.png"
+   }
   },
   {
    "id": "deco_phone_sky",
@@ -313,7 +399,437 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_phone__on.png"
+   }
+  },
+  {
+   "id": "app_washer_cream",
+   "scale_ref": "c_app_washer",
+   "size_cm": [
+    61.9,
+    85.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_washer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 40
+   },
+   "tags": [
+    "open_top"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_washer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_washer_sky",
+   "scale_ref": "c_app_washer",
+   "size_cm": [
+    61.9,
+    85.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_washer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 40
+   },
+   "tags": [
+    "open_top"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_washer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_washer_grey",
+   "scale_ref": "c_app_washer",
+   "size_cm": [
+    61.9,
+    85.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_washer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 40
+   },
+   "tags": [
+    "open_top"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_washer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_fan_cream",
+   "scale_ref": "c_app_fan",
+   "size_cm": [
+    40.7,
+    93.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_fan.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_fan__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "app_fan_sky",
+   "scale_ref": "c_app_fan",
+   "size_cm": [
+    40.7,
+    93.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_fan.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_fan__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "app_fan_mint",
+   "scale_ref": "c_app_fan",
+   "size_cm": [
+    40.7,
+    93.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_fan.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_fan__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "app_computer_cream",
+   "scale_ref": "c_app_computer",
+   "size_cm": [
+    56.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_computer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_computer__on.png"
+   }
+  },
+  {
+   "id": "app_computer_black",
+   "scale_ref": "c_app_computer",
+   "size_cm": [
+    56.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_computer.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_computer__on.png"
+   }
+  },
+  {
+   "id": "app_computer_grey",
+   "scale_ref": "c_app_computer",
+   "size_cm": [
+    56.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_computer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_computer__on.png"
+   }
+  },
+  {
+   "id": "app_console_black",
+   "scale_ref": "c_app_console",
+   "size_cm": [
+    37.5,
+    19.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_console.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_console__on.png"
+   }
+  },
+  {
+   "id": "app_console_cream",
+   "scale_ref": "c_app_console",
+   "size_cm": [
+    37.5,
+    19.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_console.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_console__on.png"
+   }
+  },
+  {
+   "id": "app_console_coral",
+   "scale_ref": "c_app_console",
+   "size_cm": [
+    37.5,
+    19.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_console.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "electronics",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_console__on.png"
+   }
   }
  ]
 }

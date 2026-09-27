@@ -237,7 +237,7 @@
    "id": "furn_wardrobe_cream",
    "scale_ref": "c_furn_wardrobe",
    "size_cm": [
-    103.5,
+    111.8,
     201.8
    ],
    "pivot": [
@@ -254,13 +254,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_wardrobe__open.png"
+   }
   },
   {
    "id": "furn_wardrobe_oak",
    "scale_ref": "c_furn_wardrobe",
    "size_cm": [
-    103.5,
+    111.8,
     201.8
    ],
    "pivot": [
@@ -277,13 +284,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_wardrobe__open.png"
+   }
   },
   {
    "id": "furn_wardrobe_sky",
    "scale_ref": "c_furn_wardrobe",
    "size_cm": [
-    103.5,
+    111.8,
     201.8
    ],
    "pivot": [
@@ -300,13 +314,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_wardrobe__open.png"
+   }
   },
   {
    "id": "furn_wardrobe_mint",
    "scale_ref": "c_furn_wardrobe",
    "size_cm": [
-    103.5,
+    111.8,
     201.8
    ],
    "pivot": [
@@ -323,13 +344,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_wardrobe__open.png"
+   }
   },
   {
    "id": "furn_dresser_mint",
    "scale_ref": "c_furn_dresser",
    "size_cm": [
-    103.6,
+    104.7,
     86.8
    ],
    "pivot": [
@@ -346,13 +374,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_dresser__open.png"
+   }
   },
   {
    "id": "furn_dresser_cream",
    "scale_ref": "c_furn_dresser",
    "size_cm": [
-    103.6,
+    104.7,
     86.8
    ],
    "pivot": [
@@ -369,13 +404,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_dresser__open.png"
+   }
   },
   {
    "id": "furn_dresser_rose",
    "scale_ref": "c_furn_dresser",
    "size_cm": [
-    103.6,
+    104.7,
     86.8
    ],
    "pivot": [
@@ -392,13 +434,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_dresser__open.png"
+   }
   },
   {
    "id": "furn_dresser_oak",
    "scale_ref": "c_furn_dresser",
    "size_cm": [
-    103.6,
+    104.7,
     86.8
    ],
    "pivot": [
@@ -415,13 +464,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_dresser__open.png"
+   }
   },
   {
    "id": "furn_nightstand_cream",
    "scale_ref": "c_furn_nightstand",
    "size_cm": [
-    48.5,
+    49.7,
     56.8
    ],
    "pivot": [
@@ -438,13 +494,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_nightstand__open.png"
+   }
   },
   {
    "id": "furn_nightstand_oak",
    "scale_ref": "c_furn_nightstand",
    "size_cm": [
-    48.5,
+    49.7,
     56.8
    ],
    "pivot": [
@@ -461,13 +524,20 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_nightstand__open.png"
+   }
   },
   {
    "id": "furn_nightstand_sky",
    "scale_ref": "c_furn_nightstand",
    "size_cm": [
-    48.5,
+    49.7,
     56.8
    ],
    "pivot": [
@@ -484,14 +554,21 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_nightstand__open.png"
+   }
   },
   {
    "id": "furn_tv_bench_cream",
    "scale_ref": "c_furn_tv_bench",
    "size_cm": [
-    143.6,
-    51.8
+    144.7,
+    51.9
    ],
    "pivot": [
     0.5,
@@ -507,14 +584,21 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_tv_bench__open.png"
+   }
   },
   {
    "id": "furn_tv_bench_walnut",
    "scale_ref": "c_furn_tv_bench",
    "size_cm": [
-    143.6,
-    51.8
+    144.7,
+    51.9
    ],
    "pivot": [
     0.5,
@@ -530,14 +614,21 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_tv_bench__open.png"
+   }
   },
   {
    "id": "furn_tv_bench_grey",
    "scale_ref": "c_furn_tv_bench",
    "size_cm": [
-    143.6,
-    51.8
+    144.7,
+    51.9
    ],
    "pivot": [
     0.5,
@@ -553,14 +644,21 @@
     "#f5f3ee",
     "#d4a86e"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_tv_bench__open.png"
+   }
   },
   {
    "id": "furn_toybox_butter",
    "scale_ref": "c_furn_toybox",
    "size_cm": [
     73.9,
-    50.9
+    55.9
    ],
    "pivot": [
     0.5,
@@ -580,6 +678,13 @@
    "container": {
     "slots": 8,
     "max_item_h_cm": 40
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_toybox__open.png"
    }
   },
   {
@@ -587,7 +692,7 @@
    "scale_ref": "c_furn_toybox",
    "size_cm": [
     73.9,
-    50.9
+    55.9
    ],
    "pivot": [
     0.5,
@@ -607,6 +712,13 @@
    "container": {
     "slots": 8,
     "max_item_h_cm": 40
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_toybox__open.png"
    }
   },
   {
@@ -614,7 +726,7 @@
    "scale_ref": "c_furn_toybox",
    "size_cm": [
     73.9,
-    50.9
+    55.9
    ],
    "pivot": [
     0.5,
@@ -634,6 +746,13 @@
    "container": {
     "slots": 8,
     "max_item_h_cm": 40
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_toybox__open.png"
    }
   }
  ]
