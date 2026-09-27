@@ -7,7 +7,7 @@ from __future__ import annotations
 import math
 import random
 
-from .kit import SHADE, SOFT, Item, ell, knob, leg, line, rrect, shaded, smooth, trap
+from .kit import DEEP, SHADE, SOFT, Item, ell, knob, leg, line, rrect, shaded, smooth, trap
 from .plants import leaf
 
 
@@ -132,8 +132,10 @@ def camping(it: Item, style: str = "tent", state: str = ""):
         for k in (-0.25, 0.25):
             c.line(smooth([(k * W * 1.8, 0), (k * W, H * 0.8), (0, H)], closed=False), 0.35, zone=1, shade=0.7, clip=cl)
     elif style == "campfire":
-        for k, a in enumerate((-25, 25, -10, 10)):
-            c.line([(-W * 0.4 + k * 2, 1), (W * 0.4 - k * 2, H * 0.12)], 2.2, zone=3, shade=0.9 - k * 0.05)
+        for k, x in enumerate((-W * 0.3, -W * 0.12, W * 0.08, W * 0.26)):     # Holz-Tipi
+            tip = (0, H * 0.4)
+            c.line([(x, 1.5), tip], 2.4, zone=3, shade=0.95 - (k % 2) * 0.12)
+        c.line([(-W * 0.36, 2.5), (W * 0.36, 4.5)], 2.6, zone=3, shade=0.8)
         if state == "on":
             c.fill(smooth([(0, H), (W * 0.3, H * 0.4), (W * 0.2, H * 0.12), (-W * 0.2, H * 0.12), (-W * 0.3, H * 0.4)]), zone=1)
             c.fill(smooth([(0, H * 0.7), (W * 0.15, H * 0.3), (0, H * 0.15), (-W * 0.15, H * 0.3)]), zone=2)
@@ -142,14 +144,21 @@ def camping(it: Item, style: str = "tent", state: str = ""):
         else:              # aus: nur Holz, ein Rest Glut und ein dünner Rauchfaden
             c.fill(ell(0, H * 0.13, W * 0.16, H * 0.05), zone=1, shade=0.7)
             _smoke(c, 0, H * 0.2, W * 0.25)
-        for k in range(4):
-            a = math.radians(200 + k * 45)
-            c.fill(ell(math.cos(a) * W * 0.42, 1.5 + abs(math.sin(a)) * 1, 2.2, 1.6), zone=3, shade=0.55)
+        for k in range(7):                                                   # Steinring vorne
+            x = -W / 2 + 3 + (W - 6) * k / 6
+            c.fill(ell(x, 2.2, 3.4, 2.4), zone=3, shade=0.5 + 0.06 * (k % 3))
+            c.line(ell(x, 2.2, 3.4, 2.4), 0.3, zone=0, closed=True)
     elif style == "sleeping_bag":
-        body = rrect(-W / 2, 0, W / 2, H, H * 0.45)
-        cl = shaded(c, body, 1, "bottom", SHADE, 0.35)
-        c.fill(rrect(-W / 2, 0, -W * 0.3, H, H * 0.45), zone=2, clip=cl)
-        line(c, [(-W * 0.28, H * 0.5), (W * 0.45, H * 0.5)], clip=cl, shade=0.75)
+        # prall gesteppter Schlafsack mit Kapuze links, Reißverschluss-Kante und Kissen
+        body = smooth([(-W / 2, H * 0.3), (-W / 2 + 4, 0, "s"), (W / 2 - 3, 0, "s"), (W / 2, H * 0.4), (W / 2 - 4, H * 0.85),
+                       (-W * 0.25, H * 0.9), (-W * 0.35, H), (-W / 2 + 3, H)])
+        cl = shaded(c, body, 1, "bottom", SHADE, 0.4)
+        for k in range(1, 8):
+            x = -W * 0.3 + W * 0.78 * k / 8
+            line(c, smooth([(x, H * 0.05), (x + 0.8, H * 0.45), (x, H * 0.85)], closed=False), clip=cl, shade=0.8)
+        c.fill(smooth([(-W / 2 + 2, H * 0.45), (-W / 2 + 4, H * 0.95), (-W * 0.3, H * 0.95), (-W * 0.3, H * 0.4)]), zone=2, clip=cl)
+        c.ellipse(-W * 0.4, H * 0.75, W * 0.07, H * 0.22, zone=2, shade=0.92)
+        c.line([(-W * 0.3, H * 0.5), (W / 2 - 4, H * 0.55)], 0.35, zone=3)
     elif style == "lantern":
         c.line(smooth([(-W * 0.3, H * 0.85), (0, H), (W * 0.3, H * 0.85)], closed=False), 0.6, zone=3)
         c.fill(rrect(-W * 0.4, 0, W * 0.4, H * 0.12, 0.6), zone=1)
@@ -162,10 +171,18 @@ def camping(it: Item, style: str = "tent", state: str = ""):
         c.line(rrect(-W * 0.32, H * 0.12, W * 0.32, H * 0.72, 1), 0.3, zone=0, closed=True)
         c.fill(trap(-W * 0.4, W * 0.4, H * 0.7, -W * 0.2, W * 0.2, H * 0.86, 0.6), zone=1)
     elif style == "camp_chair":
-        c.line([(-W * 0.4, 0), (W * 0.35, H * 0.55)], 1.2, zone=3)
-        c.line([(W * 0.4, 0), (-W * 0.35, H * 0.55)], 1.2, zone=3)
-        c.fill(smooth([(-W * 0.42, H * 0.5), (W * 0.42, H * 0.5), (W * 0.36, H), (-W * 0.36, H)]), zone=1)
-        c.fill(smooth([(-W * 0.44, H * 0.4), (W * 0.44, H * 0.4), (W * 0.4, H * 0.55), (-W * 0.4, H * 0.55)]), zone=2)
+        # Falt-Campingstuhl: gekreuzte Beine, Stoffsitz, hohe Stofflehne, Armlehnen, Becherhalter
+        for sx in (-1, 1):
+            c.line([(sx * W * 0.42, 0), (-sx * W * 0.34, H * 0.5)], 1.4, zone=3)
+            c.line([(sx * W * 0.4, H * 0.48), (sx * W * 0.4, H * 0.62)], 1.2, zone=3)
+        back = smooth([(-W * 0.36, H * 0.52, "s"), (W * 0.36, H * 0.52, "s"), (W * 0.38, H, "s"), (-W * 0.38, H, "s")], n=2)
+        cl = shaded(c, back, 1, "right", SHADE, 0.25)
+        c.fill(rrect(-W * 0.38, H * 0.92, W * 0.38, H, 0.6), zone=2, clip=cl)
+        seat = smooth([(-W * 0.42, H * 0.52, "s"), (W * 0.42, H * 0.52, "s"), (W * 0.3, H * 0.42), (-W * 0.3, H * 0.42)])
+        shaded(c, seat, 1, "bottom", DEEP + 0.15, 0.5)
+        for sx in (-1, 1):
+            c.fill(rrect(min(sx * W * 0.5, sx * W * 0.3), H * 0.6, max(sx * W * 0.5, sx * W * 0.3), H * 0.66, 0.6), zone=2)
+        c.fill(rrect(W * 0.44, H * 0.5, W * 0.54, H * 0.6, 0.5), zone=3)
     elif style == "backpack_hiking":
         body = rrect(-W / 2, 0, W / 2, H * 0.9, W * 0.3)
         cl = shaded(c, body, 1, "right", SHADE, 0.25)
@@ -214,9 +231,18 @@ def camping(it: Item, style: str = "tent", state: str = ""):
         for k in range(5):
             c.ellipse(-W * 0.3 + k * W * 0.15, H * (0.3 + (k % 2) * 0.3), 1.0, 1.0, zone=2)
     elif style == "rock":
-        body = smooth([(-W / 2, 0, "s"), (W / 2, 0, "s"), (W * 0.42, H * 0.6), (W * 0.1, H), (-W * 0.35, H * 0.8)])
+        # Findling: Facetten, Licht oben links, Moos und Gras am Fuß
+        body = smooth([(-W / 2, 0, "s"), (W / 2, 0, "s"), (W * 0.46, H * 0.45), (W * 0.2, H * 0.92), (-W * 0.1, H),
+                       (-W * 0.38, H * 0.78), (-W * 0.48, H * 0.35)])
         cl = shaded(c, body, 1, "right", SHADE, 0.35)
-        line(c, [(-W * 0.1, H * 0.7), (W * 0.1, H * 0.4)], clip=cl, shade=0.72)
+        c.fill(smooth([(-W * 0.32, H * 0.7), (-W * 0.08, H * 0.92), (W * 0.05, H * 0.72), (-W * 0.2, H * 0.55)]), zone=1,
+               shade=1.08, clip=cl)
+        line(c, [(-W * 0.2, H * 0.55), (W * 0.05, H * 0.72), (W * 0.18, H * 0.4)], clip=cl, shade=0.72)
+        line(c, [(-W * 0.36, H * 0.3), (-W * 0.12, H * 0.2)], clip=cl, shade=0.75)
+        c.fill(smooth([(-W * 0.3, H * 0.9), (-W * 0.05, H * 1.02), (W * 0.12, H * 0.95), (-W * 0.1, H * 0.84)]), zone=2, clip=cl)
+        for k in range(9):
+            x = -W * 0.5 + W * k / 8
+            c.fill([(x - 1.2, 0), (x + 1.2, 0), (x + 0.3 * (k % 3 - 1), 3 + (k % 3) * 1.5)], zone=2, shade=0.9)
     elif style == "signpost":
         c.fill(rrect(-1.2, 0, 1.2, H, 0.6), zone=3)
         for k, (y, d) in enumerate(((H * 0.78, 1), (H * 0.58, -1))):
@@ -293,20 +319,37 @@ def playground(it: Item, style: str = "slide"):
             c.line(smooth([(x - W * 0.08, 0), (x - W * 0.08, H * 0.7), (x, H), (x + W * 0.08, H * 0.7), (x + W * 0.08, 0)],
                           closed=False), 1.2, zone=1)
     elif style == "sandpit":
-        body = rrect(-W / 2, 0, W / 2, H, 1)
-        c.fill(body, zone=3)
-        c.fill(smooth([(-W / 2 + 3, H - 2), (-W * 0.2, H + 3), (W * 0.2, H + 1), (W / 2 - 3, H - 2)]), zone=1)
-
+        # Holz-Sandkasten mit Sitzbrett, Sandhügel, Eimer + Schaufel – alles innerhalb der Grundhöhe
+        fh = H * 0.55
+        c.fill(smooth([(-W / 2 + 4, fh - 1), (-W * 0.3, H * 0.82), (-W * 0.05, H * 0.72), (W * 0.1, H * 0.86), (W / 2 - 4, fh - 1)]), zone=1)
+        c.fill(trap(W * 0.14, W * 0.24, fh * 0.9, W * 0.12, W * 0.26, H * 0.96, 0.5), zone=2)
+        c.line(smooth([(W * 0.14, H * 0.96), (W * 0.19, H * 1.06), (W * 0.24, H * 0.96)], closed=False), 0.4, zone=2, shade=0.8)
+        c.line([(W * 0.3, fh * 0.9), (W * 0.36, H * 0.95)], 0.8, zone=3, shade=0.8)
+        c.fill(ell(W * 0.3, fh * 0.95, 1.8, 1.2), zone=2, shade=0.8)
+        body = rrect(-W / 2, 0, W / 2, fh, 0.8)
+        cl = shaded(c, body, 3, "bottom", SHADE, 0.3)
+        line(c, [(-W / 2, fh * 0.5), (W / 2, fh * 0.5)], zone=3, clip=cl, shade=0.72)
+        c.fill(rrect(-W / 2 - 2, fh - 1.5, W / 2 + 2, fh + 1.5, 0.8), zone=3, shade=1.05)
+        for sx in (-1, 1):
+            c.fill(rrect(sx * W / 2 - 3, 0, sx * W / 2 + 3, fh + 1.5, 0.8), zone=3, shade=0.9)
 
 # ------------------------------------------------------------------ Sport & Eishalle
 def sport(it: Item, style: str = "goal"):
     c, W, H = it.c, it.w, it.h
     if style == "goal":
-        c.line([(-W / 2, 0), (-W / 2, H), (W / 2, H), (W / 2, 0)], 2.0, zone=1)
-        for k in range(1, 8):
-            c.line([(-W / 2 + W * k / 8, 0), (-W / 2 + W * k / 8, H)], 0.25, zone=2)
-        for k in range(1, 5):
-            c.line([(-W / 2, H * k / 5), (W / 2, H * k / 5)], 0.25, zone=2)
+        d = H * 0.25                        # Netz-Tiefe (schräg nach hinten oben)
+        net = [(-W / 2 + d * 0.6, d * 0.2), (W / 2 - d * 0.6, d * 0.2), (W / 2 - d * 0.6, H + d * 0.3), (-W / 2 + d * 0.6, H + d * 0.3)]
+        mk = c.mask(net)
+        for k in range(1, 14):
+            c.line([(-W / 2 + W * k / 14, 0), (-W / 2 + W * k / 14, H + d)], 0.3, zone=2, shade=0.85, clip=mk)
+        for k in range(1, 9):
+            c.line([(-W / 2, H * k / 8), (W / 2, H * k / 8 + d * 0.2)], 0.3, zone=2, shade=0.85, clip=mk)
+        c.line([(-W / 2 + d * 0.6, H + d * 0.3), (W / 2 - d * 0.6, H + d * 0.3)], 1.2, zone=2, shade=0.8)
+        for sx in (-1, 1):
+            c.line([(sx * W / 2, H), (sx * (W / 2 - d * 0.6), H + d * 0.3)], 1.2, zone=2, shade=0.8)
+            c.fill(rrect(sx * W / 2 - 3, 0, sx * W / 2 + 3, H + 3, 1.5), zone=1)
+            c.fill(ell(sx * W / 2, 1, 4, 1.4), zone=3, shade=0.6)
+        c.fill(rrect(-W / 2 - 3, H - 3, W / 2 + 3, H + 3, 1.5), zone=1)
     elif style == "basket_hoop":
         c.fill(rrect(-1.5, 0, 1.5, H * 0.75, 0.6), zone=3)
         c.fill(rrect(-W / 2, H * 0.72, W / 2, H, 1), zone=2)
@@ -356,18 +399,28 @@ def sport(it: Item, style: str = "goal"):
             for k in range(3):
                 c.line([(x - W * 0.08, H * (0.55 + k * 0.12)), (x + W * 0.0, H * (0.55 + k * 0.12))], 0.3, zone=2)
     elif style == "hockey_stick":
-        c.line([(W * 0.3, H), (-W * 0.2, H * 0.1)], 1.6, zone=1)
-        c.fill(smooth([(-W * 0.25, H * 0.12, "s"), (-W / 2, 0.5), (-W / 2, 0, "s"), (-W * 0.15, 0, "s")]), zone=1)
-        c.fill(rrect(W * 0.2, H * 0.82, W * 0.35, H, 0.4), zone=2)
+        c.line([(W * 0.3, H), (-W * 0.18, H * 0.08)], 2.4, zone=1)
+        blade = smooth([(-W * 0.24, H * 0.14, "s"), (-W * 0.12, H * 0.07), (-W * 0.1, 0, "s"), (-W / 2, 0, "s"), (-W / 2, H * 0.04)])
+        shaded(c, blade, 1, "bottom", SHADE, 0.4)
+        for k in range(4):
+            x = -W * 0.46 + k * W * 0.08
+            c.line([(x, 0.3), (x + W * 0.05, H * 0.05)], 0.6, zone=2)
+        c.line([(W * 0.24, H * 0.88), (W * 0.3, H)], 2.6, zone=2)
     elif style == "puck":
         c.fill(rrect(-W / 2, 0, W / 2, H, H * 0.3), zone=1)
         c.fill(ell(0, H * 0.8, W * 0.45, H * 0.2), zone=1, shade=0.8)
     elif style == "sled":
-        for sx in (-1, 1):
-            c.line([(sx * W * 0.3, H * 0.2), (sx * W * 0.3, H * 0.6)], 1.2, zone=3)
-        c.line(smooth([(-W / 2, H * 0.1), (W * 0.4, H * 0.1), (W / 2, H * 0.4)], closed=False), 1.0, zone=3)
-        c.fill(rrect(-W * 0.45, H * 0.55, W * 0.42, H * 0.7, 1), zone=1)
-        c.fill(rrect(-W * 0.45, H * 0.7, -W * 0.3, H, 0.8), zone=1)
+        # Holzschlitten: geschwungene Kufen vorne hoch, 5 Latten, Zugseil
+        for dx, sh in ((2.5, 0.8), (0, 1.0)):
+            c.line(smooth([(-W / 2 + dx, H * 0.08), (W * 0.3 + dx, H * 0.06), (W * 0.46 + dx, H * 0.2), (W * 0.46 + dx, H * 0.55),
+                           (W * 0.38 + dx, H * 0.62)], closed=False), 1.6, zone=3, shade=sh)
+            for x in (-W * 0.35, 0, W * 0.3):
+                c.line([(x + dx, H * 0.08), (x + dx, H * 0.55)], 1.4, zone=3, shade=sh)
+        top = rrect(-W * 0.48, H * 0.52, W * 0.4, H * 0.72, 1)
+        cl = shaded(c, top, 1, "bottom", SHADE, 0.35)
+        for k in range(1, 5):
+            line(c, [(-W * 0.48 + W * 0.88 * k / 5, H * 0.52), (-W * 0.48 + W * 0.88 * k / 5, H * 0.72)], clip=cl, shade=0.72)
+        c.line(smooth([(W * 0.42, H * 0.6), (W * 0.5, H * 0.9), (W * 0.3, H)], closed=False), 0.5, zone=2)
     elif style == "snowman":
         for (y, r) in ((H * 0.22, W * 0.5), (H * 0.58, W * 0.36), (H * 0.84, W * 0.25)):
             c.fill(ell(0, y, r, r), zone=2)

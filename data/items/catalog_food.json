@@ -8,7 +8,7 @@
    "scale_ref": "c_food_apple",
    "size_cm": [
     9.9,
-    10.1
+    10.0
    ],
    "pivot": [
     0.5,
@@ -35,7 +35,7 @@
    "scale_ref": "c_food_apple",
    "size_cm": [
     9.9,
-    10.1
+    10.0
    ],
    "pivot": [
     0.5,
@@ -62,7 +62,7 @@
    "scale_ref": "c_food_apple",
    "size_cm": [
     9.9,
-    10.1
+    10.0
    ],
    "pivot": [
     0.5,
@@ -89,7 +89,7 @@
    "scale_ref": "c_food_orange",
    "size_cm": [
     9.9,
-    10.1
+    10.0
    ],
    "pivot": [
     0.5,
@@ -277,8 +277,8 @@
    "id": "food_carrot_orange",
    "scale_ref": "c_food_carrot",
    "size_cm": [
-    5.8,
-    23.8
+    5.7,
+    23.6
    ],
    "pivot": [
     0.5,
@@ -845,7 +845,7 @@
    "scale_ref": "c_food_watermelon",
    "size_cm": [
     23.5,
-    17.5
+    17.6
    ],
    "pivot": [
     0.5,
@@ -1061,7 +1061,7 @@
    "scale_ref": "c_cook_soup",
    "size_cm": [
     17.8,
-    13.9
+    14.0
    ],
    "pivot": [
     0.5,
@@ -1088,7 +1088,7 @@
    "scale_ref": "c_cook_soup",
    "size_cm": [
     17.8,
-    13.9
+    14.0
    ],
    "pivot": [
     0.5,
@@ -1115,7 +1115,7 @@
    "scale_ref": "c_cook_soup",
    "size_cm": [
     17.8,
-    13.9
+    14.0
    ],
    "pivot": [
     0.5,
@@ -1195,8 +1195,8 @@
    "id": "cook_hot_drink_walnut",
    "scale_ref": "c_cook_hot_drink",
    "size_cm": [
-    10.8,
-    13.8
+    10.7,
+    13.6
    ],
    "pivot": [
     0.5,
@@ -1222,8 +1222,8 @@
    "id": "cook_hot_drink_cream",
    "scale_ref": "c_cook_hot_drink",
    "size_cm": [
-    10.8,
-    13.8
+    10.7,
+    13.6
    ],
    "pivot": [
     0.5,
@@ -1249,8 +1249,8 @@
    "id": "cook_popcorn_bowl_butter",
    "scale_ref": "c_cook_popcorn_bowl",
    "size_cm": [
-    19.8,
-    13.0
+    19.7,
+    13.1
    ],
    "pivot": [
     0.5,

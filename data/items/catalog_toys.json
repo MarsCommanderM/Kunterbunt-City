@@ -332,7 +332,7 @@
    "scale_ref": "c_toy_blocks",
    "size_cm": [
     13.6,
-    13.6
+    13.5
    ],
    "pivot": [
     0.5,
@@ -467,7 +467,7 @@
    "scale_ref": "c_toy_train",
    "size_cm": [
     28.5,
-    15.4
+    15.5
    ],
    "pivot": [
     0.5,
@@ -493,8 +493,8 @@
    "id": "toy_robot_sky",
    "scale_ref": "c_toy_robot",
    "size_cm": [
-    14.7,
-    27.8
+    14.6,
+    27.9
    ],
    "pivot": [
     0.5,
@@ -520,8 +520,8 @@
    "id": "toy_robot_grey",
    "scale_ref": "c_toy_robot",
    "size_cm": [
-    14.7,
-    27.8
+    14.6,
+    27.9
    ],
    "pivot": [
     0.5,
@@ -547,8 +547,8 @@
    "id": "toy_robot_coral",
    "scale_ref": "c_toy_robot",
    "size_cm": [
-    14.7,
-    27.8
+    14.6,
+    27.9
    ],
    "pivot": [
     0.5,
@@ -574,8 +574,8 @@
    "id": "toy_doll_rose",
    "scale_ref": "c_toy_doll",
    "size_cm": [
-    13.2,
-    36.5
+    14.0,
+    38.1
    ],
    "pivot": [
     0.5,
@@ -589,7 +589,7 @@
    "colors": [
     "#f0b6c2",
     "#8a5e3f",
-    "#f0b6c2"
+    "#d8cfc2"
    ],
    "catalog": "toys",
    "grip": [
@@ -601,8 +601,8 @@
    "id": "toy_doll_sky",
    "scale_ref": "c_toy_doll",
    "size_cm": [
-    13.2,
-    36.5
+    14.0,
+    38.1
    ],
    "pivot": [
     0.5,
@@ -616,7 +616,7 @@
    "colors": [
     "#a9c3dd",
     "#8a5e3f",
-    "#f0b6c2"
+    "#d8cfc2"
    ],
    "catalog": "toys",
    "grip": [
@@ -628,8 +628,8 @@
    "id": "toy_doll_butter",
    "scale_ref": "c_toy_doll",
    "size_cm": [
-    13.2,
-    36.5
+    14.0,
+    38.1
    ],
    "pivot": [
     0.5,
@@ -643,7 +643,7 @@
    "colors": [
     "#f6d98a",
     "#8a5e3f",
-    "#f0b6c2"
+    "#d8cfc2"
    ],
    "catalog": "toys",
    "grip": [
@@ -655,8 +655,8 @@
    "id": "toy_drum_coral",
    "scale_ref": "c_toy_drum",
    "size_cm": [
-    27.8,
-    24.1
+    27.9,
+    24.0
    ],
    "pivot": [
     0.5,
@@ -682,8 +682,8 @@
    "id": "toy_drum_sky",
    "scale_ref": "c_toy_drum",
    "size_cm": [
-    27.8,
-    24.1
+    27.9,
+    24.0
    ],
    "pivot": [
     0.5,
@@ -710,7 +710,7 @@
    "scale_ref": "c_toy_xylophone",
    "size_cm": [
     37.4,
-    13.1
+    13.2
    ],
    "pivot": [
     0.5,
@@ -737,7 +737,7 @@
    "scale_ref": "c_toy_puzzle",
    "size_cm": [
     25.0,
-    25.0
+    25.1
    ],
    "pivot": [
     0.5,
@@ -1157,7 +1157,7 @@
    "scale_ref": "c_toy_bucket_spade",
    "size_cm": [
     25.6,
-    26.2
+    26.4
    ],
    "pivot": [
     0.5,
@@ -1184,7 +1184,7 @@
    "scale_ref": "c_toy_bucket_spade",
    "size_cm": [
     25.6,
-    26.2
+    26.4
    ],
    "pivot": [
     0.5,
@@ -1211,7 +1211,7 @@
    "scale_ref": "c_toy_bucket_spade",
    "size_cm": [
     25.6,
-    26.2
+    26.4
    ],
    "pivot": [
     0.5,

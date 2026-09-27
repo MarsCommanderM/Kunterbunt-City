@@ -156,7 +156,7 @@
    "pad_px": 1,
    "colors": [
     "#f5f3ee",
-    "#a9c3dd",
+    "#f09a55",
     "#d4a86e"
    ],
    "catalog": "deco",
@@ -183,7 +183,7 @@
    "pad_px": 1,
    "colors": [
     "#f0b6c2",
-    "#a9c3dd",
+    "#f09a55",
     "#d4a86e"
    ],
    "catalog": "deco",
@@ -210,7 +210,7 @@
    "pad_px": 1,
    "colors": [
     "#f6d98a",
-    "#a9c3dd",
+    "#f09a55",
     "#d4a86e"
    ],
    "catalog": "deco",
@@ -690,7 +690,7 @@
    "scale_ref": "c_deco_globe",
    "size_cm": [
     26.0,
-    36.8
+    36.9
    ],
    "pivot": [
     0.5,

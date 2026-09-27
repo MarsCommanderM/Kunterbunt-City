@@ -493,8 +493,8 @@
    "id": "furn_sofa_chesterfield_walnut",
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
-    202.0,
-    83.8
+    201.9,
+    83.9
    ],
    "pivot": [
     0.5,
@@ -520,8 +520,8 @@
    "id": "furn_sofa_chesterfield_navy",
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
-    202.0,
-    83.8
+    201.9,
+    83.9
    ],
    "pivot": [
     0.5,
@@ -547,8 +547,8 @@
    "id": "furn_sofa_chesterfield_green",
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
-    202.0,
-    83.8
+    201.9,
+    83.9
    ],
    "pivot": [
     0.5,
@@ -574,8 +574,8 @@
    "id": "furn_sofa_chesterfield_rust",
    "scale_ref": "c_furn_sofa_chesterfield",
    "size_cm": [
-    202.0,
-    83.8
+    201.9,
+    83.9
    ],
    "pivot": [
     0.5,

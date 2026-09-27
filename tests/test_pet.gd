@@ -103,3 +103,12 @@ func _walked_pet() -> PetNode:
 	for _i: int in 240:
 		dog.tick(1.0 / 60.0)
 	return dog
+
+
+func test_pet_without_own_colors_gets_default_fur() -> void:
+	# P04b: Tiere aus default_items haben keine PetData – sie dürfen nie in Rohfarben (rot/grün/blau) erscheinen
+	var cat: ItemNode = ItemSpawner.on_floor(k.room, &"pet_cat", 260.0, 40.0)
+	var mat: ShaderMaterial = cat.sprite.material as ShaderMaterial
+	assert_not_null(mat, "Katze wird eingefärbt")
+	var want: Color = Color(String(PetSpecies.default_fur("pet_cat")[0]))
+	assert_true((mat.get_shader_parameter("zone1") as Color).is_equal_approx(want), "Fell = Standardfarbe der Art")

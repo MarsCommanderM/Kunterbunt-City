@@ -7,8 +7,8 @@
    "id": "sport_goal_cream",
    "scale_ref": "c_sport_goal",
    "size_cm": [
-    303.5,
-    203.5
+    309.5,
+    217.5
    ],
    "pivot": [
     0.5,
@@ -397,7 +397,7 @@
    "scale_ref": "c_sport_trophy",
    "size_cm": [
     22.4,
-    33.6
+    33.8
    ],
    "pivot": [
     0.5,

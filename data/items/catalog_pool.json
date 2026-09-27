@@ -7,8 +7,8 @@
    "id": "pool_air_mattress_coral",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    182.1,
-    16.9
+    180.5,
+    18.2
    ],
    "pivot": [
     0.5,
@@ -38,8 +38,8 @@
    "id": "pool_air_mattress_sky",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    182.1,
-    16.9
+    180.5,
+    18.2
    ],
    "pivot": [
     0.5,
@@ -69,8 +69,8 @@
    "id": "pool_air_mattress_butter",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    182.1,
-    16.9
+    180.5,
+    18.2
    ],
    "pivot": [
     0.5,
@@ -100,8 +100,8 @@
    "id": "pool_air_mattress_mint",
    "scale_ref": "c_pool_air_mattress",
    "size_cm": [
-    182.1,
-    16.9
+    180.5,
+    18.2
    ],
    "pivot": [
     0.5,
@@ -347,8 +347,8 @@
    "id": "pool_flippers_sky",
    "scale_ref": "c_pool_flippers",
    "size_cm": [
-    51.9,
-    9.9
+    56.3,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -374,8 +374,8 @@
    "id": "pool_flippers_coral",
    "scale_ref": "c_pool_flippers",
    "size_cm": [
-    51.9,
-    9.9
+    56.3,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -401,8 +401,8 @@
    "id": "pool_flippers_black",
    "scale_ref": "c_pool_flippers",
    "size_cm": [
-    51.9,
-    9.9
+    56.3,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -601,8 +601,8 @@
    "id": "pool_deck_chair_coral",
    "scale_ref": "c_pool_deck_chair",
    "size_cm": [
-    73.2,
-    93.2
+    63.6,
+    94.1
    ],
    "pivot": [
     0.5,
@@ -628,8 +628,8 @@
    "id": "pool_deck_chair_sky",
    "scale_ref": "c_pool_deck_chair",
    "size_cm": [
-    73.2,
-    93.2
+    63.6,
+    94.1
    ],
    "pivot": [
     0.5,
@@ -655,8 +655,8 @@
    "id": "pool_deck_chair_teal",
    "scale_ref": "c_pool_deck_chair",
    "size_cm": [
-    73.2,
-    93.2
+    63.6,
+    94.1
    ],
    "pivot": [
     0.5,
@@ -682,8 +682,8 @@
    "id": "pool_deck_chair_butter",
    "scale_ref": "c_pool_deck_chair",
    "size_cm": [
-    73.2,
-    93.2
+    63.6,
+    94.1
    ],
    "pivot": [
     0.5,
@@ -709,8 +709,8 @@
    "id": "pool_towel_beach_sky",
    "scale_ref": "c_pool_towel_beach",
    "size_cm": [
-    162.4,
-    7.9
+    166.4,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -740,8 +740,8 @@
    "id": "pool_towel_beach_coral",
    "scale_ref": "c_pool_towel_beach",
    "size_cm": [
-    162.4,
-    7.9
+    166.4,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -771,8 +771,8 @@
    "id": "pool_towel_beach_butter",
    "scale_ref": "c_pool_towel_beach",
    "size_cm": [
-    162.4,
-    7.9
+    166.4,
+    9.4
    ],
    "pivot": [
     0.5,
@@ -803,7 +803,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    41.9
+    45.5
    ],
    "pivot": [
     0.5,
@@ -841,7 +841,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    41.9
+    45.5
    ],
    "pivot": [
     0.5,
@@ -879,7 +879,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    41.9
+    45.5
    ],
    "pivot": [
     0.5,

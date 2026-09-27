@@ -232,14 +232,30 @@ def fair(it: Item, style: str = "cotton_candy"):
         for k, r in enumerate((0.5, 0.36, 0.22, 0.09)):
             c.fill(ell(0, H * 0.65, W * r, W * r), zone=1 if k % 2 == 0 else 2)
     elif style == "carousel_horse":
-        c.fill(rrect(-0.8, 0, 0.8, H, 0.4), zone=3)
-        from .fun import toy
-        body = ell(0, H * 0.45, W * 0.4, H * 0.14)
-        shaded(c, body, 1, "bottom", SHADE, 0.35)
-        c.fill(smooth([(W * 0.25, H * 0.5), (W * 0.4, H * 0.82), (W / 2, H * 0.75), (W * 0.42, H * 0.5)]), zone=1)
-        c.fill(smooth([(W * 0.27, H * 0.55), (W * 0.33, H * 0.85), (W * 0.4, H * 0.8), (W * 0.33, H * 0.52)]), zone=2)
-        for sx in (-1, 1):
-            c.line([(sx * W * 0.25, H * 0.35), (sx * W * 0.3, H * 0.15)], 1.4, zone=1)
+        # Karussellpferd im Galopp an der gedrehten Stange, Sattel + Zaumzeug in Zone 2
+        c.fill(rrect(-1.2, 0, 1.2, H, 0.6), zone=3)
+        for k in range(12):
+            y = H * k / 12
+            c.line([(-1.2, y), (1.2, y + H / 24)], 0.5, zone=2, shade=0.9)
+        c.fill(ell(0, 1.2, W * 0.14, 1.2), zone=3, shade=0.7)
+        by = H * 0.5
+        for (x0, x1, y1) in ((-W * 0.26, -W * 0.42, H * 0.3), (-W * 0.18, -W * 0.2, H * 0.24),
+                             (W * 0.2, W * 0.36, H * 0.34), (W * 0.26, W * 0.3, H * 0.26)):
+            c.line(smooth([(x0, by), ((x0 + x1) / 2, by - H * 0.1), (x1, y1)], closed=False), 2.6, zone=1, shade=0.9)
+            c.fill(ell(x1, y1, 1.8, 1.4), zone=3, shade=0.6)
+        tail = smooth([(-W * 0.36, by + 2), (-W * 0.5, by - 2), (-W * 0.46, by - 10), (-W * 0.4, by - 4)])
+        c.fill(tail, zone=2)
+        body = smooth([(-W * 0.38, by + 1), (-W * 0.3, by + 8), (W * 0.2, by + 8), (W * 0.32, by + 12), (W * 0.36, by + 2),
+                       (W * 0.2, by - 7), (-W * 0.3, by - 7)])
+        cl = shaded(c, body, 1, "bottom", SHADE, 0.35)
+        neck = smooth([(W * 0.18, by + 5), (W * 0.3, by + 24), (W * 0.46, by + 24), (W * 0.5, by + 19), (W * 0.38, by + 16),
+                       (W * 0.34, by + 4)])
+        shaded(c, neck, 1, "right", SHADE, 0.25)
+        c.fill(smooth([(W * 0.2, by + 8), (W * 0.26, by + 24), (W * 0.34, by + 27), (W * 0.3, by + 18)]), zone=2)   # Mähne
+        c.ellipse(W * 0.4, by + 21, 0.9, 0.9, zone=0)
+        c.fill([(W * 0.33, by + 25), (W * 0.35, by + 30), (W * 0.37, by + 25)], zone=1)
+        c.fill(smooth([(-W * 0.12, by + 8), (W * 0.1, by + 8), (W * 0.06, by + 1), (-W * 0.1, by + 1)]), zone=2, clip=cl)
+        c.line([(W * 0.46, by + 20), (W * 0.2, by + 9)], 0.5, zone=2)
 
 
 # ------------------------------------------------------------------ Schule & Gesundheit
@@ -349,10 +365,23 @@ def zoo(it: Item, style: str = "feed_bucket"):
             c.line([(x, H * 0.12), (x, H * 0.85)], 0.35, zone=3)
         c.fill(smooth([(-W / 2, H * 0.85, "s"), (W / 2, H * 0.85, "s"), (0, H, "s")], n=2), zone=1)
     elif style == "aquarium":
-        body = rrect(-W / 2, 0, W / 2, H, 1)
-        c.glass(body, zone=2, opacity=0.6)
-        c.fill(rrect(-W / 2, 0, W / 2, H * 0.12, 0.5), zone=3)
-        c.fill(smooth([(W * 0.1, H * 0.5), (W * 0.25, H * 0.6), (W * 0.35, H * 0.5), (W * 0.25, H * 0.42)]), zone=1)
-        c.fill([(W * 0.08, H * 0.5), (0, H * 0.58), (0, H * 0.42)], zone=1)
-        c.line(body, 0.4, zone=0, closed=True)
+        # Glasbecken: Wasser (Zone 2), Kies (Zone 3), Wasserpflanzen, Fische, Blasen, Rahmen (Zone 1)
+        tank = rrect(-W / 2, 0, W / 2, H, 1)
+        mk = c.mask(tank)
+        c.fill(tank, zone=2, alpha=0.9)
+        c.fill(smooth([(-W / 2, 0, "s"), (W / 2, 0, "s"), (W / 2, H * 0.14), (W * 0.1, H * 0.2), (-W * 0.3, H * 0.13), (-W / 2, H * 0.17)]),
+               zone=3, clip=mk)
+        for k, x in enumerate((-W * 0.38, -W * 0.3, W * 0.3, W * 0.4)):
+            L = H * (0.5 + 0.12 * (k % 2))
+            c.line(smooth([(x, H * 0.12), (x + 2, H * 0.12 + L * 0.5), (x - 1, H * 0.12 + L)], closed=False), 1.4, zone=2, shade=0.55)
+        for (fx, fy, fr) in ((W * 0.02, H * 0.55, 4.0), (W * 0.2, H * 0.35, 3.0)):
+            c.fill(ell(fx, fy, fr, fr * 0.6), zone=3, shade=1.1)
+            c.fill([(fx - fr * 0.9, fy), (fx - fr * 1.6, fy + fr * 0.55), (fx - fr * 1.6, fy - fr * 0.55)], zone=3, shade=1.0)
+            c.ellipse(fx + fr * 0.5, fy + fr * 0.1, 0.45, 0.45, zone=0)
+        for k in range(5):
+            c.line(ell(W * 0.1 + k * 0.6, H * (0.62 + k * 0.06), 0.6 + k * 0.1, 0.6 + k * 0.1, 16), 0.2, zone=2, shade=1.2, closed=True)
+        c.fill(rrect(-W * 0.44, H * 0.2, -W * 0.4, H * 0.82, 0.3), zone=2, shade=1.25, alpha=0.5)
+        c.line(tank, 0.5, zone=1, closed=True)
+        c.fill(rrect(-W / 2, 0, W / 2, H * 0.06, 0.5), zone=1)
+        c.fill(rrect(-W / 2 - 0.5, H * 0.92, W / 2 + 0.5, H, 0.5), zone=1)
         c.fill(rrect(-W / 2, H * 0.9, W / 2, H, 0.5), zone=1)

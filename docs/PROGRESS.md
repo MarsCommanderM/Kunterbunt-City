@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
 | Nächste Task | P04b-T08 Icons · T06 Editor · T07 Tiere |
-| Letzter grüner check.sh | 2026-09-27 (P04b T11) |
+| Letzter grüner check.sh | 2026-09-27 (P04b T12) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T05, T09–T11 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T05, T09–T12 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,28 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T12 Qualitäts-Durchgang Items + Liegen 🔨
+- Blick-Check aller Vorlagen, so eingefärbt wie im Spiel: `tools/items/review_sheet.py <out> [--scale] [--states]`
+  (Shader-Formel in Python, ein Kontaktbogen je Gruppe).
+- Nachgezeichnet: Luftmatratze (Kissenwulst, 6 Kammern, Ventil), Schwimmring (echtes Loch), Flossen, Liegestuhl,
+  Strandtuch, Schlafsack, Campingstuhl, Findling mit Moos, Lagerfeuer (Steinring + Holz-Tipi), Fußballtor mit
+  Netz-Tiefe, Hockeyschläger, Holzschlitten, Karussellpferd im Galopp, Aquarium (Wasser, Kies, Fische), Sandkasten,
+  Puppe im Figuren-Stil, Kerze (Flamme orange), Palme (gebogene Wedel), Glücksbambus, Efeu (Ranken über den Topfrand).
+- Fehler gefunden (nur durch Hinschauen):
+  - Zeichenfläche hatte oben nur 6 cm Rand → offene Deckel (Kühlbox, Grill, Werkzeugkasten) wurden abgeschnitten.
+    Jetzt 80 % der Höhe Luft oben, danach wird eng zugeschnitten.
+  - Pflanzen nutzten `hash()` als Zufalls-Seed → bei jedem Lauf andere Bilder. Jetzt `zlib.crc32` (+ pytest, der
+    mit zwei verschiedenen `PYTHONHASHSEED` vergleicht und mit dem alten Code rot war).
+  - Katze aus `default_items` erschien in Roh-Zonenfarben (rot/grün/gelb) → Tiere ohne Farben bekommen das
+    Standard-Fell ihrer Art (GUT-Test).
+  - Liegende Figur schwebte ~20 cm über der Luftmatratze: der große Kopf ist dicker als der Körper. Jetzt leicht
+    geneigt (max. 26°, wie auf einem Kissen), Kopf und Füße liegen auf, Haare dürfen aufs Kissen fallen. Gemessen
+    wird der echte Umriss (`LayerGeometry.lowest`, `BitMap.opaque_to_polygons`) statt gedrehter Rechtecke – die
+    Rechteck-Ecke des runden Kopfes lag 10 cm tiefer als der Kopf.
+- Beweis: `docs/tests/P04b/p04b_05_luftmatratze_in_der_kueche.jpg` (Zuhause hat bis P07 nur die Küche als Raum).
+- Tests: check.sh ✅ – Maßstab (1087 Items) · pytest 124/124 · GUT 256/256
+  (neu: `test_items_review` ×2, `test_pet_without_own_colors_gets_default_fur`, `test_kid_lies_on_the_pool_air_mattress`,
+  Liege-Test auf „Kopf und Füße liegen auf“ umgestellt).
 ### 2026-09-27 · Phase 04b · T11 Mehr Spiel draußen, im Laden und in der Werkstatt 🔨
 - Neue Zustände (Tippen): Grill an (Deckel hoch, Glut, Rauch), Lagerfeuer an/aus (aus = Holz + Rauchfaden),
   Laterne leuchtet, Zelt-Tür auf/zu, Kühlbox auf, Kasse auf (Geldschublade mit Scheinen/Münzen, Hüpfer),

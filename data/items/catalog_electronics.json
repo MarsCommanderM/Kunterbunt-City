@@ -97,8 +97,8 @@
    "id": "deco_radio_coral",
    "scale_ref": "c_deco_radio",
    "size_cm": [
-    31.9,
-    28.9
+    31.8,
+    32.2
    ],
    "pivot": [
     0.5,
@@ -134,8 +134,8 @@
    "id": "deco_radio_sky",
    "scale_ref": "c_deco_radio",
    "size_cm": [
-    31.9,
-    28.9
+    31.8,
+    32.2
    ],
    "pivot": [
     0.5,
@@ -171,8 +171,8 @@
    "id": "deco_radio_cream",
    "scale_ref": "c_deco_radio",
    "size_cm": [
-    31.9,
-    28.9
+    31.8,
+    32.2
    ],
    "pivot": [
     0.5,
@@ -209,7 +209,7 @@
    "scale_ref": "c_deco_laptop",
    "size_cm": [
     35.5,
-    25.5
+    25.6
    ],
    "pivot": [
     0.5,
@@ -243,7 +243,7 @@
    "scale_ref": "c_deco_laptop",
    "size_cm": [
     35.5,
-    25.5
+    25.6
    ],
    "pivot": [
     0.5,
@@ -277,7 +277,7 @@
    "scale_ref": "c_deco_laptop",
    "size_cm": [
     35.5,
-    25.5
+    25.6
    ],
    "pivot": [
     0.5,

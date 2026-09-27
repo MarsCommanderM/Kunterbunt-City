@@ -408,7 +408,7 @@
    "id": "zoo_aquarium_black",
    "scale_ref": "c_zoo_aquarium",
    "size_cm": [
-    82.0,
+    82.5,
     52.0
    ],
    "pivot": [
@@ -435,7 +435,7 @@
    "id": "zoo_aquarium_oak",
    "scale_ref": "c_zoo_aquarium",
    "size_cm": [
-    82.0,
+    82.5,
     52.0
    ],
    "pivot": [

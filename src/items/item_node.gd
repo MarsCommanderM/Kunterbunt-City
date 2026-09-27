@@ -65,6 +65,8 @@ func _build_visual() -> void:
 	sprite.texture = load(def.sprite_path)
 	if not def.colors.is_empty():
 		CharacterLook.apply(sprite, Array(def.colors))      # P04b: Farbzonen + Tinte (wie die Figuren)
+	elif PetSpecies.ids().has(String(def.id)):           # Tier ohne eigene Farben (z. B. aus default_items)
+		CharacterLook.apply(sprite, PetSpecies.default_fur(String(def.id)).map(func(h: Variant) -> Color: return Color(String(h))))
 	add_child(sprite)
 
 

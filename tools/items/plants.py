@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import math
 import random
+import zlib
 
 from .kit import DEEP, LINE, SHADE, SOFT, Item, ell, line, rrect, shaded, smooth
 
@@ -142,7 +143,7 @@ def tulip(c, x, y, r, zone=3):
 # ------------------------------------------------------------------ Arten
 def plant(it: Item, species: str, pot_style: str = "terracotta", seed: int = 1):
     c, W, H = it.c, it.w, it.h
-    rnd = random.Random(hash((species, pot_style, seed)) & 0xFFFFFFFF)
+    rnd = random.Random(zlib.crc32(f"{species}|{pot_style}|{seed}".encode()))   # stabil über Läufe (hash() ist gesalzen)
     big = H > 70
     pw = min(W * 0.62, 18 + H * 0.1) if big else W * 0.7
     ph = min(H * (0.3 if big else 0.4), pw * 1.0)
@@ -258,17 +259,24 @@ def plant(it: Item, species: str, pot_style: str = "terracotta", seed: int = 1):
             for k in range(6):
                 c.ellipse(rnd.uniform(-cw * 0.7, cw * 0.7), rnd.uniform(trunk_top + 5, top - 5), 0.9, 1.2, zone=3)
     elif species == "palm":
-        for i in range(7):
-            ang = 90 + (i - 3) * 24
-            L = avail * rnd.uniform(0.75, 1.0)
+        # Fächer aus 8 gebogenen Wedeln; Fiederblätter folgen der Wedel-Richtung und hängen leicht
+        for i in range(8):
+            ang = 90 + (i - 3.5) * 22
+            L = avail * rnd.uniform(0.72, 0.98)
             a = math.radians(ang)
-            ex, ey = math.cos(a) * L, ground + math.sin(a) * L * 0.85
-            stem(c, [(0, ground), (ex * 0.4, ground + (ey - ground) * 0.7), (ex, ey)], 0.6)
-            for k in range(2, 12):
-                t = k / 12
-                px, py = ex * t, ground + (ey - ground) * (t * 1.4 - 0.4 * t * t)
-                for s in (-1, 1):
-                    leaf(c, px, py, L * 0.2 * (1 - t * 0.5), 1.4, ang + s * 50 - 10, rib=False)
+            ex, ey = math.cos(a) * L, ground + math.sin(a) * L * 0.8
+            droop = L * (0.08 + 0.18 * abs(math.cos(a)))
+            def fp(t):
+                return ex * t, ground + (ey - ground) * t + droop * math.sin(math.pi * t) - droop * t * t * 1.6
+            pts = [fp(t / 10) for t in range(11)]
+            stem(c, pts, 0.7)
+            for k in range(2, 11):
+                t = k / 11
+                (px, py), (qx, qy) = fp(t), fp(t + 0.05)
+                tang = math.degrees(math.atan2(qy - py, qx - px))
+                for sgn in (-1, 1):
+                    leaf(c, px, py, L * 0.2 * (1.1 - t * 0.6), 2.2, tang + sgn * 38 - 12,
+                         rib=False, shade=1.0 if sgn > 0 else 0.86)
     elif species in ("tulips", "roses", "sunflower", "daisies", "lavender", "hydrangea", "poinsettia"):
         n = {"tulips": 6, "roses": 5, "sunflower": 3, "daisies": 9, "lavender": 9, "hydrangea": 3, "poinsettia": 1}[species]
         heads = []
@@ -370,13 +378,18 @@ def plant(it: Item, species: str, pot_style: str = "terracotta", seed: int = 1):
                 y = ground + rnd.uniform(avail * 0.1, avail * 0.85)
                 leaf(c, x, y, avail * 0.2, avail * 0.14, rnd.uniform(40, 140), shade=rnd.choice([1.0, 0.9, 0.84]), rib=False)
         elif species == "bamboo":
-            for i in range(4):
-                x = (i - 1.5) * pw * 0.12
-                L = avail * rnd.uniform(0.7, 1.0)
-                c.fill(rrect(x - 1.1, ground, x + 1.1, ground + L, 0.8), zone=1, shade=0.85)
-                for k in range(1, 5):
-                    c.line([(x - 1.2, ground + L * k / 5), (x + 1.2, ground + L * k / 5)], 0.35, zone=1, shade=0.6)
-                leaf(c, x, ground + L - 1, L * 0.25, L * 0.1, 60 + i * 20, rib=False)
+            # Glücksbambus: 5 Halme verschieden hoch, Knoten, Blattbüschel oben und kleine Seitentriebe
+            for i, (fx, fh) in enumerate(((-0.24, 0.72), (-0.1, 1.0), (0.04, 0.84), (0.18, 0.95), (0.3, 0.66))):
+                x = fx * pw
+                L = avail * fh
+                c.fill(rrect(x - 1.3, ground, x + 1.3, ground + L, 0.9), zone=1, shade=0.9 if i % 2 else 0.82)
+                c.fill(rrect(x - 0.4, ground, x + 0.1, ground + L - 0.5, 0.3), zone=1, shade=1.05, alpha=0.6)
+                for k in range(1, 4):
+                    y = ground + L * k / 4
+                    c.fill(rrect(x - 1.5, y - 0.35, x + 1.5, y + 0.35, 0.3), zone=1, shade=0.62)
+                for k in range(3):
+                    leaf(c, x, ground + L - 0.5, L * 0.28, L * 0.1, 55 + k * 35, rib=False, shade=1.0 - 0.07 * k)
+                leaf(c, x + 1, ground + L * 0.5, L * 0.18, L * 0.07, 25 if i % 2 else 155, rib=False, shade=0.9)
         elif species == "grass":
             for i in range(28):
                 ang = 90 + (i - 13.5) * 3.2 + rnd.uniform(-3, 3)
@@ -399,22 +412,25 @@ def plant(it: Item, species: str, pot_style: str = "terracotta", seed: int = 1):
                 c.ellipse(x, y, r, r * (1.2 if species == "strawberry" else 0.95), zone=3)
                 c.ellipse(x - r * 0.3, y + r * 0.35, r * 0.25, r * 0.2, zone=2, alpha=0.5)
         elif species == "ivy":
-            for i in range(5):
-                x0 = (i - 2) * pw * 0.12
-                pts = [(x0, ground), (x0 * 1.8 + (6 if i % 2 else -6), ground - avail * 0.1),
-                       (x0 * 2.5, ground - rnd.uniform(0.1, 0.35) * H)]
-                c.line(smooth(pts, closed=False), 0.4, zone=1, shade=0.6)
-                for k in range(6):
-                    t = k / 5
-                    px = pts[0][0] + (pts[2][0] - pts[0][0]) * t
-                    py = pts[0][1] + (pts[2][1] - pts[0][1]) * t
-                    leaf(c, px, py, 3.2, 2.6, rnd.uniform(-160, -20), rib=False, shade=rnd.choice([1.0, 0.9]))
-            fan_leaves(6, avail * 0.3, avail * 0.5, 0.6, 60)
+            fan_leaves(8, avail * 0.35, avail * 0.6, 0.7, 70)
     else:
         fan_leaves(7, avail * 0.6, avail * 0.95, 0.35, 60)
     # Topf VOR die Stiele malen: die Pflanze wächst aus der Erde im Topf
     pot(it, pot_style, pw, ph)
     c.fill(ell(0, ground - 0.3, pw * 0.38, max(0.8, ph * 0.06)), zone=0, alpha=0.55)
+    if species == "ivy":   # Ranken hängen über den Topfrand nach unten (nie unter den Boden)
+        for i in range(6):
+            sx = -1 if i % 2 else 1
+            x0 = sx * pw * (0.3 + 0.03 * i)
+            y_end = max(1.0, ground - ph * rnd.uniform(0.35, 0.95))
+            pts = [(x0 * 0.8, ground + 1), (x0 * 1.08, ground - 1), (x0 * 1.12, (ground + y_end) / 2), (x0 * 1.05, y_end)]
+            stem(c, pts, 0.4, shade=0.6)
+            for k in range(5):
+                t = k / 4
+                px = x0 * (0.85 + 0.25 * t)
+                py = ground + (y_end - ground) * t
+                leaf(c, px, py, 3.0, 2.5, sx * 20 - 90 + rnd.uniform(-40, 40) if sx > 0 else -90 - 20 + rnd.uniform(-40, 40),
+                     rib=False, shade=rnd.choice([1.0, 0.9]))
 
 
 SPECIES = {

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import math
 
+from .household import _band
 from .kit import SHADE, SOFT, Item, ell, knob, line, rrect, shaded, smooth, trap
 
 
@@ -77,13 +78,26 @@ def toy(it: Item, style: str = "ball"):
         c.line([(0, H * 0.9), (0, H)], 0.5, zone=3)
         c.ellipse(0, H - 0.8, 1.0, 1.0, zone=2)
     elif style == "doll":
-        c.fill(trap(-W * 0.4, W * 0.4, H * 0.08, -W * 0.2, W * 0.2, H * 0.55, 1), zone=1)
-        c.fill(ell(0, H * 0.72, W * 0.28, H * 0.18), zone=3, shade=1.0)
-        c.fill(smooth([(-W * 0.32, H * 0.55), (-W * 0.3, H * 0.9), (0, H), (W * 0.3, H * 0.9), (W * 0.32, H * 0.55),
-                       (W * 0.2, H * 0.8), (-W * 0.2, H * 0.8)]), zone=2)
+        # Puppe im Figuren-Stil: großer Kopf, Pony, Wangen, Kleid mit Kragen, Ärmchen, Schuhe
+        hr = W * 0.36
+        hy = H - hr
         for sx in (-1, 1):
-            c.ellipse(sx * W * 0.09, H * 0.72, 0.5, 0.6, zone=0)
-            c.fill(rrect(sx * W * 0.12 - 0.8, 0, sx * W * 0.12 + 0.8, H * 0.1, 0.4), zone=3)
+            c.fill(rrect(sx * W * 0.1 - 1.0, H * 0.04, sx * W * 0.1 + 1.0, H * 0.3, 0.8), zone=3)
+            c.fill(rrect(sx * W * 0.1 - 1.4, 0, sx * W * 0.1 + 1.4, H * 0.06, 0.8), zone=2, shade=0.7)
+            c.line([(sx * W * 0.2, H * 0.52), (sx * W * 0.36, H * 0.3)], 1.6, zone=3)
+        dress = smooth([(-W * 0.36, H * 0.22, "s"), (W * 0.36, H * 0.22, "s"), (W * 0.18, H * 0.56), (-W * 0.18, H * 0.56)])
+        cl = shaded(c, dress, 1, "right", SHADE, 0.25)
+        c.fill(rrect(-W * 0.4, H * 0.2, W * 0.4, H * 0.26, 0.5), zone=1, shade=0.8, clip=cl)
+        c.fill(smooth([(-W * 0.16, H * 0.56), (0, H * 0.5), (W * 0.16, H * 0.56), (0, H * 0.6)]), zone=1, shade=1.15)
+        c.fill(ell(0, hy + 1, hr * 1.12, hr * 1.1), zone=2)                      # Haare hinten
+        c.fill(ell(0, hy, hr, hr * 0.95), zone=3, shade=1.0)                     # Gesicht
+        c.fill(smooth([(-hr * 1.05, hy), (-hr * 0.9, hy + hr * 0.8), (0, hy + hr * 1.08), (hr * 0.9, hy + hr * 0.8), (hr * 1.05, hy),
+                       (hr * 0.5, hy + hr * 0.45), (0, hy + hr * 0.5), (-hr * 0.5, hy + hr * 0.45)]), zone=2)
+        for sx in (-1, 1):
+            c.ellipse(sx * hr * 0.4, hy - hr * 0.05, hr * 0.13, hr * 0.17, zone=0)
+            c.ellipse(sx * hr * 0.4 + hr * 0.04, hy + hr * 0.02, hr * 0.04, hr * 0.05, zone=3, shade=1.2)
+            c.ellipse(sx * hr * 0.62, hy - hr * 0.35, hr * 0.12, hr * 0.07, zone=1, alpha=0.5)
+        c.line(smooth([(-hr * 0.15, hy - hr * 0.45), (0, hy - hr * 0.55), (hr * 0.15, hy - hr * 0.45)], closed=False), 0.3, zone=0)
     elif style == "drum":
         body = rrect(-W / 2, 0, W / 2, H * 0.8, 2)
         cl = shaded(c, body, 1, "right", SHADE, 0.25)
@@ -143,31 +157,56 @@ def toy(it: Item, style: str = "ball"):
 def pool(it: Item, style: str = "air_mattress", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "air_mattress":
-        body = rrect(-W / 2, 0, W / 2, H, H * 0.45)
-        cl = shaded(c, body, 1, "bottom", SHADE, 0.35)
-        for k in range(1, 7):
-            line(c, [(-W / 2 + W * k / 7, 1), (-W / 2 + W * k / 7, H - 1)], clip=cl, shade=0.8)
-        c.fill(rrect(-W / 2 + 2, H * 0.15, -W / 2 + W * 0.18, H * 0.85, H * 0.3), zone=2, clip=cl)
+        # Seitenansicht mit leichter Aufsicht: Kopfkissen-Wulst links, 6 prall gewölbte Kammern, Ventil, Glanz
+        pil = W * 0.2
+        top = [(-W / 2 + 1.5, H * 0.5), (-W / 2 + pil * 0.2, H), (-W / 2 + pil * 0.8, H), (-W / 2 + pil, H * 0.8)]
+        n = 6
+        for k in range(n):
+            x0 = -W / 2 + pil + (W - pil) * k / n
+            x1 = -W / 2 + pil + (W - pil) * (k + 1) / n
+            top += [((x0 * 0.7 + x1 * 0.3), H * 0.84), ((x0 + x1) / 2, H * 0.86), ((x0 * 0.3 + x1 * 0.7), H * 0.84),
+                    (x1, H * 0.74 if k < n - 1 else H * 0.6)]
+        body = [(W / 2, H * 0.3), (W / 2 - 2, 0, "s"), (-W / 2 + 2, 0, "s")] + top
+        cl = shaded(c, smooth(body), 1, "bottom", SHADE, 0.35)
+        for k in range(n + 1):
+            x = -W / 2 + pil + (W - pil) * k / n
+            line(c, [(x, H * 0.08), (x, H * 0.72)], clip=cl, shade=0.78)
+        c.fill(smooth([(-W / 2 + 3, H * 0.62), (-W / 2 + pil * 0.3, H * 0.9), (-W / 2 + pil * 0.85, H * 0.86),
+                       (-W / 2 + pil * 0.9, H * 0.55), (-W / 2 + pil * 0.4, H * 0.45)]), zone=2, clip=cl)
+        c.fill(rrect(-W / 2 + pil + 3, H * 0.64, W / 2 - 6, H * 0.71, H * 0.035), zone=2, alpha=0.6)
+        c.fill(rrect(W / 2 - 5, H * 0.3, W / 2 - 2, H * 0.5, 0.6), zone=3)
     elif style == "swim_ring":
-        body = ell(0, H / 2, W / 2, H / 2)
-        cl = shaded(c, body, 1, "bottom", SHADE, 0.35)
-        for k in range(4):
-            a0 = k * 90
-            pts = [(0, H / 2)] + [(math.cos(math.radians(a)) * W, H / 2 + math.sin(math.radians(a)) * H)
+        # echter Reifen: Loch in der Mitte, 8 Streifen, Glanzbogen
+        R, r = W / 2, W * 0.2
+        ring = ell(0, H / 2, R, H / 2, 64)
+        cl = shaded(c, ring, 1, "bottom", SHADE, 0.3)
+        for k in range(0, 8, 2):
+            a0 = k * 45 + 22
+            pts = [(0, H / 2)] + [(math.cos(math.radians(a)) * W, H / 2 + math.sin(math.radians(a)) * W)
                                   for a in range(a0, a0 + 46, 5)]
             c.fill(pts, zone=2, clip=cl)
-        c.fill(ell(0, H * 0.62, W * 0.22, H * 0.12), zone=0, alpha=0.75)
+        c.line(ell(0, H / 2, (R + r) / 2, (H / 2 + r) / 2 * 1.0, 64), 0.25, zone=1, shade=0.7, closed=True)
+        c.fill(_band(smooth([(-R * 0.75, H * 0.62), (-R * 0.45, H * 0.9), (0, H * 0.97)], closed=False, n=10), 1.1),
+               zone=2, alpha=0.8)
+        c.line(ell(0, H / 2, r, r, 48), 0.4, zone=0, closed=True)
+        c.erase(ell(0, H / 2, r - 0.2, r - 0.2, 48))
     elif style == "noodle":
         body = rrect(-W / 2, 0, W / 2, H, H / 2)
         cl = shaded(c, body, 1, "bottom", SHADE, 0.35)
         for k in range(1, 8):
             line(c, [(-W / 2 + W * k / 8, 0), (-W / 2 + W * k / 8, H)], clip=cl, shade=0.88)
     elif style == "flippers":
-        for sx, z in ((-1, 1), (1, 1)):
-            fin = smooth([(sx * W * 0.08, 0, "s"), (sx * W / 2, 0, "s"), (sx * W * 0.45, H * 0.6), (sx * W * 0.3, H),
-                          (sx * W * 0.12, H * 0.6)])
-            shaded(c, fin, z, "bottom", SHADE, 0.35)
-            c.fill(ell(sx * W * 0.25, H * 0.75, W * 0.1, H * 0.14), zone=2)
+        # zwei Flossen hintereinander: Fußtasche + lange, gerippte Flosse
+        for dx, sh in ((W * 0.08, 0.82), (-W * 0.02, 1.0)):
+            fin = smooth([(-W / 2 + dx, H * 0.1, "s"), (W * 0.1 + dx, H * 0.1), (W / 2 + dx - 2, H * 0.05, "s"),
+                          (W / 2 + dx - 1, H * 0.3, "s"), (W * 0.1 + dx, H * 0.5), (-W * 0.2 + dx, H * 0.9),
+                          (-W * 0.42 + dx, H, "s"), (-W / 2 + dx, H * 0.7)])
+            cl = shaded(c, fin, 1, "bottom", SHADE * sh, 0.3)
+            c.fill(smooth([(-W * 0.44 + dx, H * 0.3), (-W * 0.2 + dx, H * 0.32), (-W * 0.26 + dx, H * 0.75),
+                           (-W * 0.42 + dx, H * 0.8)]), zone=2, shade=sh, clip=cl)
+            for k in range(3):
+                x = W * (0.05 + k * 0.13) + dx
+                line(c, [(x, H * 0.22), (x + W * 0.1, H * 0.18)], clip=cl, shade=0.75)
     elif style == "goggles":
         for sx in (-1, 1):
             c.glass(ell(sx * W * 0.22, H / 2, W * 0.22, H * 0.4), zone=2, opacity=0.5)
@@ -182,20 +221,27 @@ def pool(it: Item, style: str = "air_mattress", state: str = ""):
         for k in (-0.3, 0.3):
             c.fill(smooth([(0, H), (k * W, H * 0.64), (k * W * 1.6, H * 0.62)]), zone=2, clip=cl)
     elif style == "deck_chair":
-        c.line([(-W / 2, 0), (W * 0.3, H)], 1.6, zone=3)
-        c.line([(W / 2, 0), (-W * 0.2, H * 0.55)], 1.6, zone=3)
-        c.fill(smooth([(-W * 0.36, H * 0.12, "s"), (-W * 0.1, H * 0.3), (W * 0.3, H * 0.95, "s"), (W * 0.2, H, "s"),
-                       (-W * 0.2, H * 0.4), (-W * 0.44, H * 0.2, "s")]), zone=1)
-        for k in range(1, 4):
-            t = k / 4
-            c.line([(-W * 0.4 + t * W * 0.6, H * (0.16 + t * 0.8) - 1.2), (-W * 0.36 + t * W * 0.6, H * (0.12 + t * 0.8) + 1.2)],
-                   1.2, zone=2)
+        # Klappliegestuhl (vorne = rechts): Rückenrahmen lehnt nach hinten, Stoffbahn hängt vom oberen zum vorderen Holm
+        c.line([(W * 0.18, 0), (-W * 0.4, H)], 2.2, zone=3)                     # Rückenrahmen
+        c.line([(W * 0.45, 0), (W * 0.3, H * 0.52)], 2.2, zone=3)                # Vorderbein
+        c.line([(-W * 0.3, 0), (W * 0.3, H * 0.52)], 2.0, zone=3, shade=0.85)    # Sitzrahmen
+        curve = smooth([(-W * 0.38, H * 0.95), (-W * 0.2, H * 0.55), (-W * 0.02, H * 0.3), (W * 0.18, H * 0.36),
+                        (W * 0.3, H * 0.52)], closed=False, n=10)
+        sling = _band(curve, 2.4)
+        cl = shaded(c, sling, 1, "bottom", SHADE, 0.3)
+        c.fill(_band(curve, 0.9), zone=2, clip=cl)
+        for x, y in ((-W * 0.4, H), (W * 0.3, H * 0.52)):
+            c.ellipse(x, y, 1.5, 1.5, zone=3, shade=0.8)
     elif style == "towel_beach":
-        body = rrect(-W / 2, 0, W / 2, H, 1)
+        # ausgebreitetes Strandtuch, leicht gewellt, Streifen + Fransen an den Enden
+        body = smooth([(-W / 2, 0, "s"), (W / 2, 0, "s"), (W / 2, H * 0.8), (W * 0.2, H), (-W * 0.2, H * 0.75), (-W / 2, H)])
         cl = shaded(c, body, 1, "bottom", SOFT, 0.3)
         for k in range(1, 6, 2):
-            c.fill([(-W / 2 + W * k / 6, 0), (-W / 2 + W * (k + 1) / 6, 0), (-W / 2 + W * (k + 1) / 6, H), (-W / 2 + W * k / 6, H)],
-                   zone=2, clip=cl)
+            c.fill([(-W / 2 + W * k / 6, 0), (-W / 2 + W * (k + 1) / 6, 0), (-W / 2 + W * (k + 1) / 6, H * 2),
+                    (-W / 2 + W * k / 6, H * 2)], zone=2, clip=cl)
+        for sx in (-1, 1):
+            for k in range(4):
+                c.line([(sx * W / 2, H * (0.2 + k * 0.2)), (sx * (W / 2 + 2), H * (0.15 + k * 0.2))], 0.4, zone=2)
     elif style == "cooler":
         body = rrect(-W / 2, 0, W / 2, H * 0.8, 2)
         shaded(c, body, 1, "right", SHADE, 0.2)

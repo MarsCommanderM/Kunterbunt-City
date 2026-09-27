@@ -102,6 +102,34 @@ func run(args: PackedStringArray) -> void:
 	area.camera.set_visible_height(330.0)
 	await _frames(8)
 	await _shot("p04b_04_zustaende_kochen")
+	# „Alles geht überall“: Schwimmbad-Luftmatratze als Bett in der Küche (Zuhause hat bis P07 nur diesen Raum)
+	for it: ItemNode in Placement.all_items(area.room):
+		if not (it is CharacterRig) and not (it is PetNode):
+			it.queue_free()
+	await _frames(2)
+	var mat: ItemNode = ItemSpawner.on_floor(area.room, &"pool_air_mattress_coral", 330.0, 30.0)
+	ItemSpawner.on_floor(area.room, &"furn_sofa_classic_mint", 560.0, 8.0)
+	ItemSpawner.on_floor(area.room, &"pool_swim_ring_sky", 180.0, 12.0)
+	ItemSpawner.on_floor(area.room, &"pool_inflatable_animal_butter", 110.0, 50.0)
+	ItemSpawner.on_floor(area.room, &"plant_palm_basket_oak", 700.0, 12.0)
+	ItemSpawner.on_floor(area.room, &"camp_lantern_green", 460.0, 60.0)
+	var fig: CharacterRig = null
+	for it: ItemNode in Placement.all_items(area.room):
+		if it is CharacterRig:
+			fig = it
+	var how: String = "keine Figur"
+	if fig != null and mat != null:
+		var p: Vector2 = Seats.point_global(mat, 0)
+		p -= fig.hip_offset() * fig.global_scale.y
+		area.drag.scripted_move(fig, p + Vector2(6, -8))
+		how = fig.body_pose if Seats.seat_host_of(fig) == mat else "nicht auf der Matratze"
+	for it: ItemNode in Placement.all_items(area.room):
+		if String(it.def.id) == "camp_lantern_green":
+			ItemStates.set_state(it, "on", true)
+	print("Luftmatratze in der Küche: Figur %s" % how)
+	area.camera.set_visible_height(330.0)
+	await _frames(90)     # Ablegen/Ankunfts-Hüpfer ausklingen lassen (Tweens)
+	await _shot("p04b_05_luftmatratze_in_der_kueche")
 	get_tree().quit()
 
 

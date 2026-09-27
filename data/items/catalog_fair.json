@@ -62,7 +62,7 @@
    "scale_ref": "c_fair_popcorn",
    "size_cm": [
     17.7,
-    24.2
+    24.1
    ],
    "pivot": [
     0.5,
@@ -180,8 +180,8 @@
    "id": "fair_carousel_horse_cream",
    "scale_ref": "c_fair_carousel_horse",
    "size_cm": [
-    92.4,
-    181.5
+    101.9,
+    181.8
    ],
    "pivot": [
     0.5,
@@ -207,8 +207,8 @@
    "id": "fair_carousel_horse_rose",
    "scale_ref": "c_fair_carousel_horse",
    "size_cm": [
-    92.4,
-    181.5
+    101.9,
+    181.8
    ],
    "pivot": [
     0.5,
@@ -234,8 +234,8 @@
    "id": "fair_carousel_horse_sky",
    "scale_ref": "c_fair_carousel_horse",
    "size_cm": [
-    92.4,
-    181.5
+    101.9,
+    181.8
    ],
    "pivot": [
     0.5,

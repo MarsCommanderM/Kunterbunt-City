@@ -19,6 +19,7 @@ Räume starten leer, eingerichtet wird über einen Katalog · alle Icons neu im 
 | P04b-T09 | Item-Bibliothek (hunderte Items, Farbvarianten) + Katalog in jedem Raum | ✅ |
 | P04b-T10 | Zustände (Schränke/Schubladen auf, Geräte an/aus mit Animation), Kochen mit Rezepten, Großgeräte, gekochte Speisen, > 1000 Katalog-Items | ✅ |
 | P04b-T11 | Mehr Spiel: Grill (Deckel hoch, Glut, Rauch), Lagerfeuer an/aus, Laterne, Zelt-Tür, Kühlbox, Kasse (Geldschublade), Bohrer, Werkzeugkasten; 5 neue Rezepte am Grill/Feuer | ✅ |
+| P04b-T12 | Qualitäts-Durchgang Items: alle ~350 Vorlagen im Kontaktbogen geprüft (`tools/items/review_sheet.py`), 20 schwache nachgezeichnet, Zeichenfläche oben größer (nichts wird abgeschnitten), Pflanzen reproduzierbar; Liegen geneigt wie auf einem Kissen (Kopf + Füße liegen auf), Tiere ohne eigene Farben bekommen Standard-Fell | ✅ |
 
 ## Akzeptanzkriterien
 - [x] Alle Größen aus der Tabelle, Körper-Größe unabhängig von Teilen (`test_rig_builds_with_every_variant`)

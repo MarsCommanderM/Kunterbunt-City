@@ -14,6 +14,7 @@ const ARM_TWO: float = 0.58
 static var animate_poses: bool = true   ## false: Posen springen (Tests, Screenshots, Messungen)
 
 const ARM_CARRIED: float = 1.05     ## Arme hoch, wenn die Figur getragen wird („Wiii!“)
+const LIE_TILT_MAX: float = 0.45    ## max. Neigung beim Liegen (≈ 26°, Kopf wie auf einem dicken Kissen)
 
 var template_id: String
 var t: Dictionary
@@ -311,11 +312,22 @@ func _set_body_pose(bp: String) -> void:
 			# Beide Arme liegen OBEN auf dem Körper (sonst hängt einer unterm Rücken)
 			arm_back.position.x = float(t["shoulder"]["x"])
 			arm_front.position.x = float(t["shoulder"]["x"]) * 0.55
-			# Tiefste Stelle nach der Drehung = linkeste Stelle jetzt (Haare, Kopf, Rumpf) → liegt auf
+			# Der große Kopf ist dicker als Rumpf und Beine: waagerecht läge nur der Kopf auf und der Körper
+			# schwebte. Darum leicht geneigt wie auf einem Kissen – Kopf UND Füße liegen auf (max. 26°).
 			parts.rotation = 0.0
-			thick = maxf(0.0, -LayerGeometry.bounds(parts, _layers.values()).position.x)
-			parts.rotation = -PI * 0.5
-			_pose_offset = Vector2(hip, -hip - thick)
+			var legs: Array = [_layers["Legs"], _layers["Shoes"]]
+			var solid: Array = _layers.values().filter(func(sp: Sprite2D) -> bool: return not String(sp.name).begins_with("Hair"))
+			var rot := Transform2D(-PI * 0.5, Vector2.ZERO)
+			var tilt: float = 0.0
+			while tilt < LIE_TILT_MAX:      # kleinste Neigung, bei der die Beine so tief liegen wie der Kopf
+				rot = Transform2D(-PI * 0.5 + tilt, Vector2.ZERO)
+				if LayerGeometry.lowest(parts, legs, rot) >= LayerGeometry.lowest(parts, solid, rot) - 1.0:
+					break
+				tilt = minf(tilt + 0.02, LIE_TILT_MAX)
+			rot = Transform2D(-PI * 0.5 + tilt, Vector2.ZERO)
+			thick = LayerGeometry.lowest(parts, solid, rot)     # Haare sind weich: sie liegen aufs Kissen
+			parts.rotation = -PI * 0.5 + tilt
+			_pose_offset = Vector2(-(rot * Vector2(0, -hip)).x, -hip - thick)
 		_:
 			parts.rotation = 0.0
 			_pose_offset = Vector2.ZERO

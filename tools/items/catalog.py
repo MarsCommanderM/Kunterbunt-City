@@ -223,7 +223,7 @@ for st, w, h, names, place in (("vase", 16, 30, ["cream", "sky", "coral", "sage"
                                ("broom", 30, 130, ["butter", "coral"], "floor"), ("bucket_mop", 34, 60, ["sky", "coral"], "floor")):
     hold = "none" if st in ("rug",) else None
     S(f"deco_{st}", HH.deco, st, w, h, "deco" if st not in ("radio", "laptop", "phone") else "electronics",
-      "item", names, second="sky" if st != "globe" else "sky", third="oak" if st != "globe" else "metal",
+      "item", names, second="orange" if st == "candle" else "sky", third="oak" if st != "globe" else "metal",
       placement=place, hold=hold if hold else ("one_hand" if h <= 150 and st != "cushion" else "two_hands"))
 # --- Spielzeug
 for st, w, h, names in (("ball", 22, 22, BRIGHT[:5]), ("beachball", 30, 30, ["cream"]), ("football", 22, 22, ["white"]),
@@ -236,7 +236,7 @@ for st, w, h, names in (("ball", 22, 22, BRIGHT[:5]), ("beachball", 30, 30, ["cr
                         ("skateboard", 80, 10, ["coral", "teal", "navy"]), ("bucket_spade", 26, 24, ["coral", "sky", "butter"])):
     second = {"beachball": "coral", "football": "black", "teddy": "sand", "blocks": "sky", "train": "sky", "robot": "butter",
               "doll": "walnut", "puzzle": "sky"}.get(st, "cream")
-    third = {"beachball": "sky", "blocks": "butter", "teddy": "coral", "car": "metal", "train": "butter", "doll": "rose",
+    third = {"beachball": "sky", "blocks": "butter", "teddy": "coral", "car": "metal", "train": "butter", "doll": "sand",
              "xylophone": "sky", "puzzle": "butter", "kite": "coral", "rocking_horse": "walnut", "balloon": "cream"}.get(st, "walnut")
     extra = {}
     if st == "rocking_horse":
@@ -287,7 +287,7 @@ for st, w, h, names, extra in (("tent", 200, 140, ["coral", "sage", "sky", "butt
                                ("rock", 80, 50, ["grey", "sand"], {"seat": {"h": 50, "pose": "sit", "slots": 1}}),
                                ("signpost", 60, 160, ["oak"], {}), ("binoculars", 14, 12, ["black", "green"], {})):
     second = {"tent": "cream", "campfire": "butter", "lantern": "butter", "log": "pine", "stump": "pine", "mushroom": "cream",
-              "bush": "coral", "signpost": "pine", "sleeping_bag": "butter"}.get(st, "cream")
+              "bush": "coral", "signpost": "pine", "sleeping_bag": "butter", "rock": "leaf"}.get(st, "cream")
     third = {"tent": "oak", "campfire": "walnut", "log": "walnut", "stump": "walnut", "tree": "walnut", "fir": "walnut",
              "lantern": "metal", "backpack_hiking": "metal"}.get(st, "metal")
     S(f"camp_{st}", OD.camping, st, w, h,
@@ -303,7 +303,7 @@ for st, w, h, names, extra in (("slide", 200, 180, ["coral", "sky", "butter"], {
                                ("bike_rack", 150, 70, ["metal"], {}), ("sandpit", 180, 30, ["butter"], {})):
     S(f"play_{st}", OD.playground, st, w, h, "playground" if st in ("slide", "swing", "seesaw", "sandpit") else "bikes",
       "toy" if st not in ("slide", "swing", "seesaw", "sandpit", "bike_rack") else "item", names,
-      second="cream" if st != "sandpit" else "oak", third="metal" if st != "sandpit" else "oak", **extra)
+      second="cream" if st != "sandpit" else "coral", third="metal" if st != "sandpit" else "oak", **extra)
 # --- Sport & Eishalle
 for st, w, h, names, grp in (("goal", 300, 200, ["cream"], "sport"), ("basket_hoop", 120, 300, ["coral"], "sport"),
                              ("racket", 27, 68, ["coral", "sky", "mint"], "sport"), ("bat", 8, 80, ["oak", "coral"], "sport"),

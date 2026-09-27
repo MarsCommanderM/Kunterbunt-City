@@ -4,16 +4,52 @@ extends RefCounted
 
 
 ## Hülle aller sichtbaren Ebenen in lokalen Koordinaten von root (funktioniert auch außerhalb des Baums).
-static func bounds(root: Node2D, layers: Array) -> Rect2:
+## extra: zusätzliche Drehung/Verschiebung vor dem Messen (z. B. „wie läge die Figur geneigt?“).
+static func bounds(root: Node2D, layers: Array, extra: Transform2D = Transform2D.IDENTITY) -> Rect2:
 	var r := Rect2()
 	var first: bool = true
 	for sp: Sprite2D in layers:
 		if not _visible_under(sp, root):
 			continue
-		var sr: Rect2 = local_xf(root, sp) * sp.get_rect()
+		var sr: Rect2 = extra * local_xf(root, sp) * sp.get_rect()
 		r = sr if first else r.merge(sr)
 		first = false
 	return r
+
+
+static var _outline: Dictionary = {}   ## Textur → Umriss-Punkte der gemalten Fläche (Textur-Pixel)
+
+
+## Umriss der gemalten Fläche einer Ebene in ihren lokalen Koordinaten (für gedrehte Messungen genau).
+static func content_points(sp: Sprite2D) -> PackedVector2Array:
+	var out := PackedVector2Array()
+	if sp.texture == null:
+		return out
+	var key: String = sp.texture.resource_path
+	if not _outline.has(key):
+		var pts := PackedVector2Array()
+		var bm: BitMap = ItemNode._bitmap_for(sp.texture)
+		if bm != null:
+			for poly: PackedVector2Array in bm.opaque_to_polygons(Rect2i(Vector2i.ZERO, bm.get_size()), 1.5):
+				pts.append_array(poly)
+		_outline[key] = pts
+	var full: Rect2 = sp.get_rect()
+	var k: Vector2 = full.size / sp.texture.get_size()
+	for q: Vector2 in _outline[key]:
+		out.append(full.position + q * k)
+	return out
+
+
+## Tiefster gemalter Punkt (größtes y) aller sichtbaren Ebenen in root-Koordinaten, optional gedreht (extra).
+static func lowest(root: Node2D, layers: Array, extra: Transform2D = Transform2D.IDENTITY) -> float:
+	var y: float = -INF
+	for sp: Sprite2D in layers:
+		if not _visible_under(sp, root):
+			continue
+		var xf: Transform2D = extra * local_xf(root, sp)
+		for q: Vector2 in content_points(sp):
+			y = maxf(y, (xf * q).y)
+	return y
 
 
 ## Transform von n relativ zu root (Kette der Eltern bis root).

@@ -88,8 +88,8 @@
    "id": "sport_hockey_stick_black",
    "scale_ref": "c_sport_hockey_stick",
    "size_cm": [
-    35.6,
-    152.4
+    35.4,
+    153.0
    ],
    "pivot": [
     0.5,
@@ -111,8 +111,8 @@
    "id": "sport_hockey_stick_coral",
    "scale_ref": "c_sport_hockey_stick",
    "size_cm": [
-    35.6,
-    152.4
+    35.4,
+    153.0
    ],
    "pivot": [
     0.5,
@@ -161,8 +161,8 @@
    "id": "sport_sled_coral",
    "scale_ref": "c_sport_sled",
    "size_cm": [
-    92.4,
-    36.2
+    93.6,
+    36.4
    ],
    "pivot": [
     0.5,
@@ -192,8 +192,8 @@
    "id": "sport_sled_sky",
    "scale_ref": "c_sport_sled",
    "size_cm": [
-    92.4,
-    36.2
+    93.6,
+    36.4
    ],
    "pivot": [
     0.5,
@@ -223,8 +223,8 @@
    "id": "sport_sled_oak",
    "scale_ref": "c_sport_sled",
    "size_cm": [
-    92.4,
-    36.2
+    93.6,
+    36.4
    ],
    "pivot": [
     0.5,

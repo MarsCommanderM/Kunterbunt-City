@@ -7,8 +7,8 @@
    "id": "plant_monstera_terracotta_terracotta",
    "scale_ref": "c_plant_monstera_terracotta",
    "size_cm": [
-    101.7,
-    91.6
+    101.8,
+    80.8
    ],
    "pivot": [
     0.5,
@@ -33,8 +33,8 @@
    "id": "plant_monstera_terracotta_cream",
    "scale_ref": "c_plant_monstera_terracotta",
    "size_cm": [
-    101.7,
-    91.6
+    101.8,
+    80.8
    ],
    "pivot": [
     0.5,
@@ -60,7 +60,7 @@
    "scale_ref": "c_plant_monstera_basket",
    "size_cm": [
     101.7,
-    95.6
+    103.2
    ],
    "pivot": [
     0.5,
@@ -86,7 +86,7 @@
    "scale_ref": "c_plant_monstera_basket",
    "size_cm": [
     101.7,
-    95.6
+    103.2
    ],
    "pivot": [
     0.5,
@@ -111,8 +111,8 @@
    "id": "plant_monstera_cylinder_cream",
    "scale_ref": "c_plant_monstera_cylinder",
    "size_cm": [
-    101.7,
-    96.6
+    98.9,
+    108.5
    ],
    "pivot": [
     0.5,
@@ -137,8 +137,8 @@
    "id": "plant_monstera_cylinder_navy",
    "scale_ref": "c_plant_monstera_cylinder",
    "size_cm": [
-    101.7,
-    96.6
+    98.9,
+    108.5
    ],
    "pivot": [
     0.5,
@@ -163,8 +163,8 @@
    "id": "plant_monstera_cylinder_sage",
    "scale_ref": "c_plant_monstera_cylinder",
    "size_cm": [
-    101.7,
-    96.6
+    98.9,
+    108.5
    ],
    "pivot": [
     0.5,
@@ -189,8 +189,8 @@
    "id": "plant_monstera_stand_cream",
    "scale_ref": "c_plant_monstera_stand",
    "size_cm": [
-    100.0,
-    95.9
+    87.2,
+    106.5
    ],
    "pivot": [
     0.5,
@@ -215,8 +215,8 @@
    "id": "plant_monstera_stand_navy",
    "scale_ref": "c_plant_monstera_stand",
    "size_cm": [
-    100.0,
-    95.9
+    87.2,
+    106.5
    ],
    "pivot": [
     0.5,
@@ -241,8 +241,8 @@
    "id": "plant_fern_round_cream",
    "scale_ref": "c_plant_fern_round",
    "size_cm": [
-    63.6,
-    53.5
+    70.2,
+    56.4
    ],
    "pivot": [
     0.5,
@@ -267,8 +267,8 @@
    "id": "plant_fern_round_rose",
    "scale_ref": "c_plant_fern_round",
    "size_cm": [
-    63.6,
-    53.5
+    70.2,
+    56.4
    ],
    "pivot": [
     0.5,
@@ -293,8 +293,8 @@
    "id": "plant_fern_round_blue",
    "scale_ref": "c_plant_fern_round",
    "size_cm": [
-    63.6,
-    53.5
+    70.2,
+    56.4
    ],
    "pivot": [
     0.5,
@@ -319,8 +319,8 @@
    "id": "plant_fern_basket_oak",
    "scale_ref": "c_plant_fern_basket",
    "size_cm": [
-    65.6,
-    47.8
+    66.5,
+    53.9
    ],
    "pivot": [
     0.5,
@@ -345,8 +345,8 @@
    "id": "plant_fern_basket_walnut",
    "scale_ref": "c_plant_fern_basket",
    "size_cm": [
-    65.6,
-    47.8
+    66.5,
+    53.9
    ],
    "pivot": [
     0.5,
@@ -371,8 +371,8 @@
    "id": "plant_fern_stand_cream",
    "scale_ref": "c_plant_fern_stand",
    "size_cm": [
-    63.5,
-    53.4
+    63.9,
+    52.9
    ],
    "pivot": [
     0.5,
@@ -397,8 +397,8 @@
    "id": "plant_fern_stand_navy",
    "scale_ref": "c_plant_fern_stand",
    "size_cm": [
-    63.5,
-    53.4
+    63.9,
+    52.9
    ],
    "pivot": [
     0.5,
@@ -423,8 +423,8 @@
    "id": "plant_fern_bowl_cream",
    "scale_ref": "c_plant_fern_bowl",
    "size_cm": [
-    80.0,
-    53.0
+    77.2,
+    49.8
    ],
    "pivot": [
     0.5,
@@ -449,8 +449,8 @@
    "id": "plant_fern_bowl_butter",
    "scale_ref": "c_plant_fern_bowl",
    "size_cm": [
-    80.0,
-    53.0
+    77.2,
+    49.8
    ],
    "pivot": [
     0.5,
@@ -475,8 +475,8 @@
    "id": "plant_fern_bowl_coral",
    "scale_ref": "c_plant_fern_bowl",
    "size_cm": [
-    80.0,
-    53.0
+    77.2,
+    49.8
    ],
    "pivot": [
     0.5,
@@ -502,7 +502,7 @@
    "scale_ref": "c_plant_snake_plant_cylinder",
    "size_cm": [
     22.8,
-    80.4
+    80.5
    ],
    "pivot": [
     0.5,
@@ -528,7 +528,7 @@
    "scale_ref": "c_plant_snake_plant_cylinder",
    "size_cm": [
     22.8,
-    80.4
+    80.5
    ],
    "pivot": [
     0.5,
@@ -554,7 +554,7 @@
    "scale_ref": "c_plant_snake_plant_cylinder",
    "size_cm": [
     22.8,
-    80.4
+    80.5
    ],
    "pivot": [
     0.5,
@@ -580,7 +580,7 @@
    "scale_ref": "c_plant_snake_plant_square",
    "size_cm": [
     23.7,
-    77.2
+    76.2
    ],
    "pivot": [
     0.5,
@@ -606,7 +606,7 @@
    "scale_ref": "c_plant_snake_plant_square",
    "size_cm": [
     23.7,
-    77.2
+    76.2
    ],
    "pivot": [
     0.5,
@@ -632,7 +632,7 @@
    "scale_ref": "c_plant_snake_plant_square",
    "size_cm": [
     23.7,
-    77.2
+    76.2
    ],
    "pivot": [
     0.5,
@@ -658,7 +658,7 @@
    "scale_ref": "c_plant_snake_plant_terracotta",
    "size_cm": [
     27.8,
-    76.8
+    79.5
    ],
    "pivot": [
     0.5,
@@ -684,7 +684,7 @@
    "scale_ref": "c_plant_snake_plant_terracotta",
    "size_cm": [
     27.8,
-    76.8
+    79.5
    ],
    "pivot": [
     0.5,
@@ -1670,7 +1670,7 @@
    "scale_ref": "c_plant_succulent_round",
    "size_cm": [
     14.5,
-    15.2
+    15.1
    ],
    "pivot": [
     0.5,
@@ -1700,7 +1700,7 @@
    "scale_ref": "c_plant_succulent_round",
    "size_cm": [
     14.5,
-    15.2
+    15.1
    ],
    "pivot": [
     0.5,
@@ -1730,7 +1730,7 @@
    "scale_ref": "c_plant_succulent_round",
    "size_cm": [
     14.5,
-    15.2
+    15.1
    ],
    "pivot": [
     0.5,
@@ -1759,8 +1759,8 @@
    "id": "plant_succulent_terracotta_terracotta",
    "scale_ref": "c_plant_succulent_terracotta",
    "size_cm": [
-    15.0,
-    14.9
+    15.1,
+    14.8
    ],
    "pivot": [
     0.5,
@@ -1789,8 +1789,8 @@
    "id": "plant_succulent_terracotta_cream",
    "scale_ref": "c_plant_succulent_terracotta",
    "size_cm": [
-    15.0,
-    14.9
+    15.1,
+    14.8
    ],
    "pivot": [
     0.5,
@@ -1820,7 +1820,7 @@
    "scale_ref": "c_plant_succulent_square",
    "size_cm": [
     13.0,
-    14.9
+    14.8
    ],
    "pivot": [
     0.5,
@@ -1850,7 +1850,7 @@
    "scale_ref": "c_plant_succulent_square",
    "size_cm": [
     13.0,
-    14.9
+    14.8
    ],
    "pivot": [
     0.5,
@@ -1880,7 +1880,7 @@
    "scale_ref": "c_plant_succulent_square",
    "size_cm": [
     13.0,
-    14.9
+    14.8
    ],
    "pivot": [
     0.5,
@@ -2149,8 +2149,8 @@
    "id": "plant_ficus_terracotta_terracotta",
    "scale_ref": "c_plant_ficus_terracotta",
    "size_cm": [
-    66.6,
-    149.9
+    68.2,
+    151.5
    ],
    "pivot": [
     0.5,
@@ -2175,8 +2175,8 @@
    "id": "plant_ficus_terracotta_cream",
    "scale_ref": "c_plant_ficus_terracotta",
    "size_cm": [
-    66.6,
-    149.9
+    68.2,
+    151.5
    ],
    "pivot": [
     0.5,
@@ -2201,8 +2201,8 @@
    "id": "plant_ficus_basket_oak",
    "scale_ref": "c_plant_ficus_basket",
    "size_cm": [
-    67.9,
-    149.9
+    67.1,
+    150.8
    ],
    "pivot": [
     0.5,
@@ -2227,8 +2227,8 @@
    "id": "plant_ficus_basket_walnut",
    "scale_ref": "c_plant_ficus_basket",
    "size_cm": [
-    67.9,
-    149.9
+    67.1,
+    150.8
    ],
    "pivot": [
     0.5,
@@ -2253,8 +2253,8 @@
    "id": "plant_ficus_cylinder_cream",
    "scale_ref": "c_plant_ficus_cylinder",
    "size_cm": [
-    68.2,
-    153.0
+    67.2,
+    152.5
    ],
    "pivot": [
     0.5,
@@ -2279,8 +2279,8 @@
    "id": "plant_ficus_cylinder_navy",
    "scale_ref": "c_plant_ficus_cylinder",
    "size_cm": [
-    68.2,
-    153.0
+    67.2,
+    152.5
    ],
    "pivot": [
     0.5,
@@ -2305,8 +2305,8 @@
    "id": "plant_ficus_cylinder_sage",
    "scale_ref": "c_plant_ficus_cylinder",
    "size_cm": [
-    68.2,
-    153.0
+    67.2,
+    152.5
    ],
    "pivot": [
     0.5,
@@ -2331,8 +2331,8 @@
    "id": "plant_lemon_tree_terracotta_terracotta",
    "scale_ref": "c_plant_lemon_tree_terracotta",
    "size_cm": [
-    66.0,
-    132.4
+    67.1,
+    134.5
    ],
    "pivot": [
     0.5,
@@ -2357,8 +2357,8 @@
    "id": "plant_lemon_tree_terracotta_cream",
    "scale_ref": "c_plant_lemon_tree_terracotta",
    "size_cm": [
-    66.0,
-    132.4
+    67.1,
+    134.5
    ],
    "pivot": [
     0.5,
@@ -2383,8 +2383,8 @@
    "id": "plant_lemon_tree_square_cream",
    "scale_ref": "c_plant_lemon_tree_square",
    "size_cm": [
-    65.0,
-    132.2
+    68.4,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2409,8 +2409,8 @@
    "id": "plant_lemon_tree_square_grey",
    "scale_ref": "c_plant_lemon_tree_square",
    "size_cm": [
-    65.0,
-    132.2
+    68.4,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2435,8 +2435,8 @@
    "id": "plant_lemon_tree_square_mint",
    "scale_ref": "c_plant_lemon_tree_square",
    "size_cm": [
-    65.0,
-    132.2
+    68.4,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2461,8 +2461,8 @@
    "id": "plant_lemon_tree_bucket_metal",
    "scale_ref": "c_plant_lemon_tree_bucket",
    "size_cm": [
-    67.4,
-    134.4
+    68.2,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2487,8 +2487,8 @@
    "id": "plant_lemon_tree_bucket_butter",
    "scale_ref": "c_plant_lemon_tree_bucket",
    "size_cm": [
-    67.4,
-    134.4
+    68.2,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2513,8 +2513,8 @@
    "id": "plant_lemon_tree_bucket_coral",
    "scale_ref": "c_plant_lemon_tree_bucket",
    "size_cm": [
-    67.4,
-    134.4
+    68.2,
+    133.8
    ],
    "pivot": [
     0.5,
@@ -2539,8 +2539,8 @@
    "id": "plant_olive_terracotta_terracotta",
    "scale_ref": "c_plant_olive_terracotta",
    "size_cm": [
-    60.8,
-    140.5
+    63.5,
+    142.9
    ],
    "pivot": [
     0.5,
@@ -2565,8 +2565,8 @@
    "id": "plant_olive_terracotta_cream",
    "scale_ref": "c_plant_olive_terracotta",
    "size_cm": [
-    60.8,
-    140.5
+    63.5,
+    142.9
    ],
    "pivot": [
     0.5,
@@ -2591,8 +2591,8 @@
    "id": "plant_olive_square_cream",
    "scale_ref": "c_plant_olive_square",
    "size_cm": [
-    63.4,
-    142.5
+    60.3,
+    141.8
    ],
    "pivot": [
     0.5,
@@ -2617,8 +2617,8 @@
    "id": "plant_olive_square_grey",
    "scale_ref": "c_plant_olive_square",
    "size_cm": [
-    63.4,
-    142.5
+    60.3,
+    141.8
    ],
    "pivot": [
     0.5,
@@ -2643,8 +2643,8 @@
    "id": "plant_olive_square_mint",
    "scale_ref": "c_plant_olive_square",
    "size_cm": [
-    63.4,
-    142.5
+    60.3,
+    141.8
    ],
    "pivot": [
     0.5,
@@ -2669,8 +2669,8 @@
    "id": "plant_olive_cylinder_cream",
    "scale_ref": "c_plant_olive_cylinder",
    "size_cm": [
-    62.0,
-    143.1
+    60.8,
+    142.8
    ],
    "pivot": [
     0.5,
@@ -2695,8 +2695,8 @@
    "id": "plant_olive_cylinder_navy",
    "scale_ref": "c_plant_olive_cylinder",
    "size_cm": [
-    62.0,
-    143.1
+    60.8,
+    142.8
    ],
    "pivot": [
     0.5,
@@ -2721,8 +2721,8 @@
    "id": "plant_olive_cylinder_sage",
    "scale_ref": "c_plant_olive_cylinder",
    "size_cm": [
-    62.0,
-    143.1
+    60.8,
+    142.8
    ],
    "pivot": [
     0.5,
@@ -2747,8 +2747,8 @@
    "id": "plant_tree_small_cylinder_cream",
    "scale_ref": "c_plant_tree_small_cylinder",
    "size_cm": [
-    62.7,
-    122.2
+    62.0,
+    123.2
    ],
    "pivot": [
     0.5,
@@ -2773,8 +2773,8 @@
    "id": "plant_tree_small_cylinder_navy",
    "scale_ref": "c_plant_tree_small_cylinder",
    "size_cm": [
-    62.7,
-    122.2
+    62.0,
+    123.2
    ],
    "pivot": [
     0.5,
@@ -2799,8 +2799,8 @@
    "id": "plant_tree_small_cylinder_sage",
    "scale_ref": "c_plant_tree_small_cylinder",
    "size_cm": [
-    62.7,
-    122.2
+    62.0,
+    123.2
    ],
    "pivot": [
     0.5,
@@ -2825,8 +2825,8 @@
    "id": "plant_tree_small_basket_oak",
    "scale_ref": "c_plant_tree_small_basket",
    "size_cm": [
-    63.4,
-    123.9
+    63.0,
+    122.6
    ],
    "pivot": [
     0.5,
@@ -2851,8 +2851,8 @@
    "id": "plant_tree_small_basket_walnut",
    "scale_ref": "c_plant_tree_small_basket",
    "size_cm": [
-    63.4,
-    123.9
+    63.0,
+    122.6
    ],
    "pivot": [
     0.5,
@@ -2877,8 +2877,8 @@
    "id": "plant_tree_small_bucket_metal",
    "scale_ref": "c_plant_tree_small_bucket",
    "size_cm": [
-    62.3,
-    124.4
+    61.8,
+    123.5
    ],
    "pivot": [
     0.5,
@@ -2903,8 +2903,8 @@
    "id": "plant_tree_small_bucket_butter",
    "scale_ref": "c_plant_tree_small_bucket",
    "size_cm": [
-    62.3,
-    124.4
+    61.8,
+    123.5
    ],
    "pivot": [
     0.5,
@@ -2929,8 +2929,8 @@
    "id": "plant_tree_small_bucket_coral",
    "scale_ref": "c_plant_tree_small_bucket",
    "size_cm": [
-    62.3,
-    124.4
+    61.8,
+    123.5
    ],
    "pivot": [
     0.5,
@@ -2955,8 +2955,8 @@
    "id": "plant_bonsai_bowl_cream",
    "scale_ref": "c_plant_bonsai_bowl",
    "size_cm": [
-    34.7,
-    33.8
+    34.5,
+    34.0
    ],
    "pivot": [
     0.5,
@@ -2985,8 +2985,8 @@
    "id": "plant_bonsai_bowl_butter",
    "scale_ref": "c_plant_bonsai_bowl",
    "size_cm": [
-    34.7,
-    33.8
+    34.5,
+    34.0
    ],
    "pivot": [
     0.5,
@@ -3015,8 +3015,8 @@
    "id": "plant_bonsai_bowl_coral",
    "scale_ref": "c_plant_bonsai_bowl",
    "size_cm": [
-    34.7,
-    33.8
+    34.5,
+    34.0
    ],
    "pivot": [
     0.5,
@@ -3045,8 +3045,8 @@
    "id": "plant_bonsai_square_cream",
    "scale_ref": "c_plant_bonsai_square",
    "size_cm": [
-    35.0,
-    34.6
+    34.6,
+    34.2
    ],
    "pivot": [
     0.5,
@@ -3075,8 +3075,8 @@
    "id": "plant_bonsai_square_grey",
    "scale_ref": "c_plant_bonsai_square",
    "size_cm": [
-    35.0,
-    34.6
+    34.6,
+    34.2
    ],
    "pivot": [
     0.5,
@@ -3105,8 +3105,8 @@
    "id": "plant_bonsai_square_mint",
    "scale_ref": "c_plant_bonsai_square",
    "size_cm": [
-    35.0,
-    34.6
+    34.6,
+    34.2
    ],
    "pivot": [
     0.5,
@@ -3135,8 +3135,8 @@
    "id": "plant_palm_basket_oak",
    "scale_ref": "c_plant_palm_basket",
    "size_cm": [
-    111.7,
-    128.6
+    111.8,
+    107.9
    ],
    "pivot": [
     0.5,
@@ -3161,8 +3161,8 @@
    "id": "plant_palm_basket_walnut",
    "scale_ref": "c_plant_palm_basket",
    "size_cm": [
-    111.7,
-    128.6
+    111.8,
+    107.9
    ],
    "pivot": [
     0.5,
@@ -3187,8 +3187,8 @@
    "id": "plant_palm_cylinder_cream",
    "scale_ref": "c_plant_palm_cylinder",
    "size_cm": [
-    111.7,
-    129.6
+    111.8,
+    113.0
    ],
    "pivot": [
     0.5,
@@ -3213,8 +3213,8 @@
    "id": "plant_palm_cylinder_navy",
    "scale_ref": "c_plant_palm_cylinder",
    "size_cm": [
-    111.7,
-    129.6
+    111.8,
+    113.0
    ],
    "pivot": [
     0.5,
@@ -3239,8 +3239,8 @@
    "id": "plant_palm_cylinder_sage",
    "scale_ref": "c_plant_palm_cylinder",
    "size_cm": [
-    111.7,
-    129.6
+    111.8,
+    113.0
    ],
    "pivot": [
     0.5,
@@ -3266,7 +3266,7 @@
    "scale_ref": "c_plant_palm_terracotta",
    "size_cm": [
     111.8,
-    127.8
+    106.5
    ],
    "pivot": [
     0.5,
@@ -3292,7 +3292,7 @@
    "scale_ref": "c_plant_palm_terracotta",
    "size_cm": [
     111.8,
-    127.8
+    106.5
    ],
    "pivot": [
     0.5,
@@ -3317,8 +3317,8 @@
    "id": "plant_tulips_round_cream_coral",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3347,8 +3347,8 @@
    "id": "plant_tulips_round_cream_butter",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3377,8 +3377,8 @@
    "id": "plant_tulips_round_rose_coral",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3407,8 +3407,8 @@
    "id": "plant_tulips_round_rose_butter",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3437,8 +3437,8 @@
    "id": "plant_tulips_round_blue_coral",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3467,8 +3467,8 @@
    "id": "plant_tulips_round_blue_butter",
    "scale_ref": "c_plant_tulips_round",
    "size_cm": [
-    19.4,
-    41.6
+    20.6,
+    41.1
    ],
    "pivot": [
     0.5,
@@ -3497,8 +3497,8 @@
    "id": "plant_tulips_cylinder_cream_coral",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3527,8 +3527,8 @@
    "id": "plant_tulips_cylinder_cream_butter",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3557,8 +3557,8 @@
    "id": "plant_tulips_cylinder_navy_coral",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3587,8 +3587,8 @@
    "id": "plant_tulips_cylinder_navy_butter",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3617,8 +3617,8 @@
    "id": "plant_tulips_cylinder_sage_coral",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3647,8 +3647,8 @@
    "id": "plant_tulips_cylinder_sage_butter",
    "scale_ref": "c_plant_tulips_cylinder",
    "size_cm": [
-    16.0,
-    39.9
+    20.0,
+    39.2
    ],
    "pivot": [
     0.5,
@@ -3677,8 +3677,8 @@
    "id": "plant_tulips_bucket_metal_coral",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3707,8 +3707,8 @@
    "id": "plant_tulips_bucket_metal_butter",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3737,8 +3737,8 @@
    "id": "plant_tulips_bucket_butter_coral",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3767,8 +3767,8 @@
    "id": "plant_tulips_bucket_butter_butter",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3797,8 +3797,8 @@
    "id": "plant_tulips_bucket_coral_coral",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3827,8 +3827,8 @@
    "id": "plant_tulips_bucket_coral_butter",
    "scale_ref": "c_plant_tulips_bucket",
    "size_cm": [
-    20.6,
-    40.9
+    19.3,
+    40.8
    ],
    "pivot": [
     0.5,
@@ -3857,8 +3857,8 @@
    "id": "plant_roses_terracotta_terracotta_rust",
    "scale_ref": "c_plant_roses_terracotta",
    "size_cm": [
-    23.7,
-    46.1
+    23.8,
+    45.0
    ],
    "pivot": [
     0.5,
@@ -3887,8 +3887,8 @@
    "id": "plant_roses_terracotta_terracotta_rose",
    "scale_ref": "c_plant_roses_terracotta",
    "size_cm": [
-    23.7,
-    46.1
+    23.8,
+    45.0
    ],
    "pivot": [
     0.5,
@@ -3917,8 +3917,8 @@
    "id": "plant_roses_terracotta_cream_rust",
    "scale_ref": "c_plant_roses_terracotta",
    "size_cm": [
-    23.7,
-    46.1
+    23.8,
+    45.0
    ],
    "pivot": [
     0.5,
@@ -3947,8 +3947,8 @@
    "id": "plant_roses_terracotta_cream_rose",
    "scale_ref": "c_plant_roses_terracotta",
    "size_cm": [
-    23.7,
-    46.1
+    23.8,
+    45.0
    ],
    "pivot": [
     0.5,
@@ -3977,8 +3977,8 @@
    "id": "plant_roses_round_cream_rust",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4007,8 +4007,8 @@
    "id": "plant_roses_round_cream_rose",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4037,8 +4037,8 @@
    "id": "plant_roses_round_rose_rust",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4067,8 +4067,8 @@
    "id": "plant_roses_round_rose_rose",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4097,8 +4097,8 @@
    "id": "plant_roses_round_blue_rust",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4127,8 +4127,8 @@
    "id": "plant_roses_round_blue_rose",
    "scale_ref": "c_plant_roses_round",
    "size_cm": [
-    23.2,
-    46.6
+    23.3,
+    46.9
    ],
    "pivot": [
     0.5,
@@ -4158,7 +4158,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4188,7 +4188,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4218,7 +4218,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4248,7 +4248,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4278,7 +4278,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4308,7 +4308,7 @@
    "scale_ref": "c_plant_roses_bucket",
    "size_cm": [
     23.0,
-    44.6
+    45.9
    ],
    "pivot": [
     0.5,
@@ -4337,8 +4337,8 @@
    "id": "plant_sunflower_terracotta_terracotta",
    "scale_ref": "c_plant_sunflower_terracotta",
    "size_cm": [
-    28.8,
-    70.0
+    28.6,
+    72.5
    ],
    "pivot": [
     0.5,
@@ -4363,8 +4363,8 @@
    "id": "plant_sunflower_terracotta_cream",
    "scale_ref": "c_plant_sunflower_terracotta",
    "size_cm": [
-    28.8,
-    70.0
+    28.6,
+    72.5
    ],
    "pivot": [
     0.5,
@@ -4389,8 +4389,8 @@
    "id": "plant_sunflower_bucket_metal",
    "scale_ref": "c_plant_sunflower_bucket",
    "size_cm": [
-    27.0,
-    63.5
+    25.8,
+    73.0
    ],
    "pivot": [
     0.5,
@@ -4415,8 +4415,8 @@
    "id": "plant_sunflower_bucket_butter",
    "scale_ref": "c_plant_sunflower_bucket",
    "size_cm": [
-    27.0,
-    63.5
+    25.8,
+    73.0
    ],
    "pivot": [
     0.5,
@@ -4441,8 +4441,8 @@
    "id": "plant_sunflower_bucket_coral",
    "scale_ref": "c_plant_sunflower_bucket",
    "size_cm": [
-    27.0,
-    63.5
+    25.8,
+    73.0
    ],
    "pivot": [
     0.5,
@@ -4467,8 +4467,8 @@
    "id": "plant_daisies_bowl_cream_white",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4497,8 +4497,8 @@
    "id": "plant_daisies_bowl_cream_butter",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4527,8 +4527,8 @@
    "id": "plant_daisies_bowl_butter_white",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4557,8 +4557,8 @@
    "id": "plant_daisies_bowl_butter_butter",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4587,8 +4587,8 @@
    "id": "plant_daisies_bowl_coral_white",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4617,8 +4617,8 @@
    "id": "plant_daisies_bowl_coral_butter",
    "scale_ref": "c_plant_daisies_bowl",
    "size_cm": [
-    27.0,
-    30.4
+    28.2,
+    31.0
    ],
    "pivot": [
     0.5,
@@ -4647,8 +4647,8 @@
    "id": "plant_daisies_round_cream_white",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4677,8 +4677,8 @@
    "id": "plant_daisies_round_cream_butter",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4707,8 +4707,8 @@
    "id": "plant_daisies_round_rose_white",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4737,8 +4737,8 @@
    "id": "plant_daisies_round_rose_butter",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4767,8 +4767,8 @@
    "id": "plant_daisies_round_blue_white",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4797,8 +4797,8 @@
    "id": "plant_daisies_round_blue_butter",
    "scale_ref": "c_plant_daisies_round",
    "size_cm": [
-    27.7,
-    32.1
+    27.1,
+    31.6
    ],
    "pivot": [
     0.5,
@@ -4827,8 +4827,8 @@
    "id": "plant_daisies_basket_oak_white",
    "scale_ref": "c_plant_daisies_basket",
    "size_cm": [
-    23.9,
-    31.6
+    28.2,
+    30.8
    ],
    "pivot": [
     0.5,
@@ -4857,8 +4857,8 @@
    "id": "plant_daisies_basket_oak_butter",
    "scale_ref": "c_plant_daisies_basket",
    "size_cm": [
-    23.9,
-    31.6
+    28.2,
+    30.8
    ],
    "pivot": [
     0.5,
@@ -4887,8 +4887,8 @@
    "id": "plant_daisies_basket_walnut_white",
    "scale_ref": "c_plant_daisies_basket",
    "size_cm": [
-    23.9,
-    31.6
+    28.2,
+    30.8
    ],
    "pivot": [
     0.5,
@@ -4917,8 +4917,8 @@
    "id": "plant_daisies_basket_walnut_butter",
    "scale_ref": "c_plant_daisies_basket",
    "size_cm": [
-    23.9,
-    31.6
+    28.2,
+    30.8
    ],
    "pivot": [
     0.5,
@@ -4947,8 +4947,8 @@
    "id": "plant_lavender_terracotta_terracotta_lilac",
    "scale_ref": "c_plant_lavender_terracotta",
    "size_cm": [
-    25.9,
-    40.0
+    29.0,
+    39.4
    ],
    "pivot": [
     0.5,
@@ -4977,8 +4977,8 @@
    "id": "plant_lavender_terracotta_terracotta_plum",
    "scale_ref": "c_plant_lavender_terracotta",
    "size_cm": [
-    25.9,
-    40.0
+    29.0,
+    39.4
    ],
    "pivot": [
     0.5,
@@ -5007,8 +5007,8 @@
    "id": "plant_lavender_terracotta_cream_lilac",
    "scale_ref": "c_plant_lavender_terracotta",
    "size_cm": [
-    25.9,
-    40.0
+    29.0,
+    39.4
    ],
    "pivot": [
     0.5,
@@ -5037,8 +5037,8 @@
    "id": "plant_lavender_terracotta_cream_plum",
    "scale_ref": "c_plant_lavender_terracotta",
    "size_cm": [
-    25.9,
-    40.0
+    29.0,
+    39.4
    ],
    "pivot": [
     0.5,
@@ -5067,8 +5067,8 @@
    "id": "plant_lavender_bucket_metal_lilac",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5097,8 +5097,8 @@
    "id": "plant_lavender_bucket_metal_plum",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5127,8 +5127,8 @@
    "id": "plant_lavender_bucket_butter_lilac",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5157,8 +5157,8 @@
    "id": "plant_lavender_bucket_butter_plum",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5187,8 +5187,8 @@
    "id": "plant_lavender_bucket_coral_lilac",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5217,8 +5217,8 @@
    "id": "plant_lavender_bucket_coral_plum",
    "scale_ref": "c_plant_lavender_bucket",
    "size_cm": [
-    30.8,
-    39.9
+    26.9,
+    40.4
    ],
    "pivot": [
     0.5,
@@ -5247,8 +5247,8 @@
    "id": "plant_lavender_square_cream_lilac",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5277,8 +5277,8 @@
    "id": "plant_lavender_square_cream_plum",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5307,8 +5307,8 @@
    "id": "plant_lavender_square_grey_lilac",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5337,8 +5337,8 @@
    "id": "plant_lavender_square_grey_plum",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5367,8 +5367,8 @@
    "id": "plant_lavender_square_mint_lilac",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5397,8 +5397,8 @@
    "id": "plant_lavender_square_mint_plum",
    "scale_ref": "c_plant_lavender_square",
    "size_cm": [
-    30.6,
-    39.9
+    23.6,
+    39.6
    ],
    "pivot": [
     0.5,
@@ -5427,8 +5427,8 @@
    "id": "plant_hydrangea_round_cream_sky",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5453,8 +5453,8 @@
    "id": "plant_hydrangea_round_cream_rose",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5479,8 +5479,8 @@
    "id": "plant_hydrangea_round_rose_sky",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5505,8 +5505,8 @@
    "id": "plant_hydrangea_round_rose_rose",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5531,8 +5531,8 @@
    "id": "plant_hydrangea_round_blue_sky",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5557,8 +5557,8 @@
    "id": "plant_hydrangea_round_blue_rose",
    "scale_ref": "c_plant_hydrangea_round",
    "size_cm": [
-    37.9,
-    58.9
+    37.3,
+    57.9
    ],
    "pivot": [
     0.5,
@@ -5583,8 +5583,8 @@
    "id": "plant_hydrangea_terracotta_terracotta_sky",
    "scale_ref": "c_plant_hydrangea_terracotta",
    "size_cm": [
-    38.2,
-    57.0
+    38.3,
+    57.4
    ],
    "pivot": [
     0.5,
@@ -5609,8 +5609,8 @@
    "id": "plant_hydrangea_terracotta_terracotta_rose",
    "scale_ref": "c_plant_hydrangea_terracotta",
    "size_cm": [
-    38.2,
-    57.0
+    38.3,
+    57.4
    ],
    "pivot": [
     0.5,
@@ -5635,8 +5635,8 @@
    "id": "plant_hydrangea_terracotta_cream_sky",
    "scale_ref": "c_plant_hydrangea_terracotta",
    "size_cm": [
-    38.2,
-    57.0
+    38.3,
+    57.4
    ],
    "pivot": [
     0.5,
@@ -5661,8 +5661,8 @@
    "id": "plant_hydrangea_terracotta_cream_rose",
    "scale_ref": "c_plant_hydrangea_terracotta",
    "size_cm": [
-    38.2,
-    57.0
+    38.3,
+    57.4
    ],
    "pivot": [
     0.5,
@@ -5687,8 +5687,8 @@
    "id": "plant_hydrangea_bucket_metal_sky",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5713,8 +5713,8 @@
    "id": "plant_hydrangea_bucket_metal_rose",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5739,8 +5739,8 @@
    "id": "plant_hydrangea_bucket_butter_sky",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5765,8 +5765,8 @@
    "id": "plant_hydrangea_bucket_butter_rose",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5791,8 +5791,8 @@
    "id": "plant_hydrangea_bucket_coral_sky",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5817,8 +5817,8 @@
    "id": "plant_hydrangea_bucket_coral_rose",
    "scale_ref": "c_plant_hydrangea_bucket",
    "size_cm": [
-    36.3,
-    54.4
+    37.1,
+    59.0
    ],
    "pivot": [
     0.5,
@@ -5993,7 +5993,7 @@
    "id": "plant_orchid_cylinder_cream_rose",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6023,7 +6023,7 @@
    "id": "plant_orchid_cylinder_cream_white",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6053,7 +6053,7 @@
    "id": "plant_orchid_cylinder_cream_plum",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6083,7 +6083,7 @@
    "id": "plant_orchid_cylinder_navy_rose",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6113,7 +6113,7 @@
    "id": "plant_orchid_cylinder_navy_white",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6143,7 +6143,7 @@
    "id": "plant_orchid_cylinder_navy_plum",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6173,7 +6173,7 @@
    "id": "plant_orchid_cylinder_sage_rose",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6203,7 +6203,7 @@
    "id": "plant_orchid_cylinder_sage_white",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6233,7 +6233,7 @@
    "id": "plant_orchid_cylinder_sage_plum",
    "scale_ref": "c_plant_orchid_cylinder",
    "size_cm": [
-    18.5,
+    20.6,
     52.8
    ],
    "pivot": [
@@ -6533,7 +6533,7 @@
    "id": "plant_peace_lily_round_cream",
    "scale_ref": "c_plant_peace_lily_round",
    "size_cm": [
-    43.9,
+    46.2,
     63.5
    ],
    "pivot": [
@@ -6559,7 +6559,7 @@
    "id": "plant_peace_lily_round_rose",
    "scale_ref": "c_plant_peace_lily_round",
    "size_cm": [
-    43.9,
+    46.2,
     63.5
    ],
    "pivot": [
@@ -6585,7 +6585,7 @@
    "id": "plant_peace_lily_round_blue",
    "scale_ref": "c_plant_peace_lily_round",
    "size_cm": [
-    43.9,
+    46.2,
     63.5
    ],
    "pivot": [
@@ -6611,7 +6611,7 @@
    "id": "plant_peace_lily_cylinder_cream",
    "scale_ref": "c_plant_peace_lily_cylinder",
    "size_cm": [
-    47.8,
+    43.5,
     61.8
    ],
    "pivot": [
@@ -6637,7 +6637,7 @@
    "id": "plant_peace_lily_cylinder_navy",
    "scale_ref": "c_plant_peace_lily_cylinder",
    "size_cm": [
-    47.8,
+    43.5,
     61.8
    ],
    "pivot": [
@@ -6663,7 +6663,7 @@
    "id": "plant_peace_lily_cylinder_sage",
    "scale_ref": "c_plant_peace_lily_cylinder",
    "size_cm": [
-    47.8,
+    43.5,
     61.8
    ],
    "pivot": [
@@ -6689,7 +6689,7 @@
    "id": "plant_peace_lily_basket_oak",
    "scale_ref": "c_plant_peace_lily_basket",
    "size_cm": [
-    41.4,
+    53.3,
     61.8
    ],
    "pivot": [
@@ -6715,7 +6715,7 @@
    "id": "plant_peace_lily_basket_walnut",
    "scale_ref": "c_plant_peace_lily_basket",
    "size_cm": [
-    41.4,
+    53.3,
     61.8
    ],
    "pivot": [
@@ -6742,7 +6742,7 @@
    "scale_ref": "c_plant_bird_paradise_cylinder",
    "size_cm": [
     91.8,
-    138.4
+    139.0
    ],
    "pivot": [
     0.5,
@@ -6768,7 +6768,7 @@
    "scale_ref": "c_plant_bird_paradise_cylinder",
    "size_cm": [
     91.8,
-    138.4
+    139.0
    ],
    "pivot": [
     0.5,
@@ -6794,7 +6794,7 @@
    "scale_ref": "c_plant_bird_paradise_cylinder",
    "size_cm": [
     91.8,
-    138.4
+    139.0
    ],
    "pivot": [
     0.5,
@@ -6819,8 +6819,8 @@
    "id": "plant_bird_paradise_terracotta_terracotta",
    "scale_ref": "c_plant_bird_paradise_terracotta",
    "size_cm": [
-    91.7,
-    143.6
+    91.8,
+    137.4
    ],
    "pivot": [
     0.5,
@@ -6845,8 +6845,8 @@
    "id": "plant_bird_paradise_terracotta_cream",
    "scale_ref": "c_plant_bird_paradise_terracotta",
    "size_cm": [
-    91.7,
-    143.6
+    91.8,
+    137.4
    ],
    "pivot": [
     0.5,
@@ -6871,8 +6871,8 @@
    "id": "plant_bird_paradise_basket_oak",
    "scale_ref": "c_plant_bird_paradise_basket",
    "size_cm": [
-    91.8,
-    132.0
+    91.7,
+    132.2
    ],
    "pivot": [
     0.5,
@@ -6897,8 +6897,8 @@
    "id": "plant_bird_paradise_basket_walnut",
    "scale_ref": "c_plant_bird_paradise_basket",
    "size_cm": [
-    91.8,
-    132.0
+    91.7,
+    132.2
    ],
    "pivot": [
     0.5,
@@ -6923,8 +6923,8 @@
    "id": "plant_calathea_round_cream",
    "scale_ref": "c_plant_calathea_round",
    "size_cm": [
-    45.5,
-    52.4
+    47.3,
+    51.8
    ],
    "pivot": [
     0.5,
@@ -6949,8 +6949,8 @@
    "id": "plant_calathea_round_rose",
    "scale_ref": "c_plant_calathea_round",
    "size_cm": [
-    45.5,
-    52.4
+    47.3,
+    51.8
    ],
    "pivot": [
     0.5,
@@ -6975,8 +6975,8 @@
    "id": "plant_calathea_round_blue",
    "scale_ref": "c_plant_calathea_round",
    "size_cm": [
-    45.5,
-    52.4
+    47.3,
+    51.8
    ],
    "pivot": [
     0.5,
@@ -7001,8 +7001,8 @@
    "id": "plant_calathea_cylinder_cream",
    "scale_ref": "c_plant_calathea_cylinder",
    "size_cm": [
-    52.0,
-    53.1
+    52.7,
+    48.1
    ],
    "pivot": [
     0.5,
@@ -7027,8 +7027,8 @@
    "id": "plant_calathea_cylinder_navy",
    "scale_ref": "c_plant_calathea_cylinder",
    "size_cm": [
-    52.0,
-    53.1
+    52.7,
+    48.1
    ],
    "pivot": [
     0.5,
@@ -7053,8 +7053,8 @@
    "id": "plant_calathea_cylinder_sage",
    "scale_ref": "c_plant_calathea_cylinder",
    "size_cm": [
-    52.0,
-    53.1
+    52.7,
+    48.1
    ],
    "pivot": [
     0.5,
@@ -7079,8 +7079,8 @@
    "id": "plant_calathea_basket_oak",
    "scale_ref": "c_plant_calathea_basket",
    "size_cm": [
-    46.5,
-    50.6
+    53.9,
+    49.4
    ],
    "pivot": [
     0.5,
@@ -7105,8 +7105,8 @@
    "id": "plant_calathea_basket_walnut",
    "scale_ref": "c_plant_calathea_basket",
    "size_cm": [
-    46.5,
-    50.6
+    53.9,
+    49.4
    ],
    "pivot": [
     0.5,
@@ -7131,8 +7131,8 @@
    "id": "plant_rubber_plant_cylinder_cream",
    "scale_ref": "c_plant_rubber_plant_cylinder",
    "size_cm": [
-    37.8,
-    116.9
+    35.1,
+    120.8
    ],
    "pivot": [
     0.5,
@@ -7157,8 +7157,8 @@
    "id": "plant_rubber_plant_cylinder_navy",
    "scale_ref": "c_plant_rubber_plant_cylinder",
    "size_cm": [
-    37.8,
-    116.9
+    35.1,
+    120.8
    ],
    "pivot": [
     0.5,
@@ -7183,8 +7183,8 @@
    "id": "plant_rubber_plant_cylinder_sage",
    "scale_ref": "c_plant_rubber_plant_cylinder",
    "size_cm": [
-    37.8,
-    116.9
+    35.1,
+    120.8
    ],
    "pivot": [
     0.5,
@@ -7209,8 +7209,8 @@
    "id": "plant_rubber_plant_terracotta_terracotta",
    "scale_ref": "c_plant_rubber_plant_terracotta",
    "size_cm": [
-    36.0,
-    116.9
+    37.7,
+    120.1
    ],
    "pivot": [
     0.5,
@@ -7235,8 +7235,8 @@
    "id": "plant_rubber_plant_terracotta_cream",
    "scale_ref": "c_plant_rubber_plant_terracotta",
    "size_cm": [
-    36.0,
-    116.9
+    37.7,
+    120.1
    ],
    "pivot": [
     0.5,
@@ -7261,8 +7261,8 @@
    "id": "plant_rubber_plant_square_cream",
    "scale_ref": "c_plant_rubber_plant_square",
    "size_cm": [
-    38.0,
-    116.9
+    37.0,
+    115.2
    ],
    "pivot": [
     0.5,
@@ -7287,8 +7287,8 @@
    "id": "plant_rubber_plant_square_grey",
    "scale_ref": "c_plant_rubber_plant_square",
    "size_cm": [
-    38.0,
-    116.9
+    37.0,
+    115.2
    ],
    "pivot": [
     0.5,
@@ -7313,8 +7313,8 @@
    "id": "plant_rubber_plant_square_mint",
    "scale_ref": "c_plant_rubber_plant_square",
    "size_cm": [
-    38.0,
-    116.9
+    37.0,
+    115.2
    ],
    "pivot": [
     0.5,
@@ -7340,7 +7340,7 @@
    "scale_ref": "c_plant_zz_plant_square",
    "size_cm": [
     26.5,
-    57.4
+    60.1
    ],
    "pivot": [
     0.5,
@@ -7366,7 +7366,7 @@
    "scale_ref": "c_plant_zz_plant_square",
    "size_cm": [
     26.5,
-    57.4
+    60.1
    ],
    "pivot": [
     0.5,
@@ -7392,7 +7392,7 @@
    "scale_ref": "c_plant_zz_plant_square",
    "size_cm": [
     26.5,
-    57.4
+    60.1
    ],
    "pivot": [
     0.5,
@@ -7418,7 +7418,7 @@
    "scale_ref": "c_plant_zz_plant_cylinder",
    "size_cm": [
     25.5,
-    59.8
+    57.2
    ],
    "pivot": [
     0.5,
@@ -7444,7 +7444,7 @@
    "scale_ref": "c_plant_zz_plant_cylinder",
    "size_cm": [
     25.5,
-    59.8
+    57.2
    ],
    "pivot": [
     0.5,
@@ -7470,7 +7470,7 @@
    "scale_ref": "c_plant_zz_plant_cylinder",
    "size_cm": [
     25.5,
-    59.8
+    57.2
    ],
    "pivot": [
     0.5,
@@ -7495,8 +7495,8 @@
    "id": "plant_zz_plant_round_cream",
    "scale_ref": "c_plant_zz_plant_round",
    "size_cm": [
-    30.3,
-    61.9
+    30.2,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -7521,8 +7521,8 @@
    "id": "plant_zz_plant_round_rose",
    "scale_ref": "c_plant_zz_plant_round",
    "size_cm": [
-    30.3,
-    61.9
+    30.2,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -7547,8 +7547,8 @@
    "id": "plant_zz_plant_round_blue",
    "scale_ref": "c_plant_zz_plant_round",
    "size_cm": [
-    30.3,
-    61.9
+    30.2,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -7573,8 +7573,8 @@
    "id": "plant_spider_plant_round_cream",
    "scale_ref": "c_plant_spider_plant_round",
    "size_cm": [
-    44.5,
-    33.1
+    43.8,
+    33.4
    ],
    "pivot": [
     0.5,
@@ -7603,8 +7603,8 @@
    "id": "plant_spider_plant_round_rose",
    "scale_ref": "c_plant_spider_plant_round",
    "size_cm": [
-    44.5,
-    33.1
+    43.8,
+    33.4
    ],
    "pivot": [
     0.5,
@@ -7633,8 +7633,8 @@
    "id": "plant_spider_plant_round_blue",
    "scale_ref": "c_plant_spider_plant_round",
    "size_cm": [
-    44.5,
-    33.1
+    43.8,
+    33.4
    ],
    "pivot": [
     0.5,
@@ -7663,8 +7663,8 @@
    "id": "plant_spider_plant_basket_oak",
    "scale_ref": "c_plant_spider_plant_basket",
    "size_cm": [
-    44.0,
-    29.9
+    45.0,
+    32.4
    ],
    "pivot": [
     0.5,
@@ -7693,8 +7693,8 @@
    "id": "plant_spider_plant_basket_walnut",
    "scale_ref": "c_plant_spider_plant_basket",
    "size_cm": [
-    44.0,
-    29.9
+    45.0,
+    32.4
    ],
    "pivot": [
     0.5,
@@ -7723,8 +7723,8 @@
    "id": "plant_spider_plant_stand_cream",
    "scale_ref": "c_plant_spider_plant_stand",
    "size_cm": [
-    43.0,
-    31.0
+    46.5,
+    33.1
    ],
    "pivot": [
     0.5,
@@ -7753,8 +7753,8 @@
    "id": "plant_spider_plant_stand_navy",
    "scale_ref": "c_plant_spider_plant_stand",
    "size_cm": [
-    43.0,
-    31.0
+    46.5,
+    33.1
    ],
    "pivot": [
     0.5,
@@ -7784,7 +7784,7 @@
    "scale_ref": "c_plant_herbs_terracotta",
    "size_cm": [
     19.5,
-    30.1
+    30.2
    ],
    "pivot": [
     0.5,
@@ -7814,7 +7814,7 @@
    "scale_ref": "c_plant_herbs_terracotta",
    "size_cm": [
     19.5,
-    30.1
+    30.2
    ],
    "pivot": [
     0.5,
@@ -7843,8 +7843,8 @@
    "id": "plant_herbs_square_cream",
    "scale_ref": "c_plant_herbs_square",
    "size_cm": [
-    18.5,
-    29.6
+    17.3,
+    28.8
    ],
    "pivot": [
     0.5,
@@ -7873,8 +7873,8 @@
    "id": "plant_herbs_square_grey",
    "scale_ref": "c_plant_herbs_square",
    "size_cm": [
-    18.5,
-    29.6
+    17.3,
+    28.8
    ],
    "pivot": [
     0.5,
@@ -7903,8 +7903,8 @@
    "id": "plant_herbs_square_mint",
    "scale_ref": "c_plant_herbs_square",
    "size_cm": [
-    18.5,
-    29.6
+    17.3,
+    28.8
    ],
    "pivot": [
     0.5,
@@ -7934,7 +7934,7 @@
    "scale_ref": "c_plant_herbs_bucket",
    "size_cm": [
     19.2,
-    30.2
+    30.5
    ],
    "pivot": [
     0.5,
@@ -7964,7 +7964,7 @@
    "scale_ref": "c_plant_herbs_bucket",
    "size_cm": [
     19.2,
-    30.2
+    30.5
    ],
    "pivot": [
     0.5,
@@ -7994,7 +7994,7 @@
    "scale_ref": "c_plant_herbs_bucket",
    "size_cm": [
     19.2,
-    30.2
+    30.5
    ],
    "pivot": [
     0.5,
@@ -8023,8 +8023,8 @@
    "id": "plant_bamboo_square_cream",
    "scale_ref": "c_plant_bamboo_square",
    "size_cm": [
-    14.3,
-    51.9
+    17.0,
+    55.2
    ],
    "pivot": [
     0.5,
@@ -8053,8 +8053,8 @@
    "id": "plant_bamboo_square_grey",
    "scale_ref": "c_plant_bamboo_square",
    "size_cm": [
-    14.3,
-    51.9
+    17.0,
+    55.2
    ],
    "pivot": [
     0.5,
@@ -8083,8 +8083,8 @@
    "id": "plant_bamboo_square_mint",
    "scale_ref": "c_plant_bamboo_square",
    "size_cm": [
-    14.3,
-    51.9
+    17.0,
+    55.2
    ],
    "pivot": [
     0.5,
@@ -8113,8 +8113,8 @@
    "id": "plant_bamboo_bowl_cream",
    "scale_ref": "c_plant_bamboo_bowl",
    "size_cm": [
-    17.2,
-    51.0
+    18.6,
+    56.1
    ],
    "pivot": [
     0.5,
@@ -8143,8 +8143,8 @@
    "id": "plant_bamboo_bowl_butter",
    "scale_ref": "c_plant_bamboo_bowl",
    "size_cm": [
-    17.2,
-    51.0
+    18.6,
+    56.1
    ],
    "pivot": [
     0.5,
@@ -8173,8 +8173,8 @@
    "id": "plant_bamboo_bowl_coral",
    "scale_ref": "c_plant_bamboo_bowl",
    "size_cm": [
-    17.2,
-    51.0
+    18.6,
+    56.1
    ],
    "pivot": [
     0.5,
@@ -8203,8 +8203,8 @@
    "id": "plant_grass_cylinder_cream",
    "scale_ref": "c_plant_grass_cylinder",
    "size_cm": [
-    51.1,
-    62.1
+    48.9,
+    58.5
    ],
    "pivot": [
     0.5,
@@ -8229,8 +8229,8 @@
    "id": "plant_grass_cylinder_navy",
    "scale_ref": "c_plant_grass_cylinder",
    "size_cm": [
-    51.1,
-    62.1
+    48.9,
+    58.5
    ],
    "pivot": [
     0.5,
@@ -8255,8 +8255,8 @@
    "id": "plant_grass_cylinder_sage",
    "scale_ref": "c_plant_grass_cylinder",
    "size_cm": [
-    51.1,
-    62.1
+    48.9,
+    58.5
    ],
    "pivot": [
     0.5,
@@ -8281,8 +8281,8 @@
    "id": "plant_grass_basket_oak",
    "scale_ref": "c_plant_grass_basket",
    "size_cm": [
-    59.4,
-    60.4
+    51.9,
+    61.8
    ],
    "pivot": [
     0.5,
@@ -8307,8 +8307,8 @@
    "id": "plant_grass_basket_walnut",
    "scale_ref": "c_plant_grass_basket",
    "size_cm": [
-    59.4,
-    60.4
+    51.9,
+    61.8
    ],
    "pivot": [
     0.5,
@@ -8333,8 +8333,8 @@
    "id": "plant_grass_square_cream",
    "scale_ref": "c_plant_grass_square",
    "size_cm": [
-    55.3,
-    59.8
+    54.9,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -8359,8 +8359,8 @@
    "id": "plant_grass_square_grey",
    "scale_ref": "c_plant_grass_square",
    "size_cm": [
-    55.3,
-    59.8
+    54.9,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -8385,8 +8385,8 @@
    "id": "plant_grass_square_mint",
    "scale_ref": "c_plant_grass_square",
    "size_cm": [
-    55.3,
-    59.8
+    54.9,
+    61.6
    ],
    "pivot": [
     0.5,
@@ -8411,8 +8411,8 @@
    "id": "plant_strawberry_terracotta_terracotta",
    "scale_ref": "c_plant_strawberry_terracotta",
    "size_cm": [
-    23.7,
-    21.6
+    23.8,
+    21.5
    ],
    "pivot": [
     0.5,
@@ -8441,8 +8441,8 @@
    "id": "plant_strawberry_terracotta_cream",
    "scale_ref": "c_plant_strawberry_terracotta",
    "size_cm": [
-    23.7,
-    21.6
+    23.8,
+    21.5
    ],
    "pivot": [
     0.5,
@@ -8472,7 +8472,7 @@
    "scale_ref": "c_plant_strawberry_bucket",
    "size_cm": [
     23.0,
-    21.5
+    22.1
    ],
    "pivot": [
     0.5,
@@ -8502,7 +8502,7 @@
    "scale_ref": "c_plant_strawberry_bucket",
    "size_cm": [
     23.0,
-    21.5
+    22.1
    ],
    "pivot": [
     0.5,
@@ -8532,7 +8532,7 @@
    "scale_ref": "c_plant_strawberry_bucket",
    "size_cm": [
     23.0,
-    21.5
+    22.1
    ],
    "pivot": [
     0.5,
@@ -8561,8 +8561,8 @@
    "id": "plant_tomato_bucket_metal",
    "scale_ref": "c_plant_tomato_bucket",
    "size_cm": [
-    29.1,
-    83.5
+    29.9,
+    84.9
    ],
    "pivot": [
     0.5,
@@ -8587,8 +8587,8 @@
    "id": "plant_tomato_bucket_butter",
    "scale_ref": "c_plant_tomato_bucket",
    "size_cm": [
-    29.1,
-    83.5
+    29.9,
+    84.9
    ],
    "pivot": [
     0.5,
@@ -8613,8 +8613,8 @@
    "id": "plant_tomato_bucket_coral",
    "scale_ref": "c_plant_tomato_bucket",
    "size_cm": [
-    29.1,
-    83.5
+    29.9,
+    84.9
    ],
    "pivot": [
     0.5,
@@ -8639,8 +8639,8 @@
    "id": "plant_tomato_terracotta_terracotta",
    "scale_ref": "c_plant_tomato_terracotta",
    "size_cm": [
-    34.0,
-    84.2
+    33.0,
+    87.8
    ],
    "pivot": [
     0.5,
@@ -8665,8 +8665,8 @@
    "id": "plant_tomato_terracotta_cream",
    "scale_ref": "c_plant_tomato_terracotta",
    "size_cm": [
-    34.0,
-    84.2
+    33.0,
+    87.8
    ],
    "pivot": [
     0.5,
@@ -8691,8 +8691,8 @@
    "id": "plant_ivy_round_cream",
    "scale_ref": "c_plant_ivy_round",
    "size_cm": [
-    38.8,
-    21.0
+    31.8,
+    24.2
    ],
    "pivot": [
     0.5,
@@ -8721,8 +8721,8 @@
    "id": "plant_ivy_round_rose",
    "scale_ref": "c_plant_ivy_round",
    "size_cm": [
-    38.8,
-    21.0
+    31.8,
+    24.2
    ],
    "pivot": [
     0.5,
@@ -8751,8 +8751,8 @@
    "id": "plant_ivy_round_blue",
    "scale_ref": "c_plant_ivy_round",
    "size_cm": [
-    38.8,
-    21.0
+    31.8,
+    24.2
    ],
    "pivot": [
     0.5,
@@ -8781,8 +8781,8 @@
    "id": "plant_ivy_stand_cream",
    "scale_ref": "c_plant_ivy_stand",
    "size_cm": [
-    40.4,
-    22.2
+    32.1,
+    25.0
    ],
    "pivot": [
     0.5,
@@ -8811,8 +8811,8 @@
    "id": "plant_ivy_stand_navy",
    "scale_ref": "c_plant_ivy_stand",
    "size_cm": [
-    40.4,
-    22.2
+    32.1,
+    25.0
    ],
    "pivot": [
     0.5,
@@ -8841,8 +8841,8 @@
    "id": "plant_ivy_basket_oak",
    "scale_ref": "c_plant_ivy_basket",
    "size_cm": [
-    37.8,
-    23.0
+    32.0,
+    22.9
    ],
    "pivot": [
     0.5,
@@ -8871,8 +8871,8 @@
    "id": "plant_ivy_basket_walnut",
    "scale_ref": "c_plant_ivy_basket",
    "size_cm": [
-    37.8,
-    23.0
+    32.0,
+    22.9
    ],
    "pivot": [
     0.5,
