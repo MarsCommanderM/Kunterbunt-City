@@ -10,7 +10,7 @@ from .kit import SHADE, SOFT, Item, ell, knob, leg, line, rrect, shaded, smooth,
 
 
 # ------------------------------------------------------------------ Werkstatt
-def tool(it: Item, style: str = "hammer"):
+def tool(it: Item, style: str = "hammer", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "hammer":
         c.fill(rrect(-W * 0.08, 0, W * 0.08, H * 0.8, W * 0.08), zone=3)
@@ -39,8 +39,21 @@ def tool(it: Item, style: str = "hammer"):
         shaded(c, body, 1, "bottom", SHADE, 0.3)
         c.fill(rrect(W * 0.35, H * 0.68, W / 2, H * 0.82, 0.3), zone=3)
         c.fill(rrect(-W * 0.18, 0, W * 0.25, H * 0.15, 1), zone=2)
+        if state == "on":   # Drehbewegung an der Spitze
+            for k in range(3):
+                r = 1.2 + k * 0.9
+                c.line(smooth([(W / 2 + 0.6, H * 0.75 + r), (W / 2 + 0.6 + r, H * 0.75), (W / 2 + 0.6, H * 0.75 - r)],
+                              closed=False, n=6), 0.35, zone=2)
     elif style == "toolbox":
-        c.line(smooth([(-W * 0.2, H * 0.7), (0, H), (W * 0.2, H * 0.7)], closed=False), 1.2, zone=3)
+        if state == "open":  # Deckel hinten hoch, Werkzeug schaut heraus
+            c.fill(rrect(-W / 2, H * 0.62, W / 2, H * 1.05, 1.5), zone=1, shade=0.72)
+            c.fill(rrect(-W * 0.3, H * 0.55, -W * 0.22, H * 1.15, 0.4), zone=3)          # Schraubenzieher
+            c.fill(rrect(-W * 0.33, H * 1.05, -W * 0.19, H * 1.3, 0.8), zone=2)
+            c.fill(rrect(W * 0.05, H * 0.55, W * 0.12, H * 1.1, 0.4), zone=3, shade=0.8)  # Hammer
+            c.fill(rrect(-W * 0.03, H * 1.05, W * 0.25, H * 1.2, 0.6), zone=3)
+            c.line(smooth([(W * 0.3, H * 0.6), (W * 0.36, H * 1.1), (W * 0.42, H * 0.6)], closed=False), 0.8, zone=3)
+        else:
+            c.line(smooth([(-W * 0.2, H * 0.7), (0, H), (W * 0.2, H * 0.7)], closed=False), 1.2, zone=3)
         body = rrect(-W / 2, 0, W / 2, H * 0.72, 1.5)
         cl = shaded(c, body, 1, "right", SHADE, 0.2)
         c.fill(rrect(-W / 2, H * 0.5, W / 2, H * 0.58, 0.3), zone=2, clip=cl)
@@ -88,7 +101,7 @@ def tool(it: Item, style: str = "hammer"):
 
 
 # ------------------------------------------------------------------ Läden, Kasse, Friseur
-def shop(it: Item, style: str = "cart"):
+def shop(it: Item, style: str = "cart", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "cart":
         for sx in (-1, 1):
@@ -128,6 +141,14 @@ def shop(it: Item, style: str = "cart"):
                 c.fill(rrect(-W * 0.3 + k * W * 0.15, H * (0.35 + r * 0.08), -W * 0.2 + k * W * 0.15, H * (0.4 + r * 0.08), 0.3), zone=2)
         c.fill(rrect(-W * 0.25, H * 0.68, W * 0.25, H, 1), zone=1)
         c.fill(rrect(-W * 0.2, H * 0.74, W * 0.2, H * 0.94, 0.5), zone=0, alpha=0.85)
+        if state == "open":  # Geldschublade vorne raus, Münzen + Scheine, Anzeige leuchtet
+            c.fill(rrect(-W * 0.14, H * 0.8, W * 0.14, H * 0.88, 0.3), zone=2)
+            c.fill(rrect(-W * 0.52, H * 0.02, W * 0.52, H * 0.26, 0.8), zone=1, shade=0.85)
+            for k in range(4):
+                x = -W * 0.4 + k * W * 0.2
+                c.fill(rrect(x, H * 0.12, x + W * 0.16, H * 0.24, 0.3), zone=2 if k % 2 else 3, shade=1.0)
+            for x in (-W * 0.3, -W * 0.1, W * 0.15):
+                c.ellipse(x, H * 0.26, 1.1, 0.6, zone=3, shade=1.0)
     elif style == "price_sign":
         c.fill(rrect(-0.8, 0, 0.8, H * 0.5, 0.4), zone=3)
         c.fill(rrect(-W / 2, H * 0.45, W / 2, H, 1), zone=1)

@@ -11,19 +11,42 @@ from .kit import SHADE, SOFT, Item, ell, knob, leg, line, rrect, shaded, smooth,
 from .plants import leaf
 
 
+def _smoke(c, x: float, y: float, w: float):
+    """Rauch-Kringel (grau-durchsichtig) über Feuer und Grill."""
+    from .household import _band
+    for k, dx in enumerate((-0.2, 0.15)):
+        pts = smooth([(x + dx * w, y), (x + dx * w + w * 0.2, y + w * 0.4), (x + dx * w - w * 0.1, y + w * 0.8),
+                      (x + dx * w + w * 0.1, y + w * 1.15)], closed=False, n=8)
+        c.glass(_band(pts, max(0.5, w * 0.07)), zone=0, opacity=0.18)
+
+
 # ------------------------------------------------------------------ Garten & Grill
-def garden(it: Item, style: str = "grill"):
+def garden(it: Item, style: str = "grill", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "grill":
         for sx in (-1, 1):
             c.line([(sx * W * 0.1, H * 0.55), (sx * W * 0.4, 0)], 1.4, zone=3)
         c.fill(ell(0, 1.5, W * 0.1, 1.5), zone=3)
         bowl = smooth([(-W / 2, H * 0.72, "s"), (W / 2, H * 0.72, "s"), (W * 0.3, H * 0.45), (-W * 0.3, H * 0.45)])
+        if state == "on":   # Deckel steht hochgeklappt dahinter, Glut + Flammen + Rauch
+            lid = smooth([(-W * 0.48, H * 0.9, "s"), (W * 0.48, H * 0.9, "s"), (W * 0.3, H * 1.07), (0, H * 1.12), (-W * 0.3, H * 1.07)])
+            shaded(c, lid, 1, "bottom", SHADE, 0.3)
+            c.fill(ell(0, H * 0.9, W * 0.44, H * 0.03), zone=0, alpha=0.5)
         shaded(c, bowl, 1, "bottom", SHADE, 0.4)
-        c.fill(rrect(-W / 2, H * 0.7, W / 2, H * 0.76, 0.3), zone=3)
-        lid = smooth([(-W * 0.48, H * 0.78, "s"), (W * 0.48, H * 0.78, "s"), (W * 0.3, H * 0.95), (0, H), (-W * 0.3, H * 0.95)])
-        shaded(c, lid, 1, "bottom", SOFT, 0.3)
-        c.ellipse(0, H, 1.2, 1.0, zone=3)
+        if state == "on":
+            for k in range(5):
+                x = -W * 0.36 + k * W * 0.18
+                c.fill(smooth([(x - W * 0.07, H * 0.72), (x, H * (0.84 + 0.03 * (k % 2))), (x + W * 0.07, H * 0.72)]), zone=2)
+            c.fill(rrect(-W / 2, H * 0.7, W / 2, H * 0.76, 0.3), zone=3)
+            for k in range(7):
+                x = -W * 0.42 + k * W * 0.14
+                c.line([(x, H * 0.7), (x, H * 0.76)], 0.35, zone=0)
+            _smoke(c, W * 0.1, H * 0.86, W * 0.4)
+        else:
+            c.fill(rrect(-W / 2, H * 0.7, W / 2, H * 0.76, 0.3), zone=3)
+            lid = smooth([(-W * 0.48, H * 0.78, "s"), (W * 0.48, H * 0.78, "s"), (W * 0.3, H * 0.95), (0, H), (-W * 0.3, H * 0.95)])
+            shaded(c, lid, 1, "bottom", SOFT, 0.3)
+            c.ellipse(0, H, 1.2, 1.0, zone=3)
     elif style == "bbq_food":
         c.fill(rrect(-W / 2, 0, W / 2, H * 0.3, 1), zone=3)
         for k, x in enumerate((-W * 0.3, 0, W * 0.3)):
@@ -85,14 +108,20 @@ def garden(it: Item, style: str = "grill"):
 
 
 # ------------------------------------------------------------------ Camping & Wald
-def camping(it: Item, style: str = "tent"):
+def camping(it: Item, style: str = "tent", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "tent":
         body = smooth([(-W / 2, 0, "s"), (W / 2, 0, "s"), (W * 0.08, H, "s"), (-W * 0.08, H, "s")])
         cl = shaded(c, body, 1, "right", SHADE, 0.3)
         door = [(-W * 0.18, 0), (W * 0.18, 0), (0, H * 0.7)]
-        c.fill(door, zone=0, alpha=0.8)
-        c.fill([(W * 0.02, 0), (W * 0.18, 0), (0.5, H * 0.66)], zone=2)
+        if state == "open":
+            c.fill(door, zone=0, alpha=0.8)
+            c.fill([(W * 0.02, 0), (W * 0.18, 0), (0.5, H * 0.66)], zone=2)
+        else:              # Tür zu: Stoffbahn mit Reißverschluss
+            c.fill(door, zone=2)
+            c.line([(0, 0.5), (0, H * 0.68)], 0.35, zone=0)
+            for k in range(1, 8):
+                c.line([(-0.6, H * 0.09 * k), (0.6, H * 0.09 * k)], 0.2, zone=0)
         line(c, [(0, H), (0, H * 0.7)], zone=1, clip=cl)
         for sx in (-1, 1):
             c.line([(sx * W * 0.06, H * 0.98), (sx * W * 0.2, H + 3)], 0.4, zone=3)
@@ -105,8 +134,14 @@ def camping(it: Item, style: str = "tent"):
     elif style == "campfire":
         for k, a in enumerate((-25, 25, -10, 10)):
             c.line([(-W * 0.4 + k * 2, 1), (W * 0.4 - k * 2, H * 0.12)], 2.2, zone=3, shade=0.9 - k * 0.05)
-        c.fill(smooth([(0, H), (W * 0.3, H * 0.4), (W * 0.2, H * 0.12), (-W * 0.2, H * 0.12), (-W * 0.3, H * 0.4)]), zone=1)
-        c.fill(smooth([(0, H * 0.7), (W * 0.15, H * 0.3), (0, H * 0.15), (-W * 0.15, H * 0.3)]), zone=2)
+        if state == "on":
+            c.fill(smooth([(0, H), (W * 0.3, H * 0.4), (W * 0.2, H * 0.12), (-W * 0.2, H * 0.12), (-W * 0.3, H * 0.4)]), zone=1)
+            c.fill(smooth([(0, H * 0.7), (W * 0.15, H * 0.3), (0, H * 0.15), (-W * 0.15, H * 0.3)]), zone=2)
+            for sx in (-1, 1):
+                c.ellipse(sx * W * 0.28, H * 0.78, 0.7, 0.7, zone=2)
+        else:              # aus: nur Holz, ein Rest Glut und ein dünner Rauchfaden
+            c.fill(ell(0, H * 0.13, W * 0.16, H * 0.05), zone=1, shade=0.7)
+            _smoke(c, 0, H * 0.2, W * 0.25)
         for k in range(4):
             a = math.radians(200 + k * 45)
             c.fill(ell(math.cos(a) * W * 0.42, 1.5 + abs(math.sin(a)) * 1, 2.2, 1.6), zone=3, shade=0.55)
@@ -118,7 +153,12 @@ def camping(it: Item, style: str = "tent"):
     elif style == "lantern":
         c.line(smooth([(-W * 0.3, H * 0.85), (0, H), (W * 0.3, H * 0.85)], closed=False), 0.6, zone=3)
         c.fill(rrect(-W * 0.4, 0, W * 0.4, H * 0.12, 0.6), zone=1)
-        c.glass(rrect(-W * 0.32, H * 0.12, W * 0.32, H * 0.72, 1), zone=2, opacity=0.75)
+        if state == "on":
+            c.glass(ell(0, H * 0.42, W * 0.95, W * 0.95), zone=2, opacity=0.22)
+            c.glass(rrect(-W * 0.32, H * 0.12, W * 0.32, H * 0.72, 1), zone=2, opacity=0.95)
+            c.fill(smooth([(0, H * 0.58), (W * 0.1, H * 0.36), (0, H * 0.26), (-W * 0.1, H * 0.36)]), zone=1, shade=1.0)
+        else:
+            c.glass(rrect(-W * 0.32, H * 0.12, W * 0.32, H * 0.72, 1), zone=2, opacity=0.35, shade=0.7)
         c.line(rrect(-W * 0.32, H * 0.12, W * 0.32, H * 0.72, 1), 0.3, zone=0, closed=True)
         c.fill(trap(-W * 0.4, W * 0.4, H * 0.7, -W * 0.2, W * 0.2, H * 0.86, 0.6), zone=1)
     elif style == "camp_chair":

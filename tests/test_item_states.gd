@@ -102,3 +102,44 @@ func test_state_is_saved_and_restored() -> void:
 			found = it
 	assert_not_null(found)
 	assert_eq(found.state, "open", "offener Schrank bleibt nach dem Laden offen")
+
+
+## P04b-T11: draußen grillen, am Lagerfeuer kochen, Kasse und Werkstatt zum Spielen.
+func _contents(host: ItemNode) -> Array:
+	var names: Array = []
+	for c: Node in host.contents_root.get_children():
+		if c is ItemNode and not c.is_queued_for_deletion():
+			names.append(String((c as ItemNode).def.id))
+	return names
+
+
+func test_grill_turns_bbq_food_into_sausage() -> void:
+	var g: ItemNode = ItemSpawner.on_floor(k.room, _first("garden_grill"), 300.0, 10.0)
+	assert_eq(g.state, "off")
+	ItemSpawner.into_container(g, _first("garden_bbq_food"))
+	g.on_tap()
+	assert_eq(g.state, "on", "Tippen zündet den Grill an")
+	assert_has(_contents(g), "cook_sausage_rust", "Grillgut wird zur Wurst")
+
+
+func test_campfire_toasts_bread_only_when_burning() -> void:
+	var f: ItemNode = ItemSpawner.on_floor(k.room, _first("camp_campfire"), 300.0, 10.0)
+	ItemSpawner.into_container(f, _first("cook_bread_slice"))
+	Recipes.check(f)
+	assert_does_not_have(_contents(f), "cook_toast_oak", "kaltes Feuer kocht nicht")
+	f.on_tap()
+	assert_has(_contents(f), "cook_toast_oak", "am brennenden Feuer wird Brot zu Toast")
+
+
+func test_register_toolbox_cooler_tent_open_and_drill_runs() -> void:
+	for pre: String in ["shop_cash_register", "work_toolbox", "pool_cooler", "camp_tent_"]:
+		var it: ItemNode = ItemSpawner.on_floor(k.room, _first(pre), 300.0, 10.0)
+		assert_true(it.def.has_states(), pre + " hat Zustände")
+		it.on_tap()
+		assert_eq(it.state, "open", pre + " geht auf")
+	var d: ItemNode = ItemSpawner.on_floor(k.room, _first("work_drill"), 300.0, 10.0)
+	d.on_tap()
+	assert_eq(d.state, "on", "Bohrer läuft")
+	var l: ItemNode = ItemSpawner.on_floor(k.room, _first("camp_lantern"), 300.0, 10.0)
+	l.on_tap()
+	assert_eq(l.state, "on", "Laterne leuchtet")

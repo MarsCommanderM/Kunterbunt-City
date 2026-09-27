@@ -18,7 +18,7 @@ Räume starten leer, eingerichtet wird über einen Katalog · alle Icons neu im 
 | P04b-T08 | Alle Icons/Symbole im Stil neu | ⏳ |
 | P04b-T09 | Item-Bibliothek (hunderte Items, Farbvarianten) + Katalog in jedem Raum | ✅ |
 | P04b-T10 | Zustände (Schränke/Schubladen auf, Geräte an/aus mit Animation), Kochen mit Rezepten, Großgeräte, gekochte Speisen, > 1000 Katalog-Items | ✅ |
-| P04b-T11 | Mehr Spiel: Grill, Lagerfeuer, Kasse, Werkstatt-Arbeiten, weitere Rezepte | ⏳ |
+| P04b-T11 | Mehr Spiel: Grill (Deckel hoch, Glut, Rauch), Lagerfeuer an/aus, Laterne, Zelt-Tür, Kühlbox, Kasse (Geldschublade), Bohrer, Werkzeugkasten; 5 neue Rezepte am Grill/Feuer | ✅ |
 
 ## Akzeptanzkriterien
 - [x] Alle Größen aus der Tabelle, Körper-Größe unabhängig von Teilen (`test_rig_builds_with_every_variant`)

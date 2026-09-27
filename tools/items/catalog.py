@@ -267,7 +267,7 @@ for st, w, h, names, extra in (("grill", 60, 95, ["black", "coral", "navy"], {})
                                ("bench", 150, 85, ["oak", "green", "coral"], {"seat": {"h": 45, "pose": "sit", "slots": 3}}),
                                ("pool_kids", 150, 30, ["sky", "rose", "mint"], {}), ("sandbox_toys", 30, 20, ["coral"], {}),
                                ("hose", 40, 40, ["green", "coral"], {})):
-    second = {"gnome": "cream", "bbq_food": "rust", "birdhouse": "rust", "pool_kids": "sky", "sandbox_toys": "sky",
+    second = {"grill": "orange", "gnome": "cream", "bbq_food": "rust", "birdhouse": "rust", "pool_kids": "sky", "sandbox_toys": "sky",
               "watering_can": "cream"}.get(st, "cream")
     third = {"grill": "metal", "gnome": "rose", "bbq_food": "metal", "bench": "dark_wood", "sandbox_toys": "sand",
              "birdhouse": "oak"}.get(st, "metal")
@@ -391,9 +391,15 @@ STATEFUL = {
     "kit_microwave": {**ON, "anim": {"on": "pulse"}}, "kit_coffee": ON, "kit_pot": {**ON, "anim": {"on": "pulse"}},
     "deco_radio": {**ON, "anim": {"on": "bounce"}}, "deco_laptop": ON, "deco_phone": ON,
     "bath_hairdryer": {**ON, "anim": {"on": "shake"}},
+    # T11: draußen, Werkstatt, Laden
+    "garden_grill": {**ON, "anim": {"on": "pulse"}}, "camp_campfire": {**ON, "anim": {"on": "pulse"}},
+    "camp_lantern": ON, "camp_tent": OPEN, "pool_cooler": OPEN,
+    "work_drill": {**ON, "anim": {"on": "shake"}}, "work_toolbox": OPEN,
+    "shop_cash_register": {**OPEN, "anim": {"open": "bounce"}},
 }
 # Kochen: Geräte nehmen Zutaten auf (Inhalt immer sichtbar) – Rezepte in data/recipes/
-COOK_HOSTS = {"kit_toaster": 2, "kit_blender": 4, "kit_microwave": 2, "kit_pot": 4, "kit_pan": 2, "kit_coffee": 1}
+COOK_HOSTS = {"kit_toaster": 2, "kit_blender": 4, "kit_microwave": 2, "kit_pot": 4, "kit_pan": 2, "kit_coffee": 1,
+              "garden_grill": 4, "camp_campfire": 3}
 for t in TEMPLATES:
     for key, cfg in STATEFUL.items():
         if t["id"] == key:

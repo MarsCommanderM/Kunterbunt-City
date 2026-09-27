@@ -169,7 +169,7 @@
    "id": "work_drill_coral",
    "scale_ref": "c_work_drill",
    "size_cm": [
-    22.5,
+    26.2,
     25.6
    ],
    "pivot": [
@@ -190,13 +190,23 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "work_drill_teal",
    "scale_ref": "c_work_drill",
    "size_cm": [
-    22.5,
+    26.2,
     25.6
    ],
    "pivot": [
@@ -217,13 +227,23 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "work_drill_butter",
    "scale_ref": "c_work_drill",
    "size_cm": [
-    22.5,
+    26.2,
     25.6
    ],
    "pivot": [
@@ -244,14 +264,24 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
   },
   {
    "id": "work_toolbox_coral",
    "scale_ref": "c_work_toolbox",
    "size_cm": [
     46.9,
-    32.4
+    36.9
    ],
    "pivot": [
     0.5,
@@ -271,14 +301,21 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
   },
   {
    "id": "work_toolbox_navy",
    "scale_ref": "c_work_toolbox",
    "size_cm": [
     46.9,
-    32.4
+    36.9
    ],
    "pivot": [
     0.5,
@@ -298,14 +335,21 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
   },
   {
    "id": "work_toolbox_green",
    "scale_ref": "c_work_toolbox",
    "size_cm": [
     46.9,
-    32.4
+    36.9
    ],
    "pivot": [
     0.5,
@@ -325,7 +369,14 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
   },
   {
    "id": "work_tire_metal",

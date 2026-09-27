@@ -15,6 +15,11 @@
   {"id": "popcorn", "host": "kit_microwave", "in": ["fair_popcorn"], "out": "cook_popcorn_bowl_butter", "time": 1.5},
   {"id": "coffee", "host": "kit_coffee", "in": ["kit_mug", "kit_cup"], "out": "cook_hot_drink_walnut", "time": 1.5},
   {"id": "baked_cake", "host": "app_oven", "in": ["food_cake"], "out": "cook_cake_baked_cream", "time": 2.5},
-  {"id": "baked_bread", "host": "app_oven", "in": ["food_bread"], "out": "cook_toast_oak", "time": 2.0}
+  {"id": "baked_bread", "host": "app_oven", "in": ["food_bread"], "out": "cook_toast_oak", "time": 2.0},
+  {"id": "grill_sausage", "host": "garden_grill", "in": ["garden_bbq_food"], "out": "cook_sausage_rust", "time": 1.8},
+  {"id": "grill_toast", "host": "garden_grill", "in": ["food_bread", "cook_bread_slice", "food_toast"], "out": "cook_toast_oak", "time": 1.5},
+  {"id": "fire_sausage", "host": "camp_campfire", "in": ["garden_bbq_food"], "out": "cook_sausage_rust", "time": 2.0},
+  {"id": "fire_bread", "host": "camp_campfire", "in": ["food_bread", "cook_bread_slice"], "out": "cook_toast_oak", "time": 2.0},
+  {"id": "fire_milk", "host": "camp_campfire", "in": ["food_carton", "food_milk_carton"], "out": "cook_hot_drink_cream", "time": 2.0}
  ]
 }

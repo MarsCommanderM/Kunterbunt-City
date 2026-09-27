@@ -7,8 +7,8 @@
    "id": "garden_grill_black",
    "scale_ref": "c_garden_grill",
    "size_cm": [
-    61.8,
-    98.2
+    61.9,
+    102.4
    ],
    "pivot": [
     0.5,
@@ -21,17 +21,35 @@
    "pad_px": 1,
    "colors": [
     "#2a2a30",
-    "#f5f3ee",
+    "#f09a55",
     "#9aa6b4"
    ],
-   "catalog": "garden"
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
   },
   {
    "id": "garden_grill_coral",
    "scale_ref": "c_garden_grill",
    "size_cm": [
-    61.8,
-    98.2
+    61.9,
+    102.4
    ],
    "pivot": [
     0.5,
@@ -44,17 +62,35 @@
    "pad_px": 1,
    "colors": [
     "#e07a7a",
-    "#f5f3ee",
+    "#f09a55",
     "#9aa6b4"
    ],
-   "catalog": "garden"
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
   },
   {
    "id": "garden_grill_navy",
    "scale_ref": "c_garden_grill",
    "size_cm": [
-    61.8,
-    98.2
+    61.9,
+    102.4
    ],
    "pivot": [
     0.5,
@@ -67,10 +103,28 @@
    "pad_px": 1,
    "colors": [
     "#2e3140",
-    "#f5f3ee",
+    "#f09a55",
     "#9aa6b4"
    ],
-   "catalog": "garden"
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
   },
   {
    "id": "garden_bbq_food_rust",

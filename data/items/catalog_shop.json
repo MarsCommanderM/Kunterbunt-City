@@ -367,7 +367,7 @@
    "id": "shop_cash_register_cream",
    "scale_ref": "c_shop_cash_register",
    "size_cm": [
-    46.5,
+    48.2,
     36.5
    ],
    "pivot": [
@@ -388,13 +388,23 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_cash_register__open.png"
+   },
+   "anim": {
+    "open": "bounce"
+   }
   },
   {
    "id": "shop_cash_register_black",
    "scale_ref": "c_shop_cash_register",
    "size_cm": [
-    46.5,
+    48.2,
     36.5
    ],
    "pivot": [
@@ -415,13 +425,23 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_cash_register__open.png"
+   },
+   "anim": {
+    "open": "bounce"
+   }
   },
   {
    "id": "shop_cash_register_sky",
    "scale_ref": "c_shop_cash_register",
    "size_cm": [
-    46.5,
+    48.2,
     36.5
    ],
    "pivot": [
@@ -442,7 +462,17 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_cash_register__open.png"
+   },
+   "anim": {
+    "open": "bounce"
+   }
   },
   {
    "id": "shop_price_sign_coral",

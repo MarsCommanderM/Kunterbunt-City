@@ -140,7 +140,7 @@ def toy(it: Item, style: str = "ball"):
 
 
 # ------------------------------------------------------------------ Schwimmbad & Strand
-def pool(it: Item, style: str = "air_mattress"):
+def pool(it: Item, style: str = "air_mattress", state: str = ""):
     c, W, H = it.c, it.w, it.h
     if style == "air_mattress":
         body = rrect(-W / 2, 0, W / 2, H, H * 0.45)
@@ -199,8 +199,15 @@ def pool(it: Item, style: str = "air_mattress"):
     elif style == "cooler":
         body = rrect(-W / 2, 0, W / 2, H * 0.8, 2)
         shaded(c, body, 1, "right", SHADE, 0.2)
-        c.fill(rrect(-W / 2 - 0.5, H * 0.72, W / 2 + 0.5, H * 0.86, 1), zone=2)
-        c.line(smooth([(-W * 0.3, H * 0.86), (0, H), (W * 0.3, H * 0.86)], closed=False), 0.8, zone=3)
+        if state == "open":  # Deckel nach hinten geklappt, Eis-Inneres sichtbar
+            c.fill(smooth([(-W / 2 - 0.5, H * 0.78, "s"), (W / 2 + 0.5, H * 0.78, "s"), (W * 0.46, H * 1.25, "s"),
+                           (-W * 0.46, H * 1.25, "s")], n=2), zone=2, shade=0.85)
+            c.fill(rrect(-W * 0.44, H * 0.6, W * 0.44, H * 0.78, 1), zone=0, alpha=0.35)
+            for x in (-W * 0.25, W * 0.05, W * 0.28):
+                c.glass(rrect(x - 2, H * 0.62, x + 2, H * 0.8, 0.6), zone=2, opacity=0.6)
+        else:
+            c.fill(rrect(-W / 2 - 0.5, H * 0.72, W / 2 + 0.5, H * 0.86, 1), zone=2)
+            c.line(smooth([(-W * 0.3, H * 0.86), (0, H), (W * 0.3, H * 0.86)], closed=False), 0.8, zone=3)
     elif style == "sunscreen":
         body = rrect(-W / 2, 0, W / 2, H * 0.82, W * 0.3)
         cl = shaded(c, body, 1, "right", SHADE, 0.25)

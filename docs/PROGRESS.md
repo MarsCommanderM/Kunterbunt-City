@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **04b · Figuren-Neubau „großer Kopf“** (vor 07, nach 👤-Test) |
-| Nächste Task | P04b-T11 Mehr Spiel · T06 Editor · T07 Tiere · T08 Icons |
-| Letzter grüner check.sh | 2026-09-27 (P04b T10) |
+| Nächste Task | P04b-T08 Icons · T06 Editor · T07 Tiere |
+| Letzter grüner check.sh | 2026-09-27 (P04b T11) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -19,7 +19,7 @@
 | 04 Editor | ✅ fertig (👤 Kindertest + echte Stil-C-Teile in P06 offen) | Log 2026-09-26 |
 | 05 Menü & Speichern | ✅ fertig (nur 1 Bereich hat Inhalt – Rest Baustelle) | Log 2026-09-26 |
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
-| 04b Figuren-Neubau | 🔨 T01–T05, T09, T10 fertig | Log 2026-09-27 |
+| 04b Figuren-Neubau | 🔨 T01–T05, T09–T11 fertig | Log 2026-09-27 |
 | 07 Slice Zuhause | ⏳ | – |
 | 08 NPC-/Tier-KI | ⏳ | – |
 | 09 MVP v0.1 | ⏳ | – |
@@ -70,6 +70,12 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 04b · T11 Mehr Spiel draußen, im Laden und in der Werkstatt 🔨
+- Neue Zustände (Tippen): Grill an (Deckel hoch, Glut, Rauch), Lagerfeuer an/aus (aus = Holz + Rauchfaden),
+  Laterne leuchtet, Zelt-Tür auf/zu, Kühlbox auf, Kasse auf (Geldschublade mit Scheinen/Münzen, Hüpfer),
+  Bohrer läuft (Wackeln), Werkzeugkasten auf.
+- Grill und Lagerfeuer sind Kochstellen: Grillgut → Wurst, Brot → Toast, Milch am Feuer → heiße Milch (5 neue Rezepte).
+- Tests: GUT 254/254 (+3 in `test_item_states`), pytest 122/122, Maßstab ✅.
 ### 2026-09-27 · Phase 04b · T09 + T10 Item-Bibliothek, Zustände & Kochen 🔨
 - Erledigt:
   - T09: `tools/items/` (Vektor-Kit, Möbel, Pflanzen, Haushalt, Spiel, draußen, Stadt), `tools/make_items.py`

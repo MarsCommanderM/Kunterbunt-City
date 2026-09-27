@@ -3307,7 +3307,7 @@
   {
    "id": "c_pool_cooler",
    "category": "pool",
-   "h_cm": 37.1,
+   "h_cm": 41.9,
    "w_cm": 47.5,
    "hold": "one_hand",
    "placement": "floor",
@@ -3344,7 +3344,7 @@
   {
    "id": "c_garden_grill",
    "category": "item",
-   "h_cm": 98.2,
+   "h_cm": 102.4,
    "w_cm": 61.9,
    "hold": "none",
    "placement": "floor",
@@ -3483,8 +3483,8 @@
   {
    "id": "c_camp_lantern",
    "category": "item",
-   "h_cm": 27.8,
-   "w_cm": 14.2,
+   "h_cm": 31.5,
+   "w_cm": 27.8,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
@@ -3832,7 +3832,7 @@
    "id": "c_work_drill",
    "category": "garage",
    "h_cm": 25.6,
-   "w_cm": 22.5,
+   "w_cm": 26.2,
    "hold": "one_hand",
    "placement": "floor",
    "src": "catalog"
@@ -3840,7 +3840,7 @@
   {
    "id": "c_work_toolbox",
    "category": "garage",
-   "h_cm": 32.4,
+   "h_cm": 36.9,
    "w_cm": 46.9,
    "hold": "one_hand",
    "placement": "floor",
@@ -3941,7 +3941,7 @@
    "id": "c_shop_cash_register",
    "category": "shop",
    "h_cm": 36.5,
-   "w_cm": 46.5,
+   "w_cm": 48.2,
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"

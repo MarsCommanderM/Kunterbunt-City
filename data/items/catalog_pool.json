@@ -803,7 +803,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    37.1
+    41.9
    ],
    "pivot": [
     0.5,
@@ -827,6 +827,13 @@
    "container": {
     "slots": 6,
     "max_item_h_cm": 30
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/pool_cooler__open.png"
    }
   },
   {
@@ -834,7 +841,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    37.1
+    41.9
    ],
    "pivot": [
     0.5,
@@ -858,6 +865,13 @@
    "container": {
     "slots": 6,
     "max_item_h_cm": 30
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/pool_cooler__open.png"
    }
   },
   {
@@ -865,7 +879,7 @@
    "scale_ref": "c_pool_cooler",
    "size_cm": [
     47.5,
-    37.1
+    41.9
    ],
    "pivot": [
     0.5,
@@ -889,6 +903,13 @@
    "container": {
     "slots": 6,
     "max_item_h_cm": 30
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/pool_cooler__open.png"
    }
   },
   {
