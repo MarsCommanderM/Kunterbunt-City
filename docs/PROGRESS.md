@@ -4,8 +4,8 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
-| Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
+| Aktuelle Phase | **10 fertig** – wartet auf 👤 „OK“ für Phase 11 |
+| Nächste Task | P11 Politur & Release 1.0 (nach Freigabe) |
 | Letzter grüner check.sh | 2026-09-28 (P10h) |
 | Version | 0.1.0 |
 
@@ -21,7 +21,7 @@
 | 06 Asset-Pipeline | ✅ fertig (👤 echte ComfyUI-Blätter in P07 offen) | Log 2026-09-27 |
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
-| 08 NPC-/Tier-KI | 🔨 | – |
+| 08 NPC-/Tier-KI | ✅ fertig | Log 2026-09-27 |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
 | 10a–10h Content | ✅ 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ · 10g Zoo ✅ · 10h Werkstatt ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
