@@ -4,10 +4,10 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **10 fertig** – wartet auf 👤 „OK“ für Phase 11 |
-| Nächste Task | P11 Politur & Release 1.0 (nach Freigabe) |
-| Letzter grüner check.sh | 2026-09-28 (P10h) |
-| Version | 0.1.0 |
+| Aktuelle Phase | **11 fertig** – Release 1.0.0 (👤-Punkte offen) |
+| Nächste Task | nach 1.0: `docs/BACKLOG.md` (Farbenblind-Modus, APK, Profiler je Bereich) |
+| Letzter grüner check.sh | 2026-09-28 (P11) |
+| Version | 1.0.0 |
 
 ## Phasen
 | Phase | Status | Bericht |
@@ -24,7 +24,7 @@
 | 08 NPC-/Tier-KI | ✅ fertig | Log 2026-09-27 |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
 | 10a–10h Content | ✅ 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ · 10g Zoo ✅ · 10h Werkstatt ✅ | Log 2026-09-28 |
-| 11 Politur 1.0 | ⏳ | – |
+| 11 Politur 1.0 | ✅ fertig (👤 Kindertest, Upload, Markencheck offen) | Log 2026-09-28 |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 
@@ -96,10 +96,31 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
   Spalten – vorher rutschten Welt-Auswahl und Knöpfe unten aus dem Fenster (offener Punkt seit P04b); ausgeschaltete
   Schalter sind jetzt blass (sahen vorher wie eingeschaltet aus). Beweis `docs/tests/P11/settings_{de,en,tr}.jpg`.
 - **T05 Stabilität:** `tools/godot/p11_bot_runner.gd` – Zufalls-Bot zieht, tippt, holt Dinge, wechselt Räume/Bereiche,
-  macht rückgängig; eigener Logger zählt Fehler, misst Speicher/Knoten/verwaiste Knoten. Probelauf 60 s: 1134 Züge,
-  742 Tipps, 333 neue Dinge, 0 Fehler.
+  macht rückgängig; eigener Logger zählt Fehler, misst Speicher/Knoten/verwaiste Knoten.
+  **60-Minuten-Lauf:** 49 144 Züge · 31 141 Tipps · 12 373 neue Dinge · 6 335 Raum- und 40 Bereichswechsel ·
+  4 934× rückgängig → **0 Fehler, 0 Warnungen, 0 verwaiste Knoten**, Knoten 21 → 21. Speicher 102 → 198 MB, davon
+  +95 MB in den ersten 30 Min. (Bild-Caches aller 12 Bereiche füllen sich), in der zweiten halben Stunde nur +3 MB →
+  kein Leck. Bericht `docs/tests/P11/bot_report.json`.
+- **Gefunden vom Bot:** Dinge in der Hand einer gespiegelten Figur hatten ein Rechteck mit negativer Größe
+  („Rect2 size is negative“ beim Greifen) → `ItemNode.global_rect()` normalisiert, Treffer-Test spiegelt mit.
 - **T06/T07/T09:** `docs/DATENSCHUTZ.md`, `CREDITS.md` vollständig, `docs/BACKLOG.md`. Version **1.0.0**, `CHANGELOG.md`.
 - T01 Größe: Spiel-Paket ≈ 90 MB (Musik wird beim Import komprimiert) → Web deutlich unter 150 MB.
+
+## Phasenbericht P11 – Politur & Release 1.0
+Status: ✅ fertig (👤-Punkte offen)
+Erledigt: T01 Größe (Web-Zip 92 MB) · T02 Mono-Ton + Einstellungen in 2 Spalten · T03 6 Sprachen · T04 Spielstand-
+Sicherungen · T05 60-Min.-Bot · T06 Datenschutz · T07 CREDITS · T08 Release-Pipeline + Windows-Installer · T09 Backlog
+Akzeptanzkriterien:
+- ✅ 60 Min. Zufalls-Spielen ohne Fehler/Leck – `docs/tests/P11/bot_report.json`
+- ✅ Kaputter Spielstand → Sicherung – `test_save_backup`
+- ✅ Sprachen – `test_i18n`, `test_i18n_access`, `docs/tests/P11/settings_{de,en,tr}.jpg`
+- ✅ Ein-Klick-Start vom Desktop: Windows-Installer ohne Admin-Rechte mit Desktop-Verknüpfung, Linux-Skript;
+  lokal gebaut: Setup 108 MB, Windows-Zip 120 MB, Linux 111 MB, macOS 142 MB, Web 92 MB (Browser-Test 0 Fehler)
+- ⚠️ Farbenblind-Modus fehlt noch (#134) · ⚠️ Profiler je Bereich auf echter GPU offen (#133) · ❌ APK (kein SDK, #121)
+- ⏳ 👤 Kindertest, itch.io-Upload, Markencheck
+Tests: Maßstab ✅ | pytest 137/137 ✅ | GUT 386/386 ✅
+Performance: headless 250 Items + 15 NPCs/Tiere 1,1 ms/Frame KI-Logik; RAM im Dauerlauf ≈ 200 MB
+👤 Aufgaben für dich: Installer von der Release-Seite testen, Kindertest, itch.io-Upload, Namens-Markencheck.
 
 ### 2026-09-28 · Phase 10h · Werkstatt ✅ → **alle 12 Bereiche spielbar**
 - `tools/areas/workshop.py` → `data/areas/workshop.json`: **6 Räume** (Autowerkstatt mit Hebebühne, Waschanlage,
