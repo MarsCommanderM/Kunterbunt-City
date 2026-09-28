@@ -21,6 +21,7 @@ var ui: CanvasLayer                  ## Ebene für UI-Panels (Rucksack, Album, E
 var me: ItemNode                     ## die eigene Figur
 var light_mod: CanvasModulate        ## P07-T05: Raum dunkel, wenn der Licht-Schalter aus ist
 var pets: Array = []                 ## [PetNode]
+var npcs: Array = []                 ## [NpcBrain] – P08: feste Figuren im Raum
 var load_ms: float = 0.0
 var _t0: int = 0
 
@@ -129,6 +130,7 @@ func switch_room(rid: String) -> bool:
 	old.queue_free()
 	me = null
 	pets.clear()
+	npcs.clear()
 	_enter_room(rid, false)
 	if hud != null:
 		hud.show_room_buttons(room_ids().size() > 1, room.can_decorate())
@@ -156,6 +158,7 @@ func _spawn(spawn: Vector2) -> void:
 		Log.info("Raumzustand geladen: %d Items" % n)
 		_spawn_me(spawn)
 	_spawn_pets(spawn)
+	npcs = NpcSpawner.spawn_for_room(room, String(area_id))
 	if me != null:
 		_arrive(me)
 
@@ -211,6 +214,8 @@ func _spawn_pets(spawn: Vector2) -> void:
 		if pet == null:
 			continue
 		pet.set_meta("pet_id", String(pd.id))
+		if pet is PetNode:
+			(pet as PetNode).set_trait(pd.pet_trait)          # P08-T07: Charakterzug → Bedürfnisse
 		if PetSpecies.ids().has(pd.species_id):
 			PetLook.apply(pet.sprite, [pd.fur, pd.fur2, pd.collar], pd.pattern)
 		pets.append(pet)
@@ -345,6 +350,9 @@ func _on_world_changed() -> void:
 ## Ding auf den Rucksack-Knopf gezogen? → einpacken.
 func _on_item_dropped(item: ItemNode, _target) -> void:
 	if room != null and Garden.on_drop(room, item):      # P07-T07: gesät oder gegossen
+		_on_world_changed()
+		return
+	if room != null and NpcSpawner.item_dropped(room, item):   # P08: Kasse scannt, Ding kommt in die Tüte
 		_on_world_changed()
 		return
 	var host: Node = item.get_parent().get_parent() if item.get_parent() != null else null

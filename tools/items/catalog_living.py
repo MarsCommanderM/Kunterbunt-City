@@ -60,11 +60,11 @@ for style, w, h, sh, names, gid, slots in (
       variants=[(n, cols(n, "coral" if style == "bench_kitchen" else "cream", "oak" if style != "folding" else "metal")) for n in names])
 
 # ------------------------------------------------------------------ Gardinenstangen, Raffrollo, Jalousie (Wand)
-for style, w, h, names in (("rod", 180, 12, ["black", "white", "oak", "#e0b84a"]), ("rod_rings", 240, 12, ["black", "oak", "white"]),
+for style, w, h, names in (("rod", 180, 12, ["black", "white", "oak", "gold"]), ("rod_rings", 240, 12, ["black", "oak", "white"]),
                            ("roman", 110, 70, ["cream", "sage", "sky", "rose"]), ("venetian", 110, 130, ["white", "grey", "oak", "sky"])):
     gid = {"rod": "curtain_rod", "rod_rings": "curtain_rod_rings", "roman": "curtain_roman", "venetian": "curtain_venetian"}[style]
     T(id=gid, fn=F2.window_deco, w=w, h=h, kw={"style": style}, group="curtains", category="deco", placement="wall",
-      variants=[(n, cols(n, "#e0b84a" if style.startswith("rod") else "cream", "metal")) for n in names])
+      variants=[(n, cols(n, "gold" if style.startswith("rod") else "cream", "metal")) for n in names])
 
 # ------------------------------------------------------------------ Garage
 for style, w, h, names in (("tire_summer", 62, 62, ["black"]), ("tire_winter", 62, 62, ["black"]), ("tire_sport", 66, 66, ["black"]),

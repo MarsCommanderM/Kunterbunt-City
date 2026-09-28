@@ -144,7 +144,7 @@ for st, w, h, names, grp, extra in (
         ("arbor", 300, 280, ["sage", "sky", "rose", "oak"], "yard", {}),
         ("hutch", 120, 100, ["oak", "white", "sage"], "yard", {"container": {"slots": 2, "max_item_h_cm": 40}}),
         ("coop", 140, 130, ["rust", "oak"], "yard", {}),
-        ("bird_bath", 50, 80, ["#b8b2a7", "sand"], "yard", {}),
+        ("bird_bath", 50, 80, ["stone", "sand"], "yard", {}),
         ("bird_feeder", 40, 140, ["oak", "white", "sky"], "yard", {}),
         ("parasol", 250, 240, ["coral", "sky", "butter", "sage", "cream"], "patio",
          {"states": {"closed": {"state": "closed"}}, "state0": "open"}),
@@ -178,3 +178,21 @@ S("garden_sandbox", OD.playground, "sandpit", 150, 30, "patio", "item", ["butter
   seat={"h": 16, "pose": "sit", "slots": 3})
 S("garden_sandbox_big", OD.playground, "sandpit", 220, 36, "patio", "item", ["butter"], second="sky", third="walnut", hold="none",
   seat={"h": 20, "pose": "sit", "slots": 4})
+
+# ------------------------------------------------------------------ Tierbedarf (P08-T07: PetBrain sucht Napf/Körbchen/Ball)
+from . import pet_gear as PG  # noqa: E402
+
+T(id="petgear_bowl", fn=PG.pet_gear, w=22, h=8, kw={"style": "bowl"}, group="animals", category="item", placement="floor",
+  hold="one_hand", grip=[0.5, 0.6], tags=["pet_bowl"], states={"full": {"state": "full"}}, state0="empty",
+  variants=[(n, cols(n, "cream", "oak")) for n in ["coral", "sky", "mint", "butter", "metal"]])
+for st, w, h, names, second, tags, extra in (
+        ("basket", 70, 30, ["oak", "walnut", "cream"], "rose", ["pet_bed"], {"seat": {"h": 12, "pose": "lie", "slots": 1}}),
+        ("cushion", 80, 18, ["sky", "rose", "grey", "mint"], "cream", ["pet_bed"], {"seat": {"h": 12, "pose": "lie", "slots": 1}}),
+        ("bone", 18, 6, ["cream", "coral", "sky"], "cream", ["pet_toy"], {}),
+        ("ball", 7, 7, ["coral", "butter", "mint", "sky"], "cream", ["pet_toy"], {}),
+        ("food_bag", 30, 45, ["butter", "coral", "teal"], "cream", ["pet_food"], {}),
+        ("leash", 20, 20, ["coral", "navy", "mint"], "cream", [], {})):
+    T(id=f"petgear_{st}", fn=PG.pet_gear, w=w, h=h, kw={"style": st}, group="animals", category="item" if st != "ball" else "toy",
+      placement="floor", hold="none" if st in ("basket", "cushion") else "one_hand",
+      grip=None if st in ("basket", "cushion") else [0.5, 0.5], tags=tags or None,
+      variants=[(n, cols(n, second if n != second else "coral", "oak")) for n in names], **extra)

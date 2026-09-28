@@ -88,7 +88,7 @@ DISHES = (
     ("plate_kids", 22, 3, ["butter", "sky", "rose"], "coral", "metal"),
     ("glass_wine", 8, 20, ["sky", "rose"], "rust", "metal"),
     ("glass_tumbler", 7, 10, ["sky", "mint", "rose"], "orange", "metal"),
-    ("teaspoon", 3, 13, ["metal", "#e0b84a"], "cream", "metal"),
+    ("teaspoon", 3, 13, ["metal", "gold"], "cream", "metal"),
     ("jug", 16, 22, ["cream", "sky", "coral"], "sky", "metal"),
     ("carafe", 12, 26, ["sky", "mint"], "sky", "metal"),
     ("thermos", 9, 30, ["navy", "coral", "metal"], "cream", "black"),

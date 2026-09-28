@@ -6,11 +6,13 @@ signal loaded
 
 const SCALE_TABLE_PATH: String = "res://data/scale_table.json"
 const ITEMS_DIR: String = "res://data/items/"
+const ALIASES_PATH: String = "res://data/item_aliases.json"
 const SCALE_MUL_MIN: float = 0.7
 const SCALE_MUL_MAX: float = 1.3
 
 var _scale: Dictionary = {}   # id -> Dictionary (Eintrag aus scale_table.json)
 var _items: Dictionary = {}   # id -> ItemDefinition
+var _aliases: Dictionary = {} # alte id -> neue id (data/item_aliases.json)
 ## Fehler der letzten Validierung (leer = alles gut). Tests prüfen, dass dies leer ist.
 var validation_errors: Array[String] = []
 var is_loaded: bool = false
@@ -94,14 +96,31 @@ func _load_items() -> void:
 				validation_errors.append("%s: doppelte Item-ID '%s'" % [f, def.id])
 				continue
 			_items[def.id] = def
+	_load_aliases()
+
+
+## Umbenannte Items (R-11): alte ID → neue ID. Alte Speicherstände finden ihr Ding weiter, gespeichert wird die neue ID.
+func _load_aliases() -> void:
+	_aliases.clear()
+	if not FileAccess.file_exists(ALIASES_PATH):
+		return
+	var d: Variant = JSON.parse_string(FileAccess.get_file_as_string(ALIASES_PATH))
+	for old: Variant in Dictionary(d.get("aliases", {}) if d is Dictionary else {}):
+		var new_id := StringName(String(d["aliases"][old]))
+		if _items.has(new_id) and not _items.has(StringName(String(old))):
+			_aliases[StringName(String(old))] = new_id
+		else:
+			validation_errors.append("item_aliases.json: '%s' → '%s' passt nicht" % [old, new_id])
 
 
 func has_item(id: StringName) -> bool:
-	return _items.has(id)
+	return _items.has(id) or _aliases.has(id)
 
 
-## Item-Definition per ID. Unbekannt → Fehler + null.
+## Item-Definition per ID (auch alte, umbenannte IDs). Unbekannt → Fehler + null.
 func get_item(id: StringName) -> ItemDefinition:
+	if not _items.has(id) and _aliases.has(id):
+		id = _aliases[id]
 	if not _items.has(id):
 		Log.error("ItemDB: unbekanntes Item '%s'" % id)
 		return null

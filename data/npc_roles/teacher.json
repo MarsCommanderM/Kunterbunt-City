@@ -1,0 +1,50 @@
+{
+ "id": "teacher",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Lehrer/in",
+ "behavior": "station",
+ "work": [
+  "point",
+  "wave",
+  "look"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "sweater",
+   "bottom": "skirt",
+   "hair": "bob",
+   "shoes": "sneaker",
+   "accessory": "glasses"
+  },
+  "colors": {
+   "top": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#5a463a",
+    "#5a463a",
+    "#5a463a"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

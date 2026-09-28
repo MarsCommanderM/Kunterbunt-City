@@ -526,6 +526,782 @@
     "#d8cfc2"
    ],
    "catalog": "animals"
+  },
+  {
+   "id": "petgear_bowl_coral",
+   "scale_ref": "c_petgear_bowl",
+   "size_cm": [
+    23.6,
+    10.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.6
+   ],
+   "tags": [
+    "pet_bowl"
+   ],
+   "states": [
+    "empty",
+    "full"
+   ],
+   "state_sprites": {
+    "full": "res://assets/sprites/items/petgear_bowl__full.png"
+   }
+  },
+  {
+   "id": "petgear_bowl_sky",
+   "scale_ref": "c_petgear_bowl",
+   "size_cm": [
+    23.6,
+    10.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.6
+   ],
+   "tags": [
+    "pet_bowl"
+   ],
+   "states": [
+    "empty",
+    "full"
+   ],
+   "state_sprites": {
+    "full": "res://assets/sprites/items/petgear_bowl__full.png"
+   }
+  },
+  {
+   "id": "petgear_bowl_mint",
+   "scale_ref": "c_petgear_bowl",
+   "size_cm": [
+    23.6,
+    10.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.6
+   ],
+   "tags": [
+    "pet_bowl"
+   ],
+   "states": [
+    "empty",
+    "full"
+   ],
+   "state_sprites": {
+    "full": "res://assets/sprites/items/petgear_bowl__full.png"
+   }
+  },
+  {
+   "id": "petgear_bowl_butter",
+   "scale_ref": "c_petgear_bowl",
+   "size_cm": [
+    23.6,
+    10.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.6
+   ],
+   "tags": [
+    "pet_bowl"
+   ],
+   "states": [
+    "empty",
+    "full"
+   ],
+   "state_sprites": {
+    "full": "res://assets/sprites/items/petgear_bowl__full.png"
+   }
+  },
+  {
+   "id": "petgear_bowl_metal",
+   "scale_ref": "c_petgear_bowl",
+   "size_cm": [
+    23.6,
+    10.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.6
+   ],
+   "tags": [
+    "pet_bowl"
+   ],
+   "states": [
+    "empty",
+    "full"
+   ],
+   "state_sprites": {
+    "full": "res://assets/sprites/items/petgear_bowl__full.png"
+   }
+  },
+  {
+   "id": "petgear_basket_oak",
+   "scale_ref": "c_petgear_basket",
+   "size_cm": [
+    71.8,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_basket_walnut",
+   "scale_ref": "c_petgear_basket",
+   "size_cm": [
+    71.8,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_basket_cream",
+   "scale_ref": "c_petgear_basket",
+   "size_cm": [
+    71.8,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_cushion_sky",
+   "scale_ref": "c_petgear_cushion",
+   "size_cm": [
+    82.0,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_cushion.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_cushion_rose",
+   "scale_ref": "c_petgear_cushion",
+   "size_cm": [
+    82.0,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_cushion.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_cushion_grey",
+   "scale_ref": "c_petgear_cushion",
+   "size_cm": [
+    82.0,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_cushion.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_cushion_mint",
+   "scale_ref": "c_petgear_cushion",
+   "size_cm": [
+    82.0,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_cushion.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "tags": [
+    "pet_bed"
+   ]
+  },
+  {
+   "id": "petgear_bone_cream",
+   "scale_ref": "c_petgear_bone",
+   "size_cm": [
+    20.0,
+    7.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bone.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_bone_coral",
+   "scale_ref": "c_petgear_bone",
+   "size_cm": [
+    20.0,
+    7.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bone.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_bone_sky",
+   "scale_ref": "c_petgear_bone",
+   "size_cm": [
+    20.0,
+    7.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_bone.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_ball_coral",
+   "scale_ref": "c_petgear_ball",
+   "size_cm": [
+    8.9,
+    8.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_ball_butter",
+   "scale_ref": "c_petgear_ball",
+   "size_cm": [
+    8.9,
+    8.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_ball_mint",
+   "scale_ref": "c_petgear_ball",
+   "size_cm": [
+    8.9,
+    8.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_ball_sky",
+   "scale_ref": "c_petgear_ball",
+   "size_cm": [
+    8.9,
+    8.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_toy"
+   ]
+  },
+  {
+   "id": "petgear_food_bag_butter",
+   "scale_ref": "c_petgear_food_bag",
+   "size_cm": [
+    32.3,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_food_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_food"
+   ]
+  },
+  {
+   "id": "petgear_food_bag_coral",
+   "scale_ref": "c_petgear_food_bag",
+   "size_cm": [
+    32.3,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_food_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_food"
+   ]
+  },
+  {
+   "id": "petgear_food_bag_teal",
+   "scale_ref": "c_petgear_food_bag",
+   "size_cm": [
+    32.3,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_food_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "pet_food"
+   ]
+  },
+  {
+   "id": "petgear_leash_coral",
+   "scale_ref": "c_petgear_leash",
+   "size_cm": [
+    21.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_leash.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "petgear_leash_navy",
+   "scale_ref": "c_petgear_leash",
+   "size_cm": [
+    21.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_leash.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "petgear_leash_mint",
+   "scale_ref": "c_petgear_leash",
+   "size_cm": [
+    21.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/petgear_leash.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "animals",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

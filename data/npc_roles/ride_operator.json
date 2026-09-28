@@ -1,0 +1,49 @@
+{
+ "id": "ride_operator",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Karussell-Betreiber/in",
+ "behavior": "station",
+ "work": [
+  "lever",
+  "wave"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "raglan",
+   "bottom": "jeans",
+   "hair": "wavy",
+   "shoes": "sneaker",
+   "accessory": "cap"
+  },
+  "colors": {
+   "top": [
+    "#e07a7a",
+    "#f6d98a",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#3c4f7a",
+    "#3c4f7a",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#3f2a1e",
+    "#3f2a1e",
+    "#3f2a1e"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

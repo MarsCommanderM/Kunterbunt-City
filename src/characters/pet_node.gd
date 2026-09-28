@@ -3,8 +3,10 @@ extends ItemNode
 ## Haustier (P03-T08): läuft selbstständig im Bodenband – Pause (2–5 s) → Spaziergang → folgt der nächsten
 ## Figur und bleibt ~50 cm neben ihr stehen. Tippen = Tierlaut (globaler Limiter 1×/8 s im AudioBus).
 ## Getragen, in der Hand oder auf dem Sofa: macht nichts. Zufall pro Tier fest (Seed = uid) → reproduzierbar.
+## P08-T07: PetBrain (Bedürfnisse) wählt statt Schlendern ein Ziel: Napf, Spielzeug, Körbchen (Modus SEEK),
+## am Körbchen schläft das Tier (SLEEP). P08-T08: von selbst alle 15–60 s ein Laut (Varianten, globaler Limiter).
 
-enum Mode { IDLE, WALK, FOLLOW }
+enum Mode { IDLE, WALK, FOLLOW, SEEK, SLEEP }
 
 const SPEED_CM_S: float = 60.0
 const FOLLOW_START_CM: float = 110.0
@@ -21,6 +23,8 @@ var target: Vector2
 var _timer: float = 1.0
 var _walk_t: float = 0.0
 var _rng := RandomNumberGenerator.new()
+var brain: PetBrain
+var goal: Dictionary = {}            ## {need, item} während SEEK
 
 
 static func create_pet(definition: ItemDefinition) -> PetNode:
@@ -28,7 +32,15 @@ static func create_pet(definition: ItemDefinition) -> PetNode:
 	p.setup(definition)
 	p._rng.seed = 7919 * p.uid + 17
 	p._timer = p._rng.randf_range(0.5, 2.0)
+	var brng := RandomNumberGenerator.new()          # eigener Zufall: das Schlendern bleibt wie vor P08
+	brng.seed = 104729 * p.uid + 3
+	p.brain = PetBrain.new(brng)
 	return p
+
+
+## Charakterzug aus dem Tier-Editor (verspielt, verschlafen …) → Gewichte der Bedürfnisse.
+func set_trait(trait_id: String) -> void:
+	brain.pet_trait = trait_id
 
 
 func _ready() -> void:
@@ -40,7 +52,11 @@ func voice() -> String:
 
 
 func on_tap() -> void:
-	if not AudioBus.play_animal(voice()):
+	brain.petted()                                   # Streicheln: Zuneigung gestillt, Katze schnurrt
+	if mode == Mode.SLEEP:
+		mode = Mode.IDLE
+		brain.sleep_left = 0.0
+	if not AudioBus.play_animal(PetBrain.pet_sound(voice())):
 		AudioBus.play_sfx("tap")
 	_bounce()
 	tapped.emit(self)
@@ -68,6 +84,18 @@ func tick(dt: float) -> void:
 	var r: Room = room()
 	if r == null or not can_walk():
 		_set_bob(0.0)
+		if mode == Mode.SLEEP or mode == Mode.SEEK:
+			mode = Mode.IDLE
+		return
+	brain.tick(dt)
+	if brain.voice_due(dt):
+		AudioBus.play_animal(brain.voice_variant(voice()))
+	if mode == Mode.SLEEP:
+		if brain.sleep_left <= 0.0:
+			mode = Mode.IDLE
+			sprite.rotation = 0.0
+		return
+	if mode == Mode.SEEK and _seek(r, dt):
 		return
 	var friend: ItemNode = _nearest_character(r)
 	if friend and friend.position.distance_to(position) > FOLLOW_START_CM:
@@ -82,6 +110,8 @@ func tick(dt: float) -> void:
 		Mode.IDLE:
 			_set_bob(0.0)
 			_timer -= dt
+			if _timer <= 0.0 and _start_seek(r):
+				return
 			if _timer <= 0.0:
 				var base: Vector2 = friend.position if friend else position
 				var wander: Vector2 = base + Vector2(_rng.randf_range(-WANDER_CM, WANDER_CM),
@@ -135,6 +165,54 @@ func tick(dt: float) -> void:
 			scale = Vector2.ONE * r.floor_band.depth_factor(position.y)
 
 
+## Bedürfnis mit passendem Ding im Raum? → hinlaufen (SEEK).
+func _start_seek(r: Room) -> bool:
+	var g: Dictionary = brain.choose(Placement.all_items(r))
+	if g.is_empty():
+		return false
+	goal = g
+	mode = Mode.SEEK
+	return true
+
+
+## Zum Ziel laufen; angekommen → fressen / anstupsen / schlafen. true = SEEK hat den Schritt übernommen.
+func _seek(r: Room, dt: float) -> bool:
+	var it: ItemNode = goal.get("item")
+	if not is_instance_valid(it) or it.get_parent() == null or it.get_parent().name != "YSortRoot":
+		mode = Mode.IDLE
+		_timer = 1.0
+		return true
+	var side: float = -1.0 if it.position.x > position.x else 1.0
+	var spot: Vector2 = it.position if goal["need"] == "tired" else it.position + Vector2(side * (it.def.width_cm * 0.5 + 12.0), 2.0)
+	target = r.floor_band.clamp_point(spot)
+	var to: Vector2 = target - position
+	var step: float = SPEED_CM_S * dt
+	if to.length() > maxf(step, 2.0):
+		position = r.floor_band.clamp_point(position + to.normalized() * step)
+		if absf(to.x) > 1.0:
+			sprite.flip_h = to.x > 0.0
+		_walk_t += dt
+		_set_bob(absf(sin(_walk_t * 11.0)) * 1.6)
+		scale = Vector2.ONE * r.floor_band.depth_factor(position.y)
+		return true
+	position = target
+	_set_bob(0.0)
+	var need: String = String(goal["need"])
+	var snd: String = brain.satisfy(need, it, position)
+	it.position = r.floor_band.clamp_point(it.position)
+	it.position.x = clampf(it.position.x, 20.0, r.width_cm - 20.0)
+	if snd != "":
+		AudioBus.play_sfx(snd)
+	goal = {}
+	if need == "tired":
+		mode = Mode.SLEEP
+		position.y = it.position.y + 1.0             # vor dem Körbchen-Rand einsortiert
+	else:
+		mode = Mode.IDLE
+		_timer = _rng.randf_range(2.0, 5.0)
+	return true
+
+
 func _set_bob(h: float) -> void:
 	var base: Vector2 = -(Vector2.ONE * def.pad_px + def.pivot * (sprite.texture.get_size() - Vector2.ONE * 2.0 * def.pad_px))
 	sprite.offset = base - Vector2(0, h / maxf(sprite.scale.y, 0.0001))
@@ -144,7 +222,7 @@ func _nearest_character(r: Room) -> ItemNode:
 	var best: ItemNode = null
 	var best_d: float = INF
 	for c: Node in r.ysort_root.get_children():
-		if c is ItemNode and (c as ItemNode).def.category == "character":
+		if c is ItemNode and (c as ItemNode).def.category == "character" and not c.has_meta("npc_id"):
 			var d: float = (c as ItemNode).position.distance_to(position)
 			if d < best_d:
 				best_d = d

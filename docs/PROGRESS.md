@@ -4,9 +4,9 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **08 · NPC- & Tier-KI** (07 fertig, 👤 Kindertest offen) |
-| Nächste Task | P08-T01 NpcStateMachine, T02 Rollen/NPC-Loader, T07 PetBrain |
-| Letzter grüner check.sh | 2026-09-27 (P07-T09/T10 Audio + Geheimnisse) |
+| Aktuelle Phase | **09 · MVP: Einkaufsstraße + Spielplatz** (08 fertig) |
+| Nächste Task | P09-T01 Einkaufsstraße (Läden, Kassen-Logik mit Kassierer/in aus P08) |
+| Letzter grüner check.sh | 2026-09-27 (P08) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -78,6 +78,55 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-27 · Phase 08 · NPC- & Tier-KI ✅
+- Erledigt: P08-T01…T10 (+ P07-T08 Nachbarin am Zaun, Briefträger/in im Garten).
+  - `data/npc_roles/*.json`: **18 Rollen** (15 aus der Phase + Nachbarin, Briefträger/in, Passant/in) mit Verhalten
+    (`station/patrol/wander/deliver`), Arbeits-Animationen, Aussehen (Teile + Farben), `shop`/`light`-Flags.
+    `data/npcs/home.json`: Frau Sommer am Gartenzaun, Herr Post am Gartentor.
+  - `src/npc/npc_roles.gd` (Loader mit klaren Fehlern), `npc_brain.gd` (Zustände IDLE/WALK/WORK/CARRIED/REACT/RETURN),
+    `npc_path.gd` (Bodenband als Laufbahn, Umweg über die vordere Laufspur vor großen Möbeln, alles in den Raum
+    geklemmt), `npc_work.gd` (Platzhalter-Animationen arm_up/arm_work/nod/look + Rollen-Aktionen),
+    `npc_spawner.gd` (Aufstellen je Raum, Tagesplan light, max. 6 leichte Figuren, Drops an die Rollen).
+  - Kasse: Ding neben der Kasse ablegen → **Piep**, Kasse springt auf, Ding wandert in eine **Tüte** (neue Tüte,
+    wenn keine mit Platz daneben steht). Bademeister/in: patrouilliert, **pfeift** bei rennender Figur (> 260 cm/s
+    am Becken), holt eine Figur nach **10 s** im Becken heraus. Briefträger/in: alle 90 s zum Briefkasten, legt
+    Post davor (nie mehr als ein Stapel), läuft zurück.
+  - Tragen: Figur staunt (Arme hoch), abgesetzt → freut sich, spätestens nach `return_after_s` steht sie (auch vom
+    Sofa) auf und läuft an ihren Platz. Versetzen zwischen zwei Frames (Rückgängig) wird ebenfalls erkannt.
+  - Tagesplan light (T05): Einstellung **„Läden immer offen"** (Standard an, hinter dem Eltern-Tor). Aus: Läden
+    8–20 Uhr, die Figur kommt vom Eingang herein und „schließt auf".
+  - `src/characters/pet_brain.gd` (T07): Hunger/Spielen/Müde/Zuneigung steigen langsam; Charakterzug gewichtet
+    (verspielt, verschlafen, verfressen, neugierig, schüchtern). Hund/Katze gehen zum **vollen Napf** (frisst leer),
+    zum **Ball/Knochen** (stupst ihn weiter), ins **Körbchen** (schläft 12 s, Streicheln weckt). Ohne passende
+    Dinge schlendern/folgen sie wie bisher (Zufall des Schlenderns unverändert → alte Tests bit-gleich).
+  - Tierlaute (T08): von selbst alle 15–60 s, Hund 3 Varianten, Katze 2 + Schnurren beim Streicheln, alles über
+    den globalen Limiter (1 / 8 s). Neue Sounds: `pet_dog_bark2/3`, `pet_cat_meow2`, `scan_beep`, `whistle`, `clap`.
+  - Tierbedarf (neu, Katalog „Tiere"): Napf leer/voll, Körbchen, Hundekissen, Knochen, Quietsch-Ball, Futtersack,
+    Leine – 7 Vorlagen, 25 Items.
+- Nebenbei gefunden + behoben: **7 Item-IDs enthielten Farbcodes** (`garden_bird_bath_#b8b2a7` …) → heißen jetzt
+  `…_stone/_gold/_brick`. Neu `data/item_aliases.json` + `ItemDB`-Aliase: alte Speicherstände finden ihr Ding
+  weiter, gespeichert wird die neue ID (R-11, Test `test_item_aliases`). pytest `test_item_ids` hält IDs sauber.
+- Tests (neu): GUT `test_npc` (14: Rollen, Garantien, Kasse, Bademeister, Post, Tagesplan, max. 6 leichte),
+  `test_pet_brain` (8: Napf, Ball, Körbchen, Gewichte, 15–60 s, Limiter mit 6 Hunden über 180 s),
+  `test_perf::test_15_active_npcs_and_pets_with_250_items`, `test_item_aliases` (2) · pytest `test_item_ids` (2).
+- Leistung (T10): 10 NPCs + 5 Tiere + 250 Items → **1,1 ms/Frame** KI-Logik (headless; vorher 2,4 ms – der
+  Bademeister prüft das Becken jetzt 4×/s statt jeden Frame).
+- Beweis: `tools/godot/p08_npc_runner.gd` → `docs/tests/P08/p08_01…09` + `p08_npc.json`
+  (Post zugestellt + zurück, Kasse „open", Tüte `shop_bag_coral`, 1 Rettung, Napf leer, Hund schläft).
+
+## Phasenbericht P08 – NPC- & Tier-KI
+Status: ✅ fertig
+Erledigt: T01 Zustandsmaschine · T02 Rollen-/NPC-Loader · T03 Wege im Bodenband · T04 18 Rollen · T05 Tagesplan
+light · T06 Garantie-Tests · T07 PetBrain · T08 Tierlaute + Limiter · T09 leichte Figuren (max. 6) · T10 Leistung
+Akzeptanzkriterien:
+- ✅ Kassiererin scannt (Piep, Tüte) – `test_cashier_scans_an_item_beep_and_bag`, `p08_04_kasse_piep_tuete.jpg`
+- ✅ Bademeister: Rand ablaufen, Pfiff, Rettung nach 10 s – `test_lifeguard_…`, `p08_05…07`
+- ✅ Garantie-Tests grün – `test_npc_does_not_block_a_drop`, `…never_leaves_the_room`, `…returns_after_return_after_s`, `…seated_npc_stands_up…`
+- ✅ Nie mehr als 1 Tierlaut / 8 s – `test_never_more_than_one_animal_sound_per_8_s`
+- ✅ check.sh grün
+Offene Punkte / Risiken: Arbeits-Animationen sind Platzhalter (Arm-/Kopf-Bewegung); echte Posen später mit P06.
+👤 Aufgaben für dich: Im Garten die Nachbarin antippen (winkt), Figuren herumtragen und zuschauen, wie sie
+zurückgehen; Napf füllen (antippen) und den Hund beobachten.
 ### 2026-09-27 · Phasenbericht P07 – Zuhause & Garten ✅
 Status: ✅ fertig (👤 Kindertest offen · T08 „Nachbarin am Zaun + Postbote" wandert zur echten NPC-KI in P08)
 Erledigt:

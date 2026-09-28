@@ -19,6 +19,7 @@ C = {
     "plum": "#7a5ea8", "teal": "#48b0a0", "orange": "#f09a55", "white": "#fbfaf7", "black": "#2a2a30",
     "oak": "#d4a86e", "walnut": "#8a5e3f", "pine": "#e3c79a", "dark_wood": "#5a463a", "metal": "#9aa6b4",
     "terracotta": "#c96a4a", "leaf": "#5f8f6a", "leaf_light": "#7fae6a", "leaf_dark": "#3f6a4f",
+    "gold": "#e0b84a", "stone": "#b8b2a7", "brick": "#c0664f",
 }
 
 
@@ -456,7 +457,7 @@ for style, w, h, names in (("wood", 95, 205, ["oak", "walnut", "white", "sky", "
                            ("barn", 110, 210, ["oak", "walnut", "rust", "grey"]), ("double", 165, 215, ["white", "oak", "grey"]),
                            ("garage", 260, 215, ["cream", "grey", "sky", "coral"])):
     T(id=f"door_{style}", fn=BU.door, w=w, h=h, kw={"style": style}, group="doors", category="deco", placement="wall",
-      tags=["to_floor"], variants=[(n, cols(n, "white" if n != "white" else "cream", "#e0b84a" if style != "garage" else "metal"))
+      tags=["to_floor"], variants=[(n, cols(n, "white" if n != "white" else "cream", "gold" if style != "garage" else "metal"))
                                    for n in names])
 CURTAIN = ["coral", "sky", "mint", "butter", "rose", "navy", "sage", "plum", "cream"]
 for style, w, h in (("long", 170, 235), ("short", 130, 80), ("sheer", 170, 235), ("blind", 110, 150)):

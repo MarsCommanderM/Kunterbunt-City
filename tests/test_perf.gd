@@ -41,3 +41,32 @@ func test_250_items_spawn_and_pick_fast() -> void:
 	assert_lt(place_ms, 4.0, "Ziel finden < 4 ms")
 	for it: ItemNode in Placement.all_items(k.room):
 		assert_false(it.is_processing())
+
+
+## P08-T10: 250 Items + 15 aktive Figuren/Tiere (10 NPCs verschiedener Rollen + 5 Tiere) – Logik je Frame.
+func test_15_active_npcs_and_pets_with_250_items() -> void:
+	NpcBrain.autonomous = false
+	var ids: Array = ItemDB.item_ids().filter(func(id: StringName) -> bool: return ItemDB.get_item(id).movable)
+	for i: int in 250:
+		ItemSpawner.on_floor(k.room, ids[i % ids.size()], 20.0 + (i * 37) % 680, float((i * 13) % 70))
+	ItemSpawner.on_floor(k.room, &"garden_pool_frame_s_sky", 380.0, 30.0)
+	var brains: Array = []
+	var roles: Array = ["cashier", "lifeguard", "janitor", "teacher", "coach", "passerby", "nurse", "zookeeper",
+		"shelf_stocker", "postman"]
+	for i: int in roles.size():
+		brains.append(NpcSpawner.spawn(k.room, NpcRoles.role(roles[i]),
+			{"id": "npc_%d" % i, "role": roles[i], "x_cm": 60.0 + i * 64.0, "y_cm": float((i * 17) % 60)}))
+	var pets: Array = []
+	for i: int in 5:
+		pets.append(ItemSpawner.on_floor(k.room, &"pet_dog_brown", 100.0 + i * 120.0, 40.0))
+	var t0: int = Time.get_ticks_usec()
+	var frames: int = 120
+	for _f: int in frames:
+		for b: NpcBrain in brains:
+			b.tick(1.0 / 60.0)
+		for p: PetNode in pets:
+			p.tick(1.0 / 60.0)
+	var ms: float = (Time.get_ticks_usec() - t0) / 1000.0 / frames
+	gut.p("PERF 15 aktive (10 NPCs + 5 Tiere) + 250 Items: %.3f ms/Frame Logik" % ms)
+	assert_lt(ms, 4.0, "KI-Logik < 4 ms je Frame (Budget 16,7 ms)")
+	NpcBrain.autonomous = true

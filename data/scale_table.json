@@ -8513,6 +8513,71 @@
    "hold": "none",
    "placement": "wall",
    "src": "catalog"
+  },
+  {
+   "id": "c_petgear_bowl",
+   "category": "item",
+   "h_cm": 10.8,
+   "w_cm": 23.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_petgear_basket",
+   "category": "item",
+   "h_cm": 31.9,
+   "w_cm": 71.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 12
+  },
+  {
+   "id": "c_petgear_cushion",
+   "category": "item",
+   "h_cm": 19.9,
+   "w_cm": 81.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 12
+  },
+  {
+   "id": "c_petgear_bone",
+   "category": "item",
+   "h_cm": 7.5,
+   "w_cm": 20.0,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_petgear_ball",
+   "category": "toy",
+   "h_cm": 8.9,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_petgear_food_bag",
+   "category": "item",
+   "h_cm": 46.8,
+   "w_cm": 32.2,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_petgear_leash",
+   "category": "item",
+   "h_cm": 22.2,
+   "w_cm": 21.8,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
   }
  ]
 }

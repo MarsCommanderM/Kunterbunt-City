@@ -229,6 +229,48 @@ def harvest():
     return np.concatenate([pop, np.zeros(int(SR * 0.03)), ding])
 
 
+def bark_var(f0, f1, d, times=1, gap=0.09):
+    """P08-T08: weitere Bell-Varianten (tiefes Doppel-Wuff, helles Kläffen) – gleiche Bauweise wie bark()."""
+    parts = []
+    for k in range(times):
+        n = int(SR * d)
+        f = np.linspace(f0 * (1 - 0.06 * k), f1, n)
+        ph = 2 * np.pi * np.cumsum(f) / SR
+        tone = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.25 * np.sin(3 * ph)
+        parts += [(tone + 0.35 * noise(d, 0.4)[:n]) * env(n, 0.006, 11), np.zeros(int(SR * gap))]
+    return np.concatenate(parts[:-1])
+
+
+def mew():
+    """Kurzes, hohes „Mii“ (Kätzchen)."""
+    n = int(SR * 0.22)
+    x = np.linspace(0, 1, n)
+    f = 780 + 260 * np.sin(np.pi * x)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return (np.sin(ph) + 0.4 * np.sin(2 * ph)) * np.minimum(1, x * 15) * np.minimum(1, (1 - x) * 6)
+
+
+def scan_beep():
+    """Kasse: klares Piep (Rechteck, gefiltert)."""
+    n = int(SR * 0.16)
+    x = t(0.16)
+    return np.sign(np.sin(2 * np.pi * 1760 * x)) * 0.5 * np.minimum(1, x * 300) * np.minimum(1, (0.16 - x) * 120)[:n]
+
+
+def whistle():
+    """Trillerpfeife: hoher Ton mit schnellem Triller (Kugel in der Pfeife)."""
+    x = t(0.5)
+    f = 2900 + 180 * np.sign(np.sin(2 * np.pi * 28 * x))
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return (np.sin(ph) + 0.1 * noise(0.5, 0.8)[: len(x)]) * np.minimum(1, x * 60) * np.minimum(1, (0.5 - x) * 20)
+
+
+def clap():
+    """Zweimal klatschen."""
+    one = noise(0.06, 0.7) * env(int(SR * 0.06), 0.001, 70)
+    return np.concatenate([one, np.zeros(int(SR * 0.12)), one])
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -266,6 +308,13 @@ SOUNDS = {
     "water_pour": lambda: norm(water_pour(), 0.45),
     "grow": lambda: norm(grow(), 0.4),
     "harvest": lambda: norm(harvest(), 0.5),
+    # P08-T08: Tiere + Arbeits-Geräusche der NPCs (wieder hinten angehängt)
+    "pet_dog_bark2": lambda: norm(bark_var(480, 260, 0.2, times=2), 0.7),
+    "pet_dog_bark3": lambda: norm(bark_var(900, 620, 0.12), 0.6),
+    "pet_cat_meow2": lambda: norm(mew(), 0.5),
+    "scan_beep": lambda: norm(scan_beep(), 0.35),
+    "whistle": lambda: norm(whistle(), 0.4),
+    "clap": lambda: norm(clap(), 0.5),
 }
 
 

@@ -18,7 +18,7 @@ OPEN = {"states": {"open": {"state": "open"}}, "state0": "closed"}
 ON = {"states": {"on": {"state": "on"}}, "state0": "off"}
 GROW = {"states": {"sprout": {"state": "sprout"}, "grown": {"state": "grown"}, "ripe": {"state": "ripe"}}, "state0": "empty"}
 DRY = {"states": {"dry": {"state": "dry"}}, "state0": "fresh"}
-MIRROR, WATER, CHROME, BRICK = "#d4e9f2", "#7cc6e0", "#c9d0d8", "#c0664f"
+MIRROR, WATER, CHROME, BRICK = "#d4e9f2", "#7cc6e0", "#c9d0d8", "brick"
 FRONTS = ["cream", "sage", "sky", "navy", "coral", "oak", "grey"]
 
 
@@ -46,7 +46,7 @@ cab("furn_file_cabinet", 45, 130, "F/F/F/F", "storage", ["grey", "navy", "cream"
 cab("furn_metal_shelf", 90, 180, "O/O/O/O", "storage", ["metal", "grey", "black"], body=None, third="metal", legs="short",
     top="flat", state=False)
 T(id="furn_chest", fn=KI.toy_big, w=90, h=55, kw={"style": "chest"}, group="storage", category="furniture", **OPEN,
-  container={"slots": 6, "max_item_h_cm": 40}, variants=[(n, cols(n, "coral", "#e0b84a")) for n in ["walnut", "oak", "sky", "rose"]])
+  container={"slots": 6, "max_item_h_cm": 40}, variants=[(n, cols(n, "coral", "gold")) for n in ["walnut", "oak", "sky", "rose"]])
 T(id="furn_dresser_tall", fn=CB.cabinet, w=80, h=120, kw={"layout": "W/W/W/W/W", "legs": "short"}, group="storage",
   category="furniture", surface_h=120, variants=[(n, cols(n, n, "oak")) for n in ["white", "oak", "sage"]])
 
@@ -95,7 +95,7 @@ T(id="furn_fireplace", fn=HB.big, w=140, h=120, kw={"style": "fireplace"}, group
 T(id="furn_piano", fn=HB.big, w=150, h=125, kw={"style": "piano"}, group="storage", category="furniture",
   variants=[(n, cols(n, "white", "black")) for n in ["black", "walnut", "white"]])
 T(id="furn_vanity", fn=HB.big, w=100, h=150, kw={"style": "vanity"}, group="beds", category="furniture",
-  variants=[(n, cols(n, MIRROR, "#e0b84a")) for n in ["white", "rose", "oak", "sky"]])
+  variants=[(n, cols(n, MIRROR, "gold")) for n in ["white", "rose", "oak", "sky"]])
 T(id="furn_clothes_rack", fn=HB.big, w=120, h=160, kw={"style": "clothes_rack"}, group="clothes", category="furniture",
   variants=[(n, cols(n, "sky" if n != "sky" else "butter", "metal")) for n in ["coral", "mint", "rose", "sky"]])
 T(id="furn_coat_rack", fn=HB.big, w=55, h=180, kw={"style": "coat_rack"}, group="clothes", category="furniture",
@@ -109,7 +109,7 @@ T(id="furn_mattress", fn=HB.big, w=190, h=20, kw={"style": "mattress"}, group="b
 T(id="pet_cat_tree", fn=HB.big, w=60, h=150, kw={"style": "cat_tree"}, group="animals", category="furniture",
   variants=[(n, cols(n, n, "sand")) for n in ["grey", "cream", "rose"]])
 T(id="deco_gramophone", fn=HB.big, w=40, h=50, kw={"style": "gramophone"}, group="deco", category="item", placement="table",
-  hold="two_hands", grip=[0.5, 0.2], variants=[(n, cols(n, "#e0b84a", "metal")) for n in ["walnut", "oak"]])
+  hold="two_hands", grip=[0.5, 0.2], variants=[(n, cols(n, "gold", "metal")) for n in ["walnut", "oak"]])
 T(id="elec_printer", fn=HB.big, w=45, h=25, kw={"style": "printer"}, group="electronics", category="item", placement="table",
   hold="two_hands", grip=[0.5, 0.5], **ON, variants=[(n, cols(n, "white", "sky")) for n in ["grey", "white", "black"]])
 for st, w, h, names, place, grp in (("duvet", 60, 22, ["sky", "rose", "mint", "butter", "cream", "lilac", "navy"], "floor", "beds"),
@@ -124,7 +124,7 @@ for st, w, h, names, place, grp in (("duvet", 60, 22, ["sky", "rose", "mint", "b
                                     ("suitcase", 48, 50, ["coral", "navy", "butter", "walnut", "mint"], "floor", "deco"),
                                     ("umbrella", 16, 80, ["coral", "sky", "butter", "navy", "plum"], "floor", "clothes"),
                                     ("umbrella_stand", 26, 55, ["metal", "coral", "navy"], "floor", "clothes"),
-                                    ("mirror", 50, 80, ["oak", "white", "#e0b84a", "black"], "wall", "deco"),
+                                    ("mirror", 50, 80, ["oak", "white", "gold", "black"], "wall", "deco"),
                                     ("mirror_stand", 50, 160, ["oak", "white", "black", "rose"], "floor", "deco")):
     extra = {"states": {"on": {"state": "on"}}, "state0": "off"} if st in ("speaker", "nightlight") else {}
     prefix = {"duvet": "bed", "pillow": "bed", "umbrella_stand": "furn", "speaker": "elec", "remote": "elec"}.get(st, "deco")
@@ -226,7 +226,7 @@ for crop in ("carrot", "strawberry", "pumpkin", "sunflower"):
       tags=["bed", "needs_water"], **GROW, variants=[("oak", cols("leaf", CROPS[crop], "oak"))])
 for size, w in (("s", 100), ("m", 160), ("l", 240)):
     T(id=f"garden_flower_bed_{size}", fn=YA.yard, w=w, h=45, kw={"style": "flower_bed", "seed": w}, group="yard", category="item",
-      tags=["bed", "needs_water"], **DRY, variants=[(n, cols("leaf", n, "#b8b2a7")) for n in ["rose", "butter", "lilac", "coral"][: 4 if size == "m" else 2]])
+      tags=["bed", "needs_water"], **DRY, variants=[(n, cols("leaf", n, "stone")) for n in ["rose", "butter", "lilac", "coral"][: 4 if size == "m" else 2]])
 T(id="garden_sprinkler", fn=YA.yard, w=30, h=16, kw={"style": "sprinkler"}, group="yard", category="item", placement="floor",
   hold="one_hand", grip=[0.5, 0.5], **ON, variants=[(n, cols(n, WATER, "metal")) for n in ["green", "coral", "sky"]])
 for st, w, h in (("spade", 20, 110), ("rake", 40, 145), ("shovel", 26, 110)):
@@ -275,14 +275,14 @@ for kid, w, h, names in (("s", 240, 70, ["sky", "coral"]), ("l", 360, 90, ["sky"
     T(id=f"garden_pool_frame_{kid}", fn=YA.yard, w=w, h=h, kw={"style": "pool_frame"}, group="water", category="furniture",
       seat={"h": 30, "pose": "sit", "slots": 3}, variants=[(n, cols(n, WATER, "white")) for n in names])
 T(id="garden_pool_big", fn=YA.yard, w=500, h=60, kw={"style": "pool_big"}, group="water", category="furniture",
-  seat={"h": 35, "pose": "sit", "slots": 4}, variants=[(n, cols(n, WATER, CHROME)) for n in ["white", "#b8b2a7"]])
+  seat={"h": 35, "pose": "sit", "slots": 4}, variants=[(n, cols(n, WATER, CHROME)) for n in ["white", "stone"]])
 for kid, w, h in (("s", 180, 50), ("m", 260, 70), ("l", 360, 90)):
     T(id=f"garden_pond_{kid}", fn=YA.yard, w=w, h=h, kw={"style": "pond", "seed": w}, group="water", category="deco",
-      placement="rug", variants=[("stone", cols("#b8b2a7", WATER, "leaf_dark"))])
+      placement="rug", variants=[("stone", cols("stone", WATER, "leaf_dark"))])
 T(id="garden_lily", fn=YA.yard, w=30, h=10, kw={"style": "lily"}, group="water", category="item", placement="table",
   hold="one_hand", grip=[0.5, 0.3], variants=[(n, cols(n, "butter", "leaf")) for n in ["rose", "white", "butter"]])
 T(id="garden_fountain", fn=YA.yard, w=100, h=130, kw={"style": "fountain"}, group="water", category="furniture",
-  **{**ON, "anim": {"on": "pulse"}}, variants=[(n, cols(n, WATER, "grey")) for n in ["#b8b2a7", "sand", "white"]])
+  **{**ON, "anim": {"on": "pulse"}}, variants=[(n, cols(n, WATER, "grey")) for n in ["stone", "sand", "white"]])
 for st, w, h, names, extra in (("trampoline", 260, 230, ["green", "sky", "coral"], {"seat": {"h": 60, "pose": "sit", "slots": 3}}),
                                ("treehouse", 320, 420, ["leaf", "leaf_light"], {}), ("greenhouse", 250, 230, ["white", "green"], {}),
                                ("compost", 100, 90, ["oak", "green"], {}), ("bin", 60, 110, ["grey", "sky", "walnut", "butter"], OPEN),

@@ -45,7 +45,7 @@ func _ready() -> void:
 
 	for key: String in ["volume_music", "volume_sfx", "volume_animals"]:
 		v.add_child(_slider(key))
-	for key: String in ["large_ui", "reduced_motion"]:
+	for key: String in ["large_ui", "reduced_motion", "shops_always_open"]:
 		v.add_child(_toggle(key))
 	v.add_child(_row("Sprache", [["de", "Deutsch"], ["en", "English"]], "language",
 		func(val: String) -> void: Settings.language = val))
@@ -102,6 +102,7 @@ func _labels() -> Dictionary:
 	return {
 		"volume_music": "Musik", "volume_sfx": "Effekte", "volume_animals": "Tiere",
 		"large_ui": "große Schrift & Knöpfe", "reduced_motion": "wenig Animation",
+		"shops_always_open": "Läden immer offen",
 	}
 
 

@@ -11,6 +11,7 @@ const DEFAULTS: Dictionary = {
 	"language": "de",
 	"reduced_motion": false,
 	"large_ui": false,
+	"shops_always_open": true,         ## P08-T05: Läden immer offen (sonst Tagesplan 8–20 Uhr)
 }
 
 var _values: Dictionary = DEFAULTS.duplicate(true)
@@ -39,6 +40,10 @@ var reduced_motion: bool:
 var large_ui: bool:
 	get: return bool(get_value("large_ui"))
 	set(v): set_value("large_ui", v)
+
+var shops_always_open: bool:
+	get: return bool(get_value("shops_always_open"))
+	set(v): set_value("shops_always_open", v)
 
 
 func _ready() -> void:

@@ -139,7 +139,7 @@
    }
   },
   {
-   "id": "garden_pool_big_#b8b2a7",
+   "id": "garden_pool_big_stone",
    "scale_ref": "c_garden_pool_big",
    "size_cm": [
     501.9,
@@ -316,7 +316,7 @@
    ]
   },
   {
-   "id": "garden_fountain_#b8b2a7",
+   "id": "garden_fountain_stone",
    "scale_ref": "c_garden_fountain",
    "size_cm": [
     101.3,
