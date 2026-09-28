@@ -1,0 +1,55 @@
+{
+ "id": "principal",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Schulleiter/in",
+ "behavior": "station",
+ "work": [
+  "nod",
+  "look",
+  "wave"
+ ],
+ "look": {
+  "skin": "#8e5a3c",
+  "parts": {
+   "top": "jacket",
+   "bottom": "trousers",
+   "hair": "side_part",
+   "shoes": "boot",
+   "accessory": "glasses_square"
+  },
+  "colors": {
+   "top": [
+    "#2e3140",
+    "#fbfaf7",
+    "#8e5a3c"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#8e5a3c"
+   ],
+   "hair": [
+    "#d8d8d8",
+    "#d8d8d8",
+    "#d8d8d8"
+   ],
+   "shoes": [
+    "#2a2a30",
+    "#6d6f78",
+    "#8e5a3c"
+   ],
+   "accessory": [
+    "#2a2a30",
+    "#fbfaf7",
+    "#8e5a3c"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

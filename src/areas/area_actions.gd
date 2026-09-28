@@ -15,6 +15,10 @@ const WEAR: Dictionary = {                    ## Item-Präfix → [Slot, Teil]
 	"cloth_scarf": ["top", "sweater"],
 }
 const SLIDE_S: float = 1.1
+const INSTRUMENTS: Array = ["drum_hit", "piano_note", "xylophone", "guitar", "violin", "flute", "triangle", "tambourine"]
+const BAND_S: float = 6.0                      ## 3 verschiedene Instrumente in 6 s = Band spielt
+
+static var _band: Dictionary = {}              ## Instrument-Ton → Zeitpunkt (s)
 const BUS_ID: StringName = &"street_bus_butter"
 
 
@@ -40,6 +44,15 @@ static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
 
 static func on_tapped(scene: AreaScene, item: ItemNode) -> bool:
 	var id: String = String(item.def.id)
+	if id.begins_with("edu_bell") and item.state == "ring":
+		school_bell(scene.room)
+		return true
+	if id.begins_with("edu_skeleton"):
+		AudioBus.play_sfx("dice_roll")
+		Secrets.event("skeleton")
+		return true
+	if item.def.sfx.has("tap") and INSTRUMENTS.has(String(item.def.sfx["tap"])):
+		return band(scene.room, String(item.def.sfx["tap"]))
 	if id.begins_with("shop_barber_chair"):
 		return new_hair(scene, item)
 	if id.begins_with("play_bubble_wand"):
@@ -118,6 +131,39 @@ static func new_hair(scene: AreaScene, chair: ItemNode) -> bool:
 			b.play_work("cut")
 	AudioBus.play_sfx("dice_roll")
 	Secrets.event("haircut")
+	return true
+
+
+# ---------------------------------------------------------------- Schule (P10a)
+
+## Schulglocke: Pause! Die Schulkinder jubeln und winken, die Lehrer klatschen.
+static func school_bell(room: Room) -> int:
+	var n: int = 0
+	for b: NpcBrain in NpcSpawner.brains(room):
+		var rid: String = String(b.role.get("id", ""))
+		if rid.begins_with("pupil"):
+			b.play_work("wave")
+			b.body.set_emotion("laugh")
+			n += 1
+		elif rid.ends_with("teacher") or rid == "principal":
+			b.play_work("clap")
+	return n
+
+
+## Instrument angetippt: 3 verschiedene in kurzer Zeit → „Band": alle klatschen, Sticker.
+static func band(room: Room, sound: String) -> bool:
+	var now: float = Time.get_ticks_msec() / 1000.0
+	_band[sound] = now
+	var recent: int = 0
+	for k: String in _band:
+		if now - float(_band[k]) <= BAND_S:
+			recent += 1
+	if recent < 3:
+		return false
+	_band.clear()
+	for b: NpcBrain in NpcSpawner.brains(room):
+		b.play_work("clap")
+	Secrets.event("band")
 	return true
 
 

@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | ⏳ | – |
+| 10a–10h Content | 🔨 10a Schule ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,27 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10a · Schule & Pausenhof ✅
+- `tools/areas/` (neu, je Bereich ein Modul; `make_areas.py` nur noch Starter + Prüfung) → `data/areas/school.json`:
+  **10 Räume** (Eingangshalle mit Spinden, Klasse 1 + 2, Musik, Kunst, NaWi, Turnhalle, Mensa, Lehrerzimmer,
+  Pausenhof mit Klettergerüst, Tischtennis, Hüpfkästchen, Schulgarten) · 129 Start-Items · **16 Figuren**
+  (2 Lehrerinnen, Musik-, Kunstlehrer/in, Hausmeister, Koch, Schulleiter/in, Pausenaufsicht, 8 Schulkinder).
+- 30 neue Vorlagen (`tools/items/schoolroom.py`, `edu_*`): Schulbank, Lehrerpult, **Tafel mit 4 Kreide-Bildern**
+  (Sonne/Haus/Katze/Formen, Schwamm wischt), Spinde (auf), Schulglocke, Weltkarte, Notenständer, Triangel,
+  Tamburin, Maltisch, Palette, Tontopf, Labortisch, **Vulkan-Experiment** (bricht aus), Kolben (blubbert), Skelett,
+  Sprungkasten, Schwebebalken (Sitz), Ballwagen, Essensausgabe, Tablett, Hüpfkästchen, Postfächer, Kopierer.
+- **Instrumente klingen** beim Antippen (auch Schlagzeug, Klavier, Xylophon, Gitarre, Geige, Flöte aus früheren
+  Phasen) – über `sfx.tap` in den Daten. 12 neue Klänge, `music_school`.
+- Mechanik: Schulglocke → Schulkinder jubeln/winken, Lehrer klatschen · 3 verschiedene Instrumente in 6 s = Band
+  (alle klatschen, Sticker) · Skelett klappert · 7 Geheimnisse.
+- Neue Rollen: `pupil`/`pupil2` (Kind-Schablone, leicht), `cook`, `music_teacher`, `art_teacher`, `principal`.
+- Allgemeiner Test `test_areas_data` prüft **jeden** spielbaren Bereich (Hintergründe, Items, NPC-Räume, Sticker,
+  Musik) – gilt automatisch für alle weiteren Bereiche. `test_p10_school` (5).
+- Beweis: `tools/godot/area_tour_runner.gd` (für jeden Bereich gleich) → `docs/tests/P10/school_*.jpg`,
+  Ladezeit 140 ms.
+- Test-Stabilität: `test_hungry_dog…` hing von der globalen uid-Reihenfolge ab → prüft jetzt beim Fressen.
+- check.sh ✅ – Maßstab (2754 Items) · pytest 133/133 · GUT 336/336.
+
 ### 2026-09-28 · Phase 09 · T09/T10 Release 0.1.0 ✅
 - Version **0.1.0** (`project.godot`), `CHANGELOG.md`, itch.io-Texte `docs/release/itch_seite.md`, README „Spielen & Bauen“.
 - Builds: **Web 44 MB** (`index.pck`, ohne Threads) · **Linux 118 MB** · **Windows 153 MB** (PCK eingebettet).

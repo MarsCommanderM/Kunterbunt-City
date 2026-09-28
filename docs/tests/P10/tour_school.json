@@ -1,0 +1,17 @@
+{
+  "school": {
+    "ladezeit_ms": 140.0,
+    "raeume": [
+      "hall:12/1",
+      "class1:24/3",
+      "class2:23/2",
+      "music:13/1",
+      "art:13/1",
+      "science:12/0",
+      "gym:12/1",
+      "cafeteria:14/1",
+      "staff:12/1",
+      "yard:20/5"
+    ]
+  }
+}

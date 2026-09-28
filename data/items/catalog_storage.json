@@ -1967,7 +1967,10 @@
     "#fbfaf7",
     "#2a2a30"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "sfx": {
+    "tap": "piano_note"
+   }
   },
   {
    "id": "furn_piano_walnut",
@@ -1990,7 +1993,10 @@
     "#fbfaf7",
     "#2a2a30"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "sfx": {
+    "tap": "piano_note"
+   }
   },
   {
    "id": "furn_piano_white",
@@ -2013,7 +2019,10 @@
     "#fbfaf7",
     "#2a2a30"
    ],
-   "catalog": "storage"
+   "catalog": "storage",
+   "sfx": {
+    "tap": "piano_note"
+   }
   },
   {
    "id": "furn_stairs_oak",

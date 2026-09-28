@@ -757,7 +757,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "drum_hit"
+   }
   },
   {
    "id": "toy_drum_sky",
@@ -784,7 +787,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "drum_hit"
+   }
   },
   {
    "id": "toy_xylophone_coral",
@@ -811,7 +817,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "xylophone"
+   }
   },
   {
    "id": "toy_puzzle_coral",
@@ -2029,7 +2038,10 @@
    "grip": [
     0.5,
     0.9
-   ]
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
   },
   {
    "id": "toy_guitar_oak",
@@ -2056,7 +2068,10 @@
    "grip": [
     0.5,
     0.9
-   ]
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
   },
   {
    "id": "toy_guitar_sky",
@@ -2083,7 +2098,10 @@
    "grip": [
     0.5,
     0.9
-   ]
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
   },
   {
    "id": "music_drums_coral",
@@ -2106,7 +2124,10 @@
     "#f5f3ee",
     "#9aa6b4"
    ],
-   "catalog": "toys"
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
   },
   {
    "id": "music_drums_navy",
@@ -2129,7 +2150,10 @@
     "#f5f3ee",
     "#9aa6b4"
    ],
-   "catalog": "toys"
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
   },
   {
    "id": "music_drums_black",
@@ -2152,7 +2176,10 @@
     "#f5f3ee",
     "#9aa6b4"
    ],
-   "catalog": "toys"
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
   },
   {
    "id": "music_keyboard_black",
@@ -2175,7 +2202,10 @@
     "#f5f3ee",
     "#9aa6b4"
    ],
-   "catalog": "toys"
+   "catalog": "toys",
+   "sfx": {
+    "tap": "piano_note"
+   }
   },
   {
    "id": "music_keyboard_white",
@@ -2198,7 +2228,10 @@
     "#f5f3ee",
     "#9aa6b4"
    ],
-   "catalog": "toys"
+   "catalog": "toys",
+   "sfx": {
+    "tap": "piano_note"
+   }
   },
   {
    "id": "music_violin_walnut",
@@ -2225,7 +2258,10 @@
    "grip": [
     0.5,
     0.85
-   ]
+   ],
+   "sfx": {
+    "tap": "violin"
+   }
   },
   {
    "id": "music_violin_oak",
@@ -2252,7 +2288,10 @@
    "grip": [
     0.5,
     0.85
-   ]
+   ],
+   "sfx": {
+    "tap": "violin"
+   }
   },
   {
    "id": "music_flute_oak",
@@ -2279,7 +2318,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
   },
   {
    "id": "music_flute_cream",
@@ -2306,7 +2348,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
   },
   {
    "id": "music_flute_sky",
@@ -2333,7 +2378,10 @@
    "grip": [
     0.5,
     0.5
-   ]
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
   },
   {
    "id": "toy_play_kitchen_cream",

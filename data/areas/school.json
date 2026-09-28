@@ -1,0 +1,1062 @@
+{
+ "id": "school",
+ "name": "Schule & Pausenhof",
+ "name_key": "AREA_SCHOOL",
+ "_doc": "P10a: Halle mit Spinden, 2 Klassen, Musik, Kunst, NaWi, Turnhalle, Mensa, Lehrerzimmer, Pausenhof. Erzeugt von tools/make_areas.py (tools/areas/school.py) – dort ändern.",
+ "spawn": {
+  "room": "hall",
+  "x_cm": 400,
+  "y_cm": 45
+ },
+ "default_items": [],
+ "music": "music_school",
+ "rooms": [
+  {
+   "id": "hall",
+   "label": "Eingangshalle",
+   "icon": "edu_locker_sky",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/hall.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef3f8",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_locker_sky",
+     "x_cm": 220,
+     "y_cm": 0
+    },
+    {
+     "id": "edu_locker_coral",
+     "x_cm": 340,
+     "y_cm": 0
+    },
+    {
+     "id": "edu_locker_mint",
+     "x_cm": 460,
+     "y_cm": 0
+    },
+    {
+     "id": "edu_bell_butter",
+     "x_cm": 600,
+     "y_cm": -240
+    },
+    {
+     "id": "street_park_bench_oak",
+     "x_cm": 640,
+     "y_cm": 40
+    },
+    {
+     "id": "plant_monstera_basket_oak",
+     "x_cm": 760,
+     "y_cm": 30
+    },
+    {
+     "id": "furn_coat_rack_sage",
+     "x_cm": 140,
+     "y_cm": 30
+    },
+    {
+     "id": "school_school_bag_plum",
+     "x_cm": 520,
+     "y_cm": 64
+    },
+    {
+     "id": "door_double_white",
+     "x_cm": 720,
+     "y_cm": -217.0
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "class1",
+   "label": "Klasse 1",
+   "icon": "edu_blackboard_green",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/class1.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdf3e1",
+      "#ffffff",
+      "#f6d98a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e8c49a",
+      "#d9ae7e",
+      "#8a5a3c"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_blackboard_green",
+     "x_cm": 400,
+     "y_cm": -230
+    },
+    {
+     "id": "edu_world_map_sea",
+     "x_cm": 690,
+     "y_cm": -200
+    },
+    {
+     "id": "deco_clock_cream",
+     "x_cm": 180,
+     "y_cm": -215
+    },
+    {
+     "id": "edu_teacher_desk_oak",
+     "x_cm": 240,
+     "y_cm": 10
+    },
+    {
+     "id": "school_pencil_cup_sky",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_bookshelf_oak",
+     "x_cm": 720,
+     "y_cm": 2
+    },
+    {
+     "id": "edu_desk_oak",
+     "x_cm": 300,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 275,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 325,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_sky",
+     "on": "edu_desk_oak",
+     "x_rel": 0.2
+    },
+    {
+     "id": "edu_desk_oak",
+     "x_cm": 480,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_sky",
+     "x_cm": 455,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 505,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_coral",
+     "on": "edu_desk_oak",
+     "x_rel": 0.2
+    },
+    {
+     "id": "edu_desk_oak",
+     "x_cm": 660,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 635,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 685,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_sky",
+     "on": "edu_desk_oak",
+     "x_rel": 0.2
+    },
+    {
+     "id": "deco_globe_sky",
+     "x_cm": 130,
+     "y_cm": 60
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "class2",
+   "label": "Klasse 2",
+   "icon": "edu_blackboard_green",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/class2.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eaf4ee",
+      "#ffffff",
+      "#9fc3a0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e8c49a",
+      "#d9ae7e",
+      "#8a5a3c"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_blackboard_green",
+     "x_cm": 400,
+     "y_cm": -230
+    },
+    {
+     "id": "edu_world_map_sea",
+     "x_cm": 690,
+     "y_cm": -200
+    },
+    {
+     "id": "deco_clock_cream",
+     "x_cm": 180,
+     "y_cm": -215
+    },
+    {
+     "id": "edu_teacher_desk_oak",
+     "x_cm": 240,
+     "y_cm": 10
+    },
+    {
+     "id": "school_pencil_cup_sky",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_bookshelf_oak",
+     "x_cm": 720,
+     "y_cm": 2
+    },
+    {
+     "id": "edu_desk_mint",
+     "x_cm": 300,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 275,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 325,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_sky",
+     "on": "edu_desk_mint",
+     "x_rel": 0.2
+    },
+    {
+     "id": "edu_desk_mint",
+     "x_cm": 480,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_sky",
+     "x_cm": 455,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 505,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_coral",
+     "on": "edu_desk_mint",
+     "x_rel": 0.2
+    },
+    {
+     "id": "edu_desk_mint",
+     "x_cm": 660,
+     "y_cm": 45
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 635,
+     "y_cm": 52
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 685,
+     "y_cm": 52
+    },
+    {
+     "id": "school_school_bag_sky",
+     "on": "edu_desk_mint",
+     "x_rel": 0.2
+    },
+    {
+     "id": "deco_globe_sky",
+     "x_cm": 130,
+     "y_cm": 60
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "music",
+   "label": "Musikraum",
+   "icon": "music_drums_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/music.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f1ecfa",
+      "#ffffff",
+      "#b9a6d6"
+     ],
+     "pattern": "stars",
+     "pattern_col": "#e2d9f3",
+     "floor": "planks",
+     "floor_cols": [
+      "#d9a066",
+      "#c98a4b",
+      "#8a5a3c"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "furn_piano_walnut",
+     "x_cm": 230,
+     "y_cm": 0
+    },
+    {
+     "id": "music_drums_coral",
+     "x_cm": 440,
+     "y_cm": 20
+    },
+    {
+     "id": "edu_music_stand_black",
+     "x_cm": 560,
+     "y_cm": 30
+    },
+    {
+     "id": "music_keyboard_black",
+     "x_cm": 680,
+     "y_cm": 20
+    },
+    {
+     "id": "toy_xylophone_coral",
+     "x_cm": 330,
+     "y_cm": 62
+    },
+    {
+     "id": "edu_triangle_metal",
+     "x_cm": 420,
+     "y_cm": 66
+    },
+    {
+     "id": "edu_tambourine_oak",
+     "x_cm": 480,
+     "y_cm": 64
+    },
+    {
+     "id": "toy_guitar_oak",
+     "x_cm": 600,
+     "y_cm": 62
+    },
+    {
+     "id": "music_violin_oak",
+     "x_cm": 720,
+     "y_cm": 64
+    },
+    {
+     "id": "music_flute_sky",
+     "x_cm": 380,
+     "y_cm": 68
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "art",
+   "label": "Kunstraum",
+   "icon": "school_easel_cream",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/art.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fff4e8",
+      "#ffffff",
+      "#f09a55"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#fbe0c6",
+     "floor": "concrete",
+     "floor_cols": [
+      "#c9c0b0",
+      "#b8ae9c",
+      "#8a8070"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "school_easel_cream",
+     "x_cm": 200,
+     "y_cm": 20
+    },
+    {
+     "id": "school_easel_cream",
+     "x_cm": 320,
+     "y_cm": 25
+    },
+    {
+     "id": "edu_art_table_cream",
+     "x_cm": 540,
+     "y_cm": 40
+    },
+    {
+     "id": "edu_palette_oak",
+     "on": "edu_art_table_cream",
+     "x_rel": -0.3
+    },
+    {
+     "id": "edu_clay_pot_terracotta",
+     "on": "edu_art_table_cream",
+     "x_rel": 0.0
+    },
+    {
+     "id": "toy_paints_coral",
+     "on": "edu_art_table_cream",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 490,
+     "y_cm": 55
+    },
+    {
+     "id": "furn_chair_kids_sky",
+     "x_cm": 590,
+     "y_cm": 55
+    },
+    {
+     "id": "toy_crayons_coral",
+     "x_cm": 700,
+     "y_cm": 64
+    },
+    {
+     "id": "poster_rainbow_sky",
+     "x_cm": 420,
+     "y_cm": -200
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "science",
+   "label": "NaWi-Raum",
+   "icon": "edu_volcano_oak",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/science.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e9f4f5",
+      "#ffffff",
+      "#7cc6e0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_lab_table_white",
+     "x_cm": 300,
+     "y_cm": 30
+    },
+    {
+     "id": "edu_volcano_oak",
+     "on": "edu_lab_table_white",
+     "x_rel": -0.25
+    },
+    {
+     "id": "edu_flask_mint",
+     "on": "edu_lab_table_white",
+     "x_rel": 0.1
+    },
+    {
+     "id": "school_microscope_cream",
+     "on": "edu_lab_table_white",
+     "x_rel": 0.3
+    },
+    {
+     "id": "edu_skeleton_cream",
+     "x_cm": 560,
+     "y_cm": 10
+    },
+    {
+     "id": "edu_lab_table_grey",
+     "x_cm": 640,
+     "y_cm": 50
+    },
+    {
+     "id": "edu_flask_rose",
+     "on": "edu_lab_table_grey",
+     "x_rel": -0.2
+    },
+    {
+     "id": "edu_flask_sky",
+     "on": "edu_lab_table_grey",
+     "x_rel": 0.1
+    },
+    {
+     "id": "plant_cactus_ball_bowl_cream_rose",
+     "x_cm": 150,
+     "y_cm": 60
+    },
+    {
+     "id": "edu_world_map_sea",
+     "x_cm": 430,
+     "y_cm": -220
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "gym",
+   "label": "Turnhalle",
+   "icon": "edu_vault_box_oak",
+   "width_cm": 900,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/gym.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fbf3e3",
+      "#ffffff",
+      "#f4c95d"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e3c79a",
+      "#d4b07c",
+      "#8a6a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_vault_box_oak",
+     "x_cm": 220,
+     "y_cm": 20
+    },
+    {
+     "id": "edu_balance_beam_oak",
+     "x_cm": 450,
+     "y_cm": 45
+    },
+    {
+     "id": "sport_mat_sky",
+     "x_cm": 660,
+     "y_cm": 40
+    },
+    {
+     "id": "edu_ball_cart_metal",
+     "x_cm": 760,
+     "y_cm": 15
+    },
+    {
+     "id": "sport_basket_hoop_coral",
+     "x_cm": 120,
+     "y_cm": 5
+    },
+    {
+     "id": "toy_ball_coral",
+     "x_cm": 330,
+     "y_cm": 64
+    },
+    {
+     "id": "sport_cone_orange",
+     "x_cm": 560,
+     "y_cm": 66
+    },
+    {
+     "id": "sport_jump_rope_coral",
+     "x_cm": 620,
+     "y_cm": 68
+    },
+    {
+     "id": "sport_hoop_teal",
+     "x_cm": 700,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "cafeteria",
+   "label": "Mensa",
+   "icon": "edu_tray_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/cafeteria.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdf0e6",
+      "#ffffff",
+      "#e07a7a"
+     ],
+     "pattern": "pinstripes",
+     "pattern_col": "#f6ddd0",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f6d98a",
+      "#f5f3ee",
+      "#b89a55"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_serving_counter_white",
+     "x_cm": 240,
+     "y_cm": 10
+    },
+    {
+     "id": "edu_tray_coral",
+     "on": "edu_serving_counter_white",
+     "x_rel": -0.35
+    },
+    {
+     "id": "edu_tray_sky",
+     "on": "edu_serving_counter_white",
+     "x_rel": -0.2
+    },
+    {
+     "id": "food_spaghetti_tomato",
+     "on": "edu_serving_counter_white",
+     "x_rel": 0.05
+    },
+    {
+     "id": "food_apple_green",
+     "on": "edu_serving_counter_white",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_table_dining_oak",
+     "x_cm": 560,
+     "y_cm": 40
+    },
+    {
+     "id": "furn_chair_kids_coral",
+     "x_cm": 480,
+     "y_cm": 48
+    },
+    {
+     "id": "furn_chair_kids_mint",
+     "x_cm": 640,
+     "y_cm": 48
+    },
+    {
+     "id": "food_milk_carton",
+     "on": "furn_table_dining_oak",
+     "x_rel": -0.2
+    },
+    {
+     "id": "kit_plate_kids_sky",
+     "on": "furn_table_dining_oak",
+     "x_rel": 0.15
+    },
+    {
+     "id": "kit_trash_mint",
+     "x_cm": 760,
+     "y_cm": 30
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "staff",
+   "label": "Lehrerzimmer",
+   "icon": "edu_copier_grey",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/school/staff.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f3efe8",
+      "#ffffff",
+      "#a1887f"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "carpet",
+     "floor_cols": [
+      "#d8cfc2",
+      "#cabfb0",
+      "#a1887f"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "furn_table_dining_walnut",
+     "x_cm": 360,
+     "y_cm": 30
+    },
+    {
+     "id": "furn_chair_dining_walnut",
+     "x_cm": 290,
+     "y_cm": 38
+    },
+    {
+     "id": "furn_chair_dining_walnut",
+     "x_cm": 430,
+     "y_cm": 38
+    },
+    {
+     "id": "kit_mug_navy",
+     "on": "furn_table_dining_walnut",
+     "x_rel": -0.2
+    },
+    {
+     "id": "kit_coffee_black",
+     "on": "furn_table_dining_walnut",
+     "x_rel": 0.25
+    },
+    {
+     "id": "edu_copier_grey",
+     "x_cm": 600,
+     "y_cm": 5
+    },
+    {
+     "id": "edu_cubbies_oak",
+     "x_cm": 180,
+     "y_cm": -200
+    },
+    {
+     "id": "furn_bookshelf_walnut",
+     "x_cm": 740,
+     "y_cm": 2
+    },
+    {
+     "id": "plant_ficus_basket_oak",
+     "x_cm": 120,
+     "y_cm": 30
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "yard",
+   "label": "Pausenhof",
+   "icon": "edu_hopscotch_coral",
+   "width_cm": 2400,
+   "height_cm": 560.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/school/yard.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 12,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "play_climber_coral",
+     "x_cm": 380,
+     "y_cm": 8
+    },
+    {
+     "id": "sport_table_tennis_green",
+     "x_cm": 900,
+     "y_cm": 40
+    },
+    {
+     "id": "edu_hopscotch_coral",
+     "x_cm": 1250,
+     "y_cm": 45
+    },
+    {
+     "id": "garden_raised_bed_m_carrot_oak",
+     "x_cm": 1600,
+     "y_cm": 20
+    },
+    {
+     "id": "garden_raised_bed_m_tomato_oak",
+     "x_cm": 1760,
+     "y_cm": 22
+    },
+    {
+     "id": "garden_watering_can_sky",
+     "x_cm": 1680,
+     "y_cm": 62
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1450,
+     "y_cm": 20
+    },
+    {
+     "id": "street_bin_street_green",
+     "x_cm": 1350,
+     "y_cm": 30
+    },
+    {
+     "id": "street_bike_stand_metal",
+     "x_cm": 2100,
+     "y_cm": 20
+    },
+    {
+     "id": "sport_goal_small_white",
+     "x_cm": 700,
+     "y_cm": 30
+    },
+    {
+     "id": "toy_ball_sky",
+     "x_cm": 780,
+     "y_cm": 60
+    },
+    {
+     "id": "sport_jump_rope_butter",
+     "x_cm": 1150,
+     "y_cm": 66
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 120,
+     "y_cm": 2
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 2300,
+     "y_cm": 4
+    }
+   ],
+   "ambience": "amb_garden"
+  }
+ ]
+}

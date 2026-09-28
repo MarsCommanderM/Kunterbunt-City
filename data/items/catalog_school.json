@@ -356,6 +356,1536 @@
     "#d4a86e"
    ],
    "catalog": "school"
+  },
+  {
+   "id": "edu_desk_oak",
+   "scale_ref": "c_edu_desk",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_desk_cream",
+   "scale_ref": "c_edu_desk",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_desk_mint",
+   "scale_ref": "c_edu_desk",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_desk_sky",
+   "scale_ref": "c_edu_desk",
+   "size_cm": [
+    121.9,
+    73.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_teacher_desk_oak",
+   "scale_ref": "c_edu_teacher_desk",
+   "size_cm": [
+    155.9,
+    77.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_teacher_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_teacher_desk_walnut",
+   "scale_ref": "c_edu_teacher_desk",
+   "size_cm": [
+    155.9,
+    77.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_teacher_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_teacher_desk_cream",
+   "scale_ref": "c_edu_teacher_desk",
+   "size_cm": [
+    155.9,
+    77.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_teacher_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_locker_sky",
+   "scale_ref": "c_edu_locker",
+   "size_cm": [
+    105.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_locker.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2e3140",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/edu_locker__open.png"
+   }
+  },
+  {
+   "id": "edu_locker_coral",
+   "scale_ref": "c_edu_locker",
+   "size_cm": [
+    105.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_locker.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2e3140",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/edu_locker__open.png"
+   }
+  },
+  {
+   "id": "edu_locker_mint",
+   "scale_ref": "c_edu_locker",
+   "size_cm": [
+    105.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_locker.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#2e3140",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/edu_locker__open.png"
+   }
+  },
+  {
+   "id": "edu_locker_butter",
+   "scale_ref": "c_edu_locker",
+   "size_cm": [
+    105.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_locker.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#2e3140",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/edu_locker__open.png"
+   }
+  },
+  {
+   "id": "edu_locker_grey",
+   "scale_ref": "c_edu_locker",
+   "size_cm": [
+    105.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_locker.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#2e3140",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/edu_locker__open.png"
+   }
+  },
+  {
+   "id": "edu_music_stand_black",
+   "scale_ref": "c_edu_music_stand",
+   "size_cm": [
+    51.7,
+    122.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_music_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_music_stand_metal",
+   "scale_ref": "c_edu_music_stand",
+   "size_cm": [
+    51.7,
+    122.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_music_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_art_table_cream",
+   "scale_ref": "c_edu_art_table",
+   "size_cm": [
+    142.0,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_art_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_art_table_oak",
+   "scale_ref": "c_edu_art_table",
+   "size_cm": [
+    142.0,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_art_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_art_table_white",
+   "scale_ref": "c_edu_art_table",
+   "size_cm": [
+    142.0,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_art_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_lab_table_white",
+   "scale_ref": "c_edu_lab_table",
+   "size_cm": [
+    165.5,
+    106.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_lab_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_lab_table_grey",
+   "scale_ref": "c_edu_lab_table",
+   "size_cm": [
+    165.5,
+    106.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_lab_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_lab_table_mint",
+   "scale_ref": "c_edu_lab_table",
+   "size_cm": [
+    165.5,
+    106.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_lab_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_skeleton_cream",
+   "scale_ref": "c_edu_skeleton",
+   "size_cm": [
+    34.0,
+    146.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_skeleton.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_vault_box_oak",
+   "scale_ref": "c_edu_vault_box",
+   "size_cm": [
+    91.9,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_vault_box.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_balance_beam_oak",
+   "scale_ref": "c_edu_balance_beam",
+   "size_cm": [
+    302.1,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_balance_beam.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "edu_balance_beam_sky",
+   "scale_ref": "c_edu_balance_beam",
+   "size_cm": [
+    302.1,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_balance_beam.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "edu_ball_cart_metal",
+   "scale_ref": "c_edu_ball_cart",
+   "size_cm": [
+    103.0,
+    101.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_ball_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_ball_cart_coral",
+   "scale_ref": "c_edu_ball_cart",
+   "size_cm": [
+    103.0,
+    101.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_ball_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_serving_counter_white",
+   "scale_ref": "c_edu_serving_counter",
+   "size_cm": [
+    225.5,
+    122.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_serving_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_serving_counter_grey",
+   "scale_ref": "c_edu_serving_counter",
+   "size_cm": [
+    225.5,
+    122.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_serving_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_serving_counter_mint",
+   "scale_ref": "c_edu_serving_counter",
+   "size_cm": [
+    225.5,
+    122.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_serving_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_copier_grey",
+   "scale_ref": "c_edu_copier",
+   "size_cm": [
+    86.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_copier.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_copier_white",
+   "scale_ref": "c_edu_copier",
+   "size_cm": [
+    86.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_copier.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_blackboard_green",
+   "scale_ref": "c_edu_blackboard",
+   "size_cm": [
+    241.5,
+    121.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_blackboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2f5a45",
+    "#fbfaf7",
+    "#d4a86e"
+   ],
+   "catalog": "school",
+   "sfx": {
+    "sun": "chalk",
+    "house": "chalk",
+    "cat": "chalk",
+    "shapes": "chalk",
+    "empty": "sponge"
+   },
+   "states": [
+    "empty",
+    "sun",
+    "house",
+    "cat",
+    "shapes"
+   ],
+   "state_sprites": {
+    "sun": "res://assets/sprites/items/edu_blackboard__sun.png",
+    "house": "res://assets/sprites/items/edu_blackboard__house.png",
+    "cat": "res://assets/sprites/items/edu_blackboard__cat.png",
+    "shapes": "res://assets/sprites/items/edu_blackboard__shapes.png"
+   }
+  },
+  {
+   "id": "edu_blackboard_black",
+   "scale_ref": "c_edu_blackboard",
+   "size_cm": [
+    241.5,
+    121.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_blackboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#fbfaf7",
+    "#d4a86e"
+   ],
+   "catalog": "school",
+   "sfx": {
+    "sun": "chalk",
+    "house": "chalk",
+    "cat": "chalk",
+    "shapes": "chalk",
+    "empty": "sponge"
+   },
+   "states": [
+    "empty",
+    "sun",
+    "house",
+    "cat",
+    "shapes"
+   ],
+   "state_sprites": {
+    "sun": "res://assets/sprites/items/edu_blackboard__sun.png",
+    "house": "res://assets/sprites/items/edu_blackboard__house.png",
+    "cat": "res://assets/sprites/items/edu_blackboard__cat.png",
+    "shapes": "res://assets/sprites/items/edu_blackboard__shapes.png"
+   }
+  },
+  {
+   "id": "edu_bell_butter",
+   "scale_ref": "c_edu_bell",
+   "size_cm": [
+    41.7,
+    35.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_bell.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "sfx": {
+    "ring": "school_bell"
+   },
+   "states": [
+    "quiet",
+    "ring"
+   ],
+   "state_sprites": {
+    "ring": "res://assets/sprites/items/edu_bell__ring.png"
+   },
+   "anim": {
+    "ring": "shake"
+   }
+  },
+  {
+   "id": "edu_bell_coral",
+   "scale_ref": "c_edu_bell",
+   "size_cm": [
+    41.7,
+    35.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_bell.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "sfx": {
+    "ring": "school_bell"
+   },
+   "states": [
+    "quiet",
+    "ring"
+   ],
+   "state_sprites": {
+    "ring": "res://assets/sprites/items/edu_bell__ring.png"
+   },
+   "anim": {
+    "ring": "shake"
+   }
+  },
+  {
+   "id": "edu_world_map_sea",
+   "scale_ref": "c_edu_world_map",
+   "size_cm": [
+    161.5,
+    101.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_world_map.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#7fae6a",
+    "#d4a86e"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_cubbies_oak",
+   "scale_ref": "c_edu_cubbies",
+   "size_cm": [
+    101.9,
+    81.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_cubbies.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_cubbies_white",
+   "scale_ref": "c_edu_cubbies",
+   "size_cm": [
+    101.9,
+    81.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_cubbies.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_triangle_metal",
+   "scale_ref": "c_edu_triangle",
+   "size_cm": [
+    20.7,
+    22.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_triangle.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "triangle"
+   }
+  },
+  {
+   "id": "edu_tambourine_oak",
+   "scale_ref": "c_edu_tambourine",
+   "size_cm": [
+    27.0,
+    26.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tambourine.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "tambourine"
+   }
+  },
+  {
+   "id": "edu_tambourine_coral",
+   "scale_ref": "c_edu_tambourine",
+   "size_cm": [
+    27.0,
+    26.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tambourine.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "tambourine"
+   }
+  },
+  {
+   "id": "edu_palette_oak",
+   "scale_ref": "c_edu_palette",
+   "size_cm": [
+    31.8,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_palette.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "edu_clay_pot_terracotta",
+   "scale_ref": "c_edu_clay_pot",
+   "size_cm": [
+    17.8,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_clay_pot.png",
+   "pad_px": 1,
+   "colors": [
+    "#c96a4a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "edu_clay_pot_sky",
+   "scale_ref": "c_edu_clay_pot",
+   "size_cm": [
+    17.8,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_clay_pot.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "edu_clay_pot_butter",
+   "scale_ref": "c_edu_clay_pot",
+   "size_cm": [
+    17.8,
+    19.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_clay_pot.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "edu_flask_mint",
+   "scale_ref": "c_edu_flask",
+   "size_cm": [
+    11.7,
+    27.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_flask.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "bubble": "pet_fish_bubble"
+   },
+   "states": [
+    "still",
+    "bubble"
+   ],
+   "state_sprites": {
+    "bubble": "res://assets/sprites/items/edu_flask__bubble.png"
+   },
+   "anim": {
+    "bubble": "shake"
+   }
+  },
+  {
+   "id": "edu_flask_rose",
+   "scale_ref": "c_edu_flask",
+   "size_cm": [
+    11.7,
+    27.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_flask.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "bubble": "pet_fish_bubble"
+   },
+   "states": [
+    "still",
+    "bubble"
+   ],
+   "state_sprites": {
+    "bubble": "res://assets/sprites/items/edu_flask__bubble.png"
+   },
+   "anim": {
+    "bubble": "shake"
+   }
+  },
+  {
+   "id": "edu_flask_sky",
+   "scale_ref": "c_edu_flask",
+   "size_cm": [
+    11.7,
+    27.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_flask.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "bubble": "pet_fish_bubble"
+   },
+   "states": [
+    "still",
+    "bubble"
+   ],
+   "state_sprites": {
+    "bubble": "res://assets/sprites/items/edu_flask__bubble.png"
+   },
+   "anim": {
+    "bubble": "shake"
+   }
+  },
+  {
+   "id": "edu_volcano_oak",
+   "scale_ref": "c_edu_volcano",
+   "size_cm": [
+    37.5,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_volcano.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f09a55",
+    "#6d6f78"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "erupt": "fizz"
+   },
+   "states": [
+    "calm",
+    "erupt"
+   ],
+   "state_sprites": {
+    "erupt": "res://assets/sprites/items/edu_volcano__erupt.png"
+   },
+   "anim": {
+    "erupt": "shake"
+   }
+  },
+  {
+   "id": "edu_tray_coral",
+   "scale_ref": "c_edu_tray",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "edu_tray_sky",
+   "scale_ref": "c_edu_tray",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "edu_tray_mint",
+   "scale_ref": "c_edu_tray",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "edu_tray_grey",
+   "scale_ref": "c_edu_tray",
+   "size_cm": [
+    42.1,
+    4.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_tray.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "school",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "stackable"
+   ]
+  },
+  {
+   "id": "edu_hopscotch_coral",
+   "scale_ref": "c_edu_hopscotch",
+   "size_cm": [
+    300.6,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_hopscotch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9fc3a0",
+    "#fbfaf7"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_hopscotch_sky",
+   "scale_ref": "c_edu_hopscotch",
+   "size_cm": [
+    300.6,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_hopscotch.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9fc3a0",
+    "#fbfaf7"
+   ],
+   "catalog": "school"
+  },
+  {
+   "id": "edu_hopscotch_butter",
+   "scale_ref": "c_edu_hopscotch",
+   "size_cm": [
+    300.6,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/edu_hopscotch.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#9fc3a0",
+    "#fbfaf7"
+   ],
+   "catalog": "school"
   }
  ]
 }

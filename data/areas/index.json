@@ -33,10 +33,13 @@
    "icon": "area_school",
    "color": "#4f9bd8",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/school.json",
    "map_x": 1050,
-   "map_y": 300
+   "map_y": 300,
+   "room": "hall",
+   "spawn_x_cm": 400,
+   "spawn_y_cm": 45
   },
   {
    "id": "pool",

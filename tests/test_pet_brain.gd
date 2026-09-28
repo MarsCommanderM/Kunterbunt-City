@@ -45,7 +45,11 @@ func test_hungry_dog_walks_to_the_full_bowl_and_eats() -> void:
 	var dog: PetNode = _dog(250.0)
 	dog.brain.needs["hunger"] = 1.0
 	dog._timer = 0.0
-	_run(dog, 12.0)
+	for _i: int in int(12.0 / DT):                    # bis gefressen ist – danach darf der Hund weiter schlendern
+		_clock += DT
+		dog.tick(DT)
+		if bowl.state == "empty":
+			break
 	assert_eq(bowl.state, "empty", "Napf leer gefressen")
 	assert_lt(float(dog.brain.needs["hunger"]), 0.1, "satt")
 	assert_lt(absf(dog.position.x - bowl.position.x), 60.0, "steht am Napf")

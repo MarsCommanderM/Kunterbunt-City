@@ -343,7 +343,7 @@ func on_tap() -> void:
 	elif def.is_container() and not def.open_top():
 		set_open(not is_open)
 	else:
-		AudioBus.play_sfx("tap")
+		AudioBus.play_sfx(String(def.sfx.get("tap", "tap")))   # P10: Instrumente, Glocke … klingen beim Antippen
 		_bounce()
 	tapped.emit(self)
 

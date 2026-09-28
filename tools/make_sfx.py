@@ -301,6 +301,42 @@ def coo():
     return np.sin(ph) * (0.6 + 0.4 * np.sin(2 * np.pi * 14 * x)) * np.minimum(1, x * 20) * np.minimum(1, (0.6 - x) * 8)
 
 
+def pluck_tone(f, d, bright=0.4, dec=5.0):
+    """P10: gezupfter/angeschlagener Ton (Klavier, Xylophon, Gitarre) – Grundton + Obertöne."""
+    x = t(d)
+    return (np.sin(2 * np.pi * f * x) + bright * np.sin(4 * np.pi * f * x) * np.exp(-x * 6)
+            + 0.15 * np.sin(6 * np.pi * f * x) * np.exp(-x * 10)) * np.exp(-x * dec) * np.minimum(1, x * 500)
+
+
+def bowed(f, d, vib=5.0):
+    """Gestrichen/geblasen (Geige, Flöte): weicher Einsatz, Vibrato."""
+    x = t(d)
+    ph = 2 * np.pi * np.cumsum(f * (1 + 0.006 * np.sin(2 * np.pi * vib * x))) / SR
+    return (np.sin(ph) + 0.3 * np.sin(2 * ph) + 0.1 * np.sin(3 * ph)) * np.minimum(1, x * 8) * np.minimum(1, (d - x) * 6)
+
+
+def chalk():
+    """Kreide auf der Tafel: kurzes, raues Kratzen (3 Striche)."""
+    parts = []
+    for k in range(3):
+        n = noise(0.09, 0.7) * np.sin(np.linspace(0, np.pi, int(SR * 0.09)))
+        parts += [n, np.zeros(int(SR * 0.05))]
+    return np.concatenate(parts)
+
+
+def school_bell():
+    """Schulglocke: helles Klingeln (schnell angeschlagene Glocke)."""
+    x = t(1.1)
+    ring = sum(np.sin(2 * np.pi * f * x) * a for f, a in ((1320, 1.0), (2640, 0.4), (3950, 0.2)))
+    return ring * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 18 * x))) * np.exp(-x * 1.8) * np.minimum(1, x * 300)
+
+
+def fizz():
+    """Vulkan-Experiment: Sprudeln + Blubbern."""
+    x = t(1.2)
+    return noise(1.2, 0.5) * np.exp(-x * 1.5) * (0.6 + 0.4 * np.sin(2 * np.pi * 9 * x)) + 0.3 * modes([300], 1.2, [3])
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -349,6 +385,20 @@ SOUNDS = {
     "bus_horn": lambda: norm(horn(), 0.45),
     "duck_quack": lambda: norm(quack(), 0.5),
     "pigeon_coo": lambda: norm(coo(), 0.4),
+    # P10a: Schule & Instrumente (Antippen)
+    "chalk": lambda: norm(chalk(), 0.3),
+    "sponge": lambda: norm(noise(0.3, 0.1) * env(int(SR * 0.3), 0.05, 6), 0.3),
+    "school_bell": lambda: norm(school_bell(), 0.45),
+    "fizz": lambda: norm(fizz(), 0.4),
+    "triangle": lambda: norm(modes([2700, 3900, 5600], 1.2, [2.5, 3.5, 5], [1, 0.6, 0.3]), 0.4),
+    "tambourine": lambda: norm(noise(0.3, 0.9) * env(int(SR * 0.3), 0.002, 10) + 0.3 * modes([6200, 7400], 0.3, [12, 14]), 0.4),
+    "drum_hit": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(160, 60, int(SR * 0.3))) / SR) * env(int(SR * 0.3), 0.002, 9)
+                             + 0.3 * noise(0.3, 0.3) * env(int(SR * 0.3), 0.001, 30), 0.6),
+    "piano_note": lambda: norm(pluck_tone(523.25, 0.9, 0.5, 3.0) + 0.6 * pluck_tone(659.25, 0.9, 0.4, 3.0), 0.45),
+    "xylophone": lambda: norm(np.concatenate([pluck_tone(f, 0.18, 0.2, 14) for f in (784, 988, 1175)]), 0.45),
+    "guitar": lambda: norm(sum(pluck_tone(f, 1.0, 0.6, 3.5) * 0.6 for f in (196, 247, 294)), 0.45),
+    "violin": lambda: norm(bowed(660.0, 0.7), 0.4),
+    "flute": lambda: norm(bowed(880.0, 0.6, 4.0) * 0.8 + 0.08 * noise(0.6, 0.6)[: int(SR * 0.6)], 0.35),
 }
 
 

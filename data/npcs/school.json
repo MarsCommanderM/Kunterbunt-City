@@ -1,0 +1,118 @@
+{
+ "_doc": "Feste Figuren der Schule (P10a): 7 Erwachsene + 8 Schulkinder. Erzeugt von tools/make_areas.py.",
+ "area": "school",
+ "npcs": [
+  {
+   "id": "npc_teacher1",
+   "role": "teacher",
+   "room": "class1",
+   "x_cm": 330,
+   "y_cm": 8
+  },
+  {
+   "id": "npc_teacher2",
+   "role": "teacher",
+   "room": "class2",
+   "x_cm": 330,
+   "y_cm": 8
+  },
+  {
+   "id": "npc_musicteacher",
+   "role": "music_teacher",
+   "room": "music",
+   "x_cm": 150,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_artteacher",
+   "role": "art_teacher",
+   "room": "art",
+   "x_cm": 420,
+   "y_cm": 15
+  },
+  {
+   "id": "npc_janitor",
+   "role": "janitor",
+   "room": "hall",
+   "x_cm": 560,
+   "y_cm": 50
+  },
+  {
+   "id": "npc_cook",
+   "role": "cook",
+   "room": "cafeteria",
+   "x_cm": 240,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_principal",
+   "role": "principal",
+   "room": "staff",
+   "x_cm": 520,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_yardwatch",
+   "role": "supervisor",
+   "room": "yard",
+   "x_cm": 1300,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_pupil1",
+   "role": "pupil2",
+   "room": "yard",
+   "x_cm": 500,
+   "y_cm": 55
+  },
+  {
+   "id": "npc_pupil2",
+   "role": "pupil",
+   "room": "yard",
+   "x_cm": 950,
+   "y_cm": 59
+  },
+  {
+   "id": "npc_pupil3",
+   "role": "pupil2",
+   "room": "yard",
+   "x_cm": 1300,
+   "y_cm": 63
+  },
+  {
+   "id": "npc_pupil4",
+   "role": "pupil",
+   "room": "yard",
+   "x_cm": 1900,
+   "y_cm": 55
+  },
+  {
+   "id": "npc_pupil5",
+   "role": "pupil2",
+   "room": "class1",
+   "x_cm": 400,
+   "y_cm": 59
+  },
+  {
+   "id": "npc_pupil6",
+   "role": "pupil",
+   "room": "class1",
+   "x_cm": 580,
+   "y_cm": 63
+  },
+  {
+   "id": "npc_pupil7",
+   "role": "pupil2",
+   "room": "class2",
+   "x_cm": 420,
+   "y_cm": 55
+  },
+  {
+   "id": "npc_pupil8",
+   "role": "pupil",
+   "room": "gym",
+   "x_cm": 380,
+   "y_cm": 59
+  }
+ ]
+}
