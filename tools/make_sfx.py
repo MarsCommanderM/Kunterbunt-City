@@ -353,6 +353,25 @@ def rotor():
     return noise(1.4, 0.15) * (0.3 + 0.7 * np.maximum(0, np.sin(2 * np.pi * 11 * x)) ** 3) * np.minimum(1, x * 3)
 
 
+def fair_bell():
+    """Hau-den-Lukas-Glocke / Fahrt startet: helles „Ding“ mit Nachklang."""
+    return modes([1320, 2640, 3960, 5280], 1.2, [3, 4, 6, 8], [1, 0.5, 0.3, 0.15])
+
+
+def tada():
+    """Zaubertrick: „Ta-daa“ (zwei Akkorde)."""
+    a = sum(np.sin(2 * np.pi * f * t(0.14)) for f in (523, 659, 784)) * env(int(SR * 0.14), 0.005, 12)
+    b = sum(np.sin(2 * np.pi * f * t(0.6)) for f in (659, 784, 1046)) * env(int(SR * 0.6), 0.005, 3)
+    return np.concatenate([a, np.zeros(int(SR * 0.05)), b])
+
+
+def boo():
+    """Lustiges Gespenst: wackelndes „Huuu“ (nie gruselig, eher albern)."""
+    x = t(0.9)
+    f = 330 + 60 * np.sin(2 * np.pi * 6 * x) - 80 * x
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, x * 8) * np.minimum(1, (0.9 - x) * 5)
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -421,6 +440,10 @@ SOUNDS = {
                                                   np.zeros(int(SR * 0.5))] * 2), 0.3),
     "siren": lambda: norm(siren(), 0.4),
     "rotor": lambda: norm(rotor(), 0.4),
+    # P10d Rummelplatz
+    "fair_bell": lambda: norm(fair_bell(), 0.45),
+    "tada": lambda: norm(tada(), 0.4),
+    "boo": lambda: norm(boo(), 0.4),
 }
 
 

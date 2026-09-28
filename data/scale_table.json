@@ -9702,6 +9702,203 @@
    "hold": "two_hands",
    "placement": "table",
    "src": "catalog"
+  },
+  {
+   "id": "c_fair_ferris_wheel",
+   "category": "furniture",
+   "h_cm": 633.0,
+   "w_cm": 609.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 40
+  },
+  {
+   "id": "c_fair_carousel",
+   "category": "furniture",
+   "h_cm": 461.8,
+   "w_cm": 621.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 150
+  },
+  {
+   "id": "c_fair_bumper_car",
+   "category": "furniture",
+   "h_cm": 102.1,
+   "w_cm": 166.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 40
+  },
+  {
+   "id": "c_fair_coaster_track",
+   "category": "furniture",
+   "h_cm": 317.6,
+   "w_cm": 1111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_coaster_car",
+   "category": "furniture",
+   "h_cm": 91.5,
+   "w_cm": 173.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_fair_ghost_house",
+   "category": "furniture",
+   "h_cm": 441.8,
+   "w_cm": 731.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_ghost_car",
+   "category": "furniture",
+   "h_cm": 71.1,
+   "w_cm": 153.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_fair_booth",
+   "category": "furniture",
+   "h_cm": 261.8,
+   "w_cm": 331.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 98.0
+  },
+  {
+   "id": "c_fair_duck_pond",
+   "category": "furniture",
+   "h_cm": 72.5,
+   "w_cm": 227.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_high_striker",
+   "category": "furniture",
+   "h_cm": 466.8,
+   "w_cm": 73.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_stage",
+   "category": "furniture",
+   "h_cm": 321.8,
+   "w_cm": 647.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 108.0
+  },
+  {
+   "id": "c_fair_candy_stand",
+   "category": "furniture",
+   "h_cm": 231.6,
+   "w_cm": 211.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 104.0
+  },
+  {
+   "id": "c_fair_gate",
+   "category": "furniture",
+   "h_cm": 481.9,
+   "w_cm": 571.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_bumper_floor",
+   "category": "deco",
+   "h_cm": 61.6,
+   "w_cm": 901.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_cans",
+   "category": "toy",
+   "h_cm": 36.2,
+   "w_cm": 38.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_lottery",
+   "category": "toy",
+   "h_cm": 55.8,
+   "w_cm": 47.9,
+   "hold": "none",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_magic_hat",
+   "category": "toy",
+   "h_cm": 36.8,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_juggling",
+   "category": "toy",
+   "h_cm": 9.5,
+   "w_cm": 24.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_prize",
+   "category": "toy",
+   "h_cm": 56.6,
+   "w_cm": 38.5,
+   "hold": "two_hands",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_candy_apple",
+   "category": "food",
+   "h_cm": 21.8,
+   "w_cm": 10.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_fair_balloon",
+   "category": "toy",
+   "h_cm": 111.9,
+   "w_cm": 35.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
   }
  ]
 }

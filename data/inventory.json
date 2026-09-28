@@ -2773,6 +2773,145 @@
      "min": 3
     }
    ]
+  },
+  "fair": {
+   "rummelplatz": [
+    {
+     "label": "fair_cotton_candy",
+     "prefix": "fair_cotton_candy",
+     "min": 2
+    },
+    {
+     "label": "fair_popcorn",
+     "prefix": "fair_popcorn",
+     "min": 1
+    },
+    {
+     "label": "fair_ticket_booth",
+     "prefix": "fair_ticket_booth",
+     "min": 2
+    },
+    {
+     "label": "fair_balloon_bunch",
+     "prefix": "fair_balloon_bunch",
+     "min": 1
+    },
+    {
+     "label": "fair_target",
+     "prefix": "fair_target",
+     "min": 1
+    },
+    {
+     "label": "fair_carousel_horse",
+     "prefix": "fair_carousel_horse",
+     "min": 3
+    },
+    {
+     "label": "fair_ferris_wheel",
+     "prefix": "fair_ferris_wheel",
+     "min": 2
+    },
+    {
+     "label": "fair_carousel",
+     "prefix": "fair_carousel",
+     "min": 3
+    },
+    {
+     "label": "fair_bumper_car",
+     "prefix": "fair_bumper_car",
+     "min": 5
+    },
+    {
+     "label": "fair_coaster_track",
+     "prefix": "fair_coaster_track",
+     "min": 2
+    },
+    {
+     "label": "fair_coaster_car",
+     "prefix": "fair_coaster_car",
+     "min": 2
+    },
+    {
+     "label": "fair_ghost_house",
+     "prefix": "fair_ghost_house",
+     "min": 2
+    },
+    {
+     "label": "fair_ghost_car",
+     "prefix": "fair_ghost_car",
+     "min": 2
+    },
+    {
+     "label": "fair_booth",
+     "prefix": "fair_booth",
+     "min": 4
+    },
+    {
+     "label": "fair_duck_pond",
+     "prefix": "fair_duck_pond",
+     "min": 2
+    },
+    {
+     "label": "fair_high_striker",
+     "prefix": "fair_high_striker",
+     "min": 1
+    },
+    {
+     "label": "fair_stage",
+     "prefix": "fair_stage",
+     "min": 2
+    },
+    {
+     "label": "fair_candy_stand",
+     "prefix": "fair_candy_stand",
+     "min": 2
+    },
+    {
+     "label": "fair_gate",
+     "prefix": "fair_gate",
+     "min": 2
+    },
+    {
+     "label": "fair_bumper_floor",
+     "prefix": "fair_bumper_floor",
+     "min": 1
+    },
+    {
+     "label": "fair_cans",
+     "prefix": "fair_cans",
+     "min": 1
+    },
+    {
+     "label": "fair_lottery",
+     "prefix": "fair_lottery",
+     "min": 2
+    },
+    {
+     "label": "fair_magic_hat",
+     "prefix": "fair_magic_hat",
+     "min": 1
+    },
+    {
+     "label": "fair_juggling",
+     "prefix": "fair_juggling",
+     "min": 1
+    },
+    {
+     "label": "fair_prize",
+     "prefix": "fair_prize",
+     "min": 5
+    },
+    {
+     "label": "fair_candy_apple",
+     "prefix": "fair_candy_apple",
+     "min": 1
+    },
+    {
+     "label": "fair_balloon",
+     "prefix": "fair_balloon",
+     "min": 6
+    }
+   ]
   }
  }
 }

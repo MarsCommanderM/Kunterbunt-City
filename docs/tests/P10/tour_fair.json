@@ -1,0 +1,15 @@
+{
+  "fair": {
+    "ladezeit_ms": 355.0,
+    "raeume": [
+      "entrance:10/1",
+      "ferris:6/1",
+      "bumper:8/1",
+      "carousel:7/2",
+      "coaster:6/1",
+      "ghost:6/1",
+      "booths:15/1",
+      "stage:9/1"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+ "id": "magician",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Zauberer/Zauberin",
+ "behavior": "station",
+ "work": [
+  "point",
+  "wave",
+  "nod"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "jacket",
+   "bottom": "trousers",
+   "hair": "side_part",
+   "shoes": "boot",
+   "accessory": "none"
+  },
+  "colors": {
+   "top": [
+    "#2e3140",
+    "#7a5ea8",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#5a463a",
+    "#5a463a",
+    "#5a463a"
+   ],
+   "shoes": [
+    "#2a2a30",
+    "#2a2a30",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

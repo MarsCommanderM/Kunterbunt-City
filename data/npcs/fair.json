@@ -1,0 +1,69 @@
+{
+ "_doc": "Feste Figuren auf dem Rummelplatz (P10d). Erzeugt von tools/make_areas.py.",
+ "area": "fair",
+ "npcs": [
+  {
+   "id": "npc_ride_operator_ferris_0",
+   "role": "ride_operator",
+   "room": "ferris",
+   "x_cm": 260,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_ride_operator_bumper_1",
+   "role": "ride_operator",
+   "room": "bumper",
+   "x_cm": 180,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_ride_operator_carousel_2",
+   "role": "ride_operator",
+   "room": "carousel",
+   "x_cm": 900,
+   "y_cm": 20
+  },
+  {
+   "id": "npc_ride_operator_coaster_3",
+   "role": "ride_operator",
+   "room": "coaster",
+   "x_cm": 1380,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_ride_operator_ghost_4",
+   "role": "ride_operator",
+   "room": "ghost",
+   "x_cm": 1000,
+   "y_cm": 10
+  },
+  {
+   "id": "npc_vendor_booths_5",
+   "role": "vendor",
+   "room": "booths",
+   "x_cm": 950,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_vendor_carousel_6",
+   "role": "vendor",
+   "room": "carousel",
+   "x_cm": 150,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_clown_entrance_7",
+   "role": "clown",
+   "room": "entrance",
+   "x_cm": 900,
+   "y_cm": 50
+  },
+  {
+   "id": "npc_magician_stage_8",
+   "role": "magician",
+   "room": "stage",
+   "x_cm": 960,
+   "y_cm": 30
+  }
+ ]
+}

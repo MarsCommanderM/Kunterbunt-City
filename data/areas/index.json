@@ -78,10 +78,13 @@
    "icon": "area_fair",
    "color": "#c1547a",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/fair.json",
    "map_x": 850,
-   "map_y": 560
+   "map_y": 560,
+   "room": "entrance",
+   "spawn_x_cm": 560,
+   "spawn_y_cm": 55
   },
   {
    "id": "zoo",
