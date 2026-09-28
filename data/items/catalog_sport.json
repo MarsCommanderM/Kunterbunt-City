@@ -1304,6 +1304,920 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "spc_treadmill_black",
+   "scale_ref": "c_spc_treadmill",
+   "size_cm": [
+    181.8,
+    137.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_treadmill.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "sfx": {
+    "on": "ui_confirm"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/spc_treadmill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "spc_treadmill_grey",
+   "scale_ref": "c_spc_treadmill",
+   "size_cm": [
+    181.8,
+    137.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_treadmill.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "sfx": {
+    "on": "ui_confirm"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/spc_treadmill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "spc_bike_coral",
+   "scale_ref": "c_spc_bike",
+   "size_cm": [
+    99.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_bike_black",
+   "scale_ref": "c_spc_bike",
+   "size_cm": [
+    99.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_bike_sky",
+   "scale_ref": "c_spc_bike",
+   "size_cm": [
+    99.5,
+    116.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bike.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_bench_black",
+   "scale_ref": "c_spc_bench",
+   "size_cm": [
+    151.8,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_bench_coral",
+   "scale_ref": "c_spc_bench",
+   "size_cm": [
+    151.8,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_yoga_ball_coral",
+   "scale_ref": "c_spc_yoga_ball",
+   "size_cm": [
+    66.9,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_yoga_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_yoga_ball_sky",
+   "scale_ref": "c_spc_yoga_ball",
+   "size_cm": [
+    66.9,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_yoga_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_yoga_ball_mint",
+   "scale_ref": "c_spc_yoga_ball",
+   "size_cm": [
+    66.9,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_yoga_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_yoga_ball_lilac",
+   "scale_ref": "c_spc_yoga_ball",
+   "size_cm": [
+    66.9,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_yoga_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "spc_bleachers_sky",
+   "scale_ref": "c_spc_bleachers",
+   "size_cm": [
+    642.1,
+    159.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bleachers.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 6
+   }
+  },
+  {
+   "id": "spc_bleachers_coral",
+   "scale_ref": "c_spc_bleachers",
+   "size_cm": [
+    642.1,
+    159.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_bleachers.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 6
+   }
+  },
+  {
+   "id": "spc_climbing_wall_sand",
+   "scale_ref": "c_spc_climbing_wall",
+   "size_cm": [
+    421.9,
+    641.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_climbing_wall.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "spc_climbing_wall_grey",
+   "scale_ref": "c_spc_climbing_wall",
+   "size_cm": [
+    421.9,
+    641.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_climbing_wall.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "sport",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "spc_barre_oak",
+   "scale_ref": "c_spc_barre",
+   "size_cm": [
+    321.6,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_barre.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_tennis_net_white",
+   "scale_ref": "c_spc_tennis_net",
+   "size_cm": [
+    641.5,
+    108.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tennis_net.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#6d6f78"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_goal_white",
+   "scale_ref": "c_spc_goal",
+   "size_cm": [
+    503.7,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_goal.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_corner_flag_coral",
+   "scale_ref": "c_spc_corner_flag",
+   "size_cm": [
+    22.9,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_corner_flag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_corner_flag_butter",
+   "scale_ref": "c_spc_corner_flag",
+   "size_cm": [
+    22.9,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_corner_flag.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_scoreboard_navy",
+   "scale_ref": "c_spc_scoreboard",
+   "size_cm": [
+    201.8,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_scoreboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "sfx": {
+    "s1": "fair_bell",
+    "s2": "fair_bell",
+    "s3": "fair_bell",
+    "s4": "fair_bell",
+    "s5": "fair_bell"
+   },
+   "states": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5"
+   ],
+   "state_sprites": {
+    "s1": "res://assets/sprites/items/spc_scoreboard__s1.png",
+    "s2": "res://assets/sprites/items/spc_scoreboard__s2.png",
+    "s3": "res://assets/sprites/items/spc_scoreboard__s3.png",
+    "s4": "res://assets/sprites/items/spc_scoreboard__s4.png",
+    "s5": "res://assets/sprites/items/spc_scoreboard__s5.png"
+   }
+  },
+  {
+   "id": "spc_mirror_oak",
+   "scale_ref": "c_spc_mirror",
+   "size_cm": [
+    321.9,
+    181.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_mirror_white",
+   "scale_ref": "c_spc_mirror",
+   "size_cm": [
+    321.9,
+    181.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_mirror.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#d4a86e",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_pitch_green",
+   "scale_ref": "c_spc_pitch",
+   "size_cm": [
+    1601.0,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_pitch.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_court_terracotta",
+   "scale_ref": "c_spc_court",
+   "size_cm": [
+    1101.2,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_court.png",
+   "pad_px": 1,
+   "colors": [
+    "#c96a4a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_court_blue",
+   "scale_ref": "c_spc_court",
+   "size_cm": [
+    1101.2,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_court.png",
+   "pad_px": 1,
+   "colors": [
+    "#6f8fb8",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport"
+  },
+  {
+   "id": "spc_football_white",
+   "scale_ref": "c_spc_football",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_football.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2a2a30",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_tennis_ball_butter",
+   "scale_ref": "c_spc_tennis_ball",
+   "size_cm": [
+    8.9,
+    8.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tennis_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_tutu_rose",
+   "scale_ref": "c_spc_tutu",
+   "size_cm": [
+    41.7,
+    18.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tutu.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_tutu_lilac",
+   "scale_ref": "c_spc_tutu",
+   "size_cm": [
+    41.7,
+    18.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tutu.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_tutu_sky",
+   "scale_ref": "c_spc_tutu",
+   "size_cm": [
+    41.7,
+    18.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tutu.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_tutu_white",
+   "scale_ref": "c_spc_tutu",
+   "size_cm": [
+    41.7,
+    18.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_tutu.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_ballet_shoes_rose",
+   "scale_ref": "c_spc_ballet_shoes",
+   "size_cm": [
+    18.3,
+    12.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_ballet_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "spc_ballet_shoes_white",
+   "scale_ref": "c_spc_ballet_shoes",
+   "size_cm": [
+    18.3,
+    12.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/spc_ballet_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "sport",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

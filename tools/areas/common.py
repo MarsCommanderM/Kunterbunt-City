@@ -24,8 +24,8 @@ def ON(id_: str, host: str, x_rel: float = 0.0) -> dict:
 
 
 def shop(rid: str, label: str, icon: str, decor: dict, items: list, width: float = 800, area: str = "shopping",
-         door: bool = True, amb: str = "amb_indoor") -> dict:
-    return {"id": rid, "label": label, "icon": icon, "width_cm": width, "height_cm": 260.0, "floor": FLOOR, "camera": CAM_IN,
+         door: bool = True, amb: str = "amb_indoor", height: float = 260.0, cam: dict | None = None) -> dict:
+    return {"id": rid, "label": label, "icon": icon, "width_cm": width, "height_cm": height, "floor": FLOOR, "camera": cam or CAM_IN,
             "background": f"res://assets/backgrounds/{area}/{rid}.bg.json",
             "scene": {"kind": "indoor", "wainscot": True, "extras": [], "decor": decor},
             "default_items": ([W("door_glass_white", 70, DOOR_TOP)] if door else []) + items, "ambience": amb}

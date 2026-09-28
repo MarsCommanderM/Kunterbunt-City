@@ -2912,6 +2912,100 @@
      "min": 6
     }
    ]
+  },
+  "sports": {
+   "sportzentrum": [
+    {
+     "label": "spc_treadmill",
+     "prefix": "spc_treadmill",
+     "min": 2
+    },
+    {
+     "label": "spc_bike",
+     "prefix": "spc_bike",
+     "min": 3
+    },
+    {
+     "label": "spc_bench",
+     "prefix": "spc_bench",
+     "min": 2
+    },
+    {
+     "label": "spc_yoga_ball",
+     "prefix": "spc_yoga_ball",
+     "min": 4
+    },
+    {
+     "label": "spc_bleachers",
+     "prefix": "spc_bleachers",
+     "min": 2
+    },
+    {
+     "label": "spc_climbing_wall",
+     "prefix": "spc_climbing_wall",
+     "min": 2
+    },
+    {
+     "label": "spc_barre",
+     "prefix": "spc_barre",
+     "min": 1
+    },
+    {
+     "label": "spc_tennis_net",
+     "prefix": "spc_tennis_net",
+     "min": 1
+    },
+    {
+     "label": "spc_goal",
+     "prefix": "spc_goal",
+     "min": 1
+    },
+    {
+     "label": "spc_corner_flag",
+     "prefix": "spc_corner_flag",
+     "min": 2
+    },
+    {
+     "label": "spc_scoreboard",
+     "prefix": "spc_scoreboard",
+     "min": 1
+    },
+    {
+     "label": "spc_mirror",
+     "prefix": "spc_mirror",
+     "min": 2
+    },
+    {
+     "label": "spc_pitch",
+     "prefix": "spc_pitch",
+     "min": 1
+    },
+    {
+     "label": "spc_court",
+     "prefix": "spc_court",
+     "min": 2
+    },
+    {
+     "label": "spc_football",
+     "prefix": "spc_football",
+     "min": 1
+    },
+    {
+     "label": "spc_tennis_ball",
+     "prefix": "spc_tennis_ball",
+     "min": 1
+    },
+    {
+     "label": "spc_tutu",
+     "prefix": "spc_tutu",
+     "min": 4
+    },
+    {
+     "label": "spc_ballet_shoes",
+     "prefix": "spc_ballet_shoes",
+     "min": 2
+    }
+   ]
   }
  }
 }

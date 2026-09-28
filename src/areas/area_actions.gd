@@ -14,6 +14,7 @@ const WEAR: Dictionary = {                    ## Item-Präfix → [Slot, Teil]
 	"cloth_boots": ["shoes", "boot"], "cloth_slippers": ["shoes", "slipper"], "cloth_hat": ["accessory", "sunhat"],
 	"cloth_cap": ["accessory", "cap"], "cloth_beanie": ["accessory", "beanie"], "cloth_sunglasses": ["accessory", "sunglasses"],
 	"cloth_scarf": ["top", "sweater"],
+	"spc_tutu": ["bottom", "tutu"], "spc_ballet_shoes": ["shoes", "ballet"],
 	"health_bandage": ["aid", "plaster"], "med_sling": ["aid", "arm_sling"], "med_eye_patch": ["aid", "eye_patch"],
 }
 const SLIDE_S: float = 1.1
@@ -26,7 +27,7 @@ const BUS_ID: StringName = &"street_bus_butter"
 
 ## Ding losgelassen. true = hier erledigt (AreaScene speichert dann nur noch).
 static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
-	if PoolActions.on_dropped(scene, item) or FairActions.on_dropped(scene, item):
+	if PoolActions.on_dropped(scene, item) or FairActions.on_dropped(scene, item) or SportActions.on_dropped(scene, item):
 		return true
 	var id: String = String(item.def.id)
 	for p: String in WEAR:
@@ -47,7 +48,7 @@ static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
 
 
 static func on_tapped(scene: AreaScene, item: ItemNode) -> bool:
-	if PoolActions.on_tapped(scene, item) or FairActions.on_tapped(scene, item):
+	if PoolActions.on_tapped(scene, item) or FairActions.on_tapped(scene, item) or SportActions.on_tapped(scene, item):
 		return true
 	var id: String = String(item.def.id)
 	if id.begins_with("edu_bell") and item.state == "ring":
@@ -109,7 +110,7 @@ static func wear(scene: AreaScene, rig: CharacterRig, item: ItemNode) -> void:
 	rig.refresh_pose(false)
 	rig.set_emotion("laugh")
 	AudioBus.play_sfx("harvest")
-	Secrets.event("patched" if slot == "aid" else "wear")
+	Secrets.event("patched" if slot == "aid" else "tutu" if String(what[1]) == "tutu" else "wear")
 
 
 # ---------------------------------------------------------------- Friseur

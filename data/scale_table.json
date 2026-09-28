@@ -9899,6 +9899,173 @@
    "hold": "one_hand",
    "placement": "floor",
    "src": "catalog"
+  },
+  {
+   "id": "c_spc_treadmill",
+   "category": "furniture",
+   "h_cm": 137.8,
+   "w_cm": 181.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_bike",
+   "category": "furniture",
+   "h_cm": 116.5,
+   "w_cm": 99.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 90
+  },
+  {
+   "id": "c_spc_bench",
+   "category": "furniture",
+   "h_cm": 57.6,
+   "w_cm": 151.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 42
+  },
+  {
+   "id": "c_spc_yoga_ball",
+   "category": "furniture",
+   "h_cm": 66.9,
+   "w_cm": 66.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 62
+  },
+  {
+   "id": "c_spc_bleachers",
+   "category": "furniture",
+   "h_cm": 159.8,
+   "w_cm": 641.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 150
+  },
+  {
+   "id": "c_spc_climbing_wall",
+   "category": "furniture",
+   "h_cm": 641.9,
+   "w_cm": 421.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 300
+  },
+  {
+   "id": "c_spc_barre",
+   "category": "furniture",
+   "h_cm": 111.6,
+   "w_cm": 321.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_tennis_net",
+   "category": "furniture",
+   "h_cm": 108.6,
+   "w_cm": 641.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_goal",
+   "category": "furniture",
+   "h_cm": 201.8,
+   "w_cm": 503.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_corner_flag",
+   "category": "furniture",
+   "h_cm": 151.5,
+   "w_cm": 22.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_scoreboard",
+   "category": "item",
+   "h_cm": 101.8,
+   "w_cm": 201.8,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_mirror",
+   "category": "item",
+   "h_cm": 181.9,
+   "w_cm": 321.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_pitch",
+   "category": "deco",
+   "h_cm": 61.6,
+   "w_cm": 1601.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_court",
+   "category": "deco",
+   "h_cm": 61.6,
+   "w_cm": 1101.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_football",
+   "category": "toy",
+   "h_cm": 23.9,
+   "w_cm": 23.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_tennis_ball",
+   "category": "toy",
+   "h_cm": 8.9,
+   "w_cm": 8.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_tutu",
+   "category": "item",
+   "h_cm": 18.6,
+   "w_cm": 41.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_spc_ballet_shoes",
+   "category": "item",
+   "h_cm": 12.1,
+   "w_cm": 18.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
   }
  ]
 }

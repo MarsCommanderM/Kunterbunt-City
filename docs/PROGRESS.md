@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
 | Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
-| Letzter grüner check.sh | 2026-09-28 (P10d) |
+| Letzter grüner check.sh | 2026-09-28 (P10e) |
 | Version | 0.1.0 |
 
 ## Phasen
@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ | Log 2026-09-28 |
+| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,23 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10e · Sportzentrum ✅
+- `tools/areas/sport.py` → `data/areas/sports.json`: **7 Räume** (Empfang, Fitness, Sporthalle 4,5 m hoch,
+  Kletterwand 7 m hoch, Ballett, Fußballplatz mit Tribüne, Tennis) · 54 Start-Items · 6 Figuren (Empfang, 3 Trainer/innen,
+  Aufsicht Kletterwand, Ballettlehrer/in – neue Rolle `ballet_teacher`).
+- **Hohe Innenräume:** `make_rooms.py` zeichnet die Wand bis zur Decke, wenn ein Raum höher als 2,6 m ist
+  (bestehende Räume bit-gleich, eigener Schlüssel nur für hohe Wände); `common.shop(height=, cam=)`.
+- 21 neue Vorlagen (`tools/items/sportcenter.py`, `catalog_sport.py`, `spc_*`): Laufband, Heimtrainer, Hantelbank,
+  Gymnastikball, Tribüne (6 Plätze), **Anzeigetafel mit Bällen statt Ziffern** (R-07), Kletterwand mit Seilen,
+  Ballettstange, Spiegelwand, Tennisnetz, Fußballtor 5 × 2 m, Eckfahne, Spielfeld, Tennisplatz, Fußball,
+  Tennisball, Tutu, Ballettschuhe. Musik `music_sport`.
+- **Ball-Physik mit Tor-Erkennung** (`src/areas/sport_actions.gd`): Ball antippen → rollt weg von der Figur, bremst,
+  dreht sich; kreuzt er ein Tor auf gleicher Tiefe, bleibt er im Netz → Pfiff, Trainer klatscht, alle jubeln,
+  Anzeigetafel zählt weiter. Ball ins Tor legen zählt auch. Kletterwand: Aufsicht sichert. Tutu/Ballettschuhe
+  in die Hand → angezogen. 6 Geheimnisse.
+- Tests `test_p10_sports` (6). Beweis `docs/tests/P10/sports_*.jpg`.
+- check.sh ✅ – Maßstab (2935 Items) · pytest 133/133 · GUT 359/359.
+
 ### 2026-09-28 · Phase 10d · Rummelplatz ✅
 - `tools/areas/fair.py` → `data/areas/fair.json`: **8 Bereiche** (Eingang mit Tor, Riesenrad, Autoscooter, Karussell,
   Achterbahn, Geisterbahn, Buden, Bühne) · 50 Start-Items · **9 Figuren** (5 Fahrgeschäft-Bediener/innen,

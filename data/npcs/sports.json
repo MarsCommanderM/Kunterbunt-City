@@ -1,0 +1,48 @@
+{
+ "_doc": "Feste Figuren im Sportzentrum (P10e). Erzeugt von tools/make_areas.py.",
+ "area": "sports",
+ "npcs": [
+  {
+   "id": "npc_receptionist_reception",
+   "role": "receptionist",
+   "room": "reception",
+   "x_cm": 300,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_coach_fitness",
+   "role": "coach",
+   "room": "fitness",
+   "x_cm": 520,
+   "y_cm": 50
+  },
+  {
+   "id": "npc_coach_hall",
+   "role": "coach",
+   "room": "hall",
+   "x_cm": 700,
+   "y_cm": 45
+  },
+  {
+   "id": "npc_supervisor_climbing",
+   "role": "supervisor",
+   "room": "climbing",
+   "x_cm": 700,
+   "y_cm": 45
+  },
+  {
+   "id": "npc_ballet_teacher_ballet",
+   "role": "ballet_teacher",
+   "room": "ballet",
+   "x_cm": 700,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_coach_football",
+   "role": "coach",
+   "room": "football",
+   "x_cm": 1300,
+   "y_cm": 62
+  }
+ ]
+}

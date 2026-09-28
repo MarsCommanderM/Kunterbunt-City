@@ -69,11 +69,12 @@ def build_room(area_id: str, room: dict, cache: dict) -> dict:
     wall_img = floor_img = None
     if not outdoor:
         variant = "panel" if sc.get("wainscot", True) else "plain"
-        key = f"wall_{int(width)}_{variant}"
+        wall_h = max(WALL_H, top)                       # hohe Hallen (Sport, Kletterwand): Wand bis zur Decke
+        key = f"wall_{int(width)}_{variant}" + (f"_h{int(wall_h)}" if wall_h != WALL_H else "")
         if key not in cache:
-            cache[key] = _shared_layer(key, lambda: L.wall(width, WALL_H, variant == "panel"))
+            cache[key] = _shared_layer(key, lambda: L.wall(width, wall_h, variant == "panel"))
         wall_img, wall_tiles = cache[key]
-        layers.append({"kind": "wall", "y_px": round((top - WALL_H) * PPC), "tiles": wall_tiles})
+        layers.append({"kind": "wall", "y_px": round((top - wall_h) * PPC), "tiles": wall_tiles})
     fkind = decor.get("floor", "planks")
     floors = {}
     for kind in L.FLOOR_KINDS:                          # jede Bodenart für jede Breite → im Spiel frei wählbar
@@ -100,7 +101,7 @@ def build_room(area_id: str, room: dict, cache: dict) -> dict:
     full = Image.new("RGBA", sheet.img.size, (0, 0, 0, 0))
     if wall_img is not None:
         full.alpha_composite(_tint(wall_img, decor.get("wall", ["#f3e6d0", "#ffffff", "#b9d7c0"]),
-                                   decor.get("pattern", ""), decor.get("pattern_col", "#ffffff")), (0, round((top - WALL_H) * PPC)))
+                                   decor.get("pattern", ""), decor.get("pattern_col", "#ffffff")), (0, round((top - max(WALL_H, top)) * PPC)))
     full.alpha_composite(_tint(floor_img, decor.get("floor_cols", ["#d9a066", "#c98a4b", "#8a5a3c"])), (0, round(top * PPC)))
     full.alpha_composite(sheet.img)
     thumb = full.crop((0, 0, full.width, round((top + 70) * PPC)))

@@ -128,10 +128,13 @@
    "icon": "area_sports",
    "color": "#48b0a0",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/sports.json",
    "map_x": 700,
-   "map_y": 810
+   "map_y": 810,
+   "room": "reception",
+   "spawn_x_cm": 440,
+   "spawn_y_cm": 55
   },
   {
    "id": "flower",
