@@ -117,10 +117,13 @@
    "icon": "area_ice",
    "color": "#9fd8ea",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/ice.json",
    "map_x": 300,
-   "map_y": 810
+   "map_y": 810,
+   "room": "entrance",
+   "spawn_x_cm": 520,
+   "spawn_y_cm": 55
   },
   {
    "id": "sports",

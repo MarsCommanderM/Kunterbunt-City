@@ -222,6 +222,7 @@ func _drop(d: Drag) -> void:
 	var pivot: Vector2 = d.pointer_world + d.grab_offset
 	var t: Placement.Target = Placement.find_target(room, it, pivot, d.pointer_world)
 	it.on_drag_end()
+	it.set_meta("drop_velocity", d.velocity)          # P10f: Schwung (Eis-Gleiten)
 	it.reparent(t.parent, true)
 	var parent_scale: float = (t.parent as Node2D).global_scale.y if t.parent is Node2D else 1.0
 	var final_local: Vector2 = (t.parent as Node2D).to_local(t.global_pos)

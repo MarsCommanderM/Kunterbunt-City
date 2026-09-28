@@ -1753,7 +1753,11 @@
     "food_sandwich_cheese",
     "food_sandwich_ham",
     "food_salad_green",
-    "food_salad_mixed"
+    "food_salad_mixed",
+    "ice_cocoa_coral",
+    "ice_cocoa_sky",
+    "ice_pretzel_oak",
+    "ice_fries_coral"
    ]
   },
   {
@@ -2911,6 +2915,16 @@
     "sport_sled_sky",
     "sport_sled_oak",
     "sport_snowman_coral",
+    "ice_surface_white",
+    "ice_resurfacer_white",
+    "ice_resurfacer_sky",
+    "ice_boards_white",
+    "ice_hockey_goal_coral",
+    "ice_penguin_navy",
+    "ice_penguin_sky",
+    "ice_rental_sky",
+    "ice_rental_oak",
+    "ice_disco_ball_lilac",
     "sport_skis_coral",
     "sport_skis_sky",
     "sport_skis_black",

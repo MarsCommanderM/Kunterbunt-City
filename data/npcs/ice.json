@@ -1,0 +1,34 @@
+{
+ "_doc": "Feste Figuren in der Eishalle (P10f). Erzeugt von tools/make_areas.py.",
+ "area": "ice",
+ "npcs": [
+  {
+   "id": "npc_cashier_entrance",
+   "role": "cashier",
+   "room": "entrance",
+   "x_cm": 330,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_skate_coach_rink",
+   "role": "skate_coach",
+   "room": "rink",
+   "x_cm": 1200,
+   "y_cm": 45
+  },
+  {
+   "id": "npc_ice_driver_rink",
+   "role": "ice_driver",
+   "room": "rink",
+   "x_cm": 320,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_cashier_snack",
+   "role": "cashier",
+   "room": "snack",
+   "x_cm": 260,
+   "y_cm": 2
+  }
+ ]
+}

@@ -4,10 +4,11 @@ extends RefCounted
 ##   Ball antippen = schießen: rollt weg von der nächsten eigenen Figur (sonst zur Raummitte), bremst ab, dreht sich
 ##   Tor-Erkennung: kreuzt der Ball ein Tor (auf gleicher Tiefe), bleibt er im Netz → TOR: Pfiff, Trainer klatscht,
 ##   alle jubeln, Anzeigetafel zählt einen Ball weiter (Punkte statt Ziffern, R-07). Ball ins Tor legen zählt auch.
+##   Eishockey (P10f): Puck + Eishockey-Tor funktionieren genauso.
 ##   Kletterwand: Figur an der Wand einhängen → Aufsicht sichert (schaut, Hebel), Geheimnis
 
-const BALLS: Array = ["spc_football", "toy_ball", "spc_tennis_ball"]
-const GOALS: Array = ["spc_goal", "sport_goal"]
+const BALLS: Array = ["spc_football", "toy_ball", "spc_tennis_ball", "sport_puck"]
+const GOALS: Array = ["spc_goal", "sport_goal", "ice_hockey_goal"]
 const KICK_CM: float = 340.0
 const KICK_S: float = 0.9
 const DEPTH_CM: float = 80.0                  ## so nah (Tiefe) muss der Ball am Tor sein
@@ -62,7 +63,8 @@ static func kick(room: Room, ball: ItemNode) -> bool:
 			if absf(d) < near:
 				near = absf(d)
 				dir = signf(d) if d != 0.0 else dir
-	var dist: float = KICK_CM * (1.6 if String(ball.def.id).begins_with("spc_tennis_ball") else 1.0)
+	var fast: bool = String(ball.def.id).begins_with("spc_tennis_ball") or String(ball.def.id).begins_with("sport_puck")
+	var dist: float = KICK_CM * (1.6 if fast else 1.0)            # Tennisball fliegt, Puck gleitet weiter
 	var end_x: float = clampf(ball.position.x + dir * dist, 30.0, room.width_cm - 30.0)
 	var scored: ItemNode = null
 	for g: ItemNode in Placement.all_items(room):          # kreuzt der Weg ein Tor? → Ball bleibt im Netz

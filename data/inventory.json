@@ -3006,6 +3006,60 @@
      "min": 2
     }
    ]
+  },
+  "ice": {
+   "eishalle": [
+    {
+     "label": "ice_surface",
+     "prefix": "ice_surface",
+     "min": 1
+    },
+    {
+     "label": "ice_resurfacer",
+     "prefix": "ice_resurfacer",
+     "min": 2
+    },
+    {
+     "label": "ice_boards",
+     "prefix": "ice_boards",
+     "min": 1
+    },
+    {
+     "label": "ice_hockey_goal",
+     "prefix": "ice_hockey_goal",
+     "min": 1
+    },
+    {
+     "label": "ice_penguin",
+     "prefix": "ice_penguin",
+     "min": 2
+    },
+    {
+     "label": "ice_rental",
+     "prefix": "ice_rental",
+     "min": 2
+    },
+    {
+     "label": "ice_disco_ball",
+     "prefix": "ice_disco_ball",
+     "min": 1
+    },
+    {
+     "label": "ice_cocoa",
+     "prefix": "ice_cocoa",
+     "min": 2
+    },
+    {
+     "label": "ice_pretzel",
+     "prefix": "ice_pretzel",
+     "min": 1
+    },
+    {
+     "label": "ice_fries",
+     "prefix": "ice_fries",
+     "min": 1
+    }
+   ]
   }
  }
 }

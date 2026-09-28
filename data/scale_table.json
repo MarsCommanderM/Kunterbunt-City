@@ -10066,6 +10066,98 @@
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
+  },
+  {
+   "id": "c_ice_surface",
+   "category": "deco",
+   "h_cm": 71.6,
+   "w_cm": 1801.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_resurfacer",
+   "category": "furniture",
+   "h_cm": 172.6,
+   "w_cm": 331.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 120
+  },
+  {
+   "id": "c_ice_boards",
+   "category": "furniture",
+   "h_cm": 111.8,
+   "w_cm": 601.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_hockey_goal",
+   "category": "furniture",
+   "h_cm": 121.6,
+   "w_cm": 181.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_penguin",
+   "category": "furniture",
+   "h_cm": 99.5,
+   "w_cm": 68.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_rental",
+   "category": "furniture",
+   "h_cm": 201.8,
+   "w_cm": 307.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 88.0
+  },
+  {
+   "id": "c_ice_disco_ball",
+   "category": "item",
+   "h_cm": 88.2,
+   "w_cm": 51.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_cocoa",
+   "category": "food",
+   "h_cm": 14.8,
+   "w_cm": 9.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_pretzel",
+   "category": "food",
+   "h_cm": 14.5,
+   "w_cm": 16.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_ice_fries",
+   "category": "food",
+   "h_cm": 16.0,
+   "w_cm": 11.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
   }
  ]
 }

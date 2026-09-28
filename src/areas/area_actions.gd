@@ -14,7 +14,7 @@ const WEAR: Dictionary = {                    ## Item-Präfix → [Slot, Teil]
 	"cloth_boots": ["shoes", "boot"], "cloth_slippers": ["shoes", "slipper"], "cloth_hat": ["accessory", "sunhat"],
 	"cloth_cap": ["accessory", "cap"], "cloth_beanie": ["accessory", "beanie"], "cloth_sunglasses": ["accessory", "sunglasses"],
 	"cloth_scarf": ["top", "sweater"],
-	"spc_tutu": ["bottom", "tutu"], "spc_ballet_shoes": ["shoes", "ballet"],
+	"spc_tutu": ["bottom", "tutu"], "sport_skates": ["shoes", "boot"], "spc_ballet_shoes": ["shoes", "ballet"],
 	"health_bandage": ["aid", "plaster"], "med_sling": ["aid", "arm_sling"], "med_eye_patch": ["aid", "eye_patch"],
 }
 const SLIDE_S: float = 1.1
@@ -27,7 +27,8 @@ const BUS_ID: StringName = &"street_bus_butter"
 
 ## Ding losgelassen. true = hier erledigt (AreaScene speichert dann nur noch).
 static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
-	if PoolActions.on_dropped(scene, item) or FairActions.on_dropped(scene, item) or SportActions.on_dropped(scene, item):
+	if PoolActions.on_dropped(scene, item) or FairActions.on_dropped(scene, item) or SportActions.on_dropped(scene, item) \
+			or IceActions.on_dropped(scene, item):
 		return true
 	var id: String = String(item.def.id)
 	for p: String in WEAR:

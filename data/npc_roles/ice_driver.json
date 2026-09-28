@@ -1,0 +1,54 @@
+{
+ "id": "ice_driver",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 14,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Eismaschinen-Fahrer/in",
+ "behavior": "station",
+ "work": [
+  "look",
+  "wave"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "jacket",
+   "bottom": "trousers",
+   "hair": "short",
+   "shoes": "boot",
+   "accessory": "beanie"
+  },
+  "colors": {
+   "top": [
+    "#6f8fb8",
+    "#fbfaf7",
+    "#c98a64"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#c98a64"
+   ],
+   "hair": [
+    "#5a463a",
+    "#5a463a",
+    "#5a463a"
+   ],
+   "shoes": [
+    "#2a2a30",
+    "#2a2a30",
+    "#c98a64"
+   ],
+   "accessory": [
+    "#e07a7a",
+    "#e07a7a",
+    "#e07a7a"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

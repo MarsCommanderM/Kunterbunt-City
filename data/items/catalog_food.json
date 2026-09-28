@@ -3566,6 +3566,114 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "ice_cocoa_coral",
+   "scale_ref": "c_ice_cocoa",
+   "size_cm": [
+    9.8,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_cocoa.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "ice_cocoa_sky",
+   "scale_ref": "c_ice_cocoa",
+   "size_cm": [
+    9.8,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_cocoa.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "ice_pretzel_oak",
+   "scale_ref": "c_ice_pretzel",
+   "size_cm": [
+    16.6,
+    14.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_pretzel.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "ice_fries_coral",
+   "scale_ref": "c_ice_fries",
+   "size_cm": [
+    11.5,
+    16.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_fries.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "food",
+   "grip": [
+    0.5,
+    0.4
+   ]
   }
  ]
 }

@@ -116,6 +116,7 @@ func _enter_room(rid: String, first: bool) -> void:
 	AudioBus.play_ambience(String(room.data.get("ambience", "")))
 	RoomLight.apply(room, light_mod)
 	PlayMotion.refresh(room)
+	IceActions.refresh(room)
 
 
 ## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
@@ -324,11 +325,13 @@ func _on_item_tapped(it: ItemNode) -> void:
 
 func _process(delta: float) -> void:
 	PlayMotion.tick(delta)                               # P09-T06: Schaukel, Karussell, Federwippe
+	IceActions.tick(self, delta)                         # P10f: Eismaschine, Disco-Licht
 
 
 func _on_world_changed() -> void:
 	if room != null:
 		PlayMotion.refresh(room)
+		IceActions.refresh(room)
 		RoomLight.apply(room, light_mod)
 		Secrets.check(String(area_id), room)
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))

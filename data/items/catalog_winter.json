@@ -274,6 +274,264 @@
    "catalog": "winter"
   },
   {
+   "id": "ice_surface_white",
+   "scale_ref": "c_ice_surface",
+   "size_cm": [
+    1801.0,
+    71.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_surface.png",
+   "pad_px": 1,
+   "colors": [
+    "#e6f4fb",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "winter",
+   "states": [
+    "shiny",
+    "scratched"
+   ],
+   "state_sprites": {
+    "scratched": "res://assets/sprites/items/ice_surface__scratched.png"
+   }
+  },
+  {
+   "id": "ice_resurfacer_white",
+   "scale_ref": "c_ice_resurfacer",
+   "size_cm": [
+    331.7,
+    172.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_resurfacer.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "ice_resurfacer_sky",
+   "scale_ref": "c_ice_resurfacer",
+   "size_cm": [
+    331.7,
+    172.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_resurfacer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "winter",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "ice_boards_white",
+   "scale_ref": "c_ice_boards",
+   "size_cm": [
+    602.1,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_boards.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_hockey_goal_coral",
+   "scale_ref": "c_ice_hockey_goal",
+   "size_cm": [
+    181.5,
+    121.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_hockey_goal.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_penguin_navy",
+   "scale_ref": "c_ice_penguin",
+   "size_cm": [
+    68.0,
+    99.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_penguin.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f09a55",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_penguin_sky",
+   "scale_ref": "c_ice_penguin",
+   "size_cm": [
+    68.0,
+    99.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_penguin.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f09a55",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_rental_sky",
+   "scale_ref": "c_ice_rental",
+   "size_cm": [
+    307.7,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_rental.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_rental_oak",
+   "scale_ref": "c_ice_rental",
+   "size_cm": [
+    307.7,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_rental.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "winter"
+  },
+  {
+   "id": "ice_disco_ball_lilac",
+   "scale_ref": "c_ice_disco_ball",
+   "size_cm": [
+    51.8,
+    88.2
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/ice_disco_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "winter",
+   "sfx": {
+    "on": "tada"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/ice_disco_ball__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
    "id": "sport_skis_coral",
    "scale_ref": "c_sport_skis",
    "size_cm": [

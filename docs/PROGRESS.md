@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
 | Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
-| Letzter grüner check.sh | 2026-09-28 (P10e) |
+| Letzter grüner check.sh | 2026-09-28 (P10f) |
 | Version | 0.1.0 |
 
 ## Phasen
@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ | Log 2026-09-28 |
+| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,19 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10f · Eishalle ✅
+- `tools/areas/ice.py` → `data/areas/ice.json`: **4 Räume** (Kasse & Verleih, Eisfläche 23 m in 4,5-m-Halle, Tribüne,
+  Imbiss) · 39 Start-Items · 4 Figuren (Verleih, Eislauf-Trainer/in, Eismaschinen-Fahrer/in – 2 neue Rollen, Imbiss).
+- 10 neue Vorlagen (`tools/items/icerink.py`, `catalog_ice.py`, `ice_*`): Eisfläche (glänzend/zerkratzt), Eismaschine,
+  Bande mit Plexiglas, Eishockey-Tor, Lauflern-Pinguin, Discokugel, Verleih-Theke, Kakao, Brezel, Pommes. Musik `music_ice`.
+- Mechanik (`src/areas/ice_actions.gd`): Figur auf dem Eis loslassen → **gleitet mit dem Schwung des Ziehens**
+  (DragController merkt sich die Geschwindigkeit, `drop_velocity`), ohne Schwung **Pirouette**, nie über die Eisfläche
+  hinaus · nach 3 Fahrten zerkratzt → **Eismaschine alle 3 Min.** (Fahrer/in steigt auf, fährt übers Eis) → glänzt ·
+  **Discokugel** an → farbiges Licht wandert · **Eishockey**: Puck + Tor über die Ball-Physik aus P10e ·
+  Schlittschuhe in die Hand → angezogen. 6 Geheimnisse.
+- Tests `test_p10_ice` (6). Beweis `docs/tests/P10/ice_*.jpg`.
+- check.sh ✅ – Maßstab (2949 Items) · pytest 133/133 · GUT 365/365.
+
 ### 2026-09-28 · Phase 10e · Sportzentrum ✅
 - `tools/areas/sport.py` → `data/areas/sports.json`: **7 Räume** (Empfang, Fitness, Sporthalle 4,5 m hoch,
   Kletterwand 7 m hoch, Ballett, Fußballplatz mit Tribüne, Tennis) · 54 Start-Items · 6 Figuren (Empfang, 3 Trainer/innen,
