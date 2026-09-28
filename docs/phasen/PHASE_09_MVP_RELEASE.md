@@ -18,7 +18,7 @@
 
 ## Akzeptanzkriterien
 - [x] 3 Bereiche, ~435 Items, 0 Maßstab-Fehler – Zuhause (11 Räume), Einkaufsstraße (11), Spielplatz & Park (3); Katalog 2698 Items, Maßstab ✅
-- [ ] Web-Build läuft auf itch.io (Test-Upload als Entwurf) inkl. Speichern
+- [ ] Web-Build läuft auf itch.io (Test-Upload als Entwurf) inkl. Speichern – lokal im Browser ✅ (`tools/dev/web_smoke.cjs`), Upload 👤
 - [ ] APK läuft auf einem Android-Tablet (👤)
 - [ ] 👤 Kindertest mit 3–5 Kindern, keine Blocker
 - [x] `check.sh` grün

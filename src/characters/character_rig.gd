@@ -108,7 +108,7 @@ func _layer(parent: Node, lname: String, part: String, pos: Vector2, tint: bool 
 	_set_part(sp, part)
 	sp.position = pos
 	if tint:
-		CharacterLook.apply(sp, CharacterLook.colors_for(look, lname))
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, lname), CharacterLook.ink_for(look, lname))
 	parent.add_child(sp)
 	_layers[lname] = sp
 	return sp
@@ -385,7 +385,7 @@ func apply_look(new_look: Dictionary) -> void:
 		if sp == null:
 			continue
 		_set_part(sp, _part_name(name))
-		CharacterLook.apply(sp, CharacterLook.colors_for(look, name))
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, name), CharacterLook.ink_for(look, name))
 	for arm: Node2D in [arm_back, arm_front]:
 		for c: Node in arm.get_children():
 			if not (c is Sprite2D):

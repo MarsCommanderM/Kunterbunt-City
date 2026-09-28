@@ -4,10 +4,10 @@
 ## Status
 | Feld | Wert |
 |---|---|
-| Aktuelle Phase | **09 · MVP: Einkaufsstraße + Spielplatz** (08 fertig) |
-| Nächste Task | P09-T09 Release-Build 0.1.0 (Web, Android, Desktop) |
+| Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
+| Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
 | Letzter grüner check.sh | 2026-09-28 (P09 T01–T08) |
-| Version | 0.0.6 |
+| Version | 0.1.0 |
 
 ## Phasen
 | Phase | Status | Bericht |
@@ -22,7 +22,7 @@
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
-| 09 MVP v0.1 | 🔨 T01–T08 fertig, Release offen | Log 2026-09-28 |
+| 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
 | 10a–10h Content | ⏳ | – |
 | 11 Politur 1.0 | ⏳ | – |
 
@@ -78,6 +78,31 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 09 · T09/T10 Release 0.1.0 ✅
+- Version **0.1.0** (`project.godot`), `CHANGELOG.md`, itch.io-Texte `docs/release/itch_seite.md`, README „Spielen & Bauen“.
+- Builds: **Web 44 MB** (`index.pck`, ohne Threads) · **Linux 118 MB** · **Windows 153 MB** (PCK eingebettet).
+  `tools/dev/fetch_web_templates.py --desktop` holt nur die nötigen Vorlagen per Range-Anfrage aus dem 1,3-GB-Archiv.
+- **Web-Build im echten Browser getestet** (`tools/dev/web_smoke.cjs`, Chromium headless, Software-WebGL):
+  Start 12 s, 0 Fehler; Durchspielen per Klick: Hautfarbe → Fertig → Stadtkarte (4 spielbare Knöpfe) →
+  Einkaufsstraße. Bilder `docs/tests/P09/web_start*.png`. Linux-Binary startet (`… gestartet` im Log).
+- **Gefunden im Web-Test:** bei den zwei dunkelsten Hauttönen verschwanden Augen/Brauen im Gesicht →
+  `CharacterLook.dark_skin/ink_for`: Augen, Brauen und Augen-Kontur fast schwarz (nur wenn die gewählte Augenfarbe
+  sonst mit der Haut verschwimmt). Test `test_faces_stay_readable_on_dark_skin`.
+- Bereichswechsel im Browser mit Software-Rendering 3,1 s (Ziel < 2 s) → 👤 auf echter Hardware messen.
+
+## Phasenbericht P09 – MVP: Einkaufsstraße + Spielplatz → Release v0.1
+Status: ⚠️ fertig bis auf 👤-Schritte (APK, Upload, Kindertest)
+Erledigt: T01 Einkaufsstraße · T02 Items · T03 Kasse · T04 Mode + Friseur · T05 Blumenladen + Gewächshaus ·
+T06 Spielplatz-Geräte mit Bewegung · T07 Enten, Sand, Seifenblasen · T08 Test-Szenen/Beweis · T09 Builds · T10 itch-Texte
+Akzeptanzkriterien:
+- ✅ 3 Bereiche, 0 Maßstab-Fehler – 25 Räume, 2698 Katalog-Items, validate_scale ✅
+- ⚠️ Web-Build läuft (lokal im Browser getestet inkl. Durchspielen) – Test-Upload auf itch.io macht 👤
+- ❌ APK – Android-SDK fehlt in dieser Umgebung (Export-Preset vorhanden, 👤 oder später mit SDK)
+- ⏳ 👤 Kindertest mit 3–5 Kindern
+- ✅ check.sh grün
+Tests: Maßstab ✅ | pytest 133/133 ✅ | GUT 329/329 ✅
+👤 Aufgaben für dich: `export/web` als ZIP auf itch.io hochladen (Texte in `docs/release/itch_seite.md`),
+Kindertest, auf echtem Gerät die Ladezeit der Einkaufsstraße prüfen.
 ### 2026-09-28 · Phase 09 · Einkaufsstraße + Spielplatz & Park (T01–T08) 🔨
 - **Einkaufsstraße** (`data/areas/shopping.json`, erzeugt von `tools/make_areas.py`): Straße 37 m mit Häuserzeile
   (neu `details.town`: Schaufenster, Eingangsnischen, Fenster mit Blumenkästen), Gehweg-Boden „pavement“,

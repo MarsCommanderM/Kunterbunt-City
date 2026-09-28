@@ -3,7 +3,8 @@
 Lädt NUR die Web-Export-Templates (≈ 20 MB) aus dem 1,3-GB-Template-Archiv von Godot,
 per HTTP-Range-Anfragen auf das ZIP-Inhaltsverzeichnis. Nur Standardbibliothek.
 
-Aufruf: python3 tools/dev/fetch_web_templates.py 4.7.2 [ziel_ordner]
+Aufruf: python3 tools/dev/fetch_web_templates.py 4.7.2 [ziel_ordner] [--desktop]
+  --desktop: zusätzlich Linux- und Windows-Release-Vorlagen (P09-T09, je ~80 MB)
 Ziel-Standard (Linux): ~/.local/share/godot/export_templates/<version>.stable/
 """
 import os
@@ -13,9 +14,14 @@ import urllib.request
 import zlib
 
 WANT = ("version.txt", "web_nothreads_release.zip", "web_nothreads_debug.zip")
+DESKTOP = ("linux_release.x86_64", "windows_release_x86_64.exe")
 
 
 def main() -> int:
+    global WANT
+    if "--desktop" in sys.argv:
+        sys.argv.remove("--desktop")
+        WANT = WANT + DESKTOP
     ver = sys.argv[1] if len(sys.argv) > 1 else "4.7.2"
     dst = sys.argv[2] if len(sys.argv) > 2 else os.path.expanduser(
         f"~/.local/share/godot/export_templates/{ver}.stable")

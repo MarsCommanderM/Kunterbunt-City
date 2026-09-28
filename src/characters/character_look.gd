@@ -97,8 +97,14 @@ static func colors_for(look: Dictionary, layer: String) -> Array:
 		return _to_colors(FIXED["Mouth"])
 	if layer == "Eyes":
 		var eye: Array = Array(look.get("colors", {}).get("eyes", []))
-		return [Color(String(eye[0])) if not eye.is_empty() else Color(String(FIXED["Eyes"][0])),
-			Color(String(FIXED["Eyes"][1])), hair_color(look)]
+		var iris: Color = Color(String(eye[0])) if not eye.is_empty() else Color(String(FIXED["Eyes"][0]))
+		var brows: Color = hair_color(look)
+		if dark_skin(look):                                 # sonst verschwinden Augen/Brauen im Gesicht
+			if absf(iris.get_luminance() - skin.get_luminance()) < 0.12:
+				iris = DARK_FEATURE
+			if brows.get_luminance() > skin.get_luminance() - 0.05:
+				brows = skin.darkened(0.55)
+		return [iris, Color(String(FIXED["Eyes"][1])), brows]
 	if layer == "Head" or layer.ends_with("Skin") or layer.ends_with("Palm") \
 			or layer.ends_with("Fingers") or layer.begins_with("Fingers"):
 		return [skin, skin.lerp(BLUSH, 0.38)]
@@ -116,6 +122,21 @@ static func colors_for(look: Dictionary, layer: String) -> Array:
 	if slot in ["top", "bottom", "shoes", "aid"]:
 		return [cols[0], cols[1] if cols.size() > 1 else cols[0], skin]
 	return cols
+
+
+## Sehr dunkle Haut: Augen, Brauen und Augen-Kontur werden fast schwarz, damit das Gesicht lesbar bleibt
+## (gefunden im Web-Test: dunkelste Hautfarbe → Augen kaum zu sehen).
+const DARK_SKIN_LUMA: float = 0.27
+const DARK_FEATURE: Color = Color("#0c0605")
+
+
+static func dark_skin(look: Dictionary) -> bool:
+	return Color(String(look.get("skin", "#ffd6bf"))).get_luminance() < DARK_SKIN_LUMA
+
+
+## Tinte (Kontur) einer Ebene: normal braun, bei sehr dunkler Haut für die Augen fast schwarz.
+static func ink_for(look: Dictionary, layer: String) -> Color:
+	return DARK_FEATURE if layer == "Eyes" and dark_skin(look) else INK
 
 
 ## Haarfarbe der Figur (Editor-Farbe oder alter Schlüssel „hair“).

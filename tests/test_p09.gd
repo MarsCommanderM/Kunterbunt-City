@@ -192,3 +192,18 @@ func test_items_on_hosts_survive_save_and_load_in_any_order() -> void:
 			assert_almost_eq((host as ItemNode).position.x, 200.0, 1.0, "Kasse auf der linken Theke")
 		if String(it.def.id) == "food_apple_red":
 			assert_almost_eq((host as ItemNode).position.x, 520.0, 1.0, "Apfel auf der rechten Theke")
+
+
+## Gefunden im Web-Test: bei den dunkelsten Hautfarben verschwanden Augen und Brauen im Gesicht.
+func test_faces_stay_readable_on_dark_skin() -> void:
+	for skin: String in ["#46291b", "#5e3824"]:
+		var look: Dictionary = CharacterTemplates.default_look("kid")
+		look["skin"] = skin
+		var c: Array = CharacterLook.colors_for(look, "Eyes")
+		var s: float = Color(skin).get_luminance()
+		assert_gt(s - (c[0] as Color).get_luminance(), 0.12, "%s: Augen dunkler als die Haut" % skin)
+		assert_gt(s - (c[2] as Color).get_luminance(), 0.05, "%s: Brauen dunkler als die Haut" % skin)
+		assert_eq(CharacterLook.ink_for(look, "Eyes"), CharacterLook.DARK_FEATURE)
+	var light: Dictionary = CharacterTemplates.default_look("kid")
+	light["skin"] = "#f3cfae"
+	assert_eq(CharacterLook.ink_for(light, "Eyes"), CharacterLook.INK, "helle Haut: unverändert")
