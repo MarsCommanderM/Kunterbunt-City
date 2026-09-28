@@ -12,6 +12,7 @@ const DEFAULTS: Dictionary = {
 	"reduced_motion": false,
 	"large_ui": false,
 	"shops_always_open": true,         ## P08-T05: Läden immer offen (sonst Tagesplan 8–20 Uhr)
+	"mono_audio": false,               ## P11-T02: gleicher Ton auf beiden Ohren (einseitig hörende Kinder)
 }
 
 var _values: Dictionary = DEFAULTS.duplicate(true)
@@ -48,6 +49,10 @@ var shops_always_open: bool:
 
 func _ready() -> void:
 	load_settings()
+	I18n.apply(language)                        # P11-T03
+	changed.connect(func(k: String, v: Variant) -> void:
+		if k == "language":
+			I18n.apply(String(v)))
 
 
 func get_value(key: String) -> Variant:

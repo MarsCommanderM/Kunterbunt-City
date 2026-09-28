@@ -326,7 +326,7 @@ func _refresh() -> void:
 	var lbl: Label = _stage.get_parent().get_node_or_null("SpeciesLabel") as Label
 	if lbl != null:
 		var def: ItemDefinition = ItemDB.get_item(StringName(pet.species_id))
-		lbl.text = "%s · %d cm hoch" % [PetSpecies.label(pet.species_id),
+		lbl.text = tr("%s · %d cm hoch") % [PetSpecies.label(pet.species_id),
 			int(def.height_cm) if def != null else 0]
 	if _name_btn != null:
 		_name_btn.text = " " + _title()

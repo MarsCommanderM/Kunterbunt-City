@@ -2,6 +2,29 @@
 
 Alle Versionen sind kostenlos, ohne Werbung, ohne In-App-Käufe und ohne Datensammlung.
 
+## 1.0.0 – Alle 12 Bereiche (2026-09-28)
+**Spielbar:** alle Bereiche der Stadtkarte – Zuhause & Garten, Einkaufsstraße, Blumenladen, Spielplatz & Park,
+Schule, Gesundheitszentrum, Freizeitbad, Rummelplatz, Sportzentrum, Eishalle, Zoo, Werkstatt.
+
+### Neu
+- **Schule:** Tafel mit Kreide-Bildern, Schulglocke, Band aus drei Instrumenten, Vulkan-Experiment, Skelett.
+- **Gesundheitszentrum:** Röntgen mit lustigen Bildern, Herzmonitor, Krankenwagen mit Sirene, Hubschrauber,
+  Pflaster/Armschlinge/Augenklappe zum Verarzten.
+- **Freizeitbad:** schwimmen, Sprungturm, Wasserrutsche, Wellen, Figuren tropfen und trocknen.
+- **Rummelplatz:** Riesenrad, Karussell, Autoscooter, Achterbahn und Geisterbahn fahren wirklich; Dosenwerfen,
+  Losrad, Hau den Lukas, Zauberer.
+- **Sportzentrum:** Ball-Physik mit Tor-Erkennung und Anzeigetafel, Kletterwand, Ballett mit Tutu.
+- **Eishalle:** Figuren gleiten mit Schwung, Pirouetten, Eismaschine, Eishockey, Disco-Licht.
+- **Zoo:** 21 Tierarten in echter Größe, richtiges Futter macht Tiere glücklich, Pfleger füttern, Affen klauen.
+- **Werkstatt:** Hupe, Hebebühne, Reifenwechsel, Auto lackieren, Waschanlage, Tankstelle, Schrottplatz-Schatz.
+- **Windows-Installer** mit Desktop-Verknüpfung (ohne Admin-Rechte), Linux mit Installationsskript, macOS, Web.
+- **Sprachen** für den Eltern-Bereich: Deutsch, Englisch, Türkisch, Spanisch, Französisch, Polnisch.
+- **Mono-Ton** (gleicher Ton auf beiden Ohren), Einstellungen übersichtlich in zwei Spalten.
+- **Spielstand-Sicherungen:** zwei rotierende Sicherungen; eine kaputte Datei wird automatisch ersetzt.
+
+### Technik
+- 60-Minuten-Stabilitätstest mit Zufalls-Bot, Datenschutz-Erklärung (`docs/DATENSCHUTZ.md`), Backlog (`docs/BACKLOG.md`).
+
 ## 0.1.0 – MVP (2026-09-28)
 **Spielbar:** Zuhause & Garten · Einkaufsstraße (mit Blumenladen) · Spielplatz & Park.
 

@@ -24,8 +24,8 @@ func _ready() -> void:
 	add_child(dim)
 	var panel := Ui.card(Ui.RADIUS, Ui.CARD)
 	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	panel.size = Vector2(1180, 940)
-	panel.position = Vector2(-590, -470)
+	panel.size = Vector2(1640, 960)                     # P11: zwei Spalten, damit auch mit Mono + 6 Sprachen alles passt
+	panel.position = Vector2(-820, -480)
 	add_child(panel)
 	var v := Ui.vbox(16)
 	v.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 26)
@@ -43,14 +43,23 @@ func _ready() -> void:
 	head.add_child(x)
 	v.add_child(head)
 
+	var cols := Ui.hbox(40)
+	v.add_child(cols)
+	var left := Ui.vbox(10)
+	var right := Ui.vbox(18)
+	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	cols.add_child(left)
+	cols.add_child(right)
 	for key: String in ["volume_music", "volume_sfx", "volume_animals"]:
-		v.add_child(_slider(key))
-	for key: String in ["large_ui", "reduced_motion", "shops_always_open"]:
-		v.add_child(_toggle(key))
-	v.add_child(_row("Sprache", [["de", "Deutsch"], ["en", "English"]], "language",
-		func(val: String) -> void: Settings.language = val))
+		left.add_child(_slider(key))
+	for key: String in ["large_ui", "reduced_motion", "mono_audio", "shops_always_open"]:
+		left.add_child(_toggle(key))
+	right.add_child(_row("Sprache", I18n.languages(), "language", func(val: String) -> void:
+		Settings.language = val
+		_rebuild()))
+	v = right                                          # alles Weitere in die rechte Spalte
 
-	var reset_row := Ui.hbox(14)
+	var reset_row := VBoxContainer.new()
 	reset_row.alignment = BoxContainer.ALIGNMENT_CENTER
 	var reset := Ui.button("Bereich zurücksetzen", "brush", "pink", Vector2(520, 104))
 	Ui.wire(reset, func() -> void:
@@ -68,17 +77,17 @@ func _ready() -> void:
 	reset_row.add_child(wipe)
 	v.add_child(reset_row)
 
-	var io := Ui.hbox(14)
+	var io := VBoxContainer.new()
 	io.alignment = BoxContainer.ALIGNMENT_CENTER
 	var exp_btn := Ui.button("Speichern als Datei", "folder", "teal", Vector2(470, 104))
 	Ui.wire(exp_btn, func() -> void:
 		var p: String = SaveSystem.export_world(Game.slot)
-		_status.text = "Gespeichert: " + (p if not p.is_empty() else "hat nicht geklappt"))
+		_status.text = tr("Gespeichert: ") + (p if not p.is_empty() else tr("hat nicht geklappt")))
 	io.add_child(exp_btn)
 	var imp_btn := Ui.button("Datei laden", "folder", "teal", Vector2(420, 104))
 	Ui.wire(imp_btn, func() -> void:
 		var p: String = "user://export/kunterbunt-city-welt-%d.json" % Game.slot
-		_status.text = "Geladen ✅" if SaveSystem.import_world(p, Game.slot) else "Keine Datei gefunden")
+		_status.text = tr("Geladen ✅") if SaveSystem.import_world(p, Game.slot) else tr("Keine Datei gefunden"))
 	io.add_child(imp_btn)
 	v.add_child(io)
 
@@ -90,7 +99,7 @@ func _ready() -> void:
 			Vector2(120, 88))
 		Ui.wire(b, func() -> void:
 			Game.switch_slot(i)
-			_status.text = "Welt %d geladen." % (i + 1))
+			_status.text = tr("Welt %d geladen.") % (i + 1))
 		slots.add_child(b)
 	v.add_child(slots)
 
@@ -102,7 +111,7 @@ func _labels() -> Dictionary:
 	return {
 		"volume_music": "Musik", "volume_sfx": "Effekte", "volume_animals": "Tiere",
 		"large_ui": "große Schrift & Knöpfe", "reduced_motion": "wenig Animation",
-		"shops_always_open": "Läden immer offen",
+		"shops_always_open": "Läden immer offen", "mono_audio": "Ton für beide Ohren gleich (Mono)",
 	}
 
 
@@ -130,21 +139,34 @@ func _toggle(key: String) -> Control:
 	Ui.wire(b, func() -> void:
 		Settings.set_value(key, not bool(Settings.get_value(key)))
 		_refresh_toggle(b, key))
+	_refresh_toggle(b, key)
 	row.add_child(b)
 	return row
 
 
 func _refresh_toggle(b: Button, key: String) -> void:
-	Ui.style_button(b, Ui.TEAL if bool(Settings.get_value(key)) else Color(1, 1, 1, 0.0),
-		not bool(Settings.get_value(key)))
+	var on: bool = bool(Settings.get_value(key))
+	Ui.style_button(b, Ui.TEAL if on else Color(1, 1, 1, 0.0), not on)
+	b.modulate.a = 1.0 if on else 0.3                  # aus = blasser Haken (vorher sah „aus“ wie „an“ aus)
 
 
 func _row(title: String, options: Array, key: String, cb: Callable) -> Control:
-	var row := Ui.hbox(14)
+	var row := Ui.vbox(8)
 	row.add_child(Ui.label(title, Ui.FONT_LABEL, Ui.INK, HORIZONTAL_ALIGNMENT_LEFT))
+	var grid := GridContainer.new()
+	grid.columns = 3
+	row.add_child(grid)
 	for o: Array in options:
 		var b := Ui.button(String(o[1]), "", "accent" if String(Settings.get_value(key)) == String(o[0]) else "ghost",
-			Vector2(260, 88))
+			Vector2(200, 80))
 		Ui.wire(b, func() -> void: cb.call(String(o[0])))
-		row.add_child(b)
+		grid.add_child(b)
 	return row
+
+
+## Sprache gewechselt → Knöpfe neu aufbauen (die Auswahl-Farbe zeigt die neue Sprache).
+func _rebuild() -> void:
+	for c: Node in get_children():
+		remove_child(c)
+		c.queue_free()
+	_ready()

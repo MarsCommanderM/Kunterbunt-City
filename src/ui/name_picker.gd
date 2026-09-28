@@ -145,7 +145,7 @@ func _free_text() -> void:
 	Ui.wire(ok, func() -> void:
 		var why: String = NameFilter.check(edit.text)
 		if not why.is_empty():
-			hint.text = "Bitte anderen Namen: " + why
+			hint.text = tr("Bitte anderen Namen: ") + why
 			AudioBus.play_sfx("deny")
 			return
 		_current = NameFilter.pretty(edit.text)

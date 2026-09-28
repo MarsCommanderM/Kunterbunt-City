@@ -129,7 +129,8 @@ func draw_size() -> Vector2:
 func global_rect() -> Rect2:
 	var r: Rect2 = local_rect()
 	var gs: Vector2 = global_scale
-	return Rect2(global_position + r.position * gs + Vector2(0, -LIFT_CM * lifted * gs.y), r.size * gs)
+	# .abs(): Dinge in der Hand einer gespiegelten Figur haben eine negative Breite (P11-Bot-Fund)
+	return Rect2(global_position + r.position * gs + Vector2(0, -LIFT_CM * lifted * gs.y), r.size * gs).abs()
 
 
 # ---------------------------------------------------------------- Treffertest
@@ -155,6 +156,10 @@ func _alpha_hit(global_point: Vector2, r: Rect2) -> bool:
 	if bm == null:
 		return true
 	var uv: Vector2 = (global_point - r.position) / r.size
+	if global_scale.x < 0.0:
+		uv.x = 1.0 - uv.x                              # gespiegelt: Pixel von der anderen Seite lesen
+	if global_scale.y < 0.0:
+		uv.y = 1.0 - uv.y
 	var content: Vector2 = sprite.texture.get_size() - Vector2.ONE * 2.0 * def.pad_px
 	var px: Vector2i = Vector2i((Vector2.ONE * def.pad_px + uv * content).floor())
 	px = px.clamp(Vector2i.ZERO, bm.get_size() - Vector2i.ONE)

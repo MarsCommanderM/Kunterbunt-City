@@ -52,7 +52,17 @@ Kunterbunt City kostet nichts und nutzt ausschließlich frei lizenzierte Werkzeu
 |---|---|---|
 | `assets/sprites/home/pet_dog_brown.png`, `pet_cat` (Platzhalter) | Stil-C-Referenz-Sprites bzw. `tools/make_placeholders.py` | CC0 / eigenes Werk |
 
-## Schriften
-| Font | Quelle | Lizenz |
+## Alles Weitere bis Version 1.0 (Phasen 04b–11)
+| Datei/Paket | Quelle | Lizenz |
 |---|---|---|
-| (noch leer, z. B. eine OFL-Schrift) | | SIL OFL 1.1 |
+| `assets/sprites/items/*.png` (über 3.000 Katalog-Dinge, Zoo-Tiere, Fahrgeschäfte …) | selbst gezeichnet mit `tools/make_items.py` + `tools/items/` (Vektor, Stil C) | CC0 / eigenes Werk |
+| `assets/backgrounds/**` (Räume, Außenbereiche, Stadtkarte) | selbst erzeugt mit `tools/make_rooms.py`, `tools/rooms/`, `tools/make_city_map.py` | CC0 / eigenes Werk |
+| `assets/ui/icons/*.png` (Stil-C-Symbole) | selbst gezeichnet mit `tools/make_icons.py` (ersetzt `make_ui_icons.py`) | CC0 / eigenes Werk |
+| `assets/app/icon.png`, `icon.ico` (Programm-Symbol) | selbst zusammengesetzt mit `tools/make_app_icon.py` aus den eigenen Symbolen | CC0 / eigenes Werk |
+| `assets/audio/music/*.wav` (14 Stücke + Ambiente) | selbst synthetisiert mit `tools/make_music.py` (NumPy, fester Seed) | CC0 / eigenes Werk |
+| `assets/audio/sfx/*.wav` (67 Effekte inkl. Tierstimmen, Sirene, Glocke …) | selbst synthetisiert mit `tools/make_sfx.py` | CC0 / eigenes Werk |
+| `data/i18n/*.json` (Englisch, Türkisch, Spanisch, Französisch, Polnisch) | eigene Übersetzung der Eltern-/Menü-Texte | CC0 / eigenes Werk |
+| NSIS 3 (Windows-Installer, `installer/kunterbunt.nsi`) | nsis.sourceforge.io – nur Bau-Werkzeug | zlib/libpng |
+| GitHub Actions (`.github/workflows/`) | Bau & Tests in der Cloud – nur Werkzeug, kostenlos | – |
+
+Keine fremden Grafiken, Sounds oder Marken im Spiel. Kein Code von Dritten außer Godot (MIT) und GUT (nur Tests).

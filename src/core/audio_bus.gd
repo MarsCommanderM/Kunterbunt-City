@@ -35,7 +35,31 @@ func _ready() -> void:
 		_pool.append(p)
 	_music = _loop_player()
 	_amb = _loop_player()
-	Settings.changed.connect(func(_k: String, _v: Variant) -> void: refresh_volumes())
+	Settings.changed.connect(func(_k: String, _v: Variant) -> void:
+		refresh_volumes()
+		apply_mono())
+	apply_mono()
+
+
+## P11-T02: Mono – Stereo-Seitenanteil auf dem Master-Bus auf 0 (beide Ohren hören alles).
+func apply_mono() -> void:
+	var on: bool = bool(Settings.get_value("mono_audio"))
+	var bus: int = AudioServer.get_bus_index(&"Master")
+	for i: int in range(AudioServer.get_bus_effect_count(bus) - 1, -1, -1):
+		if AudioServer.get_bus_effect(bus, i) is AudioEffectStereoEnhance:
+			AudioServer.remove_bus_effect(bus, i)
+	if on:
+		var e := AudioEffectStereoEnhance.new()
+		e.pan_pullout = 0.0
+		AudioServer.add_bus_effect(bus, e)
+
+
+func is_mono() -> bool:
+	var bus: int = AudioServer.get_bus_index(&"Master")
+	for i: int in AudioServer.get_bus_effect_count(bus):
+		if AudioServer.get_bus_effect(bus, i) is AudioEffectStereoEnhance:
+			return true
+	return false
 
 
 ## Endlos-Spieler (Schleife über „finished" – die WAVs haben einen überblendeten Übergang).

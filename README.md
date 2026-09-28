@@ -6,7 +6,16 @@ Dieser Ordner ist das **Repo** und zugleich die **komplette Bauanleitung für de
 
 ---
 
-## Spielen & Bauen (Version 0.1.0)
+## Spielen (Version 1.0.0)
+**Windows:** Auf GitHub unter **Releases** `KunterbuntCity-Setup-….exe` laden, doppelklicken, „Installieren“ →
+danach liegt **Kunterbunt City auf dem Desktop** (ein Klick zum Starten, keine Admin-Rechte nötig).
+Linux: `.tar.gz` entpacken → `./installieren.sh` · macOS: `.zip` entpacken → Rechtsklick → Öffnen.
+Datenschutz: `docs/DATENSCHUTZ.md` – das Spiel sammelt keine Daten und braucht kein Internet.
+
+Neue Version veröffentlichen: Version in `project.godot` erhöhen, Tag `vX.Y.Z` pushen → `.github/workflows/release.yml`
+baut alle Downloads und hängt sie ans Release. Lokal: `bash scripts/build_release.sh` → `export/release/`.
+
+## Bauen
 ```bash
 godot --headless --export-release "Web" export/web/index.html      # Browser-Version
 godot --headless --export-release "Linux" export/linux/KunterbuntCity.x86_64

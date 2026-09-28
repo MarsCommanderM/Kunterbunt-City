@@ -78,6 +78,29 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 11 · Politur & Release 1.0 🔨
+- Freigabe 👤: „Mach es vollständig fertig, das ganze Spiel, so dass ich es direkt mit einem Klick vom Desktop öffnen kann.“
+- **T08 Release-Pipeline:** `installer/kunterbunt.nsi` (NSIS, zlib-Lizenz): Windows-Installer **ohne Admin-Rechte**
+  nach `%LOCALAPPDATA%\KunterbuntCity`, **Desktop-Verknüpfung** + Startmenü + Deinstallieren, „jetzt starten“.
+  `installer/linux/installieren.sh` (Symbol auf Desktop + Anwendungsmenü), macOS-Export (unsigniert), Web.
+  `scripts/build_release.sh` baut alles nach `export/release/`; `.github/workflows/release.yml` macht das bei Tag `v*`
+  und hängt die Downloads an ein GitHub-Release. Programm-Symbol `tools/make_app_icon.py` → `assets/app/icon.{png,ico}`.
+  Lokal gebaut: Windows-EXE 197 MB, Installer 108 MB, macOS 142 MB.
+- **T04 Spielstand-Robustheit:** erst `.tmp` schreiben, dann rotieren (`.bak1`, `.bak2`); kaputte/fehlende Datei →
+  erste lesbare Sicherung (still, ohne Fehler-Spam). Test `test_save_backup` (3).
+- **T03 Sprachen:** `data/i18n/{en,tr,es,fr,pl}.json` (72 Eltern-/Menü-Texte, Schlüssel = deutscher Text),
+  `src/core/i18n.gd` registriert sie bei Godot → Beschriftungen übersetzen sich selbst. Gefunden: ohne deutsche Tabelle
+  nahm Godot Englisch als Ersatz; `Ui.button` setzt ein Leerzeichen vor den Text → beide Fälle abgedeckt.
+  pytest `test_i18n` (gleiche Schlüssel, jeder Menü-Text übersetzt, Platzhalter passen), GUT `test_i18n_access`.
+- **T02 Barrierefreiheit:** neue Einstellung **Mono-Ton** (Stereo-Effekt auf dem Master-Bus); Einstellungen in zwei
+  Spalten – vorher rutschten Welt-Auswahl und Knöpfe unten aus dem Fenster (offener Punkt seit P04b); ausgeschaltete
+  Schalter sind jetzt blass (sahen vorher wie eingeschaltet aus). Beweis `docs/tests/P11/settings_{de,en,tr}.jpg`.
+- **T05 Stabilität:** `tools/godot/p11_bot_runner.gd` – Zufalls-Bot zieht, tippt, holt Dinge, wechselt Räume/Bereiche,
+  macht rückgängig; eigener Logger zählt Fehler, misst Speicher/Knoten/verwaiste Knoten. Probelauf 60 s: 1134 Züge,
+  742 Tipps, 333 neue Dinge, 0 Fehler.
+- **T06/T07/T09:** `docs/DATENSCHUTZ.md`, `CREDITS.md` vollständig, `docs/BACKLOG.md`. Version **1.0.0**, `CHANGELOG.md`.
+- T01 Größe: Spiel-Paket ≈ 90 MB (Musik wird beim Import komprimiert) → Web deutlich unter 150 MB.
+
 ### 2026-09-28 · Phase 10h · Werkstatt ✅ → **alle 12 Bereiche spielbar**
 - `tools/areas/workshop.py` → `data/areas/workshop.json`: **6 Räume** (Autowerkstatt mit Hebebühne, Waschanlage,
   Tankstelle mit Shop, Lackiererei, Fahrradwerkstatt, Schrottplatz) · 42 Start-Items · 5 Figuren. Musik `music_workshop`.
