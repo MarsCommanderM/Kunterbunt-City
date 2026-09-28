@@ -7,7 +7,7 @@ static func make(id: StringName) -> ItemNode:
 	var def: ItemDefinition = ItemDB.get_item(id)
 	if def == null:
 		return null
-	return PetNode.create_pet(def) if def.category == "pet" else ItemNode.create(def)
+	return PetNode.create_pet(def) if def.category in ["pet", "animal"] else ItemNode.create(def)   # P10g: Zoo-Tiere
 
 
 ## Figur aus Schablone (toddler/kid/adult) oder fertiges Sprite (char_girl_01) auf den Boden.

@@ -10158,6 +10158,422 @@
    "hold": "one_hand",
    "placement": "table",
    "src": "catalog"
+  },
+  {
+   "id": "c_zoo_giraffe",
+   "category": "animal",
+   "h_cm": 431.4,
+   "w_cm": 351.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_zebra",
+   "category": "animal",
+   "h_cm": 145.0,
+   "w_cm": 215.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_lion",
+   "category": "animal",
+   "h_cm": 122.0,
+   "w_cm": 192.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_lion_cub",
+   "category": "animal",
+   "h_cm": 44.9,
+   "w_cm": 65.4,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_elephant",
+   "category": "animal",
+   "h_cm": 266.6,
+   "w_cm": 447.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_elephant_baby",
+   "category": "animal",
+   "h_cm": 95.9,
+   "w_cm": 155.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_goat",
+   "category": "animal",
+   "h_cm": 56.1,
+   "w_cm": 68.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_lamb",
+   "category": "animal",
+   "h_cm": 54.4,
+   "w_cm": 68.6,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_pig",
+   "category": "animal",
+   "h_cm": 35.0,
+   "w_cm": 58.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_penguin",
+   "category": "animal",
+   "h_cm": 65.4,
+   "w_cm": 43.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_penguin_chick",
+   "category": "animal",
+   "h_cm": 36.2,
+   "w_cm": 32.9,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_flamingo",
+   "category": "animal",
+   "h_cm": 131.1,
+   "w_cm": 82.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_parrot",
+   "category": "animal",
+   "h_cm": 55.6,
+   "w_cm": 37.5,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_chick",
+   "category": "animal",
+   "h_cm": 14.0,
+   "w_cm": 13.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_monkey",
+   "category": "animal",
+   "h_cm": 78.5,
+   "w_cm": 73.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_gorilla",
+   "category": "animal",
+   "h_cm": 145.6,
+   "w_cm": 119.4,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_meerkat",
+   "category": "animal",
+   "h_cm": 32.4,
+   "w_cm": 18.2,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_rabbit",
+   "category": "animal",
+   "h_cm": 28.2,
+   "w_cm": 31.2,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_crocodile",
+   "category": "animal",
+   "h_cm": 45.6,
+   "w_cm": 351.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_tortoise",
+   "category": "animal",
+   "h_cm": 71.6,
+   "w_cm": 121.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_snake",
+   "category": "animal",
+   "h_cm": 28.2,
+   "w_cm": 57.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_rock",
+   "category": "furniture",
+   "h_cm": 154.0,
+   "w_cm": 302.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_acacia",
+   "category": "furniture",
+   "h_cm": 569.8,
+   "w_cm": 602.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_ice_floe",
+   "category": "furniture",
+   "h_cm": 119.1,
+   "w_cm": 406.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_terrarium",
+   "category": "furniture",
+   "h_cm": 161.6,
+   "w_cm": 201.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_tank",
+   "category": "furniture",
+   "h_cm": 241.8,
+   "w_cm": 421.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_climb_frame",
+   "category": "furniture",
+   "h_cm": 421.6,
+   "w_cm": 421.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 220
+  },
+  {
+   "id": "c_zoo_hay_rack",
+   "category": "furniture",
+   "h_cm": 141.5,
+   "w_cm": 121.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_sign",
+   "category": "furniture",
+   "h_cm": 141.6,
+   "w_cm": 81.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_pond",
+   "category": "deco",
+   "h_cm": 71.6,
+   "w_cm": 501.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_food_meat",
+   "category": "item",
+   "h_cm": 12.4,
+   "w_cm": 24.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_food_fish",
+   "category": "item",
+   "h_cm": 10.0,
+   "w_cm": 20.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_food_leaves",
+   "category": "item",
+   "h_cm": 31.5,
+   "w_cm": 43.4,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_food_hay",
+   "category": "item",
+   "h_cm": 23.5,
+   "w_cm": 34.6,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_food_seeds",
+   "category": "item",
+   "h_cm": 8.4,
+   "w_cm": 19.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_zoo_bucket",
+   "category": "item",
+   "h_cm": 32.1,
+   "w_cm": 31.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_car_lift",
+   "category": "furniture",
+   "h_cm": 221.9,
+   "w_cm": 481.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_gas_pump",
+   "category": "furniture",
+   "h_cm": 191.6,
+   "w_cm": 92.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_wash_tunnel",
+   "category": "furniture",
+   "h_cm": 331.6,
+   "w_cm": 621.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_paint_booth",
+   "category": "furniture",
+   "h_cm": 301.9,
+   "w_cm": 641.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_bike_stand",
+   "category": "furniture",
+   "h_cm": 131.5,
+   "w_cm": 81.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_scrap_pile",
+   "category": "furniture",
+   "h_cm": 197.0,
+   "w_cm": 322.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_scrap_car",
+   "category": "furniture",
+   "h_cm": 136.0,
+   "w_cm": 389.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 60
+  },
+  {
+   "id": "c_garage_oil_drum",
+   "category": "furniture",
+   "h_cm": 91.9,
+   "w_cm": 61.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_spray_gun",
+   "category": "item",
+   "h_cm": 23.5,
+   "w_cm": 23.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_garage_hubcap",
+   "category": "item",
+   "h_cm": 41.9,
+   "w_cm": 41.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
   }
  ]
 }

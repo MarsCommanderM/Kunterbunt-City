@@ -173,6 +173,18 @@ def music_ice() -> np.ndarray:
     return tune(ch, 96.0, ["G", "A", "B", "D", "E"], 6, swing=0.05)
 
 
+def music_zoo() -> np.ndarray:
+    """Zoo: abenteuerlich-fröhlich, F-Dur, Marimba-Gefühl."""
+    ch = [("F", ["F", "A", "C"]), ("A#", ["A#", "D", "F"]), ("C", ["C", "E", "G"]), ("F", ["F", "A", "C"])] * 4
+    return tune(ch, 104.0, ["F", "G", "A", "C", "D"], 5, swing=0.1)
+
+
+def music_workshop() -> np.ndarray:
+    """Werkstatt: rockig-gemütlich, D-Dur, kräftiger Schritt."""
+    ch = [("D", ["D", "F#", "A"]), ("A", ["A", "C#", "E"]), ("G", ["G", "B", "D"]), ("A", ["A", "C#", "E"])] * 4
+    return tune(ch, 116.0, ["D", "E", "F#", "A", "B"], 4)
+
+
 def amb_garden() -> np.ndarray:
     d = 24.0
     buf = noise(d + 0.6, 0.02) * 0.25 * (0.7 + 0.3 * np.sin(2 * np.pi * t(d + 0.6) / 7.0))   # Wind
@@ -212,7 +224,8 @@ TRACKS = {"music_home": music_home, "amb_garden": amb_garden, "amb_indoor": amb_
           "music_town": music_town, "music_park": music_park, "music_school": music_school,
           "music_clinic": music_clinic, "music_pool": music_pool,
           "music_fair": music_fair, "music_sport": music_sport,
-          "music_ice": music_ice}
+          "music_ice": music_ice, "music_zoo": music_zoo,
+          "music_workshop": music_workshop}
 
 
 def main(argv: list[str] | None = None) -> int:

@@ -3060,6 +3060,185 @@
      "min": 1
     }
    ]
+  },
+  "zoo": {
+   "zoo": [
+    {
+     "label": "zoo_giraffe",
+     "prefix": "zoo_giraffe",
+     "min": 1
+    },
+    {
+     "label": "zoo_zebra",
+     "prefix": "zoo_zebra",
+     "min": 1
+    },
+    {
+     "label": "zoo_lion",
+     "prefix": "zoo_lion",
+     "min": 1
+    },
+    {
+     "label": "zoo_lion_cub",
+     "prefix": "zoo_lion_cub",
+     "min": 1
+    },
+    {
+     "label": "zoo_elephant",
+     "prefix": "zoo_elephant",
+     "min": 1
+    },
+    {
+     "label": "zoo_elephant_baby",
+     "prefix": "zoo_elephant_baby",
+     "min": 1
+    },
+    {
+     "label": "zoo_goat",
+     "prefix": "zoo_goat",
+     "min": 1
+    },
+    {
+     "label": "zoo_lamb",
+     "prefix": "zoo_lamb",
+     "min": 1
+    },
+    {
+     "label": "zoo_pig",
+     "prefix": "zoo_pig",
+     "min": 1
+    },
+    {
+     "label": "zoo_penguin",
+     "prefix": "zoo_penguin",
+     "min": 1
+    },
+    {
+     "label": "zoo_penguin_chick",
+     "prefix": "zoo_penguin_chick",
+     "min": 1
+    },
+    {
+     "label": "zoo_flamingo",
+     "prefix": "zoo_flamingo",
+     "min": 1
+    },
+    {
+     "label": "zoo_parrot",
+     "prefix": "zoo_parrot",
+     "min": 1
+    },
+    {
+     "label": "zoo_chick",
+     "prefix": "zoo_chick",
+     "min": 1
+    },
+    {
+     "label": "zoo_monkey",
+     "prefix": "zoo_monkey",
+     "min": 1
+    },
+    {
+     "label": "zoo_gorilla",
+     "prefix": "zoo_gorilla",
+     "min": 1
+    },
+    {
+     "label": "zoo_meerkat",
+     "prefix": "zoo_meerkat",
+     "min": 1
+    },
+    {
+     "label": "zoo_rabbit",
+     "prefix": "zoo_rabbit",
+     "min": 1
+    },
+    {
+     "label": "zoo_crocodile",
+     "prefix": "zoo_crocodile",
+     "min": 1
+    },
+    {
+     "label": "zoo_tortoise",
+     "prefix": "zoo_tortoise",
+     "min": 1
+    },
+    {
+     "label": "zoo_snake",
+     "prefix": "zoo_snake",
+     "min": 1
+    },
+    {
+     "label": "zoo_rock",
+     "prefix": "zoo_rock",
+     "min": 2
+    },
+    {
+     "label": "zoo_acacia",
+     "prefix": "zoo_acacia",
+     "min": 1
+    },
+    {
+     "label": "zoo_ice_floe",
+     "prefix": "zoo_ice_floe",
+     "min": 1
+    },
+    {
+     "label": "zoo_terrarium",
+     "prefix": "zoo_terrarium",
+     "min": 2
+    },
+    {
+     "label": "zoo_tank",
+     "prefix": "zoo_tank",
+     "min": 2
+    },
+    {
+     "label": "zoo_climb_frame",
+     "prefix": "zoo_climb_frame",
+     "min": 1
+    },
+    {
+     "label": "zoo_sign",
+     "prefix": "zoo_sign",
+     "min": 2
+    },
+    {
+     "label": "zoo_pond",
+     "prefix": "zoo_pond",
+     "min": 1
+    },
+    {
+     "label": "zoo_food_meat",
+     "prefix": "zoo_food_meat",
+     "min": 1
+    },
+    {
+     "label": "zoo_food_fish",
+     "prefix": "zoo_food_fish",
+     "min": 1
+    },
+    {
+     "label": "zoo_food_leaves",
+     "prefix": "zoo_food_leaves",
+     "min": 1
+    },
+    {
+     "label": "zoo_food_hay",
+     "prefix": "zoo_food_hay",
+     "min": 1
+    },
+    {
+     "label": "zoo_food_seeds",
+     "prefix": "zoo_food_seeds",
+     "min": 1
+    },
+    {
+     "label": "zoo_bucket",
+     "prefix": "zoo_bucket",
+     "min": 2
+    }
+   ]
   }
  }
 }

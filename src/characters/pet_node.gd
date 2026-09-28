@@ -87,8 +87,8 @@ func tick(dt: float) -> void:
 		if mode == Mode.SLEEP or mode == Mode.SEEK:
 			mode = Mode.IDLE
 		return
-	if def.tags.has("wild"):
-		_wild_tick(r, dt)                            # P09-T07: Enten, Tauben, Eichhörnchen
+	if def.tags.has("wild") or def.tags.has("zoo"):
+		_wild_tick(r, dt)                            # P09-T07: Enten, Tauben, Eichhörnchen · P10g: Zoo-Tiere im Gehege
 		return
 	brain.tick(dt)
 	if brain.voice_due(dt):
@@ -177,7 +177,8 @@ var _home: Rect2 = Rect2()
 func home_area(r: Room) -> Rect2:
 	if _home.size != Vector2.ZERO:
 		return _home
-	_home = Rect2(position.x - 160.0, r.floor_band.back_y_cm, 320.0, r.floor_band.front_y_cm - r.floor_band.back_y_cm)
+	var reach: float = maxf(160.0, def.width_cm) if def.tags.has("zoo") else 160.0   # Zoo: Gehege je nach Tiergröße
+	_home = Rect2(position.x - reach, r.floor_band.back_y_cm, reach * 2.0, r.floor_band.front_y_cm - r.floor_band.back_y_cm)
 	for o: ItemNode in Placement.all_items(r):
 		if String(o.def.id).begins_with("garden_pond") and absf(o.position.x - position.x) < o.def.width_cm * 0.5:
 			_home = Rect2(o.position.x - o.def.width_cm * 0.38, o.position.y - 12.0, o.def.width_cm * 0.76, 20.0)
@@ -188,8 +189,9 @@ func _wild_tick(r: Room, dt: float) -> void:
 	var home: Rect2 = home_area(r)
 	var fear: ItemNode = null
 	for c: Node in r.ysort_root.get_children():
-		if c is CharacterRig and not c.has_meta("npc_id") and (c as Node2D).position.distance_to(position) < FLEE_CM:
-			fear = c
+		if def.tags.has("wild") and c is CharacterRig and not c.has_meta("npc_id") \
+				and (c as Node2D).position.distance_to(position) < FLEE_CM:
+			fear = c                                   # Zoo-Tiere fliehen nicht (sie kennen Besucher)
 	var speed: float = SPEED_CM_S
 	if fear != null:
 		var away: float = signf(position.x - fear.position.x) if position.x != fear.position.x else 1.0

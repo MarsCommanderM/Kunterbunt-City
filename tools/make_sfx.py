@@ -372,6 +372,62 @@ def boo():
     return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, x * 8) * np.minimum(1, (0.9 - x) * 5)
 
 
+def roar():
+    """Löwe: freundliches, kurzes Brummen (nie erschreckend)."""
+    x = t(0.7)
+    f = 140 + 40 * np.sin(np.pi * x / 0.7)
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.4 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+    return (tone + 0.3 * noise(0.7, 0.3)) * np.minimum(1, x * 10) * np.minimum(1, (0.7 - x) * 4)
+
+
+def trumpet():
+    """Elefant: Trompeten (aufsteigender Ton mit Obertönen)."""
+    x = t(0.8)
+    f = 420 + 300 * np.minimum(1, x / 0.3)
+    tone = sum(np.sin(2 * np.pi * k * np.cumsum(f) / SR) / k for k in (1, 2, 3, 4))
+    return tone * np.minimum(1, x * 20) * np.minimum(1, (0.8 - x) * 4)
+
+
+def bleat():
+    """Ziege/Schaf: „Mäh“ mit Zittern."""
+    x = t(0.6)
+    f = 520 * (1 + 0.04 * np.sin(2 * np.pi * 24 * x))
+    return (np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.3 * np.sin(4 * np.pi * np.cumsum(f) / SR)) * np.minimum(1, x * 15) * np.exp(-x * 2)
+
+
+def oink():
+    """Schwein: zwei kurze Grunzer."""
+    parts = []
+    for d in (0.14, 0.18):
+        x = t(d)
+        parts.append((np.sin(2 * np.pi * 180 * x) + 0.5 * noise(d, 0.2)) * np.sin(np.pi * x / d))
+        parts.append(np.zeros(int(SR * 0.06)))
+    return np.concatenate(parts)
+
+
+def monkey():
+    """Affe: fröhliches „Uh-uh-ah-ah“."""
+    parts = []
+    for f in (500, 560, 760, 820):
+        x = t(0.1)
+        parts.append(np.sin(2 * np.pi * np.cumsum(np.linspace(f, f * 1.3, len(x))) / SR) * np.sin(np.pi * x / 0.1))
+        parts.append(np.zeros(int(SR * 0.04)))
+    return np.concatenate(parts)
+
+
+def penguin():
+    """Pinguin: kurzes Schnattern."""
+    x = t(0.35)
+    return np.sign(np.sin(2 * np.pi * 330 * x)) * 0.4 * (0.5 + 0.5 * np.sin(2 * np.pi * 18 * x)) * np.sin(np.pi * x / 0.35)
+
+
+def yum():
+    """Tier frisst gern: „Mjam“ (zwei weiche Töne aufwärts)."""
+    a = np.sin(2 * np.pi * 660 * t(0.12)) * env(int(SR * 0.12), 0.005, 12)
+    b = np.sin(2 * np.pi * 990 * t(0.22)) * env(int(SR * 0.22), 0.005, 8)
+    return np.concatenate([a, b])
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -444,6 +500,14 @@ SOUNDS = {
     "fair_bell": lambda: norm(fair_bell(), 0.45),
     "tada": lambda: norm(tada(), 0.4),
     "boo": lambda: norm(boo(), 0.4),
+    # P10g Zoo
+    "roar": lambda: norm(roar(), 0.4),
+    "trumpet": lambda: norm(trumpet(), 0.35),
+    "bleat": lambda: norm(bleat(), 0.4),
+    "oink": lambda: norm(oink(), 0.4),
+    "monkey": lambda: norm(monkey(), 0.35),
+    "penguin": lambda: norm(penguin(), 0.3),
+    "yum": lambda: norm(yum(), 0.4),
 }
 
 

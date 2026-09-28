@@ -691,6 +691,722 @@
    ]
   },
   {
+   "id": "garage_car_lift_coral",
+   "scale_ref": "c_garage_car_lift",
+   "size_cm": [
+    481.7,
+    221.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_car_lift.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "up": "drop_metal"
+   },
+   "states": [
+    "down",
+    "up"
+   ],
+   "state_sprites": {
+    "up": "res://assets/sprites/items/garage_car_lift__up.png"
+   }
+  },
+  {
+   "id": "garage_car_lift_sky",
+   "scale_ref": "c_garage_car_lift",
+   "size_cm": [
+    481.7,
+    221.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_car_lift.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "up": "drop_metal"
+   },
+   "states": [
+    "down",
+    "up"
+   ],
+   "state_sprites": {
+    "up": "res://assets/sprites/items/garage_car_lift__up.png"
+   }
+  },
+  {
+   "id": "garage_gas_pump_coral",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_gas_pump_sky",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_gas_pump_green",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_wash_tunnel_sky",
+   "scale_ref": "c_garage_wash_tunnel",
+   "size_cm": [
+    621.6,
+    331.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_wash_tunnel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garage_wash_tunnel__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "garage_wash_tunnel_butter",
+   "scale_ref": "c_garage_wash_tunnel",
+   "size_cm": [
+    621.6,
+    331.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_wash_tunnel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garage_wash_tunnel__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "garage_paint_booth_grey",
+   "scale_ref": "c_garage_paint_booth",
+   "size_cm": [
+    641.9,
+    301.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_paint_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_paint_booth_white",
+   "scale_ref": "c_garage_paint_booth",
+   "size_cm": [
+    641.9,
+    301.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_paint_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_bike_stand_coral",
+   "scale_ref": "c_garage_bike_stand",
+   "size_cm": [
+    81.5,
+    131.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_bike_stand_black",
+   "scale_ref": "c_garage_bike_stand",
+   "size_cm": [
+    81.5,
+    131.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_scrap_pile_rust",
+   "scale_ref": "c_garage_scrap_pile",
+   "size_cm": [
+    322.0,
+    197.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_pile.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#9aa6b4",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "found": "tada"
+   },
+   "states": [
+    "junk",
+    "found"
+   ],
+   "state_sprites": {
+    "found": "res://assets/sprites/items/garage_scrap_pile__found.png"
+   }
+  },
+  {
+   "id": "garage_scrap_pile_grey",
+   "scale_ref": "c_garage_scrap_pile",
+   "size_cm": [
+    322.0,
+    197.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_pile.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#9aa6b4",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "found": "tada"
+   },
+   "states": [
+    "junk",
+    "found"
+   ],
+   "state_sprites": {
+    "found": "res://assets/sprites/items/garage_scrap_pile__found.png"
+   }
+  },
+  {
+   "id": "garage_scrap_car_rust",
+   "scale_ref": "c_garage_scrap_car",
+   "size_cm": [
+    389.5,
+    136.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#6d6f78",
+    "#c96a4a"
+   ],
+   "catalog": "workshop",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garage_scrap_car_sky",
+   "scale_ref": "c_garage_scrap_car",
+   "size_cm": [
+    389.5,
+    136.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#c96a4a"
+   ],
+   "catalog": "workshop",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garage_oil_drum_blue",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#6f8fb8",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_oil_drum_coral",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_oil_drum_green",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_spray_gun_coral",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_sky",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#a9c3dd",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_butter",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f6d98a",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_mint",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#9fc3a0",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_plum",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#7a5ea8",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_black",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_hubcap_gold",
+   "scale_ref": "c_garage_hubcap",
+   "size_cm": [
+    41.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_hubcap.png",
+   "pad_px": 1,
+   "colors": [
+    "#e0b84a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
    "id": "work_tool_wall_oak",
    "scale_ref": "c_work_tool_wall",
    "size_cm": [

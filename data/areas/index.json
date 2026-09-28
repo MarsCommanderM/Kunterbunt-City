@@ -92,10 +92,13 @@
    "icon": "area_zoo",
    "color": "#d9a066",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/zoo.json",
    "map_x": 1250,
-   "map_y": 560
+   "map_y": 560,
+   "room": "entrance",
+   "spawn_x_cm": 560,
+   "spawn_y_cm": 55
   },
   {
    "id": "shopping",

@@ -28,7 +28,7 @@ const BUS_ID: StringName = &"street_bus_butter"
 ## Ding losgelassen. true = hier erledigt (AreaScene speichert dann nur noch).
 static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
 	if PoolActions.on_dropped(scene, item) or FairActions.on_dropped(scene, item) or SportActions.on_dropped(scene, item) \
-			or IceActions.on_dropped(scene, item):
+			or IceActions.on_dropped(scene, item) or ZooActions.on_dropped(scene, item) or WorkshopActions.on_dropped(scene, item):
 		return true
 	var id: String = String(item.def.id)
 	for p: String in WEAR:
@@ -49,7 +49,8 @@ static func on_dropped(scene: AreaScene, item: ItemNode) -> bool:
 
 
 static func on_tapped(scene: AreaScene, item: ItemNode) -> bool:
-	if PoolActions.on_tapped(scene, item) or FairActions.on_tapped(scene, item) or SportActions.on_tapped(scene, item):
+	if PoolActions.on_tapped(scene, item) or FairActions.on_tapped(scene, item) or SportActions.on_tapped(scene, item) \
+			or ZooActions.on_tapped(scene, item) or WorkshopActions.on_tapped(scene, item):
 		return true
 	var id: String = String(item.def.id)
 	if id.begins_with("edu_bell") and item.state == "ring":

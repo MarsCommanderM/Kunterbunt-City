@@ -1,0 +1,48 @@
+{
+ "_doc": "Feste Figuren im Zoo (P10g). Erzeugt von tools/make_areas.py.",
+ "area": "zoo",
+ "npcs": [
+  {
+   "id": "npc_cashier_entrance",
+   "role": "cashier",
+   "room": "entrance",
+   "x_cm": 300,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_zoo_director_entrance",
+   "role": "zoo_director",
+   "room": "entrance",
+   "x_cm": 950,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_zookeeper_savanna",
+   "role": "zookeeper",
+   "room": "savanna",
+   "x_cm": 1000,
+   "y_cm": 60
+  },
+  {
+   "id": "npc_guide_savanna",
+   "role": "guide",
+   "room": "savanna",
+   "x_cm": 1500,
+   "y_cm": 62
+  },
+  {
+   "id": "npc_zookeeper_petting",
+   "role": "zookeeper",
+   "room": "petting",
+   "x_cm": 800,
+   "y_cm": 62
+  },
+  {
+   "id": "npc_vet_nursery",
+   "role": "vet",
+   "room": "nursery",
+   "x_cm": 820,
+   "y_cm": 50
+  }
+ ]
+}

@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
 | Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
-| Letzter grüner check.sh | 2026-09-28 (P10f) |
+| Letzter grüner check.sh | 2026-09-28 (P10g) |
 | Version | 0.1.0 |
 
 ## Phasen
@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ | Log 2026-09-28 |
+| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ · 10g Zoo ✅ · 10h Werkstatt 🔨 | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,27 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10g · Zoo ✅ (+ Vorarbeit 10h Werkstatt)
+- `tools/areas/zoo.py` → `data/areas/zoo.json`: **9 Bereiche** (Eingang, Savanne, Affenhaus 5 m hoch, Elefanten,
+  Pinguine, Reptilien, Aquarium, Streichelzoo, Tierbabys) · 79 Start-Items · 6 Figuren (Kasse, Direktor/in, 2 Pfleger/innen,
+  Zooführer/in, Tierarzt – 2 neue Rollen).
+- **21 Tierarten in echter Größe** (`tools/items/zoo_animals.py`: Giraffe 4,8 m, Elefant, Zebra, Löwe, Flamingo, Gorilla,
+  Affe, Pinguin, Krokodil, Riesenschildkröte, Schlange, Erdmännchen, Papagei, Ziege, Lamm, Ferkel, Kaninchen, Küken,
+  Löwenbaby, Pinguinküken, Elefantenbaby) + Gehege/Futter (`zoo_props.py`). Neue Kategorie **`animal`** mit eigener
+  Maßstab-Regel 5–600 cm (Kamera zoomt raus, nichts wird geschrumpft), spawnt wie Haustiere.
+- Mechanik (`src/areas/zoo_actions.gd`, `PetNode`): Zoo-Tiere bleiben im Gehege (Reichweite nach Tiergröße) und fliehen
+  nicht · **Futter aus Daten** (`eats:<ID-Präfix>`): richtiges Futter → frisst, Herzen, „Mjam“; falsches → dreht sich weg ·
+  **Fütterungsrunde** der Pfleger/innen alle 90 s · **Affen leihen sich** alle 45 s ein kleines Ding und legen es woanders
+  hin · Streichelzoo-Tiere ✋ tragbar + Herzen beim Antippen. 7 Sounds (Brüllen, Trompeten, Mäh, Grunzen, Affe, Pinguin,
+  Mjam), Musik `music_zoo`, 7 Geheimnisse.
+- **Fehler gefunden (Rundgang):** Start-Futter lag neben Tieren, die es mögen → beim Betreten sofort gefressen. Futter
+  verlegt + pytest `test_zoo_food` prüft das für alle Bereiche.
+- `test_city_map` suchte die Baustelle fest beim Zoo → nimmt jetzt die erste unfertige (und ist grün, wenn alle fertig sind).
+- Vorarbeit P10h: Werkstatt-Vorlagen gezeichnet (`tools/items/garage.py`, `catalog_garage.py`), Mechanik
+  `src/areas/workshop_actions.gd`, Layout `tools/areas/workshop.py` – noch nicht auf der Karte.
+- Tests `test_p10_zoo` (7). Beweis `docs/tests/P10/zoo_*.jpg`.
+- check.sh ✅ – Maßstab (3015 Items) · pytest 134/134 · GUT 372/372.
+
 ### 2026-09-28 · Phase 10f · Eishalle ✅
 - `tools/areas/ice.py` → `data/areas/ice.json`: **4 Räume** (Kasse & Verleih, Eisfläche 23 m in 4,5-m-Halle, Tribüne,
   Imbiss) · 39 Start-Items · 4 Figuren (Verleih, Eislauf-Trainer/in, Eismaschinen-Fahrer/in – 2 neue Rollen, Imbiss).

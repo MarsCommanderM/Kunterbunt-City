@@ -1,0 +1,55 @@
+{
+ "id": "zoo_director",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Zoodirektor/in",
+ "behavior": "station",
+ "work": [
+  "wave",
+  "nod",
+  "point"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "jacket",
+   "bottom": "trousers",
+   "hair": "bob",
+   "shoes": "boot",
+   "accessory": "glasses"
+  },
+  "colors": {
+   "top": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#c98a64"
+   ],
+   "bottom": [
+    "#5a463a",
+    "#5a463a",
+    "#c98a64"
+   ],
+   "hair": [
+    "#b8b2a7",
+    "#b8b2a7",
+    "#b8b2a7"
+   ],
+   "shoes": [
+    "#5a463a",
+    "#5a463a",
+    "#c98a64"
+   ],
+   "accessory": [
+    "#2a2a30",
+    "#2a2a30",
+    "#2a2a30"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

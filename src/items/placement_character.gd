@@ -8,7 +8,7 @@ const HAND_SNAP_CM: float = 25.0
 const MOUTH_SNAP_CM: float = 15.0
 const SEAT_ITEM_SNAP_CM: float = 12.0
 ## Nur Figuren, Tiere und Spielzeug setzen sich hin – Geschirr & Co. nutzen die Abstellfläche (Hocker).
-const SEAT_CATEGORIES: Array[String] = ["character", "pet", "toy"]
+const SEAT_CATEGORIES: Array[String] = ["character", "pet", "animal", "toy"]
 
 
 ## items: schon gesammelte Raum-Items (Placement.find_target sammelt EINMAL pro Suche – läuft jedes Frame beim Ziehen).
