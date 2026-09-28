@@ -106,6 +106,37 @@ def music_home() -> np.ndarray:
     return norm(loop_seam(buf[: int(total * SR)]), 0.55)
 
 
+def tune(chords: list, bpm: float, scale: list, octave: int = 5, swing: float = 0.0) -> np.ndarray:
+    """P09: weitere Stücke nach demselben Bauplan wie music_home (Fläche, Bass, Kalimba-Melodie, Shaker)."""
+    beat = 60.0 / bpm
+    total = len(chords) * 4 * beat + 0.6
+    buf = np.zeros(int(total * SR) + SR)
+    for bar, (root, triad) in enumerate(chords):
+        t0 = bar * 4 * beat
+        mix(buf, pad([hz(n, 3) for n in triad], 4 * beat + 0.3), t0, 0.14)
+        for k in (0, 2):
+            mix(buf, pluck(hz(root, 2), 1.1, 0.1), t0 + k * beat, 0.42)
+        for k in range(8):
+            if rng.random() < (0.4 if k % 2 else 0.8):
+                n = scale[int(rng.integers(len(scale)))] if rng.random() < 0.6 else triad[int(rng.integers(3))]
+                mix(buf, pluck(hz(n, octave), 0.8), t0 + k * beat / 2 + (swing * beat if k % 2 else 0.0), 0.3)
+        for k in range(8):
+            mix(buf, noise(0.05, 0.6) * np.exp(-t(0.05) * 60), t0 + k * beat / 2 + 0.01, 0.05 if k % 2 else 0.08)
+    return norm(loop_seam(buf[: int(total * SR)]), 0.55)
+
+
+def music_town() -> np.ndarray:
+    """Einkaufsstraße: munter, G-Dur, leicht geswingt."""
+    ch = [("G", ["G", "B", "D"]), ("E", ["E", "G", "B"]), ("C", ["C", "E", "G"]), ("D", ["D", "F#", "A"])] * 4
+    return tune(ch, 108.0, ["G", "A", "B", "D", "E"], 5, swing=0.12)
+
+
+def music_park() -> np.ndarray:
+    """Spielplatz & Park: luftig, F-Dur, langsamer."""
+    ch = [("F", ["F", "A", "C"]), ("D", ["D", "F", "A"]), ("A#", ["A#", "D", "F"]), ("C", ["C", "E", "G"])] * 4
+    return tune(ch, 88.0, ["F", "G", "A", "C", "D"], 5)
+
+
 def amb_garden() -> np.ndarray:
     d = 24.0
     buf = noise(d + 0.6, 0.02) * 0.25 * (0.7 + 0.3 * np.sin(2 * np.pi * t(d + 0.6) / 7.0))   # Wind
@@ -141,7 +172,8 @@ def amb_bath() -> np.ndarray:
     return norm(loop_seam(buf), 0.3)
 
 
-TRACKS = {"music_home": music_home, "amb_garden": amb_garden, "amb_indoor": amb_indoor, "amb_bath": amb_bath}
+TRACKS = {"music_home": music_home, "amb_garden": amb_garden, "amb_indoor": amb_indoor, "amb_bath": amb_bath,
+          "music_town": music_town, "music_park": music_park}
 
 
 def main(argv: list[str] | None = None) -> int:

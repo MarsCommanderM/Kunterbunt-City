@@ -78,3 +78,10 @@ static func room_of(id: StringName) -> String:
 
 static func path_of(id: StringName) -> String:
 	return String(get_area(id).get("path", ""))
+
+
+## P09: Ein Knopf kann in einen anderen Bereich führen (Blumenladen → Einkaufsstraße, Raum „florist").
+## Spielstand und Räume gehören dann dem Ziel-Bereich – nichts wird doppelt gespeichert.
+static func canonical(id: StringName) -> StringName:
+	var s: String = String(get_area(id).get("same_as", ""))
+	return StringName(s) if not s.is_empty() else id

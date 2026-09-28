@@ -8896,6 +8896,486 @@
    "tags": [
     "plant"
    ]
+  },
+  {
+   "id": "flower_rose_coral",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_rose",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_white",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_butter",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_coral",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_butter",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_rose",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_plum",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_sunflower_butter",
+   "scale_ref": "c_flower_sunflower",
+   "size_cm": [
+    16.8,
+    59.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_sunflower.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_orange",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_rose",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_coral",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_bouquet_rose",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_coral",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_plum",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_sky",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
   }
  ]
 }

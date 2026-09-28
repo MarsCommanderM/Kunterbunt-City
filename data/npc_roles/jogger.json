@@ -1,0 +1,55 @@
+{
+ "id": "jogger",
+ "template": "adult",
+ "speed_cm_s": 160,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Jogger/in",
+ "behavior": "patrol",
+ "work": [
+  "look"
+ ],
+ "patrol_cm": 700,
+ "light": true,
+ "look": {
+  "skin": "#8d5a3b",
+  "parts": {
+   "top": "tank",
+   "bottom": "shorts",
+   "hair": "ponytail",
+   "shoes": "sneaker",
+   "accessory": "headband"
+  },
+  "colors": {
+   "top": [
+    "#48b0a0",
+    "#fbfaf7",
+    "#8d5a3b"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#8d5a3b"
+   ],
+   "hair": [
+    "#2a2a30",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "shoes": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#8d5a3b"
+   ],
+   "accessory": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#8d5a3b"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

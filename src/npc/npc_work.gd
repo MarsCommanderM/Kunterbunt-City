@@ -12,7 +12,7 @@ const ANIM_S: float = 1.2
 const MOTION: Dictionary = {"wave": "arm_up", "point": "arm_up", "whistle": "arm_up", "offer": "arm_up", "lever": "arm_up",
 	"deliver": "arm_up", "scan": "arm_work", "type": "arm_work", "stock": "arm_work", "repair": "arm_work",
 	"sweep": "arm_work", "arrange": "arm_work", "feed": "arm_work", "water": "arm_work", "listen": "arm_work",
-	"clap": "arm_work", "nod": "nod", "look": "look"}
+	"clap": "arm_work", "cut": "arm_work", "nod": "nod", "look": "look"}
 const SOUND: Dictionary = {"scan": "scan_beep", "whistle": "whistle", "clap": "clap", "deliver": "drop_paper"}
 const WATCH_CM: float = 90.0          ## so nah an der Kasse muss ein Ding landen
 const SCAN_MAX_H_CM: float = 60.0
@@ -22,12 +22,14 @@ const RUN_CM_S: float = 260.0
 const WHISTLE_COOLDOWN_S: float = 4.0
 const POOL_RANGE_CM: float = 300.0
 const MAIL_NEAR_CM: float = 90.0
+const BIND_CM: float = 60.0
 
 var brain: NpcBrain
 var scanned: int = 0                  ## gezählt für Tests/Beweis
 var rescued: int = 0
 var whistles: int = 0
 var delivered: int = 0
+var bound: int = 0
 var _busy: float = 0.0
 var _tween: Tween
 var _under: Dictionary = {}           ## instance_id → Sekunden im Wasser
@@ -122,6 +124,9 @@ func _watch_prefixes() -> Array:
 func on_item_dropped(item: ItemNode) -> bool:
 	if item == null or item is CharacterRig or item.def.height_cm > SCAN_MAX_H_CM or item.def.hold == "none":
 		return false
+	if brain.role.has("binds") and item.def.tags.has("flower"):
+		bind(item)                                         # Blumen landen bei der Floristin, nie in der Tüte
+		return true
 	var register: ItemNode = _nearest_prefixed(_watch_prefixes(), item.global_position, WATCH_CM)
 	if register == null or register == item or String(item.def.id).begins_with("shop_bag"):
 		return false
@@ -136,6 +141,7 @@ func scan(item: ItemNode, register: ItemNode) -> ItemNode:
 	if register.def.states.has("open"):
 		ItemStates.set_state(register, "open", true)
 	scanned += 1
+	Secrets.event("scan")
 	var bag: ItemNode = _nearest_prefixed(["shop_bag"], register.global_position, 160.0)
 	if bag == null or bag.free_slot() < 0:
 		var p: Vector2 = brain.room.ysort_root.to_local(register.global_position)
@@ -149,6 +155,38 @@ func scan(item: ItemNode, register: ItemNode) -> ItemNode:
 		item.slot_index = slot
 		bag.relayout_contents()
 	return bag
+
+
+# ---------------------------------------------------------------- Floristin
+
+## P09-T05: 3 Blumen nah beieinander (auf der Theke) → die Floristin bindet einen Strauß. null = noch zu wenige.
+func bind(item: ItemNode) -> ItemNode:
+	var near: Array = []
+	for it: ItemNode in Placement.all_items(brain.room):
+		if it.def.tags.has("flower") and it.global_position.distance_to(item.global_position) < BIND_CM:
+			near.append(it)
+	brain.play_work("arrange")
+	if near.size() < 3:
+		return null
+	near.sort_custom(func(a: ItemNode, b: ItemNode) -> bool:
+		return a.global_position.distance_to(item.global_position) < b.global_position.distance_to(item.global_position))
+	var host: Node = item.get_parent().get_parent() if item.get_parent() != null else null
+	var p: Vector2 = brain.room.ysort_root.to_local(item.global_position)
+	for k: int in 3:
+		var f: ItemNode = near[k]
+		f.get_parent().remove_child(f)
+		f.queue_free()
+	var id := StringName(String(brain.role["binds"]))
+	var b: ItemNode = null
+	if host is ItemNode and (host as ItemNode).def.has_surface():
+		var h: ItemNode = host
+		b = ItemSpawner.on_item(h, id, clampf((p.x - h.position.x) / maxf(h.def.width_cm, 1.0), -0.45, 0.45))
+	if b == null:
+		b = ItemSpawner.on_floor(brain.room, id, p.x, p.y)
+	bound += 1
+	AudioBus.play_sfx("harvest")
+	Secrets.event("bouquet")
+	return b
 
 
 # ---------------------------------------------------------------- Briefträger/in

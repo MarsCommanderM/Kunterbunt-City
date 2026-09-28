@@ -107,6 +107,23 @@ def floor(width: float, kind: str = "planks", seed: int = 3):
             x, d = rng.uniform(0, width), rng.uniform(0, BOTTOM)
             h = rng.uniform(1.5, 3.5) * (1 + d / BOTTOM * 0.3)
             c.fill([(x - 0.6, -d), (x + 0.6, -d), (x + rng.uniform(-0.8, 0.8), -d + h)], zone=2 if rng.random() < 0.6 else 3)
+    elif kind == "pavement":                               # Gehweg: große Platten, versetzte Fugen, Bordstein vorn
+        rows = [0.0]
+        step = 22.0
+        while rows[-1] < BOTTOM:
+            rows.append(rows[-1] + step)
+            step *= 1.12
+        tw = 50.0
+        for ri in range(len(rows) - 1):
+            d0, d1 = rows[ri], min(rows[ri + 1], BOTTOM)
+            off = tw * 0.5 if ri % 2 else 0.0
+            xs = [cx + off + k * tw for k in range(-int(width / tw) - 8, int(width / tw) + 9)]
+            for i, x in enumerate(xs[:-1]):
+                if rng.random() < 0.3:
+                    c.fill([(_persp(x, cx, d0), -d0), (_persp(xs[i + 1], cx, d0), -d0), (_persp(xs[i + 1], cx, d1), -d1),
+                            (_persp(x, cx, d1), -d1)], zone=2, alpha=0.7)
+                c.line([(_persp(x, cx, d0), -d0), (_persp(x, cx, d1), -d1)], INNER * 1.2, zone=3)
+            c.line([(-10, -d0), (width + 10, -d0)], INNER * 1.2, zone=3)
     elif kind == "sand":
         for _ in range(int(width * BOTTOM / 40)):
             x, d = rng.uniform(0, width), rng.uniform(0, BOTTOM)
@@ -117,4 +134,4 @@ def floor(width: float, kind: str = "planks", seed: int = 3):
     return raw(c)
 
 
-FLOOR_KINDS = ["planks", "tiles", "carpet", "concrete", "grass", "sand"]
+FLOOR_KINDS = ["planks", "tiles", "carpet", "concrete", "grass", "sand", "pavement"]

@@ -83,7 +83,9 @@ def build_room(area_id: str, room: dict, cache: dict) -> dict:
         floors[kind] = {"y_px": round(top * PPC), "tiles": cache[fkey][1]}
     floor_img = cache[f"floor_{int(width)}_{fkind}"][0]
     # Details (fest)
-    if outdoor:
+    if outdoor and sc.get("town"):
+        D.town(sheet, width, [tuple(f) for f in sc["town"]], top=top, seed=int(sc.get("seed", 5)))
+    elif outdoor:
         D.outdoor(sheet, width, seed=int(sc.get("seed", 5)), top=top)
     if "roof" in sc.get("extras", []):
         D.roof_slopes(sheet, width)

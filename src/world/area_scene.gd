@@ -24,6 +24,7 @@ var pets: Array = []                 ## [PetNode]
 var npcs: Array = []                 ## [NpcBrain] – P08: feste Figuren im Raum
 var load_ms: float = 0.0
 var _t0: int = 0
+var _entry: StringName = &""          ## gewählter Knopf (kann auf einen anderen Bereich zeigen)
 
 
 func _ready() -> void:
@@ -31,6 +32,8 @@ func _ready() -> void:
 	area_id = SceneRouter.take_pending_area()
 	if area_id == &"":
 		area_id = Areas.first_ready()
+	_entry = area_id
+	area_id = Areas.canonical(area_id)                    # P09: Blumenladen-Knopf → Einkaufsstraße
 	area = Areas.get_area(area_id)
 	area_file = Room.load_area(Areas.path_of(area_id))
 	area["default_items"] = area_file.get("default_items", [])
@@ -66,6 +69,8 @@ func room_data(rid: String) -> Dictionary:
 ## Weiter im zuletzt besuchten Raum, sonst im Start-Raum des Bereichs.
 func _start_room() -> String:
 	var ids: Array = room_ids()
+	if _entry != area_id and ids.has(Areas.room_of(_entry)):
+		return Areas.room_of(_entry)
 	var last: String = Game.last_room(area_id)
 	if ids.has(last):
 		return last
@@ -110,6 +115,7 @@ func _enter_room(rid: String, first: bool) -> void:
 	Garden.catch_up(room)                                # während der Abwesenheit gewachsen/verwelkt
 	AudioBus.play_ambience(String(room.data.get("ambience", "")))
 	RoomLight.apply(room, light_mod)
+	PlayMotion.refresh(room)
 
 
 ## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
@@ -256,36 +262,10 @@ func _build_hud() -> void:
 	camera.set_visible_height(room.camera_cfg.get("default_h_cm", 300.0))
 
 
-## P07-T10: Geheimnis gefunden → großer Sticker mit Stern springt kurz auf (kein Text), Ton, dann ins Album.
+## P07-T10: Geheimnis gefunden → großer Sticker springt kurz auf (SecretToast).
 func _on_secret_found(id: String) -> void:
-	if ui == null or not is_inside_tree():
-		return
-	var def: ItemDefinition = Secrets.sticker_def(Secrets.by_id(id))
-	var card := Ui.card(Ui.RADIUS, Ui.CARD)
-	card.name = "SecretToast"
-	card.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	card.set_anchors_preset(Control.PRESET_CENTER_TOP)
-	card.offset_left = -150
-	card.offset_right = 150
-	card.offset_top = 150
-	card.offset_bottom = 450
-	ui.add_child(card)
-	var star := Ui.icon("star", 90)
-	star.position = Vector2(-20, -30)
-	card.add_child(star)
-	if def != null:
-		var pic: TextureRect = ItemThumb.make(def, 240)
-		pic.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 30)
-		pic.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		card.add_child(pic)
-	AudioBus.play_sfx("harvest")
-	card.pivot_offset = Vector2(150, 150)
-	card.scale = Vector2(0.4, 0.4)
-	var tw: Tween = card.create_tween()
-	tw.tween_property(card, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-	tw.tween_interval(2.2)
-	tw.tween_property(card, "modulate:a", 0.0, 0.4)
-	tw.tween_callback(card.queue_free)
+	if ui != null and is_inside_tree():
+		SecretToast.show_for(ui, id)
 
 
 func _on_photo() -> void:
@@ -334,13 +314,21 @@ func place_from_catalog(id: String, n: int = 0) -> bool:
 ## Tippen: Tür → in einen anderen Raum (P07: „Wechsel über Türen"), sonst Zustand merken + Licht prüfen.
 func _on_item_tapped(it: ItemNode) -> void:
 	var id: String = String(it.def.id)
+	if AreaActions.on_tapped(self, it):                  # P09: Friseur, Seifenblasen, Bus
+		_on_world_changed()
+		return
 	if (id.begins_with("door_") or id.begins_with("garden_gate")) and room_ids().size() > 1 and ui != null:
 		RoomPicker.open(ui, self)
 	_on_world_changed()
 
 
+func _process(delta: float) -> void:
+	PlayMotion.tick(delta)                               # P09-T06: Schaukel, Karussell, Federwippe
+
+
 func _on_world_changed() -> void:
 	if room != null:
+		PlayMotion.refresh(room)
 		RoomLight.apply(room, light_mod)
 		Secrets.check(String(area_id), room)
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
@@ -350,6 +338,9 @@ func _on_world_changed() -> void:
 ## Ding auf den Rucksack-Knopf gezogen? → einpacken.
 func _on_item_dropped(item: ItemNode, _target) -> void:
 	if room != null and Garden.on_drop(room, item):      # P07-T07: gesät oder gegossen
+		_on_world_changed()
+		return
+	if room != null and AreaActions.on_dropped(self, item):  # P09: anziehen, rutschen, Sandform
 		_on_world_changed()
 		return
 	if room != null and NpcSpawner.item_dropped(room, item):   # P08: Kasse scannt, Ding kommt in die Tüte

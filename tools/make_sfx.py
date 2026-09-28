@@ -271,6 +271,36 @@ def clap():
     return np.concatenate([one, np.zeros(int(SR * 0.12)), one])
 
 
+def horn():
+    """Bus-Hupe: zwei freundliche Töne (Terz) mit Obertönen."""
+    parts = []
+    for f in (392.0, 330.0):
+        x = t(0.28)
+        tone = sum(np.sin(2 * np.pi * f * k * x) / k for k in (1, 2, 3, 4))
+        parts += [tone * np.minimum(1, x * 60) * np.minimum(1, (0.28 - x) * 30), np.zeros(int(SR * 0.06))]
+    return np.concatenate(parts)
+
+
+def quack():
+    """Ente: „Quak" – nasaler Ton (Rechteck-artig) mit schnell fallender Tonhöhe, zweimal."""
+    parts = []
+    for k in range(2):
+        n = int(SR * 0.16)
+        f = np.linspace(520 - k * 40, 330, n)
+        ph = 2 * np.pi * np.cumsum(f) / SR
+        tone = np.tanh(3 * np.sin(ph)) + 0.4 * np.sin(3 * ph)
+        parts += [tone * env(n, 0.004, 9), np.zeros(int(SR * 0.08))]
+    return np.concatenate(parts)
+
+
+def coo():
+    """Taube: weiches „Gurr" (tiefer Ton mit Tremolo)."""
+    x = t(0.6)
+    f = 300 + 40 * np.sin(np.pi * x / 0.6)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return np.sin(ph) * (0.6 + 0.4 * np.sin(2 * np.pi * 14 * x)) * np.minimum(1, x * 20) * np.minimum(1, (0.6 - x) * 8)
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -315,6 +345,10 @@ SOUNDS = {
     "scan_beep": lambda: norm(scan_beep(), 0.35),
     "whistle": lambda: norm(whistle(), 0.4),
     "clap": lambda: norm(clap(), 0.5),
+    # P09: Straße + Park
+    "bus_horn": lambda: norm(horn(), 0.45),
+    "duck_quack": lambda: norm(quack(), 0.5),
+    "pigeon_coo": lambda: norm(coo(), 0.4),
 }
 
 

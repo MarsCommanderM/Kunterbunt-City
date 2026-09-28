@@ -42,6 +42,7 @@ GROUPS = {  # Reihenfolge + Symbol im Katalog
     "vehicles": "cat_vehicles", "fences": "cat_fences", "camping": "cat_camping", "playground": "cat_playground",
     "bikes": "cat_bikes", "school": "cat_school", "sport": "cat_sport", "health": "cat_health",
     "workshop": "cat_workshop", "shop": "cat_shop", "hairdresser": "cat_hairdresser", "fair": "cat_fair", "winter": "cat_winter", "animals": "cat_animals",
+    "shopfit": "cat_shop", "street": "cat_street", "park": "cat_playground", "critters": "cat_animals",
 }
 
 
@@ -125,6 +126,8 @@ def _item(t: dict, iid: str, ref: str, colors: list, size: tuple, sprite: str) -
         d["container"] = t["container"]
     if t.get("tags"):
         d["tags"] = t["tags"]
+    if t.get("sfx"):
+        d["sfx"] = t["sfx"]
     return d
 
 

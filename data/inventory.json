@@ -2161,6 +2161,276 @@
      "min": 3
     }
    ]
+  },
+  "shopping": {
+   "laeden": [
+    {
+     "label": "Supermarkt-Regal",
+     "prefix": "shop_shelf_market",
+     "min": 3
+    },
+    {
+     "label": "Kühlregal",
+     "prefix": "shop_fridge_shelf",
+     "min": 2
+    },
+    {
+     "label": "Kassentheke",
+     "prefix": "shop_checkout",
+     "min": 3
+    },
+    {
+     "label": "Kasse",
+     "prefix": "shop_cash_register",
+     "min": 3
+    },
+    {
+     "label": "Einkaufswagen",
+     "prefix": "shop_cart",
+     "min": 2
+    },
+    {
+     "label": "Einkaufskorb",
+     "prefix": "shop_basket_shop",
+     "min": 2
+    },
+    {
+     "label": "Tüte",
+     "prefix": "shop_bag",
+     "min": 3
+    },
+    {
+     "label": "Obststand",
+     "prefix": "shop_produce_stand",
+     "min": 2
+    },
+    {
+     "label": "Brotregal",
+     "prefix": "shop_shelf_bread",
+     "min": 2
+    },
+    {
+     "label": "Glasvitrine",
+     "prefix": "shop_counter_glass",
+     "min": 2
+    },
+    {
+     "label": "Theke",
+     "prefix": "shop_counter",
+     "min": 4
+    },
+    {
+     "label": "Kaffeemaschine Café",
+     "prefix": "shop_coffee_machine",
+     "min": 2
+    },
+    {
+     "label": "Blumentreppe",
+     "prefix": "shop_flower_stand",
+     "min": 2
+    },
+    {
+     "label": "Blumen einzeln",
+     "prefix": "flower_",
+     "min": 10
+    },
+    {
+     "label": "Blumenstrauß",
+     "prefix": "flower_bouquet",
+     "min": 3
+    },
+    {
+     "label": "Kleiderständer",
+     "prefix": "shop_hanger_rack",
+     "min": 1
+    },
+    {
+     "label": "Schaufensterpuppe",
+     "prefix": "shop_mannequin",
+     "min": 2
+    },
+    {
+     "label": "Umkleide",
+     "prefix": "shop_fitting_room",
+     "min": 2
+    },
+    {
+     "label": "Friseurstuhl",
+     "prefix": "shop_barber_chair",
+     "min": 2
+    },
+    {
+     "label": "Haarwaschbecken",
+     "prefix": "shop_hair_sink",
+     "min": 2
+    },
+    {
+     "label": "Trockenhaube",
+     "prefix": "shop_dryer_hood",
+     "min": 2
+    },
+    {
+     "label": "Spielzeugregal",
+     "prefix": "shop_shelf_toys",
+     "min": 2
+    },
+    {
+     "label": "Aquarienregal",
+     "prefix": "shop_tank_shelf",
+     "min": 2
+    },
+    {
+     "label": "Tierbedarf-Regal",
+     "prefix": "shop_shelf_pets",
+     "min": 2
+    },
+    {
+     "label": "Eistheke",
+     "prefix": "shop_icecream_counter",
+     "min": 2
+    },
+    {
+     "label": "Elektroregal",
+     "prefix": "shop_shelf_electro",
+     "min": 2
+    },
+    {
+     "label": "Bücherregal Laden",
+     "prefix": "shop_shelf_books",
+     "min": 2
+    },
+    {
+     "label": "Zeitschriftenständer",
+     "prefix": "shop_magazine_rack",
+     "min": 1
+    },
+    {
+     "label": "Napf",
+     "prefix": "petgear_bowl",
+     "min": 3
+    },
+    {
+     "label": "Körbchen",
+     "prefix": "petgear_basket",
+     "min": 2
+    }
+   ],
+   "strasse": [
+    {
+     "label": "Bushaltestelle",
+     "prefix": "street_bus_stop",
+     "min": 2
+    },
+    {
+     "label": "Bus",
+     "prefix": "street_bus",
+     "min": 2
+    },
+    {
+     "label": "Straßenlaterne",
+     "prefix": "street_street_lamp",
+     "min": 2
+    },
+    {
+     "label": "Parkbank",
+     "prefix": "street_park_bench",
+     "min": 2
+    },
+    {
+     "label": "Mülleimer",
+     "prefix": "street_bin_street",
+     "min": 2
+    },
+    {
+     "label": "Fahrradständer",
+     "prefix": "street_bike_stand",
+     "min": 1
+    },
+    {
+     "label": "Litfaßsäule",
+     "prefix": "street_advert_column",
+     "min": 1
+    },
+    {
+     "label": "Markise",
+     "prefix": "street_awning",
+     "min": 4
+    },
+    {
+     "label": "Laden-Schild",
+     "prefix": "street_sign_",
+     "min": 9
+    },
+    {
+     "label": "Eiswagen",
+     "prefix": "street_icecream_cart",
+     "min": 2
+    }
+   ]
+  },
+  "playground": {
+   "spielplatz": [
+    {
+     "label": "Rutsche mit Turm",
+     "prefix": "play_tower_slide",
+     "min": 2
+    },
+    {
+     "label": "Doppelschaukel",
+     "prefix": "play_swing_double",
+     "min": 2
+    },
+    {
+     "label": "Karussell",
+     "prefix": "play_roundabout",
+     "min": 2
+    },
+    {
+     "label": "Federwippe",
+     "prefix": "play_spring_rider",
+     "min": 3
+    },
+    {
+     "label": "Klettergerüst",
+     "prefix": "play_climber",
+     "min": 2
+    },
+    {
+     "label": "Wippe",
+     "prefix": "play_seesaw",
+     "min": 1
+    },
+    {
+     "label": "Sandförmchen",
+     "prefix": "play_sand_mold",
+     "min": 3
+    },
+    {
+     "label": "Sandfiguren",
+     "prefix": "play_sand_shape",
+     "min": 3
+    },
+    {
+     "label": "Seifenblasen",
+     "prefix": "play_bubble_wand",
+     "min": 2
+    },
+    {
+     "label": "Ente",
+     "prefix": "wild_duck",
+     "min": 3
+    },
+    {
+     "label": "Taube",
+     "prefix": "wild_pigeon",
+     "min": 1
+    },
+    {
+     "label": "Eichhörnchen",
+     "prefix": "wild_squirrel",
+     "min": 1
+    }
+   ]
   }
  }
 }

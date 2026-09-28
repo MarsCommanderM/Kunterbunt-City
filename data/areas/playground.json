@@ -1,0 +1,339 @@
+{
+ "id": "playground",
+ "name": "Spielplatz & Park",
+ "name_key": "AREA_PLAYGROUND",
+ "_doc": "P09: Spielplatz (Schaukel, Rutsche, Karussell, Federwippe, Klettergerüst, Sandkasten), Teich mit Enten, Wiese mit Eiswagen. Erzeugt von tools/make_areas.py – dort ändern.",
+ "spawn": {
+  "room": "playground",
+  "x_cm": 1000,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_park",
+ "rooms": [
+  {
+   "id": "playground",
+   "label": "Spielplatz",
+   "icon": "play_tower_slide_coral",
+   "width_cm": 2400,
+   "height_cm": 560.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/playground/playground.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 7,
+    "decor": {
+     "floor": "grass",
+     "floor_cols": [
+      "#8cc47a",
+      "#7fb36e",
+      "#5f8f4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "play_tower_slide_coral",
+     "x_cm": 420,
+     "y_cm": 10
+    },
+    {
+     "id": "play_swing_double_sky",
+     "x_cm": 880,
+     "y_cm": 12
+    },
+    {
+     "id": "play_roundabout_coral",
+     "x_cm": 1260,
+     "y_cm": 40
+    },
+    {
+     "id": "play_spring_rider_butter",
+     "x_cm": 1480,
+     "y_cm": 50
+    },
+    {
+     "id": "play_spring_rider_mint",
+     "x_cm": 1580,
+     "y_cm": 58
+    },
+    {
+     "id": "play_climber_butter",
+     "x_cm": 1900,
+     "y_cm": 8
+    },
+    {
+     "id": "garden_sandbox_big_butter",
+     "x_cm": 1250,
+     "y_cm": 62
+    },
+    {
+     "id": "play_sand_mold_coral",
+     "x_cm": 1180,
+     "y_cm": 66
+    },
+    {
+     "id": "play_sand_mold_sky",
+     "x_cm": 1320,
+     "y_cm": 66
+    },
+    {
+     "id": "toy_bucket_spade_butter",
+     "x_cm": 1270,
+     "y_cm": 68
+    },
+    {
+     "id": "play_seesaw_coral",
+     "x_cm": 2180,
+     "y_cm": 45
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 700,
+     "y_cm": 30
+    },
+    {
+     "id": "street_bin_street_green",
+     "x_cm": 1060,
+     "y_cm": 40
+    },
+    {
+     "id": "play_bubble_wand_sky",
+     "x_cm": 1500,
+     "y_cm": 66
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 90,
+     "y_cm": 4
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 2330,
+     "y_cm": 2
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "pond",
+   "label": "Teich",
+   "icon": "wild_duck_green",
+   "width_cm": 2000,
+   "height_cm": 560.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/playground/pond.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 8,
+    "decor": {
+     "floor": "grass",
+     "floor_cols": [
+      "#a6cf7c",
+      "#94c06c",
+      "#6f9a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "garden_pond_l_stone",
+     "x_cm": 700,
+     "y_cm": 40
+    },
+    {
+     "id": "garden_pond_m_stone",
+     "x_cm": 1300,
+     "y_cm": 50
+    },
+    {
+     "id": "wild_duck_green",
+     "x_cm": 640,
+     "y_cm": 44
+    },
+    {
+     "id": "wild_duck_sand",
+     "x_cm": 760,
+     "y_cm": 46
+    },
+    {
+     "id": "wild_duck_white",
+     "x_cm": 1300,
+     "y_cm": 54
+    },
+    {
+     "id": "wild_duck_green",
+     "x_cm": 1360,
+     "y_cm": 52
+    },
+    {
+     "id": "street_park_bench_oak",
+     "x_cm": 1000,
+     "y_cm": 20
+    },
+    {
+     "id": "wild_squirrel_rust",
+     "x_cm": 1650,
+     "y_cm": 30
+    },
+    {
+     "id": "wild_pigeon_grey",
+     "x_cm": 980,
+     "y_cm": 60
+    },
+    {
+     "id": "camp_bush_leaf",
+     "x_cm": 250,
+     "y_cm": 10
+    },
+    {
+     "id": "camp_bush_leaf_light",
+     "x_cm": 1800,
+     "y_cm": 12
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 80,
+     "y_cm": 4
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 420,
+     "y_cm": 2
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 1550,
+     "y_cm": 4
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 1920,
+     "y_cm": 2
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "meadow",
+   "label": "Wiese",
+   "icon": "garden_picnic_blanket_coral",
+   "width_cm": 2000,
+   "height_cm": 560.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/playground/meadow.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 9,
+    "decor": {
+     "floor": "grass",
+     "floor_cols": [
+      "#8cc47a",
+      "#7fb36e",
+      "#5f8f4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "street_icecream_cart_rose",
+     "x_cm": 1500,
+     "y_cm": 20
+    },
+    {
+     "id": "garden_picnic_blanket_coral",
+     "x_cm": 500,
+     "y_cm": 50
+    },
+    {
+     "id": "garden_picnic_basket_oak",
+     "x_cm": 560,
+     "y_cm": 52
+    },
+    {
+     "id": "food_apple_red",
+     "x_cm": 460,
+     "y_cm": 56
+    },
+    {
+     "id": "toy_kite_coral",
+     "x_cm": 800,
+     "y_cm": 60
+    },
+    {
+     "id": "toy_ball_sky",
+     "x_cm": 1000,
+     "y_cm": 62
+    },
+    {
+     "id": "garden_picnic_blanket_sky",
+     "x_cm": 1100,
+     "y_cm": 40
+    },
+    {
+     "id": "street_park_bench_oak",
+     "x_cm": 1800,
+     "y_cm": 25
+    },
+    {
+     "id": "street_bin_street_green",
+     "x_cm": 1920,
+     "y_cm": 40
+    },
+    {
+     "id": "petgear_ball_coral",
+     "x_cm": 1250,
+     "y_cm": 64
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 120,
+     "y_cm": 4
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 320,
+     "y_cm": 2
+    },
+    {
+     "id": "camp_tree_leaf_light",
+     "x_cm": 1680,
+     "y_cm": 4
+    },
+    {
+     "id": "camp_tree_leaf",
+     "x_cm": 1950,
+     "y_cm": 2
+    }
+   ],
+   "ambience": "amb_garden"
+  }
+ ]
+}

@@ -8578,6 +8578,513 @@
    "hold": "one_hand",
    "placement": "floor",
    "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_market",
+   "category": "furniture",
+   "h_cm": 171.8,
+   "w_cm": 121.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_toys",
+   "category": "furniture",
+   "h_cm": 171.8,
+   "w_cm": 131.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_electro",
+   "category": "furniture",
+   "h_cm": 171.8,
+   "w_cm": 131.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_pets",
+   "category": "furniture",
+   "h_cm": 161.9,
+   "w_cm": 121.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_bread",
+   "category": "furniture",
+   "h_cm": 171.8,
+   "w_cm": 131.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_shelf_books",
+   "category": "furniture",
+   "h_cm": 181.8,
+   "w_cm": 111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_fridge_shelf",
+   "category": "furniture",
+   "h_cm": 196.8,
+   "w_cm": 131.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_checkout",
+   "category": "furniture",
+   "h_cm": 91.6,
+   "w_cm": 171.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 90.0
+  },
+  {
+   "id": "c_shop_counter",
+   "category": "furniture",
+   "h_cm": 96.9,
+   "w_cm": 155.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 95.0
+  },
+  {
+   "id": "c_shop_counter_glass",
+   "category": "furniture",
+   "h_cm": 111.9,
+   "w_cm": 155.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 110.0
+  },
+  {
+   "id": "c_shop_produce_stand",
+   "category": "furniture",
+   "h_cm": 111.5,
+   "w_cm": 151.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_flower_stand",
+   "category": "furniture",
+   "h_cm": 98.0,
+   "w_cm": 131.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_icecream_counter",
+   "category": "furniture",
+   "h_cm": 117.0,
+   "w_cm": 161.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 80.0
+  },
+  {
+   "id": "c_shop_fitting_room",
+   "category": "furniture",
+   "h_cm": 216.5,
+   "w_cm": 115.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_hair_sink",
+   "category": "furniture",
+   "h_cm": 103.2,
+   "w_cm": 111.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 52
+  },
+  {
+   "id": "c_shop_dryer_hood",
+   "category": "furniture",
+   "h_cm": 152.1,
+   "w_cm": 64.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_magazine_rack",
+   "category": "furniture",
+   "h_cm": 151.5,
+   "w_cm": 55.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_tank_shelf",
+   "category": "furniture",
+   "h_cm": 161.9,
+   "w_cm": 111.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_shop_coffee_machine",
+   "category": "shop",
+   "h_cm": 46.8,
+   "w_cm": 56.9,
+   "hold": "two_hands",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_bus_stop",
+   "category": "item",
+   "h_cm": 286.8,
+   "w_cm": 282.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_street_street_lamp",
+   "category": "item",
+   "h_cm": 379.1,
+   "w_cm": 37.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_park_bench",
+   "category": "item",
+   "h_cm": 83.8,
+   "w_cm": 161.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_street_bin_street",
+   "category": "item",
+   "h_cm": 101.9,
+   "w_cm": 51.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_bike_stand",
+   "category": "item",
+   "h_cm": 83.9,
+   "w_cm": 201.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_advert_column",
+   "category": "item",
+   "h_cm": 301.6,
+   "w_cm": 117.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_icecream_cart",
+   "category": "item",
+   "h_cm": 201.8,
+   "w_cm": 179.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_bus",
+   "category": "item",
+   "h_cm": 266.8,
+   "w_cm": 501.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_awning",
+   "category": "item",
+   "h_cm": 91.5,
+   "w_cm": 245.8,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_climber",
+   "category": "item",
+   "h_cm": 261.9,
+   "w_cm": 299.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 115.0
+  },
+  {
+   "id": "c_play_roundabout",
+   "category": "item",
+   "h_cm": 91.8,
+   "w_cm": 181.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 30
+  },
+  {
+   "id": "c_play_spring_rider",
+   "category": "item",
+   "h_cm": 92.9,
+   "w_cm": 83.1,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 60
+  },
+  {
+   "id": "c_play_swing_double",
+   "category": "item",
+   "h_cm": 236.6,
+   "w_cm": 306.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 40
+  },
+  {
+   "id": "c_play_tower_slide",
+   "category": "item",
+   "h_cm": 241.9,
+   "w_cm": 362.0,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 120.0
+  },
+  {
+   "id": "c_play_sand_mold",
+   "category": "toy",
+   "h_cm": 13.9,
+   "w_cm": 15.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_sand_shape_star",
+   "category": "toy",
+   "h_cm": 12.8,
+   "w_cm": 17.0,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_sand_shape_fish",
+   "category": "toy",
+   "h_cm": 13.9,
+   "w_cm": 17.9,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_sand_shape_castle",
+   "category": "toy",
+   "h_cm": 13.9,
+   "w_cm": 19.8,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_play_bubble_wand",
+   "category": "toy",
+   "h_cm": 19.8,
+   "w_cm": 12.6,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_wild_duck",
+   "category": "pet",
+   "h_cm": 29.1,
+   "w_cm": 38.8,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_wild_pigeon",
+   "category": "pet",
+   "h_cm": 27.4,
+   "w_cm": 31.6,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_wild_squirrel",
+   "category": "pet",
+   "h_cm": 33.9,
+   "w_cm": 30.4,
+   "hold": "two_hands",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_flower_rose",
+   "category": "item",
+   "h_cm": 43.9,
+   "w_cm": 10.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_flower_tulip",
+   "category": "item",
+   "h_cm": 44.1,
+   "w_cm": 10.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_flower_sunflower",
+   "category": "item",
+   "h_cm": 59.9,
+   "w_cm": 16.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_flower_gerbera",
+   "category": "item",
+   "h_cm": 43.9,
+   "w_cm": 10.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_flower_bouquet",
+   "category": "item",
+   "h_cm": 52.8,
+   "w_cm": 35.8,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_cart",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_bread",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_flower",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_shirt",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_scissors",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_teddy",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_paw",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_icecream",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_street_sign_note",
+   "category": "item",
+   "h_cm": 61.9,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
   }
  ]
 }

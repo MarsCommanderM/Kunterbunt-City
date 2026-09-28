@@ -46,5 +46,7 @@
   }
  },
  "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz",
- "shop": true
+ "shop": true,
+ "watch": "shop_cash_register",
+ "binds": "flower_bouquet_rose"
 }

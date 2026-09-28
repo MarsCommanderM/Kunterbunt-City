@@ -5,8 +5,8 @@
 | Feld | Wert |
 |---|---|
 | Aktuelle Phase | **09 · MVP: Einkaufsstraße + Spielplatz** (08 fertig) |
-| Nächste Task | P09-T01 Einkaufsstraße (Läden, Kassen-Logik mit Kassierer/in aus P08) |
-| Letzter grüner check.sh | 2026-09-27 (P08) |
+| Nächste Task | P09-T09 Release-Build 0.1.0 (Web, Android, Desktop) |
+| Letzter grüner check.sh | 2026-09-28 (P09 T01–T08) |
 | Version | 0.0.6 |
 
 ## Phasen
@@ -22,7 +22,7 @@
 | 04b Figuren-Neubau | ✅ fertig (T01–T12) | Log 2026-09-27 |
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
-| 09 MVP v0.1 | ⏳ | – |
+| 09 MVP v0.1 | 🔨 T01–T08 fertig, Release offen | Log 2026-09-28 |
 | 10a–10h Content | ⏳ | – |
 | 11 Politur 1.0 | ⏳ | – |
 
@@ -78,6 +78,43 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 09 · Einkaufsstraße + Spielplatz & Park (T01–T08) 🔨
+- **Einkaufsstraße** (`data/areas/shopping.json`, erzeugt von `tools/make_areas.py`): Straße 37 m mit Häuserzeile
+  (neu `details.town`: Schaufenster, Eingangsnischen, Fenster mit Blumenkästen), Gehweg-Boden „pavement“,
+  Bushaltestelle, Laternen, Bänke, Brunnen, Litfaßsäule, Eiswagen, Tauben · **9 Läden** (Supermarkt, Bäckerei & Café,
+  Blumenladen, Modeladen, Friseur, Spielzeugladen, Tierhandlung, Eisdiele, Musikladen) + **Gewächshaus**. 166 Start-Items.
+- **Spielplatz & Park** (`data/areas/playground.json`): Spielplatz (Turmrutsche, Doppelschaukel, Karussell,
+  2 Federwippen, Klettergerüst, Wippe, Sandkasten mit Förmchen, Seifenblasen) · Teich mit 4 Enten, Tauben,
+  Eichhörnchen · Wiese mit Picknick und Eiswagen. 45 Start-Items.
+- Stadtkarte: Einkaufsstraße, Spielplatz **und Blumenladen** spielbar (Blumenladen-Knopf → Einkaufsstraße, Raum
+  „Blumenladen“, gleicher Spielstand: `Areas.canonical`, `same_as`).
+- **175 neue Vorlagen-Varianten**: Ladeneinrichtung (`tools/items/shopfit.py`: 6 Regal-Arten, Kühlregal, Kassentheke
+  mit Band, Theke, Glasvitrine, Obststand, Blumentreppe, Eistheke, Umkleide auf/zu, Haarwaschbecken, Trockenhaube,
+  Zeitschriftenständer, Aquarienregal, Kaffeemaschine), Straße/Park (`tools/items/park.py`: Bushaltestelle, Bus,
+  Laterne an/aus, Parkbank, Mülleimer, Fahrradständer, Litfaßsäule, Markise, 9 Laden-Schilder mit Symbol statt Text,
+  Eiswagen, Spielgeräte, Sandförmchen + Sandfiguren, Seifenblasen), Wildtiere (Ente, Taube, Eichhörnchen), Blumen
+  (Rose, Tulpe, Sonnenblume, Gerbera) + Strauß.
+- **Spielen** (`src/areas/area_actions.gd`, `src/items/play_motion.gd`):
+  - Modeladen: Kleidungsstück in die Hand → Figur zieht es an (Farbe vom Item, eigene Figur wird gespeichert).
+  - Friseur: Figur in den Stuhl, Stuhl antippen → neue Frisur, Friseur/in schneidet.
+  - Blumenladen: 3 Blumen auf die Theke → Floristin bindet einen Strauß; Gewächshaus mit Beeten (Garten-System).
+  - Kasse in jedem Laden (P08), Rutsche (am Turm absetzen → rutscht), Schaukel/Karussell/Federwippe bewegen sich,
+    Förmchen auf den Sandkasten → Sandfigur, Seifenblasen, Bushaltestelle antippen → Bus kommt, hupt, zurück zur Karte.
+  - Wildtiere: bleiben in ihrem Revier (Enten auf dem Teich), schnattern/gurren, flüchten vor Figuren.
+- 17 feste Figuren (7 Kassierer/innen, Regalauffüller, Floristin, Friseur/in, Eiswagen, Passanten, Parkwächter,
+  Oma am Teich, Jogger/in) – 3 neue Rollen (`hairdresser`, `duck_feeder`, `jogger`).
+- 12 neue Geheimnisse/Sticker (`data/secrets/shopping.json`, `playground.json`), Musik `music_town` + `music_park`,
+  Sounds `bus_horn`, `duck_quack`, `pigeon_coo`, Pflichtliste `data/inventory.json` um beide Bereiche erweitert.
+- **Fehler gefunden (Beweislauf):** Beim Wiederherstellen eines Raums gingen Dinge verloren, die AUF einem anderen
+  lagen, wenn ihre ID alphabetisch vor der des Wirts kam (Kasse `shop_cash_register` auf `shop_checkout`).
+  `RoomSnapshot.apply` stellt jetzt erst Boden/Wand, dann in Durchgängen die Gäste auf; bei gleichen Wirten zählt
+  die gespeicherte Stelle (`on_x`, rückwärtskompatibel). Test `test_items_on_hosts_survive_save_and_load_in_any_order`.
+- Speicher: 37-m-Himmel am Stück brauchte > 8 GB → Himmel in 6-m-Streifen (`details.sky`).
+- Tests: GUT `test_p09` (11) · check.sh ✅ – Maßstab (2698 Items) · pytest 133/133 · GUT 328/328.
+- Beweis: `tools/godot/p09_areas_runner.gd` → `docs/tests/P09/*` (alle 14 Räume + Anziehen, Friseur, Strauß,
+  Kasse, Schaukel, Enten) + `p09_areas.json`.
+- Offen P09: T09 Release-Builds (Web/Android/Desktop 0.1.0), T10 itch.io-Seite (👤 veröffentlicht).
+
 ### 2026-09-27 · Phase 08 · NPC- & Tier-KI ✅
 - Erledigt: P08-T01…T10 (+ P07-T08 Nachbarin am Zaun, Briefträger/in im Garten).
   - `data/npc_roles/*.json`: **18 Rollen** (15 aus der Phase + Nachbarin, Briefträger/in, Passant/in) mit Verhalten

@@ -26,6 +26,7 @@ const FLOOR_PRESETS: Dictionary = {
 	"concrete": [["#b8b8b8", "#a8a8a8", "#7a7a7a"], ["#c9c0b0", "#b8ae9c", "#8a8070"]],
 	"grass": [["#8cc47a", "#7fb36e", "#5f8f4a"], ["#a6cf7c", "#94c06c", "#6f9a4a"]],
 	"sand": [["#f1dca6", "#e6cc90", "#c9a86a"]],
+	"pavement": [["#c9c6c0", "#b9b5ae", "#8a8780"], ["#d8cfc2", "#c9bfb0", "#9a8f80"]],
 }
 
 

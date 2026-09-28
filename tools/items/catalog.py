@@ -489,4 +489,4 @@ T(id="home_radiator", fn=BU.radiator, w=100, h=60, group="walldeco", category="f
   variants=[(n, cols(n, "grey", "metal")) for n in ["white", "cream", "grey"]])
 
 # P07-Inventar (Pflichtliste data/inventory.json) – eigene Datei, damit keine Datei über 400 Zeilen wächst
-from . import catalog_food, catalog_home, catalog_living, catalog_more  # noqa: E402,F401
+from . import catalog_food, catalog_home, catalog_living, catalog_more, catalog_town  # noqa: E402,F401
