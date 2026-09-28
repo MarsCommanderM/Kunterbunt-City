@@ -1,0 +1,56 @@
+{
+ "id": "postman",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Briefträger/in",
+ "behavior": "deliver",
+ "work": [
+  "deliver"
+ ],
+ "target": "garden_mailbox",
+ "deliver": "deco_magazines_coral",
+ "deliver_every_s": 90,
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "polo",
+   "bottom": "shorts",
+   "hair": "short",
+   "shoes": "sneaker",
+   "accessory": "cap"
+  },
+  "colors": {
+   "top": [
+    "#f4c95d",
+    "#2e3140",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#5a463a",
+    "#5a463a",
+    "#5a463a"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#e2ab80"
+   ],
+   "accessory": [
+    "#f4c95d",
+    "#2e3140",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

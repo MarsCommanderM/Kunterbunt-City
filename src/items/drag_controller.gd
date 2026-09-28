@@ -61,6 +61,13 @@ func attach_room(r: Room) -> void:
 		room.add_child(drag_layer)
 
 
+## P07: Raumwechsel – laufende Züge und Rückgängig-Schritte gehören zum alten Raum.
+func reset_for_room(r: Room) -> void:
+	_drags.clear()
+	undo.clear()
+	attach_room(r)
+
+
 func active_count() -> int:
 	return _drags.size()
 
@@ -127,7 +134,7 @@ func pick_item(world: Vector2) -> ItemNode:
 	var best: ItemNode = null
 	var best_key: Vector4 = Vector4(-INF, -INF, -INF, -INF)
 	for it: ItemNode in Placement.all_items(room):
-		if not it.is_visible_in_tree() or not it.hit_test(world, min_world):
+		if not it.hit_test(world, min_world) or not it.is_visible_in_tree():   # billiger Rechteck-Test zuerst
 			continue
 		# direkt getroffen schlägt „nur über die 48-dp-Tippfläche“ (sonst wäre im Tellerstapel nur der oberste greifbar)
 		var dk: Vector3 = _draw_key(it)
@@ -169,6 +176,7 @@ func _draw_key(it: ItemNode) -> Vector3:
 		n = n.get_parent()
 		depth += 1
 	var y: float = (n as Node2D).position.y if n is Node2D else 0.0
+	y += float((n as CanvasItem).z_index) * 100000.0 if n is CanvasItem else 0.0   # Wand/Teppich liegen unten
 	var r: Rect2 = it.global_rect()
 	return Vector3(y, depth, -r.size.x * r.size.y)
 
@@ -214,6 +222,7 @@ func _drop(d: Drag) -> void:
 	var pivot: Vector2 = d.pointer_world + d.grab_offset
 	var t: Placement.Target = Placement.find_target(room, it, pivot, d.pointer_world)
 	it.on_drag_end()
+	it.set_meta("drop_velocity", d.velocity)          # P10f: Schwung (Eis-Gleiten)
 	it.reparent(t.parent, true)
 	var parent_scale: float = (t.parent as Node2D).global_scale.y if t.parent is Node2D else 1.0
 	var final_local: Vector2 = (t.parent as Node2D).to_local(t.global_pos)

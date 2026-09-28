@@ -1,0 +1,470 @@
+{
+ "area": "catalog",
+ "room": "walldeco",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "poster_rocket_navy",
+   "scale_ref": "c_poster_rocket",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_rocket.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_rocket_sky",
+   "scale_ref": "c_poster_rocket",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_rocket.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_rainbow_sky",
+   "scale_ref": "c_poster_rainbow",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_rainbow.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_rainbow_cream",
+   "scale_ref": "c_poster_rainbow",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_rainbow.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_dino_butter",
+   "scale_ref": "c_poster_dino",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_dino.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_dino_mint",
+   "scale_ref": "c_poster_dino",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_dino.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#5f8f6a",
+    "#d4a86e"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_sun_sky",
+   "scale_ref": "c_poster_sun",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_sun.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f4c95d",
+    "#5f8f6a"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "poster_sun_rose",
+   "scale_ref": "c_poster_sun",
+   "size_cm": [
+    51.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/poster_sun.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f4c95d",
+    "#5f8f6a"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "wall_sconce_cream",
+   "scale_ref": "c_wall_sconce",
+   "size_cm": [
+    41.7,
+    46.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wall_sconce.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/wall_sconce__on.png"
+   }
+  },
+  {
+   "id": "wall_sconce_sky",
+   "scale_ref": "c_wall_sconce",
+   "size_cm": [
+    41.7,
+    46.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wall_sconce.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/wall_sconce__on.png"
+   }
+  },
+  {
+   "id": "wall_sconce_mint",
+   "scale_ref": "c_wall_sconce",
+   "size_cm": [
+    41.7,
+    46.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wall_sconce.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/wall_sconce__on.png"
+   }
+  },
+  {
+   "id": "wall_sconce_coral",
+   "scale_ref": "c_wall_sconce",
+   "size_cm": [
+    41.7,
+    46.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wall_sconce.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/wall_sconce__on.png"
+   }
+  },
+  {
+   "id": "home_radiator_white",
+   "scale_ref": "c_home_radiator",
+   "size_cm": [
+    104.5,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_radiator.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "home_radiator_cream",
+   "scale_ref": "c_home_radiator",
+   "size_cm": [
+    104.5,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_radiator.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "home_radiator_grey",
+   "scale_ref": "c_home_radiator",
+   "size_cm": [
+    104.5,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_radiator.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "walldeco"
+  },
+  {
+   "id": "home_light_switch_white",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
+  },
+  {
+   "id": "home_light_switch_cream",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
+  },
+  {
+   "id": "home_light_switch_black",
+   "scale_ref": "c_home_light_switch",
+   "size_cm": [
+    10.9,
+    14.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_light_switch.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "walldeco",
+   "states": [
+    "on",
+    "off"
+   ],
+   "state_sprites": {
+    "off": "res://assets/sprites/items/home_light_switch__off.png"
+   }
+  }
+ ]
+}

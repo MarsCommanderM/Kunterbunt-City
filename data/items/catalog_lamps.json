@@ -1,0 +1,647 @@
+{
+ "area": "catalog",
+ "room": "lamps",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "deco_lamp_floor_butter",
+   "scale_ref": "c_deco_lamp_floor",
+   "size_cm": [
+    56.8,
+    162.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_floor__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_floor_cream",
+   "scale_ref": "c_deco_lamp_floor",
+   "size_cm": [
+    56.8,
+    162.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_floor__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_floor_rose",
+   "scale_ref": "c_deco_lamp_floor",
+   "size_cm": [
+    56.8,
+    162.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_floor__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_floor_sky",
+   "scale_ref": "c_deco_lamp_floor",
+   "size_cm": [
+    56.8,
+    162.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_floor__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_floor_mint",
+   "scale_ref": "c_deco_lamp_floor",
+   "size_cm": [
+    56.8,
+    162.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_floor__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_table_butter",
+   "scale_ref": "c_deco_lamp_table",
+   "size_cm": [
+    39.8,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_table__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_table_cream",
+   "scale_ref": "c_deco_lamp_table",
+   "size_cm": [
+    39.8,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_table__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_table_rose",
+   "scale_ref": "c_deco_lamp_table",
+   "size_cm": [
+    39.8,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_table__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_table_sky",
+   "scale_ref": "c_deco_lamp_table",
+   "size_cm": [
+    39.8,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_table__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_table_mint",
+   "scale_ref": "c_deco_lamp_table",
+   "size_cm": [
+    39.8,
+    46.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_table.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_table__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_arc_butter",
+   "scale_ref": "c_deco_lamp_arc",
+   "size_cm": [
+    78.7,
+    178.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_arc.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_arc__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_arc_cream",
+   "scale_ref": "c_deco_lamp_arc",
+   "size_cm": [
+    78.7,
+    178.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_arc.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_arc__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_arc_rose",
+   "scale_ref": "c_deco_lamp_arc",
+   "size_cm": [
+    78.7,
+    178.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_arc.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_arc__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_arc_sky",
+   "scale_ref": "c_deco_lamp_arc",
+   "size_cm": [
+    78.7,
+    178.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_arc.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_arc__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_arc_mint",
+   "scale_ref": "c_deco_lamp_arc",
+   "size_cm": [
+    78.7,
+    178.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_arc.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "lamps",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_arc__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_desk_butter",
+   "scale_ref": "c_deco_lamp_desk",
+   "size_cm": [
+    24.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_desk__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_desk_cream",
+   "scale_ref": "c_deco_lamp_desk",
+   "size_cm": [
+    24.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_desk__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_desk_rose",
+   "scale_ref": "c_deco_lamp_desk",
+   "size_cm": [
+    24.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_desk__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_desk_sky",
+   "scale_ref": "c_deco_lamp_desk",
+   "size_cm": [
+    24.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_desk__on.png"
+   }
+  },
+  {
+   "id": "deco_lamp_desk_mint",
+   "scale_ref": "c_deco_lamp_desk",
+   "size_cm": [
+    24.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_lamp_desk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "lamps",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/deco_lamp_desk__on.png"
+   }
+  }
+ ]
+}

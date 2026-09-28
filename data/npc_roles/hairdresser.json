@@ -1,0 +1,52 @@
+{
+ "id": "hairdresser",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Friseur/in",
+ "behavior": "station",
+ "work": [
+  "cut",
+  "look",
+  "wave"
+ ],
+ "shop": true,
+ "watch": "shop_cash_register",
+ "look": {
+  "skin": "#c68a5e",
+  "parts": {
+   "top": "tee",
+   "bottom": "leggings",
+   "hair": "space_buns",
+   "shoes": "sneaker",
+   "accessory": "none"
+  },
+  "colors": {
+   "top": [
+    "#2e3140",
+    "#f5f3ee",
+    "#c68a5e"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#c68a5e"
+   ],
+   "hair": [
+    "#7a5ea8",
+    "#7a5ea8",
+    "#7a5ea8"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#c68a5e"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

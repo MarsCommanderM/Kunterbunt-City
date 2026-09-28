@@ -14,6 +14,7 @@ const ARM_TWO: float = 0.58
 static var animate_poses: bool = true   ## false: Posen springen (Tests, Screenshots, Messungen)
 
 const ARM_CARRIED: float = 1.05     ## Arme hoch, wenn die Figur getragen wird („Wiii!“)
+const LIE_TILT_MAX: float = 0.45    ## max. Neigung beim Liegen (≈ 26°, Kopf wie auf einem dicken Kissen)
 
 var template_id: String
 var t: Dictionary
@@ -30,6 +31,7 @@ var slot_front: Node2D
 var slot_back: Node2D
 var slot_two: Node2D
 var head_pivot: Node2D
+var head_back: Node2D               ## P04b: Haare hinten liegen HINTER dem Körper, folgen aber dem Kopf
 var hands_top: Node2D
 var _layers: Dictionary = {}        ## Name → Sprite2D
 var _pose_offset: Vector2 = Vector2.ZERO
@@ -60,6 +62,9 @@ func _build_visual() -> void:
 	parts.name = "Parts"
 	swing.add_child(parts)
 	var top: float = float(t["hair_top"])
+	head_back = Node2D.new()
+	head_back.name = "HeadBack"
+	parts.add_child(head_back)
 	arm_back = _arm("ArmBack", -1.0)
 	parts.add_child(arm_back)
 	_layer(parts, "Legs", CharacterLook.part_for(template_id, look, "Legs"), Vector2.ZERO)
@@ -72,7 +77,8 @@ func _build_visual() -> void:
 	var cy: float = -float(t["head"]["cy"])
 	head_pivot.position = Vector2(0, cy)
 	var hy: float = -top - cy                  ## Haar sitzt oben, Kopf in der Mitte
-	_layer(head_pivot, "HairBack", CharacterLook.part_for(template_id, look, "HairBack"), Vector2(0, hy))
+	head_back.position = head_pivot.position
+	_layer(head_back, "HairBack", CharacterLook.part_for(template_id, look, "HairBack"), Vector2(0, hy))
 	_layer(head_pivot, "Head", "head", Vector2.ZERO)
 	_layer(head_pivot, "Eyes", CharacterLook.part_for(template_id, look, "Eyes"), Vector2.ZERO)
 	_layer(head_pivot, "Mouth", CharacterLook.part_for(template_id, look, "Mouth"), Vector2.ZERO)
@@ -102,7 +108,7 @@ func _layer(parent: Node, lname: String, part: String, pos: Vector2, tint: bool 
 	_set_part(sp, part)
 	sp.position = pos
 	if tint:
-		CharacterLook.apply(sp, CharacterLook.colors_for(look, lname))
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, lname), CharacterLook.ink_for(look, lname))
 	parent.add_child(sp)
 	_layers[lname] = sp
 	return sp
@@ -297,17 +303,31 @@ func _set_body_pose(bp: String) -> void:
 		_layers["Shoes"].position = Vector2(0, -hip + drop - 0.8)
 	match bp:
 		"lie":
-			# Um die Hüfte gedreht: Körper waagerecht auf der Matratze, Kopf bleibt aufrecht
-			# und wird um die halbe Kopfdicke angehoben (liegt auf dem Kissen, nicht im Bett).
-			thick = maxf(float(t["torso"]["w_top"]), float(t["torso"]["w_bot"])) * 0.5
-			parts.rotation = -PI * 0.5
-			_pose_offset = Vector2(hip, -hip - thick)
-			head_pivot.rotation = PI * 0.5
-			head_pivot.position.x = maxf(0.0, float(t["head"]["h"]) * 0.5 - thick)
-			# Beide Arme liegen OBEN auf dem Körper (sonst hängt einer unterm Rücken):
-			# nach der Drehung wird aus dem seitlichen Schulter-Versatz ein Höhenversatz.
+			# P04b: Die ganze Figur liegt – auch der große Kopf (auf dem Kissen, Gesicht zur Seite).
+			# Aufrecht bleibende Köpfe ließen lange Haare durch das Bett hängen.
+			head_pivot.rotation = 0.0
+			head_pivot.position.x = 0.0
+			head_back.rotation = 0.0
+			head_back.position = head_pivot.position
+			# Beide Arme liegen OBEN auf dem Körper (sonst hängt einer unterm Rücken)
 			arm_back.position.x = float(t["shoulder"]["x"])
 			arm_front.position.x = float(t["shoulder"]["x"]) * 0.55
+			# Der große Kopf ist dicker als Rumpf und Beine: waagerecht läge nur der Kopf auf und der Körper
+			# schwebte. Darum leicht geneigt wie auf einem Kissen – Kopf UND Füße liegen auf (max. 26°).
+			parts.rotation = 0.0
+			var legs: Array = [_layers["Legs"], _layers["Shoes"]]
+			var solid: Array = _layers.values().filter(func(sp: Sprite2D) -> bool: return not String(sp.name).begins_with("Hair"))
+			var rot := Transform2D(-PI * 0.5, Vector2.ZERO)
+			var tilt: float = 0.0
+			while tilt < LIE_TILT_MAX:      # kleinste Neigung, bei der die Beine so tief liegen wie der Kopf
+				rot = Transform2D(-PI * 0.5 + tilt, Vector2.ZERO)
+				if LayerGeometry.lowest(parts, legs, rot) >= LayerGeometry.lowest(parts, solid, rot) - 1.0:
+					break
+				tilt = minf(tilt + 0.02, LIE_TILT_MAX)
+			rot = Transform2D(-PI * 0.5 + tilt, Vector2.ZERO)
+			thick = LayerGeometry.lowest(parts, solid, rot)     # Haare sind weich: sie liegen aufs Kissen
+			parts.rotation = -PI * 0.5 + tilt
+			_pose_offset = Vector2(-(rot * Vector2(0, -hip)).x, -hip - thick)
 		_:
 			parts.rotation = 0.0
 			_pose_offset = Vector2.ZERO
@@ -315,6 +335,8 @@ func _set_body_pose(bp: String) -> void:
 			head_pivot.position.x = 0.0
 			arm_back.position.x = -float(t["shoulder"]["x"])
 			arm_front.position.x = float(t["shoulder"]["x"])
+	head_back.position = head_pivot.position
+	head_back.rotation = head_pivot.rotation
 	parts.position = _pose_offset - swing.position
 
 
@@ -363,7 +385,7 @@ func apply_look(new_look: Dictionary) -> void:
 		if sp == null:
 			continue
 		_set_part(sp, _part_name(name))
-		CharacterLook.apply(sp, CharacterLook.colors_for(look, name))
+		CharacterLook.apply(sp, CharacterLook.colors_for(look, name), CharacterLook.ink_for(look, name))
 	for arm: Node2D in [arm_back, arm_front]:
 		for c: Node in arm.get_children():
 			if not (c is Sprite2D):
@@ -398,7 +420,9 @@ func set_emotion(e: String) -> void:
 	if not CharacterTemplates.emotions().has(e):
 		return
 	emotion = e
-	_set_part(_layers["Mouth"], "mouth_" + e)
+	# „fröhlich“ ist der Normalzustand → der im Editor gewählte Mund bleibt (P04b)
+	_set_part(_layers["Mouth"], CharacterLook.part_for(template_id, look, "Mouth") if e == "happy" \
+		else "mouth_" + e)
 	# Augen: für jedes Gefühl ein eigenes Teil, sonst die im Editor gewählte Form
 	var eyes: String = "eyes_" + e
 	if not CharacterTemplates.has_part(template_id, eyes):

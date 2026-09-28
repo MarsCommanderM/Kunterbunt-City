@@ -1,25 +1,208 @@
 {
- "_doc": "Figuren-Schablonen (P03-T02). Alle Maße in cm, y = Höhe über dem Boden (Füße = 0). Gesamthöhe (hair_top) MUSS der Maßstab-Tabelle (scale_ref) entsprechen – geprüft von tests/test_character.gd. Teile werden von tools/make_rig_parts.py erzeugt.",
+ "_doc": "Figuren-Schablonen (P03-T02, neu in P04b: Stil „großer Kopf“, Kind ≈ 2 Kopfhöhen). Alle Maße in cm, y = Höhe über dem Boden (Füße = 0). Gesamthöhe (hair_top) MUSS der Maßstab-Tabelle (scale_ref) entsprechen – geprüft von tests/test_character.gd. Kopfmitte cy = hair_top − 1,13·h/2 − 0,5 (Kontur), damit die Standard-Frisuren genau bis hair_top reichen. Teile erzeugt tools/make_chibi_parts.py.",
  "px_per_cm": 8,
  "templates": {
-  "toddler": {"scale_ref": "char_toddler", "hair_top": 90,
-   "head": {"w": 40, "h": 40, "cy": 67}, "torso": {"w_top": 25, "w_bot": 28, "top": 50, "bot": 28},
-   "shoulder": {"x": 11.5, "y": 47}, "arm": {"len": 20, "w": 7.5, "sleeve": 9}, "hand_r": 4.0,
-   "hip": {"y": 30, "x": 6.5}, "leg": {"w": 11, "thigh": 14, "shin": 12, "sit_thigh": 6}, "shoe": {"w": 12.5, "h": 5}},
-  "kid": {"scale_ref": "char_child", "hair_top": 125,
-   "head": {"w": 42, "h": 42, "cy": 101}, "torso": {"w_top": 28, "w_bot": 31, "top": 80, "bot": 48},
-   "shoulder": {"x": 13, "y": 76}, "arm": {"len": 30, "w": 8.5, "sleeve": 13}, "hand_r": 4.6,
-   "hip": {"y": 50, "x": 7}, "leg": {"w": 12, "thigh": 24, "shin": 20, "sit_thigh": 8}, "shoe": {"w": 14, "h": 7}},
-  "adult": {"scale_ref": "char_adult", "hair_top": 172,
-   "head": {"w": 36, "h": 40, "cy": 148}, "torso": {"w_top": 40, "w_bot": 36, "top": 130, "bot": 86},
-   "shoulder": {"x": 19, "y": 126}, "arm": {"len": 58, "w": 10, "sleeve": 26}, "hand_r": 5.2,
-   "hip": {"y": 90, "x": 9}, "leg": {"w": 15, "thigh": 42, "shin": 40, "sit_thigh": 12}, "shoe": {"w": 16, "h": 8}}
+  "toddler": {
+   "scale_ref": "char_toddler",
+   "hair_top": 90,
+   "head": {
+    "w": 54,
+    "h": 50,
+    "cy": 61.25
+   },
+   "torso": {
+    "w_top": 21,
+    "w_bot": 24,
+    "top": 38.0,
+    "bot": 20
+   },
+   "shoulder": {
+    "x": 9,
+    "y": 35
+   },
+   "arm": {
+    "len": 15,
+    "w": 5.8,
+    "sleeve": 7
+   },
+   "hand_r": 3.3,
+   "hip": {
+    "y": 20,
+    "x": 5
+   },
+   "leg": {
+    "w": 9,
+    "thigh": 8,
+    "shin": 12,
+    "sit_thigh": 5
+   },
+   "shoe": {
+    "w": 11.5,
+    "h": 6
+   }
+  },
+  "kid": {
+   "scale_ref": "char_child",
+   "hair_top": 125,
+   "head": {
+    "w": 62,
+    "h": 57,
+    "cy": 92.3
+   },
+   "torso": {
+    "w_top": 25,
+    "w_bot": 27,
+    "top": 65.5,
+    "bot": 38
+   },
+   "shoulder": {
+    "x": 10.5,
+    "y": 62
+   },
+   "arm": {
+    "len": 21,
+    "w": 6.4,
+    "sleeve": 9
+   },
+   "hand_r": 3.7,
+   "hip": {
+    "y": 38,
+    "x": 6
+   },
+   "leg": {
+    "w": 10,
+    "thigh": 18,
+    "shin": 20,
+    "sit_thigh": 7
+   },
+   "shoe": {
+    "w": 13.5,
+    "h": 7.5
+   }
+  },
+  "teen": {
+   "scale_ref": "char_teen",
+   "hair_top": 155,
+   "head": {
+    "w": 62,
+    "h": 58,
+    "cy": 121.73
+   },
+   "torso": {
+    "w_top": 28,
+    "w_bot": 28,
+    "top": 94.5,
+    "bot": 56
+   },
+   "shoulder": {
+    "x": 12,
+    "y": 90.5
+   },
+   "arm": {
+    "len": 31,
+    "w": 6.8,
+    "sleeve": 13
+   },
+   "hand_r": 4.0,
+   "hip": {
+    "y": 56,
+    "x": 7
+   },
+   "leg": {
+    "w": 11,
+    "thigh": 24,
+    "shin": 30,
+    "sit_thigh": 9
+   },
+   "shoe": {
+    "w": 14.5,
+    "h": 7.5
+   }
+  },
+  "adult": {
+   "scale_ref": "char_adult",
+   "hair_top": 172,
+   "head": {
+    "w": 62,
+    "h": 60,
+    "cy": 137.6
+   },
+   "torso": {
+    "w_top": 31,
+    "w_bot": 30,
+    "top": 109.5,
+    "bot": 58
+   },
+   "shoulder": {
+    "x": 13,
+    "y": 105
+   },
+   "arm": {
+    "len": 38,
+    "w": 7.4,
+    "sleeve": 16
+   },
+   "hand_r": 4.3,
+   "hip": {
+    "y": 58,
+    "x": 7.5
+   },
+   "leg": {
+    "w": 12,
+    "thigh": 16,
+    "shin": 40,
+    "sit_thigh": 12
+   },
+   "shoe": {
+    "w": 15.5,
+    "h": 8
+   }
+  }
  },
- "hair_styles": ["pigtails", "short"],
- "emotions": ["happy", "laugh", "surprised", "sad", "tired", "love"],
+ "hair_styles": [
+  "long",
+  "short"
+ ],
+ "emotions": [
+  "happy",
+  "laugh",
+  "surprised",
+  "sad",
+  "tired",
+  "love"
+ ],
  "default_look": {
-  "toddler": {"skin": "#ffd9c2", "hair": "#e0a24a", "shirt": "#7fd0c8", "pants": "#f29bb4", "shoes": "#ffffff", "hair_style": "short"},
-  "kid": {"skin": "#ffd6bf", "hair": "#7a4a2a", "shirt": "#ffcc3d", "pants": "#4f7fc0", "shoes": "#ff9a2e", "hair_style": "pigtails"},
-  "adult": {"skin": "#d9a07a", "hair": "#2e2320", "shirt": "#6fbf73", "pants": "#3d4a66", "shoes": "#5a3a2a", "hair_style": "short"}
+  "toddler": {
+   "skin": "#f3cfae",
+   "hair": "#e3c79a",
+   "shirt": "#f6d98a",
+   "pants": "#9fc3dc",
+   "shoes": "#f5f3ee",
+   "hair_style": "short"
+  },
+  "kid": {
+   "skin": "#e2ab80",
+   "hair": "#6b4a36",
+   "shirt": "#f4c95d",
+   "pants": "#6f8fb8",
+   "shoes": "#f5f3ee",
+   "hair_style": "long"
+  },
+  "teen": {
+   "skin": "#c08a62",
+   "hair": "#2a1f1c",
+   "shirt": "#dbe8d9",
+   "pants": "#5f6f8f",
+   "shoes": "#f5f3ee",
+   "hair_style": "long"
+  },
+  "adult": {
+   "skin": "#b07650",
+   "hair": "#4a3326",
+   "shirt": "#e8e2d8",
+   "pants": "#5f6270",
+   "shoes": "#8a6a55",
+   "hair_style": "short"
+  }
  }
 }

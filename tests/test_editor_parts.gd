@@ -8,11 +8,12 @@ func before_each() -> void:
 	k = KitchenFixture.new(self)
 
 
-func test_every_slot_has_five_variants() -> void:
+## P04b: Katalog wächst (Ziel: sehr viele Teile) – mindestens 5 je Slot, Frisuren und Oberteile deutlich mehr.
+func test_every_slot_has_enough_variants() -> void:
 	var slots: Array = CharacterParts.slot_ids()
 	assert_eq(slots.size(), 8, "acht Slots laut Tech-Spec")
 	for slot: String in slots:
-		assert_eq(CharacterParts.ids(slot).size(), 5, "Slot %s hat 5 Varianten" % slot)
+		assert_gte(CharacterParts.ids(slot).size(), 5, "Slot %s hat mindestens 5 Varianten" % slot)
 		assert_false(CharacterParts.label(slot).is_empty())
 		assert_false(CharacterParts.icon(slot).is_empty())
 
@@ -35,17 +36,27 @@ func test_zones_are_between_1_and_3() -> void:
 			assert_between(CharacterParts.zones(slot, id), 1, 3, "%s/%s" % [slot, id])
 
 
+## Kein Teil verändert die KÖRPER-Größe: ohne Haare/Hut ist der Scheitel immer genau die Kopf-Oberkante der
+## Schablone. Frisuren und Hüte dürfen den Kopf überragen (Afro, Dutt, Mütze), aber höchstens um 45 % der
+## Kopfhöhe – und die Standard-Frisur endet genau bei der Tabellenhöhe (test_character).
 func test_rig_builds_with_every_variant() -> void:
 	for tid: String in CharacterTemplates.ids():
+		var t: Dictionary = CharacterTemplates.get_template(tid)
+		var head_top: float = float(t["head"]["cy"]) + float(t["head"]["h"]) * 0.5
 		for slot: String in CharacterParts.slot_ids():
 			for id: String in CharacterParts.ids(slot):
 				var look: Dictionary = CharacterParts.default_set(tid)
 				look["parts"][slot] = id
 				var rig: CharacterRig = CharacterRig.create_character(tid, look)
 				assert_not_null(rig, "%s/%s/%s" % [tid, slot, id])
-				assert_almost_eq(rig.global_rect().size.y, ItemDB.height_cm(
-					String(CharacterTemplates.get_template(tid)["scale_ref"])), 3.0,
-					"%s mit %s/%s bleibt maßstäblich" % [tid, slot, id])
+				var body: Array = []
+				for lname: String in rig._layers:
+					if not (lname.begins_with("Hair") or lname in ["Accessory", "Aid"]):
+						body.append(rig._layers[lname])
+				var body_h: float = LayerGeometry.bounds(rig, body).size.y
+				assert_almost_eq(body_h, head_top, 2.0, "%s mit %s/%s: Körper bleibt maßstäblich" % [tid, slot, id])
+				assert_lt(rig.global_rect().size.y, head_top + float(t["head"]["h"]) * 0.45,
+					"%s mit %s/%s: Frisur/Hut überragt den Kopf nicht übermäßig" % [tid, slot, id])
 				rig.free()
 
 

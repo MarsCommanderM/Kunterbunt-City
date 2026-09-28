@@ -35,6 +35,9 @@ func run(args: PackedStringArray) -> void:
 	ed.select_color(CharacterParts.palette_colors("skin")[2])
 	await _frames(3)
 	await _shot("p04_05_hautton_gewaehlt")        # 2: ✓ ist jetzt frei
+	ed.select_category("template")
+	await _frames(3)
+	await _shot("p04_05b_groessen")               # 2b: 4 Größen (Teen neu), Figur-Symbol so groß wie die Schablone
 	ed.select_category("top")
 	ed.select_variant("dress")
 	ed.select_color(CharacterParts.palette_colors("cloth")[1])
@@ -55,6 +58,9 @@ func run(args: PackedStringArray) -> void:
 	ed.finished.emit(made)
 	await _frames(3)
 	var gal: Gallery = _find(Gallery) as Gallery
+	if gal == null:        # seit P05 führt ✓ zur Stadtkarte – die Galerie öffnet sich über den Figur-Knopf
+		gal = Flow.open_gallery(host, false)
+		await _frames(3)
 	if gal != null:
 		gal.can_back = true
 	if gal == null:

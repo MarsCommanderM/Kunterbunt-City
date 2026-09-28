@@ -1,0 +1,374 @@
+{
+ "id": "ice",
+ "name": "Eishalle",
+ "name_key": "AREA_ICE",
+ "_doc": "P10f: 4 Räume. Erzeugt von tools/make_areas.py (tools/areas/ice.py) – dort ändern.",
+ "spawn": {
+  "room": "entrance",
+  "x_cm": 520,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_ice",
+ "rooms": [
+  {
+   "id": "entrance",
+   "label": "Kasse & Verleih",
+   "icon": "sport_skates_cream",
+   "width_cm": 1000,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/ice/entrance.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eaf4fa",
+      "#ffffff",
+      "#6f8fb8"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "concrete",
+     "floor_cols": [
+      "#5a6a7a",
+      "#4a5a6a",
+      "#2e3a48"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "ice_rental_sky",
+     "x_cm": 330,
+     "y_cm": 10
+    },
+    {
+     "id": "sport_skates_cream",
+     "on": "ice_rental_sky",
+     "x_rel": -0.25
+    },
+    {
+     "id": "sport_skates_rose",
+     "on": "ice_rental_sky",
+     "x_rel": 0.0
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "ice_rental_sky",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_bench_kitchen_white",
+     "x_cm": 650,
+     "y_cm": 50
+    },
+    {
+     "id": "sport_skates_sky",
+     "x_cm": 600,
+     "y_cm": 62
+    },
+    {
+     "id": "ice_penguin_navy",
+     "x_cm": 820,
+     "y_cm": 40
+    },
+    {
+     "id": "swim_lockers_sky",
+     "x_cm": 950,
+     "y_cm": 0
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "rink",
+   "label": "Eisfläche",
+   "icon": "ice_resurfacer_white",
+   "width_cm": 2300,
+   "height_cm": 450,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 380,
+    "min_h_cm": 220,
+    "max_h_cm": 460
+   },
+   "background": "res://assets/backgrounds/ice/rink.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef6fb",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#5a6a7a",
+      "#4a5a6a",
+      "#2e3a48"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "ice_boards_white",
+     "x_cm": 600,
+     "y_cm": 0
+    },
+    {
+     "id": "ice_boards_white",
+     "x_cm": 1200,
+     "y_cm": 0
+    },
+    {
+     "id": "ice_boards_white",
+     "x_cm": 1800,
+     "y_cm": 0
+    },
+    {
+     "id": "ice_surface_white",
+     "x_cm": 1200,
+     "y_cm": 40
+    },
+    {
+     "id": "ice_resurfacer_white",
+     "x_cm": 150,
+     "y_cm": 20
+    },
+    {
+     "id": "ice_hockey_goal_coral",
+     "x_cm": 450,
+     "y_cm": 38
+    },
+    {
+     "id": "ice_hockey_goal_coral",
+     "x_cm": 1950,
+     "y_cm": 38
+    },
+    {
+     "id": "sport_puck_black",
+     "x_cm": 1200,
+     "y_cm": 45
+    },
+    {
+     "id": "sport_hockey_stick_black",
+     "x_cm": 1100,
+     "y_cm": 55
+    },
+    {
+     "id": "ice_penguin_sky",
+     "x_cm": 800,
+     "y_cm": 55
+    },
+    {
+     "id": "ice_disco_ball_lilac",
+     "x_cm": 1200,
+     "y_cm": -420
+    },
+    {
+     "id": "spc_scoreboard_navy",
+     "x_cm": 700,
+     "y_cm": -400
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "stands",
+   "label": "Tribüne",
+   "icon": "spc_bleachers_sky",
+   "width_cm": 1400,
+   "height_cm": 450,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 380,
+    "min_h_cm": 220,
+    "max_h_cm": 460
+   },
+   "background": "res://assets/backgrounds/ice/stands.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f1f4f8",
+      "#ffffff",
+      "#6f8fb8"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#5a6a7a",
+      "#4a5a6a",
+      "#2e3a48"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "spc_bleachers_sky",
+     "x_cm": 380,
+     "y_cm": 0
+    },
+    {
+     "id": "spc_bleachers_coral",
+     "x_cm": 1050,
+     "y_cm": 0
+    },
+    {
+     "id": "spc_scoreboard_navy",
+     "x_cm": 700,
+     "y_cm": -380
+    },
+    {
+     "id": "ice_cocoa_coral",
+     "x_cm": 700,
+     "y_cm": 64
+    },
+    {
+     "id": "fair_balloon_sky",
+     "x_cm": 1300,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "snack",
+   "label": "Imbiss",
+   "icon": "ice_pretzel_oak",
+   "width_cm": 900,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/ice/snack.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdf3e1",
+      "#ffffff",
+      "#f6d98a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e3c79a",
+      "#d4b07c",
+      "#8a6a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_counter_glass_cream",
+     "x_cm": 260,
+     "y_cm": 15
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_glass_cream",
+     "x_rel": 0.3
+    },
+    {
+     "id": "ice_cocoa_coral",
+     "on": "shop_counter_glass_cream",
+     "x_rel": -0.3
+    },
+    {
+     "id": "ice_pretzel_oak",
+     "on": "shop_counter_glass_cream",
+     "x_rel": -0.1
+    },
+    {
+     "id": "ice_fries_coral",
+     "on": "shop_counter_glass_cream",
+     "x_rel": 0.1
+    },
+    {
+     "id": "furn_table_bistro_white",
+     "x_cm": 560,
+     "y_cm": 40
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 500,
+     "y_cm": 46
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 620,
+     "y_cm": 46
+    },
+    {
+     "id": "ice_cocoa_sky",
+     "on": "furn_table_bistro_white",
+     "x_rel": 0.0
+    },
+    {
+     "id": "furn_table_bistro_sage",
+     "x_cm": 780,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  }
+ ]
+}

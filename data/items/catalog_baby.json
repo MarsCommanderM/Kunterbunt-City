@@ -1,0 +1,1164 @@
+{
+ "area": "catalog",
+ "room": "baby",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "furn_highchair_white",
+   "scale_ref": "c_furn_highchair",
+   "size_cm": [
+    55.1,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_highchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_highchair_mint",
+   "scale_ref": "c_furn_highchair",
+   "size_cm": [
+    55.1,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_highchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_highchair_coral",
+   "scale_ref": "c_furn_highchair",
+   "size_cm": [
+    55.1,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_highchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_highchair_oak",
+   "scale_ref": "c_furn_highchair",
+   "size_cm": [
+    55.1,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_highchair.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "furn_stroller_navy",
+   "scale_ref": "c_furn_stroller",
+   "size_cm": [
+    68.8,
+    107.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stroller.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#2e3140",
+    "#2a2a30"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "furn_stroller_sage",
+   "scale_ref": "c_furn_stroller",
+   "size_cm": [
+    68.8,
+    107.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stroller.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#dbe8d9",
+    "#2a2a30"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "furn_stroller_rose",
+   "scale_ref": "c_furn_stroller",
+   "size_cm": [
+    68.8,
+    107.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stroller.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#2a2a30"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "furn_stroller_grey",
+   "scale_ref": "c_furn_stroller",
+   "size_cm": [
+    68.8,
+    107.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_stroller.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#6d6f78",
+    "#2a2a30"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "furn_changing_white",
+   "scale_ref": "c_furn_changing",
+   "size_cm": [
+    93.5,
+    108.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_changing.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#fbfaf7",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_changing__open.png"
+   }
+  },
+  {
+   "id": "furn_changing_mint",
+   "scale_ref": "c_furn_changing",
+   "size_cm": [
+    93.5,
+    108.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_changing.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_changing__open.png"
+   }
+  },
+  {
+   "id": "furn_changing_sky",
+   "scale_ref": "c_furn_changing",
+   "size_cm": [
+    93.5,
+    108.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_changing.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_changing__open.png"
+   }
+  },
+  {
+   "id": "furn_changing_rose",
+   "scale_ref": "c_furn_changing",
+   "size_cm": [
+    93.5,
+    108.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_changing.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/furn_changing__open.png"
+   }
+  },
+  {
+   "id": "baby_rattle_butter",
+   "scale_ref": "c_baby_rattle",
+   "size_cm": [
+    9.0,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_rattle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_rattle_sky",
+   "scale_ref": "c_baby_rattle",
+   "size_cm": [
+    9.0,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_rattle.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_rattle_rose",
+   "scale_ref": "c_baby_rattle",
+   "size_cm": [
+    9.0,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_rattle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_bottle_sky",
+   "scale_ref": "c_baby_bottle",
+   "size_cm": [
+    7.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_bottle_rose",
+   "scale_ref": "c_baby_bottle",
+   "size_cm": [
+    7.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_bottle_mint",
+   "scale_ref": "c_baby_bottle",
+   "size_cm": [
+    7.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bottle.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_pacifier_sky",
+   "scale_ref": "c_baby_pacifier",
+   "size_cm": [
+    7.9,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_pacifier.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_pacifier_rose",
+   "scale_ref": "c_baby_pacifier",
+   "size_cm": [
+    7.9,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_pacifier.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_pacifier_mint",
+   "scale_ref": "c_baby_pacifier",
+   "size_cm": [
+    7.9,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_pacifier.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_pacifier_butter",
+   "scale_ref": "c_baby_pacifier",
+   "size_cm": [
+    7.9,
+    8.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_pacifier.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_car_seat_navy",
+   "scale_ref": "c_baby_car_seat",
+   "size_cm": [
+    47.0,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_car_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_car_seat_grey",
+   "scale_ref": "c_baby_car_seat",
+   "size_cm": [
+    47.0,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_car_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_car_seat_rose",
+   "scale_ref": "c_baby_car_seat",
+   "size_cm": [
+    47.0,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_car_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_car_seat_sky",
+   "scale_ref": "c_baby_car_seat",
+   "size_cm": [
+    47.0,
+    66.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_car_seat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_stacker_cream",
+   "scale_ref": "c_baby_stacker",
+   "size_cm": [
+    17.5,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_stacker.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_stacker_oak",
+   "scale_ref": "c_baby_stacker",
+   "size_cm": [
+    17.5,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_stacker.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_stacker_sky",
+   "scale_ref": "c_baby_stacker",
+   "size_cm": [
+    17.5,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_stacker.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_play_mat_mint",
+   "scale_ref": "c_baby_play_mat",
+   "size_cm": [
+    121.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_play_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "baby_play_mat_sky",
+   "scale_ref": "c_baby_play_mat",
+   "size_cm": [
+    121.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_play_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "baby_play_mat_rose",
+   "scale_ref": "c_baby_play_mat",
+   "size_cm": [
+    121.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_play_mat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "baby"
+  },
+  {
+   "id": "baby_bouncer_sky",
+   "scale_ref": "c_baby_bouncer",
+   "size_cm": [
+    73.0,
+    62.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bouncer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_bouncer_rose",
+   "scale_ref": "c_baby_bouncer",
+   "size_cm": [
+    73.0,
+    62.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bouncer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_bouncer_grey",
+   "scale_ref": "c_baby_bouncer",
+   "size_cm": [
+    73.0,
+    62.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bouncer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "baby_monitor_white",
+   "scale_ref": "c_baby_monitor",
+   "size_cm": [
+    9.8,
+    16.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_monitor.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/baby_monitor__on.png"
+   }
+  },
+  {
+   "id": "baby_monitor_sky",
+   "scale_ref": "c_baby_monitor",
+   "size_cm": [
+    9.8,
+    16.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_monitor.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/baby_monitor__on.png"
+   }
+  },
+  {
+   "id": "baby_diapers_sky",
+   "scale_ref": "c_baby_diapers",
+   "size_cm": [
+    31.9,
+    32.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_diapers.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_diapers_rose",
+   "scale_ref": "c_baby_diapers",
+   "size_cm": [
+    31.9,
+    32.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_diapers.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "baby_bath_sky",
+   "scale_ref": "c_baby_bath",
+   "size_cm": [
+    83.5,
+    88.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bath.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/baby_bath__on.png"
+   }
+  },
+  {
+   "id": "baby_bath_rose",
+   "scale_ref": "c_baby_bath",
+   "size_cm": [
+    83.5,
+    88.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bath.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/baby_bath__on.png"
+   }
+  },
+  {
+   "id": "baby_bath_mint",
+   "scale_ref": "c_baby_bath",
+   "size_cm": [
+    83.5,
+    88.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/baby_bath.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "baby",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/baby_bath__on.png"
+   }
+  }
+ ]
+}

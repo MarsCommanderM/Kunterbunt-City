@@ -1,0 +1,739 @@
+{
+ "id": "zoo",
+ "name": "Zoo",
+ "name_key": "AREA_ZOO",
+ "_doc": "P10g: 9 Bereiche. Erzeugt von tools/make_areas.py (tools/areas/zoo.py) – dort ändern.",
+ "spawn": {
+  "room": "entrance",
+  "x_cm": 560,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_zoo",
+ "rooms": [
+  {
+   "id": "entrance",
+   "label": "Eingang",
+   "icon": "zoo_sign_green",
+   "width_cm": 1400,
+   "height_cm": 800,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/zoo/entrance.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 51,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_gate_coral",
+     "x_cm": 700,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_ticket_booth_sky",
+     "x_cm": 300,
+     "y_cm": 10
+    },
+    {
+     "id": "zoo_sign_green",
+     "x_cm": 1050,
+     "y_cm": 30
+    },
+    {
+     "id": "zoo_sign_oak",
+     "x_cm": 1150,
+     "y_cm": 30
+    },
+    {
+     "id": "zoo_parrot_coral",
+     "x_cm": 480,
+     "y_cm": 60
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1250,
+     "y_cm": 20
+    },
+    {
+     "id": "fair_balloon_mint",
+     "x_cm": 420,
+     "y_cm": 58
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "savanna",
+   "label": "Savanne",
+   "icon": "zoo_giraffe_butter",
+   "width_cm": 2800,
+   "height_cm": 800,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/zoo/savanna.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 52,
+    "decor": {
+     "floor": "sand",
+     "floor_cols": [
+      "#e3c98c",
+      "#d4b878",
+      "#a88c58"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "zoo_acacia_leaf",
+     "x_cm": 500,
+     "y_cm": 0
+    },
+    {
+     "id": "zoo_giraffe_butter",
+     "x_cm": 700,
+     "y_cm": 15
+    },
+    {
+     "id": "zoo_zebra_white",
+     "x_cm": 1150,
+     "y_cm": 30
+    },
+    {
+     "id": "zoo_zebra_white",
+     "x_cm": 1400,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_rock_sand",
+     "x_cm": 2200,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_lion_oak",
+     "x_cm": 2150,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_pond_stone",
+     "x_cm": 1750,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_flamingo_rose",
+     "x_cm": 1700,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_flamingo_rose",
+     "x_cm": 1820,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_meerkat_sand",
+     "x_cm": 2500,
+     "y_cm": 55
+    },
+    {
+     "id": "zoo_meerkat_sand",
+     "x_cm": 2550,
+     "y_cm": 60
+    },
+    {
+     "id": "zoo_food_leaves_leaf",
+     "x_cm": 1300,
+     "y_cm": 64
+    },
+    {
+     "id": "zoo_sign_oak",
+     "x_cm": 2650,
+     "y_cm": 20
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "monkeys",
+   "label": "Affenhaus",
+   "icon": "zoo_monkey_walnut",
+   "width_cm": 1450,
+   "height_cm": 500,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 380,
+    "min_h_cm": 220,
+    "max_h_cm": 500
+   },
+   "background": "res://assets/backgrounds/zoo/monkeys.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef6e8",
+      "#ffffff",
+      "#7fae6a"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#ffffff",
+     "floor": "grass",
+     "floor_cols": [
+      "#9fc98a",
+      "#8bbb78",
+      "#6f9a5e"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "zoo_climb_frame_oak",
+     "x_cm": 400,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_monkey_walnut",
+     "x_cm": 350,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_monkey_walnut",
+     "x_cm": 650,
+     "y_cm": 55
+    },
+    {
+     "id": "zoo_gorilla_black",
+     "x_cm": 950,
+     "y_cm": 20
+    },
+    {
+     "id": "zoo_parrot_coral",
+     "x_cm": 100,
+     "y_cm": 50
+    },
+    {
+     "id": "food_banana_butter",
+     "x_cm": 1250,
+     "y_cm": 64
+    },
+    {
+     "id": "plant_monstera_basket_oak",
+     "x_cm": 200,
+     "y_cm": 20
+    },
+    {
+     "id": "zoo_rock_stone",
+     "x_cm": 1350,
+     "y_cm": 5
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "elephants",
+   "label": "Elefanten",
+   "icon": "zoo_elephant_grey",
+   "width_cm": 2200,
+   "height_cm": 800,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/zoo/elephants.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 53,
+    "decor": {
+     "floor": "sand",
+     "floor_cols": [
+      "#e3c98c",
+      "#d4b878",
+      "#a88c58"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "zoo_pond_stone",
+     "x_cm": 1500,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_elephant_grey",
+     "x_cm": 800,
+     "y_cm": 20
+    },
+    {
+     "id": "zoo_elephant_baby_metal",
+     "x_cm": 1250,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_hay_rack_oak",
+     "x_cm": 300,
+     "y_cm": 10
+    },
+    {
+     "id": "zoo_acacia_leaf",
+     "x_cm": 1900,
+     "y_cm": 0
+    },
+    {
+     "id": "zoo_food_hay_butter",
+     "x_cm": 400,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "penguins",
+   "label": "Pinguine",
+   "icon": "zoo_penguin_navy",
+   "width_cm": 1500,
+   "height_cm": 800,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/zoo/penguins.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 54,
+    "decor": {
+     "floor": "concrete",
+     "floor_cols": [
+      "#e8f0f4",
+      "#d8e4ea",
+      "#a9b8c2"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "zoo_ice_floe_white",
+     "x_cm": 450,
+     "y_cm": 10
+    },
+    {
+     "id": "zoo_pond_stone",
+     "x_cm": 1000,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_penguin_navy",
+     "x_cm": 400,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_penguin_navy",
+     "x_cm": 600,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_penguin_navy",
+     "x_cm": 950,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_penguin_chick_grey",
+     "x_cm": 700,
+     "y_cm": 60
+    },
+    {
+     "id": "zoo_bucket_sky",
+     "x_cm": 1300,
+     "y_cm": 62
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "reptiles",
+   "label": "Reptilien",
+   "icon": "zoo_crocodile_green",
+   "width_cm": 1400,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/zoo/reptiles.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef3e4",
+      "#ffffff",
+      "#5f8f6a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "grass",
+     "floor_cols": [
+      "#b8b87a",
+      "#a8a86a",
+      "#7a7a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "zoo_terrarium_oak",
+     "x_cm": 250,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_snake_leaf_light",
+     "x_cm": 250,
+     "y_cm": 55
+    },
+    {
+     "id": "zoo_pond_stone",
+     "x_cm": 700,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_crocodile_green",
+     "x_cm": 700,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_tortoise_oak",
+     "x_cm": 1050,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_terrarium_dark_wood",
+     "x_cm": 1200,
+     "y_cm": 5
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "aquarium",
+   "label": "Aquarium",
+   "icon": "zoo_tank_navy",
+   "width_cm": 1500,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/zoo/aquarium.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#1f3552",
+      "#2e4a6e",
+      "#162840"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#3a4a60",
+      "#2e3c50",
+      "#1a2636"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "zoo_tank_navy",
+     "x_cm": 330,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_tank_dark_wood",
+     "x_cm": 800,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_tank_navy",
+     "x_cm": 1250,
+     "y_cm": 5
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 600,
+     "y_cm": 55
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1050,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "petting",
+   "label": "Streichelzoo",
+   "icon": "zoo_goat_white",
+   "width_cm": 1700,
+   "height_cm": 800,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/zoo/petting.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 55,
+    "decor": {
+     "floor": "grass",
+     "floor_cols": [
+      "#9fc98a",
+      "#8bbb78",
+      "#6f9a5e"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "garden_fence_rustic_oak",
+     "x_cm": 200,
+     "y_cm": 5
+    },
+    {
+     "id": "garden_fence_rustic_oak",
+     "x_cm": 600,
+     "y_cm": 5
+    },
+    {
+     "id": "garden_fence_rustic_oak",
+     "x_cm": 1000,
+     "y_cm": 5
+    },
+    {
+     "id": "zoo_hay_rack_oak",
+     "x_cm": 1300,
+     "y_cm": 10
+    },
+    {
+     "id": "zoo_goat_white",
+     "x_cm": 350,
+     "y_cm": 40
+    },
+    {
+     "id": "zoo_goat_white",
+     "x_cm": 520,
+     "y_cm": 55
+    },
+    {
+     "id": "zoo_lamb_cream",
+     "x_cm": 750,
+     "y_cm": 45
+    },
+    {
+     "id": "zoo_pig_rose",
+     "x_cm": 950,
+     "y_cm": 55
+    },
+    {
+     "id": "zoo_rabbit_linen",
+     "x_cm": 1150,
+     "y_cm": 60
+    },
+    {
+     "id": "zoo_rabbit_linen",
+     "x_cm": 1200,
+     "y_cm": 64
+    },
+    {
+     "id": "zoo_chick_butter",
+     "x_cm": 1400,
+     "y_cm": 62
+    },
+    {
+     "id": "zoo_chick_butter",
+     "x_cm": 1430,
+     "y_cm": 66
+    },
+    {
+     "id": "zoo_chick_butter",
+     "x_cm": 1460,
+     "y_cm": 60
+    },
+    {
+     "id": "zoo_bucket_coral",
+     "x_cm": 1550,
+     "y_cm": 62
+    },
+    {
+     "id": "food_carrot_orange",
+     "x_cm": 1580,
+     "y_cm": 66
+    },
+    {
+     "id": "zoo_food_seeds_oak",
+     "x_cm": 1660,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "nursery",
+   "label": "Tierbabys",
+   "icon": "zoo_lion_cub_oak",
+   "width_cm": 1050,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/zoo/nursery.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fff4e8",
+      "#ffffff",
+      "#f6d98a"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e3c79a",
+      "#d4b07c",
+      "#8a6a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "zoo_lion_cub_oak",
+     "x_cm": 300,
+     "y_cm": 50
+    },
+    {
+     "id": "zoo_penguin_chick_grey",
+     "x_cm": 520,
+     "y_cm": 55
+    },
+    {
+     "id": "med_incubator_white",
+     "x_cm": 720,
+     "y_cm": 10
+    },
+    {
+     "id": "med_baby_scale_white",
+     "x_cm": 900,
+     "y_cm": 40
+    },
+    {
+     "id": "baby_bottle_sky",
+     "x_cm": 420,
+     "y_cm": 64
+    },
+    {
+     "id": "zoo_food_fish_sky",
+     "x_cm": 960,
+     "y_cm": 66
+    },
+    {
+     "id": "petgear_basket_oak",
+     "x_cm": 150,
+     "y_cm": 30
+    }
+   ],
+   "ambience": "amb_indoor"
+  }
+ ]
+}

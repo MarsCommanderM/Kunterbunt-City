@@ -1,0 +1,12 @@
+{
+ "_doc": "Umbenannte Items (R-11): alte ID → neue ID. ItemDB findet alte IDs aus Speicherständen weiter; gespeichert wird die neue. Nie Einträge löschen.",
+ "aliases": {
+  "furn_fireplace_#c0664f": "furn_fireplace_brick",
+  "garden_pool_big_#b8b2a7": "garden_pool_big_stone",
+  "garden_fountain_#b8b2a7": "garden_fountain_stone",
+  "deco_mirror_#e0b84a": "deco_mirror_gold",
+  "curtain_rod_#e0b84a": "curtain_rod_gold",
+  "kit_teaspoon_#e0b84a": "kit_teaspoon_gold",
+  "garden_bird_bath_#b8b2a7": "garden_bird_bath_stone"
+ }
+}

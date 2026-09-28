@@ -1,0 +1,50 @@
+{
+ "id": "receptionist",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Empfang",
+ "behavior": "station",
+ "work": [
+  "type",
+  "wave",
+  "look"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "polo",
+   "bottom": "skirt",
+   "hair": "bob",
+   "shoes": "sneaker",
+   "accessory": "headphones"
+  },
+  "colors": {
+   "top": [
+    "#b9a6d6",
+    "#fbfaf7",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#8a5e3f",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

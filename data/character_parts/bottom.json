@@ -6,53 +6,83 @@
   "variants": [
     {
       "id": "trousers",
-      "label": "trousers",
-      "part": "bottom_trousers",
-      "part_back": "bottom_sit_trousers",
+      "label": "Hose",
       "zones": 2,
       "tags": [
         "bottom"
-      ]
+      ],
+      "part": "bottom_trousers",
+      "part_back": "bottom_sit_trousers"
+    },
+    {
+      "id": "jeans",
+      "label": "Jeans",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ],
+      "part": "bottom_jeans",
+      "part_back": "bottom_sit_jeans"
     },
     {
       "id": "shorts",
-      "label": "shorts",
-      "part": "bottom_shorts",
-      "part_back": "bottom_sit_shorts",
+      "label": "kurze Hose",
       "zones": 2,
       "tags": [
         "bottom"
-      ]
+      ],
+      "part": "bottom_shorts",
+      "part_back": "bottom_sit_shorts"
     },
     {
       "id": "skirt",
-      "label": "skirt",
-      "part": "bottom_skirt",
-      "part_back": "bottom_sit_skirt",
+      "label": "Rock",
       "zones": 2,
       "tags": [
         "bottom"
-      ]
+      ],
+      "part": "bottom_skirt",
+      "part_back": "bottom_sit_skirt"
     },
     {
       "id": "leggings",
-      "label": "leggings",
-      "part": "bottom_leggings",
-      "part_back": "bottom_sit_leggings",
+      "label": "Leggings",
       "zones": 2,
       "tags": [
         "bottom"
-      ]
+      ],
+      "part": "bottom_leggings",
+      "part_back": "bottom_sit_leggings"
     },
     {
       "id": "dungarees",
-      "label": "dungarees",
-      "part": "bottom_dungarees",
-      "part_back": "bottom_sit_dungarees",
+      "label": "Latzhose",
       "zones": 2,
       "tags": [
         "bottom"
-      ]
+      ],
+      "part": "bottom_dungarees",
+      "part_back": "bottom_sit_dungarees"
+    },
+    {
+      "id": "tutu",
+      "label": "Tüllrock",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ],
+      "part": "bottom_tutu",
+      "part_back": "bottom_sit_tutu"
+    },
+    {
+      "id": "joggers",
+      "label": "Jogginghose",
+      "zones": 2,
+      "tags": [
+        "bottom"
+      ],
+      "part": "bottom_joggers",
+      "part_back": "bottom_sit_joggers"
     }
   ]
 }

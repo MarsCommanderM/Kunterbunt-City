@@ -1,0 +1,56 @@
+{
+ "id": "lifeguard",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Bademeister/in",
+ "behavior": "patrol",
+ "patrol_cm": 200,
+ "work": [
+  "whistle",
+  "look"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "tank",
+   "bottom": "shorts",
+   "hair": "spiky",
+   "shoes": "sandal",
+   "accessory": "sunglasses"
+  },
+  "colors": {
+   "top": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#e07a7a",
+    "#e07a7a",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#e3c79a",
+    "#e3c79a",
+    "#e3c79a"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz",
+ "water": [
+  "garden_pool",
+  "swim_pool",
+  "swim_basin",
+  "swim_baby_pool"
+ ]
+}

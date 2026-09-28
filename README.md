@@ -6,6 +6,25 @@ Dieser Ordner ist das **Repo** und zugleich die **komplette Bauanleitung für de
 
 ---
 
+## Spielen (Version 1.0.0)
+**Windows:** Auf GitHub unter **Releases** `KunterbuntCity-Setup-….exe` laden, doppelklicken, „Installieren“ →
+danach liegt **Kunterbunt City auf dem Desktop** (ein Klick zum Starten, keine Admin-Rechte nötig).
+Linux: `.tar.gz` entpacken → `./installieren.sh` · macOS: `.zip` entpacken → Rechtsklick → Öffnen.
+Datenschutz: `docs/DATENSCHUTZ.md` – das Spiel sammelt keine Daten und braucht kein Internet.
+
+Neue Version veröffentlichen: Version in `project.godot` erhöhen, Tag `vX.Y.Z` pushen (oder Commit mit `[release]` in der Nachricht) → `.github/workflows/release.yml`
+baut alle Downloads und hängt sie ans Release. Lokal: `bash scripts/build_release.sh` → `export/release/`.
+
+## Bauen
+```bash
+godot --headless --export-release "Web" export/web/index.html      # Browser-Version
+godot --headless --export-release "Linux" export/linux/KunterbuntCity.x86_64
+godot --headless --export-release "Windows" export/windows/KunterbuntCity.exe
+NODE_PATH=$(npm root -g) node tools/dev/web_smoke.cjs export/web out.png --play   # Web-Build im Browser testen
+```
+Export-Vorlagen (nur Web/Linux/Windows, ohne 1,3-GB-Archiv): `python3 tools/dev/fetch_web_templates.py 4.7.2 --desktop`.
+Änderungen: `CHANGELOG.md` · itch.io-Texte: `docs/release/itch_seite.md`.
+
 ## 1. Was liegt wo?
 | Datei | Für wen | Inhalt |
 |---|---|---|

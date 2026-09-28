@@ -1,0 +1,172 @@
+{
+ "area": "catalog",
+ "room": "critters",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "wild_duck_green",
+   "scale_ref": "c_wild_duck",
+   "size_cm": [
+    38.7,
+    29.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wild_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f09a55",
+    "#f09a55"
+   ],
+   "catalog": "critters",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "wild"
+   ],
+   "sfx": {
+    "voice": "duck_quack"
+   }
+  },
+  {
+   "id": "wild_duck_sand",
+   "scale_ref": "c_wild_duck",
+   "size_cm": [
+    38.7,
+    29.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wild_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f09a55",
+    "#f09a55"
+   ],
+   "catalog": "critters",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "wild"
+   ],
+   "sfx": {
+    "voice": "duck_quack"
+   }
+  },
+  {
+   "id": "wild_duck_white",
+   "scale_ref": "c_wild_duck",
+   "size_cm": [
+    38.7,
+    29.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wild_duck.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f09a55",
+    "#f09a55"
+   ],
+   "catalog": "critters",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "wild"
+   ],
+   "sfx": {
+    "voice": "duck_quack"
+   }
+  },
+  {
+   "id": "wild_pigeon_grey",
+   "scale_ref": "c_wild_pigeon",
+   "size_cm": [
+    31.7,
+    27.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wild_pigeon.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#48b0a0",
+    "#f0b6c2"
+   ],
+   "catalog": "critters",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "wild"
+   ],
+   "sfx": {
+    "voice": "pigeon_coo"
+   }
+  },
+  {
+   "id": "wild_squirrel_rust",
+   "scale_ref": "c_wild_squirrel",
+   "size_cm": [
+    30.4,
+    33.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/wild_squirrel.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "critters",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "wild"
+   ],
+   "sfx": {
+    "voice": "pet_hamster_squeak"
+   }
+  }
+ ]
+}

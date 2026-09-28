@@ -1,0 +1,211 @@
+{
+ "area": "catalog",
+ "room": "hairdresser",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "shop_barber_chair_coral",
+   "scale_ref": "c_shop_barber_chair",
+   "size_cm": [
+    76.8,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_barber_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_barber_chair_black",
+   "scale_ref": "c_shop_barber_chair",
+   "size_cm": [
+    76.8,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_barber_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_barber_chair_sky",
+   "scale_ref": "c_shop_barber_chair",
+   "size_cm": [
+    76.8,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_barber_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_hair_tools_black",
+   "scale_ref": "c_shop_hair_tools",
+   "size_cm": [
+    26.8,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hair_tools.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_hair_tools_coral",
+   "scale_ref": "c_shop_hair_tools",
+   "size_cm": [
+    26.8,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hair_tools.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_mirror_stand_oak",
+   "scale_ref": "c_shop_mirror_stand",
+   "size_cm": [
+    61.5,
+    171.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser"
+  },
+  {
+   "id": "shop_mirror_stand_cream",
+   "scale_ref": "c_shop_mirror_stand",
+   "size_cm": [
+    61.5,
+    171.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser"
+  },
+  {
+   "id": "shop_mirror_stand_black",
+   "scale_ref": "c_shop_mirror_stand",
+   "size_cm": [
+    61.5,
+    171.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_mirror_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "hairdresser"
+  }
+ ]
+}

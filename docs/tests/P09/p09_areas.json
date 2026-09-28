@@ -1,0 +1,32 @@
+{
+  "angezogen": true,
+  "blumen_auf_theke": 3,
+  "enten": 4,
+  "frisur": [
+    "long",
+    "pigtails"
+  ],
+  "kasse": true,
+  "oberteil": "dress",
+  "playground": [
+    "playground:18/1",
+    "pond:17/1",
+    "meadow:17/2"
+  ],
+  "schaukel_schwingt": true,
+  "shopping": [
+    "street:49/3",
+    "market:17/2",
+    "bakery:14/1",
+    "florist:15/1",
+    "greenhouse:11/0",
+    "fashion:17/1",
+    "hairdresser:13/1",
+    "toys:14/1",
+    "petshop:16/1",
+    "icecream:12/1",
+    "music:12/1"
+  ],
+  "sticker_shopping": 4,
+  "strauss": true
+}

@@ -1,0 +1,800 @@
+{
+ "area": "catalog",
+ "room": "park",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "play_climber_coral",
+   "scale_ref": "c_play_climber",
+   "size_cm": [
+    299.9,
+    261.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_climber.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_climber_sky",
+   "scale_ref": "c_play_climber",
+   "size_cm": [
+    299.9,
+    261.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_climber.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_climber_butter",
+   "scale_ref": "c_play_climber",
+   "size_cm": [
+    299.9,
+    261.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_climber.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_roundabout_coral",
+   "scale_ref": "c_play_roundabout",
+   "size_cm": [
+    181.8,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_roundabout.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9fc3a0",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_roundabout__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_roundabout_sky",
+   "scale_ref": "c_play_roundabout",
+   "size_cm": [
+    181.8,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_roundabout.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9fc3a0",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_roundabout__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_roundabout_butter",
+   "scale_ref": "c_play_roundabout",
+   "size_cm": [
+    181.8,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_roundabout.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#9fc3a0",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_roundabout__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_spring_rider_butter",
+   "scale_ref": "c_play_spring_rider",
+   "size_cm": [
+    83.1,
+    92.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_spring_rider.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_spring_rider__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_spring_rider_coral",
+   "scale_ref": "c_play_spring_rider",
+   "size_cm": [
+    83.1,
+    92.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_spring_rider.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_spring_rider__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_spring_rider_sky",
+   "scale_ref": "c_play_spring_rider",
+   "size_cm": [
+    83.1,
+    92.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_spring_rider.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_spring_rider__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_spring_rider_mint",
+   "scale_ref": "c_play_spring_rider",
+   "size_cm": [
+    83.1,
+    92.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_spring_rider.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/play_spring_rider__on.png"
+   },
+   "anim": {
+    "on": "wiggle"
+   }
+  },
+  {
+   "id": "play_swing_double_coral",
+   "scale_ref": "c_play_swing_double",
+   "size_cm": [
+    306.6,
+    236.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "play_swing_double_sky",
+   "scale_ref": "c_play_swing_double",
+   "size_cm": [
+    306.6,
+    236.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "play_swing_double_butter",
+   "scale_ref": "c_play_swing_double",
+   "size_cm": [
+    306.6,
+    236.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#9fc3a0",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "play_tower_slide_coral",
+   "scale_ref": "c_play_tower_slide",
+   "size_cm": [
+    362.0,
+    241.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_tower_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_tower_slide_sky",
+   "scale_ref": "c_play_tower_slide",
+   "size_cm": [
+    362.0,
+    241.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_tower_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_tower_slide_mint",
+   "scale_ref": "c_play_tower_slide",
+   "size_cm": [
+    362.0,
+    241.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_tower_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "park"
+  },
+  {
+   "id": "play_sand_mold_coral",
+   "scale_ref": "c_play_sand_mold",
+   "size_cm": [
+    15.9,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_mold.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "star",
+    "fish",
+    "castle"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/play_sand_mold__fish.png",
+    "castle": "res://assets/sprites/items/play_sand_mold__castle.png"
+   }
+  },
+  {
+   "id": "play_sand_mold_sky",
+   "scale_ref": "c_play_sand_mold",
+   "size_cm": [
+    15.9,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_mold.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "star",
+    "fish",
+    "castle"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/play_sand_mold__fish.png",
+    "castle": "res://assets/sprites/items/play_sand_mold__castle.png"
+   }
+  },
+  {
+   "id": "play_sand_mold_butter",
+   "scale_ref": "c_play_sand_mold",
+   "size_cm": [
+    15.9,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_mold.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "star",
+    "fish",
+    "castle"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/play_sand_mold__fish.png",
+    "castle": "res://assets/sprites/items/play_sand_mold__castle.png"
+   }
+  },
+  {
+   "id": "play_sand_mold_mint",
+   "scale_ref": "c_play_sand_mold",
+   "size_cm": [
+    15.9,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_mold.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "star",
+    "fish",
+    "castle"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/play_sand_mold__fish.png",
+    "castle": "res://assets/sprites/items/play_sand_mold__castle.png"
+   }
+  },
+  {
+   "id": "play_sand_shape_star_sand",
+   "scale_ref": "c_play_sand_shape_star",
+   "size_cm": [
+    17.1,
+    12.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_shape_star.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d8cfc2",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "sand_shape"
+   ]
+  },
+  {
+   "id": "play_sand_shape_fish_sand",
+   "scale_ref": "c_play_sand_shape_fish",
+   "size_cm": [
+    17.9,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_shape_fish.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d8cfc2",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "sand_shape"
+   ]
+  },
+  {
+   "id": "play_sand_shape_castle_sand",
+   "scale_ref": "c_play_sand_shape_castle",
+   "size_cm": [
+    19.8,
+    13.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sand_shape_castle.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#d8cfc2",
+    "#d4a86e"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "tags": [
+    "sand_shape"
+   ]
+  },
+  {
+   "id": "play_bubble_wand_sky",
+   "scale_ref": "c_play_bubble_wand",
+   "size_cm": [
+    12.7,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_bubble_wand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "id": "play_bubble_wand_rose",
+   "scale_ref": "c_play_bubble_wand",
+   "size_cm": [
+    12.7,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_bubble_wand.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "id": "play_bubble_wand_mint",
+   "scale_ref": "c_play_bubble_wand",
+   "size_cm": [
+    12.7,
+    19.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_bubble_wand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "park",
+   "grip": [
+    0.3,
+    0.3
+   ]
+  }
+ ]
+}

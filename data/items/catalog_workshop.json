@@ -1,0 +1,2183 @@
+{
+ "area": "catalog",
+ "room": "workshop",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "work_hammer_black",
+   "scale_ref": "c_work_hammer",
+   "size_cm": [
+    13.5,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_hammer.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_hammer_coral",
+   "scale_ref": "c_work_hammer",
+   "size_cm": [
+    13.5,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_hammer.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_wrench_metal",
+   "scale_ref": "c_work_wrench",
+   "size_cm": [
+    8.5,
+    26.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_wrench.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_screwdriver_coral",
+   "scale_ref": "c_work_screwdriver",
+   "size_cm": [
+    4.5,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_screwdriver.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_screwdriver_butter",
+   "scale_ref": "c_work_screwdriver",
+   "size_cm": [
+    4.5,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_screwdriver.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_saw_coral",
+   "scale_ref": "c_work_saw",
+   "size_cm": [
+    53.2,
+    16.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_saw.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_drill_coral",
+   "scale_ref": "c_work_drill",
+   "size_cm": [
+    26.3,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_drill.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "work_drill_teal",
+   "scale_ref": "c_work_drill",
+   "size_cm": [
+    26.3,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_drill.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "work_drill_butter",
+   "scale_ref": "c_work_drill",
+   "size_cm": [
+    26.3,
+    25.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_drill.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/work_drill__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "work_toolbox_coral",
+   "scale_ref": "c_work_toolbox",
+   "size_cm": [
+    46.9,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_toolbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
+  },
+  {
+   "id": "work_toolbox_navy",
+   "scale_ref": "c_work_toolbox",
+   "size_cm": [
+    46.9,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_toolbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
+  },
+  {
+   "id": "work_toolbox_green",
+   "scale_ref": "c_work_toolbox",
+   "size_cm": [
+    46.9,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_toolbox.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/work_toolbox__open.png"
+   }
+  },
+  {
+   "id": "work_tire_metal",
+   "scale_ref": "c_work_tire",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_jerrycan_coral",
+   "scale_ref": "c_work_jerrycan",
+   "size_cm": [
+    31.9,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_jerrycan.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_jerrycan_green",
+   "scale_ref": "c_work_jerrycan",
+   "size_cm": [
+    31.9,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_jerrycan.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_workbench_oak",
+   "scale_ref": "c_work_workbench",
+   "size_cm": [
+    152.0,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_workbench.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_ladder_metal",
+   "scale_ref": "c_work_ladder",
+   "size_cm": [
+    48.1,
+    203.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_ladder.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_ladder_oak",
+   "scale_ref": "c_work_ladder",
+   "size_cm": [
+    48.1,
+    203.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_ladder.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_paint_can_coral",
+   "scale_ref": "c_work_paint_can",
+   "size_cm": [
+    20.1,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_paint_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_paint_can_sky",
+   "scale_ref": "c_work_paint_can",
+   "size_cm": [
+    20.1,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_paint_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_paint_can_butter",
+   "scale_ref": "c_work_paint_can",
+   "size_cm": [
+    20.1,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_paint_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_paint_can_mint",
+   "scale_ref": "c_work_paint_can",
+   "size_cm": [
+    20.1,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_paint_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_paint_can_plum",
+   "scale_ref": "c_work_paint_can",
+   "size_cm": [
+    20.1,
+    23.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_paint_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_cone_traffic_orange",
+   "scale_ref": "c_work_cone_traffic",
+   "size_cm": [
+    31.5,
+    51.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_cone_traffic.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garage_car_lift_coral",
+   "scale_ref": "c_garage_car_lift",
+   "size_cm": [
+    481.7,
+    221.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_car_lift.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "up": "drop_metal"
+   },
+   "states": [
+    "down",
+    "up"
+   ],
+   "state_sprites": {
+    "up": "res://assets/sprites/items/garage_car_lift__up.png"
+   }
+  },
+  {
+   "id": "garage_car_lift_sky",
+   "scale_ref": "c_garage_car_lift",
+   "size_cm": [
+    481.7,
+    221.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_car_lift.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "up": "drop_metal"
+   },
+   "states": [
+    "down",
+    "up"
+   ],
+   "state_sprites": {
+    "up": "res://assets/sprites/items/garage_car_lift__up.png"
+   }
+  },
+  {
+   "id": "garage_gas_pump_coral",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_gas_pump_sky",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_gas_pump_green",
+   "scale_ref": "c_garage_gas_pump",
+   "size_cm": [
+    92.6,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_gas_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "fuel": "water_pour"
+   },
+   "states": [
+    "idle",
+    "fuel"
+   ],
+   "state_sprites": {
+    "fuel": "res://assets/sprites/items/garage_gas_pump__fuel.png"
+   },
+   "anim": {
+    "fuel": "pulse"
+   }
+  },
+  {
+   "id": "garage_wash_tunnel_sky",
+   "scale_ref": "c_garage_wash_tunnel",
+   "size_cm": [
+    621.6,
+    331.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_wash_tunnel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garage_wash_tunnel__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "garage_wash_tunnel_butter",
+   "scale_ref": "c_garage_wash_tunnel",
+   "size_cm": [
+    621.6,
+    331.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_wash_tunnel.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garage_wash_tunnel__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "garage_paint_booth_grey",
+   "scale_ref": "c_garage_paint_booth",
+   "size_cm": [
+    641.9,
+    301.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_paint_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_paint_booth_white",
+   "scale_ref": "c_garage_paint_booth",
+   "size_cm": [
+    641.9,
+    301.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_paint_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_bike_stand_coral",
+   "scale_ref": "c_garage_bike_stand",
+   "size_cm": [
+    81.5,
+    131.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_bike_stand_black",
+   "scale_ref": "c_garage_bike_stand",
+   "size_cm": [
+    81.5,
+    131.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#6d6f78",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_scrap_pile_rust",
+   "scale_ref": "c_garage_scrap_pile",
+   "size_cm": [
+    322.0,
+    197.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_pile.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#9aa6b4",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "found": "tada"
+   },
+   "states": [
+    "junk",
+    "found"
+   ],
+   "state_sprites": {
+    "found": "res://assets/sprites/items/garage_scrap_pile__found.png"
+   }
+  },
+  {
+   "id": "garage_scrap_pile_grey",
+   "scale_ref": "c_garage_scrap_pile",
+   "size_cm": [
+    322.0,
+    197.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_pile.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#9aa6b4",
+    "#2a2a30"
+   ],
+   "catalog": "workshop",
+   "sfx": {
+    "found": "tada"
+   },
+   "states": [
+    "junk",
+    "found"
+   ],
+   "state_sprites": {
+    "found": "res://assets/sprites/items/garage_scrap_pile__found.png"
+   }
+  },
+  {
+   "id": "garage_scrap_car_rust",
+   "scale_ref": "c_garage_scrap_car",
+   "size_cm": [
+    389.5,
+    136.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#6d6f78",
+    "#c96a4a"
+   ],
+   "catalog": "workshop",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garage_scrap_car_sky",
+   "scale_ref": "c_garage_scrap_car",
+   "size_cm": [
+    389.5,
+    136.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_scrap_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#c96a4a"
+   ],
+   "catalog": "workshop",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "garage_oil_drum_blue",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#6f8fb8",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_oil_drum_coral",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_oil_drum_green",
+   "scale_ref": "c_garage_oil_drum",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_oil_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#2a2a30"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "garage_spray_gun_coral",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_sky",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#a9c3dd",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_butter",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f6d98a",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_mint",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#9fc3a0",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_plum",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#7a5ea8",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_spray_gun_black",
+   "scale_ref": "c_garage_spray_gun",
+   "size_cm": [
+    23.2,
+    23.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_spray_gun.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "garage_hubcap_gold",
+   "scale_ref": "c_garage_hubcap",
+   "size_cm": [
+    41.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garage_hubcap.png",
+   "pad_px": 1,
+   "colors": [
+    "#e0b84a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_tool_wall_oak",
+   "scale_ref": "c_work_tool_wall",
+   "size_cm": [
+    121.9,
+    81.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_wall.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tool_wall_grey",
+   "scale_ref": "c_work_tool_wall",
+   "size_cm": [
+    121.9,
+    81.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_wall.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tool_wall_sky",
+   "scale_ref": "c_work_tool_wall",
+   "size_cm": [
+    121.9,
+    81.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_wall.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_summer_silver",
+   "scale_ref": "c_work_tire_summer",
+   "size_cm": [
+    63.9,
+    63.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_summer.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#9aa6b4",
+    "#c9d0d8"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_summer_black",
+   "scale_ref": "c_work_tire_summer",
+   "size_cm": [
+    63.9,
+    63.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_summer.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_winter_silver",
+   "scale_ref": "c_work_tire_winter",
+   "size_cm": [
+    63.9,
+    63.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_winter.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#9aa6b4",
+    "#c9d0d8"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_winter_black",
+   "scale_ref": "c_work_tire_winter",
+   "size_cm": [
+    63.9,
+    63.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_winter.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_sport_silver",
+   "scale_ref": "c_work_tire_sport",
+   "size_cm": [
+    67.9,
+    67.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_sport.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#9aa6b4",
+    "#c9d0d8"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_sport_black",
+   "scale_ref": "c_work_tire_sport",
+   "size_cm": [
+    67.9,
+    67.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_sport.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_steel_silver",
+   "scale_ref": "c_work_tire_steel",
+   "size_cm": [
+    61.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_steel.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#9aa6b4",
+    "#c9d0d8"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_steel_black",
+   "scale_ref": "c_work_tire_steel",
+   "size_cm": [
+    61.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_steel.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#2a2a30",
+    "#6d6f78"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_stack_black",
+   "scale_ref": "c_work_tire_stack",
+   "size_cm": [
+    63.9,
+    91.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_stack.png",
+   "pad_px": 1,
+   "colors": [
+    "#34343a",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tire_stack_grey",
+   "scale_ref": "c_work_tire_stack",
+   "size_cm": [
+    63.9,
+    91.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tire_stack.png",
+   "pad_px": 1,
+   "colors": [
+    "#4a4a52",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_car_jack_coral",
+   "scale_ref": "c_work_car_jack",
+   "size_cm": [
+    47.1,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_car_jack.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_car_jack_black",
+   "scale_ref": "c_work_car_jack",
+   "size_cm": [
+    47.1,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_car_jack.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_oil_can_coral",
+   "scale_ref": "c_work_oil_can",
+   "size_cm": [
+    26.2,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_oil_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_oil_can_sky",
+   "scale_ref": "c_work_oil_can",
+   "size_cm": [
+    26.2,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_oil_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_oil_can_green",
+   "scale_ref": "c_work_oil_can",
+   "size_cm": [
+    26.2,
+    31.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_oil_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_bike_pump_black",
+   "scale_ref": "c_work_bike_pump",
+   "size_cm": [
+    26.8,
+    61.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_bike_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_bike_pump_coral",
+   "scale_ref": "c_work_bike_pump",
+   "size_cm": [
+    26.8,
+    61.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_bike_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_bike_pump_sky",
+   "scale_ref": "c_work_bike_pump",
+   "size_cm": [
+    26.8,
+    61.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_bike_pump.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_car_wash_sky",
+   "scale_ref": "c_work_car_wash",
+   "size_cm": [
+    35.5,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_car_wash.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_car_wash_coral",
+   "scale_ref": "c_work_car_wash",
+   "size_cm": [
+    35.5,
+    38.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_car_wash.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_tool_cart_coral",
+   "scale_ref": "c_work_tool_cart",
+   "size_cm": [
+    77.7,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tool_cart_navy",
+   "scale_ref": "c_work_tool_cart",
+   "size_cm": [
+    77.7,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_tool_cart_black",
+   "scale_ref": "c_work_tool_cart",
+   "size_cm": [
+    77.7,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_tool_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#9aa6b4",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop"
+  },
+  {
+   "id": "work_snow_shovel_coral",
+   "scale_ref": "c_work_snow_shovel",
+   "size_cm": [
+    46.5,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_snow_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_snow_shovel_sky",
+   "scale_ref": "c_work_snow_shovel",
+   "size_cm": [
+    46.5,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_snow_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_snow_shovel_black",
+   "scale_ref": "c_work_snow_shovel",
+   "size_cm": [
+    46.5,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_snow_shovel.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "work_cable_reel_coral",
+   "scale_ref": "c_work_cable_reel",
+   "size_cm": [
+    31.9,
+    36.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_cable_reel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "work_cable_reel_black",
+   "scale_ref": "c_work_cable_reel",
+   "size_cm": [
+    31.9,
+    36.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/work_cable_reel.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "workshop",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "_doc": "Feste Figuren im Zuhause (P07-T08 → P08): Nachbarin am Gartenzaun, Briefträger/in bringt Post zum Briefkasten.",
+ "area": "home",
+ "npcs": [
+  {
+   "id": "npc_neighbor",
+   "role": "neighbor",
+   "room": "garden",
+   "x_cm": 300,
+   "y_cm": 4,
+   "name": "Frau Sommer"
+  },
+  {
+   "id": "npc_postman",
+   "role": "postman",
+   "room": "garden",
+   "x_cm": 60,
+   "y_cm": 30,
+   "name": "Herr Post"
+  }
+ ]
+}

@@ -1,0 +1,1054 @@
+{
+ "area": "catalog",
+ "room": "garden",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "garden_grill_black",
+   "scale_ref": "c_garden_grill",
+   "size_cm": [
+    61.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_grill_coral",
+   "scale_ref": "c_garden_grill",
+   "size_cm": [
+    61.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_grill_navy",
+   "scale_ref": "c_garden_grill",
+   "size_cm": [
+    61.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_grill.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f09a55",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/garden_grill__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "garden_bbq_food_rust",
+   "scale_ref": "c_garden_bbq_food",
+   "size_cm": [
+    25.5,
+    11.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bbq_food.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_watering_can_mint",
+   "scale_ref": "c_garden_watering_can",
+   "size_cm": [
+    38.6,
+    32.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_watering_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_watering_can_sky",
+   "scale_ref": "c_garden_watering_can",
+   "size_cm": [
+    38.6,
+    32.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_watering_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_watering_can_coral",
+   "scale_ref": "c_garden_watering_can",
+   "size_cm": [
+    38.6,
+    32.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_watering_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_watering_can_metal",
+   "scale_ref": "c_garden_watering_can",
+   "size_cm": [
+    38.6,
+    32.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_watering_can.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_wheelbarrow_coral",
+   "scale_ref": "c_garden_wheelbarrow",
+   "size_cm": [
+    116.2,
+    72.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_wheelbarrow.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_wheelbarrow_green",
+   "scale_ref": "c_garden_wheelbarrow",
+   "size_cm": [
+    116.2,
+    72.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_wheelbarrow.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_wheelbarrow_sky",
+   "scale_ref": "c_garden_wheelbarrow",
+   "size_cm": [
+    116.2,
+    72.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_wheelbarrow.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_gnome_coral",
+   "scale_ref": "c_garden_gnome",
+   "size_cm": [
+    19.0,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gnome.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_gnome_sky",
+   "scale_ref": "c_garden_gnome",
+   "size_cm": [
+    19.0,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_gnome.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_birdhouse_coral",
+   "scale_ref": "c_garden_birdhouse",
+   "size_cm": [
+    31.5,
+    121.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_birdhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_birdhouse_sky",
+   "scale_ref": "c_garden_birdhouse",
+   "size_cm": [
+    31.5,
+    121.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_birdhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_birdhouse_mint",
+   "scale_ref": "c_garden_birdhouse",
+   "size_cm": [
+    31.5,
+    121.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_birdhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#b8452f",
+    "#d4a86e"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_fence_cream",
+   "scale_ref": "c_garden_fence",
+   "size_cm": [
+    121.5,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_fence_oak",
+   "scale_ref": "c_garden_fence",
+   "size_cm": [
+    121.5,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_fence_sage",
+   "scale_ref": "c_garden_fence",
+   "size_cm": [
+    121.5,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_fence.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "garden_bench_oak",
+   "scale_ref": "c_garden_bench",
+   "size_cm": [
+    151.5,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "garden",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_bench_green",
+   "scale_ref": "c_garden_bench",
+   "size_cm": [
+    151.5,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "garden",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_bench_coral",
+   "scale_ref": "c_garden_bench",
+   "size_cm": [
+    151.5,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "garden",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "garden_pool_kids_sky",
+   "scale_ref": "c_garden_pool_kids",
+   "size_cm": [
+    158.0,
+    32.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pool_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_pool_kids_rose",
+   "scale_ref": "c_garden_pool_kids",
+   "size_cm": [
+    158.0,
+    32.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pool_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_pool_kids_mint",
+   "scale_ref": "c_garden_pool_kids",
+   "size_cm": [
+    158.0,
+    32.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_pool_kids.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_sandbox_toys_coral",
+   "scale_ref": "c_garden_sandbox_toys",
+   "size_cm": [
+    32.2,
+    20.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_sandbox_toys.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#d8cfc2"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_hose_green",
+   "scale_ref": "c_garden_hose",
+   "size_cm": [
+    43.1,
+    43.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hose.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "garden_hose_coral",
+   "scale_ref": "c_garden_hose",
+   "size_cm": [
+    43.1,
+    43.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/garden_hose.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "camp_stump_oak",
+   "scale_ref": "c_camp_stump",
+   "size_cm": [
+    51.7,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_stump.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e3c79a",
+    "#8a5e3f"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_mushroom_rust",
+   "scale_ref": "c_camp_mushroom",
+   "size_cm": [
+    21.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_mushroom.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "camp_mushroom_oak",
+   "scale_ref": "c_camp_mushroom",
+   "size_cm": [
+    21.8,
+    23.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_mushroom.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "camp_tree_leaf",
+   "scale_ref": "c_camp_tree",
+   "size_cm": [
+    191.8,
+    296.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tree.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_tree_leaf_light",
+   "scale_ref": "c_camp_tree",
+   "size_cm": [
+    191.8,
+    296.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tree.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_fir_leaf_dark",
+   "scale_ref": "c_camp_fir",
+   "size_cm": [
+    162.0,
+    341.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_fir.png",
+   "pad_px": 1,
+   "colors": [
+    "#3f6a4f",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_fir_leaf",
+   "scale_ref": "c_camp_fir",
+   "size_cm": [
+    162.0,
+    341.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_fir.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_bush_leaf",
+   "scale_ref": "c_camp_bush",
+   "size_cm": [
+    127.7,
+    75.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_bush.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_bush_leaf_light",
+   "scale_ref": "c_camp_bush",
+   "size_cm": [
+    127.7,
+    75.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_bush.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden"
+  },
+  {
+   "id": "camp_rock_grey",
+   "scale_ref": "c_camp_rock",
+   "size_cm": [
+    84.0,
+    52.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_rock.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#5f8f6a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_rock_sand",
+   "scale_ref": "c_camp_rock",
+   "size_cm": [
+    84.0,
+    52.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_rock.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#5f8f6a",
+    "#9aa6b4"
+   ],
+   "catalog": "garden",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  }
+ ]
+}

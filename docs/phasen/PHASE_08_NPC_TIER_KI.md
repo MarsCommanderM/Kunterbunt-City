@@ -17,11 +17,11 @@
 | P08-T10 | Performance: 15 aktive NPCs/Tiere + 250 Items → 60 FPS (Desktop) |
 
 ## Akzeptanzkriterien
-- [ ] Beispiel-Szene: Kassiererin scannt ein Item an der Kasse (Piep, Tüte erscheint)
-- [ ] Bademeister-Test: läuft den Rand ab, pfeift bei rennender Figur, rettet nach 10 s unter Wasser (Platzhalter-Becken)
-- [ ] Alle Garantie-Tests grün
-- [ ] Nie mehr als 1 Tierlaut pro 8 s (Test)
-- [ ] `check.sh` grün
+- [x] Beispiel-Szene: Kassiererin scannt ein Item an der Kasse (Piep, Tüte erscheint) – `test_cashier_scans_an_item_beep_and_bag`, `docs/tests/P08/p08_04_kasse_piep_tuete.jpg`
+- [x] Bademeister-Test: läuft den Rand ab, pfeift bei rennender Figur, rettet nach 10 s unter Wasser (Platzhalter-Becken) – `test_lifeguard_patrols_whistles_at_runners_and_rescues_after_10_s`, `p08_05…07`
+- [x] Alle Garantie-Tests grün – `tests/test_npc.gd` (14 Tests)
+- [x] Nie mehr als 1 Tierlaut pro 8 s (Test) – `test_never_more_than_one_animal_sound_per_8_s` (6 Hunde, 180 s)
+- [x] `check.sh` grün
 
 ## Startprompt
 > Lies MASTERPROMPT.md, docs/06_TECH_SPEC.md §4.5–4.6 und docs/phasen/PHASE_08_NPC_TIER_KI.md. Baue die NPC- und Tier-KI mit einfachen, testbaren Zustandsmaschinen und Rollen-Vorlagen. Phasenbericht und stoppen.

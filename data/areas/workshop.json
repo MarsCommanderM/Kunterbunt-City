@@ -1,0 +1,447 @@
+{
+ "id": "workshop",
+ "name": "Werkstatt",
+ "name_key": "AREA_WORKSHOP",
+ "_doc": "P10h: 6 Räume. Erzeugt von tools/make_areas.py (tools/areas/workshop.py) – dort ändern.",
+ "spawn": {
+  "room": "garage",
+  "x_cm": 900,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_workshop",
+ "rooms": [
+  {
+   "id": "garage",
+   "label": "Autowerkstatt",
+   "icon": "garage_car_lift_coral",
+   "width_cm": 1300,
+   "height_cm": 400,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 380,
+    "min_h_cm": 220,
+    "max_h_cm": 400
+   },
+   "background": "res://assets/backgrounds/workshop/garage.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef0f4",
+      "#ffffff",
+      "#e07a7a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "concrete",
+     "floor_cols": [
+      "#c8c8c8",
+      "#b8b8b8",
+      "#8a8a8a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "garage_car_lift_coral",
+     "x_cm": 500,
+     "y_cm": 5
+    },
+    {
+     "id": "veh_car_hatch_sky",
+     "x_cm": 500,
+     "y_cm": 10
+    },
+    {
+     "id": "work_tool_wall_grey",
+     "x_cm": 1000,
+     "y_cm": 0
+    },
+    {
+     "id": "work_tool_cart_coral",
+     "x_cm": 850,
+     "y_cm": 40
+    },
+    {
+     "id": "work_tire_summer_black",
+     "x_cm": 780,
+     "y_cm": 62
+    },
+    {
+     "id": "work_tire_summer_black",
+     "x_cm": 830,
+     "y_cm": 64
+    },
+    {
+     "id": "work_car_jack_coral",
+     "x_cm": 250,
+     "y_cm": 60
+    },
+    {
+     "id": "work_toolbox_coral",
+     "x_cm": 1100,
+     "y_cm": 62
+    },
+    {
+     "id": "garage_oil_drum_blue",
+     "x_cm": 120,
+     "y_cm": 20
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "wash",
+   "label": "Waschanlage",
+   "icon": "garage_wash_tunnel_sky",
+   "width_cm": 1500,
+   "height_cm": 600,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/workshop/wash.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 61,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#8a8f96",
+      "#7a7f86",
+      "#5a5f66"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "garage_wash_tunnel_sky",
+     "x_cm": 700,
+     "y_cm": 10
+    },
+    {
+     "id": "veh_car_beetle_mint",
+     "x_cm": 1250,
+     "y_cm": 45
+    },
+    {
+     "id": "work_car_wash_sky",
+     "x_cm": 300,
+     "y_cm": 60
+    },
+    {
+     "id": "work_cone_traffic_orange",
+     "x_cm": 200,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "fuel",
+   "label": "Tankstelle",
+   "icon": "garage_gas_pump_coral",
+   "width_cm": 1600,
+   "height_cm": 600,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/workshop/fuel.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 62,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#8a8f96",
+      "#7a7f86",
+      "#5a5f66"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "garage_gas_pump_coral",
+     "x_cm": 500,
+     "y_cm": 20
+    },
+    {
+     "id": "garage_gas_pump_sky",
+     "x_cm": 750,
+     "y_cm": 20
+    },
+    {
+     "id": "veh_car_sedan_navy",
+     "x_cm": 500,
+     "y_cm": 45
+    },
+    {
+     "id": "swim_kiosk_sky",
+     "x_cm": 1250,
+     "y_cm": 10
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "swim_kiosk_sky",
+     "x_rel": 0.3
+    },
+    {
+     "id": "food_banana_butter",
+     "on": "swim_kiosk_sky",
+     "x_rel": -0.3
+    },
+    {
+     "id": "work_jerrycan_coral",
+     "x_cm": 900,
+     "y_cm": 62
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 100,
+     "y_cm": 2
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "paint",
+   "label": "Lackiererei",
+   "icon": "garage_spray_gun_coral",
+   "width_cm": 1200,
+   "height_cm": 360,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 380,
+    "min_h_cm": 220,
+    "max_h_cm": 360
+   },
+   "background": "res://assets/backgrounds/workshop/paint.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f4f4f8",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "concrete",
+     "floor_cols": [
+      "#c8c8c8",
+      "#b8b8b8",
+      "#8a8a8a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "garage_paint_booth_white",
+     "x_cm": 550,
+     "y_cm": 0
+    },
+    {
+     "id": "veh_car_pickup_white",
+     "x_cm": 550,
+     "y_cm": 20
+    },
+    {
+     "id": "garage_spray_gun_coral",
+     "x_cm": 950,
+     "y_cm": 62
+    },
+    {
+     "id": "garage_spray_gun_sky",
+     "x_cm": 1000,
+     "y_cm": 64
+    },
+    {
+     "id": "garage_spray_gun_butter",
+     "x_cm": 1050,
+     "y_cm": 62
+    },
+    {
+     "id": "work_paint_can_mint",
+     "x_cm": 1120,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "bikes",
+   "label": "Fahrradwerkstatt",
+   "icon": "garage_bike_stand_coral",
+   "width_cm": 1150,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/workshop/bikes.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f3f8ee",
+      "#ffffff",
+      "#7fae6a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "concrete",
+     "floor_cols": [
+      "#c8c8c8",
+      "#b8b8b8",
+      "#8a8a8a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "garage_bike_stand_coral",
+     "x_cm": 350,
+     "y_cm": 20
+    },
+    {
+     "id": "work_bike_pump_coral",
+     "x_cm": 520,
+     "y_cm": 62
+    },
+    {
+     "id": "work_tool_wall_oak",
+     "x_cm": 800,
+     "y_cm": 0
+    },
+    {
+     "id": "work_workbench_oak",
+     "x_cm": 1000,
+     "y_cm": 10
+    },
+    {
+     "id": "work_wrench_metal",
+     "on": "work_workbench_oak",
+     "x_rel": -0.2
+    },
+    {
+     "id": "work_tire_steel_silver",
+     "x_cm": 650,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "scrapyard",
+   "label": "Schrottplatz",
+   "icon": "garage_scrap_pile_rust",
+   "width_cm": 1800,
+   "height_cm": 600,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 400,
+    "min_h_cm": 220,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/workshop/scrapyard.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 63,
+    "decor": {
+     "floor": "sand",
+     "floor_cols": [
+      "#c8b89a",
+      "#b8a88a",
+      "#8a7a5a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "garage_scrap_pile_rust",
+     "x_cm": 500,
+     "y_cm": 5
+    },
+    {
+     "id": "garage_scrap_car_rust",
+     "x_cm": 950,
+     "y_cm": 20
+    },
+    {
+     "id": "garage_scrap_pile_grey",
+     "x_cm": 1450,
+     "y_cm": 10
+    },
+    {
+     "id": "work_tire_stack_black",
+     "x_cm": 1200,
+     "y_cm": 50
+    },
+    {
+     "id": "garage_oil_drum_coral",
+     "x_cm": 250,
+     "y_cm": 50
+    },
+    {
+     "id": "work_tire_winter_black",
+     "x_cm": 700,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_garden"
+  }
+ ]
+}

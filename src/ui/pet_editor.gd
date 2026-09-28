@@ -165,9 +165,7 @@ func _build_variants() -> void:
 				inner.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT,
 					Control.PRESET_MODE_MINSIZE, 8)
 				b.add_child(inner)
-				var pic := Ui.icon(PetSpecies.icon(String(sid)), 140.0)
-				pic.custom_minimum_size = Vector2(180, 150)
-				inner.add_child(pic)
+				inner.add_child(_pet_pic(String(sid), PetSpecies.default_fur(String(sid)), "plain"))   # echtes Tier
 				inner.add_child(Ui.label(PetSpecies.label(String(sid)), Ui.FONT_SMALL))
 				Ui.mark_selected(b, pet.species_id == String(sid))
 				Ui.wire(b, func() -> void:
@@ -181,14 +179,16 @@ func _build_variants() -> void:
 				_variants.add_child(b)
 		"fur", "fur2", "collar":
 			_variants.columns = 5
-			_build_swatches(_current_colors(), 148.0)
+			_build_swatches(_current_colors(), 140.0)
 		"pattern":
 			_variants.columns = 5
 			for p: Variant in PetSpecies.patterns():
 				var pid: String = String((p as Dictionary)["id"])
 				var b := Ui.tile(190.0)
-				b.custom_minimum_size = Vector2(190, 150)
-				b.text = String((p as Dictionary)["label"])
+				b.custom_minimum_size = Vector2(190, 190)
+				var pic := _pet_pic(pet.species_id, [pet.fur, pet.fur2, pet.collar], pid)      # Muster am Tier zeigen
+				pic.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 12)
+				b.add_child(pic)
 				Ui.mark_selected(b, pet.pattern == pid)
 				Ui.wire(b, func() -> void:
 					pet.pattern = pid
@@ -227,34 +227,20 @@ func _current_colors() -> Array:
 
 
 func _build_swatches(colors: Array, size: float) -> void:
-	for hex: Variant in colors:
-		var b := Ui.tile(size)
-		var fill: Color = Color(String(hex))
-		b.add_theme_stylebox_override("normal", Ui.box(fill, Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 8))
-		b.add_theme_stylebox_override("hover", Ui.box(fill.lightened(0.08), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 12))
-		b.add_theme_stylebox_override("pressed", Ui.box(fill.darkened(0.12), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 2))
-		Ui.mark_selected(b, _current_color() == String(hex))
-		Ui.wire(b, func() -> void: select_color(String(hex)))
-		_variants.add_child(b)
+	ColorDots.fill(_variants, colors, size, _current_color(), select_color)
 
 
 func _build_palette() -> void:
-	for c: Node in _palette_row.get_children():
-		c.queue_free()
-	var colors: Array = _current_colors()
-	for hex: Variant in colors:
-		var b := Ui.tile(96.0)
-		var fill: Color = Color(String(hex))
-		b.add_theme_stylebox_override("normal", Ui.box(fill, Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 8))
-		b.add_theme_stylebox_override("pressed", Ui.box(fill.darkened(0.12), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 2))
-		Ui.mark_selected(b, _current_color() == String(hex))
-		Ui.wire(b, func() -> void: select_color(String(hex)))
-		_palette_row.add_child(b)
+	ColorDots.fill(_palette_row, _current_colors(), 84.0, _current_color(), select_color)
+
+
+## Kleines Tierbild (Kachel): dieselbe Einfärbung wie im Spiel.
+func _pet_pic(sid: String, cols: Array, pat: String) -> PetStage:
+	var st := PetStage.new()
+	st.custom_minimum_size = Vector2(180, 150)
+	st.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	st.show_pet(sid, cols, pat)
+	return st
 
 
 func _current_color() -> String:
@@ -333,14 +319,14 @@ func play_voice() -> void:
 func _refresh() -> void:
 	if _stage == null:
 		return
-	_stage.show_pet(pet.species_id, [pet.fur, pet.fur2, pet.collar])
+	_stage.show_pet(pet.species_id, [pet.fur, pet.fur2, pet.collar], pet.pattern)
 	_build_cats()
 	_build_variants()
 	_build_palette()
 	var lbl: Label = _stage.get_parent().get_node_or_null("SpeciesLabel") as Label
 	if lbl != null:
 		var def: ItemDefinition = ItemDB.get_item(StringName(pet.species_id))
-		lbl.text = "%s · %d cm hoch" % [PetSpecies.label(pet.species_id),
+		lbl.text = tr("%s · %d cm hoch") % [PetSpecies.label(pet.species_id),
 			int(def.height_cm) if def != null else 0]
 	if _name_btn != null:
 		_name_btn.text = " " + _title()

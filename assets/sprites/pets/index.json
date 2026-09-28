@@ -5,12 +5,12 @@
   "w_cm": 30.0,
   "h_cm": 28.0,
   "size_px": [
-   480,
-   448
+   604,
+   917
   ],
   "colors": [
-   "#c98a4b",
-   "#f2e0c8",
+   "#d9a066",
+   "#fbeed7",
    "#e2574c"
   ],
   "voice": "pet_dog_bark",
@@ -22,12 +22,12 @@
   "w_cm": 45.0,
   "h_cm": 45.0,
   "size_px": [
-   512,
-   512
+   651,
+   831
   ],
   "colors": [
    "#b8763f",
-   "#f0dcbe",
+   "#f6e6cc",
    "#4f9bd8"
   ],
   "voice": "pet_dog_bark",
@@ -39,12 +39,12 @@
   "w_cm": 60.0,
   "h_cm": 65.0,
   "size_px": [
-   473,
-   512
+   685,
+   831
   ],
   "colors": [
    "#8f6a4a",
-   "#e9d7bd",
+   "#efdcc2",
    "#6cbf6b"
   ],
   "voice": "pet_dog_bark",
@@ -56,12 +56,12 @@
   "w_cm": 30.0,
   "h_cm": 28.0,
   "size_px": [
-   480,
-   448
+   637,
+   917
   ],
   "colors": [
-   "#b9b3c4",
-   "#f6f0f6",
+   "#f0a24b",
+   "#fbeedc",
    "#e2574c"
   ],
   "voice": "pet_cat_meow",
@@ -73,13 +73,13 @@
   "w_cm": 28.0,
   "h_cm": 22.0,
   "size_px": [
-   448,
-   352
+   534,
+   1013
   ],
   "colors": [
    "#e8e2e6",
-   "#fdf7fb",
-   "#8fd3c1"
+   "#fdf2f6",
+   "#f28fb1"
   ],
   "voice": "pet_rabbit_squeak",
   "sprite": "assets/sprites/pets/pet_rabbit.png"
@@ -90,13 +90,13 @@
   "w_cm": 10.0,
   "h_cm": 15.0,
   "size_px": [
-   160,
-   240
+   695,
+   886
   ],
   "colors": [
    "#6fc3e8",
-   "#ffe6a8",
-   "#e2574c"
+   "#fff1c4",
+   "#f0a24b"
   ],
   "voice": "pet_bird_chirp",
   "sprite": "assets/sprites/pets/pet_bird.png"
@@ -107,13 +107,13 @@
   "w_cm": 10.0,
   "h_cm": 7.0,
   "size_px": [
-   160,
-   112
+   1100,
+   850
   ],
   "colors": [
    "#e0b071",
-   "#fbeed7",
-   "#e2574c"
+   "#fdf1dc",
+   "#f28fb1"
   ],
   "voice": "pet_hamster_squeak",
   "sprite": "assets/sprites/pets/pet_hamster.png"
@@ -124,13 +124,13 @@
   "w_cm": 22.0,
   "h_cm": 12.0,
   "size_px": [
-   352,
-   192
+   1398,
+   855
   ],
   "colors": [
-   "#d8a15f",
-   "#f7e6c8",
-   "#8fd3c1"
+   "#c98a4b",
+   "#fbeedc",
+   "#f28fb1"
   ],
   "voice": "pet_guinea_pig_wheek",
   "sprite": "assets/sprites/pets/pet_guinea_pig.png"
@@ -141,13 +141,13 @@
   "w_cm": 10.0,
   "h_cm": 6.0,
   "size_px": [
-   160,
-   96
+   1341,
+   789
   ],
   "colors": [
    "#f0a24b",
-   "#ffd98a",
-   "#6fc3e8"
+   "#fff4e0",
+   "#e2574c"
   ],
   "voice": "pet_fish_bubble",
   "sprite": "assets/sprites/pets/pet_fish.png"
@@ -158,13 +158,13 @@
   "w_cm": 22.0,
   "h_cm": 10.0,
   "size_px": [
-   352,
-   160
+   1665,
+   802
   ],
   "colors": [
    "#7fbf6a",
    "#e8dcae",
-   "#e2574c"
+   "#c98a4b"
   ],
   "voice": "pet_turtle_hiss",
   "sprite": "assets/sprites/pets/pet_turtle.png"
@@ -175,13 +175,13 @@
   "w_cm": 150.0,
   "h_cm": 125.0,
   "size_px": [
-   512,
-   427
+   1028,
+   874
   ],
   "colors": [
-   "#f0dcc0",
+   "#e0b98a",
    "#f7efe0",
-   "#c98ad8"
+   "#8a5a3c"
   ],
   "voice": "pet_pony_whinny",
   "sprite": "assets/sprites/pets/pet_pony.png"
@@ -192,12 +192,12 @@
   "w_cm": 40.0,
   "h_cm": 35.0,
   "size_px": [
-   512,
-   448
+   812,
+   879
   ],
   "colors": [
    "#8fd3c1",
-   "#e8f6ef",
+   "#fff4dc",
    "#f0a24b"
   ],
   "voice": "pet_dragon_roar",
@@ -209,13 +209,13 @@
   "w_cm": 70.0,
   "h_cm": 60.0,
   "size_px": [
-   512,
-   439
+   1007,
+   946
   ],
   "colors": [
    "#fdf3f7",
-   "#ffffff",
-   "#f5c8e8"
+   "#fff8e0",
+   "#c98ad8"
   ],
   "voice": "pet_unicorn_sparkle",
   "sprite": "assets/sprites/pets/pet_mini_unicorn.png"

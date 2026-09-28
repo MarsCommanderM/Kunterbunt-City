@@ -103,3 +103,23 @@ func _walked_pet() -> PetNode:
 	for _i: int in 240:
 		dog.tick(1.0 / 60.0)
 	return dog
+
+
+func test_pet_without_own_colors_gets_default_fur() -> void:
+	# P04b: Tiere aus default_items haben keine PetData – sie dürfen nie in Rohfarben (rot/grün/blau) erscheinen
+	var cat: ItemNode = ItemSpawner.on_floor(k.room, &"pet_cat", 260.0, 40.0)
+	var mat: ShaderMaterial = cat.sprite.material as ShaderMaterial
+	assert_not_null(mat, "Katze wird eingefärbt")
+	var want: Color = Color(String(PetSpecies.default_fur("pet_cat")[0]))
+	assert_true((mat.get_shader_parameter("zone1") as Color).is_equal_approx(want), "Fell = Standardfarbe der Art")
+
+
+func test_pet_pattern_is_drawn_on_the_fur() -> void:
+	# P04b-T07: Muster wurde gespeichert, aber nie gezeichnet – jetzt liegt es im Shader (nur Zone 1 = Fell)
+	var dog: ItemNode = ItemSpawner.on_floor(k.room, &"pet_dog_medium", 260.0, 40.0)
+	PetLook.apply(dog.sprite, ["#b8763f", "#f6e6cc", "#4f9bd8"], "stripes")
+	var mat: ShaderMaterial = dog.sprite.material as ShaderMaterial
+	assert_true(bool(mat.get_shader_parameter("has_pattern")), "Streifen an")
+	assert_not_null(mat.get_shader_parameter("pattern_tex"))
+	PetLook.apply(dog.sprite, ["#b8763f", "#f6e6cc", "#4f9bd8"], "plain")
+	assert_false(bool(mat.get_shader_parameter("has_pattern")), "einfarbig = kein Muster")

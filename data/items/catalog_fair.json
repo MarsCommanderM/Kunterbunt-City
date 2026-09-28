@@ -1,0 +1,1612 @@
+{
+ "area": "catalog",
+ "room": "fair",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "fair_cotton_candy_rose",
+   "scale_ref": "c_fair_cotton_candy",
+   "size_cm": [
+    22.2,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_cotton_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_cotton_candy_sky",
+   "scale_ref": "c_fair_cotton_candy",
+   "size_cm": [
+    22.2,
+    41.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_cotton_candy.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_popcorn_coral",
+   "scale_ref": "c_fair_popcorn",
+   "size_cm": [
+    17.7,
+    24.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_popcorn.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_ticket_booth_coral",
+   "scale_ref": "c_fair_ticket_booth",
+   "size_cm": [
+    161.7,
+    221.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ticket_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_ticket_booth_sky",
+   "scale_ref": "c_fair_ticket_booth",
+   "size_cm": [
+    161.7,
+    221.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ticket_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_balloon_bunch_coral",
+   "scale_ref": "c_fair_balloon_bunch",
+   "size_cm": [
+    46.4,
+    124.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon_bunch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_target_coral",
+   "scale_ref": "c_fair_target",
+   "size_cm": [
+    61.5,
+    129.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_target.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_carousel_horse_cream",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    101.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_carousel_horse_rose",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    101.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_carousel_horse_sky",
+   "scale_ref": "c_fair_carousel_horse",
+   "size_cm": [
+    101.9,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_ferris_wheel_sky",
+   "scale_ref": "c_fair_ferris_wheel",
+   "size_cm": [
+    609.9,
+    633.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ferris_wheel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "fair_ferris_wheel_coral",
+   "scale_ref": "c_fair_ferris_wheel",
+   "size_cm": [
+    609.9,
+    633.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ferris_wheel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "fair_carousel_coral",
+   "scale_ref": "c_fair_carousel",
+   "size_cm": [
+    621.7,
+    461.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "fair_carousel_sky",
+   "scale_ref": "c_fair_carousel",
+   "size_cm": [
+    621.7,
+    461.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "fair_carousel_mint",
+   "scale_ref": "c_fair_carousel",
+   "size_cm": [
+    621.7,
+    461.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_carousel.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "fair_bumper_car_coral",
+   "scale_ref": "c_fair_bumper_car",
+   "size_cm": [
+    166.1,
+    102.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_bumper_car_sky",
+   "scale_ref": "c_fair_bumper_car",
+   "size_cm": [
+    166.1,
+    102.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_bumper_car_butter",
+   "scale_ref": "c_fair_bumper_car",
+   "size_cm": [
+    166.1,
+    102.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_bumper_car_mint",
+   "scale_ref": "c_fair_bumper_car",
+   "size_cm": [
+    166.1,
+    102.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_bumper_car_lilac",
+   "scale_ref": "c_fair_bumper_car",
+   "size_cm": [
+    166.1,
+    102.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_coaster_track_coral",
+   "scale_ref": "c_fair_coaster_track",
+   "size_cm": [
+    1111.7,
+    317.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_coaster_track.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_coaster_track_sky",
+   "scale_ref": "c_fair_coaster_track",
+   "size_cm": [
+    1111.7,
+    317.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_coaster_track.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_coaster_car_coral",
+   "scale_ref": "c_fair_coaster_car",
+   "size_cm": [
+    173.9,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_coaster_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "fair_coaster_car_butter",
+   "scale_ref": "c_fair_coaster_car",
+   "size_cm": [
+    173.9,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_coaster_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "fair_ghost_house_lilac",
+   "scale_ref": "c_fair_ghost_house",
+   "size_cm": [
+    731.8,
+    441.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ghost_house.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#7a5ea8",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "boo": "boo"
+   },
+   "states": [
+    "calm",
+    "boo"
+   ],
+   "state_sprites": {
+    "boo": "res://assets/sprites/items/fair_ghost_house__boo.png"
+   },
+   "anim": {
+    "boo": "wiggle"
+   }
+  },
+  {
+   "id": "fair_ghost_house_navy",
+   "scale_ref": "c_fair_ghost_house",
+   "size_cm": [
+    731.8,
+    441.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ghost_house.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#7a5ea8",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "boo": "boo"
+   },
+   "states": [
+    "calm",
+    "boo"
+   ],
+   "state_sprites": {
+    "boo": "res://assets/sprites/items/fair_ghost_house__boo.png"
+   },
+   "anim": {
+    "boo": "wiggle"
+   }
+  },
+  {
+   "id": "fair_ghost_car_lilac",
+   "scale_ref": "c_fair_ghost_car",
+   "size_cm": [
+    153.6,
+    71.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ghost_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#7a5ea8",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_ghost_car_mint",
+   "scale_ref": "c_fair_ghost_car",
+   "size_cm": [
+    153.6,
+    71.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_ghost_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#7a5ea8",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "fair_booth_coral",
+   "scale_ref": "c_fair_booth",
+   "size_cm": [
+    331.8,
+    261.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_booth_sky",
+   "scale_ref": "c_fair_booth",
+   "size_cm": [
+    331.8,
+    261.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_booth_butter",
+   "scale_ref": "c_fair_booth",
+   "size_cm": [
+    331.8,
+    261.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_booth_mint",
+   "scale_ref": "c_fair_booth",
+   "size_cm": [
+    331.8,
+    261.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_booth.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_duck_pond_sky",
+   "scale_ref": "c_fair_duck_pond",
+   "size_cm": [
+    227.5,
+    72.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_duck_pond.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_duck_pond_coral",
+   "scale_ref": "c_fair_duck_pond",
+   "size_cm": [
+    227.5,
+    72.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_duck_pond.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_high_striker_coral",
+   "scale_ref": "c_fair_high_striker",
+   "size_cm": [
+    73.6,
+    466.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_high_striker.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "ring": "fair_bell"
+   },
+   "states": [
+    "off",
+    "ring"
+   ],
+   "state_sprites": {
+    "ring": "res://assets/sprites/items/fair_high_striker__ring.png"
+   },
+   "anim": {
+    "ring": "bounce"
+   }
+  },
+  {
+   "id": "fair_stage_plum",
+   "scale_ref": "c_fair_stage",
+   "size_cm": [
+    647.7,
+    321.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_stage.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "open": "tada"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/fair_stage__open.png"
+   }
+  },
+  {
+   "id": "fair_stage_coral",
+   "scale_ref": "c_fair_stage",
+   "size_cm": [
+    647.7,
+    321.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_stage.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "open": "tada"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/fair_stage__open.png"
+   }
+  },
+  {
+   "id": "fair_candy_stand_rose",
+   "scale_ref": "c_fair_candy_stand",
+   "size_cm": [
+    211.7,
+    231.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_candy_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_candy_stand_sky",
+   "scale_ref": "c_fair_candy_stand",
+   "size_cm": [
+    211.7,
+    231.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_candy_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_gate_coral",
+   "scale_ref": "c_fair_gate",
+   "size_cm": [
+    571.8,
+    481.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_gate_sky",
+   "scale_ref": "c_fair_gate",
+   "size_cm": [
+    571.8,
+    481.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_gate.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_bumper_floor_navy",
+   "scale_ref": "c_fair_bumper_floor",
+   "size_cm": [
+    901.3,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_bumper_floor.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#e07a7a",
+    "#6d6f78"
+   ],
+   "catalog": "fair"
+  },
+  {
+   "id": "fair_cans_coral",
+   "scale_ref": "c_fair_cans",
+   "size_cm": [
+    37.9,
+    36.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_cans.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "fallen": "drop_metal"
+   },
+   "states": [
+    "standing",
+    "fallen"
+   ],
+   "state_sprites": {
+    "fallen": "res://assets/sprites/items/fair_cans__fallen.png"
+   }
+  },
+  {
+   "id": "fair_lottery_coral",
+   "scale_ref": "c_fair_lottery",
+   "size_cm": [
+    47.9,
+    55.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_lottery.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "spin": "dice_roll"
+   },
+   "states": [
+    "still",
+    "spin"
+   ],
+   "state_sprites": {
+    "spin": "res://assets/sprites/items/fair_lottery__spin.png"
+   },
+   "anim": {
+    "spin": "shake"
+   }
+  },
+  {
+   "id": "fair_lottery_sky",
+   "scale_ref": "c_fair_lottery",
+   "size_cm": [
+    47.9,
+    55.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_lottery.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "fair",
+   "sfx": {
+    "spin": "dice_roll"
+   },
+   "states": [
+    "still",
+    "spin"
+   ],
+   "state_sprites": {
+    "spin": "res://assets/sprites/items/fair_lottery__spin.png"
+   },
+   "anim": {
+    "spin": "shake"
+   }
+  },
+  {
+   "id": "fair_magic_hat_black",
+   "scale_ref": "c_fair_magic_hat",
+   "size_cm": [
+    31.5,
+    36.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_magic_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "rabbit": "tada"
+   },
+   "states": [
+    "empty",
+    "rabbit"
+   ],
+   "state_sprites": {
+    "rabbit": "res://assets/sprites/items/fair_magic_hat__rabbit.png"
+   },
+   "anim": {
+    "rabbit": "bounce"
+   }
+  },
+  {
+   "id": "fair_juggling_coral",
+   "scale_ref": "c_fair_juggling",
+   "size_cm": [
+    24.9,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_juggling.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#a9c3dd"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_prize_rose",
+   "scale_ref": "c_fair_prize",
+   "size_cm": [
+    38.5,
+    56.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_prize.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_prize_sky",
+   "scale_ref": "c_fair_prize",
+   "size_cm": [
+    38.5,
+    56.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_prize.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_prize_butter",
+   "scale_ref": "c_fair_prize",
+   "size_cm": [
+    38.5,
+    56.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_prize.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_prize_mint",
+   "scale_ref": "c_fair_prize",
+   "size_cm": [
+    38.5,
+    56.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_prize.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_prize_lilac",
+   "scale_ref": "c_fair_prize",
+   "size_cm": [
+    38.5,
+    56.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_prize.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_candy_apple_coral",
+   "scale_ref": "c_fair_candy_apple",
+   "size_cm": [
+    10.9,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_candy_apple.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "fair_balloon_coral",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "fair_balloon_sky",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "fair_balloon_butter",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "fair_balloon_mint",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "fair_balloon_lilac",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "fair_balloon_rose",
+   "scale_ref": "c_fair_balloon",
+   "size_cm": [
+    35.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/fair_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "fair",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  }
+ ]
+}

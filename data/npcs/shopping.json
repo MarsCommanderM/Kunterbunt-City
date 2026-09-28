@@ -1,0 +1,104 @@
+{
+ "_doc": "Feste Figuren der Einkaufsstraße (P09). Erzeugt von tools/make_areas.py.",
+ "area": "shopping",
+ "npcs": [
+  {
+   "id": "npc_cash_market",
+   "role": "cashier",
+   "room": "market",
+   "x_cm": 660,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_bakery",
+   "role": "cashier",
+   "room": "bakery",
+   "x_cm": 440,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_fashion",
+   "role": "cashier",
+   "room": "fashion",
+   "x_cm": 580,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_toys",
+   "role": "cashier",
+   "room": "toys",
+   "x_cm": 640,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_petshop",
+   "role": "cashier",
+   "room": "petshop",
+   "x_cm": 760,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_icecream",
+   "role": "cashier",
+   "room": "icecream",
+   "x_cm": 390,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_cash_music",
+   "role": "cashier",
+   "room": "music",
+   "x_cm": 760,
+   "y_cm": 6,
+   "name": ""
+  },
+  {
+   "id": "npc_stocker",
+   "role": "shelf_stocker",
+   "room": "market",
+   "x_cm": 260,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_florist",
+   "role": "florist",
+   "room": "florist",
+   "x_cm": 520,
+   "y_cm": 6
+  },
+  {
+   "id": "npc_hair",
+   "role": "hairdresser",
+   "room": "hairdresser",
+   "x_cm": 320,
+   "y_cm": 20
+  },
+  {
+   "id": "npc_icecart",
+   "role": "vendor",
+   "room": "street",
+   "x_cm": 3080,
+   "y_cm": 50
+  },
+  {
+   "id": "npc_walker1",
+   "role": "passerby",
+   "room": "street",
+   "x_cm": 700,
+   "y_cm": 58
+  },
+  {
+   "id": "npc_walker2",
+   "role": "passerby",
+   "room": "street",
+   "x_cm": 2200,
+   "y_cm": 48
+  }
+ ]
+}

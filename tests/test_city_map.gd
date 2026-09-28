@@ -72,15 +72,22 @@ func test_baustelle_statt_schloss() -> void:
 		assert_not_null(b, "auch unfertige Bereiche brauchen einen Knopf")
 		assert_not_null(b.get_node_or_null("Baustelle"), "%s: Baustellen-Symbol fehlt" % id)
 		assert_false(b.disabled, "%s: Knopf darf nicht gesperrt sein" % id)
-	assert_true(unready > 0, "es muss (noch) unfertige Bereiche geben")
+	if unready == 0:
+		pass_test("alle Bereiche fertig – keine Baustelle mehr")
 
 
 func test_tipp_auf_baustelle_betritt_nichts() -> void:
-	var id := StringName("zoo")
-	assert_false(Areas.is_ready(id))
+	var id := StringName("")
+	for a: Variant in Areas.list():                  # erste noch unfertige Baustelle (P10: werden nach und nach fertig)
+		if not Areas.is_ready(StringName((a as Dictionary)["id"])):
+			id = StringName((a as Dictionary)["id"])
+			break
+	if id == &"":
+		pass_test("alle Bereiche fertig – keine Baustelle mehr")
+		return
 	watch_signals(map)
 	AudioBus.history.clear()
-	map._area_buttons["zoo"].emit_signal("pressed")
+	map._area_buttons[String(id)].emit_signal("pressed")
 	assert_signal_not_emitted(map, "entered")
 	assert_true(AudioBus.history.has("deny"), "kurzes 'geht noch nicht'-Geraeusch")
 

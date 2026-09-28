@@ -1,0 +1,50 @@
+{
+ "id": "dentist",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Zahnärztin",
+ "behavior": "station",
+ "work": [
+  "listen",
+  "nod",
+  "wave"
+ ],
+ "look": {
+  "skin": "#f3cfae",
+  "parts": {
+   "top": "polo",
+   "bottom": "trousers",
+   "hair": "ponytail",
+   "shoes": "sneaker",
+   "accessory": "none"
+  },
+  "colors": {
+   "top": [
+    "#48b0a0",
+    "#fbfaf7",
+    "#f3cfae"
+   ],
+   "bottom": [
+    "#48b0a0",
+    "#48b0a0",
+    "#f3cfae"
+   ],
+   "hair": [
+    "#b8452f",
+    "#b8452f",
+    "#b8452f"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#f3cfae"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

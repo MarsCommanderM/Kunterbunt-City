@@ -1,0 +1,2238 @@
+{
+ "area": "catalog",
+ "room": "curtains",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "curtain_long_coral",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_sky",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_mint",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_butter",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_rose",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_navy",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_sage",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_plum",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_cream",
+   "scale_ref": "c_curtain_long",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_coral",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_sky",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_mint",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_butter",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_rose",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_navy",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_sage",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_plum",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_dots_cream",
+   "scale_ref": "c_curtain_long_dots",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_coral",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_sky",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_mint",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_butter",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_rose",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_navy",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_sage",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_plum",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stripes_cream",
+   "scale_ref": "c_curtain_long_stripes",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_coral",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_sky",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_mint",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_butter",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_rose",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_navy",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_sage",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_plum",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_long_stars_cream",
+   "scale_ref": "c_curtain_long_stars",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_long_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_coral",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_sky",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_mint",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_butter",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_rose",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_navy",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_sage",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_plum",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_cream",
+   "scale_ref": "c_curtain_short",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_coral",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_sky",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_mint",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_butter",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_rose",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_navy",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_sage",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_plum",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_dots_cream",
+   "scale_ref": "c_curtain_short_dots",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_dots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_coral",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_sky",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_mint",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_butter",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_rose",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_navy",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_sage",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_plum",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stripes_cream",
+   "scale_ref": "c_curtain_short_stripes",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stripes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_coral",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_sky",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_mint",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_butter",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_rose",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_navy",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_sage",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_plum",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_short_stars_cream",
+   "scale_ref": "c_curtain_short_stars",
+   "size_cm": [
+    136.2,
+    75.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_short_stars.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_sheer_cream",
+   "scale_ref": "c_curtain_sheer",
+   "size_cm": [
+    181.8,
+    239.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_sheer.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_coral",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_sky",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_mint",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_butter",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_rose",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_navy",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_sage",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_plum",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_blind_cream",
+   "scale_ref": "c_curtain_blind",
+   "size_cm": [
+    111.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_blind.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_black",
+   "scale_ref": "c_curtain_rod",
+   "size_cm": [
+    181.3,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_white",
+   "scale_ref": "c_curtain_rod",
+   "size_cm": [
+    181.3,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_oak",
+   "scale_ref": "c_curtain_rod",
+   "size_cm": [
+    181.3,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_gold",
+   "scale_ref": "c_curtain_rod",
+   "size_cm": [
+    181.3,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod.png",
+   "pad_px": 1,
+   "colors": [
+    "#e0b84a",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_rings_black",
+   "scale_ref": "c_curtain_rod_rings",
+   "size_cm": [
+    241.2,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod_rings.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_rings_oak",
+   "scale_ref": "c_curtain_rod_rings",
+   "size_cm": [
+    241.2,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod_rings.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_rod_rings_white",
+   "scale_ref": "c_curtain_rod_rings",
+   "size_cm": [
+    241.2,
+    10.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_rod_rings.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e0b84a",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_roman_cream",
+   "scale_ref": "c_curtain_roman",
+   "size_cm": [
+    113.2,
+    73.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_roman.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_roman_sage",
+   "scale_ref": "c_curtain_roman",
+   "size_cm": [
+    113.2,
+    73.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_roman.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_roman_sky",
+   "scale_ref": "c_curtain_roman",
+   "size_cm": [
+    113.2,
+    73.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_roman.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_roman_rose",
+   "scale_ref": "c_curtain_roman",
+   "size_cm": [
+    113.2,
+    73.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_roman.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_venetian_white",
+   "scale_ref": "c_curtain_venetian",
+   "size_cm": [
+    111.5,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_venetian.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_venetian_grey",
+   "scale_ref": "c_curtain_venetian",
+   "size_cm": [
+    111.5,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_venetian.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_venetian_oak",
+   "scale_ref": "c_curtain_venetian",
+   "size_cm": [
+    111.5,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_venetian.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  },
+  {
+   "id": "curtain_venetian_sky",
+   "scale_ref": "c_curtain_venetian",
+   "size_cm": [
+    111.5,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/curtain_venetian.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "curtains"
+  }
+ ]
+}

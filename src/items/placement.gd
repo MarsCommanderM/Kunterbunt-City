@@ -24,10 +24,15 @@ class Target:
 
 ## pivot = gewünschte Pivot-Position (global), pointer = Finger/Maus (global).
 static func find_target(room: Room, item: ItemNode, pivot: Vector2, pointer: Vector2) -> Target:
-	var ch: Target = PlacementCharacter.find(room, item, pivot, pointer)
+	if item.def.is_wall():
+		return _wall_target(room, item, pivot)          # P07: hängt, wo man es loslässt
+	if item.def.is_rug():
+		return _floor_target(room, pivot)               # P07: Teppich nie auf Tisch/Stuhl
+	var items: Array[ItemNode] = all_items(room)      # einmal sammeln (vorher 3× je Suche)
+	var ch: Target = PlacementCharacter.find(room, item, pivot, pointer, items)
 	if ch:
 		return ch
-	var c: Target = _container_target(room, item, pointer)
+	var c: Target = _container_target(room, item, pointer, items)
 	if c:
 		return c
 	var best_y: float = INF
@@ -47,13 +52,18 @@ static func find_target(room: Room, item: ItemNode, pivot: Vector2, pointer: Vec
 			best_y = y
 			best = t
 	# Items mit Fläche (Tisch) und Stapel-Spitzen
-	for other: ItemNode in all_items(room):
+	var stackable: bool = item.def.is_stackable()
+	for other: ItemNode in items:
+		var surf: bool = other.def.has_surface()
+		var stack: bool = stackable and other.def.is_stackable()
+		if not (surf or stack):              # billige Prüfung zuerst: die meisten Items sind weder Tisch noch Stapel
+			continue
 		if other == item or item.is_ancestor_of(other) or not other.is_visible_in_tree():
 			continue
 		var kinds: Array[StringName] = []
-		if other.def.has_surface():
+		if surf:
 			kinds.append(&"item_surface")
-		if item.def.is_stackable() and other.def.is_stackable() and not other.has_stacked_child():
+		if stack and not other.has_stacked_child():
 			kinds.append(&"stack")
 		for k: StringName in kinds:
 			var y2: float = other.top_global_y(k == &"stack")
@@ -115,11 +125,11 @@ static func rejection_reason(room: Room, item: ItemNode, t: Target) -> String:
 	return ""
 
 
-static func _container_target(room: Room, item: ItemNode, pointer: Vector2) -> Target:
+static func _container_target(room: Room, item: ItemNode, pointer: Vector2, items: Array[ItemNode] = []) -> Target:
 	# innerster offener Behälter unter dem Finger gewinnt (Box im Kühlschrank vor dem Kühlschrank)
 	var other: ItemNode = null
-	for c: ItemNode in all_items(room):
-		if c == item or item.is_ancestor_of(c) or not c.def.is_container() or not c.is_open:
+	for c: ItemNode in (items if not items.is_empty() else all_items(room)):
+		if not c.def.is_container() or not c.is_open or c == item or item.is_ancestor_of(c):
 			continue
 		if not c.is_visible_in_tree() or not c.global_rect().has_point(pointer):
 			continue
@@ -197,3 +207,28 @@ static func _collect(n: Node, out: Array[ItemNode]) -> void:
 			out.append(c)
 			for r: Node in (c as ItemNode).child_roots():
 				_collect(r, out)
+
+
+# ---------------------------------------------------------------- P07: Wand
+const WALL_TOP_GAP_CM: float = 6.0     ## Abstand zur Decke
+
+
+static func _wall_target(room: Room, item: ItemNode, top_center: Vector2) -> Target:
+	var t := Target.new()
+	t.kind = &"wall"
+	t.parent = room.ysort_root
+	t.global_pos = wall_point(room, item, top_center)
+	t.global_scale = 1.0                    # an der Rückwand: Tiefen-Faktor 1,0
+	return t
+
+
+## Aufhängepunkt (oben Mitte) an der Wand: nie unter die Bodenlinie, nie über die Decke, nie seitlich hinaus.
+## Türen und bodentiefe Fenster (tag "to_floor") stehen immer genau auf der Bodenlinie.
+static func wall_point(room: Room, item: ItemNode, top_center: Vector2) -> Vector2:
+	var sz: Vector2 = item.draw_size()
+	var x: float = clampf(top_center.x, sz.x * 0.5, maxf(sz.x * 0.5, room.width_cm - sz.x * 0.5))
+	var y_min: float = -room.height_cm + WALL_TOP_GAP_CM
+	var y_max: float = maxf(y_min, -sz.y)
+	var y: float = y_max if item.def.tags.has("to_floor") else clampf(top_center.y, y_min, y_max)
+	return Vector2(x, y)
+

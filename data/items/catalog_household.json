@@ -1,0 +1,785 @@
+{
+ "area": "catalog",
+ "room": "household",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "app_dryer_white",
+   "scale_ref": "c_app_dryer",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_dryer_grey",
+   "scale_ref": "c_app_dryer",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_dryer_sky",
+   "scale_ref": "c_app_dryer",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dryer.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dryer__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "app_freezer_white",
+   "scale_ref": "c_app_freezer",
+   "size_cm": [
+    103.5,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_freezer.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "app_freezer_grey",
+   "scale_ref": "c_app_freezer",
+   "size_cm": [
+    103.5,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_freezer.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_drying_rack_white",
+   "scale_ref": "c_home_drying_rack",
+   "size_cm": [
+    102.0,
+    103.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_drying_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_drying_rack_sky",
+   "scale_ref": "c_home_drying_rack",
+   "size_cm": [
+    102.0,
+    103.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_drying_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_ironing_board_sky",
+   "scale_ref": "c_home_ironing_board",
+   "size_cm": [
+    121.7,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_ironing_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_ironing_board_rose",
+   "scale_ref": "c_home_ironing_board",
+   "size_cm": [
+    121.7,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_ironing_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_ironing_board_mint",
+   "scale_ref": "c_home_ironing_board",
+   "size_cm": [
+    121.7,
+    93.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_ironing_board.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_vacuum_coral",
+   "scale_ref": "c_home_vacuum",
+   "size_cm": [
+    42.2,
+    97.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_vacuum.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_vacuum_sky",
+   "scale_ref": "c_home_vacuum",
+   "size_cm": [
+    42.2,
+    97.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_vacuum.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_vacuum_grey",
+   "scale_ref": "c_home_vacuum",
+   "size_cm": [
+    42.2,
+    97.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_vacuum.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_vacuum_mint",
+   "scale_ref": "c_home_vacuum",
+   "size_cm": [
+    42.2,
+    97.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_vacuum.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "household"
+  },
+  {
+   "id": "home_iron_sky",
+   "scale_ref": "c_home_iron",
+   "size_cm": [
+    32.7,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_iron.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#6d6f78",
+    "#c9d0d8"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.45,
+    0.85
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_iron__on.png"
+   }
+  },
+  {
+   "id": "home_iron_coral",
+   "scale_ref": "c_home_iron",
+   "size_cm": [
+    32.7,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_iron.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#6d6f78",
+    "#c9d0d8"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.45,
+    0.85
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_iron__on.png"
+   }
+  },
+  {
+   "id": "home_iron_white",
+   "scale_ref": "c_home_iron",
+   "size_cm": [
+    32.7,
+    18.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_iron.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#c9d0d8"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.45,
+    0.85
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_iron__on.png"
+   }
+  },
+  {
+   "id": "cellar_boiler_white",
+   "scale_ref": "c_cellar_boiler",
+   "size_cm": [
+    61.9,
+    183.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_boiler.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/cellar_boiler__on.png"
+   }
+  },
+  {
+   "id": "cellar_boiler_grey",
+   "scale_ref": "c_cellar_boiler",
+   "size_cm": [
+    61.9,
+    183.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cellar_boiler.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/cellar_boiler__on.png"
+   }
+  },
+  {
+   "id": "home_flashlight_black",
+   "scale_ref": "c_home_flashlight",
+   "size_cm": [
+    28.8,
+    10.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_flashlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_flashlight__on.png"
+   }
+  },
+  {
+   "id": "home_flashlight_coral",
+   "scale_ref": "c_home_flashlight",
+   "size_cm": [
+    28.8,
+    10.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_flashlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_flashlight__on.png"
+   }
+  },
+  {
+   "id": "home_flashlight_sky",
+   "scale_ref": "c_home_flashlight",
+   "size_cm": [
+    28.8,
+    10.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_flashlight.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/home_flashlight__on.png"
+   }
+  },
+  {
+   "id": "home_bucket_coral",
+   "scale_ref": "c_home_bucket",
+   "size_cm": [
+    32.5,
+    39.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "home_bucket_sky",
+   "scale_ref": "c_home_bucket",
+   "size_cm": [
+    32.5,
+    39.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "home_bucket_mint",
+   "scale_ref": "c_home_bucket",
+   "size_cm": [
+    32.5,
+    39.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "home_bucket_grey",
+   "scale_ref": "c_home_bucket",
+   "size_cm": [
+    32.5,
+    39.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "home_dustpan_coral",
+   "scale_ref": "c_home_dustpan",
+   "size_cm": [
+    31.6,
+    42.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_dustpan.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "home_dustpan_sky",
+   "scale_ref": "c_home_dustpan",
+   "size_cm": [
+    31.6,
+    42.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/home_dustpan.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "household",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -73,8 +73,14 @@ func _schablonen() -> void:
 
 
 ## Farbzonen: dasselbe Oberteil in 6 Palettenfarben (Zone 1) + Kragen/Knöpfe (Zone 2/3).
+## Prüffarben – gleiche Liste wie tools/tests/test_p04_shots.py (fest, damit der Shader-Test nicht von der
+## wachsenden Palette abhängt).
+const PROOF_COLORS: Array = ["#f4f1ea", "#ffd166", "#ff9f45", "#ef6f6c", "#c1547a", "#7a5ea8", "#4f7fc0",
+	"#48b0a0", "#7cb342", "#a1887f"]
+
+
 func _farbzonen() -> void:
-	var cols: Array = CharacterParts.palette_colors("cloth")
+	var cols: Array = PROOF_COLORS
 	var x: float = -(cols.size() - 1) * 0.5 * 70.0
 	for c: Variant in cols:
 		var look: Dictionary = CharacterParts.default_set("kid")

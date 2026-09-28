@@ -17,6 +17,8 @@ var def: ItemDefinition
 var uid: int = 0
 var slot_index: int = -1              ## Platz im Behälter (−1 = nicht in einem Behälter)
 var is_open: bool = false
+var state: String = ""                ## P04b-T10: aktueller Zustand (closed/open, off/on …) – siehe ItemStates
+var state_tween: Tween
 var lifted: float = 0.0:              ## 0 = liegt, 1 = angehoben
 	set(v):
 		lifted = v
@@ -44,6 +46,7 @@ func setup(definition: ItemDefinition) -> void:
 	_next_uid += 1
 	name = "%s_%d" % [def.id, uid]
 	_build_visual()
+	z_index = def.draw_layer()          # P07: Wand hinten, Teppich unter allem
 	on_top_root = Node2D.new()
 	on_top_root.name = "OnTop"
 	add_child(on_top_root)
@@ -52,6 +55,7 @@ func setup(definition: ItemDefinition) -> void:
 	contents_root.visible = false
 	add_child(contents_root)
 	apply_world_size()
+	ItemStates.init(self)
 
 
 ## Optik aufbauen (überschreibbar: Figuren bauen hier ihre Ebenen).
@@ -60,6 +64,10 @@ func _build_visual() -> void:
 	sprite.name = "Sprite"
 	sprite.centered = false
 	sprite.texture = load(def.sprite_path)
+	if not def.colors.is_empty():
+		CharacterLook.apply(sprite, Array(def.colors))      # P04b: Farbzonen + Tinte (wie die Figuren)
+	elif PetSpecies.ids().has(String(def.id)):           # Tier ohne eigene Farben (z. B. aus default_items)
+		CharacterLook.apply(sprite, PetSpecies.default_fur(String(def.id)).map(func(h: Variant) -> Color: return Color(String(h))))
 	add_child(sprite)
 
 
@@ -121,7 +129,8 @@ func draw_size() -> Vector2:
 func global_rect() -> Rect2:
 	var r: Rect2 = local_rect()
 	var gs: Vector2 = global_scale
-	return Rect2(global_position + r.position * gs + Vector2(0, -LIFT_CM * lifted * gs.y), r.size * gs)
+	# .abs(): Dinge in der Hand einer gespiegelten Figur haben eine negative Breite (P11-Bot-Fund)
+	return Rect2(global_position + r.position * gs + Vector2(0, -LIFT_CM * lifted * gs.y), r.size * gs).abs()
 
 
 # ---------------------------------------------------------------- Treffertest
@@ -147,6 +156,10 @@ func _alpha_hit(global_point: Vector2, r: Rect2) -> bool:
 	if bm == null:
 		return true
 	var uv: Vector2 = (global_point - r.position) / r.size
+	if global_scale.x < 0.0:
+		uv.x = 1.0 - uv.x                              # gespiegelt: Pixel von der anderen Seite lesen
+	if global_scale.y < 0.0:
+		uv.y = 1.0 - uv.y
 	var content: Vector2 = sprite.texture.get_size() - Vector2.ONE * 2.0 * def.pad_px
 	var px: Vector2i = Vector2i((Vector2.ONE * def.pad_px + uv * content).floor())
 	px = px.clamp(Vector2i.ZERO, bm.get_size() - Vector2i.ONE)
@@ -317,7 +330,10 @@ func is_held() -> bool:
 
 
 func set_open(open: bool) -> void:
-	if not def.is_container() or open == is_open:
+	if def.has_states() and def.states.has("open"):
+		ItemStates.set_state(self, "open" if open else String(def.states[0]))
+		return
+	if not def.is_container() or open == is_open or def.open_top():
 		return
 	is_open = open
 	contents_root.visible = open
@@ -327,10 +343,12 @@ func set_open(open: bool) -> void:
 
 
 func on_tap() -> void:
-	if def.is_container():
+	if def.has_states():
+		ItemStates.next_state(self)
+	elif def.is_container() and not def.open_top():
 		set_open(not is_open)
 	else:
-		AudioBus.play_sfx("tap")
+		AudioBus.play_sfx(String(def.sfx.get("tap", "tap")))   # P10: Instrumente, Glocke … klingen beim Antippen
 		_bounce()
 	tapped.emit(self)
 
@@ -357,7 +375,7 @@ func _bounce() -> void:
 
 
 func _draw() -> void:
-	if def == null or def.placement == "wall" or is_held():
+	if def == null or def.is_wall() or def.is_rug() or is_held():
 		return
 	# weicher Kontaktschatten, wächst und verblasst beim Anheben
 	var w: float = _draw_size.x * (0.82 + 0.25 * lifted)
@@ -376,6 +394,8 @@ class ContentsPanel extends Node2D:
 	var rect: Rect2 = Rect2()
 
 	func _draw() -> void:
+		if get_parent() is ItemNode and (get_parent() as ItemNode).def.open_top():
+			return                        # Topf/Grill: Inhalt liegt oben drauf – keine helle Innenfläche über dem Gerät
 		var sb := StyleBoxFlat.new()
 		sb.bg_color = Color(0.97, 0.98, 1.0, 0.94)
 		sb.border_color = Color(0.55, 0.6, 0.7)

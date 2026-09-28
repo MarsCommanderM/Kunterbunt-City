@@ -199,6 +199,235 @@ def shutter():
                            np.zeros(int(SR * 0.02)),
                            noise(0.09, 0.6)[:int(SR * 0.09)] * env(int(SR * 0.09), 0.001, 70)])
 
+def water_pour():
+    """Gießkanne: plätscherndes Rauschen mit kleinen Tropfen."""
+    d = 0.7
+    n = int(SR * d)
+    base = noise(d, 0.12)[:n] * np.minimum(1.0, np.linspace(0, 6, n)) * np.exp(-np.linspace(0, 2.5, n))
+    drops = np.zeros(n)
+    for k in range(9):
+        i = int(rng.uniform(0.05, 0.6) * SR)
+        m = min(n - i, int(SR * 0.05))
+        f = rng.uniform(900, 1600)
+        drops[i:i + m] += np.sin(2 * np.pi * np.cumsum(np.linspace(f, f * 1.6, m)) / SR) * env(m, 0.001, 70) * 0.35
+    return base + drops
+
+
+def grow():
+    """Pflanze wächst eine Stufe: aufsteigendes, weiches Glitzern."""
+    parts = []
+    for k, f in enumerate((660, 880, 1175)):
+        m = int(SR * 0.11)
+        parts.append(np.sin(2 * np.pi * f * t(0.11)) * env(m, 0.004, 18) * (0.8 + 0.1 * k))
+    return np.concatenate(parts)
+
+
+def harvest():
+    """Ernten: „Plopp" + fröhlicher Zweiklang."""
+    pop = np.sin(2 * np.pi * np.cumsum(np.linspace(300, 900, int(SR * 0.06))) / SR) * env(int(SR * 0.06), 0.002, 40)
+    ding = modes([1046, 1568], 0.35, [9, 11], [1, 0.6])
+    return np.concatenate([pop, np.zeros(int(SR * 0.03)), ding])
+
+
+def bark_var(f0, f1, d, times=1, gap=0.09):
+    """P08-T08: weitere Bell-Varianten (tiefes Doppel-Wuff, helles Kläffen) – gleiche Bauweise wie bark()."""
+    parts = []
+    for k in range(times):
+        n = int(SR * d)
+        f = np.linspace(f0 * (1 - 0.06 * k), f1, n)
+        ph = 2 * np.pi * np.cumsum(f) / SR
+        tone = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.25 * np.sin(3 * ph)
+        parts += [(tone + 0.35 * noise(d, 0.4)[:n]) * env(n, 0.006, 11), np.zeros(int(SR * gap))]
+    return np.concatenate(parts[:-1])
+
+
+def mew():
+    """Kurzes, hohes „Mii“ (Kätzchen)."""
+    n = int(SR * 0.22)
+    x = np.linspace(0, 1, n)
+    f = 780 + 260 * np.sin(np.pi * x)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return (np.sin(ph) + 0.4 * np.sin(2 * ph)) * np.minimum(1, x * 15) * np.minimum(1, (1 - x) * 6)
+
+
+def scan_beep():
+    """Kasse: klares Piep (Rechteck, gefiltert)."""
+    n = int(SR * 0.16)
+    x = t(0.16)
+    return np.sign(np.sin(2 * np.pi * 1760 * x)) * 0.5 * np.minimum(1, x * 300) * np.minimum(1, (0.16 - x) * 120)[:n]
+
+
+def whistle():
+    """Trillerpfeife: hoher Ton mit schnellem Triller (Kugel in der Pfeife)."""
+    x = t(0.5)
+    f = 2900 + 180 * np.sign(np.sin(2 * np.pi * 28 * x))
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return (np.sin(ph) + 0.1 * noise(0.5, 0.8)[: len(x)]) * np.minimum(1, x * 60) * np.minimum(1, (0.5 - x) * 20)
+
+
+def clap():
+    """Zweimal klatschen."""
+    one = noise(0.06, 0.7) * env(int(SR * 0.06), 0.001, 70)
+    return np.concatenate([one, np.zeros(int(SR * 0.12)), one])
+
+
+def horn():
+    """Bus-Hupe: zwei freundliche Töne (Terz) mit Obertönen."""
+    parts = []
+    for f in (392.0, 330.0):
+        x = t(0.28)
+        tone = sum(np.sin(2 * np.pi * f * k * x) / k for k in (1, 2, 3, 4))
+        parts += [tone * np.minimum(1, x * 60) * np.minimum(1, (0.28 - x) * 30), np.zeros(int(SR * 0.06))]
+    return np.concatenate(parts)
+
+
+def quack():
+    """Ente: „Quak" – nasaler Ton (Rechteck-artig) mit schnell fallender Tonhöhe, zweimal."""
+    parts = []
+    for k in range(2):
+        n = int(SR * 0.16)
+        f = np.linspace(520 - k * 40, 330, n)
+        ph = 2 * np.pi * np.cumsum(f) / SR
+        tone = np.tanh(3 * np.sin(ph)) + 0.4 * np.sin(3 * ph)
+        parts += [tone * env(n, 0.004, 9), np.zeros(int(SR * 0.08))]
+    return np.concatenate(parts)
+
+
+def coo():
+    """Taube: weiches „Gurr" (tiefer Ton mit Tremolo)."""
+    x = t(0.6)
+    f = 300 + 40 * np.sin(np.pi * x / 0.6)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return np.sin(ph) * (0.6 + 0.4 * np.sin(2 * np.pi * 14 * x)) * np.minimum(1, x * 20) * np.minimum(1, (0.6 - x) * 8)
+
+
+def pluck_tone(f, d, bright=0.4, dec=5.0):
+    """P10: gezupfter/angeschlagener Ton (Klavier, Xylophon, Gitarre) – Grundton + Obertöne."""
+    x = t(d)
+    return (np.sin(2 * np.pi * f * x) + bright * np.sin(4 * np.pi * f * x) * np.exp(-x * 6)
+            + 0.15 * np.sin(6 * np.pi * f * x) * np.exp(-x * 10)) * np.exp(-x * dec) * np.minimum(1, x * 500)
+
+
+def bowed(f, d, vib=5.0):
+    """Gestrichen/geblasen (Geige, Flöte): weicher Einsatz, Vibrato."""
+    x = t(d)
+    ph = 2 * np.pi * np.cumsum(f * (1 + 0.006 * np.sin(2 * np.pi * vib * x))) / SR
+    return (np.sin(ph) + 0.3 * np.sin(2 * ph) + 0.1 * np.sin(3 * ph)) * np.minimum(1, x * 8) * np.minimum(1, (d - x) * 6)
+
+
+def chalk():
+    """Kreide auf der Tafel: kurzes, raues Kratzen (3 Striche)."""
+    parts = []
+    for k in range(3):
+        n = noise(0.09, 0.7) * np.sin(np.linspace(0, np.pi, int(SR * 0.09)))
+        parts += [n, np.zeros(int(SR * 0.05))]
+    return np.concatenate(parts)
+
+
+def school_bell():
+    """Schulglocke: helles Klingeln (schnell angeschlagene Glocke)."""
+    x = t(1.1)
+    ring = sum(np.sin(2 * np.pi * f * x) * a for f, a in ((1320, 1.0), (2640, 0.4), (3950, 0.2)))
+    return ring * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 18 * x))) * np.exp(-x * 1.8) * np.minimum(1, x * 300)
+
+
+def fizz():
+    """Vulkan-Experiment: Sprudeln + Blubbern."""
+    x = t(1.2)
+    return noise(1.2, 0.5) * np.exp(-x * 1.5) * (0.6 + 0.4 * np.sin(2 * np.pi * 9 * x)) + 0.3 * modes([300], 1.2, [3])
+
+
+def siren():
+    """Freundliches „Tatü-tata" (zwei Töne im Wechsel, weich)."""
+    parts = []
+    for k in range(4):
+        f = 660.0 if k % 2 == 0 else 880.0
+        x = t(0.32)
+        parts.append((np.sin(2 * np.pi * f * x) + 0.3 * np.sin(4 * np.pi * f * x)) * np.minimum(1, x * 40) * np.minimum(1, (0.32 - x) * 40))
+    return np.concatenate(parts)
+
+
+def rotor():
+    """Hubschrauber: gepulstes Rauschen („wupp-wupp")."""
+    x = t(1.4)
+    return noise(1.4, 0.15) * (0.3 + 0.7 * np.maximum(0, np.sin(2 * np.pi * 11 * x)) ** 3) * np.minimum(1, x * 3)
+
+
+def fair_bell():
+    """Hau-den-Lukas-Glocke / Fahrt startet: helles „Ding“ mit Nachklang."""
+    return modes([1320, 2640, 3960, 5280], 1.2, [3, 4, 6, 8], [1, 0.5, 0.3, 0.15])
+
+
+def tada():
+    """Zaubertrick: „Ta-daa“ (zwei Akkorde)."""
+    a = sum(np.sin(2 * np.pi * f * t(0.14)) for f in (523, 659, 784)) * env(int(SR * 0.14), 0.005, 12)
+    b = sum(np.sin(2 * np.pi * f * t(0.6)) for f in (659, 784, 1046)) * env(int(SR * 0.6), 0.005, 3)
+    return np.concatenate([a, np.zeros(int(SR * 0.05)), b])
+
+
+def boo():
+    """Lustiges Gespenst: wackelndes „Huuu“ (nie gruselig, eher albern)."""
+    x = t(0.9)
+    f = 330 + 60 * np.sin(2 * np.pi * 6 * x) - 80 * x
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, x * 8) * np.minimum(1, (0.9 - x) * 5)
+
+
+def roar():
+    """Löwe: freundliches, kurzes Brummen (nie erschreckend)."""
+    x = t(0.7)
+    f = 140 + 40 * np.sin(np.pi * x / 0.7)
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.4 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+    return (tone + 0.3 * noise(0.7, 0.3)) * np.minimum(1, x * 10) * np.minimum(1, (0.7 - x) * 4)
+
+
+def trumpet():
+    """Elefant: Trompeten (aufsteigender Ton mit Obertönen)."""
+    x = t(0.8)
+    f = 420 + 300 * np.minimum(1, x / 0.3)
+    tone = sum(np.sin(2 * np.pi * k * np.cumsum(f) / SR) / k for k in (1, 2, 3, 4))
+    return tone * np.minimum(1, x * 20) * np.minimum(1, (0.8 - x) * 4)
+
+
+def bleat():
+    """Ziege/Schaf: „Mäh“ mit Zittern."""
+    x = t(0.6)
+    f = 520 * (1 + 0.04 * np.sin(2 * np.pi * 24 * x))
+    return (np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.3 * np.sin(4 * np.pi * np.cumsum(f) / SR)) * np.minimum(1, x * 15) * np.exp(-x * 2)
+
+
+def oink():
+    """Schwein: zwei kurze Grunzer."""
+    parts = []
+    for d in (0.14, 0.18):
+        x = t(d)
+        parts.append((np.sin(2 * np.pi * 180 * x) + 0.5 * noise(d, 0.2)) * np.sin(np.pi * x / d))
+        parts.append(np.zeros(int(SR * 0.06)))
+    return np.concatenate(parts)
+
+
+def monkey():
+    """Affe: fröhliches „Uh-uh-ah-ah“."""
+    parts = []
+    for f in (500, 560, 760, 820):
+        x = t(0.1)
+        parts.append(np.sin(2 * np.pi * np.cumsum(np.linspace(f, f * 1.3, len(x))) / SR) * np.sin(np.pi * x / 0.1))
+        parts.append(np.zeros(int(SR * 0.04)))
+    return np.concatenate(parts)
+
+
+def penguin():
+    """Pinguin: kurzes Schnattern."""
+    x = t(0.35)
+    return np.sign(np.sin(2 * np.pi * 330 * x)) * 0.4 * (0.5 + 0.5 * np.sin(2 * np.pi * 18 * x)) * np.sin(np.pi * x / 0.35)
+
+
+def yum():
+    """Tier frisst gern: „Mjam“ (zwei weiche Töne aufwärts)."""
+    a = np.sin(2 * np.pi * 660 * t(0.12)) * env(int(SR * 0.12), 0.005, 12)
+    b = np.sin(2 * np.pi * 990 * t(0.22)) * env(int(SR * 0.22), 0.005, 8)
+    return np.concatenate([a, b])
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -232,6 +461,53 @@ SOUNDS = {
     "dice_roll": lambda: norm(dice_roll(), 0.5),
     "shutter": lambda: norm(shutter(), 0.5),
     "deny": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(520, 300, int(SR * 0.16))) / SR) * env(int(SR * 0.16), 0.005, 14), 0.4),
+    # P07-T07: Garten (hinten angehängt → alle bisherigen Sounds bleiben bit-gleich)
+    "water_pour": lambda: norm(water_pour(), 0.45),
+    "grow": lambda: norm(grow(), 0.4),
+    "harvest": lambda: norm(harvest(), 0.5),
+    # P08-T08: Tiere + Arbeits-Geräusche der NPCs (wieder hinten angehängt)
+    "pet_dog_bark2": lambda: norm(bark_var(480, 260, 0.2, times=2), 0.7),
+    "pet_dog_bark3": lambda: norm(bark_var(900, 620, 0.12), 0.6),
+    "pet_cat_meow2": lambda: norm(mew(), 0.5),
+    "scan_beep": lambda: norm(scan_beep(), 0.35),
+    "whistle": lambda: norm(whistle(), 0.4),
+    "clap": lambda: norm(clap(), 0.5),
+    # P09: Straße + Park
+    "bus_horn": lambda: norm(horn(), 0.45),
+    "duck_quack": lambda: norm(quack(), 0.5),
+    "pigeon_coo": lambda: norm(coo(), 0.4),
+    # P10a: Schule & Instrumente (Antippen)
+    "chalk": lambda: norm(chalk(), 0.3),
+    "sponge": lambda: norm(noise(0.3, 0.1) * env(int(SR * 0.3), 0.05, 6), 0.3),
+    "school_bell": lambda: norm(school_bell(), 0.45),
+    "fizz": lambda: norm(fizz(), 0.4),
+    "triangle": lambda: norm(modes([2700, 3900, 5600], 1.2, [2.5, 3.5, 5], [1, 0.6, 0.3]), 0.4),
+    "tambourine": lambda: norm(noise(0.3, 0.9) * env(int(SR * 0.3), 0.002, 10) + 0.3 * modes([6200, 7400], 0.3, [12, 14]), 0.4),
+    "drum_hit": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(160, 60, int(SR * 0.3))) / SR) * env(int(SR * 0.3), 0.002, 9)
+                             + 0.3 * noise(0.3, 0.3) * env(int(SR * 0.3), 0.001, 30), 0.6),
+    "piano_note": lambda: norm(pluck_tone(523.25, 0.9, 0.5, 3.0) + 0.6 * pluck_tone(659.25, 0.9, 0.4, 3.0), 0.45),
+    "xylophone": lambda: norm(np.concatenate([pluck_tone(f, 0.18, 0.2, 14) for f in (784, 988, 1175)]), 0.45),
+    "guitar": lambda: norm(sum(pluck_tone(f, 1.0, 0.6, 3.5) * 0.6 for f in (196, 247, 294)), 0.45),
+    "violin": lambda: norm(bowed(660.0, 0.7), 0.4),
+    "flute": lambda: norm(bowed(880.0, 0.6, 4.0) * 0.8 + 0.08 * noise(0.6, 0.6)[: int(SR * 0.6)], 0.35),
+    # P10b: Gesundheitszentrum
+    "xray_beep": lambda: norm(np.concatenate([modes([1400], 0.12, [20]), np.zeros(int(SR * 0.06)), modes([1900], 0.2, [12])]), 0.35),
+    "monitor_beep": lambda: norm(np.concatenate([np.sin(2 * np.pi * 1000 * t(0.08)) * env(int(SR * 0.08), 0.002, 25),
+                                                  np.zeros(int(SR * 0.5))] * 2), 0.3),
+    "siren": lambda: norm(siren(), 0.4),
+    "rotor": lambda: norm(rotor(), 0.4),
+    # P10d Rummelplatz
+    "fair_bell": lambda: norm(fair_bell(), 0.45),
+    "tada": lambda: norm(tada(), 0.4),
+    "boo": lambda: norm(boo(), 0.4),
+    # P10g Zoo
+    "roar": lambda: norm(roar(), 0.4),
+    "trumpet": lambda: norm(trumpet(), 0.35),
+    "bleat": lambda: norm(bleat(), 0.4),
+    "oink": lambda: norm(oink(), 0.4),
+    "monkey": lambda: norm(monkey(), 0.35),
+    "penguin": lambda: norm(penguin(), 0.3),
+    "yum": lambda: norm(yum(), 0.4),
 }
 
 

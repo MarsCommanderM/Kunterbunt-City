@@ -1,0 +1,55 @@
+{
+ "id": "music_teacher",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Musiklehrer/in",
+ "behavior": "station",
+ "work": [
+  "clap",
+  "point",
+  "wave"
+ ],
+ "look": {
+  "skin": "#b07650",
+  "parts": {
+   "top": "sweater",
+   "bottom": "trousers",
+   "hair": "afro",
+   "shoes": "boot",
+   "accessory": "glasses"
+  },
+  "colors": {
+   "top": [
+    "#b9a6d6",
+    "#fbfaf7",
+    "#b07650"
+   ],
+   "bottom": [
+    "#2e3140",
+    "#2e3140",
+    "#b07650"
+   ],
+   "hair": [
+    "#2a2a30",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "shoes": [
+    "#8a5e3f",
+    "#6d6f78",
+    "#b07650"
+   ],
+   "accessory": [
+    "#2a2a30",
+    "#fbfaf7",
+    "#b07650"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

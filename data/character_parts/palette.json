@@ -1,28 +1,142 @@
 {
-  "note": "Farbpalette des Editors (P04-T03/T04). Hex-Farben, Gruppen = Paletten-Reiter. Stil C: satte, warme Farben ohne Schwarz.",
+  "note": "Farbpalette des Editors (P04-T03/T04, P04b). Hex-Farben, Gruppen = Paletten-Reiter. Gedeckte, warme Töne wie in der Stil-Vorlage; Kontur ist Tinte (dunkelbraun).",
   "skin": {
     "label": "Haut",
     "icon": "🖐️",
-    "colors": ["#ffe0c4", "#f7c9a2", "#e8a877", "#c8814f", "#9c5f34", "#6f3f22", "#4a2917", "#f3d9c0"]
+    "colors": [
+      "#fbe3cf",
+      "#f3cfae",
+      "#ebbd96",
+      "#e2ab80",
+      "#d39a6c",
+      "#c08a62",
+      "#b07650",
+      "#9a6040",
+      "#8e5a3c",
+      "#7a4a30",
+      "#5e3824",
+      "#46291b"
+    ]
   },
   "hair": {
     "label": "Haare",
     "icon": "💇",
-    "colors": ["#3a2417", "#6b3f22", "#a9632f", "#d19a4e", "#f0d17c", "#c94f3d", "#8e5aa8", "#7a8fa6", "#e8e2d8"]
+    "colors": [
+      "#1f1715",
+      "#2a1f1c",
+      "#4a3326",
+      "#6b4a36",
+      "#8a5e3f",
+      "#b07a4f",
+      "#d4a86e",
+      "#e3c79a",
+      "#efe2c4",
+      "#b8452f",
+      "#8e5aa8",
+      "#9aa6b4"
+    ]
   },
   "cloth": {
     "label": "Stoff",
     "icon": "🎨",
-    "colors": ["#f4f1ea", "#ffd166", "#ff9f45", "#ef6f6c", "#c1547a", "#7a5ea8", "#4f7fc0", "#48b0a0", "#7cb342", "#a1887f"]
+    "colors": [
+      "#f5f3ee",
+      "#e8e2d8",
+      "#d8cfc2",
+      "#a1887f",
+      "#6d6f78",
+      "#2e3140",
+      "#dbe8d9",
+      "#9fc3a0",
+      "#5f8f6a",
+      "#dfe7f0",
+      "#a9c3dd",
+      "#6f8fb8",
+      "#3c4f7a",
+      "#f6d98a",
+      "#f4c95d",
+      "#f0b6c2",
+      "#e07a7a",
+      "#b8452f"
+    ]
   },
   "shoes": {
     "label": "Schuhe",
     "icon": "👟",
-    "colors": ["#3f3a4a", "#7a4b3a", "#c94f3d", "#4f7fc0", "#f4f1ea", "#48b0a0"]
+    "colors": [
+      "#f5f3ee",
+      "#d8cfc2",
+      "#8a6a55",
+      "#5a463a",
+      "#2e3140",
+      "#6f8fb8",
+      "#f0b6c2",
+      "#9fc3a0"
+    ]
   },
   "fur": {
     "label": "Fell",
     "icon": "🐾",
-    "colors": ["#f0e0c0", "#d9a066", "#a9683a", "#6b4426", "#3b2f2a", "#e8e2d8", "#9aa3ad", "#c94f3d"]
+    "colors": [
+      "#f0e0c0",
+      "#d9a066",
+      "#a9683a",
+      "#6b4426",
+      "#3b2f2a",
+      "#e8e2d8",
+      "#9aa3ad",
+      "#c94f3d"
+    ]
+  },
+  "eyes": {
+    "label": "Augen",
+    "icon": "👀",
+    "colors": [
+      "#3a2620",
+      "#5b3a26",
+      "#2f4a6b",
+      "#3f6a4f",
+      "#5a5a5a",
+      "#7a5230"
+    ]
+  },
+  "defaults": {
+    "_doc": "P04b-T06: Startfarben einer neuen Figur je Slot (Zone 1…3) – freundlich bunt statt weiß.",
+    "top": [
+      "#e07a7a",
+      "#f5f3ee",
+      "#f4c95d"
+    ],
+    "bottom": [
+      "#3c4f7a",
+      "#a9c3dd",
+      "#f5f3ee"
+    ],
+    "shoes": [
+      "#f0b6c2",
+      "#f5f3ee",
+      "#2e3140"
+    ],
+    "hair": [
+      "#6b4a36",
+      "#8a5e3f",
+      "#e07a7a"
+    ],
+    "eyes": [
+      "#5b3a26"
+    ],
+    "mouth": [
+      "#e07a7a"
+    ],
+    "accessory": [
+      "#f4c95d",
+      "#e07a7a",
+      "#f5f3ee"
+    ],
+    "aid": [
+      "#6f8fb8",
+      "#f5f3ee",
+      "#e07a7a"
+    ]
   }
 }

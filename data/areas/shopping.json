@@ -1,0 +1,1326 @@
+{
+ "id": "shopping",
+ "name": "Einkaufsstraße",
+ "name_key": "AREA_SHOPPING",
+ "_doc": "P09: Straße (Häuserzeile, Bushaltestelle = zurück zur Stadtkarte) + 9 Läden + Gewächshaus. Erzeugt von tools/make_areas.py – dort ändern.",
+ "spawn": {
+  "room": "street",
+  "x_cm": 3380,
+  "y_cm": 45
+ },
+ "default_items": [],
+ "music": "music_town",
+ "rooms": [
+  {
+   "id": "street",
+   "label": "Straße",
+   "icon": "street_bus_stop_sky",
+   "width_cm": 3700,
+   "height_cm": 820.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 420,
+    "min_h_cm": 240,
+    "max_h_cm": 760
+   },
+   "background": "res://assets/backgrounds/shopping/street.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 11,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#c9c6c0",
+      "#b9b5ae",
+      "#8a8780"
+     ]
+    },
+    "town": [
+     [
+      330.0,
+      320.0
+     ],
+     [
+      690.0,
+      320.0
+     ],
+     [
+      1050.0,
+      320.0
+     ],
+     [
+      1410.0,
+      320.0
+     ],
+     [
+      1770.0,
+      320.0
+     ],
+     [
+      2130.0,
+      320.0
+     ],
+     [
+      2490.0,
+      320.0
+     ],
+     [
+      2850.0,
+      320.0
+     ],
+     [
+      3210.0,
+      320.0
+     ]
+    ]
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 435.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_cart_oak",
+     "x_cm": 435.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_coral",
+     "x_cm": 270.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 795.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_bread_oak",
+     "x_cm": 795.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_sky",
+     "x_cm": 630.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 1155.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_flower_oak",
+     "x_cm": 1155.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_mint",
+     "x_cm": 990.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 1515.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_shirt_oak",
+     "x_cm": 1515.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_butter",
+     "x_cm": 1350.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 1875.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_scissors_oak",
+     "x_cm": 1875.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_rose",
+     "x_cm": 1710.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 2235.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_teddy_oak",
+     "x_cm": 2235.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_coral",
+     "x_cm": 2070.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 2595.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_paw_oak",
+     "x_cm": 2595.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_sky",
+     "x_cm": 2430.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 2955.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_icecream_oak",
+     "x_cm": 2955.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_mint",
+     "x_cm": 2790.0,
+     "y_cm": -300
+    },
+    {
+     "id": "door_glass_white",
+     "x_cm": 3315.0,
+     "y_cm": -206.8
+    },
+    {
+     "id": "street_sign_note_oak",
+     "x_cm": 3315.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_awning_butter",
+     "x_cm": 3150.0,
+     "y_cm": -300
+    },
+    {
+     "id": "street_bus_stop_sky",
+     "x_cm": 3500,
+     "y_cm": 4
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 150,
+     "y_cm": 2
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 1230,
+     "y_cm": 2
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 2310,
+     "y_cm": 2
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 3280,
+     "y_cm": 2
+    },
+    {
+     "id": "street_park_bench_oak",
+     "x_cm": 870,
+     "y_cm": 30
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 2020,
+     "y_cm": 30
+    },
+    {
+     "id": "street_bin_street_green",
+     "x_cm": 1000,
+     "y_cm": 40
+    },
+    {
+     "id": "street_bin_street_green",
+     "x_cm": 2700,
+     "y_cm": 40
+    },
+    {
+     "id": "street_bike_stand_metal",
+     "x_cm": 1500,
+     "y_cm": 50
+    },
+    {
+     "id": "street_advert_column_green",
+     "x_cm": 2480,
+     "y_cm": 14
+    },
+    {
+     "id": "garden_fountain_stone",
+     "x_cm": 1760,
+     "y_cm": 45
+    },
+    {
+     "id": "garden_planter_box_terracotta",
+     "x_cm": 610,
+     "y_cm": 55
+    },
+    {
+     "id": "garden_planter_box_white",
+     "x_cm": 2860,
+     "y_cm": 55
+    },
+    {
+     "id": "street_icecream_cart_cream",
+     "x_cm": 3000,
+     "y_cm": 58
+    },
+    {
+     "id": "wild_pigeon_grey",
+     "x_cm": 1650,
+     "y_cm": 62
+    },
+    {
+     "id": "wild_pigeon_grey",
+     "x_cm": 1850,
+     "y_cm": 66
+    },
+    {
+     "id": "play_scooter_mini_mint",
+     "x_cm": 1420,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "market",
+   "label": "Supermarkt",
+   "icon": "shop_cart_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/market.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e6f4ec",
+      "#ffffff",
+      "#9fc3a0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_shelf_market_cream",
+     "x_cm": 180,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_shelf_market_sky",
+     "x_cm": 320,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_fridge_shelf_white",
+     "x_cm": 470,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_produce_stand_oak",
+     "x_cm": 640,
+     "y_cm": 8
+    },
+    {
+     "id": "shop_checkout_coral",
+     "x_cm": 560,
+     "y_cm": 52
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_checkout_coral",
+     "x_rel": 0.25
+    },
+    {
+     "id": "food_apple_red",
+     "on": "shop_checkout_coral",
+     "x_rel": -0.3
+    },
+    {
+     "id": "food_milk_carton",
+     "on": "shop_checkout_coral",
+     "x_rel": -0.1
+    },
+    {
+     "id": "shop_cart_coral",
+     "x_cm": 250,
+     "y_cm": 55
+    },
+    {
+     "id": "shop_basket_shop_sky",
+     "x_cm": 380,
+     "y_cm": 62
+    },
+    {
+     "id": "shop_box_oak",
+     "x_cm": 720,
+     "y_cm": 60
+    },
+    {
+     "id": "food_banana",
+     "x_cm": 700,
+     "y_cm": 62
+    },
+    {
+     "id": "food_bread_loaf",
+     "x_cm": 330,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "bakery",
+   "label": "Bäckerei & Café",
+   "icon": "food_croissant_gold",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/bakery.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fbeedd",
+      "#ffffff",
+      "#e3c79a"
+     ],
+     "pattern": "pinstripes",
+     "pattern_col": "#f1dcc0",
+     "floor": "planks",
+     "floor_cols": [
+      "#d9a066",
+      "#c98a4b",
+      "#8a5a3c"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_shelf_bread_oak",
+     "x_cm": 190,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_counter_glass_cream",
+     "x_cm": 360,
+     "y_cm": 22
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_glass_cream",
+     "x_rel": 0.3
+    },
+    {
+     "id": "shop_coffee_machine_coral",
+     "on": "shop_counter_glass_cream",
+     "x_rel": -0.25
+    },
+    {
+     "id": "furn_table_round_cream",
+     "x_cm": 590,
+     "y_cm": 45
+    },
+    {
+     "id": "food_croissant_gold",
+     "on": "furn_table_round_cream",
+     "x_rel": -0.2
+    },
+    {
+     "id": "kit_mug_coral",
+     "on": "furn_table_round_cream",
+     "x_rel": 0.2
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 520,
+     "y_cm": 50
+    },
+    {
+     "id": "furn_chair_dining_oak",
+     "x_cm": 660,
+     "y_cm": 50
+    },
+    {
+     "id": "furn_table_bistro_white",
+     "x_cm": 740,
+     "y_cm": 30
+    },
+    {
+     "id": "food_cake_coral",
+     "on": "furn_table_bistro_white",
+     "x_rel": 0.0
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "florist",
+   "label": "Blumenladen",
+   "icon": "flower_bouquet_rose",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/florist.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f3f7ec",
+      "#ffffff",
+      "#b9d7a0"
+     ],
+     "pattern": "flowers",
+     "pattern_col": "#dfeccc",
+     "floor": "tiles",
+     "floor_cols": [
+      "#e9e2d6",
+      "#c9b9a3",
+      "#9a8a78"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_flower_stand_oak",
+     "x_cm": 220,
+     "y_cm": 10
+    },
+    {
+     "id": "shop_flower_stand_white",
+     "x_cm": 660,
+     "y_cm": 10
+    },
+    {
+     "id": "shop_counter_oak",
+     "x_cm": 440,
+     "y_cm": 24
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "flower_rose_coral",
+     "on": "shop_counter_oak",
+     "x_rel": -0.3
+    },
+    {
+     "id": "flower_tulip_butter",
+     "on": "shop_counter_oak",
+     "x_rel": -0.15
+    },
+    {
+     "id": "flower_gerbera_orange",
+     "on": "shop_counter_oak",
+     "x_rel": 0.0
+    },
+    {
+     "id": "plant_roses_bucket_coral_rose",
+     "x_cm": 120,
+     "y_cm": 50
+    },
+    {
+     "id": "plant_tulips_bucket_butter_coral",
+     "x_cm": 560,
+     "y_cm": 60
+    },
+    {
+     "id": "plant_monstera_basket_oak",
+     "x_cm": 760,
+     "y_cm": 40
+    },
+    {
+     "id": "flower_sunflower_butter",
+     "x_cm": 330,
+     "y_cm": 64
+    },
+    {
+     "id": "door_glass_oak",
+     "x_cm": 740,
+     "y_cm": -206.8
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "greenhouse",
+   "label": "Gewächshaus",
+   "icon": "garden_greenhouse_white",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/greenhouse.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e3f2f7",
+      "#ffffff",
+      "#bfe0d0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "garden_flower_bed_l_rose",
+     "x_cm": 230,
+     "y_cm": 20
+    },
+    {
+     "id": "garden_flower_bed_m_butter",
+     "x_cm": 470,
+     "y_cm": 20
+    },
+    {
+     "id": "garden_flower_bed_m_lilac",
+     "x_cm": 650,
+     "y_cm": 30
+    },
+    {
+     "id": "garden_raised_bed_m_tomato_oak",
+     "x_cm": 300,
+     "y_cm": 55
+    },
+    {
+     "id": "garden_raised_bed_m_lettuce_oak",
+     "x_cm": 560,
+     "y_cm": 58
+    },
+    {
+     "id": "garden_watering_can_mint",
+     "x_cm": 420,
+     "y_cm": 64
+    },
+    {
+     "id": "garden_seeds_carrot_pack",
+     "x_cm": 160,
+     "y_cm": 62
+    },
+    {
+     "id": "garden_seeds_sunflower_pack",
+     "x_cm": 180,
+     "y_cm": 64
+    },
+    {
+     "id": "plant_lemon_tree_terracotta_terracotta",
+     "x_cm": 750,
+     "y_cm": 10
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "fashion",
+   "label": "Modeladen",
+   "icon": "cloth_dress_rose",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/fashion.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdeef2",
+      "#ffffff",
+      "#f0b6c2"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#f7d9e1",
+     "floor": "planks",
+     "floor_cols": [
+      "#e8c49a",
+      "#d9ae7e",
+      "#8a5a3c"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_hanger_rack_metal",
+     "x_cm": 200,
+     "y_cm": 5
+    },
+    {
+     "id": "shop_mannequin_cream",
+     "x_cm": 330,
+     "y_cm": 5
+    },
+    {
+     "id": "shop_fitting_room_oak",
+     "x_cm": 700,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_counter_cream",
+     "x_cm": 500,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_cream",
+     "x_rel": 0.3
+    },
+    {
+     "id": "cloth_shirt_coral",
+     "on": "shop_counter_cream",
+     "x_rel": -0.35
+    },
+    {
+     "id": "cloth_hat_butter",
+     "on": "shop_counter_cream",
+     "x_rel": -0.12
+    },
+    {
+     "id": "cloth_cap_navy",
+     "on": "shop_counter_cream",
+     "x_rel": 0.08
+    },
+    {
+     "id": "shop_mirror_stand_oak",
+     "x_cm": 600,
+     "y_cm": 10
+    },
+    {
+     "id": "cloth_dress_sky",
+     "x_cm": 150,
+     "y_cm": 62
+    },
+    {
+     "id": "cloth_shoes_rose",
+     "x_cm": 250,
+     "y_cm": 64
+    },
+    {
+     "id": "cloth_pants_denim",
+     "x_cm": 380,
+     "y_cm": 60
+    },
+    {
+     "id": "cloth_shirt_mint",
+     "x_cm": 430,
+     "y_cm": 66
+    },
+    {
+     "id": "cloth_sunglasses_black",
+     "x_cm": 300,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "hairdresser",
+   "label": "Friseur",
+   "icon": "shop_barber_chair_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/hairdresser.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef0fb",
+      "#ffffff",
+      "#b9a6d6"
+     ],
+     "pattern": "pinstripes",
+     "pattern_col": "#dcd6ef",
+     "floor": "tiles",
+     "floor_cols": [
+      "#2e3140",
+      "#f5f3ee",
+      "#6d6f78"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_mirror_stand_cream",
+     "x_cm": 230,
+     "y_cm": 4
+    },
+    {
+     "id": "shop_barber_chair_coral",
+     "x_cm": 230,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_mirror_stand_cream",
+     "x_cm": 420,
+     "y_cm": 4
+    },
+    {
+     "id": "shop_barber_chair_sky",
+     "x_cm": 420,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_hair_sink_black",
+     "x_cm": 610,
+     "y_cm": 20
+    },
+    {
+     "id": "shop_dryer_hood_rose",
+     "x_cm": 740,
+     "y_cm": 15
+    },
+    {
+     "id": "shop_counter_mint",
+     "x_cm": 150,
+     "y_cm": 60
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_mint",
+     "x_rel": 0.25
+    },
+    {
+     "id": "shop_hair_tools_black",
+     "on": "shop_counter_mint",
+     "x_rel": -0.25
+    },
+    {
+     "id": "shop_magazine_rack_metal",
+     "x_cm": 530,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "toys",
+   "label": "Spielzeugladen",
+   "icon": "toy_teddy_oak",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/toys.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fff4d6",
+      "#ffffff",
+      "#f6d98a"
+     ],
+     "pattern": "stars",
+     "pattern_col": "#fbe3a0",
+     "floor": "carpet",
+     "floor_cols": [
+      "#a9c3dd",
+      "#8fb0d0",
+      "#6f8fb8"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_shelf_toys_butter",
+     "x_cm": 180,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_shelf_toys_sky",
+     "x_cm": 330,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_counter_coral",
+     "x_cm": 560,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_coral",
+     "x_rel": 0.3
+    },
+    {
+     "id": "toy_car_coral",
+     "on": "shop_counter_coral",
+     "x_rel": -0.3
+    },
+    {
+     "id": "toy_teddy_oak",
+     "x_cm": 150,
+     "y_cm": 60
+    },
+    {
+     "id": "toy_ball_coral",
+     "x_cm": 260,
+     "y_cm": 64
+    },
+    {
+     "id": "toy_kite_sky",
+     "x_cm": 700,
+     "y_cm": 40
+    },
+    {
+     "id": "toy_blocks_mint",
+     "x_cm": 420,
+     "y_cm": 64
+    },
+    {
+     "id": "toy_dollhouse_rose",
+     "x_cm": 720,
+     "y_cm": 10
+    },
+    {
+     "id": "toy_rocking_horse_oak",
+     "x_cm": 470,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "petshop",
+   "label": "Tierhandlung",
+   "icon": "petgear_bowl_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/petshop.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef6ea",
+      "#ffffff",
+      "#9fc3a0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#e9e2d6",
+      "#c9b9a3",
+      "#9a8a78"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_tank_shelf_black",
+     "x_cm": 190,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_shelf_pets_mint",
+     "x_cm": 340,
+     "y_cm": 0
+    },
+    {
+     "id": "zoo_cage_mint",
+     "x_cm": 520,
+     "y_cm": 10
+    },
+    {
+     "id": "shop_counter_oak",
+     "x_cm": 680,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "petgear_bone_cream",
+     "on": "shop_counter_oak",
+     "x_rel": -0.25
+    },
+    {
+     "id": "petgear_bowl_coral",
+     "x_cm": 250,
+     "y_cm": 62
+    },
+    {
+     "id": "petgear_basket_oak",
+     "x_cm": 420,
+     "y_cm": 60
+    },
+    {
+     "id": "petgear_ball_butter",
+     "x_cm": 460,
+     "y_cm": 66
+    },
+    {
+     "id": "petgear_food_bag_butter",
+     "x_cm": 580,
+     "y_cm": 60
+    },
+    {
+     "id": "petgear_leash_coral",
+     "x_cm": 150,
+     "y_cm": 64
+    },
+    {
+     "id": "pet_rabbit",
+     "x_cm": 330,
+     "y_cm": 50
+    },
+    {
+     "id": "pet_guinea_pig",
+     "x_cm": 620,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "icecream",
+   "label": "Eisdiele",
+   "icon": "food_icecream_3",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/icecream.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdeef2",
+      "#ffffff",
+      "#a9dcd0"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#f7d9e1",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#f0b6c2",
+      "#b88090"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_icecream_counter_sky",
+     "x_cm": 300,
+     "y_cm": 15
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_icecream_counter_sky",
+     "x_rel": 0.35
+    },
+    {
+     "id": "food_icecream_rose",
+     "on": "shop_icecream_counter_sky",
+     "x_rel": -0.3
+    },
+    {
+     "id": "food_icecream_mint",
+     "on": "shop_icecream_counter_sky",
+     "x_rel": -0.15
+    },
+    {
+     "id": "furn_table_bistro_white",
+     "x_cm": 560,
+     "y_cm": 40
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 500,
+     "y_cm": 46
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 620,
+     "y_cm": 46
+    },
+    {
+     "id": "food_icecream_3",
+     "on": "furn_table_bistro_white",
+     "x_rel": 0.0
+    },
+    {
+     "id": "furn_table_bistro_sage",
+     "x_cm": 730,
+     "y_cm": 58
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "music",
+   "label": "Musikladen",
+   "icon": "music_drums_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/shopping/music.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#2e3140",
+      "#6d6f78",
+      "#f4c95d"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#8a5e3f",
+      "#74492f",
+      "#4a3024"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_shelf_electro_black",
+     "x_cm": 180,
+     "y_cm": 0
+    },
+    {
+     "id": "music_drums_coral",
+     "x_cm": 360,
+     "y_cm": 30
+    },
+    {
+     "id": "music_keyboard_black",
+     "x_cm": 520,
+     "y_cm": 25
+    },
+    {
+     "id": "toy_guitar_coral",
+     "x_cm": 440,
+     "y_cm": 60
+    },
+    {
+     "id": "music_violin_oak",
+     "x_cm": 610,
+     "y_cm": 62
+    },
+    {
+     "id": "elec_tv_black",
+     "x_cm": 690,
+     "y_cm": 64
+    },
+    {
+     "id": "shop_counter_oak",
+     "x_cm": 700,
+     "y_cm": 20
+    },
+    {
+     "id": "shop_cash_register_black",
+     "on": "shop_counter_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "deco_radio_coral",
+     "on": "shop_counter_oak",
+     "x_rel": -0.25
+    }
+   ],
+   "ambience": "amb_indoor"
+  }
+ ]
+}

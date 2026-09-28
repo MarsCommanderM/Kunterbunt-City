@@ -1,0 +1,52 @@
+{
+ "id": "pupil",
+ "template": "kid",
+ "speed_cm_s": 90,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Schulkind",
+ "behavior": "wander",
+ "work": [
+  "wave",
+  "look",
+  "clap"
+ ],
+ "light": true,
+ "patrol_cm": 250,
+ "look": {
+  "skin": "#d39a6c",
+  "parts": {
+   "top": "hoodie",
+   "bottom": "joggers",
+   "hair": "curly",
+   "shoes": "sneaker",
+   "accessory": "none"
+  },
+  "colors": {
+   "top": [
+    "#f09a55",
+    "#fbfaf7",
+    "#d39a6c"
+   ],
+   "bottom": [
+    "#3c4f7a",
+    "#3c4f7a",
+    "#d39a6c"
+   ],
+   "hair": [
+    "#2a2a30",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d39a6c"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

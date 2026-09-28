@@ -7,7 +7,7 @@ static func make(id: StringName) -> ItemNode:
 	var def: ItemDefinition = ItemDB.get_item(id)
 	if def == null:
 		return null
-	return PetNode.create_pet(def) if def.category == "pet" else ItemNode.create(def)
+	return PetNode.create_pet(def) if def.category in ["pet", "animal"] else ItemNode.create(def)   # P10g: Zoo-Tiere
 
 
 ## Figur aus Schablone (toddler/kid/adult) oder fertiges Sprite (char_girl_01) auf den Boden.
@@ -73,3 +73,32 @@ static func into_container(container: ItemNode, id: StringName) -> ItemNode:
 	it.slot_index = slot
 	container.relayout_contents()
 	return it
+
+
+## P07: An die Wand hängen (top = Oberkante in cm, negativ = über der Bodenlinie).
+static func on_wall(room: Room, id: StringName, x_cm: float, top_cm: float) -> ItemNode:
+	var it: ItemNode = make(id)
+	if it == null:
+		return null
+	room.ysort_root.add_child(it)
+	it.position = Placement.wall_point(room, it, Vector2(x_cm, top_cm))
+	it.scale = Vector2.ONE
+	return it
+
+
+## Irgendein Item sinnvoll in den Raum stellen: Wand-Items auf gute Höhe (Fenster-Unterkante 90 cm, Bilder
+## mittig auf 150 cm), alles andere auf den Boden in die Tiefe depth_cm.
+static func place(room: Room, id: StringName, x_cm: float, depth_cm: float) -> ItemNode:
+	var def: ItemDefinition = ItemDB.get_item(id)
+	if def != null and def.is_wall():
+		var h: float = def.height_cm
+		var top: float = -(WALL_SILL_CM + h) if def.catalog in ["windows", "curtains"] else -(WALL_EYE_CM + h * 0.5)
+		if def.catalog == "curtains":
+			top = -(WALL_SILL_CM + h * 0.5 + 60.0)
+		return on_wall(room, id, x_cm, top)
+	return on_floor(room, id, x_cm, depth_cm)
+
+
+const WALL_SILL_CM: float = 90.0     ## Fensterbank-Höhe
+const WALL_EYE_CM: float = 150.0     ## Bilder/Poster: Mitte auf Augenhöhe Erwachsener
+

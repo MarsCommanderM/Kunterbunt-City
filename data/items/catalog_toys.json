@@ -1,0 +1,2799 @@
+{
+ "area": "catalog",
+ "room": "toys",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "toy_ball_coral",
+   "scale_ref": "c_toy_ball",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_ball_sky",
+   "scale_ref": "c_toy_ball",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_ball_butter",
+   "scale_ref": "c_toy_ball",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_ball_mint",
+   "scale_ref": "c_toy_ball",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_ball_plum",
+   "scale_ref": "c_toy_ball",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_beachball_cream",
+   "scale_ref": "c_toy_beachball",
+   "size_cm": [
+    31.9,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_beachball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_football_white",
+   "scale_ref": "c_toy_football",
+   "size_cm": [
+    23.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_football.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2a2a30",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_basketball_orange",
+   "scale_ref": "c_toy_basketball",
+   "size_cm": [
+    25.9,
+    25.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_basketball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_teddy_oak",
+   "scale_ref": "c_toy_teddy",
+   "size_cm": [
+    28.5,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#d8cfc2",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_teddy_walnut",
+   "scale_ref": "c_toy_teddy",
+   "size_cm": [
+    28.5,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#d8cfc2",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_teddy_rose",
+   "scale_ref": "c_toy_teddy",
+   "size_cm": [
+    28.5,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#d8cfc2",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_teddy_cream",
+   "scale_ref": "c_toy_teddy",
+   "size_cm": [
+    28.5,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#d8cfc2",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_blocks_coral",
+   "scale_ref": "c_toy_blocks",
+   "size_cm": [
+    13.6,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_blocks.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_blocks_mint",
+   "scale_ref": "c_toy_blocks",
+   "size_cm": [
+    13.6,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_blocks.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_blocks_plum",
+   "scale_ref": "c_toy_blocks",
+   "size_cm": [
+    13.6,
+    13.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_blocks.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_car_coral",
+   "scale_ref": "c_toy_car",
+   "size_cm": [
+    18.2,
+    11.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_car_sky",
+   "scale_ref": "c_toy_car",
+   "size_cm": [
+    18.2,
+    11.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_car_butter",
+   "scale_ref": "c_toy_car",
+   "size_cm": [
+    18.2,
+    11.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_car_mint",
+   "scale_ref": "c_toy_car",
+   "size_cm": [
+    18.2,
+    11.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_car.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_train_coral",
+   "scale_ref": "c_toy_train",
+   "size_cm": [
+    28.5,
+    15.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_train.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_train_navy",
+   "scale_ref": "c_toy_train",
+   "size_cm": [
+    28.5,
+    15.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_train.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_robot_sky",
+   "scale_ref": "c_toy_robot",
+   "size_cm": [
+    14.6,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_robot.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_robot_grey",
+   "scale_ref": "c_toy_robot",
+   "size_cm": [
+    14.6,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_robot.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_robot_coral",
+   "scale_ref": "c_toy_robot",
+   "size_cm": [
+    14.6,
+    27.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_robot.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_doll_rose",
+   "scale_ref": "c_toy_doll",
+   "size_cm": [
+    14.0,
+    38.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_doll.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#8a5e3f",
+    "#d8cfc2"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_doll_sky",
+   "scale_ref": "c_toy_doll",
+   "size_cm": [
+    14.0,
+    38.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_doll.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#8a5e3f",
+    "#d8cfc2"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_doll_butter",
+   "scale_ref": "c_toy_doll",
+   "size_cm": [
+    14.0,
+    38.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_doll.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#8a5e3f",
+    "#d8cfc2"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_drum_coral",
+   "scale_ref": "c_toy_drum",
+   "size_cm": [
+    27.9,
+    24.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "drum_hit"
+   }
+  },
+  {
+   "id": "toy_drum_sky",
+   "scale_ref": "c_toy_drum",
+   "size_cm": [
+    27.9,
+    24.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_drum.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "drum_hit"
+   }
+  },
+  {
+   "id": "toy_xylophone_coral",
+   "scale_ref": "c_toy_xylophone",
+   "size_cm": [
+    37.4,
+    13.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_xylophone.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "xylophone"
+   }
+  },
+  {
+   "id": "toy_puzzle_coral",
+   "scale_ref": "c_toy_puzzle",
+   "size_cm": [
+    25.0,
+    25.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_puzzle.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_kite_coral",
+   "scale_ref": "c_toy_kite",
+   "size_cm": [
+    61.5,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_kite.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_kite_sky",
+   "scale_ref": "c_toy_kite",
+   "size_cm": [
+    61.5,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_kite.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_kite_butter",
+   "scale_ref": "c_toy_kite",
+   "size_cm": [
+    61.5,
+    81.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_kite.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_rocking_horse_cream",
+   "scale_ref": "c_toy_rocking_horse",
+   "size_cm": [
+    83.0,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_rocking_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "toy_rocking_horse_oak",
+   "scale_ref": "c_toy_rocking_horse",
+   "size_cm": [
+    83.0,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_rocking_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "toy_rocking_horse_rose",
+   "scale_ref": "c_toy_rocking_horse",
+   "size_cm": [
+    83.0,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_rocking_horse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "toy_balloon_coral",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_balloon_sky",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_balloon_butter",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_balloon_mint",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_balloon_plum",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_balloon_orange",
+   "scale_ref": "c_toy_balloon",
+   "size_cm": [
+    26.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_balloon.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.02
+   ]
+  },
+  {
+   "id": "toy_skateboard_coral",
+   "scale_ref": "c_toy_skateboard",
+   "size_cm": [
+    81.3,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_skateboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_skateboard_teal",
+   "scale_ref": "c_toy_skateboard",
+   "size_cm": [
+    81.3,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_skateboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_skateboard_navy",
+   "scale_ref": "c_toy_skateboard",
+   "size_cm": [
+    81.3,
+    8.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_skateboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_bucket_spade_coral",
+   "scale_ref": "c_toy_bucket_spade",
+   "size_cm": [
+    25.6,
+    26.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_bucket_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_bucket_spade_sky",
+   "scale_ref": "c_toy_bucket_spade",
+   "size_cm": [
+    25.6,
+    26.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_bucket_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_bucket_spade_butter",
+   "scale_ref": "c_toy_bucket_spade",
+   "size_cm": [
+    25.6,
+    26.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_bucket_spade.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_bunny_cream",
+   "scale_ref": "c_toy_plush_bunny",
+   "size_cm": [
+    25.0,
+    38.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_bunny.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_bunny_rose",
+   "scale_ref": "c_toy_plush_bunny",
+   "size_cm": [
+    25.0,
+    38.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_bunny.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_bear_oak",
+   "scale_ref": "c_toy_plush_bear",
+   "size_cm": [
+    25.0,
+    34.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_bear.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_bear_walnut",
+   "scale_ref": "c_toy_plush_bear",
+   "size_cm": [
+    25.0,
+    34.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_bear.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_elephant_grey",
+   "scale_ref": "c_toy_plush_elephant",
+   "size_cm": [
+    28.8,
+    33.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_elephant.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_elephant_sky",
+   "scale_ref": "c_toy_plush_elephant",
+   "size_cm": [
+    28.8,
+    33.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_elephant.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_unicorn_white",
+   "scale_ref": "c_toy_plush_unicorn",
+   "size_cm": [
+    25.0,
+    37.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_unicorn.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_unicorn_lilac",
+   "scale_ref": "c_toy_plush_unicorn",
+   "size_cm": [
+    25.0,
+    37.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_unicorn.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f0b6c2",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_dino_mint",
+   "scale_ref": "c_toy_plush_dino",
+   "size_cm": [
+    27.5,
+    37.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_dino.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_dino_green",
+   "scale_ref": "c_toy_plush_dino",
+   "size_cm": [
+    27.5,
+    37.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_dino.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_cat_orange",
+   "scale_ref": "c_toy_plush_cat",
+   "size_cm": [
+    25.0,
+    35.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_cat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_plush_cat_grey",
+   "scale_ref": "c_toy_plush_cat",
+   "size_cm": [
+    25.0,
+    35.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_plush_cat.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_dollhouse_rose",
+   "scale_ref": "c_toy_dollhouse",
+   "size_cm": [
+    87.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_dollhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "toy_dollhouse_sky",
+   "scale_ref": "c_toy_dollhouse",
+   "size_cm": [
+    87.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_dollhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "toy_dollhouse_mint",
+   "scale_ref": "c_toy_dollhouse",
+   "size_cm": [
+    87.8,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_dollhouse.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "toys",
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "toy_shop_stand_coral",
+   "scale_ref": "c_toy_shop_stand",
+   "size_cm": [
+    109.9,
+    126.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_shop_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_shop_stand_sky",
+   "scale_ref": "c_toy_shop_stand",
+   "size_cm": [
+    109.9,
+    126.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_shop_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_shop_stand_mint",
+   "scale_ref": "c_toy_shop_stand",
+   "size_cm": [
+    109.9,
+    126.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_shop_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_tipi_cream",
+   "scale_ref": "c_toy_tipi",
+   "size_cm": [
+    121.8,
+    172.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_tipi.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "toy_tipi_sky",
+   "scale_ref": "c_toy_tipi",
+   "size_cm": [
+    121.8,
+    172.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_tipi.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "toy_tipi_rose",
+   "scale_ref": "c_toy_tipi",
+   "size_cm": [
+    121.8,
+    172.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_tipi.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "toy_ball_pit_sky",
+   "scale_ref": "c_toy_ball_pit",
+   "size_cm": [
+    131.9,
+    50.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball_pit.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "toy_ball_pit_rose",
+   "scale_ref": "c_toy_ball_pit",
+   "size_cm": [
+    131.9,
+    50.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_ball_pit.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "toy_pram_rose",
+   "scale_ref": "c_toy_pram",
+   "size_cm": [
+    46.0,
+    52.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_pram.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ]
+  },
+  {
+   "id": "toy_pram_sky",
+   "scale_ref": "c_toy_pram",
+   "size_cm": [
+    46.0,
+    52.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_pram.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ]
+  },
+  {
+   "id": "toy_pram_lilac",
+   "scale_ref": "c_toy_pram",
+   "size_cm": [
+    46.0,
+    52.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_pram.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ]
+  },
+  {
+   "id": "toy_guitar_coral",
+   "scale_ref": "c_toy_guitar",
+   "size_cm": [
+    32.2,
+    81.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_guitar.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
+  },
+  {
+   "id": "toy_guitar_oak",
+   "scale_ref": "c_toy_guitar",
+   "size_cm": [
+    32.2,
+    81.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_guitar.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
+  },
+  {
+   "id": "toy_guitar_sky",
+   "scale_ref": "c_toy_guitar",
+   "size_cm": [
+    32.2,
+    81.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_guitar.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.9
+   ],
+   "sfx": {
+    "tap": "guitar"
+   }
+  },
+  {
+   "id": "music_drums_coral",
+   "scale_ref": "c_music_drums",
+   "size_cm": [
+    109.8,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_drums.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
+  },
+  {
+   "id": "music_drums_navy",
+   "scale_ref": "c_music_drums",
+   "size_cm": [
+    109.8,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_drums.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
+  },
+  {
+   "id": "music_drums_black",
+   "scale_ref": "c_music_drums",
+   "size_cm": [
+    109.8,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_drums.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "sfx": {
+    "tap": "drum_hit"
+   }
+  },
+  {
+   "id": "music_keyboard_black",
+   "scale_ref": "c_music_keyboard",
+   "size_cm": [
+    101.8,
+    92.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_keyboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "sfx": {
+    "tap": "piano_note"
+   }
+  },
+  {
+   "id": "music_keyboard_white",
+   "scale_ref": "c_music_keyboard",
+   "size_cm": [
+    101.8,
+    92.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_keyboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "sfx": {
+    "tap": "piano_note"
+   }
+  },
+  {
+   "id": "music_violin_walnut",
+   "scale_ref": "c_music_violin",
+   "size_cm": [
+    26.0,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_violin.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "sfx": {
+    "tap": "violin"
+   }
+  },
+  {
+   "id": "music_violin_oak",
+   "scale_ref": "c_music_violin",
+   "size_cm": [
+    26.0,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_violin.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "sfx": {
+    "tap": "violin"
+   }
+  },
+  {
+   "id": "music_flute_oak",
+   "scale_ref": "c_music_flute",
+   "size_cm": [
+    4.7,
+    33.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_flute.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
+  },
+  {
+   "id": "music_flute_cream",
+   "scale_ref": "c_music_flute",
+   "size_cm": [
+    4.7,
+    33.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_flute.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
+  },
+  {
+   "id": "music_flute_sky",
+   "scale_ref": "c_music_flute",
+   "size_cm": [
+    4.7,
+    33.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/music_flute.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#8a5e3f",
+    "#9aa6b4"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "tap": "flute"
+   }
+  },
+  {
+   "id": "toy_play_kitchen_cream",
+   "scale_ref": "c_toy_play_kitchen",
+   "size_cm": [
+    93.5,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_play_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_play_kitchen_mint",
+   "scale_ref": "c_toy_play_kitchen",
+   "size_cm": [
+    93.5,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_play_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_play_kitchen_rose",
+   "scale_ref": "c_toy_play_kitchen",
+   "size_cm": [
+    93.5,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_play_kitchen.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_workbench_sky",
+   "scale_ref": "c_toy_workbench",
+   "size_cm": [
+    81.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_workbench.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_workbench_coral",
+   "scale_ref": "c_toy_workbench",
+   "size_cm": [
+    81.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_workbench.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#d4a86e"
+   ],
+   "catalog": "toys"
+  },
+  {
+   "id": "toy_board_game_coral",
+   "scale_ref": "c_toy_board_game",
+   "size_cm": [
+    41.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_board_game.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_board_game_sky",
+   "scale_ref": "c_toy_board_game",
+   "size_cm": [
+    41.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_board_game.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_board_game_mint",
+   "scale_ref": "c_toy_board_game",
+   "size_cm": [
+    41.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_board_game.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_board_game_butter",
+   "scale_ref": "c_toy_board_game",
+   "size_cm": [
+    41.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_board_game.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_board_game_plum",
+   "scale_ref": "c_toy_board_game",
+   "size_cm": [
+    41.9,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_board_game.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_crayons_coral",
+   "scale_ref": "c_toy_crayons",
+   "size_cm": [
+    13.5,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_crayons.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_crayons_sky",
+   "scale_ref": "c_toy_crayons",
+   "size_cm": [
+    13.5,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_crayons.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_crayons_butter",
+   "scale_ref": "c_toy_crayons",
+   "size_cm": [
+    13.5,
+    17.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_crayons.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#a9c3dd",
+    "#f6d98a"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_paints_sky",
+   "scale_ref": "c_toy_paints",
+   "size_cm": [
+    27.8,
+    15.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_paints.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_paints_coral",
+   "scale_ref": "c_toy_paints",
+   "size_cm": [
+    27.8,
+    15.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_paints.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "toy_paints_black",
+   "scale_ref": "c_toy_paints",
+   "size_cm": [
+    27.8,
+    15.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/toy_paints.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#f5f3ee"
+   ],
+   "catalog": "toys",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -214,6 +214,13 @@
   },
   {
    "type": "category_range",
+   "category": "animal",
+   "min_h_cm": 5,
+   "max_h_cm": 600,
+   "_doc": "P10g: Zoo-Tiere in echter Größe (Küken 12 cm … Giraffe 4,8 m) – Kamera zoomt raus, nichts wird geschrumpft (S-08)"
+  },
+  {
+   "type": "category_range",
    "category": "character",
    "min_h_cm": 50,
    "max_h_cm": 190

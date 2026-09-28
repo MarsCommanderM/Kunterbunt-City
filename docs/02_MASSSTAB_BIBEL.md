@@ -36,7 +36,7 @@ static func depth_factor(y_cm: float, floor_back_y: float, floor_front_y: float)
 
 ## 2. Referenzgrößen (Auszug – vollständig in `scale_table.json`)
 
-### Figuren (stilisiert, werden **nie** skaliert außer Tiefen-Faktor)
+### Figuren (Stil „großer Kopf“ seit P04b – Kind ≈ 2 Kopfhöhen; werden **nie** skaliert außer Tiefen-Faktor)
 | Baby | Kleinkind | **Kind** | Teen | Erwachsen | Senior |
 |---|---|---|---|---|---|
 | 55 | 90 | **125** | 155 | 172 | 165 cm |

@@ -1,1988 +1,3538 @@
 {
- "toddler": {
-  "top_shirt": {
-   "w_cm": 32.6,
-   "h_cm": 26.6,
+ "adult": {
+  "acc_beanie": {
    "anchor_cm": [
-    16.3,
-    2.3
+    36.25,
+    -9.9
    ],
-   "zones": 3,
-   "note": "Oberteil shirt"
-  },
-  "sleeve_shirt": {
-   "w_cm": 12.1,
-   "h_cm": 13.6,
-   "anchor_cm": [
-    6.05,
-    11.3
-   ],
-   "zones": 1,
-   "note": "Ärmel shirt (Anker = Schulter)"
-  },
-  "top_tee": {
-   "w_cm": 32.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    16.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil tee"
-  },
-  "sleeve_tee": {
-   "w_cm": 12.1,
-   "h_cm": 13.6,
-   "anchor_cm": [
-    6.05,
-    11.3
-   ],
-   "zones": 1,
-   "note": "Ärmel tee (Anker = Schulter)"
-  },
-  "top_sweater": {
-   "w_cm": 32.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    16.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil sweater"
-  },
-  "sleeve_sweater": {
-   "w_cm": 12.1,
-   "h_cm": 13.6,
-   "anchor_cm": [
-    6.05,
-    11.3
-   ],
-   "zones": 1,
-   "note": "Ärmel sweater (Anker = Schulter)"
-  },
-  "top_dress": {
-   "w_cm": 32.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    16.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil dress"
-  },
-  "sleeve_dress": {
-   "w_cm": 12.1,
-   "h_cm": 13.6,
-   "anchor_cm": [
-    6.05,
-    11.3
-   ],
-   "zones": 1,
-   "note": "Ärmel dress (Anker = Schulter)"
-  },
-  "top_overalls": {
-   "w_cm": 32.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    16.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil overalls"
-  },
-  "sleeve_overalls": {
-   "w_cm": 12.1,
-   "h_cm": 13.6,
-   "anchor_cm": [
-    6.05,
-    11.3
-   ],
-   "zones": 1,
-   "note": "Ärmel overalls (Anker = Schulter)"
-  },
-  "bottom_trousers": {
-   "w_cm": 28.6,
-   "h_cm": 34.3,
-   "anchor_cm": [
-    14.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers"
-  },
-  "bottom_sit_trousers": {
-   "w_cm": 28.6,
-   "h_cm": 18.6,
-   "anchor_cm": [
-    14.3,
-    16.3
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers sitzend (Anker = Hüfte)"
-  },
-  "bottom_shorts": {
-   "w_cm": 28.6,
-   "h_cm": 34.3,
-   "anchor_cm": [
-    14.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts"
-  },
-  "bottom_sit_shorts": {
-   "w_cm": 28.6,
-   "h_cm": 18.6,
-   "anchor_cm": [
-    14.3,
-    16.3
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts sitzend (Anker = Hüfte)"
-  },
-  "bottom_skirt": {
-   "w_cm": 28.6,
-   "h_cm": 34.3,
-   "anchor_cm": [
-    14.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt"
-  },
-  "bottom_sit_skirt": {
-   "w_cm": 28.6,
-   "h_cm": 18.6,
-   "anchor_cm": [
-    14.3,
-    16.3
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt sitzend (Anker = Hüfte)"
-  },
-  "bottom_leggings": {
-   "w_cm": 28.6,
-   "h_cm": 34.3,
-   "anchor_cm": [
-    14.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings"
-  },
-  "bottom_sit_leggings": {
-   "w_cm": 28.6,
-   "h_cm": 18.6,
-   "anchor_cm": [
-    14.3,
-    16.3
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings sitzend (Anker = Hüfte)"
-  },
-  "bottom_dungarees": {
-   "w_cm": 28.6,
-   "h_cm": 34.3,
-   "anchor_cm": [
-    14.3,
-    0
-   ],
-   "zones": 2,
-   "note": "Unterteil dungarees"
-  },
-  "bottom_sit_dungarees": {
-   "w_cm": 28.6,
-   "h_cm": 18.6,
-   "anchor_cm": [
-    14.3,
-    16.3
-   ],
-   "zones": 1,
-   "note": "Unterteil dungarees sitzend (Anker = Hüfte)"
-  },
-  "shoes_sneaker": {
-   "w_cm": 32.1,
-   "h_cm": 7.5,
-   "anchor_cm": [
-    16.05,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sneaker"
-  },
-  "shoes_boot": {
-   "w_cm": 32.1,
-   "h_cm": 12.0,
-   "anchor_cm": [
-    16.05,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe boot"
-  },
-  "shoes_sandal": {
-   "w_cm": 32.1,
-   "h_cm": 7.5,
-   "anchor_cm": [
-    16.05,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sandal"
-  },
-  "shoes_slipper": {
-   "w_cm": 32.1,
-   "h_cm": 7.5,
-   "anchor_cm": [
-    16.05,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe slipper"
-  },
-  "shoes_rainboot": {
-   "w_cm": 32.1,
-   "h_cm": 7.5,
-   "anchor_cm": [
-    16.05,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe rainboot"
-  },
-  "hair_back_short": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten short"
-  },
-  "hair_front_short": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne short"
-  },
-  "hair_back_pigtails": {
-   "w_cm": 84.0,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    42.0,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten pigtails"
-  },
-  "hair_front_pigtails": {
-   "w_cm": 84.0,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    42.0,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne pigtails"
-  },
-  "hair_back_curly": {
-   "w_cm": 68.0,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    34.0,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten curly"
-  },
-  "hair_front_curly": {
-   "w_cm": 68.0,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    34.0,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne curly"
-  },
-  "hair_back_bob": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten bob"
-  },
-  "hair_front_bob": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne bob"
-  },
-  "hair_back_bald": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten bald"
-  },
-  "hair_front_bald": {
-   "w_cm": 54.0,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    27.0,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne bald"
-  },
-  "eyes_round": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen round"
-  },
-  "eyes_big": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen big"
-  },
-  "eyes_sleepy": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen sleepy"
-  },
-  "eyes_wink": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen wink"
-  },
-  "eyes_star": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen star"
-  },
-  "eyes_laugh": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen laugh"
-  },
-  "eyes_sad": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen sad"
-  },
-  "eyes_love": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen love"
-  },
-  "mouth_smile": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund smile"
-  },
-  "mouth_grin": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund grin"
-  },
-  "mouth_oh": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund oh"
-  },
-  "mouth_tongue": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund tongue"
-  },
-  "mouth_neutral": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund neutral"
-  },
-  "mouth_happy": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund happy"
-  },
-  "mouth_laugh": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund laugh"
-  },
-  "mouth_surprised": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund surprised"
-  },
-  "mouth_sad": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund sad"
-  },
-  "mouth_tired": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund tired"
-  },
-  "mouth_love": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund love"
-  },
-  "mouth_eat_closed": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_closed"
-  },
-  "mouth_eat_open": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_open"
-  },
-  "acc_none": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire none"
-  },
-  "acc_glasses": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire glasses"
+   "h_cm": 38.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 72.5
   },
   "acc_bow": {
-   "w_cm": 40,
-   "h_cm": 40,
    "anchor_cm": [
-    20.0,
-    20.0
+    -6.75,
+    -20.025
    ],
-   "zones": 2,
-   "note": "Accessoire bow"
-  },
-  "acc_headphones": {
-   "w_cm": 40,
-   "h_cm": 40,
-   "anchor_cm": [
-    20.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire headphones"
+   "h_cm": 13.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 24.875
   },
   "acc_cap": {
-   "w_cm": 40,
-   "h_cm": 40,
    "anchor_cm": [
-    20.0,
-    20.0
+    35.625,
+    -10.525
    ],
-   "zones": 2,
-   "note": "Accessoire cap"
+   "h_cm": 29.125,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 86.625
   },
-  "aid_none": {
-   "w_cm": 40,
-   "h_cm": 40,
+  "acc_flowers": {
    "anchor_cm": [
-    20.0,
-    20.0
+    36.625,
+    -6.275
    ],
-   "zones": 1,
-   "note": "Hilfsmittel none"
+   "h_cm": 34.125,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 73.75
   },
-  "aid_hearing_aid": {
-   "w_cm": 40,
-   "h_cm": 40,
+  "acc_glasses": {
    "anchor_cm": [
-    20.0,
-    20.0
+    32.375,
+    16.975
    ],
-   "zones": 1,
-   "note": "Hilfsmittel hearing_aid"
+   "h_cm": 16.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
   },
-  "aid_eye_patch": {
-   "w_cm": 40,
-   "h_cm": 40,
+  "acc_glasses_square": {
    "anchor_cm": [
-    20.0,
-    20.0
+    32.375,
+    15.6
    ],
-   "zones": 1,
-   "note": "Hilfsmittel eye_patch"
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
+  },
+  "acc_hairclip": {
+   "anchor_cm": [
+    -12.125,
+    -15.9
+   ],
+   "h_cm": 9.625,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 14.875
+  },
+  "acc_headband": {
+   "anchor_cm": [
+    34.625,
+    -6.525
+   ],
+   "h_cm": 29.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 69.125
+  },
+  "acc_headphones": {
+   "anchor_cm": [
+    41.25,
+    13.6
+   ],
+   "h_cm": 49.875,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 82.5
+  },
+  "acc_none": {
+   "anchor_cm": [
+    0.25,
+    0.225
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 0.5
+  },
+  "acc_sunglasses": {
+   "anchor_cm": [
+    32.375,
+    15.725
+   ],
+   "h_cm": 14.125,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.875
+  },
+  "acc_sunhat": {
+   "anchor_cm": [
+    51.0,
+    -10.9
+   ],
+   "h_cm": 30.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 102.0
   },
   "aid_arm_sling": {
-   "w_cm": 40,
-   "h_cm": 40,
    "anchor_cm": [
-    20.0,
-    20.0
+    14.875,
+    78.475
    ],
-   "zones": 1,
-   "note": "Hilfsmittel arm_sling"
+   "h_cm": 50.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 31.25
   },
-  "aid_knee_bandage": {
-   "w_cm": 40,
-   "h_cm": 40,
+  "aid_cochlear": {
    "anchor_cm": [
-    20.0,
-    20.0
+    -27.0,
+    8.725
    ],
-   "zones": 1,
-   "note": "Hilfsmittel knee_bandage"
+   "h_cm": 22.25,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 10.5
+  },
+  "aid_eye_patch": {
+   "anchor_cm": [
+    34.25,
+    15.975
+   ],
+   "h_cm": 29.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 67.875
+  },
+  "aid_hearing_aid": {
+   "anchor_cm": [
+    -28.375,
+    9.475
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 8.75
+  },
+  "aid_none": {
+   "anchor_cm": [
+    0.25,
+    0.225
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 0.5
+  },
+  "aid_plaster": {
+   "anchor_cm": [
+    22.0,
+    -5.15
+   ],
+   "h_cm": 8.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 15.75
+  },
+  "bottom_dungarees": {
+   "anchor_cm": [
+    15.375,
+    -3.5
+   ],
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_jeans": {
+   "anchor_cm": [
+    15.375,
+    -3.5
+   ],
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_joggers": {
+   "anchor_cm": [
+    15.375,
+    -3.5
+   ],
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_leggings": {
+   "anchor_cm": [
+    15.375,
+    -3.5
+   ],
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_shorts": {
+   "anchor_cm": [
+    15.625,
+    -3.625
+   ],
+   "h_cm": 58.25,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.25
+  },
+  "bottom_sit_dungarees": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_jeans": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_joggers": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_leggings": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_shorts": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_skirt": {
+   "anchor_cm": [
+    20.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 41.75
+  },
+  "bottom_sit_trousers": {
+   "anchor_cm": [
+    16.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_sit_tutu": {
+   "anchor_cm": [
+    20.875,
+    41.875
+   ],
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 41.75
+  },
+  "bottom_skirt": {
+   "anchor_cm": [
+    19.875,
+    -3.625
+   ],
+   "h_cm": 58.25,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 39.75
+  },
+  "bottom_trousers": {
+   "anchor_cm": [
+    15.375,
+    -3.5
+   ],
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_tutu": {
+   "anchor_cm": [
+    25.5,
+    -3.625
+   ],
+   "h_cm": 58.25,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 51.0
+  },
+  "eyes_big": {
+   "anchor_cm": [
+    19.0,
+    14.1
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_dot": {
+   "anchor_cm": [
+    18.125,
+    12.6
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_freckles": {
+   "anchor_cm": [
+    18.125,
+    12.6
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_happy_closed": {
+   "anchor_cm": [
+    19.0,
+    10.975
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_lash": {
+   "anchor_cm": [
+    20.125,
+    12.85
+   ],
+   "h_cm": 14.125,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 40.25
+  },
+  "eyes_laugh": {
+   "anchor_cm": [
+    19.0,
+    10.975
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_love": {
+   "anchor_cm": [
+    19.0,
+    13.1
+   ],
+   "h_cm": 14.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_round": {
+   "anchor_cm": [
+    18.25,
+    13.1
+   ],
+   "h_cm": 14.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.5
+  },
+  "eyes_sad": {
+   "anchor_cm": [
+    18.125,
+    12.6
+   ],
+   "h_cm": 14.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_sleepy": {
+   "anchor_cm": [
+    18.875,
+    11.225
+   ],
+   "h_cm": 12.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_star": {
+   "anchor_cm": [
+    18.5,
+    12.475
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.0
+  },
+  "eyes_surprised": {
+   "anchor_cm": [
+    19.0,
+    14.1
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_tired": {
+   "anchor_cm": [
+    18.875,
+    11.225
+   ],
+   "h_cm": 12.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_wink": {
+   "anchor_cm": [
+    18.125,
+    12.725
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.75
+  },
+  "mouth_eat_closed": {
+   "anchor_cm": [
+    2.75,
+    19.475
+   ],
+   "h_cm": 3.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_eat_open": {
+   "anchor_cm": [
+    3.875,
+    20.85
+   ],
+   "h_cm": 4.875,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_grin": {
+   "anchor_cm": [
+    3.875,
+    20.85
+   ],
+   "h_cm": 4.875,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_happy": {
+   "anchor_cm": [
+    4.0,
+    19.225
+   ],
+   "h_cm": 3.5,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_laugh": {
+   "anchor_cm": [
+    4.625,
+    21.6
+   ],
+   "h_cm": 5.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 9.25
+  },
+  "mouth_love": {
+   "anchor_cm": [
+    4.0,
+    19.225
+   ],
+   "h_cm": 3.5,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_neutral": {
+   "anchor_cm": [
+    2.75,
+    18.225
+   ],
+   "h_cm": 1.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_oh": {
+   "anchor_cm": [
+    2.0,
+    20.35
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_sad": {
+   "anchor_cm": [
+    4.0,
+    19.225
+   ],
+   "h_cm": 3.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_smile": {
+   "anchor_cm": [
+    4.0,
+    19.225
+   ],
+   "h_cm": 3.5,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_surprised": {
+   "anchor_cm": [
+    2.0,
+    20.35
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_tired": {
+   "anchor_cm": [
+    2.75,
+    18.225
+   ],
+   "h_cm": 1.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_tongue": {
+   "anchor_cm": [
+    4.0,
+    21.1
+   ],
+   "h_cm": 5.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "shoes_ballet": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_barefoot": {
+   "anchor_cm": [
+    15.25,
+    0.438
+   ],
+   "h_cm": 9.0,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_boot": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 19.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_hightop": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 14.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_rainboot": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 19.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_sandal": {
+   "anchor_cm": [
+    16.75,
+    0.344
+   ],
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.5
+  },
+  "shoes_slipper": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_sneaker": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "shoes_sneaker_socks": {
+   "anchor_cm": [
+    17.875,
+    0.375
+   ],
+   "h_cm": 24.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
+  },
+  "sleeve_dress": {
+   "anchor_cm": [
+    5.975,
+    17.525
+   ],
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
+  },
+  "sleeve_hoodie": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_jacket": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_longsleeve": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_overalls": {
+   "anchor_cm": [
+    5.975,
+    17.525
+   ],
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
+  },
+  "sleeve_polo": {
+   "anchor_cm": [
+    5.975,
+    17.525
+   ],
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
+  },
+  "sleeve_raglan": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_raincoat": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_shirt": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_sundress": {
+   "anchor_cm": [
+    0.225,
+    0.275
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.5
+  },
+  "sleeve_sweater": {
+   "anchor_cm": [
+    5.475,
+    34.275
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.0
+  },
+  "sleeve_tank": {
+   "anchor_cm": [
+    0.225,
+    0.275
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.5
+  },
+  "sleeve_tee": {
+   "anchor_cm": [
+    5.975,
+    17.525
+   ],
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
+  },
+  "sleeve_tee_star": {
+   "anchor_cm": [
+    5.975,
+    17.525
+   ],
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
+  },
+  "top_dress": {
+   "anchor_cm": [
+    24.625,
+    44.0
+   ],
+   "h_cm": 96.375,
+   "note": "P04b \u00b7 top",
+   "w_cm": 49.25
+  },
+  "top_hoodie": {
+   "anchor_cm": [
+    16.875,
+    4.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_jacket": {
+   "anchor_cm": [
+    16.875,
+    4.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_longsleeve": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_overalls": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_polo": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 55.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_raglan": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_raincoat": {
+   "anchor_cm": [
+    19.875,
+    11.25
+   ],
+   "h_cm": 63.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 39.75
+  },
+  "top_shirt": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 55.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_sundress": {
+   "anchor_cm": [
+    26.5,
+    44.0
+   ],
+   "h_cm": 96.375,
+   "note": "P04b \u00b7 top",
+   "w_cm": 53.0
+  },
+  "top_sweater": {
+   "anchor_cm": [
+    16.875,
+    3.25
+   ],
+   "h_cm": 55.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_tank": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_tee": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_tee_star": {
+   "anchor_cm": [
+    16.875,
+    2.25
+   ],
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
   }
  },
  "kid": {
-  "top_shirt": {
-   "w_cm": 35.6,
-   "h_cm": 36.6,
+  "acc_beanie": {
    "anchor_cm": [
-    17.8,
-    2.3
+    36.25,
+    -9.325
    ],
-   "zones": 3,
-   "note": "Oberteil shirt"
-  },
-  "sleeve_shirt": {
-   "w_cm": 13.1,
-   "h_cm": 17.6,
-   "anchor_cm": [
-    6.55,
-    15.3
-   ],
-   "zones": 1,
-   "note": "Ärmel shirt (Anker = Schulter)"
-  },
-  "top_tee": {
-   "w_cm": 35.6,
-   "h_cm": 36.6,
-   "anchor_cm": [
-    17.8,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil tee"
-  },
-  "sleeve_tee": {
-   "w_cm": 13.1,
-   "h_cm": 17.6,
-   "anchor_cm": [
-    6.55,
-    15.3
-   ],
-   "zones": 1,
-   "note": "Ärmel tee (Anker = Schulter)"
-  },
-  "top_sweater": {
-   "w_cm": 35.6,
-   "h_cm": 36.6,
-   "anchor_cm": [
-    17.8,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil sweater"
-  },
-  "sleeve_sweater": {
-   "w_cm": 13.1,
-   "h_cm": 17.6,
-   "anchor_cm": [
-    6.55,
-    15.3
-   ],
-   "zones": 1,
-   "note": "Ärmel sweater (Anker = Schulter)"
-  },
-  "top_dress": {
-   "w_cm": 35.6,
-   "h_cm": 36.6,
-   "anchor_cm": [
-    17.8,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil dress"
-  },
-  "sleeve_dress": {
-   "w_cm": 13.1,
-   "h_cm": 17.6,
-   "anchor_cm": [
-    6.55,
-    15.3
-   ],
-   "zones": 1,
-   "note": "Ärmel dress (Anker = Schulter)"
-  },
-  "top_overalls": {
-   "w_cm": 35.6,
-   "h_cm": 36.6,
-   "anchor_cm": [
-    17.8,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil overalls"
-  },
-  "sleeve_overalls": {
-   "w_cm": 13.1,
-   "h_cm": 17.6,
-   "anchor_cm": [
-    6.55,
-    15.3
-   ],
-   "zones": 1,
-   "note": "Ärmel overalls (Anker = Schulter)"
-  },
-  "bottom_trousers": {
-   "w_cm": 30.6,
-   "h_cm": 54.3,
-   "anchor_cm": [
-    15.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers"
-  },
-  "bottom_sit_trousers": {
-   "w_cm": 30.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    15.3,
-    24.3
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers sitzend (Anker = Hüfte)"
-  },
-  "bottom_shorts": {
-   "w_cm": 30.6,
-   "h_cm": 54.3,
-   "anchor_cm": [
-    15.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts"
-  },
-  "bottom_sit_shorts": {
-   "w_cm": 30.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    15.3,
-    24.3
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts sitzend (Anker = Hüfte)"
-  },
-  "bottom_skirt": {
-   "w_cm": 30.6,
-   "h_cm": 54.3,
-   "anchor_cm": [
-    15.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt"
-  },
-  "bottom_sit_skirt": {
-   "w_cm": 30.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    15.3,
-    24.3
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt sitzend (Anker = Hüfte)"
-  },
-  "bottom_leggings": {
-   "w_cm": 30.6,
-   "h_cm": 54.3,
-   "anchor_cm": [
-    15.3,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings"
-  },
-  "bottom_sit_leggings": {
-   "w_cm": 30.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    15.3,
-    24.3
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings sitzend (Anker = Hüfte)"
-  },
-  "bottom_dungarees": {
-   "w_cm": 30.6,
-   "h_cm": 54.3,
-   "anchor_cm": [
-    15.3,
-    0
-   ],
-   "zones": 2,
-   "note": "Unterteil dungarees"
-  },
-  "bottom_sit_dungarees": {
-   "w_cm": 30.6,
-   "h_cm": 26.6,
-   "anchor_cm": [
-    15.3,
-    24.3
-   ],
-   "zones": 1,
-   "note": "Unterteil dungarees sitzend (Anker = Hüfte)"
-  },
-  "shoes_sneaker": {
-   "w_cm": 34.6,
-   "h_cm": 9.5,
-   "anchor_cm": [
-    17.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sneaker"
-  },
-  "shoes_boot": {
-   "w_cm": 34.6,
-   "h_cm": 15.8,
-   "anchor_cm": [
-    17.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe boot"
-  },
-  "shoes_sandal": {
-   "w_cm": 34.6,
-   "h_cm": 9.5,
-   "anchor_cm": [
-    17.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sandal"
-  },
-  "shoes_slipper": {
-   "w_cm": 34.6,
-   "h_cm": 9.5,
-   "anchor_cm": [
-    17.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe slipper"
-  },
-  "shoes_rainboot": {
-   "w_cm": 34.6,
-   "h_cm": 9.5,
-   "anchor_cm": [
-    17.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe rainboot"
-  },
-  "hair_back_short": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar hinten short"
-  },
-  "hair_front_short": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar vorne short"
-  },
-  "hair_back_pigtails": {
-   "w_cm": 88.2,
-   "h_cm": 39.9,
-   "anchor_cm": [
-    44.1,
-    37.6
-   ],
-   "zones": 1,
-   "note": "Haar hinten pigtails"
-  },
-  "hair_front_pigtails": {
-   "w_cm": 88.2,
-   "h_cm": 39.9,
-   "anchor_cm": [
-    44.1,
-    37.6
-   ],
-   "zones": 1,
-   "note": "Haar vorne pigtails"
-  },
-  "hair_back_curly": {
-   "w_cm": 71.4,
-   "h_cm": 39.9,
-   "anchor_cm": [
-    35.7,
-    37.6
-   ],
-   "zones": 1,
-   "note": "Haar hinten curly"
-  },
-  "hair_front_curly": {
-   "w_cm": 71.4,
-   "h_cm": 39.9,
-   "anchor_cm": [
-    35.7,
-    37.6
-   ],
-   "zones": 1,
-   "note": "Haar vorne curly"
-  },
-  "hair_back_bob": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar hinten bob"
-  },
-  "hair_front_bob": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar vorne bob"
-  },
-  "hair_back_bald": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar hinten bald"
-  },
-  "hair_front_bald": {
-   "w_cm": 56.7,
-   "h_cm": 33.6,
-   "anchor_cm": [
-    28.35,
-    31.3
-   ],
-   "zones": 1,
-   "note": "Haar vorne bald"
-  },
-  "eyes_round": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen round"
-  },
-  "eyes_big": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen big"
-  },
-  "eyes_sleepy": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen sleepy"
-  },
-  "eyes_wink": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen wink"
-  },
-  "eyes_star": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen star"
-  },
-  "eyes_laugh": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen laugh"
-  },
-  "eyes_sad": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen sad"
-  },
-  "eyes_love": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Augen love"
-  },
-  "mouth_smile": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund smile"
-  },
-  "mouth_grin": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund grin"
-  },
-  "mouth_oh": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund oh"
-  },
-  "mouth_tongue": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund tongue"
-  },
-  "mouth_neutral": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund neutral"
-  },
-  "mouth_happy": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund happy"
-  },
-  "mouth_laugh": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund laugh"
-  },
-  "mouth_surprised": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund surprised"
-  },
-  "mouth_sad": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund sad"
-  },
-  "mouth_tired": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund tired"
-  },
-  "mouth_love": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund love"
-  },
-  "mouth_eat_closed": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_closed"
-  },
-  "mouth_eat_open": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_open"
-  },
-  "acc_none": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Accessoire none"
-  },
-  "acc_glasses": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Accessoire glasses"
+   "h_cm": 36.75,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 72.5
   },
   "acc_bow": {
-   "w_cm": 42,
-   "h_cm": 42,
    "anchor_cm": [
-    21.0,
-    21.0
+    -6.75,
+    -18.95
    ],
-   "zones": 2,
-   "note": "Accessoire bow"
-  },
-  "acc_headphones": {
-   "w_cm": 42,
-   "h_cm": 42,
-   "anchor_cm": [
-    21.0,
-    21.0
-   ],
-   "zones": 2,
-   "note": "Accessoire headphones"
+   "h_cm": 12.75,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 24.875
   },
   "acc_cap": {
-   "w_cm": 42,
-   "h_cm": 42,
    "anchor_cm": [
-    21.0,
-    21.0
+    35.625,
+    -9.95
    ],
-   "zones": 2,
-   "note": "Accessoire cap"
+   "h_cm": 27.875,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 86.625
   },
-  "aid_none": {
-   "w_cm": 42,
-   "h_cm": 42,
+  "acc_flowers": {
    "anchor_cm": [
-    21.0,
-    21.0
+    36.625,
+    -5.7
    ],
-   "zones": 1,
-   "note": "Hilfsmittel none"
+   "h_cm": 33.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 73.75
   },
-  "aid_hearing_aid": {
-   "w_cm": 42,
-   "h_cm": 42,
+  "acc_glasses": {
    "anchor_cm": [
-    21.0,
-    21.0
+    32.375,
+    16.55
    ],
-   "zones": 1,
-   "note": "Hilfsmittel hearing_aid"
+   "h_cm": 16.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
   },
-  "aid_eye_patch": {
-   "w_cm": 42,
-   "h_cm": 42,
+  "acc_glasses_square": {
    "anchor_cm": [
-    21.0,
-    21.0
+    32.375,
+    15.175
    ],
-   "zones": 1,
-   "note": "Hilfsmittel eye_patch"
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
+  },
+  "acc_hairclip": {
+   "anchor_cm": [
+    -12.125,
+    -15.075
+   ],
+   "h_cm": 9.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 14.875
+  },
+  "acc_headband": {
+   "anchor_cm": [
+    34.625,
+    -6.2
+   ],
+   "h_cm": 28.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 69.125
+  },
+  "acc_headphones": {
+   "anchor_cm": [
+    41.25,
+    12.925
+   ],
+   "h_cm": 47.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 82.5
+  },
+  "acc_none": {
+   "anchor_cm": [
+    0.25,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 0.5
+  },
+  "acc_sunglasses": {
+   "anchor_cm": [
+    32.375,
+    15.3
+   ],
+   "h_cm": 14.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.875
+  },
+  "acc_sunhat": {
+   "anchor_cm": [
+    51.0,
+    -10.325
+   ],
+   "h_cm": 28.875,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 102.0
   },
   "aid_arm_sling": {
-   "w_cm": 42,
-   "h_cm": 42,
    "anchor_cm": [
-    21.0,
-    21.0
+    12.125,
+    53.175
    ],
-   "zones": 1,
-   "note": "Hilfsmittel arm_sling"
+   "h_cm": 26.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 25.5
   },
-  "aid_knee_bandage": {
-   "w_cm": 42,
-   "h_cm": 42,
+  "aid_cochlear": {
    "anchor_cm": [
-    21.0,
-    21.0
+    -27.0,
+    8.3
    ],
-   "zones": 1,
-   "note": "Hilfsmittel knee_bandage"
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 10.5
+  },
+  "aid_eye_patch": {
+   "anchor_cm": [
+    34.25,
+    15.55
+   ],
+   "h_cm": 28.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 67.875
+  },
+  "aid_hearing_aid": {
+   "anchor_cm": [
+    -28.375,
+    9.05
+   ],
+   "h_cm": 13.375,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 8.75
+  },
+  "aid_none": {
+   "anchor_cm": [
+    0.25,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 0.5
+  },
+  "aid_plaster": {
+   "anchor_cm": [
+    22.0,
+    -4.825
+   ],
+   "h_cm": 8.625,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 15.75
+  },
+  "bottom_dungarees": {
+   "anchor_cm": [
+    13.875,
+    -3.25
+   ],
+   "h_cm": 38.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_jeans": {
+   "anchor_cm": [
+    13.875,
+    -3.25
+   ],
+   "h_cm": 38.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_joggers": {
+   "anchor_cm": [
+    13.875,
+    -3.25
+   ],
+   "h_cm": 38.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_leggings": {
+   "anchor_cm": [
+    13.875,
+    -3.375
+   ],
+   "h_cm": 38.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_shorts": {
+   "anchor_cm": [
+    13.875,
+    -3.375
+   ],
+   "h_cm": 38.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_dungarees": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_jeans": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_joggers": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_leggings": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_shorts": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_skirt": {
+   "anchor_cm": [
+    19.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 38.75
+  },
+  "bottom_sit_trousers": {
+   "anchor_cm": [
+    15.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
+  },
+  "bottom_sit_tutu": {
+   "anchor_cm": [
+    19.375,
+    21.875
+   ],
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 38.75
+  },
+  "bottom_skirt": {
+   "anchor_cm": [
+    18.375,
+    -3.375
+   ],
+   "h_cm": 38.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 36.75
+  },
+  "bottom_trousers": {
+   "anchor_cm": [
+    13.875,
+    -3.25
+   ],
+   "h_cm": 38.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_tutu": {
+   "anchor_cm": [
+    23.875,
+    -3.375
+   ],
+   "h_cm": 38.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 47.75
+  },
+  "eyes_big": {
+   "anchor_cm": [
+    19.0,
+    13.55
+   ],
+   "h_cm": 15.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_dot": {
+   "anchor_cm": [
+    18.125,
+    12.175
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_freckles": {
+   "anchor_cm": [
+    18.125,
+    12.175
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_happy_closed": {
+   "anchor_cm": [
+    19.0,
+    10.55
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_lash": {
+   "anchor_cm": [
+    20.125,
+    12.425
+   ],
+   "h_cm": 14.125,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 40.25
+  },
+  "eyes_laugh": {
+   "anchor_cm": [
+    19.0,
+    10.55
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_love": {
+   "anchor_cm": [
+    19.0,
+    12.925
+   ],
+   "h_cm": 14.625,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_round": {
+   "anchor_cm": [
+    18.25,
+    12.675
+   ],
+   "h_cm": 14.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.5
+  },
+  "eyes_sad": {
+   "anchor_cm": [
+    18.125,
+    12.175
+   ],
+   "h_cm": 14.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_sleepy": {
+   "anchor_cm": [
+    18.875,
+    10.8
+   ],
+   "h_cm": 12.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_star": {
+   "anchor_cm": [
+    18.5,
+    12.175
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.0
+  },
+  "eyes_surprised": {
+   "anchor_cm": [
+    19.0,
+    13.55
+   ],
+   "h_cm": 15.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_tired": {
+   "anchor_cm": [
+    18.875,
+    10.8
+   ],
+   "h_cm": 12.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_wink": {
+   "anchor_cm": [
+    18.125,
+    12.3
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.75
+  },
+  "mouth_eat_closed": {
+   "anchor_cm": [
+    2.75,
+    18.675
+   ],
+   "h_cm": 3.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_eat_open": {
+   "anchor_cm": [
+    3.875,
+    20.05
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_grin": {
+   "anchor_cm": [
+    3.875,
+    20.05
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_happy": {
+   "anchor_cm": [
+    4.0,
+    18.3
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_laugh": {
+   "anchor_cm": [
+    4.625,
+    20.8
+   ],
+   "h_cm": 5.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 9.25
+  },
+  "mouth_love": {
+   "anchor_cm": [
+    4.0,
+    18.3
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_neutral": {
+   "anchor_cm": [
+    2.75,
+    17.425
+   ],
+   "h_cm": 1.75,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_oh": {
+   "anchor_cm": [
+    2.0,
+    19.55
+   ],
+   "h_cm": 4.75,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_sad": {
+   "anchor_cm": [
+    4.0,
+    18.3
+   ],
+   "h_cm": 3.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_smile": {
+   "anchor_cm": [
+    4.0,
+    18.3
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_surprised": {
+   "anchor_cm": [
+    2.0,
+    19.55
+   ],
+   "h_cm": 4.75,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_tired": {
+   "anchor_cm": [
+    2.75,
+    17.425
+   ],
+   "h_cm": 1.75,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_tongue": {
+   "anchor_cm": [
+    4.0,
+    20.175
+   ],
+   "h_cm": 5.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "shoes_ballet": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_barefoot": {
+   "anchor_cm": [
+    12.875,
+    0.344
+   ],
+   "h_cm": 8.5,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 25.75
+  },
+  "shoes_boot": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 18.75,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_hightop": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 13.5,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_rainboot": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 18.75,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_sandal": {
+   "anchor_cm": [
+    14.25,
+    0.219
+   ],
+   "h_cm": 9.5,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 28.5
+  },
+  "shoes_slipper": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_sneaker": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "shoes_sneaker_socks": {
+   "anchor_cm": [
+    15.25,
+    0.406
+   ],
+   "h_cm": 13.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
+  },
+  "sleeve_dress": {
+   "anchor_cm": [
+    5.225,
+    10.275
+   ],
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
+  },
+  "sleeve_hoodie": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_jacket": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_longsleeve": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_overalls": {
+   "anchor_cm": [
+    5.225,
+    10.275
+   ],
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
+  },
+  "sleeve_polo": {
+   "anchor_cm": [
+    5.225,
+    10.275
+   ],
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
+  },
+  "sleeve_raglan": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_raincoat": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_shirt": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_sundress": {
+   "anchor_cm": [
+    0.225,
+    0.275
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.5
+  },
+  "sleeve_sweater": {
+   "anchor_cm": [
+    4.85,
+    18.775
+   ],
+   "h_cm": 25.25,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.75
+  },
+  "sleeve_tank": {
+   "anchor_cm": [
+    0.225,
+    0.275
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.5
+  },
+  "sleeve_tee": {
+   "anchor_cm": [
+    5.225,
+    10.275
+   ],
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
+  },
+  "sleeve_tee_star": {
+   "anchor_cm": [
+    5.225,
+    10.275
+   ],
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
+  },
+  "top_dress": {
+   "anchor_cm": [
+    23.375,
+    24.625
+   ],
+   "h_cm": 53.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 46.75
+  },
+  "top_hoodie": {
+   "anchor_cm": [
+    14.375,
+    4.25
+   ],
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_jacket": {
+   "anchor_cm": [
+    14.375,
+    4.25
+   ],
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_longsleeve": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_overalls": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_polo": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 31.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_raglan": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_raincoat": {
+   "anchor_cm": [
+    18.375,
+    11.25
+   ],
+   "h_cm": 39.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 36.75
+  },
+  "top_shirt": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 31.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_sundress": {
+   "anchor_cm": [
+    25.375,
+    24.625
+   ],
+   "h_cm": 53.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 50.75
+  },
+  "top_sweater": {
+   "anchor_cm": [
+    14.375,
+    3.25
+   ],
+   "h_cm": 31.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_tank": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_tee": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  },
+  "top_tee_star": {
+   "anchor_cm": [
+    14.375,
+    2.25
+   ],
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
   }
  },
- "adult": {
-  "top_shirt": {
-   "w_cm": 44.6,
-   "h_cm": 48.6,
+ "teen": {
+  "acc_beanie": {
    "anchor_cm": [
-    22.3,
-    2.3
+    36.25,
+    -9.52
    ],
-   "zones": 3,
-   "note": "Oberteil shirt"
-  },
-  "sleeve_shirt": {
-   "w_cm": 14.6,
-   "h_cm": 30.6,
-   "anchor_cm": [
-    7.3,
-    28.3
-   ],
-   "zones": 1,
-   "note": "Ärmel shirt (Anker = Schulter)"
-  },
-  "top_tee": {
-   "w_cm": 44.6,
-   "h_cm": 48.6,
-   "anchor_cm": [
-    22.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil tee"
-  },
-  "sleeve_tee": {
-   "w_cm": 14.6,
-   "h_cm": 30.6,
-   "anchor_cm": [
-    7.3,
-    28.3
-   ],
-   "zones": 1,
-   "note": "Ärmel tee (Anker = Schulter)"
-  },
-  "top_sweater": {
-   "w_cm": 44.6,
-   "h_cm": 48.6,
-   "anchor_cm": [
-    22.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil sweater"
-  },
-  "sleeve_sweater": {
-   "w_cm": 14.6,
-   "h_cm": 30.6,
-   "anchor_cm": [
-    7.3,
-    28.3
-   ],
-   "zones": 1,
-   "note": "Ärmel sweater (Anker = Schulter)"
-  },
-  "top_dress": {
-   "w_cm": 44.6,
-   "h_cm": 48.6,
-   "anchor_cm": [
-    22.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil dress"
-  },
-  "sleeve_dress": {
-   "w_cm": 14.6,
-   "h_cm": 30.6,
-   "anchor_cm": [
-    7.3,
-    28.3
-   ],
-   "zones": 1,
-   "note": "Ärmel dress (Anker = Schulter)"
-  },
-  "top_overalls": {
-   "w_cm": 44.6,
-   "h_cm": 48.6,
-   "anchor_cm": [
-    22.3,
-    2.3
-   ],
-   "zones": 2,
-   "note": "Oberteil overalls"
-  },
-  "sleeve_overalls": {
-   "w_cm": 14.6,
-   "h_cm": 30.6,
-   "anchor_cm": [
-    7.3,
-    28.3
-   ],
-   "zones": 1,
-   "note": "Ärmel overalls (Anker = Schulter)"
-  },
-  "bottom_trousers": {
-   "w_cm": 37.6,
-   "h_cm": 94.3,
-   "anchor_cm": [
-    18.8,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers"
-  },
-  "bottom_sit_trousers": {
-   "w_cm": 37.6,
-   "h_cm": 46.6,
-   "anchor_cm": [
-    18.8,
-    44.3
-   ],
-   "zones": 1,
-   "note": "Unterteil trousers sitzend (Anker = Hüfte)"
-  },
-  "bottom_shorts": {
-   "w_cm": 37.6,
-   "h_cm": 94.3,
-   "anchor_cm": [
-    18.8,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts"
-  },
-  "bottom_sit_shorts": {
-   "w_cm": 37.6,
-   "h_cm": 46.6,
-   "anchor_cm": [
-    18.8,
-    44.3
-   ],
-   "zones": 1,
-   "note": "Unterteil shorts sitzend (Anker = Hüfte)"
-  },
-  "bottom_skirt": {
-   "w_cm": 37.6,
-   "h_cm": 94.3,
-   "anchor_cm": [
-    18.8,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt"
-  },
-  "bottom_sit_skirt": {
-   "w_cm": 37.6,
-   "h_cm": 46.6,
-   "anchor_cm": [
-    18.8,
-    44.3
-   ],
-   "zones": 1,
-   "note": "Unterteil skirt sitzend (Anker = Hüfte)"
-  },
-  "bottom_leggings": {
-   "w_cm": 37.6,
-   "h_cm": 94.3,
-   "anchor_cm": [
-    18.8,
-    0
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings"
-  },
-  "bottom_sit_leggings": {
-   "w_cm": 37.6,
-   "h_cm": 46.6,
-   "anchor_cm": [
-    18.8,
-    44.3
-   ],
-   "zones": 1,
-   "note": "Unterteil leggings sitzend (Anker = Hüfte)"
-  },
-  "bottom_dungarees": {
-   "w_cm": 37.6,
-   "h_cm": 94.3,
-   "anchor_cm": [
-    18.8,
-    0
-   ],
-   "zones": 2,
-   "note": "Unterteil dungarees"
-  },
-  "bottom_sit_dungarees": {
-   "w_cm": 37.6,
-   "h_cm": 46.6,
-   "anchor_cm": [
-    18.8,
-    44.3
-   ],
-   "zones": 1,
-   "note": "Unterteil dungarees sitzend (Anker = Hüfte)"
-  },
-  "shoes_sneaker": {
-   "w_cm": 40.6,
-   "h_cm": 10.5,
-   "anchor_cm": [
-    20.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sneaker"
-  },
-  "shoes_boot": {
-   "w_cm": 40.6,
-   "h_cm": 17.7,
-   "anchor_cm": [
-    20.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe boot"
-  },
-  "shoes_sandal": {
-   "w_cm": 40.6,
-   "h_cm": 10.5,
-   "anchor_cm": [
-    20.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe sandal"
-  },
-  "shoes_slipper": {
-   "w_cm": 40.6,
-   "h_cm": 10.5,
-   "anchor_cm": [
-    20.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe slipper"
-  },
-  "shoes_rainboot": {
-   "w_cm": 40.6,
-   "h_cm": 10.5,
-   "anchor_cm": [
-    20.3,
-    0.2
-   ],
-   "zones": 2,
-   "note": "Schuhe rainboot"
-  },
-  "hair_back_short": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten short"
-  },
-  "hair_front_short": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne short"
-  },
-  "hair_back_pigtails": {
-   "w_cm": 75.6,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    37.8,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten pigtails"
-  },
-  "hair_front_pigtails": {
-   "w_cm": 75.6,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    37.8,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne pigtails"
-  },
-  "hair_back_curly": {
-   "w_cm": 61.2,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    30.6,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten curly"
-  },
-  "hair_front_curly": {
-   "w_cm": 61.2,
-   "h_cm": 38.0,
-   "anchor_cm": [
-    30.6,
-    35.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne curly"
-  },
-  "hair_back_bob": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten bob"
-  },
-  "hair_front_bob": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne bob"
-  },
-  "hair_back_bald": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar hinten bald"
-  },
-  "hair_front_bald": {
-   "w_cm": 48.6,
-   "h_cm": 32.0,
-   "anchor_cm": [
-    24.3,
-    29.7
-   ],
-   "zones": 1,
-   "note": "Haar vorne bald"
-  },
-  "eyes_round": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen round"
-  },
-  "eyes_big": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen big"
-  },
-  "eyes_sleepy": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen sleepy"
-  },
-  "eyes_wink": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen wink"
-  },
-  "eyes_star": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen star"
-  },
-  "eyes_laugh": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen laugh"
-  },
-  "eyes_sad": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen sad"
-  },
-  "eyes_love": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Augen love"
-  },
-  "mouth_smile": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund smile"
-  },
-  "mouth_grin": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund grin"
-  },
-  "mouth_oh": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund oh"
-  },
-  "mouth_tongue": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund tongue"
-  },
-  "mouth_neutral": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund neutral"
-  },
-  "mouth_happy": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund happy"
-  },
-  "mouth_laugh": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund laugh"
-  },
-  "mouth_surprised": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund surprised"
-  },
-  "mouth_sad": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund sad"
-  },
-  "mouth_tired": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund tired"
-  },
-  "mouth_love": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund love"
-  },
-  "mouth_eat_closed": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_closed"
-  },
-  "mouth_eat_open": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Mund eat_open"
-  },
-  "acc_none": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire none"
-  },
-  "acc_glasses": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire glasses"
+   "h_cm": 37.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 72.5
   },
   "acc_bow": {
-   "w_cm": 36,
-   "h_cm": 40,
    "anchor_cm": [
-    18.0,
-    20.0
+    -6.75,
+    -19.395
    ],
-   "zones": 2,
-   "note": "Accessoire bow"
-  },
-  "acc_headphones": {
-   "w_cm": 36,
-   "h_cm": 40,
-   "anchor_cm": [
-    18.0,
-    20.0
-   ],
-   "zones": 2,
-   "note": "Accessoire headphones"
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 24.875
   },
   "acc_cap": {
-   "w_cm": 36,
-   "h_cm": 40,
    "anchor_cm": [
-    18.0,
-    20.0
+    35.625,
+    -10.145
    ],
-   "zones": 2,
-   "note": "Accessoire cap"
+   "h_cm": 28.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 86.625
   },
-  "aid_none": {
-   "w_cm": 36,
-   "h_cm": 40,
+  "acc_flowers": {
    "anchor_cm": [
-    18.0,
-    20.0
+    36.625,
+    -5.895
    ],
-   "zones": 1,
-   "note": "Hilfsmittel none"
+   "h_cm": 33.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 73.75
   },
-  "aid_hearing_aid": {
-   "w_cm": 36,
-   "h_cm": 40,
+  "acc_glasses": {
    "anchor_cm": [
-    18.0,
-    20.0
+    32.375,
+    16.73
    ],
-   "zones": 1,
-   "note": "Hilfsmittel hearing_aid"
+   "h_cm": 16.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
   },
-  "aid_eye_patch": {
-   "w_cm": 36,
-   "h_cm": 40,
+  "acc_glasses_square": {
    "anchor_cm": [
-    18.0,
-    20.0
+    32.375,
+    15.355
    ],
-   "zones": 1,
-   "note": "Hilfsmittel eye_patch"
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.75
+  },
+  "acc_hairclip": {
+   "anchor_cm": [
+    -12.125,
+    -15.395
+   ],
+   "h_cm": 9.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 14.875
+  },
+  "acc_headband": {
+   "anchor_cm": [
+    34.625,
+    -6.27
+   ],
+   "h_cm": 28.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 69.125
+  },
+  "acc_headphones": {
+   "anchor_cm": [
+    41.25,
+    13.23
+   ],
+   "h_cm": 48.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 82.5
+  },
+  "acc_none": {
+   "anchor_cm": [
+    0.25,
+    0.23
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 0.5
+  },
+  "acc_sunglasses": {
+   "anchor_cm": [
+    32.375,
+    15.48
+   ],
+   "h_cm": 14.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.875
+  },
+  "acc_sunhat": {
+   "anchor_cm": [
+    51.0,
+    -10.52
+   ],
+   "h_cm": 29.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 102.0
   },
   "aid_arm_sling": {
-   "w_cm": 36,
-   "h_cm": 40,
    "anchor_cm": [
-    18.0,
-    20.0
+    13.5,
+    64.605
    ],
-   "zones": 1,
-   "note": "Hilfsmittel arm_sling"
+   "h_cm": 37.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 28.375
   },
-  "aid_knee_bandage": {
-   "w_cm": 36,
-   "h_cm": 40,
+  "aid_cochlear": {
    "anchor_cm": [
-    18.0,
-    20.0
+    -27.0,
+    8.48
    ],
-   "zones": 1,
-   "note": "Hilfsmittel knee_bandage"
+   "h_cm": 21.75,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 10.5
+  },
+  "aid_eye_patch": {
+   "anchor_cm": [
+    34.25,
+    15.605
+   ],
+   "h_cm": 29.125,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 67.875
+  },
+  "aid_hearing_aid": {
+   "anchor_cm": [
+    -28.375,
+    9.105
+   ],
+   "h_cm": 13.5,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 8.75
+  },
+  "aid_none": {
+   "anchor_cm": [
+    0.25,
+    0.23
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 0.5
+  },
+  "aid_plaster": {
+   "anchor_cm": [
+    22.0,
+    -4.895
+   ],
+   "h_cm": 8.75,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 15.75
+  },
+  "bottom_dungarees": {
+   "anchor_cm": [
+    14.375,
+    -3.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "bottom_jeans": {
+   "anchor_cm": [
+    14.375,
+    -3.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "bottom_joggers": {
+   "anchor_cm": [
+    14.375,
+    -3.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "bottom_leggings": {
+   "anchor_cm": [
+    14.375,
+    -3.375
+   ],
+   "h_cm": 56.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "bottom_shorts": {
+   "anchor_cm": [
+    14.625,
+    -3.5
+   ],
+   "h_cm": 56.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 29.25
+  },
+  "bottom_sit_dungarees": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_jeans": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_joggers": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_leggings": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_shorts": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_skirt": {
+   "anchor_cm": [
+    19.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 39.75
+  },
+  "bottom_sit_trousers": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "bottom_sit_tutu": {
+   "anchor_cm": [
+    19.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 39.75
+  },
+  "bottom_skirt": {
+   "anchor_cm": [
+    18.875,
+    -3.5
+   ],
+   "h_cm": 56.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 37.75
+  },
+  "bottom_trousers": {
+   "anchor_cm": [
+    14.375,
+    -3.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "bottom_tutu": {
+   "anchor_cm": [
+    24.375,
+    -3.5
+   ],
+   "h_cm": 56.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 48.75
+  },
+  "eyes_big": {
+   "anchor_cm": [
+    19.0,
+    13.73
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_dot": {
+   "anchor_cm": [
+    18.125,
+    12.355
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_freckles": {
+   "anchor_cm": [
+    18.125,
+    12.355
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_happy_closed": {
+   "anchor_cm": [
+    19.0,
+    10.605
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_lash": {
+   "anchor_cm": [
+    20.125,
+    12.48
+   ],
+   "h_cm": 14.125,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 40.25
+  },
+  "eyes_laugh": {
+   "anchor_cm": [
+    19.0,
+    10.605
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_love": {
+   "anchor_cm": [
+    19.0,
+    13.105
+   ],
+   "h_cm": 14.75,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_round": {
+   "anchor_cm": [
+    18.25,
+    12.855
+   ],
+   "h_cm": 14.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.5
+  },
+  "eyes_sad": {
+   "anchor_cm": [
+    18.125,
+    12.355
+   ],
+   "h_cm": 14.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.25
+  },
+  "eyes_sleepy": {
+   "anchor_cm": [
+    18.875,
+    10.98
+   ],
+   "h_cm": 12.625,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_star": {
+   "anchor_cm": [
+    18.5,
+    12.23
+   ],
+   "h_cm": 13.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.0
+  },
+  "eyes_surprised": {
+   "anchor_cm": [
+    19.0,
+    13.73
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 38.0
+  },
+  "eyes_tired": {
+   "anchor_cm": [
+    18.875,
+    10.98
+   ],
+   "h_cm": 12.625,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 37.75
+  },
+  "eyes_wink": {
+   "anchor_cm": [
+    18.125,
+    12.355
+   ],
+   "h_cm": 14.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 36.75
+  },
+  "mouth_eat_closed": {
+   "anchor_cm": [
+    2.75,
+    18.98
+   ],
+   "h_cm": 3.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_eat_open": {
+   "anchor_cm": [
+    3.875,
+    20.355
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_grin": {
+   "anchor_cm": [
+    3.875,
+    20.355
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.75
+  },
+  "mouth_happy": {
+   "anchor_cm": [
+    4.0,
+    18.605
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_laugh": {
+   "anchor_cm": [
+    4.625,
+    21.105
+   ],
+   "h_cm": 5.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 9.25
+  },
+  "mouth_love": {
+   "anchor_cm": [
+    4.0,
+    18.605
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_neutral": {
+   "anchor_cm": [
+    2.75,
+    17.605
+   ],
+   "h_cm": 1.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_oh": {
+   "anchor_cm": [
+    2.0,
+    19.73
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_sad": {
+   "anchor_cm": [
+    4.0,
+    18.605
+   ],
+   "h_cm": 3.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_smile": {
+   "anchor_cm": [
+    4.0,
+    18.605
+   ],
+   "h_cm": 3.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "mouth_surprised": {
+   "anchor_cm": [
+    2.0,
+    19.73
+   ],
+   "h_cm": 4.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.0
+  },
+  "mouth_tired": {
+   "anchor_cm": [
+    2.75,
+    17.605
+   ],
+   "h_cm": 1.625,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.5
+  },
+  "mouth_tongue": {
+   "anchor_cm": [
+    4.0,
+    20.48
+   ],
+   "h_cm": 5.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.0
+  },
+  "shoes_ballet": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_barefoot": {
+   "anchor_cm": [
+    14.25,
+    0.344
+   ],
+   "h_cm": 8.5,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 28.5
+  },
+  "shoes_boot": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 18.75,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_hightop": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 13.5,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_rainboot": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 18.75,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_sandal": {
+   "anchor_cm": [
+    15.75,
+    0.344
+   ],
+   "h_cm": 9.625,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 31.5
+  },
+  "shoes_slipper": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_sneaker": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "shoes_sneaker_socks": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 18.75,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "sleeve_dress": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "sleeve_hoodie": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_jacket": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_longsleeve": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_overalls": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "sleeve_polo": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "sleeve_raglan": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_raincoat": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_shirt": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_sundress": {
+   "anchor_cm": [
+    0.2,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.375
+  },
+  "sleeve_sweater": {
+   "anchor_cm": [
+    5.075,
+    27.925
+   ],
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.25
+  },
+  "sleeve_tank": {
+   "anchor_cm": [
+    0.2,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.375
+  },
+  "sleeve_tee": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "sleeve_tee_star": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "top_dress": {
+   "anchor_cm": [
+    23.875,
+    35.625
+   ],
+   "h_cm": 75.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 47.75
+  },
+  "top_hoodie": {
+   "anchor_cm": [
+    15.375,
+    4.25
+   ],
+   "h_cm": 43.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_jacket": {
+   "anchor_cm": [
+    15.375,
+    4.25
+   ],
+   "h_cm": 43.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_longsleeve": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_overalls": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_polo": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 42.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_raglan": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_raincoat": {
+   "anchor_cm": [
+    18.875,
+    11.25
+   ],
+   "h_cm": 50.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 37.75
+  },
+  "top_shirt": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 42.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_sundress": {
+   "anchor_cm": [
+    25.875,
+    35.625
+   ],
+   "h_cm": 75.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 51.75
+  },
+  "top_sweater": {
+   "anchor_cm": [
+    15.375,
+    3.25
+   ],
+   "h_cm": 42.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_tank": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_tee": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  },
+  "top_tee_star": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
+  }
+ },
+ "toddler": {
+  "acc_beanie": {
+   "anchor_cm": [
+    31.625,
+    -8.125
+   ],
+   "h_cm": 32.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 63.25
+  },
+  "acc_bow": {
+   "anchor_cm": [
+    -5.75,
+    -16.625
+   ],
+   "h_cm": 11.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 21.875
+  },
+  "acc_cap": {
+   "anchor_cm": [
+    31.125,
+    -8.625
+   ],
+   "h_cm": 24.625,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 75.75
+  },
+  "acc_flowers": {
+   "anchor_cm": [
+    32.0,
+    -4.875
+   ],
+   "h_cm": 29.125,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 64.5
+  },
+  "acc_glasses": {
+   "anchor_cm": [
+    28.25,
+    14.625
+   ],
+   "h_cm": 14.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 56.5
+  },
+  "acc_glasses_square": {
+   "anchor_cm": [
+    28.25,
+    13.375
+   ],
+   "h_cm": 12.375,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 56.5
+  },
+  "acc_hairclip": {
+   "anchor_cm": [
+    -10.375,
+    -13.125
+   ],
+   "h_cm": 8.25,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 13.25
+  },
+  "acc_headband": {
+   "anchor_cm": [
+    30.375,
+    -5.25
+   ],
+   "h_cm": 25.0,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 60.5
+  },
+  "acc_headphones": {
+   "anchor_cm": [
+    36.0,
+    11.5
+   ],
+   "h_cm": 42.125,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 72.0
+  },
+  "acc_none": {
+   "anchor_cm": [
+    0.25,
+    0.25
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 0.5
+  },
+  "acc_sunglasses": {
+   "anchor_cm": [
+    28.375,
+    13.5
+   ],
+   "h_cm": 12.625,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 56.75
+  },
+  "acc_sunhat": {
+   "anchor_cm": [
+    46.75,
+    -9.0
+   ],
+   "h_cm": 25.5,
+   "note": "P04b \u00b7 acc",
+   "w_cm": 93.5
+  },
+  "aid_arm_sling": {
+   "anchor_cm": [
+    10.375,
+    40.125
+   ],
+   "h_cm": 17.375,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 21.75
+  },
+  "aid_cochlear": {
+   "anchor_cm": [
+    -23.375,
+    7.375
+   ],
+   "h_cm": 19.0,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 9.375
+  },
+  "aid_eye_patch": {
+   "anchor_cm": [
+    29.875,
+    13.625
+   ],
+   "h_cm": 25.375,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 59.25
+  },
+  "aid_hearing_aid": {
+   "anchor_cm": [
+    -24.625,
+    8.0
+   ],
+   "h_cm": 11.875,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 7.75
+  },
+  "aid_none": {
+   "anchor_cm": [
+    0.25,
+    0.25
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 0.5
+  },
+  "aid_plaster": {
+   "anchor_cm": [
+    19.25,
+    -4.125
+   ],
+   "h_cm": 7.75,
+   "note": "P04b \u00b7 aid",
+   "w_cm": 13.875
+  },
+  "bottom_dungarees": {
+   "anchor_cm": [
+    12.375,
+    -2.375
+   ],
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_jeans": {
+   "anchor_cm": [
+    12.375,
+    -2.375
+   ],
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_joggers": {
+   "anchor_cm": [
+    12.375,
+    -2.375
+   ],
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_leggings": {
+   "anchor_cm": [
+    12.375,
+    -2.375
+   ],
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_shorts": {
+   "anchor_cm": [
+    12.375,
+    -2.75
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_sit_dungarees": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_jeans": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_joggers": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_leggings": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_shorts": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_skirt": {
+   "anchor_cm": [
+    17.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 35.75
+  },
+  "bottom_sit_trousers": {
+   "anchor_cm": [
+    13.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
+  },
+  "bottom_sit_tutu": {
+   "anchor_cm": [
+    17.875,
+    13.75
+   ],
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 35.75
+  },
+  "bottom_skirt": {
+   "anchor_cm": [
+    16.875,
+    -2.75
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
+  },
+  "bottom_trousers": {
+   "anchor_cm": [
+    12.375,
+    -2.375
+   ],
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
+  },
+  "bottom_tutu": {
+   "anchor_cm": [
+    22.375,
+    -2.75
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 44.75
+  },
+  "eyes_big": {
+   "anchor_cm": [
+    16.625,
+    12.0
+   ],
+   "h_cm": 13.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.25
+  },
+  "eyes_dot": {
+   "anchor_cm": [
+    15.875,
+    10.75
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 31.75
+  },
+  "eyes_freckles": {
+   "anchor_cm": [
+    15.875,
+    10.75
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 31.75
+  },
+  "eyes_happy_closed": {
+   "anchor_cm": [
+    16.625,
+    9.25
+   ],
+   "h_cm": 10.75,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.25
+  },
+  "eyes_lash": {
+   "anchor_cm": [
+    17.5,
+    10.875
+   ],
+   "h_cm": 12.375,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 35.0
+  },
+  "eyes_laugh": {
+   "anchor_cm": [
+    16.625,
+    9.25
+   ],
+   "h_cm": 10.75,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.25
+  },
+  "eyes_love": {
+   "anchor_cm": [
+    16.625,
+    11.375
+   ],
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.25
+  },
+  "eyes_round": {
+   "anchor_cm": [
+    16.0,
+    11.125
+   ],
+   "h_cm": 12.625,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 32.0
+  },
+  "eyes_sad": {
+   "anchor_cm": [
+    15.875,
+    10.75
+   ],
+   "h_cm": 12.75,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 31.75
+  },
+  "eyes_sleepy": {
+   "anchor_cm": [
+    16.5,
+    9.5
+   ],
+   "h_cm": 11.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.0
+  },
+  "eyes_star": {
+   "anchor_cm": [
+    16.125,
+    10.5
+   ],
+   "h_cm": 12.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 32.25
+  },
+  "eyes_surprised": {
+   "anchor_cm": [
+    16.625,
+    12.0
+   ],
+   "h_cm": 13.5,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.25
+  },
+  "eyes_tired": {
+   "anchor_cm": [
+    16.5,
+    9.5
+   ],
+   "h_cm": 11.0,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 33.0
+  },
+  "eyes_wink": {
+   "anchor_cm": [
+    15.875,
+    10.75
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 eyes",
+   "w_cm": 32.125
+  },
+  "mouth_eat_closed": {
+   "anchor_cm": [
+    2.5,
+    16.375
+   ],
+   "h_cm": 3.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 5.0
+  },
+  "mouth_eat_open": {
+   "anchor_cm": [
+    3.375,
+    17.625
+   ],
+   "h_cm": 4.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 6.75
+  },
+  "mouth_grin": {
+   "anchor_cm": [
+    3.375,
+    17.625
+   ],
+   "h_cm": 4.375,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 6.75
+  },
+  "mouth_happy": {
+   "anchor_cm": [
+    3.5,
+    16.125
+   ],
+   "h_cm": 3.125,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.0
+  },
+  "mouth_laugh": {
+   "anchor_cm": [
+    4.125,
+    18.25
+   ],
+   "h_cm": 5.0,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 8.25
+  },
+  "mouth_love": {
+   "anchor_cm": [
+    3.5,
+    16.125
+   ],
+   "h_cm": 3.125,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.0
+  },
+  "mouth_neutral": {
+   "anchor_cm": [
+    2.375,
+    15.25
+   ],
+   "h_cm": 1.5,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.75
+  },
+  "mouth_oh": {
+   "anchor_cm": [
+    1.75,
+    17.125
+   ],
+   "h_cm": 4.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 3.5
+  },
+  "mouth_sad": {
+   "anchor_cm": [
+    3.5,
+    16.125
+   ],
+   "h_cm": 2.875,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.0
+  },
+  "mouth_smile": {
+   "anchor_cm": [
+    3.5,
+    16.125
+   ],
+   "h_cm": 3.125,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.0
+  },
+  "mouth_surprised": {
+   "anchor_cm": [
+    1.75,
+    17.125
+   ],
+   "h_cm": 4.25,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 3.5
+  },
+  "mouth_tired": {
+   "anchor_cm": [
+    2.375,
+    15.25
+   ],
+   "h_cm": 1.5,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 4.75
+  },
+  "mouth_tongue": {
+   "anchor_cm": [
+    3.5,
+    17.75
+   ],
+   "h_cm": 4.75,
+   "note": "P04b \u00b7 mouth",
+   "w_cm": 7.0
+  },
+  "shoes_ballet": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_barefoot": {
+   "anchor_cm": [
+    11.125,
+    0.375
+   ],
+   "h_cm": 7.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 22.25
+  },
+  "shoes_boot": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_hightop": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 11.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_rainboot": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 15.375,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_sandal": {
+   "anchor_cm": [
+    12.25,
+    0.219
+   ],
+   "h_cm": 8.0,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 24.5
+  },
+  "shoes_slipper": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_sneaker": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "shoes_sneaker_socks": {
+   "anchor_cm": [
+    13.125,
+    0.375
+   ],
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
+  },
+  "sleeve_dress": {
+   "anchor_cm": [
+    4.825,
+    7.8
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
+  },
+  "sleeve_hoodie": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_jacket": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_longsleeve": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_overalls": {
+   "anchor_cm": [
+    4.825,
+    7.8
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
+  },
+  "sleeve_polo": {
+   "anchor_cm": [
+    4.825,
+    7.8
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
+  },
+  "sleeve_raglan": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_raincoat": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_shirt": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_sundress": {
+   "anchor_cm": [
+    0.2,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.375
+  },
+  "sleeve_sweater": {
+   "anchor_cm": [
+    4.45,
+    13.425
+   ],
+   "h_cm": 19.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.0
+  },
+  "sleeve_tank": {
+   "anchor_cm": [
+    0.2,
+    0.175
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 0.375
+  },
+  "sleeve_tee": {
+   "anchor_cm": [
+    4.825,
+    7.8
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
+  },
+  "sleeve_tee_star": {
+   "anchor_cm": [
+    4.825,
+    7.8
+   ],
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
+  },
+  "top_dress": {
+   "anchor_cm": [
+    21.875,
+    15.125
+   ],
+   "h_cm": 34.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 43.75
+  },
+  "top_hoodie": {
+   "anchor_cm": [
+    12.875,
+    4.25
+   ],
+   "h_cm": 23.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_jacket": {
+   "anchor_cm": [
+    12.875,
+    4.25
+   ],
+   "h_cm": 23.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_longsleeve": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_overalls": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_polo": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 22.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_raglan": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_raincoat": {
+   "anchor_cm": [
+    16.875,
+    11.25
+   ],
+   "h_cm": 30.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
+  },
+  "top_shirt": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 22.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_sundress": {
+   "anchor_cm": [
+    23.875,
+    15.125
+   ],
+   "h_cm": 34.0,
+   "note": "P04b \u00b7 top",
+   "w_cm": 47.75
+  },
+  "top_sweater": {
+   "anchor_cm": [
+    12.875,
+    3.25
+   ],
+   "h_cm": 22.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_tank": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_tee": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
+  },
+  "top_tee_star": {
+   "anchor_cm": [
+    12.875,
+    2.25
+   ],
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
   }
  }
 }

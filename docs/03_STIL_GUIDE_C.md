@@ -10,7 +10,7 @@
 | Licht | weiche gemalte Verläufe, Licht **oben links**, Glanzpunkte auf glatten Flächen | harte Schlagschatten, Licht von unten |
 | Textur | feines Korn, Holzmaserung, Stoffstruktur (dezent) | stark verrauscht, Foto-Texturen |
 | Farben | warm & harmonisch: Creme, Mint, Holz, Pastell + kräftige Akzente (Rot, Gelb, Pink, Blau) | Neon (außer Rummel abends), grau-trist |
-| Figuren | ~3 Kopfhöhen (Kind), große Augen mit Glanzlicht, rosige Wangen, detaillierte Kleidung | realistische Proportionen, gruselig, sexualisiert |
+| Figuren | **großer Kopf** (Kind ≈ 2 Kopfhöhen, seit P04b), kleine Punktaugen mit Glanzlicht tief im Gesicht, winzige Nase, rosige Wangen, feine dunkelbraune Kontur, volle weiche Frisuren, gedeckte Farben | realistische Proportionen, gruselig, sexualisiert, dicke schwarze Konturen |
 | Ansicht | **frontal/seitlich** (Puppenhaus-Querschnitt), Items leicht 3/4 von vorne | Vogelperspektive, starke Perspektive |
 | Vielfalt | alle Hautfarben, Haartypen, Familienformen, Hilfsmittel (Rollstuhl, Brille, Hörgerät) | Klischees |
 

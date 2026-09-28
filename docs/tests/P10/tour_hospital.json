@@ -1,0 +1,19 @@
+{
+  "hospital": {
+    "ladezeit_ms": 1085.0,
+    "raeume": [
+      "reception:11/1",
+      "gp:12/1",
+      "dentist:10/1",
+      "pediatric:13/1",
+      "vet:11/1",
+      "xray:7/1",
+      "er:11/1",
+      "babies:11/1",
+      "patient:10/1",
+      "cafe:11/1",
+      "pharmacy:11/1",
+      "roof:7/1"
+    ]
+  }
+}

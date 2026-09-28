@@ -16,6 +16,7 @@ var emotion: String = "happy"
 var show_deco: bool = true
 
 const DECO_COLOR: Color = Color("#efe3d6")
+const HALO_COLOR: Color = Color("#fff1dc")
 
 
 func _ready() -> void:
@@ -91,7 +92,7 @@ func _deco() -> void:
 	_world.add_child(disc)
 	var halo := Polygon2D.new()
 	halo.polygon = _circle_points(64, h * 0.46)
-	halo.color = Color(1, 1, 1, 0.55)
+	halo.color = HALO_COLOR       # deckend: halbdurchsichtiges Weiß wird in der Mini-Welt grau
 	halo.position = Vector2(0, -h * 0.58)
 	halo.z_index = -21
 	_world.add_child(halo)

@@ -1,0 +1,9381 @@
+{
+ "area": "catalog",
+ "room": "plants",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "plant_monstera_terracotta_terracotta",
+   "scale_ref": "c_plant_monstera_terracotta",
+   "size_cm": [
+    101.8,
+    80.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_terracotta_cream",
+   "scale_ref": "c_plant_monstera_terracotta",
+   "size_cm": [
+    101.8,
+    80.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_basket_oak",
+   "scale_ref": "c_plant_monstera_basket",
+   "size_cm": [
+    101.7,
+    103.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_basket_walnut",
+   "scale_ref": "c_plant_monstera_basket",
+   "size_cm": [
+    101.7,
+    103.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_cylinder_cream",
+   "scale_ref": "c_plant_monstera_cylinder",
+   "size_cm": [
+    98.9,
+    108.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_cylinder_navy",
+   "scale_ref": "c_plant_monstera_cylinder",
+   "size_cm": [
+    98.9,
+    108.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_cylinder_sage",
+   "scale_ref": "c_plant_monstera_cylinder",
+   "size_cm": [
+    98.9,
+    108.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_stand_cream",
+   "scale_ref": "c_plant_monstera_stand",
+   "size_cm": [
+    87.2,
+    106.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_monstera_stand_navy",
+   "scale_ref": "c_plant_monstera_stand",
+   "size_cm": [
+    87.2,
+    106.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_monstera_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_round_cream",
+   "scale_ref": "c_plant_fern_round",
+   "size_cm": [
+    70.2,
+    56.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_round_rose",
+   "scale_ref": "c_plant_fern_round",
+   "size_cm": [
+    70.2,
+    56.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_round_blue",
+   "scale_ref": "c_plant_fern_round",
+   "size_cm": [
+    70.2,
+    56.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_basket_oak",
+   "scale_ref": "c_plant_fern_basket",
+   "size_cm": [
+    66.5,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_basket_walnut",
+   "scale_ref": "c_plant_fern_basket",
+   "size_cm": [
+    66.5,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_stand_cream",
+   "scale_ref": "c_plant_fern_stand",
+   "size_cm": [
+    63.9,
+    52.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_stand_navy",
+   "scale_ref": "c_plant_fern_stand",
+   "size_cm": [
+    63.9,
+    52.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_bowl_cream",
+   "scale_ref": "c_plant_fern_bowl",
+   "size_cm": [
+    77.2,
+    49.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_bowl_butter",
+   "scale_ref": "c_plant_fern_bowl",
+   "size_cm": [
+    77.2,
+    49.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_fern_bowl_coral",
+   "scale_ref": "c_plant_fern_bowl",
+   "size_cm": [
+    77.2,
+    49.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_fern_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_cylinder_cream",
+   "scale_ref": "c_plant_snake_plant_cylinder",
+   "size_cm": [
+    22.8,
+    80.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_cylinder_navy",
+   "scale_ref": "c_plant_snake_plant_cylinder",
+   "size_cm": [
+    22.8,
+    80.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_cylinder_sage",
+   "scale_ref": "c_plant_snake_plant_cylinder",
+   "size_cm": [
+    22.8,
+    80.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_square_cream",
+   "scale_ref": "c_plant_snake_plant_square",
+   "size_cm": [
+    23.7,
+    76.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_square_grey",
+   "scale_ref": "c_plant_snake_plant_square",
+   "size_cm": [
+    23.7,
+    76.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_square_mint",
+   "scale_ref": "c_plant_snake_plant_square",
+   "size_cm": [
+    23.7,
+    76.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_terracotta_terracotta",
+   "scale_ref": "c_plant_snake_plant_terracotta",
+   "size_cm": [
+    27.8,
+    79.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_snake_plant_terracotta_cream",
+   "scale_ref": "c_plant_snake_plant_terracotta",
+   "size_cm": [
+    27.8,
+    79.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_snake_plant_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_terracotta_terracotta",
+   "scale_ref": "c_plant_cactus_column_terracotta",
+   "size_cm": [
+    19.5,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_terracotta_cream",
+   "scale_ref": "c_plant_cactus_column_terracotta",
+   "size_cm": [
+    19.5,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_cylinder_cream",
+   "scale_ref": "c_plant_cactus_column_cylinder",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_cylinder_navy",
+   "scale_ref": "c_plant_cactus_column_cylinder",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_cylinder_sage",
+   "scale_ref": "c_plant_cactus_column_cylinder",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_square_cream",
+   "scale_ref": "c_plant_cactus_column_square",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_square_grey",
+   "scale_ref": "c_plant_cactus_column_square",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_column_square_mint",
+   "scale_ref": "c_plant_cactus_column_square",
+   "size_cm": [
+    17.4,
+    47.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_column_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_terracotta_terracotta_rose",
+   "scale_ref": "c_plant_cactus_ball_terracotta",
+   "size_cm": [
+    15.0,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#c96a4a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_terracotta_terracotta_yellow",
+   "scale_ref": "c_plant_cactus_ball_terracotta",
+   "size_cm": [
+    15.0,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#c96a4a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_terracotta_cream_rose",
+   "scale_ref": "c_plant_cactus_ball_terracotta",
+   "size_cm": [
+    15.0,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_terracotta_cream_yellow",
+   "scale_ref": "c_plant_cactus_ball_terracotta",
+   "size_cm": [
+    15.0,
+    21.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_cream_rose",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_cream_yellow",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_butter_rose",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_butter_yellow",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_coral_rose",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_bowl_coral_yellow",
+   "scale_ref": "c_plant_cactus_ball_bowl",
+   "size_cm": [
+    15.8,
+    18.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_cream_rose",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_cream_yellow",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_rose_rose",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f0b6c2",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_rose_yellow",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f0b6c2",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_blue_rose",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6f8fb8",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_ball_round_blue_yellow",
+   "scale_ref": "c_plant_cactus_ball_round",
+   "size_cm": [
+    14.7,
+    22.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_ball_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6f8fb8",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_paddle_terracotta_terracotta",
+   "scale_ref": "c_plant_cactus_paddle_terracotta",
+   "size_cm": [
+    26.8,
+    40.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_paddle_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_paddle_terracotta_cream",
+   "scale_ref": "c_plant_cactus_paddle_terracotta",
+   "size_cm": [
+    26.8,
+    40.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_paddle_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_paddle_bowl_cream",
+   "scale_ref": "c_plant_cactus_paddle_bowl",
+   "size_cm": [
+    28.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_paddle_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_paddle_bowl_butter",
+   "scale_ref": "c_plant_cactus_paddle_bowl",
+   "size_cm": [
+    28.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_paddle_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_cactus_paddle_bowl_coral",
+   "scale_ref": "c_plant_cactus_paddle_bowl",
+   "size_cm": [
+    28.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_cactus_paddle_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_bowl_cream",
+   "scale_ref": "c_plant_succulent_bowl",
+   "size_cm": [
+    15.7,
+    14.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_bowl_butter",
+   "scale_ref": "c_plant_succulent_bowl",
+   "size_cm": [
+    15.7,
+    14.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_bowl_coral",
+   "scale_ref": "c_plant_succulent_bowl",
+   "size_cm": [
+    15.7,
+    14.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_round_cream",
+   "scale_ref": "c_plant_succulent_round",
+   "size_cm": [
+    14.5,
+    15.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_round_rose",
+   "scale_ref": "c_plant_succulent_round",
+   "size_cm": [
+    14.5,
+    15.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_round_blue",
+   "scale_ref": "c_plant_succulent_round",
+   "size_cm": [
+    14.5,
+    15.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6f8fb8",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_terracotta_terracotta",
+   "scale_ref": "c_plant_succulent_terracotta",
+   "size_cm": [
+    15.1,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_terracotta_cream",
+   "scale_ref": "c_plant_succulent_terracotta",
+   "size_cm": [
+    15.1,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_square_cream",
+   "scale_ref": "c_plant_succulent_square",
+   "size_cm": [
+    13.0,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_square_grey",
+   "scale_ref": "c_plant_succulent_square",
+   "size_cm": [
+    13.0,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_succulent_square_mint",
+   "scale_ref": "c_plant_succulent_square",
+   "size_cm": [
+    13.0,
+    14.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_succulent_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_terracotta_terracotta",
+   "scale_ref": "c_plant_aloe_terracotta",
+   "size_cm": [
+    31.0,
+    34.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_terracotta_cream",
+   "scale_ref": "c_plant_aloe_terracotta",
+   "size_cm": [
+    31.0,
+    34.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_cylinder_cream",
+   "scale_ref": "c_plant_aloe_cylinder",
+   "size_cm": [
+    31.0,
+    34.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_cylinder_navy",
+   "scale_ref": "c_plant_aloe_cylinder",
+   "size_cm": [
+    31.0,
+    34.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_cylinder_sage",
+   "scale_ref": "c_plant_aloe_cylinder",
+   "size_cm": [
+    31.0,
+    34.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_round_cream",
+   "scale_ref": "c_plant_aloe_round",
+   "size_cm": [
+    31.0,
+    35.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_round_rose",
+   "scale_ref": "c_plant_aloe_round",
+   "size_cm": [
+    31.0,
+    35.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_aloe_round_blue",
+   "scale_ref": "c_plant_aloe_round",
+   "size_cm": [
+    31.0,
+    35.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_aloe_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_terracotta_terracotta",
+   "scale_ref": "c_plant_ficus_terracotta",
+   "size_cm": [
+    68.2,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_terracotta_cream",
+   "scale_ref": "c_plant_ficus_terracotta",
+   "size_cm": [
+    68.2,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_basket_oak",
+   "scale_ref": "c_plant_ficus_basket",
+   "size_cm": [
+    67.1,
+    150.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_basket_walnut",
+   "scale_ref": "c_plant_ficus_basket",
+   "size_cm": [
+    67.1,
+    150.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_cylinder_cream",
+   "scale_ref": "c_plant_ficus_cylinder",
+   "size_cm": [
+    67.2,
+    152.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_cylinder_navy",
+   "scale_ref": "c_plant_ficus_cylinder",
+   "size_cm": [
+    67.2,
+    152.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ficus_cylinder_sage",
+   "scale_ref": "c_plant_ficus_cylinder",
+   "size_cm": [
+    67.2,
+    152.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ficus_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_terracotta_terracotta",
+   "scale_ref": "c_plant_lemon_tree_terracotta",
+   "size_cm": [
+    67.1,
+    134.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_terracotta_cream",
+   "scale_ref": "c_plant_lemon_tree_terracotta",
+   "size_cm": [
+    67.1,
+    134.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_square_cream",
+   "scale_ref": "c_plant_lemon_tree_square",
+   "size_cm": [
+    68.4,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_square_grey",
+   "scale_ref": "c_plant_lemon_tree_square",
+   "size_cm": [
+    68.4,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_square_mint",
+   "scale_ref": "c_plant_lemon_tree_square",
+   "size_cm": [
+    68.4,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_bucket_metal",
+   "scale_ref": "c_plant_lemon_tree_bucket",
+   "size_cm": [
+    68.2,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_bucket_butter",
+   "scale_ref": "c_plant_lemon_tree_bucket",
+   "size_cm": [
+    68.2,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lemon_tree_bucket_coral",
+   "scale_ref": "c_plant_lemon_tree_bucket",
+   "size_cm": [
+    68.2,
+    133.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lemon_tree_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_terracotta_terracotta",
+   "scale_ref": "c_plant_olive_terracotta",
+   "size_cm": [
+    63.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_terracotta_cream",
+   "scale_ref": "c_plant_olive_terracotta",
+   "size_cm": [
+    63.5,
+    142.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_square_cream",
+   "scale_ref": "c_plant_olive_square",
+   "size_cm": [
+    60.3,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_square_grey",
+   "scale_ref": "c_plant_olive_square",
+   "size_cm": [
+    60.3,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_square_mint",
+   "scale_ref": "c_plant_olive_square",
+   "size_cm": [
+    60.3,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_cylinder_cream",
+   "scale_ref": "c_plant_olive_cylinder",
+   "size_cm": [
+    60.8,
+    142.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_cylinder_navy",
+   "scale_ref": "c_plant_olive_cylinder",
+   "size_cm": [
+    60.8,
+    142.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_olive_cylinder_sage",
+   "scale_ref": "c_plant_olive_cylinder",
+   "size_cm": [
+    60.8,
+    142.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_olive_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#5a463a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_cylinder_cream",
+   "scale_ref": "c_plant_tree_small_cylinder",
+   "size_cm": [
+    62.0,
+    123.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_cylinder_navy",
+   "scale_ref": "c_plant_tree_small_cylinder",
+   "size_cm": [
+    62.0,
+    123.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_cylinder_sage",
+   "scale_ref": "c_plant_tree_small_cylinder",
+   "size_cm": [
+    62.0,
+    123.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_basket_oak",
+   "scale_ref": "c_plant_tree_small_basket",
+   "size_cm": [
+    63.0,
+    122.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_basket_walnut",
+   "scale_ref": "c_plant_tree_small_basket",
+   "size_cm": [
+    63.0,
+    122.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_bucket_metal",
+   "scale_ref": "c_plant_tree_small_bucket",
+   "size_cm": [
+    61.8,
+    123.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_bucket_butter",
+   "scale_ref": "c_plant_tree_small_bucket",
+   "size_cm": [
+    61.8,
+    123.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tree_small_bucket_coral",
+   "scale_ref": "c_plant_tree_small_bucket",
+   "size_cm": [
+    61.8,
+    123.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tree_small_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_bowl_cream",
+   "scale_ref": "c_plant_bonsai_bowl",
+   "size_cm": [
+    34.5,
+    34.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_bowl_butter",
+   "scale_ref": "c_plant_bonsai_bowl",
+   "size_cm": [
+    34.5,
+    34.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_bowl_coral",
+   "scale_ref": "c_plant_bonsai_bowl",
+   "size_cm": [
+    34.5,
+    34.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_square_cream",
+   "scale_ref": "c_plant_bonsai_square",
+   "size_cm": [
+    34.6,
+    34.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_square_grey",
+   "scale_ref": "c_plant_bonsai_square",
+   "size_cm": [
+    34.6,
+    34.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bonsai_square_mint",
+   "scale_ref": "c_plant_bonsai_square",
+   "size_cm": [
+    34.6,
+    34.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bonsai_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_basket_oak",
+   "scale_ref": "c_plant_palm_basket",
+   "size_cm": [
+    111.8,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_basket_walnut",
+   "scale_ref": "c_plant_palm_basket",
+   "size_cm": [
+    111.8,
+    107.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_cylinder_cream",
+   "scale_ref": "c_plant_palm_cylinder",
+   "size_cm": [
+    111.8,
+    113.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_cylinder_navy",
+   "scale_ref": "c_plant_palm_cylinder",
+   "size_cm": [
+    111.8,
+    113.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_cylinder_sage",
+   "scale_ref": "c_plant_palm_cylinder",
+   "size_cm": [
+    111.8,
+    113.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_terracotta_terracotta",
+   "scale_ref": "c_plant_palm_terracotta",
+   "size_cm": [
+    111.8,
+    106.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_palm_terracotta_cream",
+   "scale_ref": "c_plant_palm_terracotta",
+   "size_cm": [
+    111.8,
+    106.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_palm_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_cream_coral",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_cream_butter",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_rose_coral",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_rose_butter",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_blue_coral",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_round_blue_butter",
+   "scale_ref": "c_plant_tulips_round",
+   "size_cm": [
+    20.6,
+    41.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_cream_coral",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_cream_butter",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_navy_coral",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_navy_butter",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_sage_coral",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_cylinder_sage_butter",
+   "scale_ref": "c_plant_tulips_cylinder",
+   "size_cm": [
+    20.0,
+    39.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_metal_coral",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_metal_butter",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_butter_coral",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_butter_butter",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_coral_coral",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tulips_bucket_coral_butter",
+   "scale_ref": "c_plant_tulips_bucket",
+   "size_cm": [
+    19.3,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tulips_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_terracotta_terracotta_rust",
+   "scale_ref": "c_plant_roses_terracotta",
+   "size_cm": [
+    23.8,
+    45.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_terracotta_terracotta_rose",
+   "scale_ref": "c_plant_roses_terracotta",
+   "size_cm": [
+    23.8,
+    45.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_terracotta_cream_rust",
+   "scale_ref": "c_plant_roses_terracotta",
+   "size_cm": [
+    23.8,
+    45.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_terracotta_cream_rose",
+   "scale_ref": "c_plant_roses_terracotta",
+   "size_cm": [
+    23.8,
+    45.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_cream_rust",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_cream_rose",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_rose_rust",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_rose_rose",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_blue_rust",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_round_blue_rose",
+   "scale_ref": "c_plant_roses_round",
+   "size_cm": [
+    23.3,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_metal_rust",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_metal_rose",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_butter_rust",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_butter_rose",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_coral_rust",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_roses_bucket_coral_rose",
+   "scale_ref": "c_plant_roses_bucket",
+   "size_cm": [
+    23.0,
+    45.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_roses_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_sunflower_terracotta_terracotta",
+   "scale_ref": "c_plant_sunflower_terracotta",
+   "size_cm": [
+    28.6,
+    72.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_sunflower_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_sunflower_terracotta_cream",
+   "scale_ref": "c_plant_sunflower_terracotta",
+   "size_cm": [
+    28.6,
+    72.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_sunflower_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_sunflower_bucket_metal",
+   "scale_ref": "c_plant_sunflower_bucket",
+   "size_cm": [
+    25.8,
+    73.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_sunflower_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_sunflower_bucket_butter",
+   "scale_ref": "c_plant_sunflower_bucket",
+   "size_cm": [
+    25.8,
+    73.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_sunflower_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_sunflower_bucket_coral",
+   "scale_ref": "c_plant_sunflower_bucket",
+   "size_cm": [
+    25.8,
+    73.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_sunflower_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f4c95d"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_cream_white",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_cream_butter",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_butter_white",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_butter_butter",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_coral_white",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_bowl_coral_butter",
+   "scale_ref": "c_plant_daisies_bowl",
+   "size_cm": [
+    28.2,
+    31.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_cream_white",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_cream_butter",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_rose_white",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_rose_butter",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_blue_white",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_round_blue_butter",
+   "scale_ref": "c_plant_daisies_round",
+   "size_cm": [
+    27.1,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_basket_oak_white",
+   "scale_ref": "c_plant_daisies_basket",
+   "size_cm": [
+    28.2,
+    30.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_basket_oak_butter",
+   "scale_ref": "c_plant_daisies_basket",
+   "size_cm": [
+    28.2,
+    30.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_basket_walnut_white",
+   "scale_ref": "c_plant_daisies_basket",
+   "size_cm": [
+    28.2,
+    30.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_daisies_basket_walnut_butter",
+   "scale_ref": "c_plant_daisies_basket",
+   "size_cm": [
+    28.2,
+    30.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_daisies_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#f6d98a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_terracotta_terracotta_lilac",
+   "scale_ref": "c_plant_lavender_terracotta",
+   "size_cm": [
+    29.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_terracotta_terracotta_plum",
+   "scale_ref": "c_plant_lavender_terracotta",
+   "size_cm": [
+    29.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_terracotta_cream_lilac",
+   "scale_ref": "c_plant_lavender_terracotta",
+   "size_cm": [
+    29.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_terracotta_cream_plum",
+   "scale_ref": "c_plant_lavender_terracotta",
+   "size_cm": [
+    29.0,
+    39.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_metal_lilac",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_metal_plum",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_butter_lilac",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_butter_plum",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_coral_lilac",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_bucket_coral_plum",
+   "scale_ref": "c_plant_lavender_bucket",
+   "size_cm": [
+    26.9,
+    40.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_cream_lilac",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_cream_plum",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_grey_lilac",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_grey_plum",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_mint_lilac",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#b9a6d6"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_lavender_square_mint_plum",
+   "scale_ref": "c_plant_lavender_square",
+   "size_cm": [
+    23.6,
+    39.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_lavender_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_cream_sky",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_cream_rose",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_rose_sky",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_rose_rose",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_blue_sky",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_round_blue_rose",
+   "scale_ref": "c_plant_hydrangea_round",
+   "size_cm": [
+    37.3,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_terracotta_terracotta_sky",
+   "scale_ref": "c_plant_hydrangea_terracotta",
+   "size_cm": [
+    38.3,
+    57.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_terracotta_terracotta_rose",
+   "scale_ref": "c_plant_hydrangea_terracotta",
+   "size_cm": [
+    38.3,
+    57.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_terracotta_cream_sky",
+   "scale_ref": "c_plant_hydrangea_terracotta",
+   "size_cm": [
+    38.3,
+    57.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_terracotta_cream_rose",
+   "scale_ref": "c_plant_hydrangea_terracotta",
+   "size_cm": [
+    38.3,
+    57.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_metal_sky",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_metal_rose",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_butter_sky",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_butter_rose",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_coral_sky",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_hydrangea_bucket_coral_rose",
+   "scale_ref": "c_plant_hydrangea_bucket",
+   "size_cm": [
+    37.1,
+    59.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_hydrangea_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_poinsettia_round_cream",
+   "scale_ref": "c_plant_poinsettia_round",
+   "size_cm": [
+    27.3,
+    37.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_poinsettia_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_poinsettia_round_rose",
+   "scale_ref": "c_plant_poinsettia_round",
+   "size_cm": [
+    27.3,
+    37.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_poinsettia_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_poinsettia_round_blue",
+   "scale_ref": "c_plant_poinsettia_round",
+   "size_cm": [
+    27.3,
+    37.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_poinsettia_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_poinsettia_terracotta_terracotta",
+   "scale_ref": "c_plant_poinsettia_terracotta",
+   "size_cm": [
+    28.2,
+    36.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_poinsettia_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_poinsettia_terracotta_cream",
+   "scale_ref": "c_plant_poinsettia_terracotta",
+   "size_cm": [
+    28.2,
+    36.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_poinsettia_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#b8452f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_cream_rose",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_cream_white",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_cream_plum",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_navy_rose",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_navy_white",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_navy_plum",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_sage_rose",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_sage_white",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_cylinder_sage_plum",
+   "scale_ref": "c_plant_orchid_cylinder",
+   "size_cm": [
+    20.6,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_cream_rose",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_cream_white",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_cream_plum",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_rose_rose",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_rose_white",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_rose_plum",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_blue_rose",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_blue_white",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_orchid_round_blue_plum",
+   "scale_ref": "c_plant_orchid_round",
+   "size_cm": [
+    21.8,
+    53.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_orchid_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#7a5ea8"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_round_cream",
+   "scale_ref": "c_plant_peace_lily_round",
+   "size_cm": [
+    46.2,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_round_rose",
+   "scale_ref": "c_plant_peace_lily_round",
+   "size_cm": [
+    46.2,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_round_blue",
+   "scale_ref": "c_plant_peace_lily_round",
+   "size_cm": [
+    46.2,
+    63.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_cylinder_cream",
+   "scale_ref": "c_plant_peace_lily_cylinder",
+   "size_cm": [
+    43.5,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_cylinder_navy",
+   "scale_ref": "c_plant_peace_lily_cylinder",
+   "size_cm": [
+    43.5,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_cylinder_sage",
+   "scale_ref": "c_plant_peace_lily_cylinder",
+   "size_cm": [
+    43.5,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_basket_oak",
+   "scale_ref": "c_plant_peace_lily_basket",
+   "size_cm": [
+    53.3,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_peace_lily_basket_walnut",
+   "scale_ref": "c_plant_peace_lily_basket",
+   "size_cm": [
+    53.3,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_peace_lily_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#fbfaf7"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_cylinder_cream",
+   "scale_ref": "c_plant_bird_paradise_cylinder",
+   "size_cm": [
+    91.8,
+    139.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_cylinder_navy",
+   "scale_ref": "c_plant_bird_paradise_cylinder",
+   "size_cm": [
+    91.8,
+    139.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_cylinder_sage",
+   "scale_ref": "c_plant_bird_paradise_cylinder",
+   "size_cm": [
+    91.8,
+    139.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_terracotta_terracotta",
+   "scale_ref": "c_plant_bird_paradise_terracotta",
+   "size_cm": [
+    91.8,
+    137.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_terracotta_cream",
+   "scale_ref": "c_plant_bird_paradise_terracotta",
+   "size_cm": [
+    91.8,
+    137.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_basket_oak",
+   "scale_ref": "c_plant_bird_paradise_basket",
+   "size_cm": [
+    91.7,
+    132.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bird_paradise_basket_walnut",
+   "scale_ref": "c_plant_bird_paradise_basket",
+   "size_cm": [
+    91.7,
+    132.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bird_paradise_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#f09a55"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_round_cream",
+   "scale_ref": "c_plant_calathea_round",
+   "size_cm": [
+    47.3,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_round_rose",
+   "scale_ref": "c_plant_calathea_round",
+   "size_cm": [
+    47.3,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_round_blue",
+   "scale_ref": "c_plant_calathea_round",
+   "size_cm": [
+    47.3,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_cylinder_cream",
+   "scale_ref": "c_plant_calathea_cylinder",
+   "size_cm": [
+    52.7,
+    48.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_cylinder_navy",
+   "scale_ref": "c_plant_calathea_cylinder",
+   "size_cm": [
+    52.7,
+    48.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_cylinder_sage",
+   "scale_ref": "c_plant_calathea_cylinder",
+   "size_cm": [
+    52.7,
+    48.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_basket_oak",
+   "scale_ref": "c_plant_calathea_basket",
+   "size_cm": [
+    53.9,
+    49.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_calathea_basket_walnut",
+   "scale_ref": "c_plant_calathea_basket",
+   "size_cm": [
+    53.9,
+    49.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_calathea_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#f0b6c2"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_cylinder_cream",
+   "scale_ref": "c_plant_rubber_plant_cylinder",
+   "size_cm": [
+    35.1,
+    120.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_cylinder_navy",
+   "scale_ref": "c_plant_rubber_plant_cylinder",
+   "size_cm": [
+    35.1,
+    120.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_cylinder_sage",
+   "scale_ref": "c_plant_rubber_plant_cylinder",
+   "size_cm": [
+    35.1,
+    120.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_terracotta_terracotta",
+   "scale_ref": "c_plant_rubber_plant_terracotta",
+   "size_cm": [
+    37.7,
+    120.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_terracotta_cream",
+   "scale_ref": "c_plant_rubber_plant_terracotta",
+   "size_cm": [
+    37.7,
+    120.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_square_cream",
+   "scale_ref": "c_plant_rubber_plant_square",
+   "size_cm": [
+    37.0,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_square_grey",
+   "scale_ref": "c_plant_rubber_plant_square",
+   "size_cm": [
+    37.0,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_rubber_plant_square_mint",
+   "scale_ref": "c_plant_rubber_plant_square",
+   "size_cm": [
+    37.0,
+    115.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_rubber_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_square_cream",
+   "scale_ref": "c_plant_zz_plant_square",
+   "size_cm": [
+    26.5,
+    60.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_square_grey",
+   "scale_ref": "c_plant_zz_plant_square",
+   "size_cm": [
+    26.5,
+    60.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_square_mint",
+   "scale_ref": "c_plant_zz_plant_square",
+   "size_cm": [
+    26.5,
+    60.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_cylinder_cream",
+   "scale_ref": "c_plant_zz_plant_cylinder",
+   "size_cm": [
+    25.5,
+    57.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_cylinder_navy",
+   "scale_ref": "c_plant_zz_plant_cylinder",
+   "size_cm": [
+    25.5,
+    57.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_cylinder_sage",
+   "scale_ref": "c_plant_zz_plant_cylinder",
+   "size_cm": [
+    25.5,
+    57.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_round_cream",
+   "scale_ref": "c_plant_zz_plant_round",
+   "size_cm": [
+    30.2,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_round_rose",
+   "scale_ref": "c_plant_zz_plant_round",
+   "size_cm": [
+    30.2,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_zz_plant_round_blue",
+   "scale_ref": "c_plant_zz_plant_round",
+   "size_cm": [
+    30.2,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_zz_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_round_cream",
+   "scale_ref": "c_plant_spider_plant_round",
+   "size_cm": [
+    43.8,
+    33.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_round_rose",
+   "scale_ref": "c_plant_spider_plant_round",
+   "size_cm": [
+    43.8,
+    33.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_round_blue",
+   "scale_ref": "c_plant_spider_plant_round",
+   "size_cm": [
+    43.8,
+    33.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_basket_oak",
+   "scale_ref": "c_plant_spider_plant_basket",
+   "size_cm": [
+    45.0,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_basket_walnut",
+   "scale_ref": "c_plant_spider_plant_basket",
+   "size_cm": [
+    45.0,
+    32.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_stand_cream",
+   "scale_ref": "c_plant_spider_plant_stand",
+   "size_cm": [
+    46.5,
+    33.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_spider_plant_stand_navy",
+   "scale_ref": "c_plant_spider_plant_stand",
+   "size_cm": [
+    46.5,
+    33.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_spider_plant_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_terracotta_terracotta",
+   "scale_ref": "c_plant_herbs_terracotta",
+   "size_cm": [
+    19.5,
+    30.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#c96a4a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_terracotta_cream",
+   "scale_ref": "c_plant_herbs_terracotta",
+   "size_cm": [
+    19.5,
+    30.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_square_cream",
+   "scale_ref": "c_plant_herbs_square",
+   "size_cm": [
+    17.3,
+    28.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_square_grey",
+   "scale_ref": "c_plant_herbs_square",
+   "size_cm": [
+    17.3,
+    28.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_square_mint",
+   "scale_ref": "c_plant_herbs_square",
+   "size_cm": [
+    17.3,
+    28.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_bucket_metal",
+   "scale_ref": "c_plant_herbs_bucket",
+   "size_cm": [
+    19.2,
+    30.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#9aa6b4",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_bucket_butter",
+   "scale_ref": "c_plant_herbs_bucket",
+   "size_cm": [
+    19.2,
+    30.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_herbs_bucket_coral",
+   "scale_ref": "c_plant_herbs_bucket",
+   "size_cm": [
+    19.2,
+    30.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_herbs_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_square_cream",
+   "scale_ref": "c_plant_bamboo_square",
+   "size_cm": [
+    17.0,
+    55.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_square_grey",
+   "scale_ref": "c_plant_bamboo_square",
+   "size_cm": [
+    17.0,
+    55.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_square_mint",
+   "scale_ref": "c_plant_bamboo_square",
+   "size_cm": [
+    17.0,
+    55.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_bowl_cream",
+   "scale_ref": "c_plant_bamboo_bowl",
+   "size_cm": [
+    18.6,
+    56.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_bowl_butter",
+   "scale_ref": "c_plant_bamboo_bowl",
+   "size_cm": [
+    18.6,
+    56.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_bamboo_bowl_coral",
+   "scale_ref": "c_plant_bamboo_bowl",
+   "size_cm": [
+    18.6,
+    56.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_bamboo_bowl.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_cylinder_cream",
+   "scale_ref": "c_plant_grass_cylinder",
+   "size_cm": [
+    48.9,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_cylinder_navy",
+   "scale_ref": "c_plant_grass_cylinder",
+   "size_cm": [
+    48.9,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_cylinder_sage",
+   "scale_ref": "c_plant_grass_cylinder",
+   "size_cm": [
+    48.9,
+    58.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_cylinder.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_basket_oak",
+   "scale_ref": "c_plant_grass_basket",
+   "size_cm": [
+    51.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_basket_walnut",
+   "scale_ref": "c_plant_grass_basket",
+   "size_cm": [
+    51.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_square_cream",
+   "scale_ref": "c_plant_grass_square",
+   "size_cm": [
+    54.9,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_square_grey",
+   "scale_ref": "c_plant_grass_square",
+   "size_cm": [
+    54.9,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#6d6f78",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_grass_square_mint",
+   "scale_ref": "c_plant_grass_square",
+   "size_cm": [
+    54.9,
+    61.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_grass_square.png",
+   "pad_px": 1,
+   "colors": [
+    "#7fae6a",
+    "#9fc3a0",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_strawberry_terracotta_terracotta",
+   "scale_ref": "c_plant_strawberry_terracotta",
+   "size_cm": [
+    23.8,
+    21.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_strawberry_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_strawberry_terracotta_cream",
+   "scale_ref": "c_plant_strawberry_terracotta",
+   "size_cm": [
+    23.8,
+    21.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_strawberry_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_strawberry_bucket_metal",
+   "scale_ref": "c_plant_strawberry_bucket",
+   "size_cm": [
+    23.0,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_strawberry_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_strawberry_bucket_butter",
+   "scale_ref": "c_plant_strawberry_bucket",
+   "size_cm": [
+    23.0,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_strawberry_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_strawberry_bucket_coral",
+   "scale_ref": "c_plant_strawberry_bucket",
+   "size_cm": [
+    23.0,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_strawberry_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tomato_bucket_metal",
+   "scale_ref": "c_plant_tomato_bucket",
+   "size_cm": [
+    29.9,
+    84.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tomato_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#9aa6b4",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tomato_bucket_butter",
+   "scale_ref": "c_plant_tomato_bucket",
+   "size_cm": [
+    29.9,
+    84.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tomato_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tomato_bucket_coral",
+   "scale_ref": "c_plant_tomato_bucket",
+   "size_cm": [
+    29.9,
+    84.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tomato_bucket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tomato_terracotta_terracotta",
+   "scale_ref": "c_plant_tomato_terracotta",
+   "size_cm": [
+    33.0,
+    87.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tomato_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#c96a4a",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_tomato_terracotta_cream",
+   "scale_ref": "c_plant_tomato_terracotta",
+   "size_cm": [
+    33.0,
+    87.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_tomato_terracotta.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#e07a7a"
+   ],
+   "catalog": "plants",
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_round_cream",
+   "scale_ref": "c_plant_ivy_round",
+   "size_cm": [
+    31.8,
+    24.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_round_rose",
+   "scale_ref": "c_plant_ivy_round",
+   "size_cm": [
+    31.8,
+    24.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f0b6c2",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_round_blue",
+   "scale_ref": "c_plant_ivy_round",
+   "size_cm": [
+    31.8,
+    24.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_round.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#6f8fb8",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_stand_cream",
+   "scale_ref": "c_plant_ivy_stand",
+   "size_cm": [
+    32.1,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_stand_navy",
+   "scale_ref": "c_plant_ivy_stand",
+   "size_cm": [
+    32.1,
+    25.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_basket_oak",
+   "scale_ref": "c_plant_ivy_basket",
+   "size_cm": [
+    32.0,
+    22.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "plant_ivy_basket_walnut",
+   "scale_ref": "c_plant_ivy_basket",
+   "size_cm": [
+    32.0,
+    22.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/plant_ivy_basket.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#8a5e3f",
+    "#8a5e3f"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.85
+   ],
+   "tags": [
+    "plant"
+   ]
+  },
+  {
+   "id": "flower_rose_coral",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_rose",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_white",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_rose_butter",
+   "scale_ref": "c_flower_rose",
+   "size_cm": [
+    10.3,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_rose.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_coral",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_butter",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_rose",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_tulip_plum",
+   "scale_ref": "c_flower_tulip",
+   "size_cm": [
+    10.2,
+    44.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_tulip.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_sunflower_butter",
+   "scale_ref": "c_flower_sunflower",
+   "size_cm": [
+    16.8,
+    59.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_sunflower.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_orange",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_rose",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_gerbera_coral",
+   "scale_ref": "c_flower_gerbera",
+   "size_cm": [
+    10.0,
+    43.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_gerbera.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#5f8f6a"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.3
+   ],
+   "tags": [
+    "flower"
+   ]
+  },
+  {
+   "id": "flower_bouquet_rose",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_coral",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_plum",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  },
+  {
+   "id": "flower_bouquet_sky",
+   "scale_ref": "c_flower_bouquet",
+   "size_cm": [
+    35.8,
+    52.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/flower_bouquet.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f5f3ee"
+   ],
+   "catalog": "plants",
+   "grip": [
+    0.5,
+    0.2
+   ],
+   "tags": [
+    "bouquet"
+   ]
+  }
+ ]
+}

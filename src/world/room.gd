@@ -14,6 +14,10 @@ var camera_cfg: Dictionary = {}
 var data: Dictionary = {}
 ## Fläche, die der Hintergrund abdeckt (cm). Leer = kein Hintergrund.
 var background_rect: Rect2 = Rect2()
+## P07-T04: Hintergrund-Daten (bg.json) und die aktuelle Einrichtung (Tapete, Muster, Boden).
+var bg_meta: Dictionary = {}
+var decor: Dictionary = {}
+var _decor_root: Node2D
 
 @onready var background: Node2D = $Background
 @onready var floor_band: FloorBand = $FloorBand
@@ -50,14 +54,14 @@ static func find_room(area: Dictionary, id: String) -> Dictionary:
 	return {}
 
 
-func setup(room_data: Dictionary) -> void:
+func setup(room_data: Dictionary, chosen_decor: Dictionary = {}) -> void:
 	data = room_data
 	room_id = StringName(room_data.get("id", ""))
 	width_cm = float(room_data.get("width_cm", 600.0))
 	height_cm = float(room_data.get("height_cm", 260.0))
 	camera_cfg = room_data.get("camera", {})
 	floor_band.setup(room_data.get("floor", {}), width_cm)
-	_build_background(String(room_data.get("background", "")))
+	_build_background(String(room_data.get("background", "")), chosen_decor)
 	_build_surfaces(room_data.get("surfaces", []))
 	debug_grid.setup(width_cm, height_cm, floor_band.front_y_cm)
 
@@ -93,16 +97,36 @@ func surfaces_at_x(x_cm: float) -> Array[Surface]:
 	return out
 
 
-func _build_background(meta_path: String) -> void:
+## P07-T04: Tapete/Boden wechseln – nur die Zonen-Ebenen werden neu gebaut, Items bleiben.
+func can_decorate() -> bool:
+	return RoomDecor.has_decor(bg_meta)
+
+
+func apply_decor(chosen: Dictionary) -> void:
+	if not can_decorate() or _decor_root == null:
+		return
+	decor = RoomDecor.merged(bg_meta, chosen)
+	RoomDecor.build(_decor_root, bg_meta, decor)
+
+
+func _build_background(meta_path: String, chosen_decor: Dictionary = {}) -> void:
 	for c: Node in background.get_children():
 		c.queue_free()
 	background_rect = Rect2()
+	bg_meta = {}
+	_decor_root = null
 	if meta_path.is_empty():
 		return
 	var meta: Variant = JSON.parse_string(FileAccess.get_file_as_string(meta_path))
 	if not (meta is Dictionary):
 		Log.error("Room: Hintergrund-Daten %s fehlen – calibrate_bg.py ausführen" % meta_path)
 		return
+	bg_meta = meta
+	if RoomDecor.has_decor(meta):                    # Wand + Boden zuerst (Zonen), darüber die festen Details
+		_decor_root = Node2D.new()
+		_decor_root.name = "Decor"
+		background.add_child(_decor_root)
+		apply_decor(chosen_decor)
 	var ppc: float = float(meta["px_per_cm"])
 	var origin: Vector2 = Vector2(meta["origin_px"][0], meta["origin_px"][1])
 	background.scale = Vector2.ONE / ppc

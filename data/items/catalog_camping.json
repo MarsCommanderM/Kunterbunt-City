@@ -1,0 +1,746 @@
+{
+ "area": "catalog",
+ "room": "camping",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "camp_tent_coral",
+   "scale_ref": "c_camp_tent",
+   "size_cm": [
+    201.8,
+    144.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/camp_tent__open.png"
+   }
+  },
+  {
+   "id": "camp_tent_sage",
+   "scale_ref": "c_camp_tent",
+   "size_cm": [
+    201.8,
+    144.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/camp_tent__open.png"
+   }
+  },
+  {
+   "id": "camp_tent_sky",
+   "scale_ref": "c_camp_tent",
+   "size_cm": [
+    201.8,
+    144.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/camp_tent__open.png"
+   }
+  },
+  {
+   "id": "camp_tent_butter",
+   "scale_ref": "c_camp_tent",
+   "size_cm": [
+    201.8,
+    144.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/camp_tent__open.png"
+   }
+  },
+  {
+   "id": "camp_dome_tent_teal",
+   "scale_ref": "c_camp_dome_tent",
+   "size_cm": [
+    221.8,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_dome_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "camp_dome_tent_orange",
+   "scale_ref": "c_camp_dome_tent",
+   "size_cm": [
+    221.8,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_dome_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "camp_dome_tent_plum",
+   "scale_ref": "c_camp_dome_tent",
+   "size_cm": [
+    221.8,
+    131.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_dome_tent.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "lie",
+    "slots": 2
+   }
+  },
+  {
+   "id": "camp_campfire_orange",
+   "scale_ref": "c_camp_campfire",
+   "size_cm": [
+    62.7,
+    51.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_campfire.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 3,
+    "max_item_h_cm": 30
+   },
+   "tags": [
+    "open_top",
+    "cook_host"
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/camp_campfire__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "camp_sleeping_bag_navy",
+   "scale_ref": "c_camp_sleeping_bag",
+   "size_cm": [
+    182.2,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_sleeping_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_sleeping_bag_coral",
+   "scale_ref": "c_camp_sleeping_bag",
+   "size_cm": [
+    182.2,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_sleeping_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_sleeping_bag_green",
+   "scale_ref": "c_camp_sleeping_bag",
+   "size_cm": [
+    182.2,
+    21.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_sleeping_bag.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_lantern_green",
+   "scale_ref": "c_camp_lantern",
+   "size_cm": [
+    27.7,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_lantern.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/camp_lantern__on.png"
+   }
+  },
+  {
+   "id": "camp_lantern_coral",
+   "scale_ref": "c_camp_lantern",
+   "size_cm": [
+    27.7,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_lantern.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/camp_lantern__on.png"
+   }
+  },
+  {
+   "id": "camp_lantern_navy",
+   "scale_ref": "c_camp_lantern",
+   "size_cm": [
+    27.7,
+    31.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_lantern.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/camp_lantern__on.png"
+   }
+  },
+  {
+   "id": "camp_camp_chair_navy",
+   "scale_ref": "c_camp_camp_chair",
+   "size_cm": [
+    63.9,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_camp_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_camp_chair_green",
+   "scale_ref": "c_camp_camp_chair",
+   "size_cm": [
+    63.9,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_camp_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_camp_chair_coral",
+   "scale_ref": "c_camp_camp_chair",
+   "size_cm": [
+    63.9,
+    82.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_camp_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "camp_backpack_hiking_coral",
+   "scale_ref": "c_camp_backpack_hiking",
+   "size_cm": [
+    36.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_backpack_hiking.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "camp_backpack_hiking_green",
+   "scale_ref": "c_camp_backpack_hiking",
+   "size_cm": [
+    36.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_backpack_hiking.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "camp_backpack_hiking_navy",
+   "scale_ref": "c_camp_backpack_hiking",
+   "size_cm": [
+    36.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_backpack_hiking.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 6,
+    "max_item_h_cm": 30
+   }
+  },
+  {
+   "id": "camp_log_oak",
+   "scale_ref": "c_camp_log",
+   "size_cm": [
+    122.0,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_log.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e3c79a",
+    "#8a5e3f"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   }
+  },
+  {
+   "id": "camp_signpost_oak",
+   "scale_ref": "c_camp_signpost",
+   "size_cm": [
+    61.8,
+    161.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_signpost.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e3c79a",
+    "#9aa6b4"
+   ],
+   "catalog": "camping"
+  },
+  {
+   "id": "camp_binoculars_black",
+   "scale_ref": "c_camp_binoculars",
+   "size_cm": [
+    14.2,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_binoculars.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "camp_binoculars_green",
+   "scale_ref": "c_camp_binoculars",
+   "size_cm": [
+    14.2,
+    12.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/camp_binoculars.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "camping",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

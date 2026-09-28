@@ -1,0 +1,529 @@
+{
+ "id": "fair",
+ "name": "Rummelplatz",
+ "name_key": "AREA_FAIR",
+ "_doc": "P10d: 8 Räume. Erzeugt von tools/make_areas.py (tools/areas/fair.py) – dort ändern.",
+ "spawn": {
+  "room": "entrance",
+  "x_cm": 560,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_fair",
+ "rooms": [
+  {
+   "id": "entrance",
+   "label": "Eingang",
+   "icon": "fair_gate_coral",
+   "width_cm": 1400,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/entrance.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 31,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_gate_coral",
+     "x_cm": 700,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_ticket_booth_coral",
+     "x_cm": 300,
+     "y_cm": 10
+    },
+    {
+     "id": "fair_balloon_bunch_coral",
+     "x_cm": 420,
+     "y_cm": 30
+    },
+    {
+     "id": "fair_balloon_sky",
+     "x_cm": 470,
+     "y_cm": 55
+    },
+    {
+     "id": "fair_balloon_butter",
+     "x_cm": 500,
+     "y_cm": 58
+    },
+    {
+     "id": "fair_popcorn_coral",
+     "x_cm": 1080,
+     "y_cm": 64
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1100,
+     "y_cm": 20
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 1300,
+     "y_cm": 2
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "ferris",
+   "label": "Riesenrad",
+   "icon": "fair_ferris_wheel_sky",
+   "width_cm": 1200,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/ferris.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 32,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_ferris_wheel_sky",
+     "x_cm": 600,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_ticket_booth_sky",
+     "x_cm": 150,
+     "y_cm": 10
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1000,
+     "y_cm": 25
+    },
+    {
+     "id": "fair_balloon_rose",
+     "x_cm": 950,
+     "y_cm": 60
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "bumper",
+   "label": "Autoscooter",
+   "icon": "fair_bumper_car_coral",
+   "width_cm": 1400,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/bumper.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 33,
+    "decor": {
+     "floor": "concrete",
+     "floor_cols": [
+      "#b8b8b8",
+      "#a8a8a8",
+      "#7a7a7a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_bumper_floor_navy",
+     "x_cm": 700,
+     "y_cm": 35
+    },
+    {
+     "id": "fair_bumper_car_coral",
+     "x_cm": 400,
+     "y_cm": 30
+    },
+    {
+     "id": "fair_bumper_car_sky",
+     "x_cm": 650,
+     "y_cm": 55
+    },
+    {
+     "id": "fair_bumper_car_butter",
+     "x_cm": 900,
+     "y_cm": 35
+    },
+    {
+     "id": "fair_bumper_car_mint",
+     "x_cm": 1100,
+     "y_cm": 60
+    },
+    {
+     "id": "fair_ticket_booth_coral",
+     "x_cm": 120,
+     "y_cm": 5
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "carousel",
+   "label": "Karussell",
+   "icon": "fair_carousel_horse_cream",
+   "width_cm": 1200,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/carousel.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 34,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_carousel_coral",
+     "x_cm": 560,
+     "y_cm": 10
+    },
+    {
+     "id": "fair_carousel_horse_rose",
+     "x_cm": 1000,
+     "y_cm": 40
+    },
+    {
+     "id": "fair_candy_stand_rose",
+     "x_cm": 150,
+     "y_cm": 10
+    },
+    {
+     "id": "fair_cotton_candy_rose",
+     "on": "fair_candy_stand_rose",
+     "x_rel": 0.36
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "coaster",
+   "label": "Achterbahn",
+   "icon": "fair_coaster_car_coral",
+   "width_cm": 1600,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/coaster.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 35,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_coaster_track_coral",
+     "x_cm": 750,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_coaster_car_coral",
+     "x_cm": 285,
+     "y_cm": 12
+    },
+    {
+     "id": "fair_ticket_booth_sky",
+     "x_cm": 1450,
+     "y_cm": 20
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1450,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "ghost",
+   "label": "Geisterbahn",
+   "icon": "fair_ghost_house_lilac",
+   "width_cm": 1200,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/ghost.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 36,
+    "decor": {
+     "floor": "sand",
+     "floor_cols": [
+      "#e8d7b0",
+      "#dcc89c",
+      "#b8a37a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_ghost_house_lilac",
+     "x_cm": 600,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_ghost_car_lilac",
+     "x_cm": 330,
+     "y_cm": 30
+    },
+    {
+     "id": "fair_ghost_car_mint",
+     "x_cm": 1050,
+     "y_cm": 50
+    },
+    {
+     "id": "fair_ticket_booth_coral",
+     "x_cm": 1080,
+     "y_cm": 5
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "booths",
+   "label": "Buden",
+   "icon": "fair_booth_coral",
+   "width_cm": 1900,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/booths.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 37,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_booth_coral",
+     "x_cm": 250,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_cans_coral",
+     "on": "fair_booth_coral",
+     "x_rel": -0.25
+    },
+    {
+     "id": "fair_cans_coral",
+     "on": "fair_booth_coral",
+     "x_rel": 0.2
+    },
+    {
+     "id": "fair_duck_pond_sky",
+     "x_cm": 620,
+     "y_cm": 30
+    },
+    {
+     "id": "fair_booth_sky",
+     "x_cm": 950,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_lottery_coral",
+     "on": "fair_booth_sky",
+     "x_rel": 0.0
+    },
+    {
+     "id": "fair_high_striker_coral",
+     "x_cm": 1250,
+     "y_cm": 10
+    },
+    {
+     "id": "fair_candy_stand_sky",
+     "x_cm": 1500,
+     "y_cm": 8
+    },
+    {
+     "id": "fair_candy_apple_coral",
+     "on": "fair_candy_stand_sky",
+     "x_rel": -0.2
+    },
+    {
+     "id": "fair_cotton_candy_sky",
+     "on": "fair_candy_stand_sky",
+     "x_rel": 0.2
+    },
+    {
+     "id": "fair_booth_butter",
+     "x_cm": 1750,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_prize_mint",
+     "on": "fair_booth_butter",
+     "x_rel": 0.0
+    },
+    {
+     "id": "fair_target_coral",
+     "x_cm": 1850,
+     "y_cm": 40
+    }
+   ],
+   "ambience": "amb_garden"
+  },
+  {
+   "id": "stage",
+   "label": "Bühne",
+   "icon": "fair_magic_hat_black",
+   "width_cm": 1400,
+   "height_cm": 760.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 480,
+    "min_h_cm": 240,
+    "max_h_cm": 700
+   },
+   "background": "res://assets/backgrounds/fair/stage.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 38,
+    "decor": {
+     "floor": "pavement",
+     "floor_cols": [
+      "#d8cfc2",
+      "#c9bfb0",
+      "#9a8f80"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "fair_stage_plum",
+     "x_cm": 600,
+     "y_cm": 5
+    },
+    {
+     "id": "fair_magic_hat_black",
+     "on": "fair_stage_plum",
+     "x_rel": 0.15
+    },
+    {
+     "id": "fair_juggling_coral",
+     "on": "fair_stage_plum",
+     "x_rel": -0.2
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 450,
+     "y_cm": 50
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 750,
+     "y_cm": 55
+    },
+    {
+     "id": "fair_balloon_lilac",
+     "x_cm": 1100,
+     "y_cm": 58
+    },
+    {
+     "id": "fair_popcorn_coral",
+     "x_cm": 1150,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_garden"
+  }
+ ]
+}

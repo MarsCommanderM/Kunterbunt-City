@@ -1,0 +1,2072 @@
+{
+ "area": "catalog",
+ "room": "kitchen_furn",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "kit_cabinet_base_door_cream",
+   "scale_ref": "c_kit_cabinet_base_door",
+   "size_cm": [
+    68.2,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_door_sage",
+   "scale_ref": "c_kit_cabinet_base_door",
+   "size_cm": [
+    68.2,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_door_sky",
+   "scale_ref": "c_kit_cabinet_base_door",
+   "size_cm": [
+    68.2,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_door_navy",
+   "scale_ref": "c_kit_cabinet_base_door",
+   "size_cm": [
+    68.2,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_door_coral",
+   "scale_ref": "c_kit_cabinet_base_door",
+   "size_cm": [
+    68.2,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_drawers_cream",
+   "scale_ref": "c_kit_cabinet_base_drawers",
+   "size_cm": [
+    64.9,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_drawers.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn"
+  },
+  {
+   "id": "kit_cabinet_base_drawers_sage",
+   "scale_ref": "c_kit_cabinet_base_drawers",
+   "size_cm": [
+    64.9,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_drawers.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn"
+  },
+  {
+   "id": "kit_cabinet_base_drawers_sky",
+   "scale_ref": "c_kit_cabinet_base_drawers",
+   "size_cm": [
+    64.9,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_drawers.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn"
+  },
+  {
+   "id": "kit_cabinet_base_drawers_navy",
+   "scale_ref": "c_kit_cabinet_base_drawers",
+   "size_cm": [
+    64.9,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_drawers.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn"
+  },
+  {
+   "id": "kit_cabinet_base_drawers_coral",
+   "scale_ref": "c_kit_cabinet_base_drawers",
+   "size_cm": [
+    64.9,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_drawers.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn"
+  },
+  {
+   "id": "kit_cabinet_base_double_cream",
+   "scale_ref": "c_kit_cabinet_base_double",
+   "size_cm": [
+    101.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_double_sage",
+   "scale_ref": "c_kit_cabinet_base_double",
+   "size_cm": [
+    101.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_double_sky",
+   "scale_ref": "c_kit_cabinet_base_double",
+   "size_cm": [
+    101.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_double_navy",
+   "scale_ref": "c_kit_cabinet_base_double",
+   "size_cm": [
+    101.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_double_coral",
+   "scale_ref": "c_kit_cabinet_base_double",
+   "size_cm": [
+    101.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_mixed_cream",
+   "scale_ref": "c_kit_cabinet_base_mixed",
+   "size_cm": [
+    88.4,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_mixed.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_mixed__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_mixed_sage",
+   "scale_ref": "c_kit_cabinet_base_mixed",
+   "size_cm": [
+    88.4,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_mixed.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_mixed__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_mixed_sky",
+   "scale_ref": "c_kit_cabinet_base_mixed",
+   "size_cm": [
+    88.4,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_mixed.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_mixed__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_mixed_navy",
+   "scale_ref": "c_kit_cabinet_base_mixed",
+   "size_cm": [
+    88.4,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_mixed.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_mixed__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_base_mixed_coral",
+   "scale_ref": "c_kit_cabinet_base_mixed",
+   "size_cm": [
+    88.4,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_base_mixed.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_base_mixed__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_door_cream",
+   "scale_ref": "c_kit_cabinet_wall_door",
+   "size_cm": [
+    66.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_door_sage",
+   "scale_ref": "c_kit_cabinet_wall_door",
+   "size_cm": [
+    66.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_door_sky",
+   "scale_ref": "c_kit_cabinet_wall_door",
+   "size_cm": [
+    66.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_door_navy",
+   "scale_ref": "c_kit_cabinet_wall_door",
+   "size_cm": [
+    66.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_door_coral",
+   "scale_ref": "c_kit_cabinet_wall_door",
+   "size_cm": [
+    66.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_door.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_door__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_double_cream",
+   "scale_ref": "c_kit_cabinet_wall_double",
+   "size_cm": [
+    101.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_double_sage",
+   "scale_ref": "c_kit_cabinet_wall_double",
+   "size_cm": [
+    101.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_double_sky",
+   "scale_ref": "c_kit_cabinet_wall_double",
+   "size_cm": [
+    101.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_double_navy",
+   "scale_ref": "c_kit_cabinet_wall_double",
+   "size_cm": [
+    101.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_double_coral",
+   "scale_ref": "c_kit_cabinet_wall_double",
+   "size_cm": [
+    101.8,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_double.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_double__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_glass_cream",
+   "scale_ref": "c_kit_cabinet_wall_glass",
+   "size_cm": [
+    81.9,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_glass__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_glass_sage",
+   "scale_ref": "c_kit_cabinet_wall_glass",
+   "size_cm": [
+    81.9,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_glass__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_glass_sky",
+   "scale_ref": "c_kit_cabinet_wall_glass",
+   "size_cm": [
+    81.9,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_glass__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_glass_navy",
+   "scale_ref": "c_kit_cabinet_wall_glass",
+   "size_cm": [
+    81.9,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_glass__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_glass_coral",
+   "scale_ref": "c_kit_cabinet_wall_glass",
+   "size_cm": [
+    81.9,
+    72.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_glass__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_flat_cream",
+   "scale_ref": "c_kit_cabinet_wall_flat",
+   "size_cm": [
+    101.8,
+    42.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_flat.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_flat__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_flat_sage",
+   "scale_ref": "c_kit_cabinet_wall_flat",
+   "size_cm": [
+    101.8,
+    42.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_flat.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_flat__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_flat_sky",
+   "scale_ref": "c_kit_cabinet_wall_flat",
+   "size_cm": [
+    101.8,
+    42.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_flat.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_flat__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_flat_navy",
+   "scale_ref": "c_kit_cabinet_wall_flat",
+   "size_cm": [
+    101.8,
+    42.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_flat.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_flat__open.png"
+   }
+  },
+  {
+   "id": "kit_cabinet_wall_flat_coral",
+   "scale_ref": "c_kit_cabinet_wall_flat",
+   "size_cm": [
+    101.8,
+    42.4
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_cabinet_wall_flat.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_cabinet_wall_flat__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_long_cream",
+   "scale_ref": "c_kit_counter_long",
+   "size_cm": [
+    191.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_long__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_long_sage",
+   "scale_ref": "c_kit_counter_long",
+   "size_cm": [
+    191.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_long__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_long_sky",
+   "scale_ref": "c_kit_counter_long",
+   "size_cm": [
+    191.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_long__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_long_navy",
+   "scale_ref": "c_kit_counter_long",
+   "size_cm": [
+    191.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_long__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_long_coral",
+   "scale_ref": "c_kit_counter_long",
+   "size_cm": [
+    191.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_long.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_long__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_short_cream",
+   "scale_ref": "c_kit_counter_short",
+   "size_cm": [
+    128.3,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_short__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_short_sage",
+   "scale_ref": "c_kit_counter_short",
+   "size_cm": [
+    128.3,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_short__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_short_sky",
+   "scale_ref": "c_kit_counter_short",
+   "size_cm": [
+    128.3,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_short__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_short_navy",
+   "scale_ref": "c_kit_counter_short",
+   "size_cm": [
+    128.3,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_short__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_short_coral",
+   "scale_ref": "c_kit_counter_short",
+   "size_cm": [
+    128.3,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_short.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_short__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_sink_cream",
+   "scale_ref": "c_kit_counter_sink",
+   "size_cm": [
+    131.7,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_sink__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_sink_sage",
+   "scale_ref": "c_kit_counter_sink",
+   "size_cm": [
+    131.7,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_sink__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_sink_sky",
+   "scale_ref": "c_kit_counter_sink",
+   "size_cm": [
+    131.7,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_sink__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_sink_navy",
+   "scale_ref": "c_kit_counter_sink",
+   "size_cm": [
+    131.7,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_sink__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_sink_coral",
+   "scale_ref": "c_kit_counter_sink",
+   "size_cm": [
+    131.7,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_sink__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_hob_cream",
+   "scale_ref": "c_kit_counter_hob",
+   "size_cm": [
+    131.8,
+    93.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_hob.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_hob__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_hob_sage",
+   "scale_ref": "c_kit_counter_hob",
+   "size_cm": [
+    131.8,
+    93.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_hob.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#dbe8d9",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_hob__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_hob_sky",
+   "scale_ref": "c_kit_counter_hob",
+   "size_cm": [
+    131.8,
+    93.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_hob.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_hob__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_hob_navy",
+   "scale_ref": "c_kit_counter_hob",
+   "size_cm": [
+    131.8,
+    93.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_hob.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_hob__open.png"
+   }
+  },
+  {
+   "id": "kit_counter_hob_coral",
+   "scale_ref": "c_kit_counter_hob",
+   "size_cm": [
+    131.8,
+    93.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_counter_hob.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_counter_hob__open.png"
+   }
+  },
+  {
+   "id": "kit_island_white",
+   "scale_ref": "c_kit_island",
+   "size_cm": [
+    171.7,
+    93.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_island.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#fbfaf7",
+    "#8a5e3f"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_island__open.png"
+   }
+  },
+  {
+   "id": "kit_island_navy",
+   "scale_ref": "c_kit_island",
+   "size_cm": [
+    171.7,
+    93.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_island.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#2e3140",
+    "#8a5e3f"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_island__open.png"
+   }
+  },
+  {
+   "id": "kit_island_sage",
+   "scale_ref": "c_kit_island",
+   "size_cm": [
+    171.7,
+    93.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_island.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#dbe8d9",
+    "#8a5e3f"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_island__open.png"
+   }
+  },
+  {
+   "id": "kit_island_oak",
+   "scale_ref": "c_kit_island",
+   "size_cm": [
+    171.7,
+    93.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_island.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#d4a86e",
+    "#8a5e3f"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/kit_island__open.png"
+   }
+  },
+  {
+   "id": "app_dishwasher_white",
+   "scale_ref": "c_app_dishwasher",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dishwasher.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dishwasher__on.png"
+   }
+  },
+  {
+   "id": "app_dishwasher_metal",
+   "scale_ref": "c_app_dishwasher",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dishwasher.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dishwasher__on.png"
+   }
+  },
+  {
+   "id": "app_dishwasher_black",
+   "scale_ref": "c_app_dishwasher",
+   "size_cm": [
+    61.9,
+    86.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/app_dishwasher.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/app_dishwasher__on.png"
+   }
+  },
+  {
+   "id": "kit_hood_metal",
+   "scale_ref": "c_kit_hood",
+   "size_cm": [
+    90.5,
+    67.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f6d98a",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/kit_hood__on.png"
+   }
+  },
+  {
+   "id": "kit_hood_white",
+   "scale_ref": "c_kit_hood",
+   "size_cm": [
+    90.5,
+    67.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/kit_hood__on.png"
+   }
+  },
+  {
+   "id": "kit_hood_black",
+   "scale_ref": "c_kit_hood",
+   "size_cm": [
+    90.5,
+    67.1
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/kit_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f6d98a",
+    "#6d6f78"
+   ],
+   "catalog": "kitchen_furn",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/kit_hood__on.png"
+   }
+  }
+ ]
+}

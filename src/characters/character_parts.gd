@@ -1,11 +1,13 @@
 class_name CharacterParts
 extends RefCounted
-## P04-T01: Katalog der Editor-Teile (data/character_parts/<slot>.json) + Farbpalette.
-## Rein statisch, kein Autoload. Jeder Slot hat 5 Varianten (T10); jede Variante nennt das
-## Teil (Sprite in assets/characters/parts/<schablone>/) und wie viele Farbzonen es nutzt.
+## P04-T01 / P04b: Katalog der Editor-Teile (data/character_parts/<slot>.json) + Farbpalette.
+## Rein statisch, kein Autoload. Jede Variante nennt das Teil (Sprite in
+## assets/characters/parts/<schablone>/) und wie viele Farbzonen das Kind wählt. Erzeugt von
+## tools/make_chibi_parts.py; „aliases“ übersetzt alte IDs aus Speicherständen.
 
 const DIR: String = "res://data/character_parts/"
 const PALETTE_FILE: String = DIR + "palette.json"
+const OPTIONAL_SLOTS: Array = ["accessory", "aid"]     ## dürfen leer bleiben
 
 static var _slots: Dictionary = {}
 static var _palette: Dictionary = {}
@@ -44,10 +46,16 @@ static func ids(slot: String) -> Array:
 
 
 static func variant(slot: String, id: String) -> Dictionary:
+	var rid: String = resolve(slot, id)
 	for v: Dictionary in variants(slot):
-		if String(v["id"]) == id:
+		if String(v["id"]) == rid:
 			return v
 	return {}
+
+
+## Alte Varianten-ID (Speicherstand aus Phase 04) → aktuelle ID. Unbekannte IDs bleiben, wie sie sind.
+static func resolve(slot: String, id: String) -> String:
+	return String(data().get(slot, {}).get("aliases", {}).get(id, id))
 
 
 static func label(slot: String) -> String:
@@ -58,8 +66,13 @@ static func icon(slot: String) -> String:
 	return String(data().get(slot, {}).get("icon", "•"))
 
 
-## Erste Variante, die kein „none"/„bald" ist – Startwert im Editor.
+## Startwert im Editor: Accessoire/Hilfsmittel starten „ohne“ (P04b – sonst trägt jede neue Figur
+## Brille und Hörgerät); sonst die erste Variante, die kein „none“ ist.
 static func default_id(slot: String) -> String:
+	if slot in OPTIONAL_SLOTS:
+		for v: Dictionary in variants(slot):
+			if Array(v.get("tags", [])).has("none"):
+				return String(v["id"])
 	for v: Dictionary in variants(slot):
 		if not Array(v.get("tags", [])).has("none"):
 			return String(v["id"])
@@ -91,9 +104,23 @@ static func palette_colors(group: String) -> Array:
 static func palette_groups() -> Array:
 	var out: Array = []
 	for k: String in palette():
-		if k != "note":
+		if palette()[k] is Dictionary and (palette()[k] as Dictionary).has("colors"):
 			out.append(k)
 	return out
+
+
+## Startfarben eines Teils (P04b-T06): freundlich bunt aus `palette.json › defaults`, sonst aus der Palette.
+static func default_colors(slot: String, id: String) -> Array:
+	var n: int = clampi(zones(slot, id), 1, 3)
+	var want: Array = Dictionary(palette().get("defaults", {})).get(slot, [])
+	var pal: Array = palette_colors(_group_for(slot))
+	var cols: Array = []
+	for i: int in n:
+		if i < want.size():
+			cols.append(String(want[i]))
+		else:
+			cols.append(String(pal[(i * 5 + 3) % maxi(1, pal.size())]) if not pal.is_empty() else "#ffffff")
+	return cols
 
 
 ## Welche Palette passt zu welchem Slot? (öffentlich: der Editor zeigt sie an)
@@ -134,12 +161,7 @@ static func default_set(tid: String) -> Dictionary:
 		if id.is_empty():
 			continue
 		parts[slot] = id
-		var pal: Array = palette_colors(_group_for(slot))
-		var n: int = clampi(zones(slot, id), 1, 3)
-		var cols: Array = []
-		for i: int in n:
-			cols.append(pal[i * 3 % maxi(1, pal.size())] if not pal.is_empty() else "#ffffff")
-		colors[slot] = cols
+		colors[slot] = default_colors(slot, id)
 	return {"parts": parts, "colors": colors}
 
 
@@ -156,5 +178,7 @@ static func _group_for(slot: String) -> String:
 			return "hair"
 		"accessory", "aid":
 			return "cloth"
+		"eyes":
+			return "eyes"
 		_:
 			return "skin"

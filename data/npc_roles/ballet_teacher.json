@@ -1,0 +1,50 @@
+{
+ "id": "ballet_teacher",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Ballettlehrer/in",
+ "behavior": "station",
+ "work": [
+  "clap",
+  "point",
+  "nod"
+ ],
+ "look": {
+  "skin": "#e2ab80",
+  "parts": {
+   "top": "tank",
+   "bottom": "tutu",
+   "hair": "bun",
+   "shoes": "ballet",
+   "accessory": "none"
+  },
+  "colors": {
+   "top": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#e2ab80"
+   ],
+   "bottom": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#e2ab80"
+   ],
+   "hair": [
+    "#2a2a30",
+    "#2a2a30",
+    "#2a2a30"
+   ],
+   "shoes": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#e2ab80"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

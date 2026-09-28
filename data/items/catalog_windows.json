@@ -1,0 +1,2926 @@
+{
+ "area": "catalog",
+ "room": "windows",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "win_single_s_white",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_oak",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_walnut",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_grey",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_sky",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_mint",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_s_coral",
+   "scale_ref": "c_win_single_s",
+   "size_cm": [
+    61.9,
+    73.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_white",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_oak",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_walnut",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_grey",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_sky",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_mint",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_m_coral",
+   "scale_ref": "c_win_single_m",
+   "size_cm": [
+    91.9,
+    111.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_white",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_oak",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_walnut",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_grey",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_sky",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_mint",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_single_l_coral",
+   "scale_ref": "c_win_single_l",
+   "size_cm": [
+    121.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_single_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_white",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_oak",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_walnut",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_grey",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_sky",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_mint",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_m_coral",
+   "scale_ref": "c_win_double_m",
+   "size_cm": [
+    121.9,
+    121.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_white",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_oak",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_walnut",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_grey",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_sky",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_mint",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_double_l_coral",
+   "scale_ref": "c_win_double_l",
+   "size_cm": [
+    161.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_double_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_white",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_oak",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_walnut",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_grey",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_sky",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_mint",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_triple_l_coral",
+   "scale_ref": "c_win_triple_l",
+   "size_cm": [
+    211.7,
+    131.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_triple_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_floor_l_white",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_oak",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_walnut",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_grey",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_sky",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_mint",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_floor_l_coral",
+   "scale_ref": "c_win_floor_l",
+   "size_cm": [
+    101.7,
+    213.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_floor_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows",
+   "tags": [
+    "to_floor"
+   ]
+  },
+  {
+   "id": "win_tilt_m_white",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_oak",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_walnut",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_grey",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_sky",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_mint",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_tilt_m_coral",
+   "scale_ref": "c_win_tilt_m",
+   "size_cm": [
+    81.9,
+    101.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_tilt_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_white",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_oak",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_walnut",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_grey",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_sky",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_mint",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_small_s_coral",
+   "scale_ref": "c_win_small_s",
+   "size_cm": [
+    51.9,
+    51.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_small_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_white",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_oak",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_walnut",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_grey",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_sky",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_mint",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_basement_m_coral",
+   "scale_ref": "c_win_basement_m",
+   "size_cm": [
+    101.8,
+    53.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_basement_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_white",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_oak",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_walnut",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_grey",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_sky",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_mint",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_shop_xl_coral",
+   "scale_ref": "c_win_shop_xl",
+   "size_cm": [
+    261.7,
+    191.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_shop_xl.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_white",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_oak",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_walnut",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_grey",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_sky",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_mint",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_s_coral",
+   "scale_ref": "c_win_round_s",
+   "size_cm": [
+    51.5,
+    51.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_white",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_oak",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_walnut",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_grey",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_sky",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_mint",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_round_m_coral",
+   "scale_ref": "c_win_round_m",
+   "size_cm": [
+    73.5,
+    73.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_round_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_white",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_oak",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_walnut",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_grey",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_sky",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_mint",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_porthole_s_coral",
+   "scale_ref": "c_win_porthole_s",
+   "size_cm": [
+    57.5,
+    57.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_porthole_s.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_white",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_oak",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_walnut",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_grey",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_sky",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_mint",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_m_coral",
+   "scale_ref": "c_win_arch_m",
+   "size_cm": [
+    91.9,
+    151.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_white",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_oak",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_walnut",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_grey",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_sky",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_mint",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_arch_l_coral",
+   "scale_ref": "c_win_arch_l",
+   "size_cm": [
+    121.7,
+    186.6
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_arch_l.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_white",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_oak",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_walnut",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_grey",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_sky",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_mint",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_gable_m_coral",
+   "scale_ref": "c_win_gable_m",
+   "size_cm": [
+    91.9,
+    116.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_gable_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#8cc47a"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_white",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_oak",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_walnut",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_grey",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_sky",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_mint",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  },
+  {
+   "id": "win_stained_m_coral",
+   "scale_ref": "c_win_stained_m",
+   "size_cm": [
+    71.9,
+    141.8
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/win_stained_m.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a8dcf2",
+    "#f0b6c2"
+   ],
+   "catalog": "windows"
+  }
+ ]
+}

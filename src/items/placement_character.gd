@@ -8,11 +8,14 @@ const HAND_SNAP_CM: float = 25.0
 const MOUTH_SNAP_CM: float = 15.0
 const SEAT_ITEM_SNAP_CM: float = 12.0
 ## Nur Figuren, Tiere und Spielzeug setzen sich hin – Geschirr & Co. nutzen die Abstellfläche (Hocker).
-const SEAT_CATEGORIES: Array[String] = ["character", "pet", "toy"]
+const SEAT_CATEGORIES: Array[String] = ["character", "pet", "animal", "toy"]
 
 
-static func find(room: Room, item: ItemNode, pivot: Vector2, _pointer: Vector2) -> Placement.Target:
-	var items: Array[ItemNode] = Placement.all_items(room)
+## items: schon gesammelte Raum-Items (Placement.find_target sammelt EINMAL pro Suche – läuft jedes Frame beim Ziehen).
+static func find(room: Room, item: ItemNode, pivot: Vector2, _pointer: Vector2,
+		items: Array[ItemNode] = []) -> Placement.Target:
+	if items.is_empty():
+		items = Placement.all_items(room)
 	var t: Placement.Target = _mouth_target(items, item, pivot)
 	if t == null:
 		t = _hand_target(items, item, pivot)
@@ -100,7 +103,7 @@ static func _seat_target(items: Array[ItemNode], item: ItemNode, pivot: Vector2)
 	var best_i: int = -1
 	var best_d: float = INF
 	for host: ItemNode in items:
-		if host == item or item.is_ancestor_of(host) or not host.def.has_seat() or not host.is_visible_in_tree():
+		if not host.def.has_seat() or host == item or item.is_ancestor_of(host) or not host.is_visible_in_tree():
 			continue
 		var radius: float = Seats.CHARACTER_SNAP_CM if is_char else Seats.slot_width_global(host) * 0.5
 		var i: int = Seats.free_index_near(host, probe, maxf(radius, SEAT_ITEM_SNAP_CM) * host.global_scale.y, item)

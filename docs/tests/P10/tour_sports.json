@@ -1,0 +1,14 @@
+{
+  "sports": {
+    "ladezeit_ms": 111.0,
+    "raeume": [
+      "reception:10/1",
+      "fitness:11/1",
+      "hall:11/1",
+      "climbing:7/1",
+      "ballet:10/1",
+      "football:11/1",
+      "tennis:7/0"
+    ]
+  }
+}

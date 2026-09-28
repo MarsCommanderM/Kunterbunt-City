@@ -1,0 +1,13 @@
+{
+  "workshop": {
+    "ladezeit_ms": 210.0,
+    "raeume": [
+      "garage:12/1",
+      "wash:6/1",
+      "fuel:10/1",
+      "paint:9/1",
+      "bikes:9/1",
+      "scrapyard:7/0"
+    ]
+  }
+}

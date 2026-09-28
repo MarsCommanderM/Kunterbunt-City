@@ -1,0 +1,14 @@
+{
+  "garten_npcs": [
+    "neighbor",
+    "postman"
+  ],
+  "gerettet": 1,
+  "gescannt": 1,
+  "hund": "SLEEP",
+  "kasse": "open",
+  "napf": "empty",
+  "post_zugestellt": 1,
+  "post_zurueck": true,
+  "tuete": "shop_bag_coral"
+}

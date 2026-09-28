@@ -1,0 +1,1340 @@
+{
+ "area": "catalog",
+ "room": "shopfit",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "shop_shelf_market_cream",
+   "scale_ref": "c_shop_shelf_market",
+   "size_cm": [
+    121.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_market.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_market_sky",
+   "scale_ref": "c_shop_shelf_market",
+   "size_cm": [
+    121.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_market.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_market_mint",
+   "scale_ref": "c_shop_shelf_market",
+   "size_cm": [
+    121.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_market.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_market_white",
+   "scale_ref": "c_shop_shelf_market",
+   "size_cm": [
+    121.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_market.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_toys_butter",
+   "scale_ref": "c_shop_shelf_toys",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_toys.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_toys_sky",
+   "scale_ref": "c_shop_shelf_toys",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_toys.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_toys_rose",
+   "scale_ref": "c_shop_shelf_toys",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_toys.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_electro_black",
+   "scale_ref": "c_shop_shelf_electro",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_electro.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_electro_grey",
+   "scale_ref": "c_shop_shelf_electro",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_electro.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_electro_white",
+   "scale_ref": "c_shop_shelf_electro",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_electro.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_pets_mint",
+   "scale_ref": "c_shop_shelf_pets",
+   "size_cm": [
+    121.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_pets.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_pets_oak",
+   "scale_ref": "c_shop_shelf_pets",
+   "size_cm": [
+    121.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_pets.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_bread_oak",
+   "scale_ref": "c_shop_shelf_bread",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_bread_walnut",
+   "scale_ref": "c_shop_shelf_bread",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_bread_cream",
+   "scale_ref": "c_shop_shelf_bread",
+   "size_cm": [
+    131.8,
+    171.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_books_oak",
+   "scale_ref": "c_shop_shelf_books",
+   "size_cm": [
+    111.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_books.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_books_walnut",
+   "scale_ref": "c_shop_shelf_books",
+   "size_cm": [
+    111.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_books.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_shelf_books_white",
+   "scale_ref": "c_shop_shelf_books",
+   "size_cm": [
+    111.8,
+    181.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_shelf_books.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_fridge_shelf_white",
+   "scale_ref": "c_shop_fridge_shelf",
+   "size_cm": [
+    131.8,
+    196.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fridge_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_fridge_shelf_sky",
+   "scale_ref": "c_shop_fridge_shelf",
+   "size_cm": [
+    131.8,
+    196.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fridge_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_fridge_shelf_grey",
+   "scale_ref": "c_shop_fridge_shelf",
+   "size_cm": [
+    131.8,
+    196.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fridge_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_checkout_coral",
+   "scale_ref": "c_shop_checkout",
+   "size_cm": [
+    171.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_checkout.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#2a2a30"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_checkout_sky",
+   "scale_ref": "c_shop_checkout",
+   "size_cm": [
+    171.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_checkout.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#2a2a30"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_checkout_white",
+   "scale_ref": "c_shop_checkout",
+   "size_cm": [
+    171.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_checkout.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#2a2a30"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_checkout_mint",
+   "scale_ref": "c_shop_checkout",
+   "size_cm": [
+    171.7,
+    91.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_checkout.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#2a2a30"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_oak",
+   "scale_ref": "c_shop_counter",
+   "size_cm": [
+    155.9,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_cream",
+   "scale_ref": "c_shop_counter",
+   "size_cm": [
+    155.9,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_mint",
+   "scale_ref": "c_shop_counter",
+   "size_cm": [
+    155.9,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_coral",
+   "scale_ref": "c_shop_counter",
+   "size_cm": [
+    155.9,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_sky",
+   "scale_ref": "c_shop_counter",
+   "size_cm": [
+    155.9,
+    96.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#8a5e3f"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_glass_cream",
+   "scale_ref": "c_shop_counter_glass",
+   "size_cm": [
+    155.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_glass_oak",
+   "scale_ref": "c_shop_counter_glass",
+   "size_cm": [
+    155.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_counter_glass_rose",
+   "scale_ref": "c_shop_counter_glass",
+   "size_cm": [
+    155.9,
+    111.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_counter_glass.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_produce_stand_oak",
+   "scale_ref": "c_shop_produce_stand",
+   "size_cm": [
+    151.5,
+    111.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_produce_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_produce_stand_walnut",
+   "scale_ref": "c_shop_produce_stand",
+   "size_cm": [
+    151.5,
+    111.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_produce_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_flower_stand_oak",
+   "scale_ref": "c_shop_flower_stand",
+   "size_cm": [
+    131.9,
+    98.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_flower_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#dbe8d9"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_flower_stand_white",
+   "scale_ref": "c_shop_flower_stand",
+   "size_cm": [
+    131.9,
+    98.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_flower_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#dbe8d9"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_icecream_counter_sky",
+   "scale_ref": "c_shop_icecream_counter",
+   "size_cm": [
+    161.9,
+    117.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_icecream_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_icecream_counter_rose",
+   "scale_ref": "c_shop_icecream_counter",
+   "size_cm": [
+    161.9,
+    117.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_icecream_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_icecream_counter_mint",
+   "scale_ref": "c_shop_icecream_counter",
+   "size_cm": [
+    161.9,
+    117.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_icecream_counter.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_fitting_room_oak",
+   "scale_ref": "c_shop_fitting_room",
+   "size_cm": [
+    115.5,
+    216.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fitting_room.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_fitting_room__open.png"
+   }
+  },
+  {
+   "id": "shop_fitting_room_white",
+   "scale_ref": "c_shop_fitting_room",
+   "size_cm": [
+    115.5,
+    216.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fitting_room.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_fitting_room__open.png"
+   }
+  },
+  {
+   "id": "shop_fitting_room_black",
+   "scale_ref": "c_shop_fitting_room",
+   "size_cm": [
+    115.5,
+    216.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_fitting_room.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "shopfit",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/shop_fitting_room__open.png"
+   }
+  },
+  {
+   "id": "shop_hair_sink_black",
+   "scale_ref": "c_shop_hair_sink",
+   "size_cm": [
+    111.8,
+    103.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hair_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "shopfit",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_hair_sink_coral",
+   "scale_ref": "c_shop_hair_sink",
+   "size_cm": [
+    111.8,
+    103.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hair_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "shopfit",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_hair_sink_sky",
+   "scale_ref": "c_shop_hair_sink",
+   "size_cm": [
+    111.8,
+    103.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_hair_sink.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "shopfit",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "shop_dryer_hood_rose",
+   "scale_ref": "c_shop_dryer_hood",
+   "size_cm": [
+    64.2,
+    152.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_dryer_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_dryer_hood_sky",
+   "scale_ref": "c_shop_dryer_hood",
+   "size_cm": [
+    64.2,
+    152.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_dryer_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_dryer_hood_white",
+   "scale_ref": "c_shop_dryer_hood",
+   "size_cm": [
+    64.2,
+    152.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_dryer_hood.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_magazine_rack_metal",
+   "scale_ref": "c_shop_magazine_rack",
+   "size_cm": [
+    55.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_magazine_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_magazine_rack_coral",
+   "scale_ref": "c_shop_magazine_rack",
+   "size_cm": [
+    55.5,
+    151.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_magazine_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_tank_shelf_black",
+   "scale_ref": "c_shop_tank_shelf",
+   "size_cm": [
+    111.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_tank_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_tank_shelf_oak",
+   "scale_ref": "c_shop_tank_shelf",
+   "size_cm": [
+    111.9,
+    161.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_tank_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#a9c3dd"
+   ],
+   "catalog": "shopfit"
+  },
+  {
+   "id": "shop_coffee_machine_coral",
+   "scale_ref": "c_shop_coffee_machine",
+   "size_cm": [
+    56.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_coffee_machine.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_coffee_machine_black",
+   "scale_ref": "c_shop_coffee_machine",
+   "size_cm": [
+    56.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_coffee_machine.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "shop_coffee_machine_cream",
+   "scale_ref": "c_shop_coffee_machine",
+   "size_cm": [
+    56.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/shop_coffee_machine.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "shopfit",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1294 @@
+{
+ "area": "catalog",
+ "room": "street",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "street_bus_stop_sky",
+   "scale_ref": "c_street_bus_stop",
+   "size_cm": [
+    282.7,
+    286.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus_stop.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_bus_stop_green",
+   "scale_ref": "c_street_bus_stop",
+   "size_cm": [
+    282.7,
+    286.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus_stop.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_bus_stop_butter",
+   "scale_ref": "c_street_bus_stop",
+   "size_cm": [
+    282.7,
+    286.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus_stop.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_street_lamp_black",
+   "scale_ref": "c_street_street_lamp",
+   "size_cm": [
+    37.5,
+    379.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_street_lamp.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/street_street_lamp__on.png"
+   }
+  },
+  {
+   "id": "street_street_lamp_green",
+   "scale_ref": "c_street_street_lamp",
+   "size_cm": [
+    37.5,
+    379.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_street_lamp.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/street_street_lamp__on.png"
+   }
+  },
+  {
+   "id": "street_street_lamp_navy",
+   "scale_ref": "c_street_street_lamp",
+   "size_cm": [
+    37.5,
+    379.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_street_lamp.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street",
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/street_street_lamp__on.png"
+   }
+  },
+  {
+   "id": "street_park_bench_oak",
+   "scale_ref": "c_street_park_bench",
+   "size_cm": [
+    161.6,
+    83.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_park_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_park_bench_green",
+   "scale_ref": "c_street_park_bench",
+   "size_cm": [
+    161.6,
+    83.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_park_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_park_bench_walnut",
+   "scale_ref": "c_street_park_bench",
+   "size_cm": [
+    161.6,
+    83.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_park_bench.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "street",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "street_bin_street_green",
+   "scale_ref": "c_street_bin_street",
+   "size_cm": [
+    51.8,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bin_street.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bin_street_coral",
+   "scale_ref": "c_street_bin_street",
+   "size_cm": [
+    51.8,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bin_street.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bin_street_grey",
+   "scale_ref": "c_street_bin_street",
+   "size_cm": [
+    51.8,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bin_street.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bike_stand_metal",
+   "scale_ref": "c_street_bike_stand",
+   "size_cm": [
+    201.6,
+    83.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bike_stand_coral",
+   "scale_ref": "c_street_bike_stand",
+   "size_cm": [
+    201.6,
+    83.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bike_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_advert_column_green",
+   "scale_ref": "c_street_advert_column",
+   "size_cm": [
+    117.6,
+    301.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_advert_column.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_advert_column_cream",
+   "scale_ref": "c_street_advert_column",
+   "size_cm": [
+    117.6,
+    301.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_advert_column.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_icecream_cart_cream",
+   "scale_ref": "c_street_icecream_cart",
+   "size_cm": [
+    179.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_icecream_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_icecream_cart_rose",
+   "scale_ref": "c_street_icecream_cart",
+   "size_cm": [
+    179.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_icecream_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_icecream_cart_sky",
+   "scale_ref": "c_street_icecream_cart",
+   "size_cm": [
+    179.5,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_icecream_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bus_butter",
+   "scale_ref": "c_street_bus",
+   "size_cm": [
+    502.0,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bus_sky",
+   "scale_ref": "c_street_bus",
+   "size_cm": [
+    502.0,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_bus_coral",
+   "scale_ref": "c_street_bus",
+   "size_cm": [
+    502.0,
+    266.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_bus.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_awning_coral",
+   "scale_ref": "c_street_awning",
+   "size_cm": [
+    245.8,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_awning.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_awning_sky",
+   "scale_ref": "c_street_awning",
+   "size_cm": [
+    245.8,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_awning.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_awning_mint",
+   "scale_ref": "c_street_awning",
+   "size_cm": [
+    245.8,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_awning.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_awning_butter",
+   "scale_ref": "c_street_awning",
+   "size_cm": [
+    245.8,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_awning.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_awning_rose",
+   "scale_ref": "c_street_awning",
+   "size_cm": [
+    245.8,
+    91.5
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_awning.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_cart_oak",
+   "scale_ref": "c_street_sign_cart",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_cart_cream",
+   "scale_ref": "c_street_sign_cart",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_cart_mint",
+   "scale_ref": "c_street_sign_cart",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_cart.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_bread_oak",
+   "scale_ref": "c_street_sign_bread",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_bread_cream",
+   "scale_ref": "c_street_sign_bread",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_bread_mint",
+   "scale_ref": "c_street_sign_bread",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_bread.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f09a55",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_flower_oak",
+   "scale_ref": "c_street_sign_flower",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_flower_cream",
+   "scale_ref": "c_street_sign_flower",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_flower_mint",
+   "scale_ref": "c_street_sign_flower",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_flower.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_shirt_oak",
+   "scale_ref": "c_street_sign_shirt",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_shirt_cream",
+   "scale_ref": "c_street_sign_shirt",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_shirt_mint",
+   "scale_ref": "c_street_sign_shirt",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_scissors_oak",
+   "scale_ref": "c_street_sign_scissors",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_scissors.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#7a5ea8",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_scissors_cream",
+   "scale_ref": "c_street_sign_scissors",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_scissors.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#7a5ea8",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_scissors_mint",
+   "scale_ref": "c_street_sign_scissors",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_scissors.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#7a5ea8",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_teddy_oak",
+   "scale_ref": "c_street_sign_teddy",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#8a5e3f",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_teddy_cream",
+   "scale_ref": "c_street_sign_teddy",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#8a5e3f",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_teddy_mint",
+   "scale_ref": "c_street_sign_teddy",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_teddy.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#8a5e3f",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_paw_oak",
+   "scale_ref": "c_street_sign_paw",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_paw.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_paw_cream",
+   "scale_ref": "c_street_sign_paw",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_paw.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_paw_mint",
+   "scale_ref": "c_street_sign_paw",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_paw.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_icecream_oak",
+   "scale_ref": "c_street_sign_icecream",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_icecream.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_icecream_cream",
+   "scale_ref": "c_street_sign_icecream",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_icecream.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_icecream_mint",
+   "scale_ref": "c_street_sign_icecream",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_icecream.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f0b6c2",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_note_oak",
+   "scale_ref": "c_street_sign_note",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_note.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_note_cream",
+   "scale_ref": "c_street_sign_note",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_note.png",
+   "pad_px": 1,
+   "colors": [
+    "#f5f3ee",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  },
+  {
+   "id": "street_sign_note_mint",
+   "scale_ref": "c_street_sign_note",
+   "size_cm": [
+    91.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/street_sign_note.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#2e3140",
+    "#d4a86e"
+   ],
+   "catalog": "street"
+  }
+ ]
+}

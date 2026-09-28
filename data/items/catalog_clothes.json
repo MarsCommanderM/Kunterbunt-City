@@ -1,0 +1,2630 @@
+{
+ "area": "catalog",
+ "room": "clothes",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "furn_clothes_rack_coral",
+   "scale_ref": "c_furn_clothes_rack",
+   "size_cm": [
+    131.8,
+    163.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_clothes_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_clothes_rack_mint",
+   "scale_ref": "c_furn_clothes_rack",
+   "size_cm": [
+    131.8,
+    163.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_clothes_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_clothes_rack_rose",
+   "scale_ref": "c_furn_clothes_rack",
+   "size_cm": [
+    131.8,
+    163.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_clothes_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#a9c3dd",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_clothes_rack_sky",
+   "scale_ref": "c_furn_clothes_rack",
+   "size_cm": [
+    131.8,
+    163.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_clothes_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_coat_rack_navy",
+   "scale_ref": "c_furn_coat_rack",
+   "size_cm": [
+    49.0,
+    172.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_coat_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_coat_rack_sage",
+   "scale_ref": "c_furn_coat_rack",
+   "size_cm": [
+    49.0,
+    172.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_coat_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#e07a7a",
+    "#8a5e3f"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "furn_coat_rack_rust",
+   "scale_ref": "c_furn_coat_rack",
+   "size_cm": [
+    49.0,
+    172.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_coat_rack.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#e07a7a",
+    "#2a2a30"
+   ],
+   "catalog": "clothes"
+  },
+  {
+   "id": "deco_umbrella_coral",
+   "scale_ref": "c_deco_umbrella",
+   "size_cm": [
+    15.6,
+    82.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "deco_umbrella_sky",
+   "scale_ref": "c_deco_umbrella",
+   "size_cm": [
+    15.6,
+    82.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "deco_umbrella_butter",
+   "scale_ref": "c_deco_umbrella",
+   "size_cm": [
+    15.6,
+    82.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "deco_umbrella_navy",
+   "scale_ref": "c_deco_umbrella",
+   "size_cm": [
+    15.6,
+    82.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "deco_umbrella_plum",
+   "scale_ref": "c_deco_umbrella",
+   "size_cm": [
+    15.6,
+    82.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/deco_umbrella.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "furn_umbrella_stand_metal",
+   "scale_ref": "c_furn_umbrella_stand",
+   "size_cm": [
+    29.5,
+    58.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_umbrella_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "furn_umbrella_stand_coral",
+   "scale_ref": "c_furn_umbrella_stand",
+   "size_cm": [
+    29.5,
+    58.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_umbrella_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "furn_umbrella_stand_navy",
+   "scale_ref": "c_furn_umbrella_stand",
+   "size_cm": [
+    29.5,
+    58.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/furn_umbrella_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_coral",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_sky",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_mint",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_butter",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_white",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_navy",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shirt_rose",
+   "scale_ref": "c_cloth_shirt",
+   "size_cm": [
+    41.8,
+    40.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shirt.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_pants_denim",
+   "scale_ref": "c_cloth_pants",
+   "size_cm": [
+    35.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_pants.png",
+   "pad_px": 1,
+   "colors": [
+    "#3c4f7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_pants_grey",
+   "scale_ref": "c_cloth_pants",
+   "size_cm": [
+    35.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_pants.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_pants_sand",
+   "scale_ref": "c_cloth_pants",
+   "size_cm": [
+    35.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_pants.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_pants_black",
+   "scale_ref": "c_cloth_pants",
+   "size_cm": [
+    35.9,
+    61.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_pants.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_dress_rose",
+   "scale_ref": "c_cloth_dress",
+   "size_cm": [
+    45.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_dress.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_dress_sky",
+   "scale_ref": "c_cloth_dress",
+   "size_cm": [
+    45.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_dress.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_dress_butter",
+   "scale_ref": "c_cloth_dress",
+   "size_cm": [
+    45.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_dress.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_dress_lilac",
+   "scale_ref": "c_cloth_dress",
+   "size_cm": [
+    45.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_dress.png",
+   "pad_px": 1,
+   "colors": [
+    "#b9a6d6",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_dress_coral",
+   "scale_ref": "c_cloth_dress",
+   "size_cm": [
+    45.9,
+    71.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_dress.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_jacket_navy",
+   "scale_ref": "c_cloth_jacket",
+   "size_cm": [
+    51.7,
+    61.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_jacket.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_jacket_rust",
+   "scale_ref": "c_cloth_jacket",
+   "size_cm": [
+    51.7,
+    61.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_jacket.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_jacket_sage",
+   "scale_ref": "c_cloth_jacket",
+   "size_cm": [
+    51.7,
+    61.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_jacket.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_jacket_butter",
+   "scale_ref": "c_cloth_jacket",
+   "size_cm": [
+    51.7,
+    61.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_jacket.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_coral",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_sky",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_white",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_black",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_rose",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_shoes_mint",
+   "scale_ref": "c_cloth_shoes",
+   "size_cm": [
+    31.3,
+    10.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_shoes.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_slippers_rose",
+   "scale_ref": "c_cloth_slippers",
+   "size_cm": [
+    31.0,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_slippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_slippers_sky",
+   "scale_ref": "c_cloth_slippers",
+   "size_cm": [
+    31.0,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_slippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_slippers_grey",
+   "scale_ref": "c_cloth_slippers",
+   "size_cm": [
+    31.0,
+    9.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_slippers.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_boots_yellow",
+   "scale_ref": "c_cloth_boots",
+   "size_cm": [
+    30.0,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_boots.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_boots_coral",
+   "scale_ref": "c_cloth_boots",
+   "size_cm": [
+    30.0,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_boots.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_boots_green",
+   "scale_ref": "c_cloth_boots",
+   "size_cm": [
+    30.0,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_boots.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_boots_navy",
+   "scale_ref": "c_cloth_boots",
+   "size_cm": [
+    30.0,
+    31.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_boots.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#2a2a30",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_hat_coral",
+   "scale_ref": "c_cloth_hat",
+   "size_cm": [
+    31.5,
+    19.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_hat_sky",
+   "scale_ref": "c_cloth_hat",
+   "size_cm": [
+    31.5,
+    19.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_hat_butter",
+   "scale_ref": "c_cloth_hat",
+   "size_cm": [
+    31.5,
+    19.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_hat_navy",
+   "scale_ref": "c_cloth_hat",
+   "size_cm": [
+    31.5,
+    19.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_hat_sage",
+   "scale_ref": "c_cloth_hat",
+   "size_cm": [
+    31.5,
+    19.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_hat.png",
+   "pad_px": 1,
+   "colors": [
+    "#dbe8d9",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_coral",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_sky",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_butter",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_mint",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_plum",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_navy",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_scarf_rust",
+   "scale_ref": "c_cloth_scarf",
+   "size_cm": [
+    37.7,
+    26.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_scarf.png",
+   "pad_px": 1,
+   "colors": [
+    "#b8452f",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_coral",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_sky",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_butter",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_mint",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_plum",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_navy",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_beanie_grey",
+   "scale_ref": "c_cloth_beanie",
+   "size_cm": [
+    26.9,
+    23.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_beanie.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_coral",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_sky",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_butter",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_mint",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_navy",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_grey",
+   "scale_ref": "c_cloth_gloves",
+   "size_cm": [
+    25.1,
+    20.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_mittens_rose",
+   "scale_ref": "c_cloth_gloves_mittens",
+   "size_cm": [
+    26.8,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves_mittens.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_mittens_teal",
+   "scale_ref": "c_cloth_gloves_mittens",
+   "size_cm": [
+    26.8,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves_mittens.png",
+   "pad_px": 1,
+   "colors": [
+    "#48b0a0",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_gloves_mittens_orange",
+   "scale_ref": "c_cloth_gloves_mittens",
+   "size_cm": [
+    26.8,
+    22.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_gloves_mittens.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_cap_coral",
+   "scale_ref": "c_cloth_cap",
+   "size_cm": [
+    28.9,
+    17.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_cap.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_cap_sky",
+   "scale_ref": "c_cloth_cap",
+   "size_cm": [
+    28.9,
+    17.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_cap.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_cap_navy",
+   "scale_ref": "c_cloth_cap",
+   "size_cm": [
+    28.9,
+    17.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_cap.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_cap_green",
+   "scale_ref": "c_cloth_cap",
+   "size_cm": [
+    28.9,
+    17.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_cap.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_cap_black",
+   "scale_ref": "c_cloth_cap",
+   "size_cm": [
+    28.9,
+    17.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_cap.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#fbfaf7",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_raincoat_yellow",
+   "scale_ref": "c_cloth_raincoat",
+   "size_cm": [
+    51.8,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_raincoat.png",
+   "pad_px": 1,
+   "colors": [
+    "#f4c95d",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "cloth_raincoat_coral",
+   "scale_ref": "c_cloth_raincoat",
+   "size_cm": [
+    51.8,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_raincoat.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "cloth_raincoat_sky",
+   "scale_ref": "c_cloth_raincoat",
+   "size_cm": [
+    51.8,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_raincoat.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "cloth_raincoat_green",
+   "scale_ref": "c_cloth_raincoat",
+   "size_cm": [
+    51.8,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_raincoat.png",
+   "pad_px": 1,
+   "colors": [
+    "#5f8f6a",
+    "#2e3140",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "cloth_sunglasses_black",
+   "scale_ref": "c_cloth_sunglasses",
+   "size_cm": [
+    17.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_sunglasses.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_sunglasses_coral",
+   "scale_ref": "c_cloth_sunglasses",
+   "size_cm": [
+    17.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_sunglasses.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#2a2a30",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_sunglasses_sky",
+   "scale_ref": "c_cloth_sunglasses",
+   "size_cm": [
+    17.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_sunglasses.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#2a2a30",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_sunglasses_rose",
+   "scale_ref": "c_cloth_sunglasses",
+   "size_cm": [
+    17.7,
+    7.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_sunglasses.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#2a2a30",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "cloth_backpack_coral",
+   "scale_ref": "c_cloth_backpack",
+   "size_cm": [
+    31.9,
+    43.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_backpack.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_backpack_sky",
+   "scale_ref": "c_cloth_backpack",
+   "size_cm": [
+    31.9,
+    43.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_backpack.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_backpack_mint",
+   "scale_ref": "c_cloth_backpack",
+   "size_cm": [
+    31.9,
+    43.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_backpack.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_backpack_plum",
+   "scale_ref": "c_cloth_backpack",
+   "size_cm": [
+    31.9,
+    43.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_backpack.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_backpack_butter",
+   "scale_ref": "c_cloth_backpack",
+   "size_cm": [
+    31.9,
+    43.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_backpack.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_handbag_walnut",
+   "scale_ref": "c_cloth_handbag",
+   "size_cm": [
+    31.3,
+    30.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_handbag.png",
+   "pad_px": 1,
+   "colors": [
+    "#8a5e3f",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_handbag_coral",
+   "scale_ref": "c_cloth_handbag",
+   "size_cm": [
+    31.3,
+    30.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_handbag.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  },
+  {
+   "id": "cloth_handbag_navy",
+   "scale_ref": "c_cloth_handbag",
+   "size_cm": [
+    31.3,
+    30.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/cloth_handbag.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#f6d98a",
+    "#f6d98a"
+   ],
+   "catalog": "clothes",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 4,
+    "max_item_h_cm": 25
+   }
+  }
+ ]
+}

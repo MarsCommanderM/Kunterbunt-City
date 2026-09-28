@@ -62,11 +62,15 @@ func test_sit_pose_shortens_legs_and_keeps_feet_above_floor() -> void:
 	var kid: CharacterRig = _rig("kid", 300.0, 50.0)
 	_kid_sits_on(kid, chair)
 	assert_eq(kid.body_pose, "sit")
-	assert_almost_eq(_h_over(chair, kid.parts.to_global(Vector2(0, -50.0)).y), 45.0, 1.0,
+	var hip: float = float(kid.t["hip"]["y"])
+	assert_almost_eq(_h_over(chair, kid.parts.to_global(Vector2(0, -hip)).y), 45.0, 1.0,
 		"Hüfte sitzt auf 45 cm")
 	var sole: float = _sole_over(chair, kid)
 	assert_true(sole > 5.0, "Füße baumeln über dem Boden (%s cm)" % sole)
-	assert_almost_eq(_h_over(chair, kid.global_rect().position.y), 120.0, 3.0, "Kopf bei ~120 cm")
+	# Oberkörper sitzt unverändert auf der Hüfte: Scheitel = Sitz + (Schablonen-Höhe − Hüfte)
+	var head_top: float = 45.0 + float(kid.t["hair_top"]) - hip
+	assert_almost_eq(_h_over(chair, kid.global_rect().position.y), head_top, 3.0,
+		"Kopf bei ~%d cm" % int(head_top))
 
 
 func test_adult_on_low_sofa_reaches_the_floor() -> void:
@@ -74,19 +78,32 @@ func test_adult_on_low_sofa_reaches_the_floor() -> void:
 	var adult: CharacterRig = _rig("adult", 300.0, 30.0)
 	_kid_sits_on(adult, sofa)
 	assert_eq(adult.body_pose, "sit")
-	assert_almost_eq(_h_over(sofa, adult.parts.to_global(Vector2(0, -90.0)).y), 42.0, 1.0, "Sofa: 42 cm")
+	assert_almost_eq(_h_over(sofa, adult.parts.to_global(Vector2(0, -float(adult.t["hip"]["y"]))).y), 42.0, 1.0,
+		"Sofa: 42 cm")
 	assert_almost_eq(_sole_over(sofa, adult), 0.0, 3.0, "Füße stehen auf dem Boden (nicht darunter)")
 
 
-func test_lie_pose_is_horizontal_with_upright_head() -> void:
+## P04b: Mit dem großen Kopf liegt die GANZE Figur (Kopf auf dem Kissen) – ein aufrechter Kopf ließ
+## lange Haare durch das Bett hängen. Waagerecht läge nur der dicke Kopf auf und der Körper schwebte
+## (Blick-Check Luftmatratze) → leicht geneigt: Kopf UND Füße liegen auf, nichts sinkt ein, nichts schwebt.
+func test_lie_pose_rests_head_and_feet_on_the_mattress() -> void:
 	var bed: ItemNode = ItemSpawner.on_floor(k.room, &"home_bed_kid", 300.0, 30.0)
 	var toddler: CharacterRig = _rig("toddler", 300.0, 30.0)
 	_kid_sits_on(toddler, bed)
 	assert_eq(toddler.body_pose, "lie")
-	var box: Rect2 = toddler.global_rect()
-	assert_true(box.size.x > 1.5 * box.size.y, "liegt waagerecht (%d × %d cm)" % [box.size.x, box.size.y])
-	assert_almost_eq(toddler.head_pivot.global_rotation, 0.0, 0.001, "Kopf bleibt aufrecht")
-	assert_almost_eq(_h_over(bed, box.end.y), 45.0, 4.0, "liegt auf der Matratze (45 cm)")
+	var rot: float = toddler.parts.global_rotation
+	assert_between(rot, -PI * 0.5, -PI * 0.5 + CharacterRig.LIE_TILT_MAX + 0.001, "liegt, höchstens 26° geneigt")
+	assert_almost_eq(toddler.head_pivot.global_rotation, rot, 0.001, "Kopf liegt mit auf dem Kissen")
+	var feet: Vector2 = toddler.parts.to_global(Vector2.ZERO)
+	var hip_g: Vector2 = toddler.parts.to_global(Vector2(0, -float(toddler.t["hip"]["y"])))
+	assert_gt(feet.x - hip_g.x, float(toddler.t["hip"]["y"]) * toddler.global_scale.x * cos(CharacterRig.LIE_TILT_MAX) * 0.98,
+		"Beine in voller Länge")
+	var solid: Array = toddler._layers.values().filter(func(sp: Sprite2D) -> bool: return not String(sp.name).begins_with("Hair"))
+	assert_almost_eq(_h_over(bed, _low(toddler, solid)), 45.0, 2.0, "Kopf/Körper liegen auf der Matratze (45 cm)")
+	assert_gt(_h_over(bed, _low(toddler, toddler._layers.values())), 45.0 - 12.0, "Haare fallen aufs Kissen, hängen aber nicht durch")
+	var legs_bottom: float = _low(toddler, [toddler._layers["Legs"], toddler._layers["Shoes"]])
+	assert_almost_eq(_h_over(bed, legs_bottom), 45.0, 4.0, "auch die Beine liegen auf (kein Schweben)")
+	assert_lt(_h_over(bed, hip_g.y) - 45.0, 25.0, "Hüfte nah an der Matratze (früher schwebte der Körper)")
 
 
 func test_six_emotions_cycle_on_head_tap() -> void:
@@ -119,6 +136,11 @@ func _kid_sits_on(who: ItemNode, host: ItemNode) -> void:
 	k.drag_pivot_to(who, p, 7)
 
 
+## Tiefster gemalter Punkt der Ebenen (Umriss statt Rechteck – bei gedrehten Ebenen genau), global.
+func _low(rig: CharacterRig, layers: Array) -> float:
+	return rig.to_global(Vector2(0, LayerGeometry.lowest(rig, layers))).y
+
+
 func _h_over(ref: ItemNode, world_y: float) -> float:
 	return (ref.global_position.y - world_y) / ref.global_scale.y
 
@@ -126,3 +148,15 @@ func _h_over(ref: ItemNode, world_y: float) -> float:
 func _sole_over(ref: ItemNode, ch: CharacterRig) -> float:
 	var sp: Sprite2D = ch._layers["Shoes"]
 	return _h_over(ref, (sp.global_transform * sp.get_rect()).end.y)
+
+
+## P04b: „Alles geht überall“ – die Schwimmbad-Luftmatratze taugt zu Hause als Bett, die Figur liegt AUF ihr.
+func test_kid_lies_on_the_pool_air_mattress() -> void:
+	var mat: ItemNode = ItemSpawner.on_floor(k.room, &"pool_air_mattress_coral", 300.0, 30.0)
+	var kid: CharacterRig = _rig("kid", 300.0, 30.0)
+	_kid_sits_on(kid, mat)
+	assert_eq(kid.body_pose, "lie", "Luftmatratze → liegen")
+	var solid: Array = kid._layers.values().filter(func(sp: Sprite2D) -> bool: return not String(sp.name).begins_with("Hair"))
+	assert_almost_eq(_h_over(mat, _low(kid, solid)), mat.def.seat_h_cm, 2.0, "liegt auf der Matratze, schwebt nicht")
+	var legs_bottom: float = _low(kid, [kid._layers["Legs"], kid._layers["Shoes"]])
+	assert_almost_eq(_h_over(mat, legs_bottom), mat.def.seat_h_cm, 3.0, "Kopf UND Beine liegen auf")

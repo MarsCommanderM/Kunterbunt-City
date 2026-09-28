@@ -12,15 +12,19 @@ signal left_area
 
 var area_id: StringName = &""
 var area: Dictionary = {}
+var area_file: Dictionary = {}       ## data/areas/<bereich>.json (alle Räume)
 var room: Room
 var camera: WorldCamera
 var drag: DragController
 var hud: AreaHud
 var ui: CanvasLayer                  ## Ebene für UI-Panels (Rucksack, Album, Eltern …)
 var me: ItemNode                     ## die eigene Figur
+var light_mod: CanvasModulate        ## P07-T05: Raum dunkel, wenn der Licht-Schalter aus ist
 var pets: Array = []                 ## [PetNode]
+var npcs: Array = []                 ## [NpcBrain] – P08: feste Figuren im Raum
 var load_ms: float = 0.0
 var _t0: int = 0
+var _entry: StringName = &""          ## gewählter Knopf (kann auf einen anderen Bereich zeigen)
 
 
 func _ready() -> void:
@@ -28,14 +32,17 @@ func _ready() -> void:
 	area_id = SceneRouter.take_pending_area()
 	if area_id == &"":
 		area_id = Areas.first_ready()
+	_entry = area_id
+	area_id = Areas.canonical(area_id)                    # P09: Blumenladen-Knopf → Einkaufsstraße
 	area = Areas.get_area(area_id)
-	var area_file: Dictionary = Room.load_area(Areas.path_of(area_id))
+	area_file = Room.load_area(Areas.path_of(area_id))
 	area["default_items"] = area_file.get("default_items", [])
 	if area.is_empty():
 		push_error("AreaScene: unbekannter Bereich '%s'" % String(area_id))
 		return
-	_build_room()
-	_spawn()
+	_build_world()
+	AudioBus.play_music(String(area_file.get("music", "")))
+	_enter_room(_start_room(), true)
 	_build_hud()
 	load_ms = (Time.get_ticks_usec() - _t0) / 1000.0
 	SceneRouter.last_load_ms = load_ms
@@ -44,47 +51,149 @@ func _ready() -> void:
 	_check_load_time()
 
 
-func _build_room() -> void:
-	room = ROOM_SCENE.instantiate()
-	add_child(room)
-	move_child(room, 0)
-	var data: Dictionary = Room.load_area(Areas.path_of(area_id))
-	var rid: String = Areas.room_of(area_id)
-	room.setup(Room.find_room(data, rid) if not rid.is_empty() else data["rooms"][0])
+## P07: Räume dieses Bereichs (Reihenfolge wie in der Datei).
+func room_ids() -> Array:
+	var out: Array = []
+	for r: Variant in Array(area_file.get("rooms", [])):
+		out.append(String((r as Dictionary).get("id", "")))
+	return out
+
+
+func room_data(rid: String) -> Dictionary:
+	for r: Variant in Array(area_file.get("rooms", [])):
+		if String((r as Dictionary).get("id", "")) == rid:
+			return r
+	return {}
+
+
+## Weiter im zuletzt besuchten Raum, sonst im Start-Raum des Bereichs.
+func _start_room() -> String:
+	var ids: Array = room_ids()
+	if _entry != area_id and ids.has(Areas.room_of(_entry)):
+		return Areas.room_of(_entry)
+	var last: String = Game.last_room(area_id)
+	if ids.has(last):
+		return last
+	var r: String = Areas.room_of(area_id)
+	if ids.has(r):
+		return r
+	return String(ids[0]) if not ids.is_empty() else ""
+
+
+func _build_world() -> void:
+	var garden_timer := Timer.new()                      # P07-T07: Garten-Uhr (1 s)
+	garden_timer.wait_time = 1.0
+	garden_timer.autostart = true
+	garden_timer.timeout.connect(func() -> void:
+		if room != null and Garden.tick(room) > 0:
+			_on_world_changed())
+	add_child(garden_timer)
 	camera = WorldCamera.new()
 	add_child(camera)
-	camera.setup_for_room(room, Areas.spawn_of(area_id).x)
 	drag = DragController.new()
 	add_child(drag)
 	drag.camera = camera
-	drag.attach_room(room)
 	drag.item_dropped.connect(_on_item_dropped)
-	drag.item_tapped.connect(func(_it: ItemNode) -> void: _on_world_changed())
+	drag.item_tapped.connect(_on_item_tapped)
+	light_mod = CanvasModulate.new()
+	add_child(light_mod)
 
 
-func _spawn() -> void:
-	var spawn: Vector2 = Areas.spawn_of(area_id)
+func _enter_room(rid: String, first: bool) -> void:
+	room = ROOM_SCENE.instantiate()
+	add_child(room)
+	move_child(room, 0)
+	room.setup(room_data(rid), Game.room_decor(area_id, StringName(rid)))
+	var spawn: Vector2 = _spawn_point()
+	camera.setup_for_room(room, spawn.x)
+	if first:
+		drag.attach_room(room)
+	else:
+		drag.reset_for_room(room)
+	Game.set_last_room(area_id, room.room_id)
+	_spawn(spawn)
+	Garden.catch_up(room)                                # während der Abwesenheit gewachsen/verwelkt
+	AudioBus.play_ambience(String(room.data.get("ambience", "")))
+	RoomLight.apply(room, light_mod)
+	PlayMotion.refresh(room)
+	IceActions.refresh(room)
+	ZooActions.refresh(room)
+
+
+## Start-Raum: Spawn-Punkt aus der Stadtkarte. Andere Räume: Mitte, halb vorn im Bodenband.
+func _spawn_point() -> Vector2:
+	if String(room.room_id) == Areas.room_of(area_id):
+		return Areas.spawn_of(area_id)
+	var front: float = room.floor_band.front_y_cm if room.floor_band != null else 70.0
+	return Vector2(minf(room.width_cm * 0.5, 400.0), front * 0.5)
+
+
+## P07-T01: in einen anderen Raum gehen – der alte Raum wird gespeichert, Figur und eigene Tiere kommen mit.
+func switch_room(rid: String) -> bool:
+	if room == null or rid == String(room.room_id) or not room_ids().has(rid):
+		return false
+	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
+	var old: Room = room
+	remove_child(old)
+	old.queue_free()
+	me = null
+	pets.clear()
+	npcs.clear()
+	_enter_room(rid, false)
+	if hud != null:
+		hud.show_room_buttons(room_ids().size() > 1, room.can_decorate())
+	AudioBus.play_sfx("ui_confirm")
+	Game.mark_dirty(area_id, room.room_id)
+	return true
+
+
+## P07-T04: Tapete/Boden des aktuellen Raums ändern (wird gespeichert).
+func set_decor(d: Dictionary) -> void:
+	if room == null or not room.can_decorate():
+		return
+	var chosen: Dictionary = Game.room_decor(area_id, room.room_id)
+	chosen.merge(d, true)
+	Game.set_room_decor(area_id, room.room_id, chosen)
+	room.apply_decor(chosen)
+
+
+func _spawn(spawn: Vector2) -> void:
 	var state: Array = Game.room_state(area_id, room.room_id)
-	if state.is_empty():
+	if state.is_empty() and not _defaults_for_room().is_empty():
 		_spawn_defaults()
 	else:
 		var n: int = RoomSnapshot.apply(room, state)
 		Log.info("Raumzustand geladen: %d Items" % n)
 		_spawn_me(spawn)
 	_spawn_pets(spawn)
+	npcs = NpcSpawner.spawn_for_room(room, String(area_id))
 	if me != null:
 		_arrive(me)
 
 
+## Start-Ausstattung: je Raum (`default_items` im Raum), sonst die des Bereichs für den Start-Raum.
+func _defaults_for_room() -> Array:
+	var own: Array = Array(room.data.get("default_items", []))
+	if not own.is_empty():
+		return own
+	if String(room.room_id) == Areas.room_of(area_id):
+		return Array(area.get("default_items", []))
+	return []
+
+
 func _spawn_defaults() -> void:
-	var list: Array = area.get("default_items", [])
+	var list: Array = _defaults_for_room()
 	var by_id: Dictionary = {}
 	for e: Variant in list:
 		var d: Dictionary = e
 		if d.has("on"):
 			continue                       # Dinge auf Tischen kommen im zweiten Durchgang
-		by_id[String(d["id"])] = ItemSpawner.on_floor(room, StringName(String(d["id"])),
-			float(d.get("x_cm", 0.0)), float(d.get("y_cm", 0.0)))
+		var did := StringName(String(d["id"]))
+		var ddef: ItemDefinition = ItemDB.get_item(did)
+		if ddef != null and ddef.is_wall():             # Licht-Schalter, Bilder … hängen an der Wand (y = Oberkante)
+			by_id[String(d["id"])] = ItemSpawner.on_wall(room, did, float(d.get("x_cm", 0.0)), float(d.get("y_cm", -120.0)))
+			continue
+		by_id[String(d["id"])] = ItemSpawner.on_floor(room, did, float(d.get("x_cm", 0.0)), float(d.get("y_cm", 0.0)))
 	for e: Variant in list:
 		var d: Dictionary = e
 		if not d.has("on"):
@@ -92,7 +201,7 @@ func _spawn_defaults() -> void:
 		var host: ItemNode = by_id.get(String(d["on"]))
 		if host != null:
 			ItemSpawner.on_item(host, StringName(String(d["id"])), float(d.get("x_rel", 0.0)))
-	_spawn_me(Areas.spawn_of(area_id))
+	_spawn_me(_spawn_point())
 
 
 ## Die eigene Figur (Aussehen aus dem Editor, Größe aus der Schablone).
@@ -113,8 +222,10 @@ func _spawn_pets(spawn: Vector2) -> void:
 		if pet == null:
 			continue
 		pet.set_meta("pet_id", String(pd.id))
+		if pet is PetNode:
+			(pet as PetNode).set_trait(pd.pet_trait)          # P08-T07: Charakterzug → Bedürfnisse
 		if PetSpecies.ids().has(pd.species_id):
-			CharacterLook.apply(pet.sprite, [Color(pd.fur), Color(pd.fur2), Color(pd.collar)])
+			PetLook.apply(pet.sprite, [pd.fur, pd.fur2, pd.collar], pd.pattern)
 		pets.append(pet)
 		i += 1
 
@@ -145,7 +256,18 @@ func _build_hud() -> void:
 	hud.leave.connect(func() -> void: leave())
 	hud.backpack.connect(func() -> void:
 		Backpack.open(ui, func(_id: String, _i: int) -> bool: return _place_back(_id)))
+	hud.catalog.connect(func() -> void: CatalogPanel.open(ui, place_from_catalog))
+	hud.rooms.connect(func() -> void: RoomPicker.open(ui, self))
+	hud.decor.connect(func() -> void: DecorPanel.open(ui, self))
+	hud.show_room_buttons(room_ids().size() > 1, room != null and room.can_decorate())
+	Game.secret_found.connect(_on_secret_found)
 	camera.set_visible_height(room.camera_cfg.get("default_h_cm", 300.0))
+
+
+## P07-T10: Geheimnis gefunden → großer Sticker springt kurz auf (SecretToast).
+func _on_secret_found(id: String) -> void:
+	if ui != null and is_inside_tree():
+		SecretToast.show_for(ui, id)
 
 
 func _on_photo() -> void:
@@ -164,19 +286,75 @@ func _on_photo() -> void:
 func _place_back(id: String) -> bool:
 	var x: float = me.position.x + 70.0 if me != null else Areas.spawn_of(area_id).x
 	var y: float = me.position.y if me != null else Areas.spawn_of(area_id).y
-	var it: ItemNode = ItemSpawner.on_floor(room, StringName(id), x, y)
+	var it: ItemNode = ItemSpawner.place(room, StringName(id), x, y)
 	if it != null:
 		_on_world_changed()
 	return it != null
 
 
+## P04b-T09: Item aus dem Katalog in den freien Teil des Bildes stellen (links neben der Katalog-Leiste).
+## n = wievieltes Ding in dieser Katalog-Sitzung → leicht versetzt, damit nichts übereinander liegt.
+func place_from_catalog(id: String, n: int = 0) -> bool:
+	var x: float = Areas.spawn_of(area_id).x
+	if camera != null:
+		var vp_w: float = get_viewport().get_visible_rect().size.x
+		var view_w_cm: float = vp_w / maxf(camera.zoom.x, 0.001)
+		var free_frac: float = 1.0 - CatalogPanel.WIDTH_FRAC        # sichtbarer Teil links der Leiste
+		x = camera.get_screen_center_position().x - view_w_cm * 0.5 + view_w_cm * free_frac * 0.5
+		x += float((n % 5) - 2) * view_w_cm * free_frac * 0.16
+	var back: float = room.floor_band.back_y_cm if room.floor_band != null else 0.0
+	var front: float = room.floor_band.front_y_cm if room.floor_band != null else 80.0
+	var depth: float = lerpf(back, front, [0.55, 0.3, 0.8][n % 3])
+	var it: ItemNode = ItemSpawner.place(room, StringName(id), x, depth)   # Wand-Items hängen sich auf
+	if it == null:
+		return false
+	AudioBus.play_item_sfx(it.def, "drop")
+	_on_world_changed()
+	return true
+
+
+## Tippen: Tür → in einen anderen Raum (P07: „Wechsel über Türen"), sonst Zustand merken + Licht prüfen.
+func _on_item_tapped(it: ItemNode) -> void:
+	var id: String = String(it.def.id)
+	if AreaActions.on_tapped(self, it):                  # P09: Friseur, Seifenblasen, Bus
+		_on_world_changed()
+		return
+	if (id.begins_with("door_") or id.begins_with("garden_gate")) and room_ids().size() > 1 and ui != null:
+		RoomPicker.open(ui, self)
+	_on_world_changed()
+
+
+func _process(delta: float) -> void:
+	PlayMotion.tick(delta)                               # P09-T06: Schaukel, Karussell, Federwippe
+	IceActions.tick(self, delta)                         # P10f: Eismaschine, Disco-Licht
+	ZooActions.tick(self, delta)                         # P10g: Fütterung, Affen
+
+
 func _on_world_changed() -> void:
+	if room != null:
+		PlayMotion.refresh(room)
+		IceActions.refresh(room)
+		ZooActions.refresh(room)
+		RoomLight.apply(room, light_mod)
+		Secrets.check(String(area_id), room)
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
 	Game.mark_dirty(area_id, room.room_id)
 
 
 ## Ding auf den Rucksack-Knopf gezogen? → einpacken.
 func _on_item_dropped(item: ItemNode, _target) -> void:
+	if room != null and Garden.on_drop(room, item):      # P07-T07: gesät oder gegossen
+		_on_world_changed()
+		return
+	if room != null and AreaActions.on_dropped(self, item):  # P09: anziehen, rutschen, Sandform
+		_on_world_changed()
+		return
+	if room != null and NpcSpawner.item_dropped(room, item):   # P08: Kasse scannt, Ding kommt in die Tüte
+		_on_world_changed()
+		return
+	var host: Node = item.get_parent().get_parent() if item.get_parent() != null else null
+	if host is ItemNode:
+		Recipes.check(host as ItemNode)          # P04b-T10: Zutat ins (eingeschaltete) Gerät → kochen
 	if item is CharacterRig:
 		_on_world_changed()
 		return
@@ -189,6 +367,7 @@ func _on_item_dropped(item: ItemNode, _target) -> void:
 func leave() -> void:
 	Game.set_room_state(area_id, room.room_id, RoomSnapshot.capture(room))
 	Game.save_now()
+	AudioBus.play_ambience("")
 	left_area.emit()
 	SceneRouter.goto_map()
 

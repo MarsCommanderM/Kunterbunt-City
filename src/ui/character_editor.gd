@@ -7,7 +7,7 @@ extends Control
 signal finished(data: CharacterData)
 signal cancelled
 
-const TEMPLATES: Array = ["toddler", "kid", "adult"]
+const TEMPLATES: Array = ["toddler", "kid", "teen", "adult"]
 const CATS: Array = [
 	{"id": "template", "icon": "person", "label": "Größe"},
 	{"id": "skin", "icon": "hand", "label": "Haut"},
@@ -21,6 +21,8 @@ const CATS: Array = [
 	{"id": "aid", "icon": "heart", "label": "Hilfe"},
 ]
 
+const CAT_BTN: float = 104.0     ## 10 Kategorien × (104 + 8) passen in die rechte Spalte
+
 var data: CharacterData
 var mandatory: bool = false      ## true = Pflicht-Ablauf (kein Zurück, bevor die Figur fertig ist)
 var _slot: String = "top"
@@ -30,7 +32,7 @@ var _last_outfit: int = 0
 var _stage: FigureStage
 var _cat_row: HBoxContainer
 var _variants: GridContainer
-var _palette_row: HBoxContainer
+var _palette_row: HFlowContainer
 var _zone_row: HBoxContainer
 var _done: Button
 var _hint: Label
@@ -149,13 +151,11 @@ func _build_outfits() -> void:
 		c.queue_free()
 	for i: int in CharacterData.OUTFITS:
 		var b := Ui.tile(96.0)
-		b.text = str(i + 1)
-		b.add_theme_font_size_override("font_size", 30)
 		var filled: bool = not Dictionary(data.outfits[i]).is_empty()
 		Ui.mark_selected(b, filled and data.outfit == i)
-		if filled:
-			b.icon = Ui.tex("star")
-			b.expand_icon = true
+		b.icon = Ui.tex("shirt" if filled else "plus")        # leer = „hier ablegen“, voll = Outfit
+		b.expand_icon = true
+		b.modulate = Color.WHITE if filled else Color(1, 1, 1, 0.55)
 		Ui.wire(b, func() -> void: _outfit_tap(i))
 		_outfit_row.add_child(b)
 	var trash := Ui.button("", "trash", "ghost", Vector2(96, 96))
@@ -175,13 +175,13 @@ func _outfit_tap(i: int) -> void:
 func _right_column() -> Control:
 	var v := Ui.vbox(16)
 	v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	_cat_row = Ui.hbox(12)
-	_cat_row.custom_minimum_size = Vector2(0, 128)
+	_cat_row = Ui.hbox(8)
+	_cat_row.custom_minimum_size = Vector2(0, CAT_BTN + 8)
 	v.add_child(_cat_row)
 	_build_cats()
 	var card := Ui.card(Ui.RADIUS, Ui.CARD_SOFT)
 	card.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	card.custom_minimum_size = Vector2(0, 520)
+	card.custom_minimum_size = Vector2(0, 420)
 	v.add_child(card)
 	var sv := ScrollContainer.new()
 	sv.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 16)
@@ -190,7 +190,7 @@ func _right_column() -> Control:
 	_variants.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	sv.add_child(_variants)
 	var pal_card := Ui.card(Ui.RADIUS, Ui.CARD)
-	pal_card.custom_minimum_size = Vector2(0, 200)
+	pal_card.custom_minimum_size = Vector2(0, 290)
 	v.add_child(pal_card)
 	var pv := Ui.vbox(8)
 	pv.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 14)
@@ -198,8 +198,10 @@ func _right_column() -> Control:
 	_zone_row = Ui.hbox(12)
 	_zone_row.alignment = BoxContainer.ALIGNMENT_CENTER
 	pv.add_child(_zone_row)
-	_palette_row = Ui.hbox(14)
-	_palette_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	_palette_row = HFlowContainer.new()          # 18 Stofffarben brechen in zwei Reihen um
+	_palette_row.alignment = FlowContainer.ALIGNMENT_CENTER
+	_palette_row.add_theme_constant_override("h_separation", 12)
+	_palette_row.add_theme_constant_override("v_separation", 10)
 	pv.add_child(_palette_row)
 	return v
 
@@ -209,7 +211,7 @@ func _build_cats() -> void:
 		c.queue_free()
 	for cat: Variant in CATS:
 		var id: String = String((cat as Dictionary)["id"])
-		var b := Ui.button("", String((cat as Dictionary)["icon"]), "", Vector2(120, 116))
+		var b := Ui.button("", String((cat as Dictionary)["icon"]), "", Vector2(CAT_BTN, CAT_BTN))
 		Ui.mark_selected(b, id == _slot)
 		Ui.wire(b, func() -> void: select_category(id))
 		_cat_row.add_child(b)
@@ -223,47 +225,31 @@ func _build_variants() -> void:
 	if _slot == "template":
 		_build_templates()
 	elif _slot == "skin":
-		_variants.columns = 5
-		_build_swatches(CharacterParts.palette_colors("skin"), 150.0)
+		_variants.columns = 6
+		ColorDots.fill(_variants, CharacterParts.palette_colors("skin"), 140.0, data.skin, select_color)
 	else:
 		for id: Variant in CharacterParts.ids(_slot):
 			_variants.add_child(_part_tile(String(id)))
 
 
 func _build_templates() -> void:
-	_variants.columns = 3
+	_variants.columns = 4
 	for tid: Variant in TEMPLATES:
 		var t: Dictionary = CharacterTemplates.get_template(String(tid))
 		var cm: float = float(ItemDB.height_cm(String(t.get("scale_ref", "char_child"))))
-		var b := Ui.tile(240.0)
-		b.custom_minimum_size = Vector2(240, 300)
+		var b := Ui.tile(220.0)
+		b.custom_minimum_size = Vector2(220, 300)
 		var inner := Ui.vbox(6)
 		inner.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		inner.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 8)
 		b.add_child(inner)
-		var pic := Ui.icon("person", 150.0)
-		pic.custom_minimum_size = Vector2(200, 170)
+		var pic := Ui.icon("person", 60.0 + 110.0 * cm / 172.0)   # so groß wie die Schablone
+		pic.custom_minimum_size = Vector2(200, 60.0 + 110.0 * cm / 172.0)
+		pic.size_flags_vertical = Control.SIZE_SHRINK_END
 		inner.add_child(pic)
 		inner.add_child(Ui.label("%d cm" % int(cm), 34))
 		Ui.mark_selected(b, data.template_id == String(tid))
 		Ui.wire(b, func() -> void: select_template(String(tid)))
-		_variants.add_child(b)
-
-
-func _build_swatches(colors: Array, size: float) -> void:
-	for hex: Variant in colors:
-		var b := Ui.tile(size)
-		b.text = ""
-		var fill: Color = Color(String(hex))
-		b.add_theme_stylebox_override("normal", Ui.box(fill, Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 8))
-		b.add_theme_stylebox_override("hover", Ui.box(fill.lightened(0.08), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 12))
-		b.add_theme_stylebox_override("pressed", Ui.box(fill.darkened(0.12), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 2))
-		var cur: String = _current_color()
-		Ui.mark_selected(b, cur == String(hex))
-		Ui.wire(b, func() -> void: select_color(String(hex)))
 		_variants.add_child(b)
 
 
@@ -283,7 +269,8 @@ func _part_tile(id: String) -> Control:
 	for c: Variant in Array(data.colors.get(_slot, [])):
 		cols.append(Color(String(c)))
 	if cols.is_empty():
-		cols = [Color.WHITE]
+		for c: Variant in CharacterParts.default_colors(_slot, id):
+			cols.append(Color(String(c)))
 	CharacterLook.apply(pic, cols)
 	var box := Ui.vbox(4)
 	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -300,7 +287,7 @@ func _build_palette() -> void:
 		c.queue_free()
 	for c: Node in _zone_row.get_children():
 		c.queue_free()
-	if _slot == "template":
+	if _slot == "template" or _slot == "skin":       # Haut: die großen Punkte oben reichen
 		_palette_row.visible = false
 		_zone_row.visible = false
 		return
@@ -310,30 +297,15 @@ func _build_palette() -> void:
 	if _slot != "skin":
 		zones = clampi(CharacterParts.zones(_slot, String(data.parts.get(_slot, ""))), 1, 3)
 	if zones > 1:
+		var cur: Array = Array(data.colors.get(_slot, []))
 		for z: int in zones:
-			var b := Ui.button(str(z + 1), "", "ghost", Vector2(96, 72))
-			Ui.mark_selected(b, z == _zone)
-			Ui.wire(b, func() -> void:
-				_zone = z
-				_build_palette())
+			var hex: String = String(cur[z]) if z < cur.size() else "#ffffff"
+			var b := ColorDots.dot(hex, 64.0, z == _zone)       # „welche Farbe ändere ich?“ – ohne Zahl
+			var zz: int = z
+			Ui.wire(b, func() -> void: select_zone(zz))
 			_zone_row.add_child(b)
-	_build_swatches_in(_palette_row, CharacterParts.palette_colors(CharacterParts.group_for(_slot)), 96.0)
-
-
-func _build_swatches_in(row: HBoxContainer, colors: Array, size: float) -> void:
-	for hex: Variant in colors:
-		var b := Ui.tile(size)
-		var fill: Color = Color(String(hex))
-		b.add_theme_stylebox_override("normal", Ui.box(fill, Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 8))
-		b.add_theme_stylebox_override("hover", Ui.box(fill.lightened(0.08), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 12))
-		b.add_theme_stylebox_override("pressed", Ui.box(fill.darkened(0.12), Ui.RADIUS_SMALL,
-			Color(0, 0, 0, 0), 0, 2))
-		var cur: String = _current_color()
-		Ui.mark_selected(b, cur == String(hex))
-		Ui.wire(b, func() -> void: select_color(String(hex)))
-		row.add_child(b)
+	ColorDots.fill(_palette_row, CharacterParts.palette_colors(CharacterParts.group_for(_slot)), 78.0, _current_color(),
+		select_color)
 
 
 func _current_color() -> String:

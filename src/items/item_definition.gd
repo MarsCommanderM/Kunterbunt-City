@@ -5,7 +5,7 @@ extends Resource
 
 const PLACEHOLDER_DIR: String = "res://assets/placeholders/"
 const HOLD_TYPES: Array[String] = ["one_hand", "two_hands", "none"]
-const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
+const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat", "rug"]   ## rug: flach unter allem (P07)
 
 @export var id: StringName
 @export var scale_ref: String
@@ -35,10 +35,39 @@ const PLACEMENTS: Array[String] = ["floor", "table", "shelf", "wall", "seat"]
 @export var sfx: Dictionary = {}
 @export var source_file: String
 @export var uses_placeholder: bool = false
+@export var colors: PackedColorArray = []   ## P04b: Farbzonen (Sprite speichert Zonen-Gewichte) – leer = Sprite fertig bunt
+@export var catalog: String = ""            ## P04b: Katalog-Reiter (sofas, plants …) – leer = nicht im Katalog
+@export var state_sprites: Dictionary = {}  ## P04b-T10: Zustand → Sprite (auf, an …); Grundzustand = states[0] = sprite_path
+@export var anim: Dictionary = {}           ## P04b-T10: Zustand → Animation (shake, pulse, bounce)
 
 
 func is_stackable() -> bool:
 	return tags.has("stackable")
+
+
+## P07: Hängt an der Wand (Fenster, Tür, Vorhang, Poster) – Aufhängepunkt oben Mitte, fällt nicht herunter.
+func is_wall() -> bool:
+	return placement == "wall"
+
+
+## P07: Liegt flach auf dem Boden (Teppich, Läufer, Fußmatte) – immer unter allem, was darauf steht.
+func is_rug() -> bool:
+	return placement == "rug"
+
+
+## Zeichen-Ebene im Raum: Wand ganz hinten (−2), Teppiche darüber (−1), alles andere (0) nach Tiefe sortiert.
+func draw_layer() -> int:
+	return -2 if is_wall() else (-1 if is_rug() else 0)
+
+
+## Hat umschaltbare Zustände (Schrank auf/zu, Gerät an/aus)?
+func has_states() -> bool:
+	return states.size() >= 2
+
+
+## Inhalt ist immer sichtbar (Topf, Toaster, Waschmaschine) – nicht nur bei geöffnetem Deckel.
+func open_top() -> bool:
+	return tags.has("open_top")
 
 
 func is_container() -> bool:
@@ -109,6 +138,11 @@ static func from_dict(d: Dictionary, scale_entry: Dictionary, file: String, erro
 	var cont: Dictionary = d.get("container", {})
 	def.container_slots = int(cont.get("slots", 0))
 	def.container_max_item_h_cm = float(cont.get("max_item_h_cm", def.height_cm * 0.3))
+	for h: Variant in Array(d.get("colors", [])):
+		def.colors.append(Color(String(h)))
+	def.catalog = String(d.get("catalog", ""))
+	def.state_sprites = d.get("state_sprites", {}) if d.get("state_sprites") is Dictionary else {}
+	def.anim = d.get("anim", {}) if d.get("anim") is Dictionary else {}
 	def.sprite_path = String(d.get("sprite", ""))
 	if def.sprite_path.is_empty() or not ResourceLoader.exists(def.sprite_path):
 		def.uses_placeholder = true

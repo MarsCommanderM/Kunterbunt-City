@@ -17,11 +17,11 @@
 | P09-T10 | itch.io-Seite vorbereiten (Texte, Screenshots aus dem Spiel, Altersangabe, Datenschutz-Hinweis „sammelt keine Daten“) – Veröffentlichen macht 👤 |
 
 ## Akzeptanzkriterien
-- [ ] 3 Bereiche, ~435 Items, 0 Maßstab-Fehler
-- [ ] Web-Build läuft auf itch.io (Test-Upload als Entwurf) inkl. Speichern
+- [x] 3 Bereiche, ~435 Items, 0 Maßstab-Fehler – Zuhause (11 Räume), Einkaufsstraße (11), Spielplatz & Park (3); Katalog 2698 Items, Maßstab ✅
+- [ ] Web-Build läuft auf itch.io (Test-Upload als Entwurf) inkl. Speichern – lokal im Browser ✅ (`tools/dev/web_smoke.cjs`), Upload 👤
 - [ ] APK läuft auf einem Android-Tablet (👤)
 - [ ] 👤 Kindertest mit 3–5 Kindern, keine Blocker
-- [ ] `check.sh` grün
+- [x] `check.sh` grün
 
 ## 👤 Mensch
 itch.io-Account (kostenlos), Upload, APK auf dem Tablet testen, Kindertest.

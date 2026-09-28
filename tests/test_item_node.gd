@@ -67,3 +67,16 @@ func test_wall_items_have_no_shadow_and_containers_toggle() -> void:
 	var apple: ItemNode = _node(&"food_apple_red")
 	apple.set_open(true)
 	assert_false(apple.is_open, "kein Behälter → lässt sich nicht öffnen")
+
+
+## P11-Bot-Fund: Ding in der Hand einer nach links gespiegelten Figur – Rechteck nie negativ, trotzdem greifbar.
+func test_mirrored_item_has_a_positive_rect_and_can_be_hit() -> void:
+	var holder := Node2D.new()
+	holder.scale = Vector2(-1.0, 1.0)
+	add_child_autofree(holder)
+	var it: ItemNode = ItemNode.create(ItemDB.get_item(&"toy_ball_coral"))
+	holder.add_child(it)
+	var r: Rect2 = it.global_rect()
+	assert_gt(r.size.x, 0.0, "Breite positiv")
+	assert_true(it.hit_test(r.get_center(), 1.0), "Mitte trifft")
+	assert_false(it.hit_test(r.position + r.size * 3.0, 1.0), "weit daneben trifft nicht")

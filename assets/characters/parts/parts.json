@@ -7,584 +7,1500 @@
   },
   "arm_skin": {
    "anchor_cm": [
-    5.8,
-    58.8
+    4.65,
+    37.85
    ],
-   "h_cm": 59.6,
-   "note": "Haut \u00b7 Anker = Schulter",
-   "w_cm": 11.6
+   "h_cm": 44.25,
+   "note": "P04b \u00b7 arm_skin",
+   "w_cm": 9.25
   },
   "arm_sleeve": {
    "anchor_cm": [
-    5.8,
-    26.8
+    5.975,
+    17.525
    ],
-   "h_cm": 27.6,
-   "note": "Shirt \u00b7 Anker = Schulter",
-   "w_cm": 11.6
+   "h_cm": 24.875,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.875
   },
-  "face_eat_closed": {
+  "hair_back_afro": {
    "anchor_cm": [
-    18.0,
-    20.0
+    57.65,
+    85.5
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 105.125,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 115.25
   },
-  "face_eat_open": {
+  "hair_back_bald": {
    "anchor_cm": [
-    18.0,
-    20.0
+    0.275,
+    34.625
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
   },
-  "face_happy": {
+  "hair_back_bob": {
    "anchor_cm": [
-    18.0,
-    20.0
+    40.65,
+    65.625
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 66.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 81.25
   },
-  "face_laugh": {
+  "hair_back_braids": {
    "anchor_cm": [
-    18.0,
-    20.0
+    36.025,
+    38.5
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 38.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
   },
-  "face_love": {
+  "hair_back_bun": {
    "anchor_cm": [
-    18.0,
-    20.0
+    36.025,
+    38.5
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 52.75,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
   },
-  "face_sad": {
+  "hair_back_buzz": {
    "anchor_cm": [
-    18.0,
-    20.0
+    0.275,
+    34.625
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
   },
-  "face_surprised": {
+  "hair_back_curly": {
    "anchor_cm": [
-    18.0,
-    20.0
+    46.275,
+    75.25
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 84.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 92.5
   },
-  "face_tired": {
+  "hair_back_long": {
    "anchor_cm": [
-    18.0,
-    20.0
+    37.15,
+    91.125
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 36
+   "h_cm": 91.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 74.25
   },
   "hair_back_pigtails": {
    "anchor_cm": [
-    35.0,
-    41.6
+    52.525,
+    66.75
    ],
-   "h_cm": 41.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 69.99999999999999
+   "h_cm": 67.125,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 105.125
+  },
+  "hair_back_pixie": {
+   "anchor_cm": [
+    36.025,
+    38.5
+   ],
+   "h_cm": 38.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_ponytail": {
+   "anchor_cm": [
+    36.025,
+    66.75
+   ],
+   "h_cm": 67.125,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 85.875
   },
   "hair_back_short": {
    "anchor_cm": [
-    20.96,
-    37.6
+    36.025,
+    38.5
    ],
-   "h_cm": 37.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 41.92000000000001
+   "h_cm": 38.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_side_part": {
+   "anchor_cm": [
+    36.025,
+    38.5
+   ],
+   "h_cm": 38.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_space_buns": {
+   "anchor_cm": [
+    36.025,
+    38.5
+   ],
+   "h_cm": 47.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_spiky": {
+   "anchor_cm": [
+    36.025,
+    38.5
+   ],
+   "h_cm": 38.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_wavy": {
+   "anchor_cm": [
+    41.15,
+    91.125
+   ],
+   "h_cm": 91.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 82.375
+  },
+  "hair_front_afro": {
+   "anchor_cm": [
+    44.75,
+    37.375
+   ],
+   "h_cm": 46.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 89.5
+  },
+  "hair_front_bald": {
+   "anchor_cm": [
+    0.25,
+    34.625
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 0.5
+  },
+  "hair_front_bob": {
+   "anchor_cm": [
+    39.75,
+    63.5
+   ],
+   "h_cm": 64.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 79.5
+  },
+  "hair_front_braids": {
+   "anchor_cm": [
+    43.625,
+    90.375
+   ],
+   "h_cm": 90.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 87.25
+  },
+  "hair_front_bun": {
+   "anchor_cm": [
+    35.125,
+    36.75
+   ],
+   "h_cm": 37.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_buzz": {
+   "anchor_cm": [
+    33.625,
+    31.75
+   ],
+   "h_cm": 30.875,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 67.25
+  },
+  "hair_front_curly": {
+   "anchor_cm": [
+    37.5,
+    36.5
+   ],
+   "h_cm": 39.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_long": {
+   "anchor_cm": [
+    37.5,
+    76.75
+   ],
+   "h_cm": 77.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
   },
   "hair_front_pigtails": {
    "anchor_cm": [
-    20.8,
-    29.6
+    37.5,
+    34.75
    ],
-   "h_cm": 29.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 41.6
+   "h_cm": 35.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_pixie": {
+   "anchor_cm": [
+    36.0,
+    42.75
+   ],
+   "h_cm": 43.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_ponytail": {
+   "anchor_cm": [
+    35.125,
+    36.75
+   ],
+   "h_cm": 37.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
   },
   "hair_front_short": {
    "anchor_cm": [
-    20.8,
-    29.6
+    35.0,
+    33.75
    ],
-   "h_cm": 29.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 41.6
+   "h_cm": 34.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_side_part": {
+   "anchor_cm": [
+    36.0,
+    35.875
+   ],
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_space_buns": {
+   "anchor_cm": [
+    35.125,
+    36.75
+   ],
+   "h_cm": 37.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_spiky": {
+   "anchor_cm": [
+    35.0,
+    33.75
+   ],
+   "h_cm": 42.875,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_wavy": {
+   "anchor_cm": [
+    40.25,
+    78.75
+   ],
+   "h_cm": 79.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 80.5
   },
   "hand": {
    "anchor_cm": [
-    6.0,
-    6.0
+    5.225,
+    5.275
    ],
-   "h_cm": 12.0,
-   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
-   "w_cm": 12.0
+   "h_cm": 10.625,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 10.375
   },
   "hand_front": {
    "anchor_cm": [
-    6.0,
-    6.0
+    1.975,
+    3.65
    ],
-   "h_cm": 12.0,
-   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
-   "w_cm": 13.200000000000001
+   "h_cm": 7.25,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 7.25
   },
   "head": {
    "anchor_cm": [
-    21.68,
-    20.8
+    37.375,
+    30.85
    ],
-   "h_cm": 41.6,
-   "note": "Haut \u00b7 Anker = Kopfmitte",
-   "w_cm": 43.36
+   "h_cm": 61.75,
+   "note": "P04b \u00b7 head",
+   "w_cm": 74.75
   },
   "legs_sit": {
    "anchor_cm": [
-    17.3,
-    42.8
+    16.875,
+    41.875
    ],
-   "h_cm": 43.6,
-   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
-   "w_cm": 34.6
+   "h_cm": 45.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 33.75
   },
   "legs_stand": {
    "anchor_cm": [
-    17.3,
-    0
+    15.375,
+    -3.5
    ],
-   "h_cm": 92.8,
-   "note": "Hose \u00b7 Anker = Boden Mitte",
-   "w_cm": 34.6
+   "h_cm": 58.375,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
   },
   "shoes_stand": {
    "anchor_cm": [
-    18.8,
-    0.8
+    17.875,
+    0.375
    ],
-   "h_cm": 9.6,
-   "note": "Schuhe \u00b7 Anker = Boden Mitte",
-   "w_cm": 37.6
+   "h_cm": 12.875,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 35.75
   },
   "torso": {
    "anchor_cm": [
-    20.8,
-    0.8
+    16.875,
+    2.25
    ],
-   "h_cm": 45.6,
-   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
-   "w_cm": 41.6
+   "h_cm": 54.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 33.75
   }
  },
  "kid": {
   "_geometry": {
-   "shoe_h_cm": 7,
+   "shoe_h_cm": 7.5,
    "sit_drop_cm": 22.0,
-   "sit_thigh_cm": 8
+   "sit_thigh_cm": 7
   },
   "arm_skin": {
    "anchor_cm": [
-    5.05,
-    30.8
+    4.15,
+    20.85
    ],
-   "h_cm": 31.6,
-   "note": "Haut \u00b7 Anker = Schulter",
-   "w_cm": 10.1
+   "h_cm": 26.5,
+   "note": "P04b \u00b7 arm_skin",
+   "w_cm": 8.25
   },
   "arm_sleeve": {
    "anchor_cm": [
-    5.05,
-    13.8
+    5.225,
+    10.275
    ],
-   "h_cm": 14.6,
-   "note": "Shirt \u00b7 Anker = Schulter",
-   "w_cm": 10.1
+   "h_cm": 16.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 10.5
   },
-  "face_eat_closed": {
+  "hair_back_afro": {
    "anchor_cm": [
-    21.0,
-    21.0
+    57.65,
+    81.25
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 100.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 115.25
   },
-  "face_eat_open": {
+  "hair_back_bald": {
    "anchor_cm": [
-    21.0,
-    21.0
+    0.275,
+    33.0
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
   },
-  "face_happy": {
+  "hair_back_bob": {
    "anchor_cm": [
-    21.0,
-    21.0
+    40.65,
+    62.375
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 62.75,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 81.25
   },
-  "face_laugh": {
+  "hair_back_braids": {
    "anchor_cm": [
-    21.0,
-    21.0
+    36.025,
+    36.625
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
   },
-  "face_love": {
+  "hair_back_bun": {
    "anchor_cm": [
-    21.0,
-    21.0
+    36.025,
+    36.625
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 50.75,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
   },
-  "face_sad": {
+  "hair_back_buzz": {
    "anchor_cm": [
-    21.0,
-    21.0
+    0.275,
+    33.0
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
   },
-  "face_surprised": {
+  "hair_back_curly": {
    "anchor_cm": [
-    21.0,
-    21.0
+    46.275,
+    71.5
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 80.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 92.5
   },
-  "face_tired": {
+  "hair_back_long": {
    "anchor_cm": [
-    21.0,
-    21.0
+    37.15,
+    86.625
    ],
-   "h_cm": 42,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 42
+   "h_cm": 87.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 74.25
   },
   "hair_back_pigtails": {
    "anchor_cm": [
-    40.7,
-    43.6
+    52.525,
+    63.5
    ],
-   "h_cm": 43.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 81.39999999999999
+   "h_cm": 63.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 105.125
+  },
+  "hair_back_pixie": {
+   "anchor_cm": [
+    36.025,
+    36.625
+   ],
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_ponytail": {
+   "anchor_cm": [
+    36.025,
+    63.5
+   ],
+   "h_cm": 63.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 85.875
   },
   "hair_back_short": {
    "anchor_cm": [
-    24.32,
-    39.4
+    36.025,
+    36.625
    ],
-   "h_cm": 39.400000000000006,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 48.64000000000001
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_side_part": {
+   "anchor_cm": [
+    36.025,
+    36.625
+   ],
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_space_buns": {
+   "anchor_cm": [
+    36.025,
+    36.625
+   ],
+   "h_cm": 46.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_spiky": {
+   "anchor_cm": [
+    36.025,
+    36.625
+   ],
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_wavy": {
+   "anchor_cm": [
+    41.15,
+    86.625
+   ],
+   "h_cm": 87.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 82.375
+  },
+  "hair_front_afro": {
+   "anchor_cm": [
+    44.75,
+    35.625
+   ],
+   "h_cm": 44.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 89.5
+  },
+  "hair_front_bald": {
+   "anchor_cm": [
+    0.25,
+    32.875
+   ],
+   "h_cm": 0.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 0.5
+  },
+  "hair_front_bob": {
+   "anchor_cm": [
+    39.75,
+    60.375
+   ],
+   "h_cm": 61.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 79.5
+  },
+  "hair_front_braids": {
+   "anchor_cm": [
+    43.625,
+    87.125
+   ],
+   "h_cm": 87.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 87.25
+  },
+  "hair_front_bun": {
+   "anchor_cm": [
+    35.125,
+    35.0
+   ],
+   "h_cm": 35.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_buzz": {
+   "anchor_cm": [
+    33.625,
+    30.125
+   ],
+   "h_cm": 29.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 67.25
+  },
+  "hair_front_curly": {
+   "anchor_cm": [
+    37.5,
+    34.75
+   ],
+   "h_cm": 37.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_long": {
+   "anchor_cm": [
+    37.5,
+    72.875
+   ],
+   "h_cm": 73.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
   },
   "hair_front_pigtails": {
    "anchor_cm": [
-    23.8,
-    29.84
+    37.5,
+    33.0
    ],
-   "h_cm": 29.84,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 47.6
+   "h_cm": 33.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_pixie": {
+   "anchor_cm": [
+    36.0,
+    40.75
+   ],
+   "h_cm": 41.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_ponytail": {
+   "anchor_cm": [
+    35.125,
+    35.0
+   ],
+   "h_cm": 35.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
   },
   "hair_front_short": {
    "anchor_cm": [
-    23.8,
-    29.84
+    35.0,
+    32.125
    ],
-   "h_cm": 29.84,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 47.6
+   "h_cm": 33.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_side_part": {
+   "anchor_cm": [
+    36.0,
+    34.125
+   ],
+   "h_cm": 35.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_space_buns": {
+   "anchor_cm": [
+    35.125,
+    35.0
+   ],
+   "h_cm": 35.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_spiky": {
+   "anchor_cm": [
+    35.0,
+    32.125
+   ],
+   "h_cm": 40.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_wavy": {
+   "anchor_cm": [
+    40.25,
+    74.875
+   ],
+   "h_cm": 75.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 80.5
   },
   "hand": {
    "anchor_cm": [
-    5.4,
-    5.4
+    4.65,
+    4.725
    ],
-   "h_cm": 10.799999999999999,
-   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
-   "w_cm": 10.799999999999999
+   "h_cm": 9.375,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 9.25
   },
   "hand_front": {
    "anchor_cm": [
-    5.4,
-    5.4
+    1.775,
+    3.225
    ],
-   "h_cm": 10.799999999999999,
-   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
-   "w_cm": 11.879999999999999
+   "h_cm": 6.5,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 6.375
   },
   "head": {
    "anchor_cm": [
-    25.16,
-    21.8
+    37.375,
+    29.425
    ],
-   "h_cm": 43.6,
-   "note": "Haut \u00b7 Anker = Kopfmitte",
-   "w_cm": 50.32
+   "h_cm": 58.875,
+   "note": "P04b \u00b7 head",
+   "w_cm": 74.75
   },
   "legs_sit": {
    "anchor_cm": [
-    13.8,
-    22.8
+    15.375,
+    21.875
    ],
-   "h_cm": 23.6,
-   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
-   "w_cm": 27.6
+   "h_cm": 25.75,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 30.75
   },
   "legs_stand": {
    "anchor_cm": [
-    13.8,
-    0
+    13.875,
+    -3.25
    ],
-   "h_cm": 52.8,
-   "note": "Hose \u00b7 Anker = Boden Mitte",
-   "w_cm": 27.6
+   "h_cm": 38.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
   },
   "shoes_stand": {
    "anchor_cm": [
-    15.8,
-    0.8
+    15.25,
+    0.406
    ],
-   "h_cm": 8.6,
-   "note": "Schuhe \u00b7 Anker = Boden Mitte",
-   "w_cm": 31.6
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 30.5
   },
   "torso": {
    "anchor_cm": [
-    16.3,
-    0.8
+    14.375,
+    2.25
    ],
-   "h_cm": 33.6,
-   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
-   "w_cm": 32.6
+   "h_cm": 30.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 28.75
+  }
+ },
+ "teen": {
+  "_geometry": {
+   "shoe_h_cm": 7.5,
+   "sit_drop_cm": 32.0,
+   "sit_thigh_cm": 9
+  },
+  "arm_skin": {
+   "anchor_cm": [
+    4.3,
+    30.95
+   ],
+   "h_cm": 37.0,
+   "note": "P04b \u00b7 arm_skin",
+   "w_cm": 8.625
+  },
+  "arm_sleeve": {
+   "anchor_cm": [
+    5.575,
+    14.55
+   ],
+   "h_cm": 21.375,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 11.125
+  },
+  "hair_back_afro": {
+   "anchor_cm": [
+    57.65,
+    82.625
+   ],
+   "h_cm": 101.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 115.25
+  },
+  "hair_back_bald": {
+   "anchor_cm": [
+    0.275,
+    33.5
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
+  },
+  "hair_back_bob": {
+   "anchor_cm": [
+    40.65,
+    63.5
+   ],
+   "h_cm": 63.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 81.25
+  },
+  "hair_back_braids": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_bun": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 51.375,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_buzz": {
+   "anchor_cm": [
+    0.275,
+    33.5
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.5
+  },
+  "hair_back_curly": {
+   "anchor_cm": [
+    46.275,
+    72.75
+   ],
+   "h_cm": 81.875,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 92.5
+  },
+  "hair_back_long": {
+   "anchor_cm": [
+    37.15,
+    88.125
+   ],
+   "h_cm": 88.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 74.25
+  },
+  "hair_back_pigtails": {
+   "anchor_cm": [
+    52.525,
+    64.625
+   ],
+   "h_cm": 65.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 105.125
+  },
+  "hair_back_pixie": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_ponytail": {
+   "anchor_cm": [
+    36.025,
+    64.625
+   ],
+   "h_cm": 65.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 85.875
+  },
+  "hair_back_short": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_side_part": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_space_buns": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 46.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_spiky": {
+   "anchor_cm": [
+    36.025,
+    37.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_back_wavy": {
+   "anchor_cm": [
+    41.15,
+    88.125
+   ],
+   "h_cm": 88.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 82.375
+  },
+  "hair_front_afro": {
+   "anchor_cm": [
+    44.75,
+    36.25
+   ],
+   "h_cm": 45.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 89.5
+  },
+  "hair_front_bald": {
+   "anchor_cm": [
+    0.25,
+    33.5
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 0.5
+  },
+  "hair_front_bob": {
+   "anchor_cm": [
+    39.75,
+    61.375
+   ],
+   "h_cm": 62.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 79.5
+  },
+  "hair_front_braids": {
+   "anchor_cm": [
+    43.625,
+    88.25
+   ],
+   "h_cm": 88.625,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 87.25
+  },
+  "hair_front_bun": {
+   "anchor_cm": [
+    35.125,
+    35.625
+   ],
+   "h_cm": 36.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_buzz": {
+   "anchor_cm": [
+    33.625,
+    30.75
+   ],
+   "h_cm": 29.875,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 67.25
+  },
+  "hair_front_curly": {
+   "anchor_cm": [
+    37.5,
+    35.25
+   ],
+   "h_cm": 37.625,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_long": {
+   "anchor_cm": [
+    37.5,
+    74.25
+   ],
+   "h_cm": 74.625,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_pigtails": {
+   "anchor_cm": [
+    37.5,
+    33.625
+   ],
+   "h_cm": 34.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 75.0
+  },
+  "hair_front_pixie": {
+   "anchor_cm": [
+    36.0,
+    41.375
+   ],
+   "h_cm": 42.375,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_ponytail": {
+   "anchor_cm": [
+    35.125,
+    35.625
+   ],
+   "h_cm": 36.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_short": {
+   "anchor_cm": [
+    35.0,
+    32.75
+   ],
+   "h_cm": 33.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_side_part": {
+   "anchor_cm": [
+    36.0,
+    34.75
+   ],
+   "h_cm": 35.875,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 72.25
+  },
+  "hair_front_space_buns": {
+   "anchor_cm": [
+    35.125,
+    35.625
+   ],
+   "h_cm": 36.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.25
+  },
+  "hair_front_spiky": {
+   "anchor_cm": [
+    35.0,
+    32.75
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.625
+  },
+  "hair_front_wavy": {
+   "anchor_cm": [
+    40.25,
+    76.25
+   ],
+   "h_cm": 76.625,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 80.5
+  },
+  "hand": {
+   "anchor_cm": [
+    4.875,
+    5.0
+   ],
+   "h_cm": 10.0,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 9.75
+  },
+  "hand_front": {
+   "anchor_cm": [
+    1.875,
+    3.375
+   ],
+   "h_cm": 6.75,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 6.875
+  },
+  "head": {
+   "anchor_cm": [
+    37.375,
+    29.855
+   ],
+   "h_cm": 59.75,
+   "note": "P04b \u00b7 head",
+   "w_cm": 74.75
+  },
+  "legs_sit": {
+   "anchor_cm": [
+    15.875,
+    31.75
+   ],
+   "h_cm": 35.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 31.75
+  },
+  "legs_stand": {
+   "anchor_cm": [
+    14.375,
+    -3.25
+   ],
+   "h_cm": 56.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 28.75
+  },
+  "shoes_stand": {
+   "anchor_cm": [
+    16.875,
+    0.406
+   ],
+   "h_cm": 12.25,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 33.75
+  },
+  "torso": {
+   "anchor_cm": [
+    15.375,
+    2.25
+   ],
+   "h_cm": 41.625,
+   "note": "P04b \u00b7 top",
+   "w_cm": 30.75
   }
  },
  "toddler": {
   "_geometry": {
-   "shoe_h_cm": 5,
+   "shoe_h_cm": 6,
    "sit_drop_cm": 14.0,
-   "sit_thigh_cm": 6
+   "sit_thigh_cm": 5
   },
   "arm_skin": {
    "anchor_cm": [
-    4.55,
-    20.8
+    3.8,
+    14.95
    ],
-   "h_cm": 21.6,
-   "note": "Haut \u00b7 Anker = Schulter",
-   "w_cm": 9.1
+   "h_cm": 20.25,
+   "note": "P04b \u00b7 arm_skin",
+   "w_cm": 7.625
   },
   "arm_sleeve": {
    "anchor_cm": [
-    4.55,
-    9.8
+    4.825,
+    7.8
    ],
-   "h_cm": 10.6,
-   "note": "Shirt \u00b7 Anker = Schulter",
-   "w_cm": 9.1
+   "h_cm": 13.75,
+   "note": "P04b \u00b7 sleeve",
+   "w_cm": 9.625
   },
-  "face_eat_closed": {
+  "hair_back_afro": {
    "anchor_cm": [
-    20.0,
-    20.0
+    50.3,
+    71.5
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 88.0,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 100.625
   },
-  "face_eat_open": {
+  "hair_back_bald": {
    "anchor_cm": [
-    20.0,
-    20.0
+    0.175,
+    29.0
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.375
   },
-  "face_happy": {
+  "hair_back_bob": {
    "anchor_cm": [
-    20.0,
-    20.0
+    35.55,
+    55.0
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 55.375,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 71.125
   },
-  "face_laugh": {
+  "hair_back_braids": {
    "anchor_cm": [
-    20.0,
-    20.0
+    31.425,
+    32.25
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
   },
-  "face_love": {
+  "hair_back_bun": {
    "anchor_cm": [
-    20.0,
-    20.0
+    31.425,
+    32.25
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 44.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
   },
-  "face_sad": {
+  "hair_back_buzz": {
    "anchor_cm": [
-    20.0,
-    20.0
+    0.175,
+    29.0
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 0.375
   },
-  "face_surprised": {
+  "hair_back_curly": {
    "anchor_cm": [
-    20.0,
-    20.0
+    40.425,
+    62.875
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 70.75,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 80.875
   },
-  "face_tired": {
+  "hair_back_long": {
    "anchor_cm": [
-    20.0,
-    20.0
+    32.425,
+    76.125
    ],
-   "h_cm": 40,
-   "note": "fertig farbig \u00b7 Anker = Kopfmitte",
-   "w_cm": 40
+   "h_cm": 76.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 64.875
   },
   "hair_back_pigtails": {
    "anchor_cm": [
-    38.8,
-    41.6
+    45.925,
+    55.875
    ],
-   "h_cm": 41.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 77.6
+   "h_cm": 56.25,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 91.75
+  },
+  "hair_back_pixie": {
+   "anchor_cm": [
+    31.425,
+    32.25
+   ],
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
+  },
+  "hair_back_ponytail": {
+   "anchor_cm": [
+    31.425,
+    55.875
+   ],
+   "h_cm": 56.25,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 75.0
   },
   "hair_back_short": {
    "anchor_cm": [
-    23.2,
-    37.6
+    31.425,
+    32.25
    ],
-   "h_cm": 37.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 46.400000000000006
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
+  },
+  "hair_back_side_part": {
+   "anchor_cm": [
+    31.425,
+    32.25
+   ],
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
+  },
+  "hair_back_space_buns": {
+   "anchor_cm": [
+    31.425,
+    32.25
+   ],
+   "h_cm": 40.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
+  },
+  "hair_back_spiky": {
+   "anchor_cm": [
+    31.425,
+    32.25
+   ],
+   "h_cm": 32.625,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 62.875
+  },
+  "hair_back_wavy": {
+   "anchor_cm": [
+    36.05,
+    76.125
+   ],
+   "h_cm": 76.5,
+   "note": "P04b \u00b7 hair_back",
+   "w_cm": 72.0
+  },
+  "hair_front_afro": {
+   "anchor_cm": [
+    39.125,
+    31.375
+   ],
+   "h_cm": 39.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 78.25
+  },
+  "hair_front_bald": {
+   "anchor_cm": [
+    0.25,
+    29.0
+   ],
+   "h_cm": 0.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 0.5
+  },
+  "hair_front_bob": {
+   "anchor_cm": [
+    34.625,
+    53.125
+   ],
+   "h_cm": 54.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 69.25
+  },
+  "hair_front_braids": {
+   "anchor_cm": [
+    38.125,
+    76.625
+   ],
+   "h_cm": 77.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 76.25
+  },
+  "hair_front_bun": {
+   "anchor_cm": [
+    30.75,
+    30.875
+   ],
+   "h_cm": 31.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 61.5
+  },
+  "hair_front_buzz": {
+   "anchor_cm": [
+    29.375,
+    26.625
+   ],
+   "h_cm": 26.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 58.75
+  },
+  "hair_front_curly": {
+   "anchor_cm": [
+    32.75,
+    30.625
+   ],
+   "h_cm": 32.75,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 65.5
+  },
+  "hair_front_long": {
+   "anchor_cm": [
+    32.75,
+    64.125
+   ],
+   "h_cm": 64.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 65.5
   },
   "hair_front_pigtails": {
    "anchor_cm": [
-    22.8,
-    28.6
+    32.75,
+    29.125
    ],
-   "h_cm": 28.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 45.6
+   "h_cm": 29.5,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 65.5
+  },
+  "hair_front_pixie": {
+   "anchor_cm": [
+    31.375,
+    35.875
+   ],
+   "h_cm": 36.875,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 63.125
+  },
+  "hair_front_ponytail": {
+   "anchor_cm": [
+    30.75,
+    30.875
+   ],
+   "h_cm": 31.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 61.5
   },
   "hair_front_short": {
    "anchor_cm": [
-    22.8,
-    28.6
+    30.625,
+    28.375
    ],
-   "h_cm": 28.6,
-   "note": "Haare \u00b7 Anker = oben Mitte (= hair_top)",
-   "w_cm": 45.6
+   "h_cm": 29.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 61.75
+  },
+  "hair_front_side_part": {
+   "anchor_cm": [
+    31.5,
+    30.125
+   ],
+   "h_cm": 31.125,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 63.25
+  },
+  "hair_front_space_buns": {
+   "anchor_cm": [
+    30.75,
+    30.875
+   ],
+   "h_cm": 31.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 61.5
+  },
+  "hair_front_spiky": {
+   "anchor_cm": [
+    30.625,
+    28.375
+   ],
+   "h_cm": 36.0,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 61.75
+  },
+  "hair_front_wavy": {
+   "anchor_cm": [
+    35.25,
+    65.875
+   ],
+   "h_cm": 66.25,
+   "note": "P04b \u00b7 hair_front",
+   "w_cm": 70.5
   },
   "hand": {
    "anchor_cm": [
-    4.8,
-    4.8
+    4.225,
+    4.275
    ],
-   "h_cm": 9.6,
-   "note": "Haut \u00b7 Anker = Griffpunkt (Handmitte)",
-   "w_cm": 9.6
+   "h_cm": 8.5,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 8.375
   },
   "hand_front": {
    "anchor_cm": [
-    4.8,
-    4.8
+    1.725,
+    3.025
    ],
-   "h_cm": 9.6,
-   "note": "Haut \u00b7 Finger \u00dcBER dem Item \u00b7 Anker = Griffpunkt",
-   "w_cm": 10.56
+   "h_cm": 6.0,
+   "note": "P04b \u00b7 hand",
+   "w_cm": 6.0
   },
   "head": {
    "anchor_cm": [
-    24.0,
-    20.8
+    32.75,
+    25.875
    ],
-   "h_cm": 41.6,
-   "note": "Haut \u00b7 Anker = Kopfmitte",
-   "w_cm": 48.0
+   "h_cm": 51.75,
+   "note": "P04b \u00b7 head",
+   "w_cm": 65.5
   },
   "legs_sit": {
    "anchor_cm": [
-    12.8,
-    14.8
+    13.875,
+    13.75
    ],
-   "h_cm": 15.6,
-   "note": "Hose \u00b7 Anker = H\u00fcfte (Knie auf Sitzh\u00f6he)",
-   "w_cm": 25.6
+   "h_cm": 17.625,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 27.75
   },
   "legs_stand": {
    "anchor_cm": [
-    12.8,
-    0
+    12.375,
+    -2.375
    ],
-   "h_cm": 32.8,
-   "note": "Hose \u00b7 Anker = Boden Mitte",
-   "w_cm": 25.6
+   "h_cm": 21.5,
+   "note": "P04b \u00b7 bottom",
+   "w_cm": 24.75
   },
   "shoes_stand": {
    "anchor_cm": [
-    14.55,
-    0.8
+    13.125,
+    0.375
    ],
-   "h_cm": 6.6,
-   "note": "Schuhe \u00b7 Anker = Boden Mitte",
-   "w_cm": 29.1
+   "h_cm": 10.125,
+   "note": "P04b \u00b7 shoes",
+   "w_cm": 26.25
   },
   "torso": {
    "anchor_cm": [
-    14.8,
-    0.8
+    12.875,
+    2.25
    ],
-   "h_cm": 23.6,
-   "note": "Shirt \u00b7 Anker = unten Mitte (H\u00fcfth\u00f6he torso.bot)",
-   "w_cm": 29.6
+   "h_cm": 21.125,
+   "note": "P04b \u00b7 top",
+   "w_cm": 25.75
   }
  }
 }

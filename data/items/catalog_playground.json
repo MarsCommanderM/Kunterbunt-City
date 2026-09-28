@@ -1,0 +1,241 @@
+{
+ "area": "catalog",
+ "room": "playground",
+ "note": "erzeugt von tools/make_items.py – nicht von Hand ändern",
+ "items": [
+  {
+   "id": "play_slide_coral",
+   "scale_ref": "c_play_slide",
+   "size_cm": [
+    191.5,
+    183.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_slide_sky",
+   "scale_ref": "c_play_slide",
+   "size_cm": [
+    191.5,
+    183.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_slide_butter",
+   "scale_ref": "c_play_slide",
+   "size_cm": [
+    191.5,
+    183.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_swing_coral",
+   "scale_ref": "c_play_swing",
+   "size_cm": [
+    163.1,
+    203.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_swing_sky",
+   "scale_ref": "c_play_swing",
+   "size_cm": [
+    163.1,
+    203.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_swing_mint",
+   "scale_ref": "c_play_swing",
+   "size_cm": [
+    163.1,
+    203.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_swing.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_seesaw_butter",
+   "scale_ref": "c_play_seesaw",
+   "size_cm": [
+    251.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_seesaw.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_seesaw_coral",
+   "scale_ref": "c_play_seesaw",
+   "size_cm": [
+    251.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_seesaw.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_seesaw_sky",
+   "scale_ref": "c_play_seesaw",
+   "size_cm": [
+    251.5,
+    71.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_seesaw.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "playground"
+  },
+  {
+   "id": "play_sandpit_butter",
+   "scale_ref": "c_play_sandpit",
+   "size_cm": [
+    187.4,
+    33.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/play_sandpit.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#d4a86e"
+   ],
+   "catalog": "playground",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  }
+ ]
+}

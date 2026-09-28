@@ -2,7 +2,7 @@
 
   * alle Bilder sind echte Rollen (Größe, Kontrast, Farben)
   * `p04_02_schablonen_groessen.jpg`: die 3 Schablonen stehen im Verhältnis 90 : 125 : 172
-  * `p04_03_farbzonen.jpg`: jede Figur trägt IHRE Palettenfarbe (Zonen-Shader, P04-T04)
+  * `p04_03_farbzonen.jpg`: jede Figur trägt IHRE Prüffarbe (Zonen-Shader, P04-T04)
 """
 import json
 import math
@@ -14,6 +14,10 @@ ROOT = Path(__file__).resolve().parents[2]
 SHOTS = ROOT / "docs" / "tests" / "P04"
 NAMES = ["p04_01_teile_katalog.jpg", "p04_02_schablonen_groessen.jpg", "p04_03_farbzonen.jpg"]
 BG = (255, 247, 236)          # Hintergrund der Lookbook-Szene
+# Prüffarben für das Farbzonen-Bild – gleiche Liste wie tools/godot/p04_lookbook.gd (PROOF_COLORS).
+# Bewusst feste, klar verschiedene Farben: geprüft wird der Zonen-Shader, nicht die (wachsende) Palette.
+PROOF_COLORS = ["#f4f1ea", "#ffd166", "#ff9f45", "#ef6f6c", "#c1547a", "#7a5ea8", "#4f7fc0", "#48b0a0", "#7cb342",
+                "#a1887f"]
 
 Image = pytest.importorskip("PIL.Image", reason="Pillow fehlt")
 
@@ -62,7 +66,7 @@ def test_farbzonen_faerben_jede_figur_eigen():
     im = _load("p04_03_farbzonen.jpg")
     w, _ = im.size
     px = im.load()
-    pal = json.loads((ROOT / "data" / "character_parts" / "palette.json").read_text(encoding="utf-8"))["cloth"]["colors"]
+    pal = PROOF_COLORS
 
     def vec(hex_col):
         return [int(hex_col[i:i + 2], 16) / 255 for i in (1, 3, 5)]
@@ -71,12 +75,22 @@ def test_farbzonen_faerben_jede_figur_eigen():
         n = math.sqrt(sum(x * x for x in a)) * math.sqrt(sum(x * x for x in b))
         return sum(x * y for x, y in zip(a, b)) / n
 
+    # Aufbau wie tools/godot/p04_lookbook.gd::_farbzonen: n Figuren im Abstand 70 cm, Füße bei y = 95 cm,
+    # Kamera in der Mitte, Zoom = min(Breite / (n·70 + 40), Höhe / 210). Oberteil-Band aus der Schablone.
+    n_fig = len(pal)
+    h_img = im.size[1]
+    zoom = min(w / (n_fig * 70.0 + 40.0), h_img / 210.0)
+    kid = json.loads((ROOT / "data" / "characters" / "templates.json").read_text(encoding="utf-8"))["templates"]["kid"]
+    to = kid["torso"]
+    y0 = int(h_img / 2 + (95.0 - to["top"] + (to["top"] - to["bot"]) * 0.25) * zoom)
+    y1 = int(h_img / 2 + (95.0 - to["bot"] - (to["top"] - to["bot"]) * 0.2) * zoom)
+    half = max(2, int(to["w_top"] * 0.25 * zoom))
     means, hits = [], 0
-    for i in range(len(pal)):
-        cx = int((-315 + i * 70 + 370) / 740 * w)                       # Figuren-Mitte
+    for i in range(n_fig):
+        cx = int(w / 2 + (-(n_fig - 1) * 35.0 + i * 70.0) * zoom)          # Figuren-Mitte
         acc, n = [0.0, 0.0, 0.0], 0
-        for x in range(cx - 25, cx + 26):
-            for y in range(575, 665):                                  # Oberteil-Band
+        for x in range(cx - half, cx + half + 1):
+            for y in range(y0, y1):                                        # Oberteil-Band
                 p = px[x, y]
                 acc = [a + b / 255 for a, b in zip(acc, p)]
                 n += 1

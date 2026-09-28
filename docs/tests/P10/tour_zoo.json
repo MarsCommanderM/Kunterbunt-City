@@ -1,0 +1,16 @@
+{
+  "zoo": {
+    "ladezeit_ms": 339.0,
+    "raeume": [
+      "entrance:10/2",
+      "savanna:16/2",
+      "monkeys:10/0",
+      "elephants:7/0",
+      "penguins:8/0",
+      "reptiles:8/0",
+      "aquarium:7/0",
+      "petting:18/1",
+      "nursery:10/1"
+    ]
+  }
+}

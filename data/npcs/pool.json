@@ -1,0 +1,41 @@
+{
+ "_doc": "Feste Figuren im Freizeitbad (P10c). Erzeugt von tools/make_areas.py.",
+ "area": "pool",
+ "npcs": [
+  {
+   "id": "npc_cashier_entrance",
+   "role": "cashier",
+   "room": "entrance",
+   "x_cm": 260,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_lifeguard_hall",
+   "role": "lifeguard",
+   "room": "hall",
+   "x_cm": 900,
+   "y_cm": 60
+  },
+  {
+   "id": "npc_swim_teacher_babies",
+   "role": "swim_teacher",
+   "room": "babies",
+   "x_cm": 560,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_lifeguard_outside",
+   "role": "lifeguard",
+   "room": "outside",
+   "x_cm": 1100,
+   "y_cm": 62
+  },
+  {
+   "id": "npc_vendor_lawn",
+   "role": "vendor",
+   "room": "lawn",
+   "x_cm": 400,
+   "y_cm": 2
+  }
+ ]
+}

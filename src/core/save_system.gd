@@ -3,7 +3,7 @@ extends Node
 ## (Tech-Spec §3.5, P05-T07/T08). Dateien unter user://, versioniert, MIT Migrationen.
 ## Alles JSON, kein Netz (Regel T12). Drei Welt-Slots.
 
-const SAVE_VERSION: int = 2
+const SAVE_VERSION: int = 4
 const SLOTS: int = 3
 const WORLD_PATH: String = "user://world_%d.json"
 const LEGACY_CHARACTERS: String = "user://characters.json"
@@ -16,6 +16,8 @@ static var _migrations: Dictionary = {}
 
 static func _static_init() -> void:
 	_migrations[1] = _migrate_v1_to_v2
+	_migrations[2] = _migrate_v2_to_v3
+	_migrations[3] = _migrate_v3_to_v4
 
 
 ## Version 1 (Phase 04) kannte nur Figuren und Tiere. Version 2 ergänzt Bereiche, Rucksack,
@@ -33,24 +35,74 @@ static func _migrate_v1_to_v2(old: Dictionary) -> Dictionary:
 	return d
 
 
+## Version 3 (P07): Zuhause hat mehrere Räume – je Raum Tapete/Boden (`decor`) und der zuletzt besuchte Raum
+## (`last_room`). Bestehende Raumzustände bleiben unverändert (die Küche heißt weiter `kitchen`).
+static func _migrate_v2_to_v3(old: Dictionary) -> Dictionary:
+	var d: Dictionary = old.duplicate(true)
+	d["decor"] = Dictionary(d.get("decor", {})).duplicate(true)
+	d["last_room"] = Dictionary(d.get("last_room", {})).duplicate(true)
+	d["save_version"] = 3
+	Log.info("SaveSystem: Speicherstand v2 → v3 gewandert (%d Bereiche mit Zustand)" % [
+		Dictionary(d.get("areas", {})).size()])
+	return d
+
+
+## Version 4 (P07-T10): gefundene Geheimnisse (Sticker im Album). Alles andere bleibt.
+static func _migrate_v3_to_v4(old: Dictionary) -> Dictionary:
+	var d: Dictionary = old.duplicate(true)
+	d["secrets"] = Array(d.get("secrets", [])).duplicate(true)
+	d["save_version"] = 4
+	Log.info("SaveSystem: Speicherstand v3 → v4 gewandert")
+	return d
+
+
+## P11-T04: Erst in eine .tmp-Datei schreiben, dann rotieren: .bak2 ← .bak1 ← aktuelle Datei ← .tmp.
+## Ein Absturz mitten im Schreiben zerstört so nie den letzten guten Stand.
+const BACKUPS: int = 2
+
+
 static func _write(path: String, payload: Dictionary) -> bool:
 	payload["save_version"] = SAVE_VERSION
-	var f := FileAccess.open(path, FileAccess.WRITE)
+	var tmp: String = path + ".tmp"
+	var f := FileAccess.open(tmp, FileAccess.WRITE)
 	if f == null:
 		Log.warn("Speichern fehlgeschlagen: %s" % path)
 		return false
 	f.store_string(JSON.stringify(payload))
 	f.close()
-	return true
+	for i: int in range(BACKUPS, 0, -1):
+		var older: String = backup_path(path, i)
+		var newer: String = path if i == 1 else backup_path(path, i - 1)
+		if FileAccess.file_exists(newer):
+			if FileAccess.file_exists(older):
+				DirAccess.remove_absolute(older)
+			DirAccess.rename_absolute(newer, older)
+	return DirAccess.rename_absolute(tmp, path) == OK
 
 
+static func backup_path(path: String, i: int) -> String:
+	return "%s.bak%d" % [path, i]
+
+
+## Lesen mit Rettung: kaputte oder fehlende Datei → erste lesbare Sicherung (.bak1, dann .bak2).
 static func _read(path: String) -> Dictionary:
+	for i: int in BACKUPS + 1:
+		var p: String = path if i == 0 else backup_path(path, i)
+		var d: Dictionary = _read_one(p)
+		if not d.is_empty():
+			if i > 0:
+				Log.warn("SaveSystem: %s war kaputt – Sicherung %d geladen" % [path, i])
+			return d
+	return {}
+
+
+static func _read_one(path: String) -> Dictionary:
 	if not FileAccess.file_exists(path):
 		return {}
-	var d: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
-	if not d is Dictionary:
+	var j := JSON.new()                               # still: kaputte Datei ist ein erwarteter Fall (Sicherung)
+	if j.parse(FileAccess.get_file_as_string(path)) != OK or not j.data is Dictionary:
 		return {}
-	var data: Dictionary = d
+	var data: Dictionary = j.data
 	var v: int = int(data.get("save_version", 1))
 	while v < SAVE_VERSION and _migrations.has(v):
 		data = (_migrations[v] as Callable).call(data)
@@ -67,7 +119,7 @@ static func empty_world(slot: int = 0) -> Dictionary:
 	return {
 		"save_version": SAVE_VERSION, "slot": slot,
 		"characters": [], "pets": [], "active_id": "", "active_pets": [],
-		"backpack": [], "album": [], "areas": {}, "updated_ms": 0,
+		"backpack": [], "album": [], "areas": {}, "decor": {}, "last_room": {}, "secrets": [], "updated_ms": 0,
 	}
 
 
@@ -80,7 +132,7 @@ static func save_world(slot: int, payload: Dictionary) -> bool:
 
 static func load_world(slot: int) -> Dictionary:
 	var p: String = world_path(slot)
-	var w: Dictionary = _read(p) if FileAccess.file_exists(p) else {}
+	var w: Dictionary = _read(p)
 	if w.is_empty():
 		# Erststart mit alten Einzeldateien (Phase 04) → automatisch übernehmen.
 		var legacy: Dictionary = import_legacy()
@@ -115,8 +167,9 @@ static func world_info(slot: int) -> Dictionary:
 
 
 static func wipe_world(slot: int) -> void:
-	if FileAccess.file_exists(world_path(slot)):
-		DirAccess.remove_absolute(world_path(slot))
+	for p: String in [world_path(slot), backup_path(world_path(slot), 1), backup_path(world_path(slot), 2)]:
+		if FileAccess.file_exists(p):
+			DirAccess.remove_absolute(p)
 
 
 static func wipe() -> void:
