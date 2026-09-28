@@ -38,7 +38,7 @@ def area() -> dict:
             F("garage_bike_stand_coral", 350, 20), F("work_bike_pump_coral", 520, 62), F("work_tool_wall_oak", 800, 0),
             F("work_workbench_oak", 1000, 10), ON("work_wrench_metal", "work_workbench_oak", -0.2), F("work_tire_steel_silver", 650, 64)],
              width=1150),
-        outdoor(A, "scrapyard", "garage_scrap_pile_rust", 1800, [
+        outdoor(A, "scrapyard", "Schrottplatz", "garage_scrap_pile_rust", 1800, [
             F("garage_scrap_pile_rust", 500, 5), F("garage_scrap_car_rust", 950, 20), F("garage_scrap_pile_grey", 1450, 10),
             F("work_tire_stack_black", 1200, 50), F("garage_oil_drum_coral", 250, 50), F("work_tire_winter_black", 700, 64)],
             "sand", ["#c8b89a", "#b8a88a", "#8a7a5a"], 63, height=600),

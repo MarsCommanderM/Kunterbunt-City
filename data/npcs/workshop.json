@@ -1,0 +1,41 @@
+{
+ "_doc": "Feste Figuren in der Werkstatt (P10h). Erzeugt von tools/make_areas.py.",
+ "area": "workshop",
+ "npcs": [
+  {
+   "id": "npc_mechanic_garage",
+   "role": "mechanic",
+   "room": "garage",
+   "x_cm": 750,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_mechanic_bikes",
+   "role": "mechanic",
+   "room": "bikes",
+   "x_cm": 500,
+   "y_cm": 40
+  },
+  {
+   "id": "npc_cashier_fuel",
+   "role": "cashier",
+   "room": "fuel",
+   "x_cm": 1250,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_vendor_wash",
+   "role": "vendor",
+   "room": "wash",
+   "x_cm": 250,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_mechanic_paint",
+   "role": "mechanic",
+   "room": "paint",
+   "x_cm": 900,
+   "y_cm": 45
+  }
+ ]
+}

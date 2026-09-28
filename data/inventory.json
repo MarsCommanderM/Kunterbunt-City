@@ -3239,6 +3239,60 @@
      "min": 2
     }
    ]
+  },
+  "workshop": {
+   "werkstatt": [
+    {
+     "label": "garage_car_lift",
+     "prefix": "garage_car_lift",
+     "min": 2
+    },
+    {
+     "label": "garage_gas_pump",
+     "prefix": "garage_gas_pump",
+     "min": 3
+    },
+    {
+     "label": "garage_wash_tunnel",
+     "prefix": "garage_wash_tunnel",
+     "min": 2
+    },
+    {
+     "label": "garage_paint_booth",
+     "prefix": "garage_paint_booth",
+     "min": 2
+    },
+    {
+     "label": "garage_bike_stand",
+     "prefix": "garage_bike_stand",
+     "min": 2
+    },
+    {
+     "label": "garage_scrap_pile",
+     "prefix": "garage_scrap_pile",
+     "min": 2
+    },
+    {
+     "label": "garage_scrap_car",
+     "prefix": "garage_scrap_car",
+     "min": 2
+    },
+    {
+     "label": "garage_oil_drum",
+     "prefix": "garage_oil_drum",
+     "min": 3
+    },
+    {
+     "label": "garage_spray_gun",
+     "prefix": "garage_spray_gun",
+     "min": 6
+    },
+    {
+     "label": "garage_hubcap",
+     "prefix": "garage_hubcap",
+     "min": 1
+    }
+   ]
   }
  }
 }

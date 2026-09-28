@@ -163,10 +163,13 @@
    "icon": "area_workshop",
    "color": "#8f7ac0",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/workshop.json",
    "map_x": 1550,
-   "map_y": 810
+   "map_y": 810,
+   "room": "garage",
+   "spawn_x_cm": 900,
+   "spawn_y_cm": 55
   }
  ]
 }

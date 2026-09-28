@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
 | Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
-| Letzter grüner check.sh | 2026-09-28 (P10g) |
+| Letzter grüner check.sh | 2026-09-28 (P10h) |
 | Version | 0.1.0 |
 
 ## Phasen
@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ · 10g Zoo ✅ · 10h Werkstatt 🔨 | Log 2026-09-28 |
+| 10a–10h Content | ✅ 10a Schule ✅ · 10b Gesundheitszentrum ✅ · 10c Freizeitbad ✅ · 10d Rummelplatz ✅ · 10e Sportzentrum ✅ · 10f Eishalle ✅ · 10g Zoo ✅ · 10h Werkstatt ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,33 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10h · Werkstatt ✅ → **alle 12 Bereiche spielbar**
+- `tools/areas/workshop.py` → `data/areas/workshop.json`: **6 Räume** (Autowerkstatt mit Hebebühne, Waschanlage,
+  Tankstelle mit Shop, Lackiererei, Fahrradwerkstatt, Schrottplatz) · 42 Start-Items · 5 Figuren. Musik `music_workshop`.
+- 10 neue Vorlagen (`garage_*`): Hebebühne, Zapfsäule, Waschanlage, Lackierkabine, Sprühpistole (6 Farben),
+  Montageständer, Schrotthaufen, Schrottauto, goldene Radkappe, Ölfass.
+- Mechanik (`src/areas/workshop_actions.gd`): **Auto antippen → hupt** (in jedem Bereich) · Hebebühne hebt das Auto
+  (nur das Bild, Standplatz bleibt gespeichert), Mechaniker/in repariert · **Reifen ans Auto → Reifenwechsel** ·
+  **Sprühpistole ans Auto → gleiches Modell in der Pistolen-Farbe** · Auto in die Waschanlage → Bürsten + Schaum ·
+  Tanken · Schrotthaufen → goldene Radkappe. 7 Geheimnisse.
+- Stadtkarte: **keine Baustelle mehr** – alle 12 Bereiche spielbar.
+- Tests `test_p10_workshop` (6). Beweis `docs/tests/P10/workshop_*.jpg`.
+- check.sh ✅ – Maßstab (3015 Items) · pytest 134/134 · GUT 378/378.
+
+## Phasenbericht P10 – Content-Wellen (10a–10h)
+Status: ✅ fertig (👤 Kindertest-Kurzrunden offen)
+Erledigt: 10a Schule · 10b Gesundheitszentrum · 10c Freizeitbad · 10d Rummelplatz · 10e Sportzentrum · 10f Eishalle ·
+10g Zoo · 10h Werkstatt
+Akzeptanzkriterien:
+- ✅ Szenen vollständig, 0 Maßstab-Fehler – 3015 Katalog-Items, `validate_scale.py`, `test_areas_data` für jeden Bereich
+- ✅ NPC-Garantie-Tests grün (P08) + Bereichs-Tests `test_p10_*` (8 Dateien)
+- ✅ Bereichs-Mechanik je Bereich (Kreide/Glocke/Band, Röntgen/Verarzten, Schwimmen/Sprungturm/Rutsche, Fahrgeschäfte/
+  Buden, Ball-Physik/Tor, Gleiten/Eismaschine/Disco, Füttern/Affen, Hupe/Lackieren/Waschen)
+- ✅ Audio: Musik je Bereich, 25 neue Klänge · ✅ 5–7 Geheimnisse je Bereich
+- ⏳ 👤 Kindertest-Kurzrunde je Bereich · ⚠️ echte Stil-C-Blätter (👤) – Grafik ist vektor-generiert im Stil C
+Tests: Maßstab ✅ | pytest 134/134 ✅ | GUT 378/378 ✅
+Vorschlag nächste Phase: P11 – Politur & Release 1.0.
+
 ### 2026-09-28 · Phase 10g · Zoo ✅ (+ Vorarbeit 10h Werkstatt)
 - `tools/areas/zoo.py` → `data/areas/zoo.json`: **9 Bereiche** (Eingang, Savanne, Affenhaus 5 m hoch, Elefanten,
   Pinguine, Reptilien, Aquarium, Streichelzoo, Tierbabys) · 79 Start-Items · 6 Figuren (Kasse, Direktor/in, 2 Pfleger/innen,
