@@ -6,6 +6,7 @@ extends RefCounted
 ##   Rutsche    : Figur am Turm der Rutsche absetzen → rutscht die Bahn hinunter und landet davor
 ##   Sandkasten : Förmchen auf den Sandkasten → Sandfigur (Stern/Fisch/Burg wie das Förmchen)
 ##   Seifenblasen / Bushaltestelle (Bus kommt, zurück zur Stadtkarte)
+##   Arztpraxis (P10b): Pflaster, Armschlinge, Augenklappe in die Hand → Figur wird verarztet (Slot „aid“)
 
 const WEAR: Dictionary = {                    ## Item-Präfix → [Slot, Teil]
 	"cloth_shirt": ["top", "shirt"], "cloth_dress": ["top", "dress"], "cloth_jacket": ["top", "jacket"],
@@ -13,6 +14,7 @@ const WEAR: Dictionary = {                    ## Item-Präfix → [Slot, Teil]
 	"cloth_boots": ["shoes", "boot"], "cloth_slippers": ["shoes", "slipper"], "cloth_hat": ["accessory", "sunhat"],
 	"cloth_cap": ["accessory", "cap"], "cloth_beanie": ["accessory", "beanie"], "cloth_sunglasses": ["accessory", "sunglasses"],
 	"cloth_scarf": ["top", "sweater"],
+	"health_bandage": ["aid", "plaster"], "med_sling": ["aid", "arm_sling"], "med_eye_patch": ["aid", "eye_patch"],
 }
 const SLIDE_S: float = 1.1
 const INSTRUMENTS: Array = ["drum_hit", "piano_note", "xylophone", "guitar", "violin", "flute", "triangle", "tambourine"]
@@ -103,7 +105,7 @@ static func wear(scene: AreaScene, rig: CharacterRig, item: ItemNode) -> void:
 	rig.refresh_pose(false)
 	rig.set_emotion("laugh")
 	AudioBus.play_sfx("harvest")
-	Secrets.event("wear")
+	Secrets.event("patched" if slot == "aid" else "wear")
 
 
 # ---------------------------------------------------------------- Friseur

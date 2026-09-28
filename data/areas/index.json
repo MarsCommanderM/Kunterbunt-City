@@ -22,10 +22,13 @@
    "icon": "area_hospital",
    "color": "#ef6f6c",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/hospital.json",
    "map_x": 650,
-   "map_y": 300
+   "map_y": 300,
+   "room": "reception",
+   "spawn_x_cm": 430,
+   "spawn_y_cm": 55
   },
   {
    "id": "school",

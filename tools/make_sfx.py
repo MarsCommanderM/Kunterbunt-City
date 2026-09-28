@@ -337,6 +337,22 @@ def fizz():
     return noise(1.2, 0.5) * np.exp(-x * 1.5) * (0.6 + 0.4 * np.sin(2 * np.pi * 9 * x)) + 0.3 * modes([300], 1.2, [3])
 
 
+def siren():
+    """Freundliches „Tatü-tata" (zwei Töne im Wechsel, weich)."""
+    parts = []
+    for k in range(4):
+        f = 660.0 if k % 2 == 0 else 880.0
+        x = t(0.32)
+        parts.append((np.sin(2 * np.pi * f * x) + 0.3 * np.sin(4 * np.pi * f * x)) * np.minimum(1, x * 40) * np.minimum(1, (0.32 - x) * 40))
+    return np.concatenate(parts)
+
+
+def rotor():
+    """Hubschrauber: gepulstes Rauschen („wupp-wupp")."""
+    x = t(1.4)
+    return noise(1.4, 0.15) * (0.3 + 0.7 * np.maximum(0, np.sin(2 * np.pi * 11 * x)) ** 3) * np.minimum(1, x * 3)
+
+
 SOUNDS = {
     "pickup": lambda: norm(np.sin(2 * np.pi * np.cumsum(np.linspace(420, 880, int(SR * 0.09))) / SR) * env(int(SR * 0.09), 0.005, 18), 0.45),
     "tap": lambda: norm(modes([1800, 2600], 0.05, [120, 160]) + 0.3 * noise(0.05, 0.6) * env(int(SR * 0.05), 0.001, 90), 0.4),
@@ -399,6 +415,12 @@ SOUNDS = {
     "guitar": lambda: norm(sum(pluck_tone(f, 1.0, 0.6, 3.5) * 0.6 for f in (196, 247, 294)), 0.45),
     "violin": lambda: norm(bowed(660.0, 0.7), 0.4),
     "flute": lambda: norm(bowed(880.0, 0.6, 4.0) * 0.8 + 0.08 * noise(0.6, 0.6)[: int(SR * 0.6)], 0.35),
+    # P10b: Gesundheitszentrum
+    "xray_beep": lambda: norm(np.concatenate([modes([1400], 0.12, [20]), np.zeros(int(SR * 0.06)), modes([1900], 0.2, [12])]), 0.35),
+    "monitor_beep": lambda: norm(np.concatenate([np.sin(2 * np.pi * 1000 * t(0.08)) * env(int(SR * 0.08), 0.002, 25),
+                                                  np.zeros(int(SR * 0.5))] * 2), 0.3),
+    "siren": lambda: norm(siren(), 0.4),
+    "rotor": lambda: norm(rotor(), 0.4),
 }
 
 

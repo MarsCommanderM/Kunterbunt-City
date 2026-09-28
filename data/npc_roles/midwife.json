@@ -1,0 +1,55 @@
+{
+ "id": "midwife",
+ "template": "adult",
+ "speed_cm_s": 70,
+ "return_after_s": 8,
+ "work_every_s": [
+  3,
+  7
+ ],
+ "label": "Hebamme",
+ "behavior": "station",
+ "work": [
+  "listen",
+  "nod",
+  "wave"
+ ],
+ "look": {
+  "skin": "#fbe3cf",
+  "parts": {
+   "top": "tee",
+   "bottom": "trousers",
+   "hair": "wavy",
+   "shoes": "sneaker",
+   "accessory": "headband"
+  },
+  "colors": {
+   "top": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#fbe3cf"
+   ],
+   "bottom": [
+    "#f0b6c2",
+    "#f0b6c2",
+    "#fbe3cf"
+   ],
+   "hair": [
+    "#e6b25a",
+    "#e6b25a",
+    "#e6b25a"
+   ],
+   "shoes": [
+    "#fbfaf7",
+    "#6d6f78",
+    "#fbe3cf"
+   ],
+   "accessory": [
+    "#f0b6c2",
+    "#fbfaf7",
+    "#fbe3cf"
+   ]
+  }
+ },
+ "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz"
+}

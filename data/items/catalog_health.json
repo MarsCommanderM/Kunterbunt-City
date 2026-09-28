@@ -245,6 +245,1711 @@
     0.5,
     0.5
    ]
+  },
+  {
+   "id": "med_reception_white",
+   "scale_ref": "c_med_reception",
+   "size_cm": [
+    225.4,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_reception.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_reception_sky",
+   "scale_ref": "c_med_reception",
+   "size_cm": [
+    225.4,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_reception.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_reception_mint",
+   "scale_ref": "c_med_reception",
+   "size_cm": [
+    225.4,
+    111.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_reception.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_waiting_chairs_sky",
+   "scale_ref": "c_med_waiting_chairs",
+   "size_cm": [
+    177.7,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_waiting_chairs.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "med_waiting_chairs_coral",
+   "scale_ref": "c_med_waiting_chairs",
+   "size_cm": [
+    177.7,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_waiting_chairs.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "med_waiting_chairs_mint",
+   "scale_ref": "c_med_waiting_chairs",
+   "size_cm": [
+    177.7,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_waiting_chairs.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "med_waiting_chairs_butter",
+   "scale_ref": "c_med_waiting_chairs",
+   "size_cm": [
+    177.7,
+    86.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_waiting_chairs.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "med_exam_couch_mint",
+   "scale_ref": "c_med_exam_couch",
+   "size_cm": [
+    191.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_exam_couch.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_exam_couch_sky",
+   "scale_ref": "c_med_exam_couch",
+   "size_cm": [
+    191.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_exam_couch.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_exam_couch_coral",
+   "scale_ref": "c_med_exam_couch",
+   "size_cm": [
+    191.9,
+    91.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_exam_couch.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_dentist_chair_sky",
+   "scale_ref": "c_med_dentist_chair",
+   "size_cm": [
+    162.7,
+    132.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_dentist_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "sfx": {
+    "on": "ui_confirm"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_dentist_chair__on.png"
+   }
+  },
+  {
+   "id": "med_dentist_chair_mint",
+   "scale_ref": "c_med_dentist_chair",
+   "size_cm": [
+    162.7,
+    132.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_dentist_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "sfx": {
+    "on": "ui_confirm"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_dentist_chair__on.png"
+   }
+  },
+  {
+   "id": "med_dentist_chair_coral",
+   "scale_ref": "c_med_dentist_chair",
+   "size_cm": [
+    162.7,
+    132.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_dentist_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   },
+   "sfx": {
+    "on": "ui_confirm"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_dentist_chair__on.png"
+   }
+  },
+  {
+   "id": "med_xray_white",
+   "scale_ref": "c_med_xray",
+   "size_cm": [
+    111.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_xray.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "sfx": {
+    "fish": "xray_beep",
+    "car": "xray_beep",
+    "ribs": "xray_beep"
+   },
+   "states": [
+    "off",
+    "fish",
+    "car",
+    "ribs"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/med_xray__fish.png",
+    "car": "res://assets/sprites/items/med_xray__car.png",
+    "ribs": "res://assets/sprites/items/med_xray__ribs.png"
+   }
+  },
+  {
+   "id": "med_xray_grey",
+   "scale_ref": "c_med_xray",
+   "size_cm": [
+    111.7,
+    201.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_xray.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "sfx": {
+    "fish": "xray_beep",
+    "car": "xray_beep",
+    "ribs": "xray_beep"
+   },
+   "states": [
+    "off",
+    "fish",
+    "car",
+    "ribs"
+   ],
+   "state_sprites": {
+    "fish": "res://assets/sprites/items/med_xray__fish.png",
+    "car": "res://assets/sprites/items/med_xray__car.png",
+    "ribs": "res://assets/sprites/items/med_xray__ribs.png"
+   }
+  },
+  {
+   "id": "med_gurney_sky",
+   "scale_ref": "c_med_gurney",
+   "size_cm": [
+    201.7,
+    98.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_gurney.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_gurney_mint",
+   "scale_ref": "c_med_gurney",
+   "size_cm": [
+    201.7,
+    98.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_gurney.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_gurney_white",
+   "scale_ref": "c_med_gurney",
+   "size_cm": [
+    201.7,
+    98.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_gurney.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_hospital_bed_sky",
+   "scale_ref": "c_med_hospital_bed",
+   "size_cm": [
+    211.5,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_hospital_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_hospital_bed_mint",
+   "scale_ref": "c_med_hospital_bed",
+   "size_cm": [
+    211.5,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_hospital_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_hospital_bed_rose",
+   "scale_ref": "c_med_hospital_bed",
+   "size_cm": [
+    211.5,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_hospital_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_hospital_bed_butter",
+   "scale_ref": "c_med_hospital_bed",
+   "size_cm": [
+    211.5,
+    112.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_hospital_bed.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_iv_stand_sky",
+   "scale_ref": "c_med_iv_stand",
+   "size_cm": [
+    42.8,
+    166.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_iv_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_iv_stand_mint",
+   "scale_ref": "c_med_iv_stand",
+   "size_cm": [
+    42.8,
+    166.4
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_iv_stand.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_incubator_white",
+   "scale_ref": "c_med_incubator",
+   "size_cm": [
+    91.8,
+    121.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_incubator.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_incubator_sky",
+   "scale_ref": "c_med_incubator",
+   "size_cm": [
+    91.8,
+    121.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_incubator.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_medicine_shelf_white",
+   "scale_ref": "c_med_medicine_shelf",
+   "size_cm": [
+    131.8,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_medicine_shelf_mint",
+   "scale_ref": "c_med_medicine_shelf",
+   "size_cm": [
+    131.8,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_medicine_shelf_oak",
+   "scale_ref": "c_med_medicine_shelf",
+   "size_cm": [
+    131.8,
+    201.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine_shelf.png",
+   "pad_px": 1,
+   "colors": [
+    "#d4a86e",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_ambulance_white",
+   "scale_ref": "c_med_ambulance",
+   "size_cm": [
+    485.2,
+    272.1
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_ambulance.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   },
+   "sfx": {
+    "on": "siren"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_ambulance__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "med_helicopter_coral",
+   "scale_ref": "c_med_helicopter",
+   "size_cm": [
+    503.8,
+    208.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_helicopter.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   },
+   "sfx": {
+    "on": "rotor"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_helicopter__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "med_helicopter_butter",
+   "scale_ref": "c_med_helicopter",
+   "size_cm": [
+    503.8,
+    208.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_helicopter.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   },
+   "sfx": {
+    "on": "rotor"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_helicopter__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "med_helicopter_white",
+   "scale_ref": "c_med_helicopter",
+   "size_cm": [
+    503.8,
+    208.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_helicopter.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "seat": {
+    "pose": "sit",
+    "slots": 2
+   },
+   "sfx": {
+    "on": "rotor"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/med_helicopter__on.png"
+   },
+   "anim": {
+    "on": "shake"
+   }
+  },
+  {
+   "id": "med_eye_chart_white",
+   "scale_ref": "c_med_eye_chart",
+   "size_cm": [
+    61.9,
+    91.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_eye_chart.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_helipad_grey",
+   "scale_ref": "c_med_helipad",
+   "size_cm": [
+    521.4,
+    71.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "rug",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_helipad.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "health"
+  },
+  {
+   "id": "med_heart_monitor_white",
+   "scale_ref": "c_med_heart_monitor",
+   "size_cm": [
+    41.9,
+    36.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_heart_monitor.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#9fc3a0",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "beep": "monitor_beep"
+   },
+   "states": [
+    "calm",
+    "beep"
+   ],
+   "state_sprites": {
+    "beep": "res://assets/sprites/items/med_heart_monitor__beep.png"
+   },
+   "anim": {
+    "beep": "pulse"
+   }
+  },
+  {
+   "id": "med_heart_monitor_grey",
+   "scale_ref": "c_med_heart_monitor",
+   "size_cm": [
+    41.9,
+    36.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_heart_monitor.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#9fc3a0",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "sfx": {
+    "beep": "monitor_beep"
+   },
+   "states": [
+    "calm",
+    "beep"
+   ],
+   "state_sprites": {
+    "beep": "res://assets/sprites/items/med_heart_monitor__beep.png"
+   },
+   "anim": {
+    "beep": "pulse"
+   }
+  },
+  {
+   "id": "med_baby_scale_white",
+   "scale_ref": "c_med_baby_scale",
+   "size_cm": [
+    56.8,
+    26.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_baby_scale.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_baby_scale_sky",
+   "scale_ref": "c_med_baby_scale",
+   "size_cm": [
+    56.8,
+    26.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_baby_scale.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f0b6c2",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "seat": {
+    "pose": "lie",
+    "slots": 1
+   }
+  },
+  {
+   "id": "med_medicine_coral",
+   "scale_ref": "c_med_medicine",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_medicine_sky",
+   "scale_ref": "c_med_medicine",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_medicine_mint",
+   "scale_ref": "c_med_medicine",
+   "size_cm": [
+    9.9,
+    11.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_medicine.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_sling_sky",
+   "scale_ref": "c_med_sling",
+   "size_cm": [
+    21.5,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_sling.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_sling_white",
+   "scale_ref": "c_med_sling",
+   "size_cm": [
+    21.5,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_sling.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_sling_coral",
+   "scale_ref": "c_med_sling",
+   "size_cm": [
+    21.5,
+    31.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_sling.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_eye_patch_sand",
+   "scale_ref": "c_med_eye_patch",
+   "size_cm": [
+    10.0,
+    7.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_eye_patch.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_eye_patch_black",
+   "scale_ref": "c_med_eye_patch",
+   "size_cm": [
+    10.0,
+    7.0
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_eye_patch.png",
+   "pad_px": 1,
+   "colors": [
+    "#2a2a30",
+    "#f5f3ee",
+    "#2a2a30"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_crutches_metal",
+   "scale_ref": "c_med_crutches",
+   "size_cm": [
+    26.5,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_crutches.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_crutches_sky",
+   "scale_ref": "c_med_crutches",
+   "size_cm": [
+    26.5,
+    110.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_crutches.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_pet_carrier_sky",
+   "scale_ref": "c_med_pet_carrier",
+   "size_cm": [
+    56.9,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_pet_carrier.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 1,
+    "max_item_h_cm": 36
+   }
+  },
+  {
+   "id": "med_pet_carrier_coral",
+   "scale_ref": "c_med_pet_carrier",
+   "size_cm": [
+    56.9,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_pet_carrier.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 1,
+    "max_item_h_cm": 36
+   }
+  },
+  {
+   "id": "med_pet_carrier_grey",
+   "scale_ref": "c_med_pet_carrier",
+   "size_cm": [
+    56.9,
+    41.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_pet_carrier.png",
+   "pad_px": 1,
+   "colors": [
+    "#6d6f78",
+    "#f5f3ee",
+    "#9aa6b4"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ],
+   "container": {
+    "slots": 1,
+    "max_item_h_cm": 36
+   }
+  },
+  {
+   "id": "med_teeth_model_rose",
+   "scale_ref": "c_med_teeth_model",
+   "size_cm": [
+    21.6,
+    15.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_teeth_model.png",
+   "pad_px": 1,
+   "colors": [
+    "#f0b6c2",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_big_toothbrush_sky",
+   "scale_ref": "c_med_big_toothbrush",
+   "size_cm": [
+    7.2,
+    46.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_big_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_big_toothbrush_coral",
+   "scale_ref": "c_med_big_toothbrush",
+   "size_cm": [
+    7.2,
+    46.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_big_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_big_toothbrush_mint",
+   "scale_ref": "c_med_big_toothbrush",
+   "size_cm": [
+    7.2,
+    46.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_big_toothbrush.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "med_syrup_coral",
+   "scale_ref": "c_med_syrup",
+   "size_cm": [
+    7.3,
+    15.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_syrup.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "med_syrup_plum",
+   "scale_ref": "c_med_syrup",
+   "size_cm": [
+    7.3,
+    15.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_syrup.png",
+   "pad_px": 1,
+   "colors": [
+    "#7a5ea8",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "med_syrup_orange",
+   "scale_ref": "c_med_syrup",
+   "size_cm": [
+    7.3,
+    15.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/med_syrup.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "health",
+   "grip": [
+    0.5,
+    0.4
+   ]
   }
  ]
 }

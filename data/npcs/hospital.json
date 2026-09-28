@@ -1,0 +1,90 @@
+{
+ "_doc": "Feste Figuren im Gesundheitszentrum (P10b). Erzeugt von tools/make_areas.py.",
+ "area": "hospital",
+ "npcs": [
+  {
+   "id": "npc_receptionist_reception",
+   "role": "receptionist",
+   "room": "reception",
+   "x_cm": 280,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_doctor_gp",
+   "role": "doctor",
+   "room": "gp",
+   "x_cm": 620,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_dentist_dentist",
+   "role": "dentist",
+   "room": "dentist",
+   "x_cm": 460,
+   "y_cm": 10
+  },
+  {
+   "id": "npc_doctor_pediatric",
+   "role": "doctor",
+   "room": "pediatric",
+   "x_cm": 620,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_vet_vet",
+   "role": "vet",
+   "room": "vet",
+   "x_cm": 420,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_nurse_xray",
+   "role": "nurse",
+   "room": "xray",
+   "x_cm": 250,
+   "y_cm": 30
+  },
+  {
+   "id": "npc_nurse_er",
+   "role": "nurse",
+   "room": "er",
+   "x_cm": 360,
+   "y_cm": 45
+  },
+  {
+   "id": "npc_midwife_babies",
+   "role": "midwife",
+   "room": "babies",
+   "x_cm": 340,
+   "y_cm": 45
+  },
+  {
+   "id": "npc_nurse_patient",
+   "role": "nurse",
+   "room": "patient",
+   "x_cm": 540,
+   "y_cm": 50
+  },
+  {
+   "id": "npc_pharmacist_pharmacy",
+   "role": "pharmacist",
+   "room": "pharmacy",
+   "x_cm": 640,
+   "y_cm": 5
+  },
+  {
+   "id": "npc_cashier_cafe",
+   "role": "cashier",
+   "room": "cafe",
+   "x_cm": 320,
+   "y_cm": 2
+  },
+  {
+   "id": "npc_paramedic_roof",
+   "role": "paramedic",
+   "room": "roof",
+   "x_cm": 1500,
+   "y_cm": 40
+  }
+ ]
+}

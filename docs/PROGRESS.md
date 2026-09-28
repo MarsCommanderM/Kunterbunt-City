@@ -6,7 +6,7 @@
 |---|---|
 | Aktuelle Phase | **10 · Content-Wellen** (09 fertig, v0.1.0) |
 | Nächste Task | P10 Content-Wellen: Schule, Krankenhaus, Schwimmbad, Rummelplatz, Sport, Eishalle, Zoo, Werkstatt |
-| Letzter grüner check.sh | 2026-09-28 (P09 T01–T08) |
+| Letzter grüner check.sh | 2026-09-28 (P10b) |
 | Version | 0.1.0 |
 
 ## Phasen
@@ -23,7 +23,7 @@
 | 07 Slice Zuhause | ✅ fertig (T08 Nachbarin/Postbote → P08; 👤 Kindertest offen) | Log 2026-09-27 |
 | 08 NPC-/Tier-KI | 🔨 | – |
 | 09 MVP v0.1 | ✅ fertig (👤 Upload, APK, Kindertest offen) | Log 2026-09-28 |
-| 10a–10h Content | 🔨 10a Schule ✅ | Log 2026-09-28 |
+| 10a–10h Content | 🔨 10a Schule ✅ · 10b Gesundheitszentrum ✅ | Log 2026-09-28 |
 | 11 Politur 1.0 | ⏳ | – |
 
 Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
@@ -78,6 +78,22 @@ Legende: ⏳ offen · 🔨 in Arbeit · ✅ fertig · ⛔ blockiert
 | 2026-09-26 | 02 | Leistung 250 Items + 1 Item im Dauer-Drag (`p02_perf_runner.gd`) | headless (nur Logik): **145 FPS** (6,9 ms/Frame) · llvmpipe-Software-Rendering 2 Kerne: 5,7 FPS @1080p / 11,2 @720p (61 Items: 17,7 @720p → Engpass ist das Software-Rendering, nicht die Items) · 613 Draw-Calls · 1040 Nodes · Greifen 0,7–0,9 ms, Zielsuche 1,1–2,0 ms. **GPU-60-FPS muss 👤 auf echter Hardware bestätigen.** |
 
 ## Log
+### 2026-09-28 · Phase 10b · Gesundheitszentrum ✅
+- `tools/areas/hospital.py` → `data/areas/hospital.json`: **12 Räume** (Empfang mit Wartebereich, Hausarzt,
+  Zahnarzt, Kinderarzt, Tierarzt, Röntgen, Notaufnahme, Babystation, Patientenzimmer, Café, Apotheke,
+  Dach mit Hubschrauber-Landeplatz + Krankenwagen) · 101 Start-Items · **12 Figuren**.
+- 29 neue Vorlagen / 68 Items (`tools/items/clinic.py`, `catalog_health.py`, `med_*`): Empfangstheke, Wartestühle,
+  Liege, Zahnarztstuhl (Licht an), **Röntgenschirm mit 3 Bildern** (Fisch, verschlucktes Auto, Rippen), Trage,
+  Krankenbett, Tropf, **Herzmonitor (piept)**, Brutkasten, Babywaage, Sehtafel, Medizinregal, Medizin/Saft,
+  Armschlinge, Augenklappe, Krücken, Transportbox, Gebiss, Riesen-Zahnbürste, **Krankenwagen (Sirene)**,
+  **Hubschrauber (Rotor)**, Landeplatz. 4 neue Klänge (`xray_beep`, `monitor_beep`, `siren`, `rotor`), `music_clinic`.
+- Verarzten: Pflaster, Armschlinge oder Augenklappe in die Hand einer Figur → sie trägt es (Editor-Slot „aid“).
+- Neue Rollen: Zahnärztin, Tierarzt, Apotheker/in (Kasse), Sanitäter/in (patrouilliert), Hebamme.
+- 6 Geheimnisse (`data/secrets/hospital.json`), Pflichtliste `inventory.json` um Schule + Gesundheitszentrum ergänzt.
+- Tests: `test_p10_hospital` (5) + allgemeiner `test_areas_data`. Beweis `docs/tests/P10/hospital_*.jpg`
+  (Ladezeit headless-Rendering 1,1 s).
+- check.sh ✅ – Maßstab (2813 Items) · pytest 133/133 · GUT 341/341.
+
 ### 2026-09-28 · Phase 10a · Schule & Pausenhof ✅
 - `tools/areas/` (neu, je Bereich ein Modul; `make_areas.py` nur noch Starter + Prüfung) → `data/areas/school.json`:
   **10 Räume** (Eingangshalle mit Spinden, Klasse 1 + 2, Musik, Kunst, NaWi, Turnhalle, Mensa, Lehrerzimmer,

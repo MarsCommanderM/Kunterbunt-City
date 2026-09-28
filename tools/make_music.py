@@ -143,6 +143,12 @@ def music_school() -> np.ndarray:
     return tune(ch, 100.0, ["D", "E", "F#", "A", "B"], 5, swing=0.08)
 
 
+def music_clinic() -> np.ndarray:
+    """Gesundheitszentrum: ruhig und freundlich, C-Dur, sanft."""
+    ch = [("C", ["C", "E", "G"]), ("A", ["A", "C", "E"]), ("F", ["F", "A", "C"]), ("G", ["G", "B", "D"])] * 4
+    return tune(ch, 84.0, ["C", "D", "E", "G", "A"], 5)
+
+
 def amb_garden() -> np.ndarray:
     d = 24.0
     buf = noise(d + 0.6, 0.02) * 0.25 * (0.7 + 0.3 * np.sin(2 * np.pi * t(d + 0.6) / 7.0))   # Wind
@@ -179,7 +185,8 @@ def amb_bath() -> np.ndarray:
 
 
 TRACKS = {"music_home": music_home, "amb_garden": amb_garden, "amb_indoor": amb_indoor, "amb_bath": amb_bath,
-          "music_town": music_town, "music_park": music_park, "music_school": music_school}
+          "music_town": music_town, "music_park": music_park, "music_school": music_school,
+          "music_clinic": music_clinic}
 
 
 def main(argv: list[str] | None = None) -> int:

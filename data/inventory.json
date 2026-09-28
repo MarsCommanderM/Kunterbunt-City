@@ -2431,6 +2431,254 @@
      "min": 1
     }
    ]
+  },
+  "school": {
+   "schule": [
+    {
+     "label": "edu_desk",
+     "prefix": "edu_desk",
+     "min": 4
+    },
+    {
+     "label": "edu_teacher_desk",
+     "prefix": "edu_teacher_desk",
+     "min": 3
+    },
+    {
+     "label": "edu_locker",
+     "prefix": "edu_locker",
+     "min": 5
+    },
+    {
+     "label": "edu_music_stand",
+     "prefix": "edu_music_stand",
+     "min": 2
+    },
+    {
+     "label": "edu_art_table",
+     "prefix": "edu_art_table",
+     "min": 3
+    },
+    {
+     "label": "edu_lab_table",
+     "prefix": "edu_lab_table",
+     "min": 3
+    },
+    {
+     "label": "edu_skeleton",
+     "prefix": "edu_skeleton",
+     "min": 1
+    },
+    {
+     "label": "edu_vault_box",
+     "prefix": "edu_vault_box",
+     "min": 1
+    },
+    {
+     "label": "edu_balance_beam",
+     "prefix": "edu_balance_beam",
+     "min": 2
+    },
+    {
+     "label": "edu_ball_cart",
+     "prefix": "edu_ball_cart",
+     "min": 2
+    },
+    {
+     "label": "edu_serving_counter",
+     "prefix": "edu_serving_counter",
+     "min": 3
+    },
+    {
+     "label": "edu_copier",
+     "prefix": "edu_copier",
+     "min": 2
+    },
+    {
+     "label": "edu_blackboard",
+     "prefix": "edu_blackboard",
+     "min": 2
+    },
+    {
+     "label": "edu_bell",
+     "prefix": "edu_bell",
+     "min": 2
+    },
+    {
+     "label": "edu_world_map",
+     "prefix": "edu_world_map",
+     "min": 1
+    },
+    {
+     "label": "edu_cubbies",
+     "prefix": "edu_cubbies",
+     "min": 2
+    },
+    {
+     "label": "edu_triangle",
+     "prefix": "edu_triangle",
+     "min": 1
+    },
+    {
+     "label": "edu_tambourine",
+     "prefix": "edu_tambourine",
+     "min": 2
+    },
+    {
+     "label": "edu_palette",
+     "prefix": "edu_palette",
+     "min": 1
+    },
+    {
+     "label": "edu_clay_pot",
+     "prefix": "edu_clay_pot",
+     "min": 3
+    },
+    {
+     "label": "edu_flask",
+     "prefix": "edu_flask",
+     "min": 3
+    },
+    {
+     "label": "edu_volcano",
+     "prefix": "edu_volcano",
+     "min": 1
+    },
+    {
+     "label": "edu_tray",
+     "prefix": "edu_tray",
+     "min": 4
+    },
+    {
+     "label": "edu_hopscotch",
+     "prefix": "edu_hopscotch",
+     "min": 3
+    }
+   ]
+  },
+  "hospital": {
+   "gesundheitszentrum": [
+    {
+     "label": "med_reception",
+     "prefix": "med_reception",
+     "min": 3
+    },
+    {
+     "label": "med_waiting_chairs",
+     "prefix": "med_waiting_chairs",
+     "min": 4
+    },
+    {
+     "label": "med_exam_couch",
+     "prefix": "med_exam_couch",
+     "min": 3
+    },
+    {
+     "label": "med_dentist_chair",
+     "prefix": "med_dentist_chair",
+     "min": 3
+    },
+    {
+     "label": "med_xray",
+     "prefix": "med_xray",
+     "min": 2
+    },
+    {
+     "label": "med_gurney",
+     "prefix": "med_gurney",
+     "min": 3
+    },
+    {
+     "label": "med_hospital_bed",
+     "prefix": "med_hospital_bed",
+     "min": 4
+    },
+    {
+     "label": "med_iv_stand",
+     "prefix": "med_iv_stand",
+     "min": 2
+    },
+    {
+     "label": "med_incubator",
+     "prefix": "med_incubator",
+     "min": 2
+    },
+    {
+     "label": "med_medicine_shelf",
+     "prefix": "med_medicine_shelf",
+     "min": 3
+    },
+    {
+     "label": "med_ambulance",
+     "prefix": "med_ambulance",
+     "min": 1
+    },
+    {
+     "label": "med_helicopter",
+     "prefix": "med_helicopter",
+     "min": 3
+    },
+    {
+     "label": "med_eye_chart",
+     "prefix": "med_eye_chart",
+     "min": 1
+    },
+    {
+     "label": "med_helipad",
+     "prefix": "med_helipad",
+     "min": 1
+    },
+    {
+     "label": "med_heart_monitor",
+     "prefix": "med_heart_monitor",
+     "min": 2
+    },
+    {
+     "label": "med_baby_scale",
+     "prefix": "med_baby_scale",
+     "min": 2
+    },
+    {
+     "label": "med_medicine",
+     "prefix": "med_medicine",
+     "min": 3
+    },
+    {
+     "label": "med_sling",
+     "prefix": "med_sling",
+     "min": 3
+    },
+    {
+     "label": "med_eye_patch",
+     "prefix": "med_eye_patch",
+     "min": 2
+    },
+    {
+     "label": "med_crutches",
+     "prefix": "med_crutches",
+     "min": 2
+    },
+    {
+     "label": "med_pet_carrier",
+     "prefix": "med_pet_carrier",
+     "min": 3
+    },
+    {
+     "label": "med_teeth_model",
+     "prefix": "med_teeth_model",
+     "min": 1
+    },
+    {
+     "label": "med_big_toothbrush",
+     "prefix": "med_big_toothbrush",
+     "min": 3
+    },
+    {
+     "label": "med_syrup",
+     "prefix": "med_syrup",
+     "min": 3
+    }
+   ]
   }
  }
 }

@@ -1,0 +1,1004 @@
+{
+ "id": "hospital",
+ "name": "Gesundheitszentrum",
+ "name_key": "AREA_HOSPITAL",
+ "_doc": "P10b: 12 Räume. Erzeugt von tools/make_areas.py (tools/areas/hospital.py) – dort ändern.",
+ "spawn": {
+  "room": "reception",
+  "x_cm": 430,
+  "y_cm": 55
+ },
+ "default_items": [],
+ "music": "music_clinic",
+ "rooms": [
+  {
+   "id": "reception",
+   "label": "Empfang",
+   "icon": "med_reception_white",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/reception.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef6f3",
+      "#ffffff",
+      "#9fc3a0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_reception_white",
+     "x_cm": 280,
+     "y_cm": 15
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "med_reception_white",
+     "x_rel": 0.3
+    },
+    {
+     "id": "med_waiting_chairs_sky",
+     "x_cm": 560,
+     "y_cm": 30
+    },
+    {
+     "id": "med_waiting_chairs_coral",
+     "x_cm": 740,
+     "y_cm": 50
+    },
+    {
+     "id": "toy_blocks_mint",
+     "x_cm": 460,
+     "y_cm": 64
+    },
+    {
+     "id": "toy_teddy_cream",
+     "x_cm": 420,
+     "y_cm": 62
+    },
+    {
+     "id": "plant_monstera_basket_oak",
+     "x_cm": 120,
+     "y_cm": 30
+    },
+    {
+     "id": "shop_magazine_rack_metal",
+     "x_cm": 660,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "gp",
+   "label": "Hausarzt",
+   "icon": "health_stethoscope_black",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/gp.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef3f8",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_teacher_desk_oak",
+     "x_cm": 600,
+     "y_cm": 10
+    },
+    {
+     "id": "health_stethoscope_black",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": -0.2
+    },
+    {
+     "id": "health_thermometer_sky",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": 0.2
+    },
+    {
+     "id": "furn_chair_office_grey",
+     "x_cm": 640,
+     "y_cm": 30
+    },
+    {
+     "id": "med_exam_couch_mint",
+     "x_cm": 280,
+     "y_cm": 20
+    },
+    {
+     "id": "med_eye_chart_white",
+     "x_cm": 450,
+     "y_cm": -190
+    },
+    {
+     "id": "health_first_aid_coral",
+     "x_cm": 760,
+     "y_cm": 60
+    },
+    {
+     "id": "health_bandage_cream",
+     "x_cm": 360,
+     "y_cm": 64
+    },
+    {
+     "id": "med_sling_sky",
+     "x_cm": 420,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "dentist",
+   "label": "Zahnarzt",
+   "icon": "med_teeth_model_rose",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/dentist.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eaf7f6",
+      "#ffffff",
+      "#7cc6e0"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_dentist_chair_sky",
+     "x_cm": 330,
+     "y_cm": 25
+    },
+    {
+     "id": "med_heart_monitor_white",
+     "x_cm": 520,
+     "y_cm": 10
+    },
+    {
+     "id": "edu_lab_table_white",
+     "x_cm": 600,
+     "y_cm": 10
+    },
+    {
+     "id": "med_teeth_model_rose",
+     "on": "edu_lab_table_white",
+     "x_rel": -0.2
+    },
+    {
+     "id": "med_big_toothbrush_sky",
+     "on": "edu_lab_table_white",
+     "x_rel": 0.15
+    },
+    {
+     "id": "bath_cup_sky",
+     "on": "edu_lab_table_white",
+     "x_rel": 0.35
+    },
+    {
+     "id": "toy_plush_unicorn_white",
+     "x_cm": 740,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "pediatric",
+   "label": "Kinderarzt",
+   "icon": "toy_teddy_rose",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/pediatric.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdf0f3",
+      "#ffffff",
+      "#f0b6c2"
+     ],
+     "pattern": "stars",
+     "pattern_col": "#f8d4de",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_teacher_desk_oak",
+     "x_cm": 600,
+     "y_cm": 10
+    },
+    {
+     "id": "health_stethoscope_black",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": -0.2
+    },
+    {
+     "id": "health_thermometer_sky",
+     "on": "edu_teacher_desk_oak",
+     "x_rel": 0.2
+    },
+    {
+     "id": "furn_chair_office_grey",
+     "x_cm": 640,
+     "y_cm": 30
+    },
+    {
+     "id": "med_exam_couch_mint",
+     "x_cm": 280,
+     "y_cm": 20
+    },
+    {
+     "id": "med_eye_chart_white",
+     "x_cm": 450,
+     "y_cm": -190
+    },
+    {
+     "id": "health_first_aid_coral",
+     "x_cm": 760,
+     "y_cm": 60
+    },
+    {
+     "id": "med_baby_scale_white",
+     "x_cm": 150,
+     "y_cm": 45
+    },
+    {
+     "id": "toy_ball_pit_sky",
+     "x_cm": 420,
+     "y_cm": 55
+    },
+    {
+     "id": "toy_teddy_rose",
+     "x_cm": 360,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "vet",
+   "label": "Tierarzt",
+   "icon": "med_pet_carrier_sky",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/vet.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#f1f6ea",
+      "#ffffff",
+      "#9fc3a0"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#dfecd4",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "edu_lab_table_white",
+     "x_cm": 320,
+     "y_cm": 20
+    },
+    {
+     "id": "med_pet_carrier_sky",
+     "x_cm": 520,
+     "y_cm": 60
+    },
+    {
+     "id": "pet_cat",
+     "x_cm": 560,
+     "y_cm": 50
+    },
+    {
+     "id": "pet_dog_small",
+     "x_cm": 200,
+     "y_cm": 55
+    },
+    {
+     "id": "petgear_bowl_mint",
+     "x_cm": 640,
+     "y_cm": 62
+    },
+    {
+     "id": "petgear_basket_oak",
+     "x_cm": 740,
+     "y_cm": 45
+    },
+    {
+     "id": "health_bandage_cream",
+     "x_cm": 420,
+     "y_cm": 64
+    },
+    {
+     "id": "shop_tank_shelf_black",
+     "x_cm": 130,
+     "y_cm": 0
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "xray",
+   "label": "Röntgen",
+   "icon": "med_xray_white",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/xray.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#e8eaf2",
+      "#ffffff",
+      "#6f8fb8"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_xray_white",
+     "x_cm": 400,
+     "y_cm": 10
+    },
+    {
+     "id": "med_gurney_sky",
+     "x_cm": 600,
+     "y_cm": 40
+    },
+    {
+     "id": "toy_car_coral",
+     "x_cm": 300,
+     "y_cm": 64
+    },
+    {
+     "id": "food_apple_red",
+     "x_cm": 250,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "er",
+   "label": "Notaufnahme",
+   "icon": "med_gurney_sky",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/er.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdeeee",
+      "#ffffff",
+      "#e07a7a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_gurney_mint",
+     "x_cm": 280,
+     "y_cm": 30
+    },
+    {
+     "id": "med_iv_stand_sky",
+     "x_cm": 170,
+     "y_cm": 20
+    },
+    {
+     "id": "med_heart_monitor_white",
+     "x_cm": 420,
+     "y_cm": 12
+    },
+    {
+     "id": "med_crutches_metal",
+     "x_cm": 560,
+     "y_cm": 30
+    },
+    {
+     "id": "health_wheelchair_sky",
+     "x_cm": 680,
+     "y_cm": 45
+    },
+    {
+     "id": "health_first_aid_coral",
+     "x_cm": 760,
+     "y_cm": 62
+    },
+    {
+     "id": "med_sling_coral",
+     "x_cm": 420,
+     "y_cm": 66
+    },
+    {
+     "id": "med_eye_patch_sand",
+     "x_cm": 480,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "babies",
+   "label": "Babystation",
+   "icon": "med_incubator_white",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/babies.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fff4f6",
+      "#ffffff",
+      "#f0b6c2"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#fbe0e6",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_incubator_white",
+     "x_cm": 250,
+     "y_cm": 20
+    },
+    {
+     "id": "med_incubator_sky",
+     "x_cm": 420,
+     "y_cm": 20
+    },
+    {
+     "id": "med_baby_scale_sky",
+     "x_cm": 620,
+     "y_cm": 50
+    },
+    {
+     "id": "furn_crib_sky",
+     "x_cm": 740,
+     "y_cm": 10
+    },
+    {
+     "id": "furn_chair_rocking_cream",
+     "x_cm": 120,
+     "y_cm": 45
+    },
+    {
+     "id": "baby_bottle_sky",
+     "x_cm": 540,
+     "y_cm": 66
+    },
+    {
+     "id": "baby_rattle_rose",
+     "x_cm": 580,
+     "y_cm": 66
+    },
+    {
+     "id": "toy_plush_bunny_cream",
+     "x_cm": 330,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "patient",
+   "label": "Patientenzimmer",
+   "icon": "med_hospital_bed_sky",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/patient.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef3f8",
+      "#ffffff",
+      "#a9c3dd"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_hospital_bed_sky",
+     "x_cm": 300,
+     "y_cm": 15
+    },
+    {
+     "id": "med_iv_stand_mint",
+     "x_cm": 170,
+     "y_cm": 10
+    },
+    {
+     "id": "furn_nightstand_cream",
+     "x_cm": 450,
+     "y_cm": 10
+    },
+    {
+     "id": "med_heart_monitor_grey",
+     "x_cm": 450,
+     "y_cm": 12
+    },
+    {
+     "id": "med_hospital_bed_rose",
+     "x_cm": 640,
+     "y_cm": 45
+    },
+    {
+     "id": "flower_bouquet_rose",
+     "x_cm": 540,
+     "y_cm": 64
+    },
+    {
+     "id": "toy_teddy_brown",
+     "x_cm": 720,
+     "y_cm": 64
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "cafe",
+   "label": "Cafeteria",
+   "icon": "kit_mug_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/cafe.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#fdf3e1",
+      "#ffffff",
+      "#f6d98a"
+     ],
+     "pattern": "",
+     "pattern_col": "#ffffff",
+     "floor": "planks",
+     "floor_cols": [
+      "#e3c79a",
+      "#d4b07c",
+      "#8a6a4a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "shop_counter_glass_cream",
+     "x_cm": 240,
+     "y_cm": 15
+    },
+    {
+     "id": "shop_coffee_machine_coral",
+     "on": "shop_counter_glass_cream",
+     "x_rel": -0.2
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_glass_cream",
+     "x_rel": 0.3
+    },
+    {
+     "id": "furn_table_bistro_white",
+     "x_cm": 520,
+     "y_cm": 40
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 460,
+     "y_cm": 46
+    },
+    {
+     "id": "furn_chair_dining_cream",
+     "x_cm": 580,
+     "y_cm": 46
+    },
+    {
+     "id": "food_cake_coral",
+     "on": "furn_table_bistro_white",
+     "x_rel": 0
+    },
+    {
+     "id": "furn_table_bistro_sage",
+     "x_cm": 720,
+     "y_cm": 55
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "pharmacy",
+   "label": "Apotheke",
+   "icon": "med_syrup_coral",
+   "width_cm": 800,
+   "height_cm": 260.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 300,
+    "min_h_cm": 220,
+    "max_h_cm": 420
+   },
+   "background": "res://assets/backgrounds/hospital/pharmacy.bg.json",
+   "scene": {
+    "kind": "indoor",
+    "wainscot": true,
+    "extras": [],
+    "decor": {
+     "wall": [
+      "#eef7ee",
+      "#ffffff",
+      "#5f8f6a"
+     ],
+     "pattern": "dots",
+     "pattern_col": "#d9ecd9",
+     "floor": "tiles",
+     "floor_cols": [
+      "#f5f3ee",
+      "#dfe6ea",
+      "#a9b3bd"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "door_glass_white",
+     "x_cm": 70,
+     "y_cm": -206.8
+    },
+    {
+     "id": "med_medicine_shelf_white",
+     "x_cm": 180,
+     "y_cm": 0
+    },
+    {
+     "id": "med_medicine_shelf_mint",
+     "x_cm": 330,
+     "y_cm": 0
+    },
+    {
+     "id": "shop_counter_oak",
+     "x_cm": 560,
+     "y_cm": 25
+    },
+    {
+     "id": "shop_cash_register_cream",
+     "on": "shop_counter_oak",
+     "x_rel": 0.3
+    },
+    {
+     "id": "med_medicine_coral",
+     "on": "shop_counter_oak",
+     "x_rel": -0.3
+    },
+    {
+     "id": "med_syrup_plum",
+     "on": "shop_counter_oak",
+     "x_rel": -0.1
+    },
+    {
+     "id": "med_medicine_sky",
+     "x_cm": 450,
+     "y_cm": 66
+    },
+    {
+     "id": "med_syrup_orange",
+     "x_cm": 480,
+     "y_cm": 66
+    }
+   ],
+   "ambience": "amb_indoor"
+  },
+  {
+   "id": "roof",
+   "label": "Dach",
+   "icon": "med_helicopter_coral",
+   "width_cm": 2100,
+   "height_cm": 560.0,
+   "floor": {
+    "depth_scale_max": 1.12,
+    "back_y_cm": 0.0,
+    "front_y_cm": 70.0
+   },
+   "camera": {
+    "default_h_cm": 450,
+    "min_h_cm": 240,
+    "max_h_cm": 600
+   },
+   "background": "res://assets/backgrounds/hospital/roof.bg.json",
+   "scene": {
+    "kind": "outdoor",
+    "seed": 14,
+    "decor": {
+     "floor": "concrete",
+     "floor_cols": [
+      "#b8b8b8",
+      "#a8a8a8",
+      "#7a7a7a"
+     ]
+    }
+   },
+   "default_items": [
+    {
+     "id": "med_helipad_grey",
+     "x_cm": 900,
+     "y_cm": 40
+    },
+    {
+     "id": "med_helicopter_coral",
+     "x_cm": 900,
+     "y_cm": 38
+    },
+    {
+     "id": "med_ambulance_white",
+     "x_cm": 1700,
+     "y_cm": 30
+    },
+    {
+     "id": "street_street_lamp_black",
+     "x_cm": 200,
+     "y_cm": 2
+    },
+    {
+     "id": "street_park_bench_green",
+     "x_cm": 1350,
+     "y_cm": 20
+    }
+   ],
+   "ambience": "amb_garden"
+  }
+ ]
+}

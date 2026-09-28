@@ -9308,6 +9308,232 @@
    "hold": "none",
    "placement": "rug",
    "src": "catalog"
+  },
+  {
+   "id": "c_med_reception",
+   "category": "furniture",
+   "h_cm": 111.6,
+   "w_cm": 225.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "surface_h_cm": 88.0
+  },
+  {
+   "id": "c_med_waiting_chairs",
+   "category": "furniture",
+   "h_cm": 86.6,
+   "w_cm": 177.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 45
+  },
+  {
+   "id": "c_med_exam_couch",
+   "category": "furniture",
+   "h_cm": 91.8,
+   "w_cm": 191.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 68
+  },
+  {
+   "id": "c_med_dentist_chair",
+   "category": "furniture",
+   "h_cm": 132.4,
+   "w_cm": 162.6,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 55
+  },
+  {
+   "id": "c_med_xray",
+   "category": "furniture",
+   "h_cm": 201.6,
+   "w_cm": 111.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_gurney",
+   "category": "furniture",
+   "h_cm": 98.6,
+   "w_cm": 201.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 85
+  },
+  {
+   "id": "c_med_hospital_bed",
+   "category": "furniture",
+   "h_cm": 112.0,
+   "w_cm": 211.5,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 62
+  },
+  {
+   "id": "c_med_iv_stand",
+   "category": "furniture",
+   "h_cm": 166.4,
+   "w_cm": 42.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_incubator",
+   "category": "furniture",
+   "h_cm": 121.2,
+   "w_cm": 91.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 76
+  },
+  {
+   "id": "c_med_medicine_shelf",
+   "category": "furniture",
+   "h_cm": 201.8,
+   "w_cm": 131.8,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_ambulance",
+   "category": "furniture",
+   "h_cm": 272.1,
+   "w_cm": 485.2,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 60
+  },
+  {
+   "id": "c_med_helicopter",
+   "category": "furniture",
+   "h_cm": 208.6,
+   "w_cm": 503.9,
+   "hold": "none",
+   "placement": "floor",
+   "src": "catalog",
+   "seat_h_cm": 90
+  },
+  {
+   "id": "c_med_eye_chart",
+   "category": "item",
+   "h_cm": 91.9,
+   "w_cm": 61.9,
+   "hold": "none",
+   "placement": "wall",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_helipad",
+   "category": "item",
+   "h_cm": 71.6,
+   "w_cm": 521.6,
+   "hold": "none",
+   "placement": "rug",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_heart_monitor",
+   "category": "health",
+   "h_cm": 36.9,
+   "w_cm": 41.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_baby_scale",
+   "category": "health",
+   "h_cm": 26.9,
+   "w_cm": 56.8,
+   "hold": "none",
+   "placement": "table",
+   "src": "catalog",
+   "seat_h_cm": 22
+  },
+  {
+   "id": "c_med_medicine",
+   "category": "health",
+   "h_cm": 11.9,
+   "w_cm": 9.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_sling",
+   "category": "health",
+   "h_cm": 31.5,
+   "w_cm": 21.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_eye_patch",
+   "category": "health",
+   "h_cm": 7.0,
+   "w_cm": 10.0,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_crutches",
+   "category": "item",
+   "h_cm": 110.2,
+   "w_cm": 26.5,
+   "hold": "one_hand",
+   "placement": "floor",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_pet_carrier",
+   "category": "health",
+   "h_cm": 41.8,
+   "w_cm": 56.9,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_teeth_model",
+   "category": "health",
+   "h_cm": 15.8,
+   "w_cm": 21.5,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_big_toothbrush",
+   "category": "health",
+   "h_cm": 46.5,
+   "w_cm": 7.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
+  },
+  {
+   "id": "c_med_syrup",
+   "category": "health",
+   "h_cm": 15.9,
+   "w_cm": 7.2,
+   "hold": "one_hand",
+   "placement": "table",
+   "src": "catalog"
   }
  ]
 }
