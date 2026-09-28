@@ -12,7 +12,7 @@ danach liegt **Kunterbunt City auf dem Desktop** (ein Klick zum Starten, keine A
 Linux: `.tar.gz` entpacken → `./installieren.sh` · macOS: `.zip` entpacken → Rechtsklick → Öffnen.
 Datenschutz: `docs/DATENSCHUTZ.md` – das Spiel sammelt keine Daten und braucht kein Internet.
 
-Neue Version veröffentlichen: Version in `project.godot` erhöhen, Tag `vX.Y.Z` pushen → `.github/workflows/release.yml`
+Neue Version veröffentlichen: Version in `project.godot` erhöhen, Tag `vX.Y.Z` pushen (oder Commit mit `[release]` in der Nachricht) → `.github/workflows/release.yml`
 baut alle Downloads und hängt sie ans Release. Lokal: `bash scripts/build_release.sh` → `export/release/`.
 
 ## Bauen
