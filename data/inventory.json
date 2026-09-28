@@ -2679,6 +2679,100 @@
      "min": 3
     }
    ]
+  },
+  "pool": {
+   "freizeitbad": [
+    {
+     "label": "swim_basin",
+     "prefix": "swim_basin",
+     "min": 2
+    },
+    {
+     "label": "swim_baby_pool",
+     "prefix": "swim_baby_pool",
+     "min": 3
+    },
+    {
+     "label": "swim_diving_tower",
+     "prefix": "swim_diving_tower",
+     "min": 2
+    },
+    {
+     "label": "swim_water_slide",
+     "prefix": "swim_water_slide",
+     "min": 3
+    },
+    {
+     "label": "swim_whirlpool",
+     "prefix": "swim_whirlpool",
+     "min": 3
+    },
+    {
+     "label": "swim_guard_chair",
+     "prefix": "swim_guard_chair",
+     "min": 2
+    },
+    {
+     "label": "swim_shower",
+     "prefix": "swim_shower",
+     "min": 1
+    },
+    {
+     "label": "swim_kiosk",
+     "prefix": "swim_kiosk",
+     "min": 3
+    },
+    {
+     "label": "swim_lockers",
+     "prefix": "swim_lockers",
+     "min": 4
+    },
+    {
+     "label": "swim_cabin",
+     "prefix": "swim_cabin",
+     "min": 1
+    },
+    {
+     "label": "swim_turnstile",
+     "prefix": "swim_turnstile",
+     "min": 1
+    },
+    {
+     "label": "swim_bench_tiled",
+     "prefix": "swim_bench_tiled",
+     "min": 2
+    },
+    {
+     "label": "swim_start_block",
+     "prefix": "swim_start_block",
+     "min": 1
+    },
+    {
+     "label": "swim_wave_sign",
+     "prefix": "swim_wave_sign",
+     "min": 1
+    },
+    {
+     "label": "swim_lifebuoy",
+     "prefix": "swim_lifebuoy",
+     "min": 2
+    },
+    {
+     "label": "swim_kickboard",
+     "prefix": "swim_kickboard",
+     "min": 4
+    },
+    {
+     "label": "swim_dive_rings",
+     "prefix": "swim_dive_rings",
+     "min": 1
+    },
+    {
+     "label": "swim_beach_ball",
+     "prefix": "swim_beach_ball",
+     "min": 3
+    }
+   ]
   }
  }
 }

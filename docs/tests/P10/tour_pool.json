@@ -1,0 +1,13 @@
+{
+  "pool": {
+    "ladezeit_ms": 140.0,
+    "raeume": [
+      "entrance:15/1",
+      "hall:14/1",
+      "babies:10/1",
+      "whirl:7/0",
+      "outside:12/1",
+      "lawn:14/1"
+    ]
+  }
+}

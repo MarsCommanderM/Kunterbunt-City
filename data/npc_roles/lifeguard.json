@@ -49,6 +49,8 @@
  "_doc": "NPC-Rolle (P08): behavior station/patrol/wander/deliver · work = Arbeits-Animationen (Platzhalter) · return_after_s: nach dem Tragen zurück zum Platz",
  "water": [
   "garden_pool",
-  "swim_pool"
+  "swim_pool",
+  "swim_basin",
+  "swim_baby_pool"
  ]
 }

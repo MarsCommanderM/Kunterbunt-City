@@ -1127,6 +1127,1097 @@
     "pose": "sit",
     "slots": 1
    }
+  },
+  {
+   "id": "swim_basin_sky",
+   "scale_ref": "c_swim_basin",
+   "size_cm": [
+    901.8,
+    102.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_basin.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 6
+   }
+  },
+  {
+   "id": "swim_basin_white",
+   "scale_ref": "c_swim_basin",
+   "size_cm": [
+    901.8,
+    102.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_basin.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 6
+   }
+  },
+  {
+   "id": "swim_baby_pool_butter",
+   "scale_ref": "c_swim_baby_pool",
+   "size_cm": [
+    325.8,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_baby_pool.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "swim_baby_pool_coral",
+   "scale_ref": "c_swim_baby_pool",
+   "size_cm": [
+    325.8,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_baby_pool.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "swim_baby_pool_mint",
+   "scale_ref": "c_swim_baby_pool",
+   "size_cm": [
+    325.8,
+    57.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_baby_pool.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "swim_diving_tower_sky",
+   "scale_ref": "c_swim_diving_tower",
+   "size_cm": [
+    259.4,
+    542.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_diving_tower.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_diving_tower_coral",
+   "scale_ref": "c_swim_diving_tower",
+   "size_cm": [
+    259.4,
+    542.2
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_diving_tower.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_water_slide_butter",
+   "scale_ref": "c_swim_water_slide",
+   "size_cm": [
+    566.6,
+    376.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_water_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_water_slide_coral",
+   "scale_ref": "c_swim_water_slide",
+   "size_cm": [
+    566.6,
+    376.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_water_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_water_slide_mint",
+   "scale_ref": "c_swim_water_slide",
+   "size_cm": [
+    566.6,
+    376.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_water_slide.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_whirlpool_sky",
+   "scale_ref": "c_swim_whirlpool",
+   "size_cm": [
+    267.4,
+    82.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_whirlpool.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "sfx": {
+    "on": "fizz"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/swim_whirlpool__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "swim_whirlpool_white",
+   "scale_ref": "c_swim_whirlpool",
+   "size_cm": [
+    267.4,
+    82.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_whirlpool.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "sfx": {
+    "on": "fizz"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/swim_whirlpool__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "swim_whirlpool_sand",
+   "scale_ref": "c_swim_whirlpool",
+   "size_cm": [
+    267.4,
+    82.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_whirlpool.png",
+   "pad_px": 1,
+   "colors": [
+    "#d8cfc2",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 4
+   },
+   "sfx": {
+    "on": "fizz"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/swim_whirlpool__on.png"
+   },
+   "anim": {
+    "on": "pulse"
+   }
+  },
+  {
+   "id": "swim_guard_chair_coral",
+   "scale_ref": "c_swim_guard_chair",
+   "size_cm": [
+    88.1,
+    202.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_guard_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "swim_guard_chair_white",
+   "scale_ref": "c_swim_guard_chair",
+   "size_cm": [
+    88.1,
+    202.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_guard_chair.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#f5f3ee",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 1
+   }
+  },
+  {
+   "id": "swim_shower_metal",
+   "scale_ref": "c_swim_shower",
+   "size_cm": [
+    55.5,
+    215.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_shower.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#7cc6e0",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/swim_shower__on.png"
+   }
+  },
+  {
+   "id": "swim_kiosk_butter",
+   "scale_ref": "c_swim_kiosk",
+   "size_cm": [
+    271.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kiosk.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_kiosk_sky",
+   "scale_ref": "c_swim_kiosk",
+   "size_cm": [
+    271.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kiosk.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_kiosk_mint",
+   "scale_ref": "c_swim_kiosk",
+   "size_cm": [
+    271.7,
+    241.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kiosk.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_lockers_sky",
+   "scale_ref": "c_swim_lockers",
+   "size_cm": [
+    121.8,
+    191.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lockers.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "open": "open"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/swim_lockers__open.png"
+   }
+  },
+  {
+   "id": "swim_lockers_coral",
+   "scale_ref": "c_swim_lockers",
+   "size_cm": [
+    121.8,
+    191.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lockers.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "open": "open"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/swim_lockers__open.png"
+   }
+  },
+  {
+   "id": "swim_lockers_mint",
+   "scale_ref": "c_swim_lockers",
+   "size_cm": [
+    121.8,
+    191.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lockers.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "open": "open"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/swim_lockers__open.png"
+   }
+  },
+  {
+   "id": "swim_lockers_butter",
+   "scale_ref": "c_swim_lockers",
+   "size_cm": [
+    121.8,
+    191.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lockers.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "open": "open"
+   },
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/swim_lockers__open.png"
+   }
+  },
+  {
+   "id": "swim_cabin_white",
+   "scale_ref": "c_swim_cabin",
+   "size_cm": [
+    111.5,
+    211.5
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_cabin.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "state_sprites": {
+    "open": "res://assets/sprites/items/swim_cabin__open.png"
+   }
+  },
+  {
+   "id": "swim_turnstile_metal",
+   "scale_ref": "c_swim_turnstile",
+   "size_cm": [
+    92.4,
+    101.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_turnstile.png",
+   "pad_px": 1,
+   "colors": [
+    "#9aa6b4",
+    "#e07a7a",
+    "#9aa6b4"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_bench_tiled_white",
+   "scale_ref": "c_swim_bench_tiled",
+   "size_cm": [
+    181.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_bench_tiled.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "swim_bench_tiled_sky",
+   "scale_ref": "c_swim_bench_tiled",
+   "size_cm": [
+    181.9,
+    46.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_bench_tiled.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#a9c3dd",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "seat": {
+    "pose": "sit",
+    "slots": 3
+   }
+  },
+  {
+   "id": "swim_start_block_white",
+   "scale_ref": "c_swim_start_block",
+   "size_cm": [
+    63.4,
+    76.8
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "none",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_start_block.png",
+   "pad_px": 1,
+   "colors": [
+    "#fbfaf7",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool"
+  },
+  {
+   "id": "swim_wave_sign_navy",
+   "scale_ref": "c_swim_wave_sign",
+   "size_cm": [
+    81.9,
+    61.9
+   ],
+   "pivot": [
+    0.5,
+    0.0
+   ],
+   "hold": "none",
+   "placement": "wall",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_wave_sign.png",
+   "pad_px": 1,
+   "colors": [
+    "#2e3140",
+    "#7cc6e0",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "sfx": {
+    "on": "water_pour"
+   },
+   "states": [
+    "off",
+    "on"
+   ],
+   "state_sprites": {
+    "on": "res://assets/sprites/items/swim_wave_sign__on.png"
+   }
+  },
+  {
+   "id": "swim_lifebuoy_coral",
+   "scale_ref": "c_swim_lifebuoy",
+   "size_cm": [
+    71.9,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lifebuoy.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "swim_lifebuoy_orange",
+   "scale_ref": "c_swim_lifebuoy",
+   "size_cm": [
+    71.9,
+    71.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "floor",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_lifebuoy.png",
+   "pad_px": 1,
+   "colors": [
+    "#f09a55",
+    "#e07a7a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.95
+   ]
+  },
+  {
+   "id": "swim_kickboard_sky",
+   "scale_ref": "c_swim_kickboard",
+   "size_cm": [
+    35.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kickboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_kickboard_butter",
+   "scale_ref": "c_swim_kickboard",
+   "size_cm": [
+    35.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kickboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_kickboard_coral",
+   "scale_ref": "c_swim_kickboard",
+   "size_cm": [
+    35.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kickboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_kickboard_mint",
+   "scale_ref": "c_swim_kickboard",
+   "size_cm": [
+    35.5,
+    46.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_kickboard.png",
+   "pad_px": 1,
+   "colors": [
+    "#9fc3a0",
+    "#fbfaf7",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_dive_rings_coral",
+   "scale_ref": "c_swim_dive_rings",
+   "size_cm": [
+    24.2,
+    11.6
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "one_hand",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_dive_rings.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_beach_ball_coral",
+   "scale_ref": "c_swim_beach_ball",
+   "size_cm": [
+    41.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_beach_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#e07a7a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_beach_ball_sky",
+   "scale_ref": "c_swim_beach_ball",
+   "size_cm": [
+    41.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_beach_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#a9c3dd",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "swim_beach_ball_butter",
+   "scale_ref": "c_swim_beach_ball",
+   "size_cm": [
+    41.9,
+    41.9
+   ],
+   "pivot": [
+    0.5,
+    1.0
+   ],
+   "hold": "two_hands",
+   "placement": "table",
+   "movable": true,
+   "sprite": "res://assets/sprites/items/swim_beach_ball.png",
+   "pad_px": 1,
+   "colors": [
+    "#f6d98a",
+    "#f6d98a",
+    "#fbfaf7"
+   ],
+   "catalog": "pool",
+   "grip": [
+    0.5,
+    0.5
+   ]
   }
  ]
 }

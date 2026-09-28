@@ -46,14 +46,17 @@
   },
   {
    "id": "pool",
-   "label": "Schwimmbad",
+   "label": "Freizeitbad",
    "icon": "area_pool",
    "color": "#6fc3e8",
    "sound": "ui_confirm",
-   "ready": false,
-   "path": "",
+   "ready": true,
+   "path": "res://data/areas/pool.json",
    "map_x": 1550,
-   "map_y": 300
+   "map_y": 300,
+   "room": "entrance",
+   "spawn_x_cm": 350,
+   "spawn_y_cm": 55
   },
   {
    "id": "playground",

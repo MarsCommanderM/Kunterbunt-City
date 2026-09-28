@@ -6,6 +6,7 @@ extends RefCounted
 static func eat(rig: CharacterRig, food: ItemNode, animate: bool = true) -> void:
 	rig.set_emotion("laugh")
 	var fid: StringName = food.def.id
+	Secrets.event("eat")
 	if not animate:
 		food.queue_free()
 		rig.set_emotion("love")

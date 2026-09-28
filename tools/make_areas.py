@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from areas.common import ROOT, check  # noqa: E402
 
-AREAS = ["shopping", "playground", "school", "hospital"]
+AREAS = ["shopping", "playground", "school", "hospital", "pool"]
 
 
 def main(argv: list[str] | None = None) -> int:
