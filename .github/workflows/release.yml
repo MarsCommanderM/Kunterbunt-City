@@ -1,0 +1,39 @@
+# Kunterbunt City – baut alle Downloads (kostenlos auf GitHub) und hängt sie an ein Release.
+# Auslöser: Tag „v*“ (z. B. v1.0.0) oder von Hand (Actions → release → Run workflow; dann nur als Artefakt).
+# Ergebnis: Windows-Installer mit Desktop-Verknüpfung, Windows ohne Installation, Linux (mit Installationsskript),
+# macOS, Web. Der Spiel-Code selbst hat kein Netzwerk (R-02) – nur dieser Bau-Schritt lädt Godot herunter.
+name: release
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GODOT_VERSION: "4.7.2"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Godot + Export-Vorlagen laden
+        run: |
+          curl -sL -o g.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q g.zip && mv "Godot_v${GODOT_VERSION}-stable_linux.x86_64" /usr/local/bin/godot && rm g.zip
+          python3 tools/dev/fetch_web_templates.py "${GODOT_VERSION}" --desktop
+          sudo apt-get update -q && sudo apt-get install -y -q nsis
+      - name: Version
+        id: v
+        run: echo "ver=$(grep -oP 'config/version="\K[^"]+' project.godot)" >> "$GITHUB_OUTPUT"
+      - name: Exportieren
+        run: bash scripts/build_release.sh "${{ steps.v.outputs.ver }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KunterbuntCity-${{ steps.v.outputs.ver }}
+          path: export/release/*
+          retention-days: 30
+      - name: Release veröffentlichen
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" export/release/* --title "Kunterbunt City ${GITHUB_REF_NAME}" --notes-file docs/release/RELEASE_NOTES.md
